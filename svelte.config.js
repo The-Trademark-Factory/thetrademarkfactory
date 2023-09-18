@@ -1,5 +1,5 @@
 import adapterStatic from '@sveltejs/adapter-static';
-import adapterAuto from '@sveltejs/adapter-auto';
+import adapterNetlify from '@sveltejs/adapter-netlify';
 import { vitePreprocess } from '@sveltejs/kit/vite';
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -8,7 +8,7 @@ const config = {
 		adapter:
 			process.env.VITE_ENV_ADAPTER === 'cloudcannon'
 				? adapterStatic({ strict: false })
-				: adapterAuto(),
+				: adapterNetlify(),
 		prerender: {
 			handleHttpError: 'warn',
 			entries: ['*', '/sitemap/', '/sitemap.xml']
