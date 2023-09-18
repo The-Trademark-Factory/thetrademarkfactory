@@ -1,10 +1,17 @@
 import { getAuthToken } from '$lib/utils/getAuthTokenDev';
 
-export async function load() {
+export async function load({ url }) {
+	const searchTerm = url.searchParams.get('name');
+	if (!searchTerm) {
+		return {
+			searchResults: {
+				apiData: false
+			}
+		};
+	}
 	try {
 		let token;
 		if (import.meta.env.VITE_ENV_ADAPTER === 'netlify') {
-			// Fetch the auth token from the Netlify function
 			const res = await fetch('/.netlify/functions/getAuthToken');
 			const data = await res.json();
 			token = data.token;
@@ -12,7 +19,6 @@ export async function load() {
 			token = await getAuthToken();
 		}
 
-		// Make the authenticated API request with the token
 		const apiRes = await fetch(import.meta.env.VITE_IPAUSTEST_URL + '/search/quick', {
 			method: 'POST',
 			headers: {
@@ -25,7 +31,7 @@ export async function load() {
 					quickSearchType: ['WORD'],
 					status: ['REGISTERED']
 				},
-				query: 'TEST',
+				query: searchTerm,
 				sort: {
 					direction: 'ASCENDING',
 					field: 'NUMBER'
@@ -35,16 +41,37 @@ export async function load() {
 
 		const apiData = await apiRes.json();
 
-		// Pass the API response data to the page as a prop
+		if (apiData.count > 2) {
+			const trademarkDetails = await Promise.all(
+				apiData.trademarkIds.slice(0, 6).map(async (trademarkId) => {
+					try {
+						const res = await fetch(
+							`${import.meta.env.VITE_IPAUSTEST_URL}/trade-mark/${trademarkId}`,
+							{
+								method: 'GET',
+								headers: {
+									'Content-Type': 'application/json',
+									Authorization: `Bearer ${token}`
+								}
+							}
+						);
+						return res.json();
+					} catch (error) {
+						console.error('Error fetching trademark details', error);
+						return null;
+					}
+				})
+			);
+			apiData.trademarkDetails = trademarkDetails;
+		}
+
 		return {
-			props: {
+			searchResults: {
 				apiData
 			}
 		};
 	} catch (error) {
 		console.error('Error in load function', error);
-
-		// Handle the error gracefully by returning a 500 status and an error message
 		return {
 			status: 500,
 			error: new Error('An error occurred while fetching the data')
