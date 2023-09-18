@@ -1,5 +1,4 @@
 <script>
-	import { transparentMenu } from '$lib/utils/stores';
 	import { onDestroy, onMount } from 'svelte';
 	import { Bookshop, trackBookshopLiveData } from '@bookshop/sveltekit-bookshop';
 	import { onCloudCannonChanges, stopCloudCannonChanges } from '@cloudcannon/svelte-connector';
@@ -9,7 +8,6 @@
 
 	$: {
 		content = data.data;
-		transparentMenu.set(content.menu_transparent ?? false);
 	}
 
 	onMount(async () => {
