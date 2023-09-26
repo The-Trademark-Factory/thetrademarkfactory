@@ -1,3 +1,44 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+	font-family: 'Century Gothic';
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+	src: url('/fonts/5206844/85b3851b-b6b4-4524-9d23-de47e8d72aee.woff2') format('woff2'),
+		url('/fonts/5206844/fd7bc16b-d289-475c-b83a-233e3c898b7d.woff') format('woff');
+}
+@font-face {
+	font-family: 'Century Gothic';
+	font-weight: bold;
+	font-style: bold;
+	font-display: swap;
+	src: url('/fonts/5219390/9582dc06-7a4d-4a55-8dfc-aa69cd8b8436.woff2') format('woff2'),
+		url('/fonts/5219390/656df9bb-f6e1-46a8-8a37-1c73ff3bbdf9.woff') format('woff');
+}
+@font-face {
+	font-family: 'Century Gothic';
+	font-weight: bold;
+	font-style: italic;
+	font-display: swap;
+	src: url('/fonts/5310887/fa5e91f7-def7-4618-9094-c24564bb61bf.woff2') format('woff2'),
+		url('/fonts/5310887/421adabb-3986-4971-8aa5-88bf576a6c2e.woff') format('woff');
+}
+@font-face {
+	font-family: 'Century Gothic';
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	src: url('/fonts/5321689/d722f0d1-f586-442f-83de-f80218687a92.woff2') format('woff2'),
+		url('/fonts/5321689/d5622205-b4e1-48e5-98a6-4ffe2ad76689.woff') format('woff');
+}
+@font-face {
+	font-family: 'Arkina';
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	src: url('/fonts/arkina/arkina.otf') format('otf'),
+		url('/fonts/arkina/arkina.woff') format('woff');
+}

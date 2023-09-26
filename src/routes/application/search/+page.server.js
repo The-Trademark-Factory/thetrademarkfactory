@@ -26,14 +26,14 @@ export async function load({ url }) {
 				Authorization: `Bearer ${token}`
 			},
 			body: JSON.stringify({
-				changedSinceDate: '2019-01-15',
+				// changedSinceDate: '2000-01-15',
 				filters: {
 					quickSearchType: ['WORD'],
 					status: ['REGISTERED']
 				},
 				query: searchTerm,
 				sort: {
-					direction: 'ASCENDING',
+					direction: 'DESCENDING',
 					field: 'NUMBER'
 				}
 			})
@@ -41,7 +41,7 @@ export async function load({ url }) {
 
 		const apiData = await apiRes.json();
 
-		if (apiData.count > 2) {
+		if (apiData.count > 0) {
 			const trademarkDetails = await Promise.all(
 				apiData.trademarkIds.slice(0, 6).map(async (trademarkId) => {
 					try {
