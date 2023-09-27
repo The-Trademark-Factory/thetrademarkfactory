@@ -1,0 +1,23 @@
+<svg width="92" height="44" viewBox="0 0 92 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="ic-easytouse">
+<g id="Group 52">
+<g id="Clip path group">
+<mask id="mask0_9_344" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="92" height="44">
+<g id="clip-path-23">
+<path id="Rectangle 25" d="M92 0H0V44H92V0Z" fill="white"/>
+</g>
+</mask>
+<g mask="url(#mask0_9_344)">
+<g id="Group 51">
+<path id="Path 81" d="M58.6 1H75.77L90.993 22.233L75.771 43H58.6" stroke="#CCB6A8" stroke-width="2.011" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Path 82" d="M29.7999 1H46.9699L62.1999 22.233L46.9749 43H29.7999" stroke="#CCB6A8" stroke-width="2.011" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Path 83" d="M1.00696 1H18.178L33.4 22.233L18.178 43H1.00696V1Z" stroke="#D34B44" stroke-width="2.011" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+</g>
+<path id="Path 84" d="M8.48999 22.5001L11.744 25.6271L19.167 18.3721" stroke="#D34B44" stroke-width="2.011" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Path 85" d="M39.12 22.5L42.374 25.627L49.8 18.373" stroke="#CCB6A8" stroke-width="2.011" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Path 86" d="M68.6899 22.5001L71.9439 25.6271L79.3669 18.3721" stroke="#CCB6A8" stroke-width="2.011" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>

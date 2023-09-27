@@ -17,6 +17,14 @@ blueprint:
     title: Lorem ipsum dolor sit amet
     subtitle: Lorem ipsum dolor
   scrolling_banner:
+    - title: Lorem ipsum Dolor
+    - title: Dolor sit
+    - title: Consectetur adipiscing
+    - title: Tempor incididunt
+    - title: Lorem ipsum
+    - title: Dolor sit
+    - title: Consectetur adipiscing
+    - title: Tempor incididunt
     - title: Lorem ipsum
     - title: Dolor sit
     - title: Consectetur adipiscing

@@ -16,7 +16,7 @@
 </script>
 
 {#key data.url}
-	<div in:fade={{ duration: 400 }}>
+	<div in:fade={{ duration: 400 }} class="bg-ttmfBg">
 		<slot />
 	</div>
 {/key}

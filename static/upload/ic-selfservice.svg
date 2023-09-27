@@ -1,0 +1,40 @@
+<svg width="58" height="55" viewBox="0 0 58 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="ic-selfservice">
+<g id="Group 48">
+<g id="Clip path group">
+<mask id="mask0_9_318" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="58" height="55">
+<g id="clip-path-21">
+<path id="Rectangle 23" d="M58 0H0V55H58V0Z" fill="white"/>
+</g>
+</mask>
+<g mask="url(#mask0_9_318)">
+<g id="Group 47">
+<path id="Path 75" d="M18.651 19.892V1.00903H44.6L56.987 13.319V53.819H31.147" stroke="#CCB6A8" stroke-width="2.024" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Path 76" d="M44.6 13.319V1.00903L56.987 13.319H44.6Z" stroke="#CCB6A8" stroke-width="2.024" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+</g>
+<path id="Path 77" d="M31.729 43.6841H51.984V48.9611H35.217" stroke="#CCB6A8" stroke-width="2.024" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="Group 50">
+<g id="Clip path group_2">
+<mask id="mask1_9_318" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="58" height="55">
+<g id="clip-path-21_2">
+<path id="Rectangle 23_2" d="M58 0H0V55H58V0Z" fill="white"/>
+</g>
+</mask>
+<g mask="url(#mask1_9_318)">
+<g id="Group 49">
+<path id="Path 78" d="M51.984 31.9341C51.9931 33.3747 51.5742 34.7856 50.7805 35.9879C49.9867 37.1901 48.8538 38.1296 47.5254 38.6872C46.1971 39.2448 44.733 39.3953 43.319 39.1198C41.9049 38.8443 40.6045 38.1551 39.5827 37.1395C38.5608 36.124 37.8635 34.8279 37.5792 33.4156C37.2949 32.0032 37.4364 30.5383 37.9857 29.2065C38.535 27.8747 39.4675 26.736 40.6648 25.9348C41.8621 25.1336 43.2704 24.7059 44.711 24.7061C46.6339 24.7002 48.4804 25.4585 49.8443 26.8139C51.2083 28.1694 51.9779 30.0112 51.984 31.9341Z" stroke="#D34B44" stroke-width="2.024" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Path 79" d="M41.565 33.283L43.834 35.72L48.521 29.7" stroke="#D34B44" stroke-width="2.024" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Line 9" d="M25.366 5.75806H37.829" stroke="#CCB6A8" stroke-width="2.03" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Line 10" d="M25.366 12.1812H37.829" stroke="#CCB6A8" stroke-width="2.03" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Line 11" d="M25.878 19.78H51.835" stroke="#CCB6A8" stroke-width="2.03" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Path 80" d="M1.01501 37.649V41.657L4.42201 42.157C4.70403 43.3861 5.19264 44.5584 5.86701 45.624L3.81501 48.374L6.66701 51.209L9.43301 49.169C10.5071 49.8403 11.6866 50.3261 12.922 50.606L13.422 53.992H17.455L17.955 50.606C19.1904 50.3261 20.3699 49.8403 21.444 49.169L24.21 51.209L27.061 48.374L25.009 45.625C25.6842 44.5598 26.1729 43.3874 26.454 42.158L29.862 41.658V37.649L26.454 37.149C26.1729 35.9196 25.6842 34.7471 25.009 33.682L27.061 30.933L24.219 28.1L21.453 30.14C20.3791 29.4675 19.1996 28.9807 17.964 28.7L17.464 25.314H13.426L12.926 28.7C11.6906 28.9798 10.5112 29.4656 9.43701 30.137L6.66701 28.1L3.81501 30.931L5.86701 33.68C5.19264 34.7455 4.70403 35.9179 4.42201 37.147L1.01501 37.649Z" stroke="#D34B44" stroke-width="2.024" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Ellipse 4" d="M15.442 45.876C18.901 45.876 21.705 43.0894 21.705 39.652C21.705 36.2146 18.901 33.428 15.442 33.428C11.9831 33.428 9.17902 36.2146 9.17902 39.652C9.17902 43.0894 11.9831 45.876 15.442 45.876Z" stroke="#D34B44" stroke-width="2.024" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg>

@@ -42,3 +42,7 @@
 	src: url('/fonts/arkina/arkina.otf') format('otf'),
 		url('/fonts/arkina/arkina.woff') format('woff');
 }
+
+.styleTitle {
+	@apply text-5xl text-ttmfBlack font-bold prose prose-em:not-italic prose-em:font-arkina prose-em:text-ttmfRed prose-em:font-normal prose-em:text-6xl;
+}

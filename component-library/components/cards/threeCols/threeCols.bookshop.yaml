@@ -1,0 +1,21 @@
+spec:
+  structures:
+    - content_blocks
+  label: Three Cols
+  description:
+  icon: 'task'
+  tags: []
+
+blueprint:
+  title: |
+    Lorem ipsum <em>dolor sit</em> amet
+  cards:
+    - title_card: Lorem ispum
+      description_card: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      icon: https://dummyimage.com/50x50
+
+preview:
+
+_inputs:
+  title:
+    type: html

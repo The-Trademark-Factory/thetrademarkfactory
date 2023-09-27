@@ -17,11 +17,15 @@ export default {
 				ttmfLightTextGreen: '#80BCC3',
 				ttmfBlack: '#142023',
 				ttmfCreme: '#CCB6A8',
-				ttmfBrown: '#E3D0C1'
+				ttmfBrown: '#E3D0C1',
+				ttmfBg: '#F9F7F6;'
 			},
 			maxWidth: {
 				'8xl': '1800px',
 				'9xl': '2543px'
+			},
+			boxShadow: {
+				pricingShadow: '0px 3px 20px 0px rgba(21, 52, 56, 0.05);'
 			},
 			inset: {
 				headerOverflow: 'calc(50% - (1280px / 2))'
