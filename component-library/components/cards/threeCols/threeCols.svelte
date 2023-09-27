@@ -3,7 +3,7 @@
 </script>
 
 <section>
-	<div class="max-w-screen-xl mx-auto py-16 lg:py-28 max-2xl:px-6">
+	<div class="max-w-screen-xl mx-auto py-16 max-2xl:px-6">
 		<h2 class="styleTitle text-center">
 			{@html title}
 		</h2>

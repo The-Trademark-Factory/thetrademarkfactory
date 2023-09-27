@@ -48,7 +48,7 @@ content_blocks:
     title: |
       Merging Legal Expertise with AI <em>innovation</em>
     description: |
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, tortor eget sodales aliquam, nunc nisl ultricies nunc, quis aliquam nisl nisl vitae nunc. Sed euismod, tortor eget sodales aliquam, nunc nisl ultricies nunc, quis aliquam nisl nisl vitae nunc.
+      The TradeMark Factory was developed by accomplished trademark attorneys who implemented the power of artificial intelligence to provide an ingenious online platform
     media:
       animation: computer
       image: /upload/placeholder-features.svg
@@ -112,4 +112,50 @@ content_blocks:
     button:
       label: Contact Us
       url: '#'
+  - _bookshop_name: others/icons
+    title: |
+      <em>trusted by</em> 10,000+ Companies
+    icons:
+      - title: PetSure
+        icon: /upload/petsure-logo.png
+      - title: Soul Origin
+        icon: /upload/soulorigin-logo.png
+      - title: Sumo Salad
+        icon: /upload/sumosalad-logo.png
+      - title: Hunter
+        icon: /upload/hunter-logo.png
+      - title: GME
+        icon: /upload/gme-logo.png
+  - _bookshop_name: others/testimonials
+    title: |
+      What our clients <em>say</em>
+    testimonials:
+      - name: John Doe
+        position: Lorem ispum
+        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        icon: /upload/sumosalad-logo.png
+      - name: Janette Doe
+        position: Lorem ispum
+        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        icon: /upload/sumosalad-logo.png
+      - name: Michelle Doe
+        position: Lorem ispum
+        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        icon: /upload/sumosalad-logo.png
+  - _bookshop_name: others/faqs
+    title: |
+      Frequently Asked <em>Questions</em>
+    faq:
+      - question: Lorem ipsum dolor sit
+        answer: |
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      - question: Consectetur adipiscing elit
+        answer: |
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      - question: Tempor incididunt ut labore
+        answer: |
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  - _bookshop_name: cta/search
+    title: |
+      Get Your <em>Trademark</em> Today
 ---

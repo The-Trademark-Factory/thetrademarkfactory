@@ -3,7 +3,7 @@
 	export let title, steps;
 </script>
 
-<section class="max-w-screen-xl mx-auto py-16 lg:py-28 px-6">
+<section class="max-w-screen-xl mx-auto py-14 lg:py-28 px-6">
 	<h2 class="styleTitle text-center">
 		{@html title}
 	</h2>

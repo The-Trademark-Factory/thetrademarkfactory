@@ -4,7 +4,7 @@
 
 <section class="relative max-w-8xl mx-auto">
 	<div
-		class="relative z-10 max-w-screen-xl mx-auto grid lg:grid-cols-2 py-16 lg:py-28 max-2xl:px-6 max-lg:gap-10">
+		class="relative z-10 max-w-screen-xl mx-auto grid lg:grid-cols-2 pt-16 pb-24 max-2xl:px-6 max-lg:gap-10">
 		<div class="lg:pr-24">
 			<h2 class="styleTitle">
 				{@html title}
