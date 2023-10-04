@@ -1,5 +1,5 @@
 ---
-title: About
+title: Services
 seo:
   title: SEO Title
   description: SEO Description

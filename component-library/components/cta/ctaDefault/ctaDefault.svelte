@@ -1,16 +1,26 @@
 <script>
-	export let stats;
+	import Button from '$lib/components/Button.svelte';
+	export let title, content, button;
 </script>
 
 <section class="max-w-screen-xl mx-auto py-14 max-2xl:px-6">
-	<div class="bg-ttmfBeige px-14 py-20 rounded-lg">
-		<div class="flex flex-wrap justify-between">
-			{#each stats as el}
-				<div>
-					<p class="text-5xl text-ttmfRed font-bold">{el.title}</p>
-					<p class="font-bold pt-4">{el.label}</p>
+	<div class="bg-ttmfBeige px-14 py-24 rounded-lg">
+		<div class="text-center">
+			{#if title}
+				<h2 class="styleTitle">
+					{@html title}
+				</h2>
+			{/if}
+			{#if content}
+				<div class="max-w-none text-lg prose {title ? 'pt-10' : ''}">
+					{@html content}
 				</div>
-			{/each}
+			{/if}
+			{#if button.title}
+				<div class="pt-14">
+					<Button title={button.title} url={button.url} />
+				</div>
+			{/if}
 		</div>
 	</div>
 </section>

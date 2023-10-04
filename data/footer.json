@@ -3,6 +3,7 @@
 		{ "title": "Home", "url": "/" },
 		{ "title": "Resources", "url": "/resources" },
 		{ "title": "About", "url": "/about" },
+		{ "title": "Services", "url": "/services" },
 		{ "title": "Contact", "url": "/contact" }
 	],
 	"address": {
