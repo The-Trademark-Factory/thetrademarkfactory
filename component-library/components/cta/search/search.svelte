@@ -1,6 +1,6 @@
 <script>
 	import SearchWord from '$lib/components/SearchWord.svelte';
-	import Svg from '../../../../src/lib/components/Svg.svelte';
+	import Svg from '$lib/components/Svg.svelte';
 	export let title;
 </script>
 
@@ -9,7 +9,7 @@
 		<h2 class="styleTitle text-center">
 			{@html title}
 		</h2>
-		<div class="absolute right-52 top-10">
+		<div class="max-md:hidden absolute right-0 lg:right-52 top-10">
 			<Svg name="search-cta-shape" />
 		</div>
 	</div>

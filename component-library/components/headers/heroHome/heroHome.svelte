@@ -25,7 +25,7 @@
 	});
 </script>
 
-<section class="bg-ttmfDarkGreen text-white">
+<section class="bg-ttmfDarkGreen text-white pt-20">
 	<div class="relative overflow-hidden">
 		<div class="absolute top-28 lg:top-20 xl:top-16 left-4 xl:left-headerOverflow w-full">
 			<AnimatedSvg name="trademarkAnimated" />

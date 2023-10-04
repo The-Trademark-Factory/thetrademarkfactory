@@ -5,7 +5,7 @@
 	let searchTerm;
 </script>
 
-<div class="relative flex max-sm:flex-wrap items-center gap-2">
+<div class="relative flex max-sm:flex-wrap items-center gap-2 max-md:w-full">
 	<input
 		type="text"
 		placeholder="Search by word"
