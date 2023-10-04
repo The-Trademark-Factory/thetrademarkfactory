@@ -19,7 +19,7 @@
 							</div>
 						</div>
 						<div>
-							<img src={el.image} alt={el.name} class="h-full w-full rounded-lg" />
+							<img src={el.image} alt={el.name} class="w-full rounded-lg" />
 						</div>
 					</div>
 				</div>

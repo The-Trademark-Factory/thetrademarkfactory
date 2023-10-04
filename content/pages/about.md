@@ -16,7 +16,7 @@ content_blocks:
     title:
     content: "<p>Established in 2009 and led by Natalie Murray-Jones, our team of lawyers and trademark experts has been practicing trademark law since the mid-'90s. We have successfully registered trademarks for some of the world's leading corporations, such as <strong>Apple</strong> and <strong>Gucci</strong>, as well as prominent Australian enterprises like <strong>Pharmacare</strong>, <strong>Gloria Jean's Coffees</strong>, <strong>Donut King</strong>, <strong>Mad Mex</strong>, and <strong>Uniden Australia</strong>.&nbsp;<br />\LOver the course of nearly three decades, we've had the privilege of collaborating with large corporations. However, we've recently recognized a growing disparity between the needs of big businesses and small enterprises concerning the affordability of brand protection.</p><p>Our true passion lies in the realm of trademarks, and our primary objective is to assist as many Australian businesses as possible in accessing top-notch trademark services without the burden of exorbitant costs. Consequently, The TradeMark Factory was conceived.</p>"
     button:
-      title: ''
+      title_button: ''
       url: '#'
     media:
       content: >-
@@ -54,7 +54,7 @@ content_blocks:
       our unwavering dedication remains consistent: delivering exceptional
       service at competitive, fixed rates.</p>
     button:
-      title:
+      title_button:
       url:
     media:
       content:
@@ -70,7 +70,7 @@ content_blocks:
       inspired online application form enables us to maintain competitive fees
       while upholding the high-quality service you deserve.</p>
     button:
-      title: <p>Get in Touch</p>
+      title_button: Get in Touch
       url: '#'
   - _bookshop_name: others/team
     team:

@@ -30,7 +30,7 @@ content_blocks:
       also have comfort knowing that experienced Australian lawyers are right
       here to help you should you need it.</p>
     button:
-      title: <p>Get Started</p>
+      title_button: Get Started
       url: '#'
     media:
       content: ''
@@ -53,7 +53,7 @@ content_blocks:
       cost effective and efficient. Also our Australian lawyers file the
       application from Australia for you.</p>
     button:
-      title:
+      title_button:
       url:
     media:
       content:
@@ -73,34 +73,8 @@ content_blocks:
       pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
       qui officia deserunt mollit anim id est laborum.</p>
     button:
-      title: Lorem ipsum
+      title_button: Lorem ipsum
       url: '#'
-  - _bookshop_name: others/team
-    team:
-      - name: Lorem Ipsum
-        position: Lorem ipsum
-        bio: >
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.</p> <p>Duis aute irure dolor in
-          reprehenderit <strong>in voluptate velit esse</strong> cillum dolore
-          eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est
-          laborum.</p>
-        image: https://dummyimage.com/400x500
-      - name: Lorem Dolor
-        position: Lorem ipsum
-        bio: >
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.</p> <p>Duis aute irure dolor in
-          reprehenderit <strong>in voluptate velit esse</strong> cillum dolore
-          eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est
-          laborum.</p>
-        image: https://dummyimage.com/400x500
   - _bookshop_name: cta/search
     title: |
       Get Your <em>Trademark</em> Today

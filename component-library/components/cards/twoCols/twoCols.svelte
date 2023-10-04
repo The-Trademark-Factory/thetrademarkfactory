@@ -29,9 +29,9 @@
 						{@html content}
 					</div>
 				{/if}
-				{#if button.title}
+				{#if button.title_button}
 					<div class="pt-14">
-						<Button title={button.title} url={button.url} />
+						<Button title={button.title_button} url={button.url} />
 					</div>
 				{/if}
 			</div>
