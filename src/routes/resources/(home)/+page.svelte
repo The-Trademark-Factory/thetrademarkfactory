@@ -2,9 +2,8 @@
 	import { resources_page } from '../../../../data/global.json';
 	import HeroDefault from '../../../../component-library/components/headers/heroDefault/heroDefault.svelte';
 	export let data;
-	console.log(data);
 
-	let background = { image: resources_page.image };
+	let background = { image: resources_page.image, align_bottom: true };
 </script>
 
 <HeroDefault title={resources_page.title} subtitle={resources_page.subtitle} {background} />

@@ -18,6 +18,7 @@ export default {
 				ttmfBlack: '#142023',
 				ttmfCreme: '#CCB6A8',
 				ttmfBrown: '#E3D0C1',
+				ttmfBeige: '#F4F0ED',
 				ttmfBg: '#F9F7F6;'
 			},
 			maxWidth: {

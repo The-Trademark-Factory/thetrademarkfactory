@@ -1,7 +1,9 @@
 {
 	"links": [
 		{ "title": "Home", "url": "/" },
-		{ "title": "Resources", "url": "/resources" }
+		{ "title": "Resources", "url": "/resources" },
+		{ "title": "About", "url": "/about" },
+		{ "title": "Contact", "url": "/contact" }
 	],
 	"address": {
 		"street": "123 Main St",

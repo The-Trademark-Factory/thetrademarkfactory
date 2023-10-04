@@ -11,7 +11,7 @@
 			<p class="text-4xl font-arkina text-ttmfRed pt-9">{subtitle}</p>
 		{/if}
 	</div>
-	<div class="absolute bottom-0 right-0">
+	<div class="absolute right-0 {background.align_bottom ? 'bottom-0' : 'bottom-20'}">
 		<img src={background.image} alt="" />
 	</div>
 </section>

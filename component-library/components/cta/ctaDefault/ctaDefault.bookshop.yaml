@@ -1,0 +1,26 @@
+spec:
+  structures:
+    - content_blocks
+  label: CTA Default
+  description:
+  icon: 'task'
+  tags: []
+
+blueprint:
+  stats:
+    - title: 'Lorem'
+      label: 'Lorem Ipsum'
+    - title: 'Lorem'
+      label: 'Lorem Ipsum'
+    - title: 'Lorem'
+      label: 'Lorem Ipsum'
+    - title: 'Lorem'
+      label: 'Lorem Ipsum'
+    - title: 'Lorem'
+      label: 'Lorem Ipsum'
+    - title: 'Lorem'
+      label: 'Lorem Ipsum'
+
+preview:
+
+_inputs:

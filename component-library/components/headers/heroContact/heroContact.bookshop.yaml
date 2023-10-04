@@ -1,7 +1,7 @@
 spec:
   structures:
     - content_blocks
-  label: Hero Default
+  label: Hero Contact
   description:
   icon: 'task'
   tags: []
@@ -9,13 +9,11 @@ spec:
 blueprint:
   title: Lorem ipsum
   subtitle: Lorem ipsum dolor sit amet
-  background:
-    svg:
-    image:
-    align_bottom: false
+  image: /upload/img-hero-contact.svg
+  form:
+    title: Lorem ipsum
+    button: Lorem ipsum
 
 preview:
 
 _inputs:
-  full_title:
-    comment: If you put a full title, the default animated title will be hidden
