@@ -24,3 +24,12 @@ _inputs:
     type: html
   icon:
     type: image
+  countries:
+    type: array
+    options:
+      structures: _structures.components
+      preview:
+        text:
+          - key: country_title
+        image:
+          - key: icon
