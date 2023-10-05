@@ -12,7 +12,8 @@ blueprint:
   description: Select countries to calculate the final price.
   countries:
     - country_title: Australia
-      price: 100
+      gov_fee: 100
+      service_fee: 100
       icon: https://dummyimage.com/50
       popular: true
 
