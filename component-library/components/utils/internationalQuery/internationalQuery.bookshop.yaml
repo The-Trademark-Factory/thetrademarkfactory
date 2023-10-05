@@ -24,3 +24,9 @@ _inputs:
     type: html
   icon:
     type: image
+  countries:
+    type: array
+    options:
+      preview:
+        text:
+          - key: country_title
