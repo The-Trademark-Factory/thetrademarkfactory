@@ -1,0 +1,14 @@
+<svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="austria-icon" clip-path="url(#clip0_27_433)">
+<g id="Group">
+<path id="Vector" d="M34.375 0H9.625C4.30925 0 0 4.30925 0 9.625V14.6668H44V9.625C44 4.30925 39.6908 0 34.375 0Z" fill="#FF4B55"/>
+<path id="Vector_2" d="M0 34.375C0 39.6908 4.30925 44 9.625 44H34.375C39.6908 44 44 39.6908 44 34.375V29.3333H0V34.375Z" fill="#FF4B55"/>
+</g>
+<path id="Vector_3" d="M44 14.667H0V29.3331H44V14.667Z" fill="#F5F5F5"/>
+</g>
+<defs>
+<clipPath id="clip0_27_433">
+<rect width="44" height="44" fill="white"/>
+</clipPath>
+</defs>
+</svg>

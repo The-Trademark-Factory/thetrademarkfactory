@@ -22,17 +22,17 @@ content_blocks:
       - country_title: Australia
         gov_fee: 100
         service_fee: 100
-        icon: https://dummyimage.com/50
+        icon: /upload/australia-icon.svg
         popular: true
       - country_title: United States
         gov_fee: 200
         service_fee: 100
-        icon: https://dummyimage.com/50
+        icon: /upload/united-state-icon.svg
         popular: true
       - country_title: Austria
         gov_fee: 250
         service_fee: 100
-        icon: https://dummyimage.com/50
+        icon: /upload/austria-icon.svg
         popular: false
   - _bookshop_name: cta/search
     title: |

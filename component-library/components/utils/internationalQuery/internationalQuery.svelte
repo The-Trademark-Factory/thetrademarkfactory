@@ -47,19 +47,19 @@
 			</div>
 			<div class="pt-8">
 				<p class="pb-4 text-xl font-bold text-ttmfBlack/50">Popular Countries</p>
-				<div class="grid lg:grid-cols-2 gap-4">
+				<div class="grid lg:grid-cols-2 gap-5">
 					{#each countries as el}
 						{#if el.popular}
 							<button
 								on:click={() => toggleCountry(el.country_title, el.gov_fee, el.service_fee)}
-								class=" rounded-lg p-6 flex justify-between items-center {selectedCountries[
+								class=" rounded-lg p-6 flex justify-between items-center transition-all border-2 border-transparent hover:border-ttmfRed {selectedCountries[
 									el.country_title
 								]
 									? 'bg-ttmfBeige'
 									: 'bg-white shadow-pricingShadow'}">
 								<div class="flex items-center gap-4">
 									<img src={el.icon} alt="" />
-									<div>
+									<div class="text-left">
 										<p class="text-lg font-bold">{el.country_title}</p>
 										<p class="font-bold text-ttmfRed">AU${el.gov_fee + el.service_fee}</p>
 									</div>
@@ -79,19 +79,19 @@
 			</div>
 			<div class="pt-12">
 				<p class="pb-4 text-xl font-bold text-ttmfBlack/50">All Countries</p>
-				<div class="grid lg:grid-cols-2 gap-4">
+				<div class="grid lg:grid-cols-2 gap-5">
 					{#each countries as el}
 						{#if !el.popular}
 							<button
 								on:click={() => toggleCountry(el.country_title, el.gov_fee, el.service_fee)}
-								class=" rounded-lg p-6 flex justify-between items-center {selectedCountries[
+								class=" rounded-lg p-6 flex justify-between items-center border-2 border-transparent hover:border-ttmfRed {selectedCountries[
 									el.country_title
 								]
 									? 'bg-ttmfBeige'
 									: 'bg-white shadow-pricingShadow'}">
 								<div class="flex items-center gap-4">
 									<img src={el.icon} alt="" />
-									<div>
+									<div class="text-left">
 										<p class="text-lg font-bold">{el.country_title}</p>
 										<p class="font-bold text-ttmfRed">AU${el.gov_fee + el.service_fee}</p>
 									</div>
