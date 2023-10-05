@@ -14,7 +14,10 @@ content_blocks:
       image: /upload/pricing_failsafe.svg
   - _bookshop_name: utils/internationalQuery
     title_section: <p><em>International</em> Trademark Pricing</p>
-    description: Select countries to calculate the final price.
+    description: >-
+      <p>Select countries to calculate a price estimation and enquire. To
+      register an Australian trademark, you can use our <a href="/">self-service
+      system here</a>.</p>
     countries:
       - title: Australia
         gov_fee: 100
