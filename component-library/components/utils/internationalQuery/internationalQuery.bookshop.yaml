@@ -24,11 +24,3 @@ _inputs:
     type: html
   icon:
     type: image
-  countries:
-    type: object
-    options:
-      preview:
-        text:
-          - key: country_title
-        image:
-          - key: icon
