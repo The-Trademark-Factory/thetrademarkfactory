@@ -69,7 +69,7 @@
 					<input
 						type="text"
 						bind:value={searchQuery}
-						placeholder="Filter by title..."
+						placeholder="Filter by country name"
 						class="py-3 lg:py-4 pl-12 rounded-md w-full max-md:w-full border-2 focus:border-ttmfRed outline-none" />
 					<div class="absolute left-4 top-1/2 transform -translate-y-1/2 text-ttmfRed">
 						<Search />
