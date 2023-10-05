@@ -13,7 +13,7 @@ content_blocks:
       svg:
       image: /upload/pricing_failsafe.svg
   - _bookshop_name: utils/pricing
-    title:
+    title: Testing
   - _bookshop_name: utils/internationalQuery
     title_section: <p><em>International</em> Trademark Pricing</p>
     description: Select countries to calculate the final price.
