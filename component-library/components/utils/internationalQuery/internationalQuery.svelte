@@ -1,5 +1,6 @@
 <script>
 	import { ChevronDown, Check } from 'lucide-svelte';
+	import { onMount } from 'svelte';
 	import { fly } from 'svelte/transition';
 
 	export let title_section, description, countries;
@@ -7,8 +8,20 @@
 	let activeDetails;
 	let total = 0;
 	let selectedCountries = {};
+	let enquiryForm;
+	let showShortcut = true;
 
-	$: console.log(selectedCountries);
+	onMount(() => {
+		const checkVisibility = () => {
+			const rect = enquiryForm.getBoundingClientRect();
+			showShortcut = !(rect.top < window.innerHeight && rect.bottom > 0);
+		};
+
+		window.addEventListener('scroll', checkVisibility);
+		return () => {
+			window.removeEventListener('scroll', checkVisibility);
+		};
+	});
 
 	function toggleDetails(country) {
 		if (activeDetails === country) {
@@ -33,8 +46,8 @@
 	);
 </script>
 
-<section id="international-pricing" class="relative max-w-screen-xl mx-auto py-16 max-2xl:px-6">
-	<div class="grid lg:grid-cols-3 gap-12">
+<section id="international-pricing" class="relative max-w-screen-xl mx-auto py-16">
+	<div class="grid lg:grid-cols-3 gap-12 max-2xl:px-6">
 		<div class="lg:col-span-2">
 			<div class="border-b-2 pb-8">
 				{#if title_section}
@@ -120,9 +133,12 @@
 			</div>
 		</div>
 		<div>
-			<div class="sticky top-32 bg-ttmfBeige rounded-xl px-5 py-6">
+			<div
+				id="enquiryForm"
+				bind:this={enquiryForm}
+				class="sticky top-32 bg-ttmfBeige rounded-xl px-5 py-6">
 				{#if total === 0}
-					<div class="min-h-[600px]">
+					<div class="lg:min-h-[600px]">
 						<p class="text-xl font-bold">Your Enquiry</p>
 						<p class=" font-bold text-ttmfCreme/60 pt-4">
 							Select one or multiple countries to enquiry
@@ -184,4 +200,9 @@
 			</div>
 		</div>
 	</div>
+	{#if showShortcut && total !== 0}
+		<div id="enquiryShortcut" class="sticky bottom-0 w-full bg-ttmfRed py-4 px-6 text-center">
+			<a href="#enquiryForm" class="font-bold text-white">View Enquiry form</a>
+		</div>
+	{/if}
 </section>
