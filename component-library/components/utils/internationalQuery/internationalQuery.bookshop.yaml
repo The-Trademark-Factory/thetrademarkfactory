@@ -25,7 +25,7 @@ _inputs:
   icon:
     type: image
   countries:
-    type: array
+    type: object
     options:
       preview:
         text:
