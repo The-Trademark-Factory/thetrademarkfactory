@@ -15,8 +15,7 @@ content_blocks:
   - _bookshop_name: utils/pricing
     title:
   - _bookshop_name: utils/internationalQuery
-    title: |
-      <em>International</em> Trademark Pricing
+    title: <p><em>International</em> Trademark Pricing</p>
     description: Select countries to calculate the final price.
     countries:
       - country_title: Australia
@@ -33,6 +32,30 @@ content_blocks:
         gov_fee: 250
         service_fee: 100
         icon: /upload/austria-icon.svg
+        popular: false
+      - country_title: New Zealand
+        price: 100
+        icon: /upload/new-zealand-icon.svg
+        popular: true
+      - country_title: United Kingdom
+        price: 100
+        icon: /upload/united-kingdom-icon.svg
+        popular: true
+      - country_title: European Union
+        price: 100
+        icon: /upload/eu-icon.svg
+        popular: true
+      - country_title: China
+        price: 100
+        icon: /upload/china-icon.svg
+        popular: true
+      - country_title: Brasil
+        price: 100
+        icon: /upload/brasil-icon.svg
+        popular: false
+      - country_title: Canada
+        price: 100
+        icon: /upload/canada-icon.svg
         popular: false
   - _bookshop_name: cta/search
     title: |
