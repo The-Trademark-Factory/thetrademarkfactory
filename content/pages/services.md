@@ -7,8 +7,8 @@ seo:
   no_index: false
 content_blocks:
   - _bookshop_name: headers/heroDefault
-    title: About
-    subtitle: Who we are
+    title: Services
+    subtitle: Trademark registration services
     background:
       svg:
       image: /upload/img-hero-services.svg
@@ -92,17 +92,11 @@ content_blocks:
       align_center: false
   - _bookshop_name: cta/ctaDefault
     title: |
-      Lorem ipsum <em>dolor sit</em> amet
+      Trademark <em>Portfolio</em> Management
     content: >
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat.</p> <p>Duis aute irure dolor in reprehenderit
-      <strong>in voluptate velit esse</strong> cillum dolore eu fugiat nulla
-      pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-      qui officia deserunt mollit anim id est laborum.</p>
+      <p>Do you have an existing trademark portfolio? Are you concerned that you may miss deadlines and risk losing your rights? If so, The TradeMark Factory can manage your trademark portfolio for Australian and international trademarks. Let us take care of your trademark portfolio so you will never miss a deadline.</p>
     button:
-      title: Lorem ipsum
+      title: Get Started
       url: '#'
   - _bookshop_name: cards/twoCols
     title: <p>IP <em>Healthcheck</em></p>

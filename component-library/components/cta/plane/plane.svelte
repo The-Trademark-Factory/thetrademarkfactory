@@ -5,7 +5,7 @@
 	export let title, description, button;
 </script>
 
-<section class="relative py-20 max-2xl:px-6 max-w-8xl mx-auto overflow-hidden">
+<section class="relative py-10 lg:py-20 max-2xl:px-6 max-w-8xl mx-auto overflow-hidden">
 	<div
 		class="max-w-screen-xl mx-auto grid lg:grid-cols-3 bg-ttmfRed rounded-3xl px-8 md:px-16 pt-16 md:pt-24">
 		<div class="relative z-10 lg:col-span-2">

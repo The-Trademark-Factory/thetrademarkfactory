@@ -14,15 +14,15 @@
 			<button
 				in:fly={{ x: 20 }}
 				on:click={() => (activeTab = nav.id)}
-				class="flex lg:flex-col justify-center lg:justify-between max-lg:gap-6 w-full items-center px-2 lg:w-24 {nav.id ===
+				class="flex lg:flex-col justify-center lg:justify-between max-lg:gap-6 w-full items-center px-4 lg:w-24 {nav.id ===
 				'australiaPricing'
 					? 'max-lg:border-b-2 lg:border-r-2 border-ttmfBrown'
 					: nav.id === 'nzPricing'
 					? 'bg-ttmfBrown'
 					: 'bg-ttmfRed/70'}">
+				<p class="lg:hidden text-lg font-bold max-md:text-left">{nav.tab.title}</p>
 				<img src={nav.tab.image} alt={nav.tab} class="shrink-0 w-5 pt-7 max-lg:hidden" />
 				<img src={nav.image} alt={nav.tab} class="shrink-0 py-6" />
-				<p class="lg:hidden text-lg font-bold">{nav.tab.title}</p>
 			</button>
 		{/if}
 	{/each}
@@ -35,7 +35,7 @@
 						{el.price}
 					</p>
 				</div>
-				<div class="grid lg:grid-cols-2 gap-12 pt-16">
+				<div class="grid lg:grid-cols-2 gap-12 pt-12 lg:pt-16">
 					<div class="flex flex-col gap-7">
 						{#each el.information as info}
 							<div class="flex gap-6">
@@ -47,11 +47,11 @@
 								</p>
 							</div>
 						{/each}
-						<div class="pt-12">
+						<div class="pt-2 md:pt-12">
 							<Button title="Apply Now" url="https://www.ttmf-mortgages.com/apply-now" />
 						</div>
 					</div>
-					<div class="bg-ttmfBg rounded-2xl py-8 px-10">
+					<div class="bg-ttmfBg rounded-2xl py-8 px-6 lg:px-10">
 						<span
 							class="uppercase text-ttmfRed text-sm font-bold bg-ttmfCreme/10 rounded-full py-2 px-3">
 							Includes
@@ -59,7 +59,7 @@
 						<div class="flex flex-col gap-8 pt-10 pb-4">
 							{#each el.includes as el}
 								<div class="flex items-center gap-8">
-									<img src={el.image} alt="" class="w-14 shrink-0" />
+									<img src={el.image} alt="" class="w-10 lg:w-14 shrink-0" />
 									<p class="text-ttmfDarkGreen">{el.text}</p>
 								</div>
 							{/each}
@@ -75,13 +75,13 @@
 			<button
 				in:fly={{ x: -20 }}
 				on:click={() => (activeTab = nav.id)}
-				class="flex lg:flex-col justify-center lg:justify-between max-lg:gap-6 w-full items-center px-2 lg:w-24 {nav.id ===
+				class="flex lg:flex-col justify-center lg:justify-between max-lg:gap-6 w-full items-center px-4 md:px-2 lg:w-24 {nav.id ===
 				'nzPricing'
 					? 'bg-ttmfBrown'
 					: 'bg-ttmfRed/70 max-lg:rounded-b-3xl lg:rounded-r-3xl'}">
+				<p class="lg:hidden md:text-lg font-bold max-md:text-left">{nav.tab.title}</p>
 				<img src={nav.tab.image} alt={nav.tab} class="shrink-0 w-5 pt-7 max-lg:hidden" />
 				<img src={nav.image} alt={nav.tab} class="shrink-0 py-6" />
-				<p class="lg:hidden text-lg font-bold">{nav.tab.title}</p>
 			</button>
 		{/if}
 	{/each}

@@ -13,8 +13,8 @@
 		{#each data.articles as el}
 			<a
 				href="/resources/{el.slug}"
-				class="flex items-center gap-6 justify-between py-14 px-6 group transition-all hover:bg-white hover:shadow-pricingShadow rounded-lg">
-				<div class=" {el.data.image ? 'flex items-center gap-20' : ''}">
+				class="flex max-lg:flex-wrap items-center gap-6 justify-between py-14 px-6 group transition-all hover:bg-white hover:shadow-pricingShadow rounded-lg">
+				<div class=" {el.data.image ? 'flex max-lg:flex-wrap items-center gap-6 lg:gap-20' : ''}">
 					{#if el.data.image}
 						<img
 							src={el.data.image}
@@ -23,10 +23,10 @@
 					{/if}
 					<h2 class="text-xl font-bold">{el.data.title}</h2>
 				</div>
-				<div class="flex items-center gap-20">
+				<div class="flex max-lg:flex-wrap items-center gap-6 lg:gap-20">
 					<p class="w-80">{@html el.content_html.slice(0, 100) + '...'}</p>
 					<span
-						class="shrink-0 w-24 h-24 rounded-full ring-2 ring-black flex items-center justify-center text-sm font-bold transition-all group-hover:bg-ttmfRed group-hover:text-white group-hover:ring-0"
+						class="max-md:hidden shrink-0 w-24 h-24 rounded-full ring-2 ring-black flex items-center justify-center text-sm font-bold transition-all group-hover:bg-ttmfRed group-hover:text-white group-hover:ring-0"
 						>Read More</span>
 				</div>
 			</a>

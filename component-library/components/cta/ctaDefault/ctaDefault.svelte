@@ -4,7 +4,7 @@
 </script>
 
 <section class="max-w-screen-xl mx-auto py-14 max-2xl:px-6">
-	<div class="bg-ttmfBeige px-14 py-24 rounded-lg">
+	<div class="bg-ttmfBeige px-8 lg:px-14 py-14 lg:py-24 rounded-lg">
 		<div class="text-center">
 			{#if title}
 				<h2 class="styleTitle">

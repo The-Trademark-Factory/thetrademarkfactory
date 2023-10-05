@@ -44,7 +44,7 @@
 }
 
 .styleTitle {
-	@apply text-5xl text-ttmfBlack font-bold prose prose-em:not-italic prose-em:font-arkina prose-em:text-ttmfRed prose-em:font-normal prose-em:text-6xl prose-p:my-0;
+	@apply text-4xl lg:text-5xl text-ttmfBlack font-bold prose prose-em:not-italic prose-em:font-arkina prose-em:text-ttmfRed prose-em:font-normal prose-em:text-6xl prose-p:my-0;
 }
 
 .prose {

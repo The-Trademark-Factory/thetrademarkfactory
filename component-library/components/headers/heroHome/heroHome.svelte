@@ -27,13 +27,13 @@
 
 <section class="bg-ttmfDarkGreen text-white pt-20">
 	<div class="relative overflow-hidden">
-		<div class="absolute top-28 lg:top-20 xl:top-16 left-4 xl:left-headerOverflow w-full">
+		<div class="absolute top-28 md:top-16 lg:top-20 xl:top-16 left-4 xl:left-headerOverflow w-full">
 			<AnimatedSvg name="trademarkAnimated" />
 		</div>
 		<div class="relative z-10 max-w-screen-xl mx-auto py-28 px-6">
-			<h1 class="text-6xl lg:text-8xl xl:text-9xl flex flex-col">
+			<h1 class="text-5xl md:text-7xl lg:text-8xl xl:text-9xl flex flex-col">
 				<span class="font-bold">{title.title_above}</span><span class="sr-only">trademark</span
-				><span class="font-bold pt-12 lg:pt-28 xl:pt-36">{title.title_below}</span>
+				><span class="font-bold pt-16 md:pt-20 lg:pt-28 xl:pt-36">{title.title_below}</span>
 			</h1>
 
 			<div class="relative z-10 pt-14">

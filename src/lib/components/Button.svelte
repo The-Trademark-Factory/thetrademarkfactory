@@ -5,5 +5,8 @@
 {#if style === 'white'}
 	<a href={url} class="bg-white text-ttmfBlack font-bold px-12 py-5 rounded">{title}</a>
 {:else}
-	<a href={url} class="bg-ttmfRed text-white font-bold px-12 py-5 rounded">{title}</a>
+	<a
+		href={url}
+		class="bg-ttmfRed text-white font-bold px-12 py-5 rounded justify-center max-md:flex max-md:w-full"
+		>{title}</a>
 {/if}

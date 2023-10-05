@@ -29,9 +29,11 @@
 						on:click={() => {
 							active = el.name;
 						}}
-						class="py-6 px-6 lg:px-16 flex justify-between items-center w-full">
-						<h3 class="text-xl font-bold">{el.name}</h3>
-						<p class="font-bold text-ttmfRed">{el.position}</p>
+						class="py-6 px-6 lg:px-16 flex max-md:flex-col md:justify-between md:items-center w-full">
+						<h3 class="text-lg md:text-xl font-bold">{el.name}</h3>
+						<p class="font-bold text-ttmfRed max-md:text-sm max-md:text-left max-md:pt-1">
+							{el.position}
+						</p>
 					</button>
 				</div>
 			{/if}

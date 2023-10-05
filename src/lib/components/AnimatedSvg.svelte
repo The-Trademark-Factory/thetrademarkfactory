@@ -5,7 +5,7 @@
 {#if name === 'trademarkAnimated'}
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
-		class="md:w-[1100px] xl:w-[1450px]"
+		class="w-[450px] md:w-[900px] lg:w-[1100px] xl:w-[1450px]"
 		viewBox="0 0 1461 662"
 		fill="none">
 		<path

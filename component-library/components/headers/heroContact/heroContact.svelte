@@ -6,7 +6,7 @@
 
 <section
 	class="relative bg-gradient-to-b from-ttmfDarkGreen from-20% to-20% lg:from-45% lg:to-45% to-white">
-	<div class="relative z-10 max-w-screen-xl mx-auto pt-44 md:pt-52 pb-28 px-6">
+	<div class="relative z-10 max-w-screen-xl mx-auto pt-44 md:pt-52 pb-20 lg:pb-28 px-6">
 		<div class="grid lg:grid-cols-2 gap-10 md:gap-24">
 			<div>
 				<div class="relative pb-20 md:pb-36">

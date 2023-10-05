@@ -4,9 +4,9 @@
 </script>
 
 <section>
-	<div class="max-w-screen-xl mx-auto py-16 max-2xl:px-6">
-		<div class="grid lg:grid-cols-2 gap-24 {media.align_center ? 'items-center' : ''}">
-			<div class={media.image_right ? 'order-last' : ''}>
+	<div class="max-w-screen-xl mx-auto py-8 lg:py-16 max-2xl:px-6">
+		<div class="grid lg:grid-cols-2 gap-10 lg:gap-24 {media.align_center ? 'items-center' : ''}">
+			<div class="max-lg:order-last {media.image_right ? 'lg:order-last' : ''}">
 				{#if media.content}
 					<div class="text-lg prose pb-10">
 						{@html media.content}

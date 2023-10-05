@@ -10,7 +10,7 @@
 	}
 </script>
 
-<section class="max-w-screen-xl mx-auto grid lg:grid-cols-4 py-16 max-2xl:px-6">
+<section class="max-w-screen-xl mx-auto grid lg:grid-cols-4 py-10 lg:py-16 max-2xl:px-6">
 	<div class="lg:border-r lg:pr-12 max-sm:flex max-sm:items-end">
 		<div>
 			<Svg name="quote" />

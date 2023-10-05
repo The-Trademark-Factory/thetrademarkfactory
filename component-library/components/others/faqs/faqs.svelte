@@ -11,7 +11,7 @@
 	};
 </script>
 
-<section class="py-16">
+<section class="py-10 lg:py-16">
 	<div class="max-w-screen-xl mx-auto bg-ttmfBrown/30 rounded-2xl">
 		<div class="grid lg:grid-cols-4 px-6 lg:px-16">
 			<div class="lg:pb-24">

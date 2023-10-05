@@ -5,7 +5,7 @@
 </script>
 
 <section>
-	<div class="max-w-screen-xl mx-auto py-24">
+	<div class="max-w-screen-xl mx-auto py-16 lg:py-24">
 		<SearchWord />
 	</div>
 </section>

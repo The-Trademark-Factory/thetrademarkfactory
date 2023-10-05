@@ -1,14 +1,18 @@
 <script>
 	import { beforeNavigate, afterNavigate } from '$app/navigation';
 	import '../app.css';
+	import Loader from '$lib/components/Loader.svelte';
 	import { fade } from 'svelte/transition';
 	import Footer from '../lib/components/Footer.svelte';
 	import Navigation from '../lib/components/Navigation.svelte';
 
-	export let data;
 	let isLoading = false;
+	let destination;
+	let searchTerm;
 
-	beforeNavigate(() => {
+	beforeNavigate(({ to }) => {
+		destination = to.route.id;
+		searchTerm = to.url.search.split('=')[1];
 		isLoading = true;
 	});
 
@@ -18,9 +22,10 @@
 </script>
 
 <Navigation />
-{#key data.url}
-	<div in:fade={{ duration: 400 }} class="bg-ttmfBg">
-		<slot />
-	</div>
-{/key}
+{#if isLoading}
+	<Loader {destination} {searchTerm} />
+{/if}
+<div in:fade={{ duration: 400 }} class="bg-ttmfBg">
+	<slot />
+</div>
 <Footer />

@@ -42,9 +42,9 @@
 				</div>
 			</div>
 		</div>
-		<div class="flex flex-wrap justify-between items-center">
+		<div class="flex flex-wrap justify-between items-center max-md:flex-col">
 			<div>
-				<div class="flex gap-4">
+				<div class="flex max-lg:flex-wrap gap-4">
 					{#each footer.links as el}
 						<a href={el.url}>{el.title}</a>
 					{/each}
@@ -56,7 +56,7 @@
 					{/if}
 				</div>
 			</div>
-			<div class="max-md:pb-12 max-md:pt-3 max-md:order-first">
+			<div class="max-md:pb-12 max-md:pt-3 max-md:order-first max-md:w-full">
 				<Button title={footer.button.title} url={footer.button.url} />
 			</div>
 		</div>
