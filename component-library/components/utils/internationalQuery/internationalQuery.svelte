@@ -2,7 +2,7 @@
 	import { ChevronDown, Check } from 'lucide-svelte';
 	import { fly } from 'svelte/transition';
 
-	export let title, description, countries;
+	export let title_section, description, countries;
 
 	let activeDetails;
 	let total = 0;
@@ -36,9 +36,9 @@
 	<div class="grid lg:grid-cols-3 gap-12">
 		<div class="lg:col-span-2">
 			<div class="border-b-2 pb-8">
-				{#if title}
+				{#if title_section}
 					<h2 class="styleTitle">
-						{@html title}
+						{@html title_section}
 					</h2>
 				{/if}
 				{#if description}
@@ -51,22 +51,22 @@
 					{#each countries as el}
 						{#if el.popular}
 							<button
-								on:click={() => toggleCountry(el.country_title, el.gov_fee, el.service_fee)}
+								on:click={() => toggleCountry(el.title, el.gov_fee, el.service_fee)}
 								class=" rounded-lg p-6 flex justify-between items-center transition-all border-2 border-transparent hover:border-ttmfRed {selectedCountries[
-									el.country_title
+									el.title
 								]
 									? 'bg-ttmfBeige'
 									: 'bg-white shadow-pricingShadow'}">
 								<div class="flex items-center gap-4">
 									<img src={el.icon} alt="" />
 									<div class="text-left">
-										<p class="text-lg font-bold">{el.country_title}</p>
+										<p class="text-lg font-bold">{el.title}</p>
 										<p class="font-bold text-ttmfRed">AU${el.gov_fee + el.service_fee}</p>
 									</div>
 								</div>
 								<div
 									class="w-6 h-6 bg-ttmfBg rounded-full flex items-center justify-center text-ttmfBg border-2 {selectedCountries[
-										el.country_title
+										el.title
 									]
 										? 'bg-ttmfRed border-ttmfRed'
 										: 'border-ttmfBrown/30'}">
@@ -83,22 +83,22 @@
 					{#each countries as el}
 						{#if !el.popular}
 							<button
-								on:click={() => toggleCountry(el.country_title, el.gov_fee, el.service_fee)}
+								on:click={() => toggleCountry(el.title, el.gov_fee, el.service_fee)}
 								class=" rounded-lg p-6 flex justify-between items-center border-2 border-transparent hover:border-ttmfRed {selectedCountries[
-									el.country_title
+									el.title
 								]
 									? 'bg-ttmfBeige'
 									: 'bg-white shadow-pricingShadow'}">
 								<div class="flex items-center gap-4">
 									<img src={el.icon} alt="" />
 									<div class="text-left">
-										<p class="text-lg font-bold">{el.country_title}</p>
+										<p class="text-lg font-bold">{el.title}</p>
 										<p class="font-bold text-ttmfRed">AU${el.gov_fee + el.service_fee}</p>
 									</div>
 								</div>
 								<div
 									class="w-6 h-6 bg-ttmfBg rounded-full flex items-center justify-center text-ttmfBg border-2 {selectedCountries[
-										el.country_title
+										el.title
 									]
 										? 'bg-ttmfRed border-ttmfRed'
 										: 'border-ttmfBrown/30'}">
