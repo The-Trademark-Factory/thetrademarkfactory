@@ -1,5 +1,5 @@
 <script>
-	import { ChevronDown, Check } from 'lucide-svelte';
+	import { ChevronDown, Check, Search, XCircle } from 'lucide-svelte';
 	import { onMount } from 'svelte';
 	import { fly } from 'svelte/transition';
 
@@ -9,18 +9,21 @@
 	let total = 0;
 	let selectedCountries = {};
 	let enquiryForm;
+	let searchQuery = '';
 	let showShortcut = true;
 
 	onMount(() => {
-		const checkVisibility = () => {
-			const rect = enquiryForm.getBoundingClientRect();
-			showShortcut = !(rect.top < window.innerHeight && rect.bottom > 0);
-		};
+		if (window.innerWidth <= 768) {
+			const checkVisibility = () => {
+				const rect = enquiryForm.getBoundingClientRect();
+				showShortcut = !(rect.top < window.innerHeight && rect.bottom > 0);
+			};
 
-		window.addEventListener('scroll', checkVisibility);
-		return () => {
-			window.removeEventListener('scroll', checkVisibility);
-		};
+			window.addEventListener('scroll', checkVisibility);
+			return () => {
+				window.removeEventListener('scroll', checkVisibility);
+			};
+		}
 	});
 
 	function toggleDetails(country) {
@@ -40,6 +43,10 @@
 		selectedCountries = { ...selectedCountries };
 	}
 
+	$: filteredCountries = searchQuery
+		? countries.filter((country) => country.title.toLowerCase().includes(searchQuery.toLowerCase()))
+		: countries;
+
 	$: total = Object.values(selectedCountries).reduce(
 		(acc, { gov, service }) => acc + gov + service,
 		0
@@ -58,11 +65,32 @@
 				{#if description}
 					<p class="text-xl pt-6 prose">{@html description}</p>
 				{/if}
+				<div class="relative mt-6">
+					<input
+						type="text"
+						bind:value={searchQuery}
+						placeholder="Filter by title..."
+						class="py-3 lg:py-4 pl-12 rounded-md w-full max-md:w-full border-2 focus:border-ttmfRed outline-none" />
+					<div class="absolute left-4 top-1/2 transform -translate-y-1/2 text-ttmfRed">
+						<Search />
+					</div>
+					{#if searchQuery}
+						<div class="absolute right-4 top-1/2 transform -translate-y-1/2 text-ttmfBlack">
+							<button
+								on:click={() => {
+									searchQuery = '';
+								}}
+								class="flex flex-col items-center justify-center">
+								<XCircle />
+							</button>
+						</div>
+					{/if}
+				</div>
 			</div>
 			<div class="pt-8">
 				<p class="pb-4 text-xl font-bold text-ttmfBlack/50">Popular Countries</p>
 				<div class="grid lg:grid-cols-2 gap-5">
-					{#each countries as el}
+					{#each filteredCountries as el}
 						{#if el.popular}
 							<button
 								on:click={() => toggleCountry(el.title, el.gov_fee, el.service_fee)}
@@ -102,7 +130,7 @@
 			<div class="pt-12">
 				<p class="pb-4 text-xl font-bold text-ttmfBlack/50">All Countries</p>
 				<div class="grid lg:grid-cols-2 gap-5">
-					{#each countries as el}
+					{#each filteredCountries as el}
 						{#if !el.popular}
 							<button
 								on:click={() => toggleCountry(el.title, el.gov_fee, el.service_fee)}
@@ -201,7 +229,9 @@
 		</div>
 	</div>
 	{#if showShortcut && total !== 0}
-		<div id="enquiryShortcut" class="sticky bottom-0 w-full bg-ttmfRed py-4 px-6 text-center">
+		<div
+			id="enquiryShortcut"
+			class="lg:hidden sticky bottom-0 w-full bg-ttmfRed py-4 px-6 text-center">
 			<a href="#enquiryForm" class="font-bold text-white">View Enquiry form</a>
 		</div>
 	{/if}
