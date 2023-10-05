@@ -9,7 +9,7 @@
 			"id": "australiaPricing",
 			"image": "/upload/ic-aus.svg",
 			"price": "A$240 + Govt. fees",
-			"applyable": true,
+			"button": { "title": "Apply Now", "url": "/" },
 			"includes": [
 				{
 					"image": "/upload/ic-lawyer.svg",
@@ -51,7 +51,7 @@
 			"id": "nzPricing",
 			"image": "/upload/ic-nz.svg",
 			"price": "A$240 + Govt. fees",
-			"applyable": false,
+			"button": { "title": "Pricing & Enquiry", "url": "/pricing/#international-pricing" },
 			"includes": [
 				{
 					"image": "/upload/ic-lawyer.svg",
@@ -93,7 +93,7 @@
 			"id": "intPricing",
 			"image": "/upload/ic-globe.svg",
 			"price": "A$240 + Govt. fees",
-			"applyable": false,
+			"button": { "title": "Pricing & Enquiry", "url": "/pricing/#international-pricing" },
 			"includes": [
 				{
 					"image": "/upload/ic-lawyer.svg",

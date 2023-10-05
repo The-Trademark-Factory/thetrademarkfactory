@@ -8,7 +8,6 @@
 </script>
 
 <div class="flex max-lg:flex-wrap h-full bg-white rounded-3xl shadow-pricingShadow">
-	<!-- Left Nav -->
 	{#each pricing_module as nav, index}
 		{#if index <= pricing_module.findIndex((el) => el.id === activeTab)}
 			<button
@@ -38,7 +37,6 @@
 				<div class="flex max-lg:flex-wrap items-center justify-between gap-6 lg:gap-24">
 					<h3 class="text-3xl font-bold {el.id === 'intPricing' ? 'text-white' : 'text-ttmfBlack'}">
 						{el.title}
-						{el.id}
 					</h3>
 					<p class="bg-ttmfRed py-2 px-4 font-bold text-white text-lg rounded-full shrink-0">
 						{el.price}
@@ -62,7 +60,7 @@
 							</div>
 						{/each}
 						<div class="pt-2 md:pt-12">
-							<Button title="Apply Now" url="https://www.ttmf-mortgages.com/apply-now" />
+							<Button title={el.button.title} url={el.button.url} />
 						</div>
 					</div>
 					<div class="bg-ttmfBg rounded-2xl py-8 px-6 lg:px-10">

@@ -8,6 +8,8 @@
 	let total = 0;
 	let selectedCountries = {};
 
+	$: console.log(selectedCountries);
+
 	function toggleDetails(country) {
 		if (activeDetails === country) {
 			activeDetails = null;
@@ -23,7 +25,6 @@
 			selectedCountries[country] = { gov, service };
 		}
 		selectedCountries = { ...selectedCountries };
-		console.log(selectedCountries);
 	}
 
 	$: total = Object.values(selectedCountries).reduce(
@@ -32,7 +33,7 @@
 	);
 </script>
 
-<section class="max-w-screen-xl mx-auto py-16 max-2xl:px-6">
+<section id="international-pricing" class="relative max-w-screen-xl mx-auto py-16 max-2xl:px-6">
 	<div class="grid lg:grid-cols-3 gap-12">
 		<div class="lg:col-span-2">
 			<div class="border-b-2 pb-8">
@@ -42,7 +43,7 @@
 					</h2>
 				{/if}
 				{#if description}
-					<p class="text-xl pt-6">{@html description}</p>
+					<p class="text-xl pt-6 prose">{@html description}</p>
 				{/if}
 			</div>
 			<div class="pt-8">
@@ -118,45 +119,69 @@
 				</div>
 			</div>
 		</div>
-		<div class="bg-ttmfBeige rounded-xl px-5 py-6">
-			<p class="text-xl font-bold">Your Enquiry</p>
-			<div class="pt-5 space-y-2">
-				{#each Object.keys(selectedCountries) as country}
-					<div class="bg-white rounded-lg p-5 shadow-pricingShadow">
-						<button
-							on:click={() => {
-								toggleDetails(country);
-							}}
-							class="flex gap-2 justify-between w-full">
-							<p class="text-lg font-bold">{country}</p>
-							<div class="flex items-center gap-2 text-ttmfRed">
-								<p class="font-bold">
-									AU${selectedCountries[country].gov + selectedCountries[country].service}
-								</p>
-								<ChevronDown size="20" />
-							</div>
-						</button>
-						{#if activeDetails === country}
-							<div in:fly={{ y: -20 }} class="text-ttmfBlack/50 font-bold border-t pt-5 mt-5">
-								<div class="flex justify-between items-center">
-									<p>Government Fee</p>
-									<p>AU${selectedCountries[country].gov}</p>
+		<div>
+			<div class="sticky top-32 bg-ttmfBeige rounded-xl px-5 py-6">
+				{#if total === 0}
+					<div class="min-h-[600px]">
+						<p class="text-xl font-bold">Your Enquiry</p>
+						<p class=" font-bold text-ttmfCreme/60 pt-4">
+							Select one or multiple countries to enquiry
+						</p>
+						<div
+							class="border border-ttmfCreme/30 shadow rounded-md p-4 max-w-sm w-full mx-auto mt-2">
+							<div class="animate-pulse flex justify-between items-center">
+								<div class="flex items-center gap-2">
+									<div class="rounded-lg bg-ttmfCreme/50 h-10 w-10" />
+									<div class="space-y-2">
+										<div class="h-2 bg-ttmfCreme/50 rounded w-28" />
+										<div class="h-2 bg-ttmfCreme/50 rounded w-20" />
+									</div>
 								</div>
-								<div class="flex justify-between items-center pt-2">
-									<p>Service Fee</p>
-									<p>AU${selectedCountries[country].service}</p>
-								</div>
+								<div class="rounded-full bg-ttmfCreme/50 h-5 w-5" />
 							</div>
-						{/if}
+						</div>
 					</div>
-				{/each}
+				{:else}
+					<p class="text-xl font-bold">Your Enquiry</p>
+					<div class="pt-5 space-y-2">
+						{#each Object.keys(selectedCountries) as country}
+							<div class="bg-white rounded-lg p-5 shadow-pricingShadow">
+								<button
+									on:click={() => {
+										toggleDetails(country);
+									}}
+									class="flex gap-2 justify-between w-full">
+									<p class="text-lg font-bold">{country}</p>
+									<div class="flex items-center gap-2 text-ttmfRed">
+										<p class="font-bold">
+											AU${selectedCountries[country].gov + selectedCountries[country].service}
+										</p>
+										<ChevronDown size="20" />
+									</div>
+								</button>
+								{#if activeDetails === country}
+									<div in:fly={{ y: -20 }} class="text-ttmfBlack/50 font-bold border-t pt-5 mt-5">
+										<div class="flex justify-between items-center">
+											<p>Government Fee</p>
+											<p>AU${selectedCountries[country].gov}</p>
+										</div>
+										<div class="flex justify-between items-center pt-2">
+											<p>Service Fee</p>
+											<p>AU${selectedCountries[country].service}</p>
+										</div>
+									</div>
+								{/if}
+							</div>
+						{/each}
+					</div>
+					<div class="flex justify-between items-center text-lg font-bold pt-6">
+						<p>Estimated Total</p>
+						<p>AU${total}</p>
+					</div>
+					<button class="bg-ttmfRed text-white font-bold px-12 py-5 rounded w-full mt-6"
+						>Enquire</button>
+				{/if}
 			</div>
-			<div class="flex justify-between items-center text-lg font-bold pt-6">
-				<p>Estimated Total</p>
-				<p>AU${total}</p>
-			</div>
-			<button class="bg-ttmfRed text-white font-bold px-12 py-5 rounded w-full mt-6"
-				>Enquire</button>
 		</div>
 	</div>
 </section>
