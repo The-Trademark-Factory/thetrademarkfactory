@@ -28,9 +28,18 @@
 	{/each}
 	{#each pricing_module as el}
 		{#if el.id === activeTab}
-			<div in:fade={{ duration: 500 }} class="p-6 lg:p-16">
+			<div
+				in:fade={{ duration: 500 }}
+				class="p-6 lg:p-16 {el.id === 'nzPricing'
+					? 'bg-ttmfBrown'
+					: el.id === 'australiaPricing'
+					? 'bg-white'
+					: 'bg-ttmfRed/70 max-lg:rounded-b-3xl lg:rounded-r-3xl'}">
 				<div class="flex max-lg:flex-wrap items-center justify-between gap-6 lg:gap-24">
-					<h3 class="text-3xl font-bold text-ttmfBlack">{el.title}</h3>
+					<h3 class="text-3xl font-bold {el.id === 'intPricing' ? 'text-white' : 'text-ttmfBlack'}">
+						{el.title}
+						{el.id}
+					</h3>
 					<p class="bg-ttmfRed py-2 px-4 font-bold text-white text-lg rounded-full shrink-0">
 						{el.price}
 					</p>
@@ -40,9 +49,14 @@
 						{#each el.information as info}
 							<div class="flex gap-6">
 								<div class="shrink-0 pt-[2px]">
-									<Svg name="chevron-round" />
+									<Svg
+										name="chevron-round"
+										style={el.id === 'intPricing' ? 'text-white' : 'text-ttmfRed'} />
 								</div>
-								<p class="text-ttmfLightGreen prose prose-strong:text-ttmfLightGreen">
+								<p
+									class="prose {el.id === 'intPricing'
+										? 'text-white prose-strong:text-white'
+										: 'prose-strong:text-ttmfLightGreen text-ttmfLightGreen'}">
 									{@html info.info_content}
 								</p>
 							</div>

@@ -1,0 +1,25 @@
+spec:
+  structures:
+    - content_blocks
+  label: International Query
+  description:
+  icon: 'task'
+  tags: []
+
+blueprint:
+  title: |
+    <em>International</em> Trademark Pricing
+  description: Select countries to calculate the final price.
+  countries:
+    - country_title: Australia
+      price: 100
+      icon: https://dummyimage.com/50
+      popular: true
+
+preview:
+
+_inputs:
+  title:
+    type: html
+  icon:
+    type: image
