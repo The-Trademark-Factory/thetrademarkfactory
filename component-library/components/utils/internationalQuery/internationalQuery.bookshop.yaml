@@ -30,3 +30,5 @@ _inputs:
       preview:
         text:
           - key: country_title
+        image:
+          - key: icon
