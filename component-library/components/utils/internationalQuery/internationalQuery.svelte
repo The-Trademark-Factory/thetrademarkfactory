@@ -6,7 +6,7 @@
 
 	let activeDetails;
 	let total = 0;
-	let selectedCountries = { Australia: { gov: 100, service: 100 } };
+	let selectedCountries = {};
 
 	function toggleDetails(country) {
 		if (activeDetails === country) {
@@ -42,7 +42,7 @@
 					</h2>
 				{/if}
 				{#if description}
-					<p class="text-xl pt-6">{description}</p>
+					<p class="text-xl pt-6">{@html description}</p>
 				{/if}
 			</div>
 			<div class="pt-8">
@@ -52,7 +52,7 @@
 						{#if el.popular}
 							<button
 								on:click={() => toggleCountry(el.title, el.gov_fee, el.service_fee)}
-								class=" rounded-lg p-6 flex justify-between items-center transition-all border-2 border-transparent hover:border-ttmfRed {selectedCountries[
+								class="relative rounded-lg p-6 flex justify-between items-center transition-all border-2 border-transparent hover:border-ttmfRed {selectedCountries[
 									el.title
 								]
 									? 'bg-ttmfBeige'
@@ -72,6 +72,14 @@
 										: 'border-ttmfBrown/30'}">
 									<Check size="14" strokeWidth="3" />
 								</div>
+								{#if el.title === 'Australia'}
+									<div class="absolute right-0 -top-4 z-20">
+										<a
+											href="/"
+											class="py-2 px-6 bg-ttmfRed text-white text-xs font-bold rounded-full shadow-lg shadow-ttmfRed/40"
+											>SEARCH & REGISTER</a>
+									</div>
+								{/if}
 							</button>
 						{/if}
 					{/each}

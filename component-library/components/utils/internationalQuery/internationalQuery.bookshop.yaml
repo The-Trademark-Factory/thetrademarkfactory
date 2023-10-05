@@ -9,7 +9,8 @@ spec:
 blueprint:
   title_section: |
     <em>International</em> Trademark Pricing
-  description: Select countries to calculate the final price.
+  description: |
+    Select countries to calculate the final price.
   countries:
     - country_title: Australia
       gov_fee: 100
@@ -21,6 +22,8 @@ preview:
 
 _inputs:
   title_section:
+    type: html
+  description:
     type: html
   icon:
     type: image
