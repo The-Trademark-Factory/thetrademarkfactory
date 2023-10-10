@@ -1,0 +1,106 @@
+<script>
+	import { goto } from '$app/navigation';
+	import { searchTerm } from '$lib/utils/stores';
+	import { searchResults_page } from '../../../../data/global.json';
+	import Button from '$lib/components/Button.svelte';
+	export let word, searchResultsDetails;
+
+	let showAllClasses;
+	const sortedClasses = {};
+	let content = searchResults_page;
+
+	searchResultsDetails.forEach((item) => {
+		item.goodsAndServices.forEach((good) => {
+			if (!sortedClasses[good.class]) {
+				sortedClasses[good.class] = [];
+			}
+			sortedClasses[good.class].push(...good.descriptionText);
+		});
+	});
+
+	const resultClasses = {
+		sortedClasses: Object.keys(sortedClasses).map((key) => ({
+			class: key,
+			descriptionText: sortedClasses[key]
+		}))
+	};
+</script>
+
+<div class="bg-white shadow-pricingShadow rounded-lg p-12">
+	<div class="flex items-center gap-6 font-bold border-b pb-10 mb-10">
+		<p class="text-5xl">Trademark</p>
+		<p
+			class="rounded-full py-3 px-7 bg-ttmfRed/20 border-2 border-ttmfRed text-ttmfRed text-3xl capitalize">
+			{word}
+		</p>
+	</div>
+	<!-- if search results count -->
+	{#if searchResultsDetails.length > 0}
+		<div class="pb-8">
+			<p class="text-xl font-bold">
+				{content.wordDetails.title}
+			</p>
+			<p class="text-lg">{content.wordDetails.description}</p>
+		</div>
+		<div class="space-y-5">
+			{#each resultClasses.sortedClasses as el}
+				<div class="bg-ttmfBg border-2 border-ttmfBeige rounded-lg py-5 px-7">
+					<p class="text-ttmfRed text-lg font-bold">Class {el.class}</p>
+					<div class="flex flex-wrap items-center gap-2 pt-4">
+						{#if el.descriptionText.length > 8}
+							{#if showAllClasses === el.class}
+								{#each el.descriptionText as el}
+									<span class="bg-white rounded-full py-1 px-3">{el}</span>
+								{/each}
+							{:else}
+								{#each el.descriptionText.slice(0, 8) as el}
+									<span class="bg-white rounded-full py-1 px-3">{el}</span>
+								{/each}
+								<button
+									on:click={() => {
+										showAllClasses = el.class;
+									}}
+									class="bg-ttmfRed text-white rounded-full py-1 px-3">Show all classes</button>
+							{/if}
+						{:else}
+							{#each el.descriptionText as el}
+								<span class="bg-white rounded-full py-1 px-3">{el}</span>
+							{/each}
+						{/if}
+					</div>
+				</div>
+			{/each}
+		</div>
+		<div class="pt-11">
+			<p class="text-xl font-bold">
+				{content.wordDetails.process.title}
+			</p>
+			<div class="border-t pt-0 mt-10 grid lg:grid-cols-2 gap-x-12">
+				{#each content.wordDetails.process.features as el}
+					<div class="flex items-center gap-4 py-6 border-b">
+						<img src={el.image} alt="" />
+						<p>{el.description}</p>
+					</div>
+				{/each}
+			</div>
+			<div class="pt-20">
+				<div class="flex items-center gap-12">
+					<div>
+						<p class="font-bold">
+							<span class="text-2xl">AU</span><span class="text-5xl"
+								>{content.wordDetails.pricing.price}</span>
+						</p>
+						<p class="text-sm pt-2">{content.wordDetails.pricing.gov}</p>
+					</div>
+					<button
+						on:click={() => {
+							searchTerm.set(word);
+							goto('/application/classes');
+						}}
+						class="bg-ttmfRed text-white font-bold px-12 py-5 rounded justify-center max-md:flex max-md:w-full"
+						>Apply Now</button>
+				</div>
+			</div>
+		</div>
+	{/if}
+</div>
