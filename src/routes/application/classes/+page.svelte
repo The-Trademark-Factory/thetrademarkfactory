@@ -1,43 +1,90 @@
 <script>
-	import SearchClass from '$lib/components/SearchClass.svelte';
+	import { searchTerm, classes } from '$lib/utils/stores';
+	import { goto } from '$app/navigation';
+	import { enhance } from '$app/forms';
+	import { searchResults_page } from '../../../../data/global.json';
+	import ClassesResultsDetails from '$lib/components/application/classesResultsDetails.svelte';
+	import Sidebar from '$lib/components/application/sidebar.svelte';
+	import { Search, ChevronLeft } from 'lucide-svelte';
 
-	export let data;
-	$: console.log(data);
+	export let form;
+
+	let term;
+	let loading = false;
+
+	function startOver() {
+		searchTerm.set('');
+		classes.set([]);
+		goto('/application/search');
+	}
 </script>
 
-{#if data.searchResults.apiData}
-	<section class="bg-black">
-		<div class="max-w-screen-xl mx-auto text-white py-24">
-			<h1 class="text-6xl">Search for: {data.searchResults.searchTerm}</h1>
-		</div>
-	</section>
-{/if}
-<section class="max-w-screen-xl mx-auto">
-	<div class="pt-12">
-		<SearchClass />
-	</div>
-	{#if data.searchResults.apiData}
-		<div class="pt-12">
-			<p>
-				Classes found: {data.searchResults.apiData.count}
-			</p>
-		</div>
-		{#if data.searchResults.apiData.results}
-			<div class="pt-12 flex flex-col gap-12">
-				{#each data.searchResults.apiData.results as el}
-					<div class="bg-gray-100 p-12">
-						<p>ID: {el.id}</p>
-						<p>Class number: {el.gsClassNumber}</p>
-						<p>Description: {el.description}</p>
-						<p>Trademark Class: {el.tradeMarkClass.id}</p>
-						<p>Change Comment: {el.changeComment}</p>
-						<p>Created Date: {el.createdDate}</p>
+<section class="relative max-w-screen-xl mx-auto py-24">
+	<button
+		on:click={() => {
+			startOver();
+		}}
+		class="inline-flex gap-2 items-center font-bold"
+		><span
+			class="w-5 h-5 rounded-full flex flex-col justify-center items-center text-white bg-ttmfRed"
+			><ChevronLeft size="12" strokeWidth="3" /></span
+		>Start Over</button>
+	<div class="grid lg:grid-cols-3 gap-12 pt-11">
+		<div class="lg:col-span-2">
+			<p class="text-3xl font-bold">{searchResults_page.searchClasses.title}</p>
+			<div class="mt-4">
+				<form
+					action="?/search"
+					method="POST"
+					use:enhance={() => {
+						loading = true;
+
+						return async ({ update }) => {
+							await update();
+							loading = false;
+						};
+					}}
+					class="relative flex max-sm:flex-wrap items-center gap-2 max-md:w-full">
+					<input
+						type="text"
+						name="term"
+						id="term"
+						bind:value={term}
+						placeholder="Search by Keywords"
+						class="relative text-xl font-bold text-black placeholder:font-normal pl-14 pr-6 py-6 rounded w-[550px]" />
+					<div class="absolute left-4 max-sm:top-6">
+						<Search color="#D34B44" />
 					</div>
-				{/each}
+					<button
+						type="submit"
+						class="bg-ttmfRed text-white text-xl font-bold px-12 py-4 sm:py-6 rounded max-sm:w-full"
+						>{loading ? 'Searching...' : 'Search'}</button>
+				</form>
 			</div>
-		{/if}
-		<div class="pt-24">
-			<pre class="text-lg">{JSON.stringify(data, null, 2)}</pre>
+			{#if form && form.searchResults.apiData}
+				{#if form && form.searchResults.apiData.results}
+					<div class="pt-6">
+						<ClassesResultsDetails resultsDetails={form.searchResults.apiData.results} />
+					</div>
+				{/if}
+				<div class="pt-24">
+					<pre class="text-lg">{JSON.stringify(form, null, 2)}</pre>
+				</div>
+			{:else}
+				<div class="py-12">
+					<p class="text-2xl font-bold text-ttmfRed">
+						{searchResults_page.searchClasses.default_title}
+					</p>
+					<div class="max-w-none prose pt-6">
+						{@html searchResults_page.searchClasses.default_description}
+					</div>
+				</div>
+			{/if}
 		</div>
-	{/if}
+		<div>
+			<div class="sticky top-12">
+				<Sidebar />
+			</div>
+		</div>
+	</div>
 </section>

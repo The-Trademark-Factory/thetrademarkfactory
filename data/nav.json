@@ -1,4 +1,4 @@
 {
 	"nav": [],
-	"button": { "title": "Trademark Search", "url": "/search" }
+	"button": { "title": "Trademark Search", "url": "/application/search" }
 }

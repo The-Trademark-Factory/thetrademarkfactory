@@ -10,12 +10,17 @@
 		}
 	},
 	"searchResults_page": {
+		"pricing": {
+			"first_class": 350,
+			"additional_class": 250,
+			"government_fee": 250
+		},
 		"searchField": {
 			"title": "Trademark search",
 			"registered_title": "Your exact trademark may already be registered",
 			"registered_description": "The trademark registration may still be available for limited classes.",
 			"default_title": "What will you use your trademark for?",
-			"default_description": "<p>Registering your trademark offers protection for your branding’s goods and/or services. Please select the goods/services <strong>relevant</strong> to your branding.</p><p>Please enter simple keywords (one or two at a time is easiest) to find and specify your desired goods or services. For example, simple keywords include: retail, online, software, digital, advisory, consultancy, business, financial, sales, management, machine, book, car, furniture.</p><p>You may choose as many goods/services as you like. You may select many items in each class if you wish. Remember to click the “see more” button to drop down additional goods/services (where available).</p>For further guidance please see this link on how to choose your goods/services, you can refer to our FAQs.</p>"
+			"default_description": "<p>Registering your trademark offers protection for your branding's goods and/or services. Please select the goods/services <strong>relevant</strong> to your branding.</p><p>Please enter simple keywords (one or two at a time is easiest) to find and specify your desired goods or services. For example, simple keywords include: retail, online, software, digital, advisory, consultancy, business, financial, sales, management, machine, book, car, furniture.</p><p>You may choose as many goods/services as you like. You may select many items in each class if you wish. Remember to click the “see more” button to drop down additional goods/services (where available).</p>For further guidance please see this link on how to choose your goods/services, you can refer to our FAQs.</p>"
 		},
 		"wordDetails": {
 			"title": "We've found some trademarks already registered for your search term.",
@@ -40,6 +45,11 @@
 				]
 			},
 			"pricing": { "price": "$240", "gov": "plus government fees" }
+		},
+		"searchClasses": {
+			"title": "Add Classes",
+			"default_title": "What are classes?",
+			"default_description": "<p>Registering your trademark offers protection for your branding's goods and/or services. Please select the goods/services <strong>relevant</strong> to your branding.</p><p>Please enter simple keywords (one or two at a time is easiest) to find and specify your desired goods or services. For example, simple keywords include: retail, online, software, digital, advisory, consultancy, business, financial, sales, management, machine, book, car, furniture.</p><p>You may choose as many goods/services as you like. You may select many items in each class if you wish. Remember to click the “see more” button to drop down additional goods/services (where available).</p>For further guidance please see this link on how to choose your goods/services, you can refer to our FAQs.</p>"
 		}
 	}
 }

@@ -2,7 +2,6 @@
 	import { goto } from '$app/navigation';
 	import { searchTerm } from '$lib/utils/stores';
 	import { searchResults_page } from '../../../../data/global.json';
-	import Button from '$lib/components/Button.svelte';
 	export let word, searchResultsDetails;
 
 	let showAllClasses;

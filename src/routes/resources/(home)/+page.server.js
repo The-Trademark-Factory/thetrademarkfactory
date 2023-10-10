@@ -1,3 +1,4 @@
+export const prerender = true;
 import Filer from '@cloudcannon/filer';
 
 export async function load() {

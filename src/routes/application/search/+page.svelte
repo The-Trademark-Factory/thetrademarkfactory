@@ -2,8 +2,8 @@
 	import { ChevronDown, Info } from 'lucide-svelte';
 	import { searchResults_page } from '../../../../data/global.json';
 	import SearchWord from '$lib/components/SearchWord.svelte';
-	import WordDetails from '$lib/components/searchPage/wordDetails.svelte';
-	import ResultsDetails from '$lib/components/searchPage/resultsDetails.svelte';
+	import TrademarkWordDetails from '$lib/components/application/trademarkWordDetails.svelte';
+	import TrademarkResultsDetails from '$lib/components/application/trademarkResultsDetails.svelte';
 
 	export let data;
 </script>
@@ -35,12 +35,12 @@
 <section id="results" class="max-w-screen-xl mx-auto scroll-mt-32">
 	{#if data.searchResults.apiData}
 		<div class="mt-14">
-			<WordDetails
+			<TrademarkWordDetails
 				word={data.searchResults.apiData.request.query}
 				searchResultsDetails={data.searchResults.apiData.trademarkDetails} />
 		</div>
 		<div class="mt-14">
-			<ResultsDetails
+			<TrademarkResultsDetails
 				resultsDetails={data.searchResults.apiData.trademarkDetails}
 				totalResults={data.searchResults.apiData.count} />
 		</div>

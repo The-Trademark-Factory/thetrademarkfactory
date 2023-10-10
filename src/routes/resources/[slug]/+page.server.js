@@ -1,3 +1,4 @@
+export const prerender = true;
 import Filer from '@cloudcannon/filer';
 import { get } from '$lib/utils/routing';
 
