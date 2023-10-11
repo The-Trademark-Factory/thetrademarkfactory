@@ -7,14 +7,23 @@
 	const feeAdditionalClass = searchResults_page.pricing.additional_class;
 	const feeGovernment = searchResults_page.pricing.government_fee;
 	let totalPrice = 0;
-	let showDescriptions;
 
-	const removeClassInStore = (classNumber) => {
-		classes.update((currentClasses) => {
-			const index = currentClasses.findIndex((c) => c.class === classNumber);
-			return [...currentClasses.slice(0, index), ...currentClasses.slice(index + 1)];
-		});
-	};
+	function removeDescriptionInStore(classNumber, description) {
+		let currentClasses = $classes.find((c) => c.class === classNumber);
+
+		const index = currentClasses.descriptions.indexOf(description);
+		if (index === -1) {
+			currentClasses.descriptions.push(description);
+		} else {
+			currentClasses.descriptions.splice(index, 1);
+		}
+
+		if (currentClasses.descriptions.length === 0) {
+			classes.set($classes.filter((c) => c.class !== classNumber));
+		} else {
+			classes.set($classes);
+		}
+	}
 
 	$: {
 		const numClasses = $classes.length;
@@ -42,37 +51,34 @@
 		{#each $classes as el, index}
 			<div class="bg-white p-5 rounded-lg mt-5">
 				<div class="flex justify-between gap-2 border-b pb-3 mb-3">
-					<p class="font-bold">Class {el.class}</p>
-					<div class="inline-flex items-center gap-2">
-						<p class="font-bold text-ttmfRed">AU${getClassPrice(index)}</p>
-						<button
-							on:click={() => removeClassInStore(el.class)}
-							class="w-5 h-5 rounded-full flex flex-col justify-center items-center text-white bg-ttmfRed"
-							><X size="12" strokeWidth="3" /></button>
+					<div class="flex flex-col">
+						<p class="font-bold">Class {el.class}</p>
+						<span class="text-xs text-ttmfBlack"
+							>{el.descriptions.length}
+							{el.descriptions.length > 1 ? 'descriptions' : 'description'}</span>
 					</div>
+					<p class="font-bold text-ttmfRed">AU${getClassPrice(index)}</p>
 				</div>
-				<div class="flex justify-between gap-2 font-bold text-ttmfLightGreen/70">
+				<div class="flex justify-between gap-2 font-bold text-sm text-ttmfLightGreen/70">
 					<p>IP Australia Fee</p>
 					<p>AU${feeGovernment}</p>
 				</div>
 				<div class="flex flex-col divide-y">
-					<div class="pt-5">
-						<p class="font-bold text-ttmfGreen">{el.descriptions[0]}</p>
-						{#if el.descriptions.length > 1 && showDescriptions !== el.class}
-							<button
-								on:click={() => {
-									showDescriptions = el.class;
-								}}
-								class="text-sm underline underline-offset-4 decoration-dotted"
-								>show all descriptions</button>
-						{/if}
-						{#if showDescriptions === el.class}
-							<div class="space-y-1 pt-2">
-								{#each el.descriptions.slice(1) as description}
+					<div class="pt-2">
+						<div class="divide-y pt-2">
+							{#each el.descriptions as description}
+								<div
+									class="flex gap-4 justify-between text-sm {el.descriptions.length > 1
+										? 'py-3'
+										: ''}">
 									<p class="font-bold text-ttmfLightGreen">{description}</p>
-								{/each}
-							</div>
-						{/if}
+									<button
+										on:click={() => removeDescriptionInStore(el.class, description)}
+										class="shrink-0 w-5 h-5 rounded-full flex flex-col justify-center items-center text-white bg-ttmfLightGreen hover:bg-ttmfRed"
+										><X size="12" strokeWidth="3" /></button>
+								</div>
+							{/each}
+						</div>
 					</div>
 				</div>
 			</div>

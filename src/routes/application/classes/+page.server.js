@@ -63,6 +63,8 @@ export const actions = {
 				token = await getAuthToken();
 			}
 
+			// production - https://production.api.ipaustralia.gov.au/public/tmgns-rest-api/v1/
+
 			const apiRes = await fetch(
 				'https://test.api.ipaustralia.gov.au/public/tmgns-search-api/v1/search?searchTerm=' + term,
 				{

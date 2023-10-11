@@ -44,14 +44,14 @@
 							loading = false;
 						};
 					}}
-					class="relative flex max-sm:flex-wrap items-center gap-2 max-md:w-full">
+					class="relative flex max-sm:flex-wrap items-center gap-4 w-full">
 					<input
 						type="text"
 						name="term"
 						id="term"
 						bind:value={term}
 						placeholder="Search by Keywords"
-						class="relative text-xl font-bold text-black placeholder:font-normal pl-14 pr-6 py-6 rounded w-[550px]" />
+						class="relative text-xl font-bold text-black placeholder:font-normal pl-14 pr-6 py-6 rounded w-full shadow-pricingShadow" />
 					<div class="absolute left-4 max-sm:top-6">
 						<Search color="#D34B44" />
 					</div>
@@ -67,9 +67,6 @@
 						<ClassesResultsDetails resultsDetails={form.searchResults.apiData.results} />
 					</div>
 				{/if}
-				<div class="pt-24">
-					<pre class="text-lg">{JSON.stringify(form, null, 2)}</pre>
-				</div>
 			{:else}
 				<div class="py-12">
 					<p class="text-2xl font-bold text-ttmfRed">
