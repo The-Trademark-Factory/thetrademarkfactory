@@ -8,6 +8,7 @@
 	import { Search, ChevronLeft } from 'lucide-svelte';
 
 	export let form;
+	$: console.log(form);
 
 	let term;
 	let loading = false;
@@ -64,7 +65,9 @@
 			{#if form && form.searchResults.apiData}
 				{#if form && form.searchResults.apiData.results}
 					<div class="pt-6">
-						<ClassesResultsDetails resultsDetails={form.searchResults.apiData.results} />
+						<ClassesResultsDetails
+							resultsDetails={form.searchResults.apiData.results}
+							term={form.searchResults.term} />
 					</div>
 				{/if}
 			{:else}

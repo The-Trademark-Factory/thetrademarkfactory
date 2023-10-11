@@ -15,6 +15,24 @@
 			"additional_class": 250,
 			"government_fee": 250
 		},
+		"classes_description": [
+			{
+				"class_number": 2,
+				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+			},
+			{
+				"class_number": 3,
+				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+			},
+			{
+				"class_number": 4,
+				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+			},
+			{
+				"class_number": 6,
+				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+			}
+		],
 		"searchField": {
 			"title": "Trademark search",
 			"registered_title": "Your exact trademark may already be registered",
