@@ -30,11 +30,11 @@
 	}
 </script>
 
-<div class="bg-white shadow-pricingShadow rounded-lg p-12">
-	<div class="flex items-center gap-6 font-bold border-b pb-10 mb-10">
-		<p class="text-5xl">Trademark</p>
+<div class="bg-white shadow-pricingShadow rounded-lg px-6 py-10 lg:p-12">
+	<div class="flex flex-wrap items-center gap-4 lg:gap-6 font-bold border-b pb-10 mb-10">
+		<p class="text-3xl lg:text-5xl">Trademark</p>
 		<p
-			class="rounded-full py-3 px-7 border-2 text-3xl capitalize border-ttmfRed text-ttmfRed bg-ttmfRed/20">
+			class="rounded-full py-1 lg:py-3 px-4 lg:px-7 border-2 text-lg lg:text-3xl capitalize border-ttmfRed text-ttmfRed bg-ttmfRed/20">
 			{word}
 		</p>
 	</div>
@@ -89,8 +89,8 @@
 				</div>
 			{/each}
 		</div>
-		<div class="pt-20">
-			<div class="flex items-center gap-12">
+		<div class="pt-12 lg:pt-20">
+			<div class="flex flex-wrap items-center gap-8 lg:gap-12">
 				<div>
 					<p class="font-bold">
 						<span class="text-2xl">AU</span><span class="text-5xl"

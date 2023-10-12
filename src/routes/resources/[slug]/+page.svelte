@@ -2,7 +2,6 @@
 	import SeoHead from '$lib/components/SeoHead.svelte';
 
 	export let data;
-	console.log(data);
 	$: pageData = data;
 	$: pageDetails = pageData.pageDetails;
 	$: frontMatter = pageDetails.data;

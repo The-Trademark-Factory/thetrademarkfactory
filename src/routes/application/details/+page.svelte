@@ -147,7 +147,11 @@
 	formData.forEach((field) => {
 		initialValues[field.id] = field.type === 'radio' ? field.options[0] : '';
 	});
-	details.set(initialValues);
+
+	// Check if details is empty
+	if (Object.keys($details).length === 0) {
+		details.set(initialValues);
+	}
 
 	const validateForm = (details) => {
 		detailsValid.set(
@@ -165,7 +169,7 @@
 	}
 </script>
 
-<section class="relative max-w-screen-xl mx-auto py-24">
+<section class="relative max-w-screen-xl mx-auto py-12 lg:py-24 max-2xl:px-6">
 	<StartOver />
 	<div class="grid lg:grid-cols-3 gap-12 pt-11">
 		<div class="lg:col-span-2">

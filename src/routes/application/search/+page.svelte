@@ -1,17 +1,28 @@
 <script>
 	import { ChevronDown, Info, CheckCircle, X } from 'lucide-svelte';
-	import { searchTerm, classes, details, detailsValid } from '$lib/utils/stores';
+	import { goto } from '$app/navigation';
+	import { searchTerm, classes, details, international } from '$lib/utils/stores';
 	import { getItem } from '$lib/utils/localStorageUtils';
 	import { searchResults_page } from '../../../../data/global.json';
 	import SearchWord from '$lib/components/SearchWord.svelte';
 	import TrademarkWordDetails from '$lib/components/application/trademarkWordDetails.svelte';
 	import TrademarkResultsDetails from '$lib/components/application/trademarkResultsDetails.svelte';
+	import { onMount } from 'svelte';
 
-	function getPrevious() {
+	export let data;
+	let previousSearch;
+	$: searchResultsDetails = data.searchResults.apiData.trademarkDetails;
+
+	onMount(() => {
+		previousSearch = getItem('searchTerm');
+	});
+
+	function gotoPrevious() {
 		const storeMap = {
 			searchTerm: { store: searchTerm, check: () => !$searchTerm },
 			classes: { store: classes, check: () => $classes.length === 0 },
-			details: { store: details, check: () => $details.firstName.length === 0 }
+			details: { store: details, check: () => Object.keys($details).length === 0 },
+			international: { store: international, check: () => $international.length === 0 }
 		};
 
 		Object.keys(storeMap).forEach((key) => {
@@ -20,18 +31,22 @@
 				storeMap[key].store.set(localData);
 			}
 		});
+		goto('/application/classes');
 	}
 
-	export let data;
-
-	$: searchResultsDetails = data.searchResults.apiData.trademarkDetails;
-	let previousSearch = getItem('searchTerm');
-
-	$: console.log(previousSearch);
+	function deletePrevious() {
+		localStorage.clear();
+		searchTerm.set('');
+		classes.set([]);
+		details.set([]);
+		international.set([]);
+		previousSearch = '';
+	}
 </script>
 
 <section class="bg-ttmfDarkGreen">
-	<div class="max-w-screen-xl mx-auto grid lg:grid-cols-2 items-end gap-12 text-white py-24">
+	<div
+		class="max-w-screen-xl mx-auto grid lg:grid-cols-2 items-end gap-12 text-white py-12 lg:py-24 max-2xl:px-6">
 		<div>
 			<p class="text-3xl font-bold">{searchResults_page.searchField.title}</p>
 			<div class="pt-4">
@@ -64,23 +79,30 @@
 		{#if previousSearch}
 			<div class="relative xl:pl-20">
 				<button
-					class=" bg-ttmfLightGreen rounded-md p-6 text-center transition-all hover:shadow-2xl border-2 border-transparent hover:border-white w-full">
-					<div class="inline-flex flex-wrap gap-2 items-center text-xl font-bold">
+					on:click={() => {
+						gotoPrevious();
+					}}
+					class=" bg-ttmfLightGreen rounded-md p-4 lg:p-6 text-center transition-all hover:shadow-2xl border-2 border-transparent hover:border-white w-full">
+					<div
+						class="inline-flex flex-wrap gap-3 items-center justify-center text-lg lg:text-xl font-bold">
 						<span>You started applying for</span>
 						<span class="px-3 py-1 border-2 rounded-full">{previousSearch}</span>
 					</div>
-					<p class="pt-2">Do you want to resume this application?</p>
+					<p class="pt-3 max-lg:text-sm">Do you want to resume this application?</p>
 				</button>
 				<button
+					on:click={() => {
+						deletePrevious();
+					}}
 					class="absolute -top-2 -right-2 w-7 h-7 rounded-full flex flex-col justify-center items-center text-ttmfDarkGreen bg-white transition-all hover:bg-ttmfRed"
 					><X /></button>
 			</div>
 		{/if}
 	</div>
 </section>
-<section id="results" class="max-w-screen-xl mx-auto scroll-mt-32">
+<section id="results" class="max-w-screen-xl mx-auto scroll-mt-32 max-2xl:px-6">
 	{#if data.searchResults.apiData}
-		<div class="py-14">
+		<div class="py-10 lg:py-14">
 			<TrademarkWordDetails
 				word={data.searchResults.apiData.request.query}
 				{searchResultsDetails} />

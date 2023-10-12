@@ -1,8 +1,4 @@
 <script>
-	import { onMount } from 'svelte';
-	import { getItem } from '$lib/utils/localStorageUtils';
-	import { searchTerm, classes } from '$lib/utils/stores';
-	import { goto } from '$app/navigation';
 	import { enhance } from '$app/forms';
 	import { searchResults_page } from '../../../../data/global.json';
 	import ClassesResultsDetails from '$lib/components/application/classesResultsDetails.svelte';
@@ -12,25 +8,11 @@
 
 	export let form;
 
-	onMount(() => {
-		const localSearchTerm = getItem('searchTerm');
-		const localClasses = getItem('classes');
-		if (!localSearchTerm) {
-			goto('/application/search');
-		}
-		if (localSearchTerm && !$searchTerm) {
-			searchTerm.set(localSearchTerm);
-		}
-		if (localClasses && $classes.length === 0) {
-			classes.set(localClasses);
-		}
-	});
-
 	let term;
 	let loading = false;
 </script>
 
-<section class="relative max-w-screen-xl mx-auto py-24">
+<section class="relative max-w-screen-xl mx-auto py-12 lg:py-24 max-2xl:px-6">
 	<StartOver />
 	<div class="grid lg:grid-cols-3 gap-12 pt-11">
 		<div class="lg:col-span-2">

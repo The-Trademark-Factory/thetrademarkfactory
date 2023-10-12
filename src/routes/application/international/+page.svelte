@@ -2,12 +2,16 @@
 	import { searchResults_page } from '../../../../data/global.json';
 	import { international_module } from '../../../../data/pricing.json';
 	import { Check, Search, XCircle } from 'lucide-svelte';
-	import { searchTerm, details, detailsValid, international } from '$lib/utils/stores';
+	import { international } from '$lib/utils/stores';
 	import Sidebar from '$lib/components/application/sidebar.svelte';
 	import StartOver from '$lib/components/application/startOver.svelte';
 
 	let searchQuery = '';
 	let selectedCountries = {};
+
+	if ($international.length !== 0) {
+		selectedCountries = $international;
+	}
 
 	function toggleCountry(country, gov, service) {
 		if (selectedCountries[country]) {
@@ -24,12 +28,9 @@
 				country.title.toLowerCase().includes(searchQuery.toLowerCase())
 		  )
 		: international_module;
-
-	$: console.log($international);
-	$: console.log($details);
 </script>
 
-<section class="relative max-w-screen-xl mx-auto py-24">
+<section class="relative max-w-screen-xl mx-auto py-12 lg:py-24 max-2xl:px-6">
 	<StartOver />
 	<div class="grid lg:grid-cols-3 gap-12 pt-11">
 		<div class="lg:col-span-2">

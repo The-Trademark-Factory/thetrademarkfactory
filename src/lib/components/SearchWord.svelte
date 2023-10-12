@@ -20,7 +20,7 @@
 	<input
 		type="text"
 		placeholder={placeholder ? placeholder : 'Search by word'}
-		class="relative text-xl font-bold text-black placeholder:font-normal pl-14 pr-6 py-6 rounded w-[550px]"
+		class="relative text-xl font-bold text-black placeholder:font-normal pl-14 pr-6 py-6 rounded w-full lg:w-[550px]"
 		bind:value={searchTerm} />
 	<div class="absolute left-4 max-sm:top-6">
 		<Search color="#D34B44" />

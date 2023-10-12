@@ -134,6 +134,9 @@
 			class="bg-ttmfRed text-white font-bold px-12 py-5 rounded w-full">
 			Continue to payment
 		</button>
+	{:else if $page.route.id.includes('payment')}
+		<button disabled class="bg-ttmfRed text-white font-bold px-12 py-5 rounded w-full"
+			>Checkout</button>
 	{:else}
 		<button disabled class="bg-ttmfRed/50 text-white font-bold px-12 py-5 rounded w-full"
 			>Continue</button>
