@@ -1,10 +1,19 @@
 <script>
+	import { classes, details, international } from '$lib/utils/stores';
 	import { Search } from 'lucide-svelte';
 	import { goto } from '$app/navigation';
 
 	export let placeholder;
 
 	let searchTerm;
+
+	function resetAndGo() {
+		classes.set([]);
+		details.set([]);
+		international.set([]);
+		localStorage.clear();
+		goto(`/application/search?name=${searchTerm}`);
+	}
 </script>
 
 <div class="relative flex max-sm:flex-wrap items-center gap-2 max-md:w-full">
@@ -17,7 +26,7 @@
 		<Search color="#D34B44" />
 	</div>
 	<button
-		on:click={() => goto(`/application/search?name=${searchTerm}`)}
+		on:click={() => resetAndGo()}
 		class="bg-ttmfRed text-white text-xl font-bold px-12 py-4 sm:py-6 rounded max-sm:w-full"
 		>Search</button>
 </div>

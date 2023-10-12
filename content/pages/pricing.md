@@ -21,52 +21,6 @@ content_blocks:
       <p>Select countries to calculate a price estimation and enquire. To
       register an Australian trademark, you can use our <a href="/">self-service
       system here</a>.</p>
-    countries:
-      - title: Australia
-        gov_fee: 100
-        service_fee: 100
-        icon: /upload/australia-icon.svg
-        popular: true
-      - title: United States
-        gov_fee: 200
-        service_fee: 100
-        icon: /upload/united-state-icon.svg
-        popular: true
-      - title: Austria
-        gov_fee: 250
-        service_fee: 100
-        icon: /upload/austria-icon.svg
-        popular: false
-      - title: New Zealand
-        gov_fee: 100
-        service_fee: 100
-        icon: /upload/new-zealand-icon.svg
-        popular: true
-      - title: United Kingdom
-        gov_fee: 100
-        service_fee: 100
-        icon: /upload/united-kingdom-icon.svg
-        popular: true
-      - title: European Union
-        gov_fee: 100
-        service_fee: 100
-        icon: /upload/eu-icon.svg
-        popular: true
-      - title: China
-        gov_fee: 100
-        service_fee: 100
-        icon: /upload/china-icon.svg
-        popular: true
-      - title: Brasil
-        gov_fee: 100
-        service_fee: 100
-        icon: /upload/brasil-icon.svg
-        popular: false
-      - title: Canada
-        gov_fee: 100
-        service_fee: 100
-        icon: /upload/canada-icon.svg
-        popular: false
   - _bookshop_name: cta/search
     title: |
       Get Your <em>Trademark</em> Today

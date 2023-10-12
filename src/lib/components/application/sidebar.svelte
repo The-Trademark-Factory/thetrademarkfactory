@@ -1,7 +1,10 @@
 <script>
 	import { searchResults_page } from '../../../../data/global.json';
+	import { setItem } from '$lib/utils/localStorageUtils';
+	import { goto } from '$app/navigation';
+	import { page } from '$app/stores';
 	import { X } from 'lucide-svelte';
-	import { searchTerm, classes } from '$lib/utils/stores';
+	import { searchTerm, classes, details, detailsValid, international } from '$lib/utils/stores';
 
 	const feeFirstClass = searchResults_page.pricing.first_class;
 	const feeAdditionalClass = searchResults_page.pricing.additional_class;
@@ -47,6 +50,20 @@
 			class="shrink-0 text-base capitalize rounded-full px-2 border-2 text-ttmfLightGreen border-ttmfLightGreen/20 bg-ttmfLightGreen/10"
 			>{$searchTerm}</span>
 	</div>
+	{#if Object.keys($international).length > 0}
+		<div class="bg-white p-5 rounded-lg mt-5">
+			<div class="border-b pb-3 mb-3">
+				<p class="font-bold">International Trademarks</p>
+			</div>
+			<div class="flex flex-wrap items-center gap-2">
+				{#each Object.keys($international) as el}
+					<span
+						class="px-2 py-0 rounded-full border-2 border-ttmfCreme/30 bg-ttmfBeige text-ttmfBlack text-sm"
+						>{el}</span>
+				{/each}
+			</div>
+		</div>
+	{/if}
 	{#if $classes.length > 0}
 		{#each $classes as el, index}
 			<div class="bg-white p-5 rounded-lg mt-5">
@@ -87,11 +104,37 @@
 			<p>Total price</p>
 			<p>AU${totalPrice}</p>
 		</div>
-		<button class="bg-ttmfRed text-white font-bold px-12 py-5 rounded w-full">Continue</button>
 	{:else}
 		<div class="py-6">
 			<p class="text-ttmfCreme/50 font-bold">Search & Add classes to continue</p>
 		</div>
+	{/if}
+	{#if $page.route.id.includes('classes') && $classes.length > 0}
+		<button
+			on:click={() => {
+				setItem('classes', $classes);
+				goto('/application/details');
+			}}
+			class="bg-ttmfRed text-white font-bold px-12 py-5 rounded w-full">Continue to details</button>
+	{:else if $page.route.id.includes('details') && $detailsValid}
+		<button
+			on:click={() => {
+				setItem('details', $details);
+				goto('/application/international');
+			}}
+			class="bg-ttmfRed text-white font-bold px-12 py-5 rounded w-full">
+			Continue to intl. trademarks
+		</button>
+	{:else if $page.route.id.includes('international')}
+		<button
+			on:click={() => {
+				setItem('international', $international);
+				goto('/application/payment');
+			}}
+			class="bg-ttmfRed text-white font-bold px-12 py-5 rounded w-full">
+			Continue to payment
+		</button>
+	{:else}
 		<button disabled class="bg-ttmfRed/50 text-white font-bold px-12 py-5 rounded w-full"
 			>Continue</button>
 	{/if}

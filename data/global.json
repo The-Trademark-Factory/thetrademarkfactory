@@ -37,14 +37,18 @@
 			"title": "Trademark search",
 			"registered_title": "Your exact trademark may already be registered",
 			"registered_description": "The trademark registration may still be available for limited classes.",
+			"available_title": "Your trademark is available for registration",
 			"default_title": "What will you use your trademark for?",
 			"default_description": "<p>Registering your trademark offers protection for your branding's goods and/or services. Please select the goods/services <strong>relevant</strong> to your branding.</p><p>Please enter simple keywords (one or two at a time is easiest) to find and specify your desired goods or services. For example, simple keywords include: retail, online, software, digital, advisory, consultancy, business, financial, sales, management, machine, book, car, furniture.</p><p>You may choose as many goods/services as you like. You may select many items in each class if you wish. Remember to click the “see more” button to drop down additional goods/services (where available).</p>For further guidance please see this link on how to choose your goods/services, you can refer to our FAQs.</p>"
 		},
 		"wordDetails": {
-			"title": "We've found some trademarks already registered for your search term.",
-			"description": "Your trademark may not be available for some classes, such as:",
+			"existing": {
+				"title": "We've found some trademarks already registered for your search term.",
+				"description": "Your trademark may not be available for some classes, such as:"
+			},
 			"process": {
-				"title": "Otherwise, start your automated registration process, this includes:",
+				"title_existing": "Otherwise, start your automated registration process, this includes:",
+				"title_available": "You can use our automated registration process to register your trademark. Our fee includes:",
 				"features": [
 					{
 						"description": "Prepared by our experienced trade mark lawyers",
@@ -68,6 +72,18 @@
 			"title": "Add Classes",
 			"default_title": "What are classes?",
 			"default_description": "<p>Registering your trademark offers protection for your branding's goods and/or services. Please select the goods/services <strong>relevant</strong> to your branding.</p><p>Please enter simple keywords (one or two at a time is easiest) to find and specify your desired goods or services. For example, simple keywords include: retail, online, software, digital, advisory, consultancy, business, financial, sales, management, machine, book, car, furniture.</p><p>You may choose as many goods/services as you like. You may select many items in each class if you wish. Remember to click the “see more” button to drop down additional goods/services (where available).</p>For further guidance please see this link on how to choose your goods/services, you can refer to our FAQs.</p>"
+		},
+		"personalDetails": {
+			"title": "Personal Details"
+		},
+		"internationalTrademarks": {
+			"title": "International Trademarks",
+			"subtitle": "Do you want to file your trademarks overseas?",
+			"default_description": "<p>Please select the countries you would like to register your trademark in. <strong>Please note: International trademarks will be invoice separately.We will get in touch with you after your enquiry is completed.</strong></p>"
+		},
+		"payment": {
+			"title": "Review & Submit",
+			"button": "Proceed to payment"
 		}
 	}
 }

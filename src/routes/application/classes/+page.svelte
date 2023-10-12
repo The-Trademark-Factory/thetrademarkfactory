@@ -1,35 +1,37 @@
 <script>
+	import { onMount } from 'svelte';
+	import { getItem } from '$lib/utils/localStorageUtils';
 	import { searchTerm, classes } from '$lib/utils/stores';
 	import { goto } from '$app/navigation';
 	import { enhance } from '$app/forms';
 	import { searchResults_page } from '../../../../data/global.json';
 	import ClassesResultsDetails from '$lib/components/application/classesResultsDetails.svelte';
 	import Sidebar from '$lib/components/application/sidebar.svelte';
-	import { Search, ChevronLeft } from 'lucide-svelte';
+	import { Search } from 'lucide-svelte';
+	import StartOver from '$lib/components/application/startOver.svelte';
 
 	export let form;
-	$: console.log(form);
+
+	onMount(() => {
+		const localSearchTerm = getItem('searchTerm');
+		const localClasses = getItem('classes');
+		if (!localSearchTerm) {
+			goto('/application/search');
+		}
+		if (localSearchTerm && !$searchTerm) {
+			searchTerm.set(localSearchTerm);
+		}
+		if (localClasses && $classes.length === 0) {
+			classes.set(localClasses);
+		}
+	});
 
 	let term;
 	let loading = false;
-
-	function startOver() {
-		searchTerm.set('');
-		classes.set([]);
-		goto('/application/search');
-	}
 </script>
 
 <section class="relative max-w-screen-xl mx-auto py-24">
-	<button
-		on:click={() => {
-			startOver();
-		}}
-		class="inline-flex gap-2 items-center font-bold"
-		><span
-			class="w-5 h-5 rounded-full flex flex-col justify-center items-center text-white bg-ttmfRed"
-			><ChevronLeft size="12" strokeWidth="3" /></span
-		>Start Over</button>
+	<StartOver />
 	<div class="grid lg:grid-cols-3 gap-12 pt-11">
 		<div class="lg:col-span-2">
 			<p class="text-3xl font-bold">{searchResults_page.searchClasses.title}</p>
@@ -71,7 +73,7 @@
 					</div>
 				{/if}
 			{:else}
-				<div class="py-12">
+				<div class="pt-12">
 					<p class="text-2xl font-bold text-ttmfRed">
 						{searchResults_page.searchClasses.default_title}
 					</p>

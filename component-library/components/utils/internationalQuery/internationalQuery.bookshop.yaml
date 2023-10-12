@@ -11,12 +11,6 @@ blueprint:
     <em>International</em> Trademark Pricing
   description: |
     Select countries to calculate the final price.
-  countries:
-    - title: Australia
-      gov_fee: 100
-      service_fee: 100
-      icon: https://dummyimage.com/50
-      popular: true
 
 preview:
 

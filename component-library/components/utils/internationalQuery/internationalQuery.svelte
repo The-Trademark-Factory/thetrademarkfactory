@@ -1,9 +1,10 @@
 <script>
 	import { ChevronDown, Check, Search, XCircle } from 'lucide-svelte';
+	import { international_module } from '../../../../data/pricing.json';
 	import { onMount } from 'svelte';
 	import { fly } from 'svelte/transition';
 
-	export let title_section, description, countries;
+	export let title_section, description;
 
 	let activeDetails;
 	let total = 0;
@@ -44,8 +45,10 @@
 	}
 
 	$: filteredCountries = searchQuery
-		? countries.filter((country) => country.title.toLowerCase().includes(searchQuery.toLowerCase()))
-		: countries;
+		? international_module.filter((country) =>
+				country.title.toLowerCase().includes(searchQuery.toLowerCase())
+		  )
+		: international_module;
 
 	$: total = Object.values(selectedCountries).reduce(
 		(acc, { gov, service }) => acc + gov + service,
