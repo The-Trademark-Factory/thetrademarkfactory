@@ -68,24 +68,28 @@
 								</p>
 							</div>
 						</div>
-						<div class="flex items-start gap-6">
-							<img src="/upload/ic-owner.svg" alt="" />
-							<div>
-								<p class="text-xs uppercase font-bold text-ttmfDarkGreen/70">Owned by</p>
-								<p class="text-lg font-bold">
-									{el.owner[0].name}
-								</p>
+						{#if el.owner.length > 0}
+							<div class="flex items-start gap-6">
+								<img src="/upload/ic-owner.svg" alt="" />
+								<div>
+									<p class="text-xs uppercase font-bold text-ttmfDarkGreen/70">Owned by</p>
+									<p class="text-lg font-bold">
+										{el.owner[0]?.name}
+									</p>
+								</div>
 							</div>
-						</div>
-						<div class="flex items-start gap-6">
-							<img src="/upload/ic-status.svg" alt="" />
-							<div>
-								<p class="text-xs uppercase font-bold text-ttmfDarkGreen/70">Status</p>
-								<p class="text-lg font-bold text-ttmfRed">
-									{el.statusDetail}
-								</p>
+						{/if}
+						{#if el.statusDetail}
+							<div class="flex items-start gap-6">
+								<img src="/upload/ic-status.svg" alt="" />
+								<div>
+									<p class="text-xs uppercase font-bold text-ttmfDarkGreen/70">Status</p>
+									<p class="text-lg font-bold text-ttmfRed">
+										{el.statusDetail}
+									</p>
+								</div>
 							</div>
-						</div>
+						{/if}
 					</div>
 				</div>
 			</div>

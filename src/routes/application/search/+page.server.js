@@ -19,24 +19,70 @@ export async function load({ url }) {
 			token = await getAuthToken();
 		}
 
-		const apiRes = await fetch(import.meta.env.VITE_IPAUSTEST_URL + '/search/quick', {
+		const apiRes = await fetch(import.meta.env.VITE_IPAUSTEST_URL + '/search/advanced', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',
 				Authorization: `Bearer ${token}`
 			},
-			body: JSON.stringify({
-				// changedSinceDate: '2000-01-15',
-				filters: {
-					quickSearchType: ['WORD'],
-					status: ['REGISTERED']
-				},
-				query: searchTerm,
-				sort: {
-					direction: 'DESCENDING',
-					field: 'NUMBER'
+			body: JSON.stringify(
+				// 	{
+				// 	filters: {
+				// 		quickSearchType: ['WORD'],
+				// 		status: ['REGISTERED']
+				// 	},
+				// 	query: searchTerm,
+				// 	sort: {
+				// 		direction: 'DESCENDING',
+				// 		field: 'NUMBER'
+				// 	}
+				// }
+				{
+					changedSinceDate: '',
+					rows: [
+						{
+							op: 'AND',
+							query: {
+								addressForService: '',
+								claimant: '',
+								classNumber: {
+									text: '',
+									type: 'ASSOCIATED'
+								},
+								// date: {
+								// 	from: '',
+								// 	to: '',
+								// 	type: 'LODGEMENT_DATE'
+								// },
+								// flags: ['NON_USE'],
+								goodsAndServices: '',
+								image: {
+									text: '',
+									type: 'EXACT'
+								},
+								irNumber: '',
+								acnArbnAbn: '',
+								// kinds: ['WORD'],
+								opponent: '',
+								otherInformation: '',
+								owner: '',
+								removalApplicant: '',
+								// statuses: ['REGISTERED'],
+								trademarkNumber: '',
+								word: {
+									text: searchTerm,
+									type: 'PART'
+								},
+								wordPhrase: ''
+							}
+						}
+					],
+					sort: {
+						field: 'NUMBER',
+						direction: 'ASCENDING'
+					}
 				}
-			})
+			)
 		});
 
 		const apiData = await apiRes.json();
@@ -67,7 +113,8 @@ export async function load({ url }) {
 
 		return {
 			searchResults: {
-				apiData
+				apiData,
+				searchTerm
 			}
 		};
 	} catch (error) {

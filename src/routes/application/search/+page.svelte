@@ -10,8 +10,10 @@
 	import { onMount } from 'svelte';
 
 	export let data;
+	console.log(data);
 	let previousSearch;
 	$: searchResultsDetails = data.searchResults.apiData.trademarkDetails;
+	$: word = data.searchResults.searchTerm;
 
 	onMount(() => {
 		previousSearch = getItem('searchTerm');
@@ -103,9 +105,7 @@
 <section id="results" class="max-w-screen-xl mx-auto scroll-mt-32 max-2xl:px-6">
 	{#if data.searchResults.apiData}
 		<div class="py-10 lg:py-14">
-			<TrademarkWordDetails
-				word={data.searchResults.apiData.request.query}
-				{searchResultsDetails} />
+			<TrademarkWordDetails {word} {searchResultsDetails} />
 		</div>
 		{#if searchResultsDetails}
 			<div class="pb-14">
