@@ -3,8 +3,8 @@
 	import { international_module } from '../../../../data/pricing.json';
 	import { Check, Search, XCircle } from 'lucide-svelte';
 	import { international } from '$lib/utils/stores';
-	import Sidebar from '$lib/components/application/sidebar.svelte';
-	import StartOver from '$lib/components/application/startOver.svelte';
+	import Sidebar from '$lib/application/sidebar.svelte';
+	import StartOver from '$lib/application/startOver.svelte';
 
 	let searchQuery = '';
 	let selectedCountries = {};

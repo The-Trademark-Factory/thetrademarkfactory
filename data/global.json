@@ -43,8 +43,8 @@
 		},
 		"wordDetails": {
 			"existing": {
-				"title": "We've found some trademarks already registered for your search term.",
-				"description": "Your trademark may not be available for some classes, such as:"
+				"title": "We've found some existing trademarks that might block your application.",
+				"description": "Your trademark may not be available for some classes, such as, but not limited to:"
 			},
 			"process": {
 				"title_existing": "Otherwise, start your automated registration process, this includes:",

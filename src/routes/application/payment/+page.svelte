@@ -1,8 +1,8 @@
 <script>
 	import { searchResults_page } from '../../../../data/global.json';
 	import { details } from '$lib/utils/stores';
-	import Sidebar from '$lib/components/application/sidebar.svelte';
-	import StartOver from '$lib/components/application/startOver.svelte';
+	import Sidebar from '$lib/application/sidebar.svelte';
+	import StartOver from '$lib/application/startOver.svelte';
 
 	$: formattedDetails = Object.entries($details).map(([key, value]) => {
 		const formattedKey = key.replace(/([A-Z])/g, ' $1').replace(/^./, (str) => str.toUpperCase());

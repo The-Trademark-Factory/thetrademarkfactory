@@ -1,5 +1,5 @@
 <script>
-	import { searchResults_page } from '../../../../data/global.json';
+	import { searchResults_page } from '../../../data/global.json';
 	import { X } from 'lucide-svelte';
 	import { classes } from '$lib/utils/stores';
 	import { Plus, Check } from 'lucide-svelte';

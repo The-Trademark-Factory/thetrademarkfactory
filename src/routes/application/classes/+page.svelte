@@ -1,10 +1,10 @@
 <script>
 	import { enhance } from '$app/forms';
 	import { searchResults_page } from '../../../../data/global.json';
-	import ClassesResultsDetails from '$lib/components/application/classesResultsDetails.svelte';
-	import Sidebar from '$lib/components/application/sidebar.svelte';
+	import ClassesResultsDetails from '$lib/application/classesResultsDetails.svelte';
+	import Sidebar from '$lib/application/sidebar.svelte';
 	import { Search } from 'lucide-svelte';
-	import StartOver from '$lib/components/application/startOver.svelte';
+	import StartOver from '$lib/application/startOver.svelte';
 
 	export let form;
 

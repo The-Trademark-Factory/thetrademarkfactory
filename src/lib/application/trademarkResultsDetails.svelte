@@ -7,7 +7,7 @@
 
 {#if totalResults > 0}
 	<p class="text-3xl font-bold">
-		<span class="text-ttmfRed">Showing first {resultsDetails.length}</span> of {totalResults}
+		<span class="text-ttmfRed">Showing {resultsDetails.length}</span> of {totalResults}
 		total results found
 	</p>
 	<div class="space-y-5 mt-10">

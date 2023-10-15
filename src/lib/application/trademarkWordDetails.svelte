@@ -2,7 +2,7 @@
 	import { goto } from '$app/navigation';
 	import { setItem } from '$lib/utils/localStorageUtils';
 	import { searchTerm } from '$lib/utils/stores';
-	import { searchResults_page } from '../../../../data/global.json';
+	import { searchResults_page } from '../../../data/global.json';
 	export let word, searchResultsDetails;
 
 	let showAllClasses;

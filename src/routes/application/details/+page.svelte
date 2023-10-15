@@ -1,8 +1,8 @@
 <script>
 	import { searchResults_page } from '../../../../data/global.json';
 	import { details, detailsValid } from '$lib/utils/stores';
-	import Sidebar from '$lib/components/application/sidebar.svelte';
-	import StartOver from '$lib/components/application/startOver.svelte';
+	import Sidebar from '$lib/application/sidebar.svelte';
+	import StartOver from '$lib/application/startOver.svelte';
 
 	const formData = [
 		{

@@ -1,5 +1,5 @@
 <script>
-	import { searchResults_page } from '../../../../data/global.json';
+	import { searchResults_page } from '../../../data/global.json';
 	import { setItem } from '$lib/utils/localStorageUtils';
 	import { goto } from '$app/navigation';
 	import { page } from '$app/stores';

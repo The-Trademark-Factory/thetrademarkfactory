@@ -1,16 +1,15 @@
 <script>
 	import { ChevronDown, Info, CheckCircle, X } from 'lucide-svelte';
+	import { onMount } from 'svelte';
 	import { goto } from '$app/navigation';
 	import { searchTerm, classes, details, international } from '$lib/utils/stores';
 	import { getItem } from '$lib/utils/localStorageUtils';
 	import { searchResults_page } from '../../../../data/global.json';
 	import SearchWord from '$lib/components/SearchWord.svelte';
-	import TrademarkWordDetails from '$lib/components/application/trademarkWordDetails.svelte';
-	import TrademarkResultsDetails from '$lib/components/application/trademarkResultsDetails.svelte';
-	import { onMount } from 'svelte';
+	import TrademarkWordDetails from '$lib/application/trademarkWordDetails.svelte';
+	import TrademarkResultsDetails from '$lib/application/trademarkResultsDetails.svelte';
 
 	export let data;
-	console.log(data);
 	let previousSearch;
 	$: searchResultsDetails = data.searchResults.apiData.trademarkDetails;
 	$: word = data.searchResults.searchTerm;
