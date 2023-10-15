@@ -17,20 +17,68 @@
 		},
 		"classes_description": [
 			{
+				"class_number": 1,
+				"description": "Includes mainly chemical products for use in industry, science and agriculture, including those which go to the making of products belonging to other classes."
+			},
+			{
 				"class_number": 2,
-				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+				"description": "Includes mainly paints, colorants and preparations used for protection against corrosion."
 			},
 			{
 				"class_number": 3,
-				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+				"description": "Includes mainly non-medicated toiletry preparations, as well as cleaning preparations for use in the home and other environments."
 			},
 			{
 				"class_number": 4,
-				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+				"description": "Includes mainly industrial oils and greases, fuels and illuminants."
+			},
+			{
+				"class_number": 5,
+				"description": "Includes mainly pharmaceuticals and other preparations for medical or veterinary purposes."
 			},
 			{
 				"class_number": 6,
-				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+				"description": "Includes mainly unwrought and partly wrought common metals, including ores, as well as certain goods made of common metals."
+			},
+			{
+				"class_number": 7,
+				"description": "Includes mainly machines and machine tools, motors and engines."
+			},
+			{
+				"class_number": 8,
+				"description": "Includes mainly hand tools and implements, hand-operated; cutlery; side arms, except firearms; razors."
+			},
+			{
+				"class_number": 9,
+				"description": "Includes mainly apparatus and instruments for scientific or research purposes, audiovisual and information technology equipment, computer software as well as safety and life-saving equipment."
+			},
+			{
+				"class_number": 10,
+				"description": "Includes mainly surgical, medical, dental and veterinary apparatus, instruments."
+			},
+			{
+				"class_number": 11,
+				"description": "Includes mainly environmental control apparatus and installations, in particular, for the purposes of lighting, cooking, cooling and sanitizing."
+			},
+			{
+				"class_number": 12,
+				"description": "Includes mainly vehicles and apparatus."
+			},
+			{
+				"class_number": 13,
+				"description": "Includes mainly firearms and pyrotechnic products."
+			},
+			{
+				"class_number": 14,
+				"description": "Includes mainly precious metals and certain goods made of precious metals or coated therewith, as well as jewellery, clocks and watches, and component parts therefor."
+			},
+			{
+				"class_number": 15,
+				"description": "Includes mainly musical instruments, their parts and their accessories."
+			},
+			{
+				"class_number": 16,
+				"description": "Includes mainly paper, cardboard and certain goods made of those materials, as well as office requisites."
 			}
 		],
 		"searchField": {
@@ -62,11 +110,20 @@
 						"description": "Allocation of IP lawyer to manage the matter on your behalf",
 						"image": "/upload/ic-select.svg"
 					},
-					{ "description": "Drafting your goods/services", "image": "/upload/ic-draft.svg" },
-					{ "description": "Filed within 24 hours", "image": "/upload/ic-file.svg" }
+					{
+						"description": "Drafting your goods/services",
+						"image": "/upload/ic-draft.svg"
+					},
+					{
+						"description": "Filed within 24 hours",
+						"image": "/upload/ic-file.svg"
+					}
 				]
 			},
-			"pricing": { "price": "$240", "gov": "plus government fees" }
+			"pricing": {
+				"price": "$240",
+				"gov": "plus government fees"
+			}
 		},
 		"searchClasses": {
 			"title": "Add Classes",
