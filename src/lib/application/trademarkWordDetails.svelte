@@ -5,10 +5,11 @@
 	import { searchResults_page } from '../../../data/global.json';
 	export let word, searchResultsDetails;
 
-	let showAllClasses;
+	let showAllDescriptions;
 	let sortedClasses,
 		resultClasses = {};
 	let content = searchResults_page;
+	let classDescription = searchResults_page.classes_description;
 
 	$: {
 		sortedClasses = {};
@@ -48,27 +49,25 @@
 		<div class="space-y-5">
 			{#each resultClasses.sortedClasses as el}
 				<div class="bg-ttmfBg border-2 border-ttmfBeige rounded-lg py-5 px-7">
-					<p class="text-ttmfRed text-lg font-bold">Class {el.class}</p>
-					<div class="flex flex-wrap items-center gap-2 pt-4">
-						{#if el.descriptionText.length > 8}
-							{#if showAllClasses === el.class}
-								{#each el.descriptionText as el}
-									<span class="bg-white rounded-full py-1 px-3">{el}</span>
-								{/each}
-							{:else}
-								{#each el.descriptionText.slice(0, 8) as el}
-									<span class="bg-white rounded-full py-1 px-3">{el}</span>
-								{/each}
-								<button
-									on:click={() => {
-										showAllClasses = el.class;
-									}}
-									class="bg-ttmfRed text-white rounded-full py-1 px-3">Show all classes</button>
-							{/if}
-						{:else}
-							{#each el.descriptionText as el}
-								<span class="bg-white rounded-full py-1 px-3">{el}</span>
-							{/each}
+					<div class="space-y-1">
+						<p class="text-ttmfRed text-lg font-bold">Class {el.class}</p>
+						<p class="text-ttmfBlack">
+							{classDescription.find((desc) => desc.class_number === +el.class)?.description ?? ''}
+						</p>
+					</div>
+					<div class="flex flex-wrap items-center gap-2 pt-3 text-sm">
+						{#each showAllDescriptions === el.class || el.descriptionText.length <= 8 ? el.descriptionText : el.descriptionText.slice(0, 4) as description}
+							<span class="bg-white rounded-full py-1 px-3 border-2 border-ttmfCreme/30"
+								>{description}</span>
+						{/each}
+						{#if el.descriptionText.length > 8 && showAllDescriptions !== el.class}
+							<button
+								on:click={() => {
+									showAllDescriptions = el.class;
+								}}
+								class="bg-ttmfRed text-white font-bold rounded-full py-1 px-3 border-2 border-transparent transition-all hover:bg-transparent hover:text-ttmfRed hover:border-ttmfRed">
+								Show all
+							</button>
 						{/if}
 					</div>
 				</div>

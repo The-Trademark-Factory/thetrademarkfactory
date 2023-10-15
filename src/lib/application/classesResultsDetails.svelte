@@ -68,33 +68,40 @@
 				<div>
 					<div class="space-y-1">
 						<p class="text-ttmfRed text-lg font-bold">Class {classNumber}</p>
-						<p class="text-ttmfBlack text-sm">
+						<p class="text-ttmfBlack">
 							{classDescription.find((el) => el.class_number === +classNumber)?.description ?? ''}
 						</p>
 					</div>
 				</div>
-				<div class="flex flex-wrap items-center gap-2 pt-3">
+				<div class="flex flex-wrap items-center gap-2 pt-3 text-sm">
 					{#each groupedResults[classNumber].filter((desc) => desc
 							.toLowerCase()
 							.includes(filterText.toLowerCase())) as description}
 						<button
-							class="text-left flex items-center rounded-full text-sm p-1 font-bold border-2
+							class="text-left flex items-center rounded-full p-1 font-bold border-2 transition-all group hover:text-white
 						{$classes.find((c) => c.class === classNumber)?.descriptions.includes(description)
-								? 'text-ttmfRed border-ttmfRed/20 bg-ttmfRed/10'
-								: 'text-ttmfLightGreen border-ttmfLightGreen/20 bg-ttmfLightGreen/10'}"
+								? 'text-ttmfRed border-ttmfRed/20 bg-ttmfRed/10 hover:bg-ttmfRed '
+								: 'text-ttmfLightGreen border-ttmfLightGreen/20 bg-ttmfLightGreen/10 hover:bg-ttmfLightGreen '}"
 							on:click={() => toggleDescription(classNumber, description)}>
 							<span class="px-2">{description}</span><span
-								class="shrink-0 w-5 h-5 rounded-full flex flex-col justify-center items-center text-white {$classes
+								class="shrink-0 w-5 h-5 rounded-full flex flex-col justify-center items-center text-white group-hover:bg-white {$classes
 									.find((c) => c.class === classNumber)
 									?.descriptions.includes(description)
-									? 'bg-ttmfRed'
-									: 'bg-ttmfLightGreen'}">
+									? 'bg-ttmfRed group-hover:text-ttmfRed'
+									: 'bg-ttmfLightGreen group-hover:text-ttmfLightGreen'}">
 								{#if $classes
 									.find((c) => c.class === classNumber)
 									?.descriptions.includes(description)}
-									<Check size="12" strokeWidth="3" />
+									<span class="group-hover:hidden">
+										<Check size="12" strokeWidth="3" />
+									</span>
+									<span class="hidden group-hover:block">
+										<X size="12" strokeWidth="3" />
+									</span>
 								{:else}
-									<Plus size="12" strokeWidth="3" />
+									<span class="transition-all group-hover:rotate-90">
+										<Plus size="12" strokeWidth="3" />
+									</span>
 								{/if}
 							</span>
 						</button>

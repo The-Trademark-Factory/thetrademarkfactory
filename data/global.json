@@ -79,6 +79,122 @@
 			{
 				"class_number": 16,
 				"description": "Includes mainly paper, cardboard and certain goods made of those materials, as well as office requisites."
+			},
+			{
+				"class_number": 17,
+				"description": "Includes mainly electrical, thermal and acoustic insulating materials and plastics for use in manufacture as well as certain goods made of rubber, gutta-percha, gum etc."
+			},
+			{
+				"class_number": 18,
+				"description": "Includes mainly leather, imitations of leather and certain goods made of those materials including bags."
+			},
+			{
+				"class_number": 19,
+				"description": "Includes mainly non-metallic materials for building and construction."
+			},
+			{
+				"class_number": 20,
+				"description": "Includes mainly furniture and parts therefor, as well as certain goods made of wood or of plastic."
+			},
+			{
+				"class_number": 21,
+				"description": "Includes mainly small, hand-operated utensils and apparatus for household and kitchen use, as well as cosmetic and toilet utensils, glassware and certain goods made of porcelain, ceramic, earthenware, terra-cotta or glass."
+			},
+			{
+				"class_number": 22,
+				"description": "Includes mainly canvas and other materials for making sails, rope, padding, cushioning and stuffing materials and raw fibrous textile materials."
+			},
+			{
+				"class_number": 23,
+				"description": "Includes mainly natural or synthetic yarns and threads for textile use."
+			},
+			{
+				"class_number": 24,
+				"description": "Includes mainly fabrics and fabric covers for household use."
+			},
+			{
+				"class_number": 25,
+				"description": "Includes mainly clothing, footwear and headwear for human beings."
+			},
+			{
+				"class_number": 26,
+				"description": "Includes mainly dressmakers' articles, natural or synthetic hair for wear, and hair accessories."
+			},
+			{
+				"class_number": 27,
+				"description": "Includes mainly products intended to be added as coverings to previously constructed floors and walls."
+			},
+			{
+				"class_number": 28,
+				"description": "Includes mainly toys, apparatus for playing games, sports equipment, amusement and novelty items."
+			},
+			{
+				"class_number": 29,
+				"description": "Includes mainly foodstuffs of animal origin, as well as vegetables and other horticultural comestible products which are prepared or preserved for consumption."
+			},
+			{
+				"class_number": 30,
+				"description": "Includes mainly foodstuffs of plant origin, except fruits and vegetables, prepared or preserved for consumption, as well as auxiliaries intended for the improvement of the flavour of food."
+			},
+			{
+				"class_number": 31,
+				"description": "Includes mainly land and sea products not having been subjected to any form of preparation for consumption, live animals and plants, as well as foodstuffs for animals."
+			},
+			{
+				"class_number": 32,
+				"description": "Includes mainly non-alcoholic beverages, as well as beer."
+			},
+			{
+				"class_number": 33,
+				"description": "Includes mainly alcoholic beverages, essences and extracts."
+			},
+			{
+				"class_number": 34,
+				"description": "Includes mainly tobacco and articles used for smoking, as well as certain accessories and containers related to their use."
+			},
+			{
+				"class_number": 35,
+				"description": "Includes mainly services involving business management, as well as advertising, marketing and promotional services, retail and wholesale services."
+			},
+			{
+				"class_number": 36,
+				"description": "Includes mainly services relating to banking and other financial transactions, financial valuation services, as well as insurance and real estate activities."
+			},
+			{
+				"class_number": 37,
+				"description": "Includes mainly services in the field of construction."
+			},
+			{
+				"class_number": 38,
+				"description": "Includes mainly telecommunication services and transmission of data."
+			},
+			{
+				"class_number": 39,
+				"description": "Includes mainly services for the transport of people, animals or goods as well as the storing of goods."
+			},
+			{
+				"class_number": 40,
+				"description": "Includes mainly services rendered by the mechanical or chemical processing, transformation or production of objects or inorganic or organic substances, including custom manufacturing services."
+			},
+			{
+				"class_number": 41,
+				"description": "Includes mainly services consisting of all forms of education or training, services having the basic aim of the entertainment, amusement or recreation of people, as well as the presentation of works of visual art or literature to the public for cultural or educational purposes."
+			},
+			{
+				"class_number": 42,
+				"description": "Includes mainly services provided by persons in relation to the theoretical and practical aspects of complex fields of activities, for example, scientific laboratory services, engineering, computer programming, architectural services or interior design."
+			},
+			{
+				"class_number": 43,
+				"description": "Includes mainly services provided in relation to the preparation of food and drink for consumption, as well as services for providing temporary accommodation."
+			},
+			{
+				"class_number": 44,
+				"description": "Includes mainly medical care, including alternative medicine, hygienic and beauty care given by persons or establishments to human beings and animals, as well as services relating to the fields of agriculture, aquaculture, horticulture and forestry."
+			},
+			{
+				"class_number": 45,
+				"description": "Includes mainly legal and security services, as well as certain personal and social services rendered by others to meet the needs of individuals."
 			}
 		],
 		"searchField": {

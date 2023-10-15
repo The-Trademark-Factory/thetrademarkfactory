@@ -10,6 +10,7 @@
 	const feeAdditionalClass = searchResults_page.pricing.additional_class;
 	const feeGovernment = searchResults_page.pricing.government_fee;
 	let totalPrice = 0;
+	let showAllDescriptions;
 
 	function removeDescriptionInStore(classNumber, description) {
 		let currentClasses = $classes.find((c) => c.class === classNumber);
@@ -83,7 +84,7 @@
 				<div class="flex flex-col divide-y">
 					<div class="pt-2">
 						<div class="divide-y pt-2">
-							{#each el.descriptions as description}
+							{#each showAllDescriptions === el.class ? el.descriptions : el.descriptions.slice(0, 1) as description}
 								<div
 									class="flex gap-4 justify-between text-sm {el.descriptions.length > 1
 										? 'py-3'
@@ -96,6 +97,14 @@
 								</div>
 							{/each}
 						</div>
+						{#if el.descriptions.length > 1 && showAllDescriptions !== el.class}
+							<button
+								on:click={() => {
+									showAllDescriptions = el.class;
+								}}>
+								<p class="text-ttmfRed font-bold text-sm">+{el.descriptions.length - 1} more</p>
+							</button>
+						{/if}
 					</div>
 				</div>
 			</div>
