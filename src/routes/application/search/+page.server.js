@@ -55,7 +55,7 @@ export async function load({ url }) {
 							// otherInformation: '',
 							// owner: '',
 							// removalApplicant: '',
-							statuses: ['REGISTERED'],
+							statuses: ['PENDING_REGISTERED'],
 							// trademarkNumber: '',
 							word: {
 								text: searchTerm,
