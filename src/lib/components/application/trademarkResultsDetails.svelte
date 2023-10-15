@@ -1,4 +1,5 @@
 <script>
+	import { Eye } from 'lucide-svelte';
 	export let resultsDetails, totalResults;
 
 	let showAllClasses;
@@ -6,14 +7,19 @@
 
 {#if totalResults > 0}
 	<p class="text-3xl font-bold">
-		<span class="text-ttmfRed">Showing 6</span> most relevant of {totalResults} total results found
+		<span class="text-ttmfRed">Showing first {resultsDetails.length}</span> of {totalResults}
+		total results found
 	</p>
 	<div class="space-y-5 mt-10">
 		{#each resultsDetails as el}
 			<div class="bg-white shadow-pricingShadow rounded-lg p-12">
 				<div class="flex items-center justify-between gap-24">
 					<p class="text-2xl font-bold">{el.words}</p>
-					{el.number}
+					<a
+						href="https://search.ipaustralia.gov.au/trademarks/search/view/{el.number}"
+						target="_blank"
+						class="inline-flex items-center gap-2 bg-ttmfBg px-4 py-2 text-ttmfRed font-bold rounded-full transition-all hover:bg-ttmfRed hover:text-white"
+						>{el.number}<Eye /></a>
 				</div>
 				<div class="space-y-4 pt-6">
 					{#each el.goodsAndServices as el}
@@ -49,7 +55,7 @@
 							<div>
 								<p class="text-xs uppercase font-bold text-ttmfDarkGreen/70">Filed</p>
 								<p class="text-lg font-bold">
-									{`${new Date(el.acceptanceDate).getDate()} ${
+									{`${new Date(el.filingDate).getDate()} ${
 										[
 											'January',
 											'February',
@@ -63,8 +69,8 @@
 											'October',
 											'November',
 											'December'
-										][new Date(el.acceptanceDate).getMonth()]
-									} ${new Date(el.acceptanceDate).getFullYear()}`}
+										][new Date(el.filingDate).getMonth()]
+									} ${new Date(el.filingDate).getFullYear()}`}
 								</p>
 							</div>
 						</div>

@@ -8,13 +8,13 @@ exports.handler = async function () {
 
 	if (!token || currentTime >= expiryTime) {
 		const response = await fetch(
-			'https://test.api.ipaustralia.gov.au/public/external-token-api/v1/access_token',
+			'https://production.api.ipaustralia.gov.au/public/external-token-api/v1/access_token',
 			{
 				method: 'POST',
 				body: new URLSearchParams({
 					grant_type: 'client_credentials',
-					client_id: import.meta.env.VITE_IPAUSTEST_CLIENT_ID,
-					client_secret: import.meta.env.VITE_IPAUSTEST_CLIENT_SECRET
+					client_id: import.meta.env.VITE_IPAUSPROD_CLIENT_ID,
+					client_secret: import.meta.env.VITE_IPAUSPROD_CLIENT_SECRET
 				}),
 				headers: {
 					'Content-Type': 'application/x-www-form-urlencoded'
@@ -23,7 +23,7 @@ exports.handler = async function () {
 		);
 
 		const data = await response.json();
-
+		console.log(data);
 		token = data.access_token;
 		expiryTime = currentTime + data.expires_in * 1000 - 60 * 1000; // 60 seconds buffer
 	}

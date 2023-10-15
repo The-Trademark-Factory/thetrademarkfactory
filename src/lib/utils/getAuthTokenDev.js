@@ -1,10 +1,10 @@
 export async function getAuthToken() {
 	try {
-		const clientId = import.meta.env.VITE_IPAUSTEST_CLIENT_ID;
-		const clientSecret = import.meta.env.VITE_IPAUSTEST_CLIENT_SECRET;
+		const clientId = import.meta.env.VITE_IPAUSPROD_CLIENT_ID;
+		const clientSecret = import.meta.env.VITE_IPAUSPROD_CLIENT_SECRET;
 
 		const res = await fetch(
-			'https://test.api.ipaustralia.gov.au/public/external-token-api/v1/access_token',
+			'https://production.api.ipaustralia.gov.au/public/external-token-api/v1/access_token',
 			{
 				method: 'POST',
 				headers: {

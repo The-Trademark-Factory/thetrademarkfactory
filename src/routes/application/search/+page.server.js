@@ -19,70 +19,57 @@ export async function load({ url }) {
 			token = await getAuthToken();
 		}
 
-		const apiRes = await fetch(import.meta.env.VITE_IPAUSTEST_URL + '/search/advanced', {
+		const apiRes = await fetch(import.meta.env.VITE_IPAUSPROD_URL + '/search/advanced', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',
 				Authorization: `Bearer ${token}`
 			},
-			body: JSON.stringify(
-				// 	{
-				// 	filters: {
-				// 		quickSearchType: ['WORD'],
-				// 		status: ['REGISTERED']
-				// 	},
-				// 	query: searchTerm,
-				// 	sort: {
-				// 		direction: 'DESCENDING',
-				// 		field: 'NUMBER'
-				// 	}
-				// }
-				{
-					changedSinceDate: '',
-					rows: [
-						{
-							op: 'AND',
-							query: {
-								addressForService: '',
-								claimant: '',
-								classNumber: {
-									text: '',
-									type: 'ASSOCIATED'
-								},
-								// date: {
-								// 	from: '',
-								// 	to: '',
-								// 	type: 'LODGEMENT_DATE'
-								// },
-								// flags: ['NON_USE'],
-								goodsAndServices: '',
-								image: {
-									text: '',
-									type: 'EXACT'
-								},
-								irNumber: '',
-								acnArbnAbn: '',
-								// kinds: ['WORD'],
-								opponent: '',
-								otherInformation: '',
-								owner: '',
-								removalApplicant: '',
-								// statuses: ['REGISTERED'],
-								trademarkNumber: '',
-								word: {
-									text: searchTerm,
-									type: 'PART'
-								},
-								wordPhrase: ''
+			body: JSON.stringify({
+				changedSinceDate: '',
+				rows: [
+					{
+						op: 'AND',
+						query: {
+							// addressForService: '',
+							// claimant: '',
+							// classNumber: {
+							// 	text: '',
+							// 	type: 'ASSOCIATED'
+							// },
+							// date: {
+							// 	from: '',
+							// 	to: '',
+							// 	type: 'LODGEMENT_DATE'
+							// },
+							// flags: ['NON_USE'],
+							// goodsAndServices: '',
+							// image: {
+							// 	text: '',
+							// 	type: 'EXACT'
+							// },
+							// irNumber: '',
+							// acnArbnAbn: '',
+							// kinds: ['WORD'],
+							// opponent: '',
+							// otherInformation: '',
+							// owner: '',
+							// removalApplicant: '',
+							statuses: ['REGISTERED'],
+							// trademarkNumber: '',
+							word: {
+								text: searchTerm,
+								type: 'PART'
 							}
+							// wordPhrase: ''
 						}
-					],
-					sort: {
-						field: 'NUMBER',
-						direction: 'ASCENDING'
 					}
+				],
+				sort: {
+					field: 'NUMBER',
+					direction: 'DESCENDING'
 				}
-			)
+			})
 		});
 
 		const apiData = await apiRes.json();
@@ -92,7 +79,7 @@ export async function load({ url }) {
 				apiData.trademarkIds.slice(0, 6).map(async (trademarkId) => {
 					try {
 						const res = await fetch(
-							`${import.meta.env.VITE_IPAUSTEST_URL}/trade-mark/${trademarkId}`,
+							`${import.meta.env.VITE_IPAUSPROD_URL}/trade-mark/${trademarkId}`,
 							{
 								method: 'GET',
 								headers: {
