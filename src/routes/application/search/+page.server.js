@@ -9,6 +9,19 @@ export async function load({ url }) {
 			}
 		};
 	}
+
+	const words = searchTerm.split(' ');
+	const rows = words.map((word) => ({
+		op: 'AND',
+		query: {
+			statuses: ['PENDING_REGISTERED'],
+			word: {
+				text: word,
+				type: 'PART'
+			}
+		}
+	}));
+
 	try {
 		let token;
 		if (import.meta.env.VITE_ENV_ADAPTER === 'netlify') {
@@ -27,44 +40,7 @@ export async function load({ url }) {
 			},
 			body: JSON.stringify({
 				changedSinceDate: '',
-				rows: [
-					{
-						op: 'AND',
-						query: {
-							// addressForService: '',
-							// claimant: '',
-							// classNumber: {
-							// 	text: '',
-							// 	type: 'ASSOCIATED'
-							// },
-							// date: {
-							// 	from: '',
-							// 	to: '',
-							// 	type: 'LODGEMENT_DATE'
-							// },
-							// flags: ['NON_USE'],
-							// goodsAndServices: '',
-							// image: {
-							// 	text: '',
-							// 	type: 'EXACT'
-							// },
-							// irNumber: '',
-							// acnArbnAbn: '',
-							// kinds: ['WORD'],
-							// opponent: '',
-							// otherInformation: '',
-							// owner: '',
-							// removalApplicant: '',
-							statuses: ['PENDING_REGISTERED'],
-							// trademarkNumber: '',
-							word: {
-								text: searchTerm,
-								type: 'PART'
-							}
-							// wordPhrase: ''
-						}
-					}
-				],
+				rows,
 				sort: {
 					field: 'NUMBER',
 					direction: 'DESCENDING'

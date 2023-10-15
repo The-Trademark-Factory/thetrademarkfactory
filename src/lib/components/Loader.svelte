@@ -1,9 +1,10 @@
 <script>
 	import { fly } from 'svelte/transition';
 	import { cubicIn, cubicOut } from 'svelte/easing';
-	import { onDestroy } from 'svelte';
 
 	export let destination, searchTerm;
+
+	let word = searchTerm ? decodeURIComponent(searchTerm) : 'Searching...';
 </script>
 
 <div
@@ -17,7 +18,7 @@
 			{#if destination === '/application/search'}
 				<div>
 					<p class="text-5xl md:text-7xl lg:text-9xl font-bold text-white pb-8">
-						{searchTerm ?? 'Searching...'}
+						{word}
 					</p>
 					<p
 						class="text-lg lg:text-2xl font-semibold text-ttmfLightTextGreen animate-pulse uppercase tracking-widest">
