@@ -124,15 +124,22 @@
 				setItem('classes', $classes);
 				goto('/application/details');
 			}}
-			class="bg-ttmfRed text-white font-bold px-12 py-5 rounded w-full">Continue to details</button>
+			class="sidebarNext">Continue to details</button>
 	{:else if $page.route.id.includes('details') && $detailsValid}
 		<button
 			on:click={() => {
 				setItem('details', $details);
 				goto('/application/international');
 			}}
-			class="bg-ttmfRed text-white font-bold px-12 py-5 rounded w-full">
+			class="sidebarNext">
 			Continue to intl. trademarks
+		</button>
+		<button
+			on:click={() => {
+				goto('/application/classes');
+			}}
+			class="sidebarPrevious">
+			Back to classes
 		</button>
 	{:else if $page.route.id.includes('international')}
 		<button
@@ -140,12 +147,18 @@
 				setItem('international', $international);
 				goto('/application/payment');
 			}}
-			class="bg-ttmfRed text-white font-bold px-12 py-5 rounded w-full">
+			class="sidebarNext">
 			Continue to payment
 		</button>
+		<button
+			on:click={() => {
+				goto('/application/details');
+			}}
+			class="sidebarPrevious">
+			Back to details
+		</button>
 	{:else if $page.route.id.includes('payment')}
-		<button disabled class="bg-ttmfRed text-white font-bold px-12 py-5 rounded w-full"
-			>Checkout</button>
+		<button disabled class="sidebarNext">Checkout</button>
 	{:else}
 		<button disabled class="bg-ttmfRed/50 text-white font-bold px-12 py-5 rounded w-full"
 			>Continue</button>

@@ -1,167 +1,57 @@
 <script>
+	import { selectors, commun, conditional } from '$lib/application/formDetails.json';
 	import { searchResults_page } from '../../../../data/global.json';
 	import { details, detailsValid } from '$lib/utils/stores';
 	import Sidebar from '$lib/application/sidebar.svelte';
 	import StartOver from '$lib/application/startOver.svelte';
-
-	const formData = [
-		{
-			label: 'The owner of the trademark is a:*',
-			name: 'Owner',
-			type: 'radio',
-			id: 'owner',
-			options: ['Company', 'Individual'],
-			placeholder: '',
-			required: false
-		},
-		{
-			label: 'The Company / Organisation is based in:*',
-			labelAlt: 'The Individual is based in:*',
-			name: 'Based',
-			type: 'radio',
-			id: 'based',
-			options: ['Australia', 'International'],
-			placeholder: '',
-			required: false
-		},
-		{
-			label: 'Company Name*',
-			name: 'Company',
-			type: 'text',
-			id: 'company',
-			options: [],
-			placeholder: 'ACME Pty Ltd',
-			required: true
-		},
-		{
-			label: 'ABN*',
-			name: 'ABN',
-			type: 'text',
-			id: 'abn',
-			options: [],
-			placeholder: '12345678910',
-			required: false
-		},
-		{
-			label: 'First Name*',
-			name: 'First name',
-			type: 'text',
-			id: 'firstName',
-			options: [],
-			placeholder: 'John',
-			required: false
-		},
-		{
-			label: 'Last Name*',
-			name: 'Last name',
-			type: 'text',
-			id: 'lastName',
-			options: [],
-			placeholder: 'Doe',
-			required: false
-		},
-		{
-			label: 'Address*',
-			name: 'Address',
-			type: 'text',
-			id: 'address',
-			options: [],
-			placeholder: '123 George St.',
-			required: false
-		},
-		{
-			label: 'Address Line 2',
-			name: 'Address 2',
-			type: 'text',
-			id: 'address2',
-			options: [],
-			placeholder: 'Level 1',
-			required: false
-		},
-		{
-			label: 'City*',
-			name: 'City',
-			type: 'text',
-			id: 'city',
-			options: [],
-			placeholder: 'Sydney',
-			required: false
-		},
-		{
-			label: 'State*',
-			name: 'Phone',
-			type: 'select',
-			id: 'state',
-			options: [
-				'New South Wales',
-				'Victoria',
-				'Queensland',
-				'Northern Territoy',
-				'Western Australia',
-				'South Australia',
-				'Tasmania',
-				'Australian Capital Territory'
-			],
-			placeholder: '',
-			required: false
-		},
-		{
-			label: 'Postcode*',
-			name: 'Postcode',
-			type: 'text',
-			id: 'postcode',
-			options: [],
-			placeholder: '2000',
-			required: false
-		},
-		{
-			label: 'Country*',
-			name: 'Country',
-			type: 'text',
-			id: 'country',
-			options: [],
-			placeholder: 'Australia',
-			required: false
-		},
-		{
-			label: 'Email*',
-			name: 'Email',
-			type: 'email',
-			id: 'email',
-			options: [],
-			placeholder: 'john@doe.com',
-			required: false
-		},
-		{
-			label: 'Phone*',
-			name: 'Phone',
-			type: 'tel',
-			id: 'phone',
-			options: [],
-			placeholder: '0412 345 678',
-			required: false
-		}
-	];
+	import ConditionalFields from '$lib/application/conditionalFields.svelte';
 
 	let initialValues = {};
-	formData.forEach((field) => {
-		initialValues[field.id] = field.type === 'radio' ? field.options[0] : '';
+	[selectors, commun, Object.values(conditional)].forEach((group) => {
+		if (Array.isArray(group)) {
+			group.forEach((field) => {
+				initialValues[field.id] = field.options ? field.options[0] : '';
+			});
+		} else if (typeof group === 'object') {
+			Object.values(group).forEach((field) => {
+				initialValues[field.id] = field.options ? field.options[0] : '';
+			});
+		}
 	});
 
-	// Check if details is empty
 	if (Object.keys($details).length === 0) {
 		details.set(initialValues);
 	}
 
 	const validateForm = (details) => {
-		detailsValid.set(
-			formData.every((field) => {
-				if (field.required) {
-					return details[field.id] !== '';
-				}
-				return true;
-			})
-		);
+		const communFieldsValid = commun.every((field) => {
+			if (field.required) {
+				return details[field.id] !== undefined && details[field.id] !== '';
+			}
+			return true;
+		});
+
+		const ownerValid =
+			details['owner'] === 'Company'
+				? details['company'] !== undefined && details['company'] !== ''
+				: true;
+
+		const basedValid = (() => {
+			if (details['based'] === 'Australia') {
+				return details['abn'] !== undefined && details['abn'] !== '';
+			} else if (details['based'] === 'International') {
+				return details['jurisdiction'] !== undefined && details['jurisdiction'] !== '';
+			}
+			return true;
+		})();
+
+		const conditionalFieldsValid = ownerValid && basedValid;
+
+		if (communFieldsValid && conditionalFieldsValid) {
+			detailsValid.set(true);
+		} else {
+			detailsValid.set(false);
+		}
 	};
 
 	$: {
@@ -174,27 +64,45 @@
 	<div class="grid lg:grid-cols-3 gap-12 pt-11">
 		<div class="lg:col-span-2">
 			<p class="text-3xl font-bold">{searchResults_page.personalDetails.title}</p>
-			<div class="space-y-6 mt-8">
-				{#each formData as field}
-					<div class="lg:w-3/4">
+			<div class="space-y-6 mt-8 lg:w-3/4">
+				{#each selectors as field}
+					<div>
+						<label class="block text-ttmfRed text-sm uppercase font-bold mb-1" for={field.name}>
+							{#if field.name === 'Based' && $details['owner'] === 'Individual'}
+								{field.labelIndividual}
+							{:else}
+								{field.label}
+							{/if}
+						</label>
+						<div class="flex items-center gap-6 py-3">
+							{#each field.options as option}
+								<div class="flex items-center gap-2">
+									<input
+										type="radio"
+										class="form-radio h-5 w-5"
+										id={option}
+										name={field.name}
+										value={option}
+										bind:group={$details[field.id]} />
+									<label for={option} class="font-bold text-ttmfBlack">{option}</label>
+								</div>
+							{/each}
+						</div>
+					</div>
+				{/each}
+				{#if $details['owner'] === 'Company'}
+					<ConditionalFields field={conditional.isCompany} />
+				{/if}
+				<ConditionalFields
+					field={$details['based'] === 'International'
+						? conditional.isInternational
+						: conditional.isAustralia} />
+				{#each commun as field}
+					<div>
 						<label class="block text-ttmfRed text-sm uppercase font-bold mb-1" for={field.name}>
 							{field.label}
 						</label>
-						{#if field.type === 'radio'}
-							<div class="flex items-center gap-6 py-3">
-								{#each field.options as option}
-									<div class="flex items-center gap-2">
-										<input
-											type="radio"
-											id={option}
-											name={field.name}
-											value={option}
-											bind:group={$details[field.id]} />
-										<label for={option} class="font-bold text-ttmfBlack">{option}</label>
-									</div>
-								{/each}
-							</div>
-						{:else if field.type === 'select'}
+						{#if field.type === 'select'}
 							<select
 								class="appearance-none border-2 border-ttmfBeige rounded w-full py-4 px-3 text-ttmfBlack font-bold leading-tight focus:outline-none focus:shadow-outline"
 								id={field.name}

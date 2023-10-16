@@ -20,7 +20,7 @@
 <nav class="bg-ttmfDarkGreen py-6">
 	<div class="max-w-screen-2xl mx-auto max-2xl:px-6">
 		<div class="flex justify-between items-center">
-			<p class="text-4xl text-white">TTMF</p>
+			<a href="/" class="text-4xl text-white">TTMF</a>
 			<div class="md:mx-auto flex flex-wrap items-center gap-12 font-bold text-lg">
 				{#each nav as el, i}
 					<button

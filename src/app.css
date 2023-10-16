@@ -50,3 +50,15 @@
 .prose {
 	@apply prose-em:text-ttmfRed prose-em:not-italic prose-a:font-bold prose-a:text-ttmfRed;
 }
+
+.sidebarPrevious {
+	@apply border-2 border-ttmfRed text-ttmfBlack font-bold px-12 py-2 rounded w-full mt-4 transition-all hover:bg-ttmfBlack hover:text-white hover:border-ttmfBlack;
+}
+
+.sidebarNext {
+	@apply bg-ttmfRed text-white font-bold px-12 py-5 rounded w-full transition-all hover:bg-ttmfBlack;
+}
+
+input[type='radio']:checked {
+	accent-color: #d34b44 !important;
+}
