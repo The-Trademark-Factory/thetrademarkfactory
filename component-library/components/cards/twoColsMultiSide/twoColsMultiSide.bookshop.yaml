@@ -12,8 +12,9 @@ blueprint:
   description: |
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, tortor eget sodales aliquam, nunc nisl ultricies nunc, quis aliquam nisl nisl vitae nunc. Sed euismod, tortor eget sodales aliquam, nunc nisl ultricies nunc, quis aliquam nisl nisl vitae nunc.
   media:
-    animation: computer
+    animation: computer-coffee
     image:
+    alt:
   cards:
     - title_card: Lorem ispum
       description_card: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -27,9 +28,6 @@ _inputs:
   description:
     type: html
   animation:
-    type: select
-    options:
-      values:
-        - computer
+    description: Animation to be displayed.
   image:
     comments: If an image is selected, the animation will be hidden

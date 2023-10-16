@@ -1,4 +1,5 @@
 <script>
+	import { onMount } from 'svelte';
 	import { beforeNavigate, afterNavigate } from '$app/navigation';
 	import { page } from '$app/stores';
 	import '../app.css';
@@ -11,6 +12,48 @@
 	let isLoading = false;
 	let destination;
 	let searchTerm;
+
+	onMount(() => {
+		const intersectionObserver = new IntersectionObserver(
+			(entries) =>
+				entries.forEach((entry) =>
+					entry.target.dispatchEvent(new CustomEvent('intersect', { detail: entry }))
+				),
+			{ root: null, rootMargin: '0px', threshold: 0.5 }
+		);
+
+		const mutationObserver = new MutationObserver((mutations) =>
+			mutations.forEach((m) => {
+				m.addedNodes.forEach((node) => {
+					if (
+						node instanceof HTMLElement &&
+						node.dataset.intersect != null &&
+						node.dataset.intersectInitialized == null
+					) {
+						intersectionObserver.observe(node);
+						node.dataset.intersectInitialized = 'true';
+					}
+				});
+				m.removedNodes.forEach((node) => {
+					if (node instanceof HTMLElement) {
+						intersectionObserver.unobserve(node);
+					}
+				});
+			})
+		);
+
+		[...document.querySelectorAll('[data-intersect]')].forEach((node) => {
+			intersectionObserver.observe(node);
+			node.dataset.intersectInitialized = 'true';
+		});
+
+		mutationObserver.observe(document.body, { childList: true, subtree: true });
+
+		return () => {
+			mutationObserver.disconnect();
+			intersectionObserver.disconnect();
+		};
+	});
 
 	beforeNavigate(({ to }) => {
 		destination = to.route.id;

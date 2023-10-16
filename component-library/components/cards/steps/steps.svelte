@@ -1,9 +1,22 @@
 <script>
+	import AnimatedSvg from '$lib/components/AnimatedSvg.svelte';
+	import { beforeNavigate } from '$app/navigation';
 	import Svg from '$lib/components/Svg.svelte';
+
 	export let title, steps;
+
+	let visible = false;
+	let showAnimation = true;
+
+	beforeNavigate(() => {
+		showAnimation = false;
+	});
 </script>
 
-<section class="max-w-screen-xl mx-auto py-12 lg:py-28 px-6">
+<section
+	data-intersect
+	on:intersect={(e) => (visible = e.detail.isIntersecting)}
+	class="max-w-screen-xl mx-auto py-12 lg:py-28 px-6">
 	<h2 class="styleTitle text-center">
 		{@html title}
 	</h2>
@@ -11,15 +24,23 @@
 		{#each steps as el, i}
 			<div class="relative {i % 2 === 0 ? '' : 'xl:pt-40 pl-2'}">
 				{#if !el.last_step}
-					<div class="max-xl:hidden absolute {i % 2 === 0 ? '-top-16 left-10' : '-top-24 left-20'}">
-						<Svg name={i % 2 === 0 ? 'step-top' : 'step-bottom'} />
-					</div>
+					{#if showAnimation}
+						<div
+							class="max-xl:hidden absolute {i % 2 === 0 ? '-top-16 left-10' : '-top-24 left-20'}">
+							<AnimatedSvg name={i % 2 === 0 ? 'step-top' : 'step-bottom'} {visible} />
+						</div>
+					{/if}
 				{/if}
 				<div class="relative text-xl text-ttmfRed font-bold font-arkina">
 					<span class="pl-5">
 						{el.step}
 					</span>
-					<div class="absolute left-0 -top-4 w-14">
+					{#if showAnimation}
+						<div class="max-lg:hidden absolute left-0 -top-4 w-14">
+							<AnimatedSvg name="round-number" {visible} />
+						</div>
+					{/if}
+					<div class="lg:hidden absolute left-0 -top-4 w-14">
 						<Svg name="round-number" />
 					</div>
 				</div>

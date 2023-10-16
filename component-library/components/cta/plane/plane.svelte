@@ -1,11 +1,23 @@
 <script>
 	import Svg from '$lib/components/Svg.svelte';
 	import Button from '$lib/components/Button.svelte';
+	import { beforeNavigate } from '$app/navigation';
+	import AnimatedSvg from '$lib/components/AnimatedSvg.svelte';
 
 	export let title, description, button;
+
+	let visible = false;
+	let showAnimation = true;
+
+	beforeNavigate(() => {
+		showAnimation = false;
+	});
 </script>
 
-<section class="relative py-10 lg:py-20 max-2xl:px-6 max-w-8xl mx-auto overflow-hidden">
+<section
+	data-intersect
+	on:intersect={(e) => (visible = e.detail.isIntersecting)}
+	class="relative py-10 lg:py-20 max-2xl:px-6 max-w-8xl mx-auto overflow-hidden">
 	<div
 		class="max-w-screen-xl mx-auto grid lg:grid-cols-3 bg-ttmfRed rounded-3xl px-8 md:px-16 pt-16 md:pt-24">
 		<div class="relative z-10 lg:col-span-2">
@@ -29,7 +41,9 @@
 			</div>
 		</div>
 	</div>
-	<div class="max-lg:hidden absolute top-0 left-1/2 transform -translate-x-1/2">
-		<Svg name="plane" />
-	</div>
+	{#if showAnimation}
+		<div class="max-lg:hidden absolute top-0 left-1/2 transform -translate-x-1/2">
+			<AnimatedSvg name="plane" {visible} />
+		</div>
+	{/if}
 </section>

@@ -10,8 +10,9 @@ content_blocks:
     title: Pricing
     subtitle: Trade Mark Registration Pricing
     background:
-      svg:
+      animation: pricing
       image: /upload/pricing_failsafe.svg
+      alt:
   - _bookshop_name: utils/pricing
     title: |
       Trade mark <em>registeration</em> pricing

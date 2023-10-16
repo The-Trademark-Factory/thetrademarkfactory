@@ -1,6 +1,7 @@
 <script>
+	import { beforeNavigate } from '$app/navigation';
 	import AccordionItem from '$lib/components/AccordionItem.svelte';
-	import Svg from '../../../../src/lib/components/Svg.svelte';
+	import AnimatedSvg from '$lib/components/AnimatedSvg.svelte';
 
 	export let title, faq;
 
@@ -9,15 +10,27 @@
 	const handleClick = (item) => () => {
 		openItem = openItem === item ? null : item;
 	};
+
+	let visible = false;
+	let showAnimation = true;
+
+	beforeNavigate(() => {
+		showAnimation = false;
+	});
 </script>
 
-<section class="py-10 lg:py-16">
+<section
+	data-intersect
+	on:intersect={(e) => (visible = e.detail.isIntersecting)}
+	class="py-10 lg:py-16">
 	<div class="max-w-screen-xl mx-auto bg-ttmfBrown/30 rounded-2xl">
 		<div class="grid lg:grid-cols-4 px-6 lg:px-16">
 			<div class="lg:pb-24">
-				<div class="max-lg:hidden">
-					<Svg name="bulb" style="ml-6" />
-				</div>
+				{#if showAnimation}
+					<div class="max-lg:hidden">
+						<AnimatedSvg name="bulb" {visible} />
+					</div>
+				{/if}
 				<h2 class="styleTitle pt-12">
 					{@html title}
 				</h2>

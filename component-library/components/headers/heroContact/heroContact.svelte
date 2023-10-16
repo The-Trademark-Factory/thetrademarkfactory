@@ -1,10 +1,21 @@
 <script>
+	import AnimatedSvg from '$lib/components/AnimatedSvg.svelte';
+	import { beforeNavigate } from '$app/navigation';
 	import { MapPin, Phone, Send } from 'lucide-svelte';
 	import footer from '../../../../data/footer.json';
-	export let title, subtitle, image, form;
+	export let title, subtitle, form;
+
+	let visible = false;
+	let showAnimation = true;
+
+	beforeNavigate(() => {
+		showAnimation = false;
+	});
 </script>
 
 <section
+	data-intersect
+	on:intersect={(e) => (visible = e.detail.isIntersecting)}
 	class="relative bg-gradient-to-b from-ttmfDarkGreen from-20% to-20% lg:from-45% lg:to-45% to-white">
 	<div class="relative z-10 max-w-screen-xl mx-auto pt-44 md:pt-52 pb-20 lg:pb-28 px-6">
 		<div class="grid lg:grid-cols-2 gap-10 md:gap-24">
@@ -17,7 +28,7 @@
 						<p class="text-4xl font-arkina text-ttmfRed pt-9">{subtitle}</p>
 					{/if}
 					<div class="absolute -bottom-5 right-0 max-md:w-1/3">
-						<img src={image} alt="Send email" />
+						<AnimatedSvg name="contact" {visible} />
 					</div>
 				</div>
 				<div class="flex flex-col divide-y-2 divide-ttmfRed">

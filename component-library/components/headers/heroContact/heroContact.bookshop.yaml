@@ -9,7 +9,6 @@ spec:
 blueprint:
   title: Lorem ipsum
   subtitle: Lorem ipsum dolor sit amet
-  image: /upload/img-hero-contact.svg
   form:
     title: Lorem ipsum
     button: Lorem ipsum

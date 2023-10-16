@@ -5,9 +5,10 @@
 	import SearchWord from '$lib/components/SearchWord.svelte';
 	export let title, search, aussie, scrolling_banner;
 
+	let visible = false;
+
 	onMount(() => {
 		const scrollContainer = document.getElementById('scroll-container');
-
 		let scrollAmount = 0;
 		const scrollInterval = setInterval(() => {
 			scrollContainer.scrollLeft += 1;
@@ -25,10 +26,13 @@
 	});
 </script>
 
-<section class="bg-ttmfDarkGreen text-white pt-20">
+<section
+	data-intersect
+	on:intersect={(e) => (visible = e.detail.isIntersecting)}
+	class="bg-ttmfDarkGreen text-white pt-20">
 	<div class="relative overflow-hidden">
 		<div class="absolute top-28 md:top-16 lg:top-20 xl:top-16 left-4 xl:left-headerOverflow w-full">
-			<AnimatedSvg name="trademarkAnimated" />
+			<AnimatedSvg name="trademarkAnimated" {visible} />
 		</div>
 		<div class="relative z-10 max-w-screen-xl mx-auto py-28 px-6">
 			<h1 class="text-5xl md:text-7xl lg:text-8xl xl:text-9xl flex flex-col">

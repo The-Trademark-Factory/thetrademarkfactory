@@ -50,8 +50,9 @@ content_blocks:
     description: |
       The TradeMark Factory was developed by accomplished trademark attorneys who implemented the power of artificial intelligence to provide an ingenious online platform
     media:
-      animation: computer
+      animation: computer-coffee
       image: /upload/placeholder-features.svg
+      alt: Drawing of a computer with a coffee mub
     cards:
       - title_card: Self-Service
         description_card: fully-automated online trademark application platform

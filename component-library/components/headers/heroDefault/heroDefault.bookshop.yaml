@@ -10,8 +10,9 @@ blueprint:
   title: Lorem ipsum
   subtitle: Lorem ipsum dolor sit amet
   background:
-    svg:
+    animation:
     image:
+    alt:
     align_bottom: false
 
 preview:

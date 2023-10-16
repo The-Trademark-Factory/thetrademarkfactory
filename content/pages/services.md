@@ -10,8 +10,9 @@ content_blocks:
     title: Services
     subtitle: Trademark registration services
     background:
-      svg:
+      animation: services
       image: /upload/img-hero-services.svg
+      alt:
   - _bookshop_name: cards/twoCols
     title: <p><em>Trademark</em> Registration Services</p>
     content: >-
