@@ -1,4 +1,5 @@
 export const prerender = true;
+export const trailingSlash = 'always';
 import Filer from '@cloudcannon/filer';
 
 export async function load() {

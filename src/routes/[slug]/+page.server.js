@@ -1,4 +1,5 @@
 export const prerender = true;
+export const trailingSlash = 'always';
 import { error } from '@sveltejs/kit';
 import { get } from '$lib/utils/routing';
 
