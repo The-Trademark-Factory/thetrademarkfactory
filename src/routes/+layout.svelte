@@ -5,9 +5,9 @@
 	import '../app.css';
 	import Loader from '$lib/components/Loader.svelte';
 	import { fade } from 'svelte/transition';
-	import Footer from '../lib/components/Footer.svelte';
-	import Navigation from '../lib/components/Navigation.svelte';
-	import NavigationApplication from '../lib/components/NavigationApplication.svelte';
+	import Footer from '$lib/components/Footer.svelte';
+	import Navigation from '$lib/components/Navigation.svelte';
+	import NavigationApplication from '$lib/components/NavigationApplication.svelte';
 
 	let isLoading = false;
 	let destination;

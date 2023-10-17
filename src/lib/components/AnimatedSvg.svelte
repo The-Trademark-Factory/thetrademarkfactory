@@ -1,6 +1,6 @@
 <script>
 	import { draw, fade } from 'svelte/transition';
-	export let name, size, style, visible, drawInDuration, drawOutDuration, fadeDuration;
+	export let name, style, visible;
 </script>
 
 {#if name === 'trademarkAnimated'}
@@ -179,9 +179,9 @@
 {#if name === 'about'}
 	<svg
 		width="777"
-		height="282"
 		viewBox="0 0 777 282"
 		fill="none"
+		class="max-md:w-full"
 		xmlns="http://www.w3.org/2000/svg">
 		<g clip-path="url(#clip0_27_1244)">
 			{#if visible}
@@ -206,7 +206,7 @@
 {#if name === 'services'}
 	<svg
 		width="826"
-		height="282"
+		class="max-md:w-full"
 		viewBox="0 0 826 282"
 		fill="none"
 		xmlns="http://www.w3.org/2000/svg">
@@ -226,7 +226,7 @@
 {#if name === 'pricing'}
 	<svg
 		width="795"
-		height="217"
+		class="max-md:w-full"
 		viewBox="0 0 795 217"
 		fill="none"
 		xmlns="http://www.w3.org/2000/svg">
@@ -266,9 +266,9 @@
 {#if name === 'resources'}
 	<svg
 		width="973"
-		height="500"
 		viewBox="0 0 973 500"
 		fill="none"
+		class="max-md:w-full"
 		xmlns="http://www.w3.org/2000/svg">
 		<g clip-path="url(#clip0_16_231)">
 			{#if visible}

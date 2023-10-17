@@ -1,25 +1,24 @@
 <script>
-	import AnimatedSvg from '$lib/components/AnimatedSvg.svelte';
 	import { beforeNavigate, afterNavigate } from '$app/navigation';
+	import AnimatedSvg from '$lib/components/AnimatedSvg.svelte';
 
 	export let title, subtitle, background;
 
 	let visible = false;
-	let showAnimation = true;
 
 	beforeNavigate(() => {
-		showAnimation = false;
+		visible = false;
 	});
 
 	afterNavigate(() => {
-		showAnimation = true;
+		visible = true;
 	});
 </script>
 
 <section
 	data-intersect
 	on:intersect={(e) => (visible = e.detail.isIntersecting)}
-	class="relative bg-ttmfDarkGreen text-white">
+	class="relative bg-ttmfDarkGreen text-white overflow-hidden">
 	<div class="relative z-10 max-w-screen-xl mx-auto pt-44 lg:pt-52 lg:pb-28 px-6">
 		<h1 class="text-6xl lg:text-8xl xl:text-9xl font-bold flex flex-col">
 			{title}
@@ -28,7 +27,7 @@
 			<p class="text-4xl font-arkina text-ttmfRed pt-9">{subtitle}</p>
 		{/if}
 	</div>
-	{#if showAnimation && background.animation}
+	{#if background.animation}
 		<div
 			class="lg:absolute right-0 {background.align_bottom
 				? 'bottom-0'

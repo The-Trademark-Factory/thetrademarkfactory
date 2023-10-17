@@ -29,7 +29,7 @@
 <section
 	data-intersect
 	on:intersect={(e) => (visible = e.detail.isIntersecting)}
-	class="bg-ttmfDarkGreen text-white pt-20">
+	class="bg-ttmfDarkGreen text-white pt-14">
 	<div class="relative overflow-hidden">
 		<div class="absolute top-28 md:top-16 lg:top-20 xl:top-16 left-4 xl:left-headerOverflow w-full">
 			<AnimatedSvg name="trademarkAnimated" {visible} />

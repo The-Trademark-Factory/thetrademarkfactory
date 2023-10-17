@@ -2,6 +2,7 @@
 	import { Check } from 'lucide-svelte';
 	import { page } from '$app/stores';
 	import { goto } from '$app/navigation';
+	import Svg from './Svg.svelte';
 
 	const nav = [
 		{ step_title: 'Search Trademark', url: '/application/search' },
@@ -17,10 +18,10 @@
 </script>
 
 <svelte:window bind:scrollY={y} />
-<nav class="bg-ttmfDarkGreen py-6">
+<nav class="bg-ttmfDarkGreen pt-6 pb-8">
 	<div class="max-w-screen-2xl mx-auto max-2xl:px-6">
-		<div class="flex justify-between items-center">
-			<a href="/" class="text-4xl text-white">TTMF</a>
+		<div class="flex justify-between items-end">
+			<a href="/"><Svg name="logo" /><span class="sr-only">The Trademark Factory Logo</span></a>
 			<div class="md:mx-auto flex flex-wrap items-center gap-12 font-bold text-lg">
 				{#each nav as el, i}
 					<button
