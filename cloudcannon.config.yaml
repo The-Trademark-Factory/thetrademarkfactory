@@ -14,8 +14,8 @@ collections_config:
         text:
           - key: title
   post:
-    path: content/articles
-    url: '/articles/[slug]/'
+    path: content/resources
+    url: '/resources/[slug]/'
     output: true
     schemas:
       page:
@@ -30,6 +30,10 @@ collections_config:
     path: data
     _enable_editors:
       - data
+    _inputs:
+      default_description:
+        type: html
+
 paths:
   collections: 'content'
   data: 'data'
