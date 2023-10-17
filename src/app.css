@@ -62,3 +62,7 @@
 input[type='radio']:checked {
 	accent-color: #d34b44 !important;
 }
+
+input[type='checkbox']:checked {
+	accent-color: #d34b44 !important;
+}

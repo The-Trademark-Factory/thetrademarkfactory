@@ -7,6 +7,12 @@
 
 	let searchTerm;
 
+	function handleKeydown(event) {
+		if (event.key === 'Enter') {
+			resetAndGo();
+		}
+	}
+
 	function resetAndGo() {
 		classes.set([]);
 		details.set([]);
@@ -21,7 +27,9 @@
 		type="text"
 		placeholder={placeholder ? placeholder : 'Search by word'}
 		class="relative text-xl font-bold text-black placeholder:font-normal pl-14 pr-6 py-6 rounded w-full lg:w-[550px]"
-		bind:value={searchTerm} />
+		required
+		bind:value={searchTerm}
+		on:keydown={handleKeydown} />
 	<div class="absolute left-4 max-sm:top-6">
 		<Search color="#D34B44" />
 	</div>

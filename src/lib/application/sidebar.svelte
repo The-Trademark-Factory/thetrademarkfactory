@@ -6,6 +6,8 @@
 	import { X } from 'lucide-svelte';
 	import { searchTerm, classes, details, detailsValid, international } from '$lib/utils/stores';
 
+	export let terms;
+
 	const feeFirstClass = searchResults_page.pricing.first_class;
 	const feeAdditionalClass = searchResults_page.pricing.additional_class;
 	const feeGovernment = searchResults_page.pricing.government_fee;
@@ -157,7 +159,7 @@
 			class="sidebarPrevious">
 			Back to details
 		</button>
-	{:else if $page.route.id.includes('payment')}
+	{:else if $page.route.id.includes('payment') && terms}
 		<button disabled class="sidebarNext">Checkout</button>
 	{:else}
 		<button disabled class="bg-ttmfRed/50 text-white font-bold px-12 py-5 rounded w-full"

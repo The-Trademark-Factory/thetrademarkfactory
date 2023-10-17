@@ -1,16 +1,35 @@
 <script>
+	import { Search } from 'lucide-svelte';
 	import { resources_page } from '../../../../data/global.json';
 	import HeroDefault from '../../../../component-library/components/headers/heroDefault/heroDefault.svelte';
 	export let data;
 
 	let background = { animation: 'resources', align_bottom: true };
+
+	let filterTerm = '';
+
+	$: filteredArticles = data.articles.filter(
+		(article) =>
+			article.data.title.toLowerCase().includes(filterTerm.toLowerCase()) ||
+			article.content.toLowerCase().includes(filterTerm.toLowerCase())
+	);
 </script>
 
 <HeroDefault title={resources_page.title} subtitle={resources_page.subtitle} {background} />
 
-<section class="max-w-screen-xl mx-auto py-12">
+<section class="max-w-screen-xl mx-auto pb-12 px-6">
+	<div class="py-16">
+		<div class="inline-flex items-center gap-6">
+			<span class="text-ttmfRed"><Search size="40" /></span>
+			<input
+				type="text"
+				class="text-4xl p-2 bg-ttmfBg text-ttmfBlack placeholder:text-ttmfBlack/80"
+				placeholder="Filter Articles..."
+				bind:value={filterTerm} />
+		</div>
+	</div>
 	<div class="flex flex-col divide-y border-t border-b">
-		{#each data.articles as el}
+		{#each filteredArticles as el}
 			<a
 				href="/resources/{el.slug}"
 				class="flex max-lg:flex-wrap items-center gap-6 justify-between py-14 px-6 group transition-all hover:bg-white hover:shadow-pricingShadow rounded-lg">
