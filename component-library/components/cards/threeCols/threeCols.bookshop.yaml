@@ -19,3 +19,5 @@ preview:
 _inputs:
   title:
     type: html
+  icon:
+    type: image

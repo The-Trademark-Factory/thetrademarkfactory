@@ -20,3 +20,5 @@ preview:
 _inputs:
   title:
     type: html
+  steps.title:
+    type: text

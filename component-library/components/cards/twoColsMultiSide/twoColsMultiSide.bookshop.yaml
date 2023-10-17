@@ -27,6 +27,8 @@ _inputs:
     type: html
   description:
     type: html
+  icon:
+    type: image
   animation:
     description: Animation to be displayed.
   image:

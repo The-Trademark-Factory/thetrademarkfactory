@@ -33,6 +33,10 @@ collections_config:
     _inputs:
       default_description:
         type: html
+      info_content:
+        type: html
+      icon:
+        type: image
 
 paths:
   collections: 'content'
