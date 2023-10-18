@@ -1,8 +1,8 @@
 ---
 title: Home
 seo:
-  title: SEO Title
-  description: SEO Description
+  title: Protect your Trademark Today | Register Online | The Trademark Factory
+  description: Apply for your trademark online with our automated platform. Register your trademark for Australia and Worldwide in minutes.
   image:
   no_index: false
 content_blocks:

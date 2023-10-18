@@ -1,8 +1,8 @@
 ---
 title: About
 seo:
-  title: SEO Title
-  description: SEO Description
+  title: About Us | The Trademark Factory
+  description: We are an Australian law firm specialised in trademarks and IP with over 10,000 trademarks registered.
   image:
   no_index: false
 content_blocks:

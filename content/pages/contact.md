@@ -1,8 +1,8 @@
 ---
 title: Contact
 seo:
-  title: SEO Title
-  description: SEO Description
+  title: Contact Us | The Trademark Factory
+  description: Get in touch for all your trademarks and intellectual property enquiries
   image:
   no_index: false
 content_blocks:
