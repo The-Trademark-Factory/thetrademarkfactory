@@ -1,4 +1,5 @@
 <script>
+	import { enhance } from '$app/forms';
 	import { searchResults_page } from '../../../data/global.json';
 	import { setItem } from '$lib/utils/localStorageUtils';
 	import { goto } from '$app/navigation';
@@ -13,6 +14,7 @@
 	const feeGovernment = searchResults_page.pricing.government_fee;
 	let totalPrice = 0;
 	let showAllDescriptions;
+	let checkingOut = false;
 
 	function removeDescriptionInStore(classNumber, description) {
 		let currentClasses = $classes.find((c) => c.class === classNumber);
@@ -43,6 +45,18 @@
 
 	const getClassPrice = (index) => {
 		return index === 0 ? feeFirstClass : feeAdditionalClass;
+	};
+
+	// Handle Stripe payment
+	const onCheckout = ({ cancel }) => {
+		if (checkingOut) return cancel();
+		checkingOut = true;
+
+		return ({ result }) => {
+			if (result.type === 'redirect') window.location = result.location;
+
+			checkingOut = false;
+		};
 	};
 </script>
 
@@ -160,7 +174,26 @@
 			Back to details
 		</button>
 	{:else if $page.route.id.includes('payment') && terms}
-		<button disabled class="sidebarNext">Checkout</button>
+		<form method="post" action="?/checkout" use:enhance={onCheckout}>
+			<input
+				type="hidden"
+				name="items"
+				value={JSON.stringify(
+					$classes.map((el, i) => ({
+						class: el.class,
+						price: getClassPrice(i),
+						description: el.descriptions
+					}))
+				)} />
+			<input type="hidden" name="government_fee" value={feeGovernment} />
+			<button type="submit" disabled={checkingOut} class="sidebarNext">
+				{#if checkingOut}
+					Processing...
+				{:else}
+					Checkout
+				{/if}
+			</button>
+		</form>
 	{:else}
 		<button disabled class="bg-ttmfRed/50 text-white font-bold px-12 py-5 rounded w-full"
 			>Continue</button>
