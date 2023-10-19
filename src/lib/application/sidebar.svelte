@@ -47,6 +47,7 @@
 		return index === 0 ? feeFirstClass : feeAdditionalClass;
 	};
 
+	// Handle Stripe payment
 	const onCheckout = ({ cancel }) => {
 		if (checkingOut) return cancel();
 		checkingOut = true;
