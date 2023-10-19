@@ -43,7 +43,7 @@ export const actions = {
             throw redirect(303, session.url)
         } catch (e) {
             console.log('Stripe error: ', e)
-            return fail(400, { error: e.messsage })
+            return fail(400, { error: e.message })
         }
     }
 };
