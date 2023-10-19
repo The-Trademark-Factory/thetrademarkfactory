@@ -53,6 +53,7 @@
 		checkingOut = true;
 
 		return ({ result }) => {
+			console.log('Checkout result: ', result);
 			if (result.type === 'redirect') window.location = result.location;
 
 			checkingOut = false;
