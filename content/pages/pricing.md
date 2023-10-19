@@ -3,7 +3,7 @@ title: Pricing
 seo:
   title: Our Pricing | The Trademark Factory
   description: We offer a flat fee for all your trademark registration, in Australia and Internationally.
-  image:
+  image: /upload/ttmf-default-seo.png
   no_index: false
 content_blocks:
   - _bookshop_name: headers/heroDefault

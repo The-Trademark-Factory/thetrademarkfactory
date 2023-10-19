@@ -3,7 +3,7 @@ title: Services
 seo:
   title: Trademark & IP registration Services | The Trademark Factory
   description: We offer Trademark Registeration, Search and Portfolio Management. We can also take care of your IP Healthcheck and Trademark Renewals
-  image:
+  image: /upload/ttmf-default-seo.png
   no_index: false
 content_blocks:
   - _bookshop_name: headers/heroDefault

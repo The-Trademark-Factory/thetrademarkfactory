@@ -5,6 +5,6 @@ image:
 seo:
   title:
   description:
-  image:
+  image: /upload/ttmf-default-seo.png
   no_index: false
 ---

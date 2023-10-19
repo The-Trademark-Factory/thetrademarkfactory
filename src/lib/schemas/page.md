@@ -1,14 +1,16 @@
 ---
 title:
 seo:
-  title: SEO Title
-  description: SEO Description
-  image:
+  title:
+  description:
+  image: /upload/ttmf-default-seo.png
   no_index: false
 content_blocks:
-  - _bookshop_name: utils/spacer
-    background: dark
-    padding: '3'
-    rounded_bottom: false
-    rounded_top: false
+  - _bookshop_name: headers/heroDefault
+    title: A title
+    subtitle:
+    background:
+      animation:
+      image: /upload/pricing_failsafe.svg
+      alt:
 ---

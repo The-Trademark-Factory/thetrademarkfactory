@@ -5,7 +5,7 @@ image: /upload/article-placeholder-image.jpg
 seo:
   title: SEO Title
   description: SEO Description
-  image:
+  image: /upload/ttmf-default-seo.png
   no_index: false
 ---
 

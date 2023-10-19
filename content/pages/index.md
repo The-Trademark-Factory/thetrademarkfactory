@@ -3,7 +3,7 @@ title: Home
 seo:
   title: Protect your Trademark Today | Register Online | The Trademark Factory
   description: Apply for your trademark online with our automated platform. Register your trademark for Australia and Worldwide in minutes.
-  image:
+  image: /upload/ttmf-default-seo.png
   no_index: false
 content_blocks:
   - _bookshop_name: headers/heroHome
