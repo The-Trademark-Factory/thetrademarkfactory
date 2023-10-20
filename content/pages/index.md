@@ -14,7 +14,7 @@ content_blocks:
       title_below: today
       full_title:
     search:
-      title: Easy, Fast and Affordable Trademark Registration
+      title: Easy, fast and affordable trademark registration
     aussie:
       title: Australian Owned & Operated
       subtitle: Backed by expert lawyers with over 40 years experience
