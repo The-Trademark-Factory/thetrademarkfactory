@@ -17,7 +17,7 @@ content_blocks:
       title: Trust the experts with your business' most valuable asset
     aussie:
       title: Australian Owned & Operated
-      subtitle: 10,000+ trademarks registered
+      subtitle: Backed by expert lawyers with over 40 years experience
     scrolling_banner:
       - title: Naturo Limited
       - title: Gloria Jean's Coffees
