@@ -43,7 +43,10 @@ export const actions = {
             throw redirect(303, session.url)
         } catch (e) {
             console.log('Stripe error: ', e)
+
+            if (e.status === 303) throw redirect(303, e.location)
+
             return fail(400, { error: JSON.stringify(e) })
         }
     }
-};
+}; 
