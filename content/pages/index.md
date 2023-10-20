@@ -48,8 +48,7 @@ content_blocks:
       - title: GapOnly
       - title: Greatcell Energy
   - _bookshop_name: utils/pricing
-    title: |
-      Trade mark <em>registeration</em> pricing
+    title: <p>Trade mark <em>registration</em> pricing</p>
   - _bookshop_name: cards/twoColsMultiSide
     title: |
       Merging Legal Expertise with AI <em>innovation</em>
