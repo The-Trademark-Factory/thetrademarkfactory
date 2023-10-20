@@ -14,7 +14,7 @@ content_blocks:
       title_below: today
       full_title:
     search:
-      title: Trust the experts with your business' most valuable asset
+      title: Easy, Fast and Affordable Trademark Registration
     aussie:
       title: Australian Owned & Operated
       subtitle: Backed by expert lawyers with over 40 years experience
