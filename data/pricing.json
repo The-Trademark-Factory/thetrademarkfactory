@@ -58,7 +58,7 @@
 			},
 			"id": "nzPricing",
 			"image": "/upload/ic-nz.svg",
-			"price": "A$350 + Govt. fees",
+			"price": "A$500 + Govt. fees",
 			"button": {
 				"title": "Pricing & Enquiry",
 				"url": "/pricing/#international-pricing"
@@ -70,7 +70,7 @@
 				},
 				{
 					"image": "/upload/ic-select.svg",
-					"text": "Allocation of IP lawyer to manage the matter on your behalf"
+					"text": "Allocation of trademark lawyer to manage the application for you"
 				},
 				{
 					"image": "/upload/ic-file.svg",
@@ -87,16 +87,13 @@
 			],
 			"information": [
 				{
-					"info_content": "The above fees cover the <strong>registration of one trade mark in one class via our online</strong> application form plus GST."
+					"info_content": "<p>The above fees cover the <strong>registration of one trade mark in one class </strong>&nbsp;+ GST.</p>"
 				},
 				{
-					"info_content": "Govt fees of <strong>A$250 additional.</strong>"
+					"info_content": "<p>Govt fees of <strong>NZ$100 additional.</strong></p>"
 				},
 				{
-					"info_content": "<strong>Each additional class will cost A$350 + GST on filing.</strong>"
-				},
-				{
-					"info_content": "If you would like one of our lawyers to prepare your application, our fee is A$300 plus GST in addition to the above fees."
+					"info_content": "<p><strong>Each additional class will cost A$250 + GST on filing.</strong></p>"
 				},
 				{
 					"info_content": "Provided your application proceeds smoothly, <strong>NO ADDITIONAL FEES APPLY.</strong>"
@@ -111,7 +108,7 @@
 			},
 			"id": "intPricing",
 			"image": "/upload/ic-globe.svg",
-			"price": "A$240 + Govt. fees",
+			"price": "From A$500 + Govt. fees",
 			"button": {
 				"title": "Pricing & Enquiry",
 				"url": "/pricing/#international-pricing"
@@ -123,7 +120,7 @@
 				},
 				{
 					"image": "/upload/ic-select.svg",
-					"text": "Allocation of IP lawyer to manage the matter on your behalf"
+					"text": "Allocation of trademark lawyer to manage the application for you"
 				},
 				{
 					"image": "/upload/ic-file.svg",
@@ -140,19 +137,16 @@
 			],
 			"information": [
 				{
-					"info_content": "The above fees cover the <strong>registration of one trade mark in one class via our online</strong> application form plus GST."
+					"info_content": "<p>The above fees cover the <strong>registration of one trade mark in one class in one country</strong> + GST.</p>"
 				},
 				{
-					"info_content": "Govt fees of <strong>A$250 additional.</strong>"
+					"info_content": "<p>Govt fees <strong>additional.</strong></p>"
 				},
 				{
-					"info_content": "<strong>Each additional class will cost A$350 + GST on filing.</strong>"
+					"info_content": "<p><strong>Each additional class A$150 + govt + GST for each country on filing.</strong></p>"
 				},
 				{
-					"info_content": "If you would like one of our lawyers to prepare your application, our fee is A$300 plus GST in addition to the above fees."
-				},
-				{
-					"info_content": "Provided your application proceeds smoothly, <strong>NO ADDITIONAL FEES APPLY.</strong>"
+					"info_content": "<p>Provided your application proceeds smoothly, <strong>NO ADDITIONAL FEES APPLY.</strong></p>"
 				}
 			]
 		}
