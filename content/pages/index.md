@@ -180,25 +180,25 @@ content_blocks:
       - title: <p>HAELEN</p>
         icon: /upload/haelen.jpg
   - _bookshop_name: others/testimonials
-    title: |
-      What our clients <em>say</em>
+    title: <p>What our clients <em>say</em></p>
     testimonials:
-      - name: John Doe
-        position: Lorem ispum
+      - name: Brad Hales
+        position: National Marketing Communications Manager, Uniden Australia Pty Ltd,
         description: >-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        icon: /upload/sumosalad-logo.png
-      - name: Janette Doe
-        position: Lorem ispum
+          "Great professionalism ....Extremely knowledgeable ... Clarity to many
+          complex applications we have had over the years. I would recommended
+          Natalie and the team for any individual or company seeking a
+          trustworthy and reliable service."
+        icon: /upload/uniden.jpg
+      - name: Shadi Harb
+        position: In-House Counsel, Seagrass Boutique Hospitality Group,
         description: >-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        icon: /upload/sumosalad-logo.png
+          "Natalie has always provided sound and prompt advice no matter how
+          difficult or convoluted our matters may be. Her attention to detail,
+          fair and transparent rates and ability to deliver results to our
+          business is greatly appreciated. I would recommend, with confidence,
+          Natalie and her team."
+        icon: /upload/seagrass.jpg
       - name: Michelle Doe
         position: Lorem ispum
         description: >-
