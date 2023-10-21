@@ -17,8 +17,7 @@ content_blocks:
       alt:
       align_bottom: false
   - _bookshop_name: utils/pricing
-    title: |
-      Trade mark <em>registeration</em> pricing
+    title: <p>Trade mark <em>registration&nbsp;</em>pricing</p>
   - _bookshop_name: utils/internationalQuery
     title_section: <p><em>International</em> Trademark Pricing</p>
     description: >-
