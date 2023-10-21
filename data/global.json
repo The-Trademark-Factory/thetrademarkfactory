@@ -214,7 +214,7 @@
 				"title_available": "You can use our automated registration process to register your trademark. Our fee includes:",
 				"features": [
 					{
-						"description": "Prepared by our experienced trade mark lawyers",
+						"description": "Checked by our experienced trade mark lawyers",
 						"image": "/upload/ic-lawyer.svg"
 					},
 					{
@@ -222,7 +222,7 @@
 						"image": "/upload/ic-address.svg"
 					},
 					{
-						"description": "Allocation of IP lawyer to manage the matter on your behalf",
+						"description": "Allocation of IP lawyer to manage the application for you",
 						"image": "/upload/ic-select.svg"
 					},
 					{
@@ -236,7 +236,7 @@
 				]
 			},
 			"pricing": {
-				"price": "$240",
+				"price": "$350",
 				"gov": "plus government fees"
 			}
 		},
