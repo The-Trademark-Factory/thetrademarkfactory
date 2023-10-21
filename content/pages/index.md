@@ -198,7 +198,7 @@ content_blocks:
           fair and transparent rates and ability to deliver results to our
           business is greatly appreciated. I would recommend, with confidence,
           Natalie and her team."
-        icon: /upload/seagrass-1.jpg
+        icon: /upload/seagrass-2.jpg
       - name: Patricia Richards
         position: General Manager
         description: >-
