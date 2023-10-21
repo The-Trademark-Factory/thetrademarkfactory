@@ -251,6 +251,20 @@
 			"popular": false
 		},
 		{
+			"title": "Bahrain",
+			"gov_fee": 3000,
+			"service_fee": 500,
+			"icon": "/upload/bahrain-169405.svg",
+			"popular": false
+		},
+		{
+			"title": "Belarus",
+			"gov_fee": 1100,
+			"service_fee": 500,
+			"icon": "/upload/belarus-169410.svg",
+			"popular": false
+		},
+		{
 			"title": "Bhutan",
 			"gov_fee": 200,
 			"service_fee": 500,
@@ -328,6 +342,13 @@
 			"popular": false
 		},
 		{
+			"title": "Belize",
+			"gov_fee": 400,
+			"service_fee": 500,
+			"icon": "/upload/belize-169424.svg",
+			"popular": false
+		},
+		{
 			"title": "Kazakhstan",
 			"gov_fee": 200,
 			"service_fee": 500,
@@ -377,10 +398,24 @@
 			"popular": false
 		},
 		{
+			"title": "Bulgaria",
+			"gov_fee": 600,
+			"service_fee": 500,
+			"icon": "/upload/bulgaria-169418.svg",
+			"popular": false
+		},
+		{
 			"title": "Malawi",
 			"gov_fee": 200,
 			"service_fee": 500,
 			"icon": "/upload/malawi-169619.svg",
+			"popular": false
+		},
+		{
+			"title": "Brunei",
+			"gov_fee": 350,
+			"service_fee": 500,
+			"icon": "/upload/brunei-169417.svg",
 			"popular": false
 		},
 		{
@@ -409,6 +444,48 @@
 			"gov_fee": 200,
 			"service_fee": 500,
 			"icon": "/upload/poland-169542.svg",
+			"popular": false
+		},
+		{
+			"title": "Cambodia",
+			"gov_fee": 250,
+			"service_fee": 500,
+			"icon": "/upload/cambodia-169421.svg",
+			"popular": false
+		},
+		{
+			"title": "Chile",
+			"gov_fee": 550,
+			"service_fee": 500,
+			"icon": "/upload/chile-169429.svg",
+			"popular": false
+		},
+		{
+			"title": "Colombia",
+			"gov_fee": 450,
+			"service_fee": 500,
+			"icon": "/upload/colombia-169437.svg",
+			"popular": false
+		},
+		{
+			"title": "Cuba",
+			"gov_fee": 500,
+			"service_fee": 500,
+			"icon": "/upload/cuba-169440.svg",
+			"popular": false
+		},
+		{
+			"title": "Denmark",
+			"gov_fee": 460,
+			"service_fee": 500,
+			"icon": "/upload/denmark-169439.svg",
+			"popular": false
+		},
+		{
+			"title": "Estonia",
+			"gov_fee": 280,
+			"service_fee": 500,
+			"icon": "/upload/estonia-169446.svg",
 			"popular": false
 		},
 		{
@@ -465,111 +542,6 @@
 			"gov_fee": 200,
 			"service_fee": 500,
 			"icon": "/upload/sudan-169574.svg",
-			"popular": false
-		},
-		{
-			"title": "Bahrain",
-			"gov_fee": 3000,
-			"service_fee": 500,
-			"icon": "/upload/bahrain-169405.svg",
-			"popular": false
-		},
-		{
-			"title": "Belarus",
-			"gov_fee": 1100,
-			"service_fee": 500,
-			"icon": "/upload/belarus-169410.svg",
-			"popular": false
-		},
-		{
-			"title": "Belize",
-			"gov_fee": 400,
-			"service_fee": 500,
-			"icon": "/upload/belize-169424.svg",
-			"popular": false
-		},
-		{
-			"title": "Brazil",
-			"gov_fee": 150,
-			"service_fee": 500,
-			"icon": "/upload/brazil-169415.svg",
-			"popular": false
-		},
-		{
-			"title": "Brunei",
-			"gov_fee": 350,
-			"service_fee": 500,
-			"icon": "/upload/brunei-169417.svg",
-			"popular": false
-		},
-		{
-			"title": "Bulgaria",
-			"gov_fee": 600,
-			"service_fee": 500,
-			"icon": "/upload/bulgaria-169418.svg",
-			"popular": false
-		},
-		{
-			"title": "Cambodia",
-			"gov_fee": 250,
-			"service_fee": 500,
-			"icon": "/upload/cambodia-169421.svg",
-			"popular": false
-		},
-		{
-			"title": "Canada",
-			"gov_fee": 450,
-			"service_fee": 500,
-			"icon": "/upload/canada-169422.svg",
-			"popular": false
-		},
-		{
-			"title": "Chile",
-			"gov_fee": 550,
-			"service_fee": 500,
-			"icon": "/upload/chile-169429.svg",
-			"popular": false
-		},
-		{
-			"title": "China",
-			"gov_fee": 450,
-			"service_fee": 500,
-			"icon": "/upload/china-169435.svg",
-			"popular": false
-		},
-		{
-			"title": "Colombia",
-			"gov_fee": 450,
-			"service_fee": 500,
-			"icon": "/upload/colombia-169437.svg",
-			"popular": false
-		},
-		{
-			"title": "Cuba",
-			"gov_fee": 500,
-			"service_fee": 500,
-			"icon": "/upload/cuba-169440.svg",
-			"popular": false
-		},
-		{
-			"title": "Denmark",
-			"gov_fee": 460,
-			"service_fee": 500,
-			"icon": "/upload/denmark-169439.svg",
-			"popular": false
-		},
-		{
-			"title": "Estonia",
-			"gov_fee": 280,
-			"service_fee": 500,
-			"icon": "/upload/estonia-169446.svg",
-			"popular": false
-		},
-		{
-			"title": "European Union",
-			"gov_fee": 1600,
-			"service_fee": 500,
-			"icon": "/upload/eu-169450.svg",
 			"popular": false
 		},
 		{
