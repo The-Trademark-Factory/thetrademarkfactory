@@ -137,10 +137,10 @@ content_blocks:
       label: Get a quote
       url: '#'
   - _bookshop_name: others/icons
-    title: <p>Recently <em>registered </em>by Us</p>
+    title: <p><em>registered </em>by Us</p>
     icons:
-      - title: PetSure
-        icon: /upload/petsure-logo.png
+      - title: <p>petsure</p>
+        icon: /upload/petsure.jpg
       - title: Soul Origin
         icon: /upload/soulorigin-logo.png
       - title: Sumo Salad
@@ -149,6 +149,36 @@ content_blocks:
         icon: /upload/hunter-logo.png
       - title: GME
         icon: /upload/gme-logo.png
+      - title: <p>WOK ON INN</p>
+        icon: /upload/wok-on-inn.jpg
+      - title: <p>MAD MEX</p>
+        icon: /upload/mad-mex.jpg
+      - title: <p>ribs and burgers</p>
+        icon: /upload/r-b.jpg
+      - title: <p>bizcover</p>
+        icon: /upload/bizcover.jpg
+      - title: <p>Abundant</p>
+        icon: /upload/abundant-natural-health.jpg
+      - title: <p>GJC</p>
+        icon: /upload/gloria-jean.jpg
+      - title: <p>DONUT KING</p>
+        icon: /upload/donut-king.jpg
+      - title: <p>GAPONLY</p>
+        icon: /upload/go-gap.jpg
+      - title: <p>CRUST</p>
+        icon: /upload/crust.jpg
+      - title: <p>PIEFACE</p>
+        icon: /upload/pie-face.jpg
+      - title: <p>NARELLAN</p>
+        icon: /upload/narellan.jpg
+      - title: <p>MICHEL'S</p>
+        icon: /upload/michel-s.jpg
+      - title: <p>onsite</p>
+        icon: /upload/connect.jpg
+      - title: <p>mr brooklyn</p>
+        icon: /upload/brooklyn.jpg
+      - title: <p>HAELEN</p>
+        icon: /upload/haelen.jpg
   - _bookshop_name: others/testimonials
     title: |
       What our clients <em>say</em>
