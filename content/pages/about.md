@@ -130,6 +130,5 @@ content_blocks:
           Australia and overseas.</p>
         image: /upload/kerrie-one.jpeg
   - _bookshop_name: cta/search
-    title: |
-      Get Your <em>Trademark</em> Today
+    title: <p>Get Your <em>Trademark</em> Today</p>
 ---
