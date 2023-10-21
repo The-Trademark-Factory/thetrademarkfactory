@@ -196,8 +196,8 @@
 		},
 		{
 			"title": "Canada",
-			"gov_fee": 100,
-			"service_fee": 100,
+			"gov_fee": 450,
+			"service_fee": 500,
 			"icon": "/upload/canada-icon.svg",
 			"popular": true
 		},
