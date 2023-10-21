@@ -94,16 +94,16 @@ content_blocks:
   - _bookshop_name: cta/ctaDefault
     title: |
       Trademark <em>Portfolio</em> Management
-    content: >
-      <p>Do you have an existing trademark portfolio? Are you concerned that you
-      may miss deadlines and risk losing your rights? If so, The TradeMark
-      Factory can manage your trademark portfolio for Australian and
-      international trademarks. Let us take care of your trademark portfolio so
-      you will never miss a deadline.</p>
+    content: >-
+      <p>Do you have an <strong>existing trademark portfolio</strong>? Are you
+      concerned that you may miss deadlines and risk losing your rights? If so,
+      The TradeMark Factory can manage your trademark portfolio for Australian
+      and international trademarks. Let us take care of your trademark portfolio
+      so you will never miss a deadline.</p>
     button:
-      title_button: Lorem ipsum
+      title_button: Contact Us
       url: '#'
-      title: Get Started
+      title: <p>Get Started</p>
   - _bookshop_name: cards/twoCols
     title: <p>IP <em>Healthcheck</em></p>
     content: >-
@@ -116,7 +116,7 @@ content_blocks:
       existing trademarks, and we will conduct the necessary searches to ensure
       that your trademarks are current and properly recorded.</p>
     button:
-      title_button: Lorem ipsum
+      title_button: Contact Us
       url:
       title:
     media:
@@ -134,7 +134,7 @@ content_blocks:
       protected.</p><p><strong>Don’t allow your valuable trademarks to
       lapse;</strong> contact us to arrange renewal on your behalf.</p>
     button:
-      title_button: Lorem ipsum
+      title_button: Contact Us
       url:
       title:
     media:
@@ -144,6 +144,5 @@ content_blocks:
       image_right: false
       align_center: false
   - _bookshop_name: cta/search
-    title: |
-      Get Your <em>Trademark</em> Today
+    title: <p>Get Your <em>Trademark</em> Today</p>
 ---
