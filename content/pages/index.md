@@ -50,41 +50,40 @@ content_blocks:
   - _bookshop_name: utils/pricing
     title: <p>Trade mark <em>registration</em> pricing</p>
   - _bookshop_name: cards/twoColsMultiSide
-    title: |
-      Merging Legal Expertise with AI <em>innovation</em>
-    description: >
-      The TradeMark Factory was developed by accomplished trademark attorneys
-      who implemented the power of artificial intelligence to provide an
-      ingenious online platform
+    title: <p>Merging Legal Expertise with AI <em>innovation</em></p>
+    description: >-
+      <p>The TradeMark Factory was developed by expert trademark attorneys who
+      implemented the power of artificial intelligence to provide an ingenious
+      online platform</p>
     media:
       animation: computer-coffee
       image: /upload/placeholder-features.svg
       alt: Drawing of a computer with a coffee mub
     cards:
       - title_card: Self-Service
-        description_card: fully-automated online trademark application platform
+        description_card: Fully-automated online trademark application platform
         icon: /upload/ic-selfservice.svg
       - title_card: Easy to Use
         description_card: >-
-          apply for your trademark registration online using any device in 4
+          Apply for your trademark registration online using any device in 4
           easy steps
         icon: /upload/ic-easytouse.svg
       - title_card: Affordable
         description_card: >-
-          pricing is transparent and up to 60% cheaper than a lawyer. You only
-          pay once.
+          Fixed fee pricing and up to 60% cheaper than a lawyer. You only pay
+          once.
         icon: /upload/ic-affordable.svg
       - title_card: Fast
-        description_card: apply for your trademark in under 5 minutes
+        description_card: Apply for your trademark in under 5 minutes
         icon: /upload/ic-fast.svg
       - title_card: Better Protection
         description_card: >-
-          improves application quality by recommending approved goods and
-          services.
+          Improved application quality by recommending approved IP Australia
+          goods and services.
         icon: /upload/ic-protect.svg
       - title_card: Australia Specific
         description_card: >-
-          designed for registering trademarks in Australia and trusted by
+          Designed for registering trademarks in Australia and trusted by
           thousands of brand owners to protect their trademarks.
         icon: /upload/ic-ausspecific.svg
   - _bookshop_name: cards/steps
