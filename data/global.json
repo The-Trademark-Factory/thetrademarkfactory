@@ -17,7 +17,7 @@
 		"classes_description": [
 			{
 				"class_number": 1,
-				"description": "Includes mainly chemical products for use in industry, science and agriculture, including those which go to the making of products belonging to other classes."
+				"description": "Includes mainly chemical products for use in industry, science and agriculture."
 			},
 			{
 				"class_number": 2,
@@ -25,7 +25,7 @@
 			},
 			{
 				"class_number": 3,
-				"description": "Includes mainly non-medicated toiletry preparations, as well as cleaning preparations for use in the home and other environments."
+				"description": "Includes mainly cosmetics and non-medicated toiletry preparations and cleaning products."
 			},
 			{
 				"class_number": 4,
@@ -33,7 +33,7 @@
 			},
 			{
 				"class_number": 5,
-				"description": "Includes mainly pharmaceuticals and other preparations for medical or veterinary purposes."
+				"description": "Includes mainly pharmaceuticals and other preparations for medical or veterinary purposes and dietary supplements and vitamins."
 			},
 			{
 				"class_number": 6,
@@ -45,7 +45,7 @@
 			},
 			{
 				"class_number": 8,
-				"description": "Includes mainly hand tools and implements, hand-operated; cutlery; side arms, except firearms; razors."
+				"description": "Includes mainly hand operated tools; cutlery; razors."
 			},
 			{
 				"class_number": 9,
@@ -53,11 +53,11 @@
 			},
 			{
 				"class_number": 10,
-				"description": "Includes mainly surgical, medical, dental and veterinary apparatus, instruments."
+				"description": "Includes mainly surgical, medical, dental and veterinary apparatus."
 			},
 			{
 				"class_number": 11,
-				"description": "Includes mainly environmental control apparatus and installations, in particular, for the purposes of lighting, cooking, cooling and sanitizing."
+				"description": "Includes mainly lighting, cooking, cooling and sanitising apparatus and installations."
 			},
 			{
 				"class_number": 12,
@@ -69,7 +69,7 @@
 			},
 			{
 				"class_number": 14,
-				"description": "Includes mainly precious metals and certain goods made of precious metals or coated therewith, as well as jewellery, clocks and watches, and component parts therefor."
+				"description": "Includes mainly precious metals and goods made of precious metals, jewellery, clocks and watches, and their components."
 			},
 			{
 				"class_number": 15,
@@ -77,15 +77,15 @@
 			},
 			{
 				"class_number": 16,
-				"description": "Includes mainly paper, cardboard and certain goods made of those materials, as well as office requisites."
+				"description": "Includes mainly paper, cardboard and certain goods made of those materials such as cards."
 			},
 			{
 				"class_number": 17,
-				"description": "Includes mainly electrical, thermal and acoustic insulating materials and plastics for use in manufacture as well as certain goods made of rubber, gutta-percha, gum etc."
+				"description": "Includes mainly electrical, thermal and acoustic insulating materials and plastics for use in manufacture and goods made of rubber, gutta-percha, gum etc."
 			},
 			{
 				"class_number": 18,
-				"description": "Includes mainly leather, imitations of leather and certain goods made of those materials including bags."
+				"description": "Includes mainly leather, imitations of leather and goods made of those materials including bags."
 			},
 			{
 				"class_number": 19,
@@ -93,11 +93,11 @@
 			},
 			{
 				"class_number": 20,
-				"description": "Includes mainly furniture and parts therefor, as well as certain goods made of wood or of plastic."
+				"description": "Includes mainly furniture  as well as goods made of wood or of plastic."
 			},
 			{
 				"class_number": 21,
-				"description": "Includes mainly small, hand-operated utensils and apparatus for household and kitchen use, as well as cosmetic and toilet utensils, glassware and certain goods made of porcelain, ceramic, earthenware, terra-cotta or glass."
+				"description": "Includes mainly small, hand-operated utensils and apparatus for household and kitchen use, as well as cosmetic and toilet utensils, glassware and certain goods made of porcelain, ceramic or glass."
 			},
 			{
 				"class_number": 22,
@@ -113,7 +113,7 @@
 			},
 			{
 				"class_number": 25,
-				"description": "Includes mainly clothing, footwear and headwear for human beings."
+				"description": "Includes mainly clothing, footwear and headwear."
 			},
 			{
 				"class_number": 26,
@@ -121,23 +121,23 @@
 			},
 			{
 				"class_number": 27,
-				"description": "Includes mainly products intended to be added as coverings to previously constructed floors and walls."
+				"description": "Includes mainly products intended to be added as coverings to floors and walls."
 			},
 			{
 				"class_number": 28,
-				"description": "Includes mainly toys, apparatus for playing games, sports equipment, amusement and novelty items."
+				"description": "Includes mainly toys, games, sports equipment, amusement and novelty items."
 			},
 			{
 				"class_number": 29,
-				"description": "Includes mainly foodstuffs of animal origin, as well as vegetables and other horticultural comestible products which are prepared or preserved for consumption."
+				"description": "Includes mainly foodstuffs of animal origin, as well as vegetables and other horticultural products for consumption."
 			},
 			{
 				"class_number": 30,
-				"description": "Includes mainly foodstuffs of plant origin, except fruits and vegetables, prepared or preserved for consumption, as well as auxiliaries intended for the improvement of the flavour of food."
+				"description": "Includes mainly foodstuffs of plant origin, except fruits and vegetables, prepared or preserved for consumption, as well as food flavourings."
 			},
 			{
 				"class_number": 31,
-				"description": "Includes mainly land and sea products not having been subjected to any form of preparation for consumption, live animals and plants, as well as foodstuffs for animals."
+				"description": "Includes mainly land and sea products not having been subjected to any form of preparation for consumption, live animals and plants, as well as food for animals."
 			},
 			{
 				"class_number": 32,
@@ -149,15 +149,15 @@
 			},
 			{
 				"class_number": 34,
-				"description": "Includes mainly tobacco and articles used for smoking, as well as certain accessories and containers related to their use."
+				"description": "Includes mainly tobacco and articles used for smoking, as well as accessories and containers related to their use."
 			},
 			{
 				"class_number": 35,
-				"description": "Includes mainly services involving business management, as well as advertising, marketing and promotional services, retail and wholesale services."
+				"description": "Includes mainly services involving business management, as well as advertising, marketing and promotional services; retail and wholesale services."
 			},
 			{
 				"class_number": 36,
-				"description": "Includes mainly services relating to banking and other financial transactions, financial valuation services, as well as insurance and real estate activities."
+				"description": "Includes mainly services relating to banking and other financial transactions, financial valuation services, as well as insurance and real estate services."
 			},
 			{
 				"class_number": 37,
@@ -169,7 +169,7 @@
 			},
 			{
 				"class_number": 39,
-				"description": "Includes mainly services for the transport of people, animals or goods as well as the storing of goods."
+				"description": "Includes mainly services for the transport of people, animals or goods as well as storage services."
 			},
 			{
 				"class_number": 40,
@@ -177,19 +177,19 @@
 			},
 			{
 				"class_number": 41,
-				"description": "Includes mainly services consisting of all forms of education or training, services having the basic aim of the entertainment, amusement or recreation of people, as well as the presentation of works of visual art or literature to the public for cultural or educational purposes."
+				"description": "Includes mainly services consisting of all forms of education or training, entertainment, amusement or recreation services, the presentation of works of visual art or literature to the public for cultural or educational purposes."
 			},
 			{
 				"class_number": 42,
-				"description": "Includes mainly services provided by persons in relation to the theoretical and practical aspects of complex fields of activities, for example, scientific laboratory services, engineering, computer programming, architectural services or interior design."
+				"description": "Includes mainly scientific laboratory services, engineering, computer programming, architectural services or interior design."
 			},
 			{
 				"class_number": 43,
-				"description": "Includes mainly services provided in relation to the preparation of food and drink for consumption, as well as services for providing temporary accommodation."
+				"description": "Includes mainly services provided in relation to the preparation of food and drink, as well as services for providing temporary accommodation."
 			},
 			{
 				"class_number": 44,
-				"description": "Includes mainly medical care, including alternative medicine, hygienic and beauty care given by persons or establishments to human beings and animals, as well as services relating to the fields of agriculture, aquaculture, horticulture and forestry."
+				"description": "Includes mainly medical care, including alternative medicine, hygienic and beauty care for humans and animals, as well as services relating to the fields of agriculture, aquaculture, horticulture and forestry."
 			},
 			{
 				"class_number": 45,
