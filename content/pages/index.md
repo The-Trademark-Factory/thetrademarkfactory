@@ -106,25 +106,24 @@ content_blocks:
         step: '4'
         last_step: true
   - _bookshop_name: cards/threeCols
-    title: |
-      <em>Why</em> Choose Us
+    title: <p><em>Why</em> Choose Us</p>
     cards:
-      - title_card: Experienced Lawyers
+      - title_card: Trademark Experts
         description_card: >-
-          We have over 25 years experience in Australian and international trade
-          mark law and we are experts in our field. We most likely know what you
-          don’t when it comes to trade marks, so let us help you get your trade
-          mark protection right from the get go.
+          Backed by experienced Australian trademark lawyers and attorneys with
+          over 40 years experience in Australian and international trade mark
+          law. 
         icon: /upload/ic-experience.svg
       - title_card: Low fixed fees
-        description_card: "We might be lawyers but we don’t charge like them. Our\_online application\_process allows us to keep costs lower than any of our competitors without compromising on the quality of our service."
+        description_card: >-
+          Our unique AI powered trademark application form allows us to keep
+          costs low without compromising on the quality of our service. 
         icon: /upload/ic-lowrates.svg
       - title_card: Friendly, reliable & fast
         description_card: >-
-          Every trade mark application is checked by our experienced lawyers and
-          processed within 24 hours. If we think your trade mark will run into
-          problems, we will let you know before we file it. It is looks good, we
-          will file it. It is that simple. No logins required, no fuss.
+          Every application is checked by one of our experts and processed
+          within 24 hours. Unlike our competitors, if we think your trade mark
+          will run into problems, we will let you know before it is submitted. 
         icon: /upload/ic-friendly.svg
   - _bookshop_name: cta/plane
     title: |
