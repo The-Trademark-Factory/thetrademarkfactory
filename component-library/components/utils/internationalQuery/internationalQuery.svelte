@@ -103,7 +103,14 @@
 									? 'bg-ttmfBeige'
 									: 'bg-white shadow-pricingShadow'}">
 								<div class="flex items-center gap-4">
-									<img src={el.icon} alt="" />
+									{#if el.icon}
+										<img
+											src={el.icon}
+											alt="{el.title} Flag"
+											height="44"
+											width="44"
+											class="shadow rounded-xl" />
+									{/if}
 									<div class="text-left">
 										<p class="text-lg font-bold">{el.title}</p>
 										<p class="font-bold text-ttmfRed">AU${el.gov_fee + el.service_fee}</p>
@@ -143,7 +150,14 @@
 									? 'bg-ttmfBeige'
 									: 'bg-white shadow-pricingShadow'}">
 								<div class="flex items-center gap-4">
-									<img src={el.icon} alt="" />
+									{#if el.icon}
+										<img
+											src={el.icon}
+											alt="{el.title} Flag"
+											height="44"
+											width="44"
+											class="shadow rounded-xl" />
+									{/if}
 									<div class="text-left">
 										<p class="text-lg font-bold">{el.title}</p>
 										<p class="font-bold text-ttmfRed">AU${el.gov_fee + el.service_fee}</p>
