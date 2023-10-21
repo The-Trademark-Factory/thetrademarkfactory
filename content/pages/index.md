@@ -52,9 +52,9 @@ content_blocks:
   - _bookshop_name: cards/twoColsMultiSide
     title: <p>Merging Legal Expertise with AI <em>innovation</em></p>
     description: >-
-      <p>The TradeMark Factory was developed by expert trademark attorneys who
-      implemented the power of artificial intelligence to provide an ingenious
-      online platform</p>
+      <p><strong>The TradeMark Factory</strong> was developed by expert
+      trademark attorneys who implemented the power of artificial intelligence
+      to provide an ingenious online platform</p>
     media:
       animation: computer-coffee
       image: /upload/placeholder-features.svg
