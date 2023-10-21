@@ -198,7 +198,7 @@ content_blocks:
           fair and transparent rates and ability to deliver results to our
           business is greatly appreciated. I would recommend, with confidence,
           Natalie and her team."
-        icon: /upload/seagrass.jpg
+        icon: /upload/seagrass-1.jpg
       - name: Patricia Richards
         position: General Manager
         description: >-
@@ -209,6 +209,15 @@ content_blocks:
           highly recommend Natalie and her team to whoever requires IP legal
           services here and abroad."
         icon: /upload/gme.jpg
+      - name: Katrina Hammon
+        position: Partner
+        description: >-
+          "I’d say Natalie is the best in AU/NZ for global brand protection and
+          portfolio management.  Natalie is smashing the IP firms out of the
+          park when you compare her service, skills and efficiencies. I continue
+          to recommend Natalie and her team to our clients for Australian and
+          global specialist advice and service."
+        icon: /upload/wynn-williams.jpg
   - _bookshop_name: others/faqs
     title: |
       Frequently Asked <em>Questions</em>
