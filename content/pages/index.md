@@ -200,7 +200,7 @@ content_blocks:
           trustworthy and reliable service."
         icon: /upload/uniden.jpg
       - name: Shadi Harb
-        position: In-House Counsel, Seagrass Boutique Hospitality Group,
+        position: In-House Counsel
         description: >-
           "Natalie has always provided sound and prompt advice no matter how
           difficult or convoluted our matters may be. Her attention to detail,
