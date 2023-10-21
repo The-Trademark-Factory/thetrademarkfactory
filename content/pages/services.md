@@ -82,7 +82,7 @@ content_blocks:
       like more comprehensive searches, contact us and we will put you in touch
       with our lawyers at brandU Legal.</p>
     button:
-      title_button: Contact Us
+      title_button: Enquire about our comprehensive searches
       url:
       title:
     media:
