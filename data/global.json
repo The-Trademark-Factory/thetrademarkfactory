@@ -242,8 +242,8 @@
 		},
 		"searchClasses": {
 			"title": "Add Classes",
-			"default_title": "What are classes?",
-			"default_description": "<p>Registering your trademark offers protection for your branding's goods and/or services. Please select the goods/services <strong>relevant</strong> to your branding.</p><p>Please enter simple keywords (one or two at a time is easiest) to find and specify your desired goods or services. For example, simple keywords include: retail, online, software, digital, advisory, consultancy, business, financial, sales, management, machine, book, car, furniture.</p><p>You may choose as many goods/services as you like. You may select many items in each class if you wish. Remember to click the “see more” button to drop down additional goods/services (where available).</p>For further guidance please see this link on how to choose your goods/services, you can refer to our FAQs.</p>"
+			"default_title": "What are classes of goods/services?",
+			"default_description": "<p>Registering your trademark offers protection for the goods and/or services you provide. You need to select the goods/services <strong>relevant</strong> to your trade mark. The goods/services may fall into different \"classes\" of goods/services.&nbsp;</p><p>Please enter simple keywords (one or two at a time is best) to find and specify your desired goods or services. For example, simple keywords include: software, clothing, advertising, computer programming, business, financial, retail, management, machine, book, car, furniture.</p><p>You may choose as many goods/services as you like. You can select more than one items in each class if appropriate. Remember to click the “see more” button to drop down additional goods/services (where available).</p><p>Once you have selected all of your goods/services, they will be listed in the side bar for your review. before moving on with the application.</p><p> </p>"
 		},
 		"personalDetails": {
 			"title": "Personal Details"
