@@ -105,22 +105,18 @@ content_blocks:
           NSW.</p>
         image: /upload/nmj.jpg
       - name: Bea Park
-        position: Registered Trade Mark Attorney
+        position: Registered Trademark Attorney
         bio: >-
-          <p>Bea is a registered trade mark attorney in Australia.&nbsp; She
+          <p>Bea is a registered trademark attorney in Australia.&nbsp; She
           specialises in all aspects of trade mark law and advises on searching,
           registering and enforcing trade marks in Australia and
-          overseas.</p><p>Prior to working at brandU Legal, Bea worked at a
-          boutique patent and trade mark firm in Sydney for 4 years assisting
-          both local and international clients across different sectors to
-          protect their brands. She also worked in the corporate sector for 6
-          years at The Weir Group PLC, a UK-based global group of engineering
+          overseas.</p><p>Previously, Bea worked at a boutique patent and trade
+          mark firm in Sydney assisting both local and international clients
+          across different sectors to protect their brands. She also worked in
+          the corporate sector for a UK-based global group of engineering
           manufacturing companies, where she provided in-house management of its
-          extensive trade mark portfolio and gained practical experience about
-          trade mark protection, including proper use of trade marks and
-          building brand reputation. Bea first became involved with trade marks
-          as an IP paralegal.</p>
-        image: https://dummyimage.com/400x500
+          extensive trademark portfolio.</p>
+        image: /upload/bp.jpeg
       - name: Rosie Stramandinoli
         position: Trans-Tasman Patent Attorney (AU & NZ) Consultant
         bio: >-
