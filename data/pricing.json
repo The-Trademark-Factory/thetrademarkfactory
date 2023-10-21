@@ -58,7 +58,7 @@
 			},
 			"id": "nzPricing",
 			"image": "/upload/ic-nz.svg",
-			"price": "A$240 + Govt. fees",
+			"price": "A$350 + Govt. fees",
 			"button": {
 				"title": "Pricing & Enquiry",
 				"url": "/pricing/#international-pricing"
