@@ -134,7 +134,7 @@ content_blocks:
       protected.</p><p><strong>Don’t allow your valuable trademarks to
       lapse;</strong> contact us to arrange renewal on your behalf.</p>
     button:
-      title_button: Contact Us
+      title_button: Enquire about renewals
       url:
       title:
     media:
