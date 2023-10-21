@@ -101,7 +101,7 @@ content_blocks:
       and international trademarks. Let us take care of your trademark portfolio
       so you will never miss a deadline.</p>
     button:
-      title_button: Contact Us
+      title_button: Let us manage your portfolio
       url: '#'
       title: <p>Get Started</p>
   - _bookshop_name: cards/twoCols
