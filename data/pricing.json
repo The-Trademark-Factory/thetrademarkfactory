@@ -206,7 +206,7 @@
 			"gov_fee": 200,
 			"service_fee": 500,
 			"icon": "/upload/afghanistan-169406.svg",
-			"popular": false
+			"popular": true
 		},
 		{
 			"title": "Albania",
