@@ -137,7 +137,7 @@ content_blocks:
       label: Get a quote
       url: '#'
   - _bookshop_name: others/icons
-    title: <p><em>registered </em>by Us</p>
+    title: <p>Trademarks we have <em>registered</em></p>
     icons:
       - title: <p>petsure</p>
         icon: /upload/petsure.jpg
