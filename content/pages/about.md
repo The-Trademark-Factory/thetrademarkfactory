@@ -117,36 +117,18 @@ content_blocks:
           manufacturing companies, where she provided in-house management of its
           extensive trademark portfolio.</p>
         image: /upload/bp.jpeg
-      - name: Rosie Stramandinoli
-        position: Trans-Tasman Patent Attorney (AU & NZ) Consultant
-        bio: >-
-          <p>Rosie is a registered patent attorney and has extensive experience
-          in all things patents. Her speciality is chemical patents. She has a
-          passion for business strategy, innovation and growing her client’s
-          business in Australia and internationally.</p><p>Having been a
-          Principal of a top-tier intellectual property firm for over 10 years,
-          Rosie understands the importance of developing robust strategies that
-          achieve business objectives.&nbsp;</p><p>Rosie has a provide ability
-          to identify and pursue business opportunities and appreciates the
-          benefits of nurturing and maintaining client relationships. In 2019,
-          Rosie was considered as one of the Top 205 Women in IP (Managing
-          Intellectual Property) and she has recently completed a Global
-          Executive MBA with Monash University.&nbsp;</p>
-        image: https://dummyimage.com/400x500
       - name: Kerrie Burgess
-        position: Trade Mark Administrator
+        position: Senior Trademark Administrator
         bio: >-
-          <p>Kerrie provides trade mark administration support, compliance and
+          <p>Kerrie provides trademark administration support, compliance and
           administrative assistance to the team.</p><p>Kerrie is an experienced
-          administrator and has held senior administrativeroles for over 20
+          administrator and has held senior administrative roles for over 20
           years.&nbsp; She is an adept user across a diverse range of IP and
-          legal software.</p><p>Kerrie works closely with the brandU Legal team
-          on the management of trade mark portfolios and assists in the filing,
-          prosecution, registration and maintenance of trade mark in Australia
-          and overseas.</p><p>She also assists with trade mark reports and other
-          requests, reports on filing, acceptance, registration and renewal of
-          trade marks.&nbsp;</p>
-        image: https://dummyimage.com/400x500
+          legal software.</p><p>Kerrie works closely with all members of the
+          team on the management of trade mark portfolios and assists in the
+          filing, prosecution, registration and maintenance of trademark in
+          Australia and overseas.</p>
+        image: /upload/kerrie-one.jpeg
   - _bookshop_name: cta/search
     title: |
       Get Your <em>Trademark</em> Today
