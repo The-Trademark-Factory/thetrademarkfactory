@@ -169,14 +169,14 @@
 		{
 			"title": "New Zealand",
 			"gov_fee": 100,
-			"service_fee": 100,
+			"service_fee": 500,
 			"icon": "/upload/new-zealand-icon.svg",
 			"popular": true
 		},
 		{
 			"title": "United Kingdom",
-			"gov_fee": 100,
-			"service_fee": 100,
+			"gov_fee": 380,
+			"service_fee": 500,
 			"icon": "/upload/united-kingdom-icon.svg",
 			"popular": true
 		},
