@@ -72,14 +72,14 @@ content_blocks:
       image_right: true
       align_center: true
   - _bookshop_name: cta/ctaDefault
-    title: <p><em>Affordable</em> Fixed Rates -No Compromises</p>
+    title: <p><em>Affordable</em> Fixed Fees-No Compromises</p>
     content: >-
-      <p><em>We understand small business because we are one</em> and we get
-      that small business needs transparency in fees. With this in mind, our AI
-      inspired online application form enables us to maintain competitive fees
-      while upholding the high-quality service you deserve.</p>
+      <p><em>We understand small business because we are one</em> and we
+      understand that small business needs transparency in fees. With this in
+      mind, our AI inspired online application form enables us to maintain
+      competitive fees while upholding the high-quality service you deserve.</p>
     button:
-      title_button: Get in Touch
+      title_button: Apply for your trademark today
       url: '#'
   - _bookshop_name: others/team
     team:
