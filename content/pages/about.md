@@ -49,9 +49,9 @@ content_blocks:
       align_center: false
   - _bookshop_name: cards/stats
     stats:
-      - title: '30'
+      - title: 30+
         label: years experience
-      - title: 8,000+
+      - title: 9,000+
         label: trademarks registered
       - title: 100+
         label: countries
