@@ -87,27 +87,23 @@ content_blocks:
         position: Founder of The TradeMark Factory and brandU Legal
         bio: >-
           <p><strong>Natalie boasts over two decades of experience in the fields
-          of intellectual property law and general commercial law.</strong> Her
-          area of expertise primarily lies in Australian and international brand
-          protection and trademark law. Throughout her career, she has served
-          clients from diverse industries, safeguarding their brands across all
-          sectors, including collaborations with some of Australia's most
-          renowned and innovative companies.</p><p>Over a decade ago,
-          <strong>Natalie established brandU Legal, following more than 15 years
-          of managing trademark</strong> portfolios at prestigious Australian
-          law firms. She is renowned for her concise, business-focused counsel
-          concerning all aspects of branding and trademarks. Her services
-          encompass the safeguarding and administration of extensive Australian
-          and international trademark portfolios, handling contentious disputes,
-          addressing non-use issues, and pursuing infringement actions.
-          Additionally, she excels in non-contentious contractual and licensing
-          matters.</p><p>Natalie also aids clients in crafting and executing
-          comprehensive trademark strategies in both Australia and global
-          markets, leveraging her extensive network of international associate
-          lawyers. In 2014, she further bolstered her ability to assist clients
-          dealing with overseas jurisdictions by obtaining the position of
-          notary public in NSW.</p>
-        image: https://dummyimage.com/400x500
+          of intellectual property law</strong>. Her area of expertise lies in
+          Australian and international brand protection and trademark practice
+          and procedure. Throughout her career, she has acted for clients many
+          different industries, safeguarding their brands across all sectors,
+          including collaborations with some of Australia's most renowned and
+          innovative companies.</p><p>Almost 15 years ago, <strong>Natalie
+          established brandU Legal, following more than 15 years of managing
+          trademark</strong> portfolios at some of Australia's largest law
+          firms. She is renowned for her concise, business-focused advice
+          concerning all aspects of branding and trademarks.&nbsp;</p><p>Natalie
+          also aids clients in crafting and executing comprehensive trademark
+          strategies in both Australia and global markets, leveraging her
+          extensive network of international associate lawyers.</p><p>In 2014,
+          she further bolstered her ability to assist clients dealing with
+          overseas jurisdictions by obtaining the position of notary public in
+          NSW.</p>
+        image: /upload/nmj.jpg
       - name: Bea Park
         position: Registered Trade Mark Attorney
         bio: >-
