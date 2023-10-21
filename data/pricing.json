@@ -543,6 +543,55 @@
 			"service_fee": 500,
 			"icon": "/upload/colombia-169437.svg",
 			"popular": false
+		},
+		{
+			"title": "Cuba",
+			"gov_fee": 500,
+			"service_fee": 500,
+			"icon": "/upload/cuba-169440.svg",
+			"popular": false
+		},
+		{
+			"title": "Denmark",
+			"gov_fee": 460,
+			"service_fee": 500,
+			"icon": "/upload/denmark-169439.svg",
+			"popular": false
+		},
+		{
+			"title": "Estonia",
+			"gov_fee": 280,
+			"service_fee": 500,
+			"icon": "/upload/estonia-169446.svg",
+			"popular": false
+		},
+		{
+			"title": "European Union",
+			"gov_fee": 1600,
+			"service_fee": 500,
+			"icon": "/upload/eu-169450.svg",
+			"popular": false
+		},
+		{
+			"title": "Finland",
+			"gov_fee": 450,
+			"service_fee": 500,
+			"icon": "/upload/finland-169452.svg",
+			"popular": false
+		},
+		{
+			"title": "Gambia",
+			"gov_fee": 180,
+			"service_fee": 500,
+			"icon": "/upload/gambia-169461.svg",
+			"popular": false
+		},
+		{
+			"title": "Georgia",
+			"gov_fee": 560,
+			"service_fee": 500,
+			"icon": "/upload/georgia-169459.svg",
+			"popular": false
 		}
 	]
 }
