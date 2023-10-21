@@ -2,7 +2,9 @@
 title: Services
 seo:
   title: Trademark & IP registration Services | The Trademark Factory
-  description: We offer Trademark Registeration, Search and Portfolio Management. We can also take care of your IP Healthcheck and Trademark Renewals
+  description: >-
+    We offer Trademark Registeration, Search and Portfolio Management. We can
+    also take care of your IP Healthcheck and Trademark Renewals
   image: /upload/ttmf-default-seo.png
   no_index: false
 content_blocks:
@@ -13,15 +15,16 @@ content_blocks:
       animation: services
       image: /upload/img-hero-services.svg
       alt:
+      align_bottom: false
   - _bookshop_name: cards/twoCols
     title: <p><em>Trademark</em> Registration Services</p>
     content: >-
       <p>Securing a trademark registration is essential for individuals or
-      businesses aiming to safeguard their brand and intellectual property.
+      businesses wanting to safeguard their brand and intellectual property.
       <strong>By obtaining a registered trademark, you fortify your business
       with both protection and added value.</strong></p><p><strong>With a
       registered trademark you gain exclusive rights</strong> to use it on your
-      products or services. Clear cut legal rights are also provided under the
+      goods and/or services. Clear cut legal rights are also provided under the
       trade mark legislation once your trademark is registered. Other advantages
       of trademark registration include the ability to grant licenses for others
       to use your trademark thereby generating revenue for you and your
@@ -31,8 +34,9 @@ content_blocks:
       also have comfort knowing that experienced Australian lawyers are right
       here to help you should you need it.</p>
     button:
-      title: <p>Get Started</p>
+      title_button: Apply for your trademark now
       url: '#'
+      title: <p>Get Started</p>
     media:
       content: ''
       image: /upload/img-register-trademark.svg
@@ -45,17 +49,18 @@ content_blocks:
       <p>Contrary to what most people think, trademark registration is
       jurisdictional, meaning <strong>trademarks must be registered in each and
       every country where you want to use it.</strong> When you expand your
-      goods or services to overseas markets, safeguarding your brand in those
-      regions becomes crucial.</p><p>Australia is a member of the Madrid
+      goods and/or services to overseas markets, safeguarding your brand in
+      those regions becomes crucial.</p><p>Australia is a member of the Madrid
       Protocol which is an international trademark registration system allowing
-      you to register your brand in up to 118 countries under a single
+      you to register your brand in up to 114 countries under a single
       application.</p><p>This streamlined approach eliminates the need for
       filing trademark applications in each country separately making it more
-      cost effective and efficient. Also our Australian lawyers file the
+      cost effective and efficient. Also, our Australian lawyers file the
       application from Australia for you.</p>
     button:
-      title:
+      title_button: Enquire about International trademarks
       url:
+      title:
     media:
       content:
       image: /upload/img-international-trademark.svg
@@ -65,26 +70,21 @@ content_blocks:
   - _bookshop_name: cards/twoCols
     title: <p>Comprehensive Trademark <em>Searches</em></p>
     content: >-
-      <p><strong>Our unique trade mark application form taps into IP Australia’s
-      database before you finalise your application and pay the filing
-      fees</strong> but this search is for exact trade marks only. So while we
-      conduct these initial searches, you should be aware that during
-      examination your trade mark may face objection on the basis of similar
-      marks. This is where our comprehensive searches come into play.</p><p>If
-      you would like more comprehensive searches, we invite you to contact our
-      law firm, brandU Legal. A Comprehensive TradeMark Report can help minimise
+      <p><strong>Our unique trademark application process searches IP
+      Australia’s database for trademarks before you file&nbsp;</strong>but this
+      search is for <strong>exact </strong>trade marks only. So while we conduct
+      these initial searches for you, it is important to remember that during
+      examination your trade mark may face objection on the basis of
+      <strong>similar </strong>marks. This is where our comprehensive searches
+      come into play.</p><p>A comprehensive trademark search can help minimise
       objections to your mark or possible oppositions by third parties which may
-      not be revealed during an exact search.</p><p>Trademark Monitoring
-      Services</p><p>Once your trademark is registered, you need to police it.
-      IP Australia does not alert you to possible similar marks which may be
-      filed once your mark is registered, nor will you be alerted to other
-      traders using a similar brand to yours.</p><p>For a small monthly fee, The
-      TradeMark Factory can set up a trademark monitoring services in Australia
-      or any country where your trademark has been registered.</p><p>If this
-      services is of interest to you, get in touch with us.</p>
+      not be revealed from an <strong>exact </strong>search.</p><p>If you would
+      like more comprehensive searches, contact us and we will put you in touch
+      with our lawyers at brandU Legal.</p>
     button:
-      title:
+      title_button: Contact Us
       url:
+      title:
     media:
       content:
       image: /upload/img-trademark-search.svg
@@ -95,10 +95,15 @@ content_blocks:
     title: |
       Trademark <em>Portfolio</em> Management
     content: >
-      <p>Do you have an existing trademark portfolio? Are you concerned that you may miss deadlines and risk losing your rights? If so, The TradeMark Factory can manage your trademark portfolio for Australian and international trademarks. Let us take care of your trademark portfolio so you will never miss a deadline.</p>
+      <p>Do you have an existing trademark portfolio? Are you concerned that you
+      may miss deadlines and risk losing your rights? If so, The TradeMark
+      Factory can manage your trademark portfolio for Australian and
+      international trademarks. Let us take care of your trademark portfolio so
+      you will never miss a deadline.</p>
     button:
-      title: Get Started
+      title_button: Lorem ipsum
       url: '#'
+      title: Get Started
   - _bookshop_name: cards/twoCols
     title: <p>IP <em>Healthcheck</em></p>
     content: >-
@@ -111,8 +116,9 @@ content_blocks:
       existing trademarks, and we will conduct the necessary searches to ensure
       that your trademarks are current and properly recorded.</p>
     button:
-      title:
+      title_button: Lorem ipsum
       url:
+      title:
     media:
       content:
       image: /upload/img-ip-healthcheck.svg
@@ -128,8 +134,9 @@ content_blocks:
       protected.</p><p><strong>Don’t allow your valuable trademarks to
       lapse;</strong> contact us to arrange renewal on your behalf.</p>
     button:
-      title:
+      title_button: Lorem ipsum
       url:
+      title:
     media:
       content:
       image: /upload/img-trademark-renewal.svg
