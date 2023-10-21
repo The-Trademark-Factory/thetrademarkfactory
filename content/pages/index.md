@@ -137,8 +137,7 @@ content_blocks:
       label: Get a quote
       url: '#'
   - _bookshop_name: others/icons
-    title: |
-      <em>trusted by</em> 10,000+ Companies
+    title: <p>Recently <em>registered </em>by Us</p>
     icons:
       - title: PetSure
         icon: /upload/petsure-logo.png
