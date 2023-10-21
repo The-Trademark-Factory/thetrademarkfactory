@@ -2,7 +2,9 @@
 title: About
 seo:
   title: About Us | The Trademark Factory
-  description: We are an Australian law firm specialised in trademarks and IP with over 10,000 trademarks registered.
+  description: >-
+    We are an Australian law firm specialised in trademarks and IP with over
+    10,000 trademarks registered.
   image: /upload/ttmf-default-seo.png
   no_index: false
 content_blocks:
@@ -13,9 +15,25 @@ content_blocks:
       animation: about
       image: /upload/about_failsafe.svg
       alt:
+      align_bottom: false
   - _bookshop_name: cards/twoCols
     title:
-    content: "<p>Established in 2009 and led by Natalie Murray-Jones, our team of lawyers and trademark experts has been practicing trademark law since the mid-'90s. We have successfully registered trademarks for some of the world's leading corporations, such as <strong>Apple</strong> and <strong>Gucci</strong>, as well as prominent Australian enterprises like <strong>Pharmacare</strong>, <strong>Gloria Jean's Coffees</strong>, <strong>Donut King</strong>, <strong>Mad Mex</strong>, and <strong>Uniden Australia</strong>.&nbsp;<br />\LOver the course of nearly three decades, we've had the privilege of collaborating with large corporations. However, we've recently recognized a growing disparity between the needs of big businesses and small enterprises concerning the affordability of brand protection.</p><p>Our true passion lies in the realm of trademarks, and our primary objective is to assist as many Australian businesses as possible in accessing top-notch trademark services without the burden of exorbitant costs. Consequently, The TradeMark Factory was conceived.</p>"
+    content: >-
+      <p>Established in 2009 and led by Natalie Murray-Jones, our team of
+      lawyers and trademark attorneys have been practicing trademark law since
+      the mid-'90s. We have successfully registered trademarks for some of the
+      world's leading corporations, such as <strong>Apple</strong> and
+      <strong>Gucci</strong>, as well as prominent Australian enterprises like
+      <strong>Pharmacare</strong>, <strong>Gloria Jean's Coffees</strong>,
+      <strong>Donut King</strong>, <strong>Mad Mex</strong>, and <strong>Uniden
+      Australia</strong>.&nbsp;</p><p>Over the course of nearly three decades,
+      we've had the privilege of collaborating with large corporations but more
+      recently we've recognized a growing disparity between the needs of big
+      businesses and small enterprises concerning the affordability of brand
+      protection.</p><p>Our true passion lies in the realm of trademarks, and
+      our primary objective is to assist as many Australian businesses as
+      possible in accessing top-notch trademark services without exorbitant
+      fees.</p><p>Consequently, The TradeMark Factory was born.</p>
     button:
       title_button: ''
       url: '#'
@@ -33,7 +51,7 @@ content_blocks:
     stats:
       - title: '30'
         label: years experience
-      - title: 10,000+
+      - title: 8,000+
         label: trademarks registered
       - title: 100+
         label: countries
@@ -44,16 +62,16 @@ content_blocks:
   - _bookshop_name: cards/twoCols
     title: <p><em>Expertise</em> is just the beginning</p>
     content: >-
-      <p>Expertise is merely the starting point for us. While we excel in all
-      matters related to trademarks, our commitment goes beyond mere
-      proficiency. <strong>We take pride in our capacity to offer pragmatic,
-      business-oriented guidance, ensuring the viability, accessibility, and
-      safeguarding of our clients' brands.</strong></p><p>What sets us apart is
-      our distinctive approach. While we are legal professionals, our
-      methodology distinguishes us from the competition. Our clientele spans
-      from individual entrepreneurs to publicly traded companies on the ASX, yet
-      our unwavering dedication remains consistent: delivering exceptional
-      service at competitive, fixed rates.</p>
+      <p>Expertise is just the starting point for us. While we excel in all
+      things trademarks, our commitment goes beyond mere proficiency. <strong>We
+      take pride in our capacity to offer pragmatic, business-oriented guidance,
+      ensuring the viability, accessibility, and safeguarding of our clients'
+      brands.</strong></p><p>What sets us apart is our distinctive approach.
+      While we are legal professionals, our methodology distinguishes us from
+      the competition. Our clientele spans from individual entrepreneurs to
+      publicly traded companies on the ASX, yet our unwavering dedication
+      remains consistent: delivering exceptional service at competitive, fixed
+      rates.</p>
     button:
       title_button:
       url:

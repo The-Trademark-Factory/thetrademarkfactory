@@ -285,6 +285,5 @@ content_blocks:
           areas.</p><p>If you need international trademark protection, get in
           touch for a personalised quote.</p>
   - _bookshop_name: cta/search
-    title: |
-      Get Your <em>Trademark</em> Today
+    title: <p>Get Your <em>Trademark</em> Today</p>
 ---
