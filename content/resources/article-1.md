@@ -1,5 +1,5 @@
 ---
-title: International trade mark protection - the “why, how, and when”
+title: International trademark protection - the “why, how, and when”
 date: 2023-10-21T00:00:00Z
 image: /upload/article-placeholder-image.jpg
 seo:
