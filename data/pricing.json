@@ -182,8 +182,8 @@
 		},
 		{
 			"title": "European Union",
-			"gov_fee": 100,
-			"service_fee": 100,
+			"gov_fee": 1600,
+			"service_fee": 500,
 			"icon": "/upload/eu-icon.svg",
 			"popular": true
 		},
