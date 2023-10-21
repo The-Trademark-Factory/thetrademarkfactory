@@ -1,20 +1,44 @@
 {
 	"links": [
-		{ "title": "Home", "url": "/" },
-		{ "title": "Resources", "url": "/resources" },
-		{ "title": "About", "url": "/about" },
-		{ "title": "Services", "url": "/services" },
-		{ "title": "Pricing", "url": "/pricing" },
-		{ "title": "Contact", "url": "/contact" }
+		{
+			"title": "Home",
+			"url": "/"
+		},
+		{
+			"title": "Resources",
+			"url": "/resources"
+		},
+		{
+			"title": "About",
+			"url": "/about"
+		},
+		{
+			"title": "Services",
+			"url": "/services"
+		},
+		{
+			"title": "Pricing",
+			"url": "/pricing"
+		},
+		{
+			"title": "Contact",
+			"url": "/contact"
+		}
 	],
 	"address": {
-		"street": "123 Main St",
-		"city": "Anytown",
-		"state": "NSW 2000, Australia"
+		"street": "64 Talavera Road",
+		"city": "Macquarie Park",
+		"state": "NSW 2113 Australia"
 	},
 	"phone": "555-555-5555",
 	"email": "admin@ttmf.com.au",
-	"button": { "title": "Trademark Search", "url": "/search" },
+	"button": {
+		"title": "Trademark Search",
+		"url": "/search"
+	},
 	"copyright": "© 2023 TTMF. All rights reserved.",
-	"built": { "title": "Built by C&B", "url": "https://www.croissantbaguette.com.au/" }
+	"built": {
+		"title": "Built by C&B",
+		"url": "https://www.croissantbaguette.com.au/"
+	}
 }
