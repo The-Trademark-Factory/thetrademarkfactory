@@ -183,7 +183,7 @@ content_blocks:
     title: <p>What our clients <em>say</em></p>
     testimonials:
       - name: Brad Hales
-        position: National Marketing Communications Manager, Uniden Australia Pty Ltd,
+        position: National Marketing Communications Manager
         description: >-
           "Great professionalism ....Extremely knowledgeable ... Clarity to many
           complex applications we have had over the years. I would recommended
