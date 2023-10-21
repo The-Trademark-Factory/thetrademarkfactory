@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="512" height="512" id="svg2" version="1.1" inkscape:version="0.48.5 r" sodipodi:docname="armenia_armenian_national_country_flag.svg">
+  <defs id="defs4">
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath2993">
+      <rect style="fill:#f1c40f;fill-opacity:1;stroke:none" id="rect2995" width="499.99997" height="499.99997" x="-506" y="536.36218" ry="50" transform="scale(-1,1)"/>
+    </clipPath>
+  </defs>
+  <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="0.7" inkscape:cx="-43.857143" inkscape:cy="93.6704" inkscape:document-units="px" inkscape:current-layer="layer1" showgrid="false" inkscape:window-width="1366" inkscape:window-height="713" inkscape:window-x="0" inkscape:window-y="26" inkscape:window-maximized="1"/>
+  
+  <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1" transform="translate(0,-540.36218)">
+    <g id="g3753" transform="matrix(-0.96000003,0,0,0.96000003,501.76001,41.454468)" clip-path="url(#clipPath2993)">
+      <rect transform="matrix(0,1,-1,0,0,0)" y="-506" x="536.36218" height="500" width="166.66667" id="rect2985" style="fill:#e74c3c;fill-opacity:1;stroke:none"/>
+      <rect transform="matrix(0,1,-1,0,0,0)" style="fill:#2980b9;fill-opacity:1;stroke:none" id="rect2987" width="166.66667" height="500" x="703.02887" y="-506"/>
+      <rect transform="matrix(0,1,-1,0,0,0)" y="-506" x="869.6955" height="500" width="166.66667" id="rect2989" style="fill:#f1c40f;fill-opacity:1;stroke:none"/>
+    </g>
+  </g>
+
+	<metadata>
+		<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+			<rdf:Description about="https://iconscout.com/legal#licenses" dc:title="armenia_armenian_national_country_flag" dc:description="armenia_armenian_national_country_flag" dc:publisher="Iconscout" dc:date="2017-05-26" dc:format="image/svg+xml" dc:language="en">
+				<dc:creator>
+					<rdf:Bag>
+						<rdf:li>Vignesh Oviyan</rdf:li>
+					</rdf:Bag>
+				</dc:creator>
+			</rdf:Description>
+		</rdf:RDF>
+    </metadata></svg>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="512" height="512" id="svg2" version="1.1" inkscape:version="0.48.5 r" sodipodi:docname="bahrain_national_country_flag.svg">
+  <defs id="defs4">
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath2995">
+      <rect style="fill:#f1c40f;fill-opacity:1;stroke:none" id="rect2997" width="500.00003" height="500.00003" x="5.9999857" y="546.36218" ry="50.000004"/>
+    </clipPath>
+  </defs>
+  <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="0.7" inkscape:cx="235.54923" inkscape:cy="319.08884" inkscape:document-units="px" inkscape:current-layer="layer1" showgrid="false" inkscape:window-width="1366" inkscape:window-height="713" inkscape:window-x="0" inkscape:window-y="26" inkscape:window-maximized="1"/>
+  
+  <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1" transform="translate(0,-540.36218)">
+    <g id="g3013" transform="matrix(0.95999996,0,0,0.95999996,10.240014,31.854514)" clip-path="url(#clipPath2995)">
+      <g id="g4135">
+        <g id="g3779" transform="matrix(1.0416667,0,0,1.0416667,253.0238,500.74685)">
+          <rect y="43.790707" x="-237.14285" height="480" width="160" id="rect3004" style="fill:#ffffff;fill-opacity:1;stroke:none"/>
+          <path inkscape:connector-curvature="0" id="rect3006" d="m -77.142853,43.790707 0,480.000003 160,0 160.000003,0 0,-480.000003 -160.000003,0 -160,0 z" style="fill:#e74c3c;fill-opacity:1;stroke:none"/>
+        </g>
+      </g>
+      <path style="fill:#e74c3c;fill-opacity:1;stroke:none" id="path6" d="m 349.67569,546.36218 -224.99721,0 45.79589,50 -45.79589,50 45.79589,49.99999 -45.79589,50 45.79589,50 -45.79589,50 45.79589,50 -45.79589,49.99999 45.79589,50 -45.79589,50.00004 h 224.99721" inkscape:connector-curvature="0"/>
+    </g>
+  </g>
+
+	<metadata>
+		<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+			<rdf:Description about="https://iconscout.com/legal#licenses" dc:title="bahrain_national_country_flag" dc:description="bahrain_national_country_flag" dc:publisher="Iconscout" dc:date="2017-05-26" dc:format="image/svg+xml" dc:language="en">
+				<dc:creator>
+					<rdf:Bag>
+						<rdf:li>Vignesh Oviyan</rdf:li>
+					</rdf:Bag>
+				</dc:creator>
+			</rdf:Description>
+		</rdf:RDF>
+    </metadata></svg>

@@ -154,22 +154,22 @@
 	"international_module": [
 		{
 			"title": "Australia",
-			"gov_fee": 100,
-			"service_fee": 100,
+			"gov_fee": 250,
+			"service_fee": 350,
 			"icon": "/upload/australia-icon.svg",
 			"popular": true
 		},
 		{
 			"title": "United States",
-			"gov_fee": 100,
-			"service_fee": 100,
+			"gov_fee": 800,
+			"service_fee": 500,
 			"icon": "/upload/united-state-icon.svg",
 			"popular": true
 		},
 		{
 			"title": "Austria",
 			"gov_fee": 100,
-			"service_fee": 100,
+			"service_fee": 500,
 			"icon": "/upload/austria-icon.svg",
 			"popular": true
 		},
@@ -213,6 +213,335 @@
 			"gov_fee": 100,
 			"service_fee": 100,
 			"icon": "/upload/canada-icon.svg",
+			"popular": false
+		},
+		{
+			"title": "Afghanistan",
+			"gov_fee": 200,
+			"service_fee": 500,
+			"icon": "/upload/afghanistan-169406.svg",
+			"popular": false
+		},
+		{
+			"title": "Albania",
+			"gov_fee": 200,
+			"service_fee": 500,
+			"icon": "/upload/albania-169392.svg",
+			"popular": false
+		},
+		{
+			"title": "Algeria",
+			"gov_fee": 200,
+			"service_fee": 500,
+			"icon": "/upload/algeria-169389.svg",
+			"popular": false
+		},
+		{
+			"title": "Azerbaijan",
+			"gov_fee": 200,
+			"service_fee": 500,
+			"icon": "/upload/azerbaijan-169403.svg",
+			"popular": false
+		},
+		{
+			"title": "Bhutan",
+			"gov_fee": 200,
+			"service_fee": 500,
+			"icon": "/upload/bhutan-169430.svg",
+			"popular": false
+		},
+		{
+			"title": "Bosnia and Herzegovina",
+			"gov_fee": 200,
+			"service_fee": 500,
+			"icon": "/upload/bosnia-169413.svg",
+			"popular": false
+		},
+		{
+			"title": "Botswana",
+			"gov_fee": 200,
+			"service_fee": 500,
+			"icon": "/upload/botswana-169414.svg",
+			"popular": false
+		},
+		{
+			"title": "Croatia",
+			"gov_fee": 200,
+			"service_fee": 500,
+			"icon": "/upload/croatia-169621.svg",
+			"popular": false
+		},
+		{
+			"title": "Cyprus",
+			"gov_fee": 200,
+			"service_fee": 500,
+			"icon": "/upload/cyprus-169438.svg",
+			"popular": false
+		},
+		{
+			"title": "Czech Republic",
+			"gov_fee": 200,
+			"service_fee": 500,
+			"icon": "/upload/czech-169442.svg",
+			"popular": false
+		},
+		{
+			"title": "Egypt",
+			"gov_fee": 200,
+			"service_fee": 500,
+			"icon": "/upload/egypt-169620.svg",
+			"popular": false
+		},
+		{
+			"title": "France",
+			"gov_fee": 200,
+			"service_fee": 500,
+			"icon": "/upload/france-169454.svg",
+			"popular": false
+		},
+		{
+			"title": "Germany",
+			"gov_fee": 200,
+			"service_fee": 500,
+			"icon": "/upload/germany-169460.svg",
+			"popular": false
+		},
+		{
+			"title": "Hungary",
+			"gov_fee": 200,
+			"service_fee": 500,
+			"icon": "/upload/hungary-169471.svg",
+			"popular": false
+		},
+		{
+			"title": "Iran",
+			"gov_fee": 200,
+			"service_fee": 500,
+			"icon": "/upload/iran-169474.svg",
+			"popular": false
+		},
+		{
+			"title": "Kazakhstan",
+			"gov_fee": 200,
+			"service_fee": 500,
+			"icon": "/upload/kazakhstan-169502.svg",
+			"popular": false
+		},
+		{
+			"title": "Latvia",
+			"gov_fee": 200,
+			"service_fee": 500,
+			"icon": "/upload/latvia-169493.svg",
+			"popular": false
+		},
+		{
+			"title": "Lesotho",
+			"gov_fee": 200,
+			"service_fee": 500,
+			"icon": "/upload/lesotho-169498.svg",
+			"popular": false
+		},
+		{
+			"title": "Liechtenstein",
+			"gov_fee": 200,
+			"service_fee": 500,
+			"icon": "/upload/liechtenstein-169509.svg",
+			"popular": false
+		},
+		{
+			"title": "Lithuania",
+			"gov_fee": 200,
+			"service_fee": 500,
+			"icon": "/upload/lithuania-169501.svg",
+			"popular": false
+		},
+		{
+			"title": "Madagascar",
+			"gov_fee": 200,
+			"service_fee": 500,
+			"icon": "/upload/madagascar-169512.svg",
+			"popular": false
+		},
+		{
+			"title": "Malawi",
+			"gov_fee": 200,
+			"service_fee": 500,
+			"icon": "/upload/malawi-169619.svg",
+			"popular": false
+		},
+		{
+			"title": "Monaco",
+			"gov_fee": 200,
+			"service_fee": 500,
+			"icon": "/upload/monaco-169520.svg",
+			"popular": false
+		},
+		{
+			"title": "Mozambique",
+			"gov_fee": 200,
+			"service_fee": 500,
+			"icon": "/upload/mozambique-169533.svg",
+			"popular": false
+		},
+		{
+			"title": "Namibia",
+			"gov_fee": 200,
+			"service_fee": 500,
+			"icon": "/upload/namibia-169523.svg",
+			"popular": false
+		},
+		{
+			"title": "Poland",
+			"gov_fee": 200,
+			"service_fee": 500,
+			"icon": "/upload/poland-169542.svg",
+			"popular": false
+		},
+		{
+			"title": "Portugal",
+			"gov_fee": 200,
+			"service_fee": 500,
+			"icon": "/upload/portugal-169544.svg",
+			"popular": false
+		},
+		{
+			"title": "Romania",
+			"gov_fee": 200,
+			"service_fee": 500,
+			"icon": "/upload/romania-169557.svg",
+			"popular": false
+		},
+		{
+			"title": "Russia",
+			"gov_fee": 200,
+			"service_fee": 500,
+			"icon": "/upload/russia-169553.svg",
+			"popular": false
+		},
+		{
+			"title": "Rwanda",
+			"gov_fee": 200,
+			"service_fee": 500,
+			"icon": "/upload/rwanda-169558.svg",
+			"popular": false
+		},
+		{
+			"title": "Slovakia",
+			"gov_fee": 200,
+			"service_fee": 500,
+			"icon": "/upload/slovakia-169569.svg",
+			"popular": false
+		},
+		{
+			"title": "Slovenia",
+			"gov_fee": 200,
+			"service_fee": 500,
+			"icon": "/upload/slovenia-169570.svg",
+			"popular": false
+		},
+		{
+			"title": "Spain",
+			"gov_fee": 200,
+			"service_fee": 500,
+			"icon": "/upload/spain-169614.svg",
+			"popular": false
+		},
+		{
+			"title": "Sudan",
+			"gov_fee": 200,
+			"service_fee": 500,
+			"icon": "/upload/sudan-169574.svg",
+			"popular": false
+		},
+		{
+			"title": "Macedonia",
+			"gov_fee": 200,
+			"service_fee": 500,
+			"icon": "/upload/macedonia-169505.svg",
+			"popular": false
+		},
+		{
+			"title": "Armenia",
+			"gov_fee": 350,
+			"service_fee": 500,
+			"icon": "/upload/armenia-169395.svg",
+			"popular": false
+		},
+		{
+			"title": "Bahrain",
+			"gov_fee": 3000,
+			"service_fee": 500,
+			"icon": "/upload/bahrain-169405.svg",
+			"popular": false
+		},
+		{
+			"title": "Belarus",
+			"gov_fee": 1100,
+			"service_fee": 500,
+			"icon": "/upload/belarus-169410.svg",
+			"popular": false
+		},
+		{
+			"title": "Belize",
+			"gov_fee": 400,
+			"service_fee": 500,
+			"icon": "/upload/belize-169424.svg",
+			"popular": false
+		},
+		{
+			"title": "Brazil",
+			"gov_fee": 150,
+			"service_fee": 500,
+			"icon": "/upload/brazil-169415.svg",
+			"popular": false
+		},
+		{
+			"title": "Brunei",
+			"gov_fee": 350,
+			"service_fee": 500,
+			"icon": "/upload/brunei-169417.svg",
+			"popular": false
+		},
+		{
+			"title": "Bulgaria",
+			"gov_fee": 600,
+			"service_fee": 500,
+			"icon": "/upload/bulgaria-169418.svg",
+			"popular": false
+		},
+		{
+			"title": "Cambodia",
+			"gov_fee": 250,
+			"service_fee": 500,
+			"icon": "/upload/cambodia-169421.svg",
+			"popular": false
+		},
+		{
+			"title": "Canada",
+			"gov_fee": 450,
+			"service_fee": 500,
+			"icon": "/upload/canada-169422.svg",
+			"popular": false
+		},
+		{
+			"title": "Chile",
+			"gov_fee": 550,
+			"service_fee": 500,
+			"icon": "/upload/chile-169429.svg",
+			"popular": false
+		},
+		{
+			"title": "China",
+			"gov_fee": 450,
+			"service_fee": 500,
+			"icon": "/upload/china-169435.svg",
+			"popular": false
+		},
+		{
+			"title": "Colombia",
+			"gov_fee": 450,
+			"service_fee": 500,
+			"icon": "/upload/colombia-169437.svg",
 			"popular": false
 		}
 	]

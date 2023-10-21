@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="512" height="512" id="svg2" version="1.1" inkscape:version="0.48.5 r" sodipodi:docname="azerbaijan_national_country_flag.svg">
+  <defs id="defs4">
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath3499">
+      <rect style="fill:#f1c40f;fill-opacity:1;stroke:none" id="rect3501" width="480" height="480" x="16.000036" y="556.36224" ry="48" clip-path="none"/>
+    </clipPath>
+  </defs>
+  <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="0.7" inkscape:cx="55.934682" inkscape:cy="191.50281" inkscape:document-units="px" inkscape:current-layer="layer1" showgrid="false" inkscape:window-width="1366" inkscape:window-height="713" inkscape:window-x="0" inkscape:window-y="26" inkscape:window-maximized="1"/>
+  
+  <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1" transform="translate(0,-540.36218)">
+    <g id="g3481" transform="translate(-3.5309133e-5,-3.8331718e-5)" clip-path="url(#clipPath3499)">
+      <g transform="matrix(1,0,0,-1,0,1592.7244)" id="g5681">
+        <g id="g3786" transform="matrix(0,0.96000003,-0.96000003,0,1020.5078,550.60215)">
+          <g transform="matrix(0,1,1,0,-530.36215,540.36223)" id="g3753">
+            <rect style="fill:#2ecc71;fill-opacity:1;stroke:none" id="rect2985" width="166.66667" height="500" x="536.36218" y="-506" transform="matrix(0,1,-1,0,0,0)"/>
+            <rect y="-506" x="703.02887" height="500" width="166.66667" id="rect2987" style="fill:#e32d3c;fill-opacity:1;stroke:none" transform="matrix(0,1,-1,0,0,0)"/>
+            <rect style="fill:#3498db;fill-opacity:1;stroke:none" id="rect2989" width="166.66667" height="500" x="869.6955" y="-506" transform="matrix(0,1,-1,0,0,0)"/>
+          </g>
+        </g>
+      </g>
+      <g id="g3896">
+        <path style="fill:#ffffff" d="m 233.75,189.25 c -36.86778,0 -66.75,29.88222 -66.75,66.75 0,36.86778 29.88222,66.75 66.75,66.75 23.00191,0 43.27681,-11.63931 55.28125,-29.34375 -10.17613,11.19623 -24.86582,18.21875 -41.1875,18.21875 -30.72315,0 -55.625,-24.90185 -55.625,-55.625 0,-30.72315 24.90185,-55.625 55.625,-55.625 16.32168,0 31.01137,7.02252 41.1875,18.21875 C 277.02681,200.88931 256.75191,189.25 233.75,189.25 z" transform="translate(0,540.36218)" id="circle10" inkscape:connector-curvature="0"/>
+        <path d="m 334.16282,822.56765 -19.13411,-9.07889 -7.08212,19.95955 -7.11012,-19.94959 -19.12135,9.10571 9.07888,-19.13411 -19.95956,-7.08212 19.9496,-7.11012 -9.10572,-19.12135 19.13411,9.07888 7.08213,-19.95955 7.11012,19.94959 19.12135,-9.10572 -9.07888,19.13412 19.95955,7.08211 -19.94959,7.11012 z" style="fill:#ffffff" id="path14" inkscape:connector-curvature="0"/>
+      </g>
+    </g>
+  </g>
+
+	<metadata>
+		<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+			<rdf:Description about="https://iconscout.com/legal#licenses" dc:title="azerbaijan_national_country_flag" dc:description="azerbaijan_national_country_flag" dc:publisher="Iconscout" dc:date="2017-05-26" dc:format="image/svg+xml" dc:language="en">
+				<dc:creator>
+					<rdf:Bag>
+						<rdf:li>Vignesh Oviyan</rdf:li>
+					</rdf:Bag>
+				</dc:creator>
+			</rdf:Description>
+		</rdf:RDF>
+    </metadata></svg>
