@@ -14,7 +14,7 @@ content_blocks:
       title_below: today
       full_title:
     search:
-      title: Easy, fast and affordable trademark registration
+      title: Quick, easy and affordable trademark registration powered by AI
     aussie:
       title: Australian Owned & Operated
       subtitle: Backed by expert lawyers with over 30 years experience
