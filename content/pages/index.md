@@ -83,18 +83,17 @@ content_blocks:
         icon: /upload/ic-protect.svg
       - title_card: Australia Specific
         description_card: >-
-          Designed for registering trademarks in Australia and trusted by
-          thousands of brand owners to protect their trademarks.
+          Designed by Australians for Australians and trusted by thousands of
+          brand owners to protect their trademarks.
         icon: /upload/ic-ausspecific.svg
   - _bookshop_name: cards/steps
-    title: |
-      <em>How</em> It Works
+    title: <p><em>How</em> It Works</p>
     steps:
-      - title: Enter your trademark (word, words or image)
+      - title: <p>Enter your trademark (word or image)</p>
         image: /upload/img-step1.svg
         step: '1'
         last_step: false
-      - title: Select your good and/or services
+      - title: <p>Select your good and/or services</p>
         image: /upload/img-step2.svg
         step: '2'
         last_step: false
@@ -102,7 +101,7 @@ content_blocks:
         image: /upload/img-step3.svg
         step: '3'
         last_step: false
-      - title: Pay and your trademark is submitted to IP
+      - title: <p>Pay and your trademark is submitted to IP Australia</p>
         image: /upload/img-step4.svg
         step: '4'
         last_step: true
