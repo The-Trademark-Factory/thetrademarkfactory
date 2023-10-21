@@ -199,14 +199,16 @@ content_blocks:
           business is greatly appreciated. I would recommend, with confidence,
           Natalie and her team."
         icon: /upload/seagrass.jpg
-      - name: Michelle Doe
-        position: Lorem ispum
+      - name: Patricia Richards
+        position: General Manager
         description: >-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        icon: /upload/sumosalad-logo.png
+          "Natalie’s strengths are in her outstanding knowledge of Australian
+          and International trade mark law and her ability to understand our
+          trade marking needs. Responsive to our instructions and offers great
+          value for money with her competitive and transparent fees. I would
+          highly recommend Natalie and her team to whoever requires IP legal
+          services here and abroad."
+        icon: /upload/gme.jpg
   - _bookshop_name: others/faqs
     title: |
       Frequently Asked <em>Questions</em>
