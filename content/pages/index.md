@@ -128,12 +128,13 @@ content_blocks:
   - _bookshop_name: cta/plane
     title: |
       Trademark <em>protection</em> wherever you need it
-    description: >
-      <strong>Business ambitions</strong> often go beyond Australia and global
-      trademark one-stop-shop Trama is here to support you along the way. For a
-      personalised offer outside of the selected countries, please get in touch.
+    description: >-
+      <p><strong>Taking your business overseas? </strong>The TradeMark Factory
+      is a one-stop-shop for your trademarking need no matter where your
+      business takes you. Visit the pricing pages to get a quote for trademark
+      registration outside Australia.</p>
     button:
-      label: Contact Us
+      label: Get a quote
       url: '#'
   - _bookshop_name: others/icons
     title: |
