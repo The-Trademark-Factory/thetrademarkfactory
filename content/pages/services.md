@@ -116,7 +116,7 @@ content_blocks:
       existing trademarks, and we will conduct the necessary searches to ensure
       that your trademarks are current and properly recorded.</p>
     button:
-      title_button: Contact Us
+      title_button: Enquire about an IP Healthcheck
       url:
       title:
     media:
