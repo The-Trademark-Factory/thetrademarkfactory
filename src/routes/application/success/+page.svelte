@@ -4,7 +4,14 @@
 
 	export let data;
 
-	$: ({ email, itemList, governmentFee, internationalTrademarks, stripePaymentIntentId } = data);
+	$: ({
+		email,
+		personalDetails,
+		itemList,
+		governmentFee,
+		internationalTrademarks,
+		stripePaymentIntentId
+	} = data);
 
 	let message = 'Processing your order...';
 
@@ -18,7 +25,8 @@
 		const formData = new FormData();
 		formData.append('email', email);
 		formData.append('stripe_payment_intent_id', stripePaymentIntentId);
-		formData.append('items', JSON.stringify(itemList));
+		formData.append('personal_details', personalDetails);
+		formData.append('purchase_items', JSON.stringify(itemList));
 		formData.append(
 			'government_fee',
 			new Intl.NumberFormat('us-EN', { style: 'currency', currency: 'AUD' }).format(governmentFee)

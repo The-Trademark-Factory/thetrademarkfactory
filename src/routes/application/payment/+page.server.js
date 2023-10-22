@@ -6,6 +6,7 @@ const stripe = new Stripe(import.meta.env.VITE_STRIPE_SECRET_KEY)
 export const actions = {
     checkout: async ({ request }) => {
         const form = await request.formData();
+        const personalDetailsStr = form.get('personal_details');
         const itemsStr = form.get('items');
         const governmentFee = form.get('government_fee');
         const internationalTrademarks = form.get('international_trademarks');
@@ -15,6 +16,7 @@ export const actions = {
         // This string will be used for guarding the "/application/success" page from being harassed
         const secretString = Buffer.from(`${new Date().getTime()
             }---${import.meta.env.VITE_SECRET_STRING
+            }---${personalDetailsStr
             }---${itemsStr
             }---${governmentFee
             }---${internationalTrademarks || 'null'
