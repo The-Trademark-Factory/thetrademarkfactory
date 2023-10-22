@@ -176,6 +176,7 @@
 		</button>
 	{:else if $page.route.id.includes('payment') && terms}
 		<form method="post" action="?/checkout" use:enhance={onCheckout}>
+			<input type="hidden" name="personal_details" value={JSON.stringify($details)} />
 			<input
 				type="hidden"
 				name="items"
@@ -187,6 +188,10 @@
 					}))
 				)} />
 			<input type="hidden" name="government_fee" value={feeGovernment} />
+			<input
+				type="hidden"
+				name="international_trademarks"
+				value={Object.keys($international).join(', ')} />
 			<button type="submit" disabled={checkingOut} class="sidebarNext">
 				{#if checkingOut}
 					Processing...

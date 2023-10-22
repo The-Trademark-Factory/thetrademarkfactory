@@ -6,13 +6,21 @@ const stripe = new Stripe(import.meta.env.VITE_STRIPE_SECRET_KEY)
 export const actions = {
     checkout: async ({ request }) => {
         const form = await request.formData();
+        const personalDetailsStr = form.get('personal_details');
         const itemsStr = form.get('items');
         const governmentFee = form.get('government_fee');
+        const internationalTrademarks = form.get('international_trademarks');
 
         const items = JSON.parse(itemsStr)
 
         // This string will be used for guarding the "/application/success" page from being harassed
-        const secretString = Buffer.from(`${new Date().getTime()}-${import.meta.env.VITE_SECRET_STRING}`, 'utf8').toString('base64')
+        const secretString = Buffer.from(`${new Date().getTime()
+            }---${import.meta.env.VITE_SECRET_STRING
+            }---${personalDetailsStr
+            }---${itemsStr
+            }---${governmentFee
+            }---${internationalTrademarks || 'null'
+            }`, 'utf8').toString('base64')
 
         try {
             const session = await stripe.checkout.sessions.create({
@@ -36,7 +44,7 @@ export const actions = {
                         }
                     }],
                 mode: 'payment',
-                success_url: `${import.meta.env.VITE_PUBLIC_SITE_URL}/application/success?str=${secretString}`,
+                success_url: `${import.meta.env.VITE_PUBLIC_SITE_URL}/application/success?st=${secretString}&si={CHECKOUT_SESSION_ID}`,
                 cancel_url: `${import.meta.env.VITE_PUBLIC_SITE_URL}/application/search`, // this cancel page can be "/application/payment" but for now when accessing it directly, the page is empty
             });
 
