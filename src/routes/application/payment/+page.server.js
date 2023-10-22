@@ -36,7 +36,7 @@ export const actions = {
                         }
                     }],
                 mode: 'payment',
-                success_url: `${import.meta.env.VITE_PUBLIC_SITE_URL}/application/success?str=${secretString}`,
+                success_url: `${import.meta.env.VITE_PUBLIC_SITE_URL}/application/success?st=${secretString}&si={CHECKOUT_SESSION_ID}`,
                 cancel_url: `${import.meta.env.VITE_PUBLIC_SITE_URL}/application/search`, // this cancel page can be "/application/payment" but for now when accessing it directly, the page is empty
             });
 
