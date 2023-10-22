@@ -8,11 +8,17 @@ export const actions = {
         const form = await request.formData();
         const itemsStr = form.get('items');
         const governmentFee = form.get('government_fee');
+        const internationalTrademarks = form.get('international_trademarks');
 
         const items = JSON.parse(itemsStr)
 
         // This string will be used for guarding the "/application/success" page from being harassed
-        const secretString = Buffer.from(`${new Date().getTime()}-${import.meta.env.VITE_SECRET_STRING}`, 'utf8').toString('base64')
+        const secretString = Buffer.from(`${new Date().getTime()
+            }---${import.meta.env.VITE_SECRET_STRING
+            }---${itemsStr
+            }---${governmentFee
+            }---${internationalTrademarks || 'null'
+            }`, 'utf8').toString('base64')
 
         try {
             const session = await stripe.checkout.sessions.create({
