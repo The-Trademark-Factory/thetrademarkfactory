@@ -56,7 +56,7 @@
 			</div>
 		</div>
 		<div>
-			<div class="sticky top-12">
+			<div>
 				<Sidebar {terms} />
 			</div>
 		</div>

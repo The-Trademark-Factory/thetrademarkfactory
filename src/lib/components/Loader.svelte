@@ -10,10 +10,10 @@
 <div
 	in:fly={{ easing: cubicOut, y: 100, duration: 300 }}
 	out:fly={{ easing: cubicIn, y: -100, duration: 300 }}
-	class="fixed h-screen w-full z-40 {destination === '/application/search'
+	class="fixed top-0 h-screen w-full z-40 {destination === '/application/search'
 		? 'bg-ttmfDarkGreen'
 		: 'bg-ttmfBg'}">
-	<section class="relative flex h-screen bg-youBgLBlue">
+	<section class="relative flex h-screen">
 		<div class="mx-auto self-center p-6 text-center">
 			{#if destination === '/application/search'}
 				<div>
