@@ -7,11 +7,9 @@
 		details,
 		international
 	} from '$lib/utils/stores';
-	import { openDB, deleteImage } from '$lib/utils/indexedDB';
+	import { deleteImage } from '$lib/utils/indexedDB';
 	import { goto } from '$app/navigation';
 	import { Undo2 } from 'lucide-svelte';
-
-	let imageDB;
 
 	async function startOver() {
 		searchTerm.set('');
@@ -21,8 +19,7 @@
 		details.set([]);
 		international.set([]);
 		localStorage.clear();
-		imageDB = await openDB();
-		deleteImage(imageDB);
+		deleteImage();
 		goto('/application/search');
 	}
 </script>

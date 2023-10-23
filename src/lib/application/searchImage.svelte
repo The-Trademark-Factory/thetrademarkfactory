@@ -5,46 +5,58 @@
 	import { searchType, searchLogo } from '$lib/utils/stores';
 	import { openDB, getImage, saveImage, deleteImage } from '$lib/utils/indexedDB';
 	import { setItem } from '$lib/utils/localStorageUtils';
+	import { createEventDispatcher } from 'svelte';
+
+	const dispatch = createEventDispatcher();
+
+	export let previousSearch;
 
 	let imageUrl, imageDB, image;
 
 	onMount(async () => {
-		initDB();
-	});
-
-	async function initDB() {
 		imageDB = await openDB();
 		image = await getImage(imageDB);
 		if (image) {
 			imageUrl = URL.createObjectURL(image);
 		}
-	}
+	});
 
 	async function handleFileUpload(event) {
 		const file = event.target.files[0];
-		await saveImage(imageDB, file);
-		imageUrl = URL.createObjectURL(file);
-		searchLogo.set(imageUrl);
+		uploadImage(file);
 	}
 
 	async function handleDrop(event) {
 		event.preventDefault();
 		const file = event.dataTransfer.files[0];
-		await saveImage(imageDB, file);
-		imageUrl = URL.createObjectURL(file);
-		searchLogo.set(imageUrl);
+		uploadImage(file);
 	}
 
 	function handleDragOver(event) {
 		event.preventDefault();
 	}
 
+	async function uploadImage(file) {
+		await saveImage(imageDB, file);
+		imageUrl = URL.createObjectURL(file);
+		searchLogo.set(imageUrl);
+	}
+
 	function handleDelete() {
-		deleteImage(imageDB);
-		imageDB = '';
+		deleteImage();
 		imageUrl = '';
 		searchLogo.set('');
-		initDB();
+		dispatch('deletePrevious');
+	}
+
+	function apply() {
+		if (previousSearch && previousSearch === 'typeLogo') {
+			dispatch('gotoPrevious');
+		} else {
+			searchType.set('logo');
+			setItem('searchType', 'logo');
+			goto('/application/classes');
+		}
 	}
 </script>
 
@@ -81,10 +93,8 @@
 	</div>
 	<button
 		on:click={() => {
-			searchType.set('logo');
-			setItem('searchType', 'logo');
-			goto('/application/classes');
+			apply();
 		}}
 		class="bg-ttmfRed text-white font-bold px-12 py-5 mt-6 rounded justify-center max-md:flex max-md:w-full"
-		>Apply Now</button>
+		>{previousSearch === 'typeLogo' ? 'Continue this application' : 'Apply Now'}</button>
 {/if}

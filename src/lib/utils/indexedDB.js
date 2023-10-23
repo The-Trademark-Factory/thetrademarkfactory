@@ -14,13 +14,11 @@ export function saveImage(db, imageFile) {
 	return new Promise((resolve, reject) => {
 		const transaction = db.transaction(['uploadedLogo'], 'readwrite');
 		const store = transaction.objectStore('uploadedLogo');
-		const request = store.put({ id: 'logo', imageFile }); // I've changed this to put, in case you want to update
+		const request = store.put({ id: 'logo', imageFile });
 		request.onsuccess = () => {
-			console.log('Image saved successfully');
 			resolve();
 		};
-		request.onerror = (event) => {
-			console.log("Couldn't save image", event);
+		request.onerror = () => {
 			reject("Couldn't save image");
 		};
 	});
@@ -33,26 +31,31 @@ export function getImage(db) {
 		const request = store.get('logo');
 		request.onsuccess = () => {
 			if (request.result?.imageFile) {
-				console.log('Image retrieved successfully');
 				resolve(request.result.imageFile);
 			} else {
-				console.log('No image found');
 				resolve(null);
 			}
 		};
-		request.onerror = (event) => {
-			console.log("Couldn't get image", event);
+		request.onerror = () => {
 			reject("Couldn't get image");
 		};
 	});
 }
 
-export function deleteImage(db) {
+export function deleteImage() {
 	return new Promise((resolve, reject) => {
-		const transaction = db.transaction(['uploadedLogo'], 'readwrite');
-		const store = transaction.objectStore('uploadedLogo');
-		const request = store.delete('logo');
-		request.onsuccess = () => resolve();
-		request.onerror = () => reject("Couldn't delete image");
+		const deleteRequest = indexedDB.deleteDatabase('ttmfDB');
+		deleteRequest.onsuccess = () => {
+			openDB()
+				.then((db) => {
+					resolve(db);
+				})
+				.catch((err) => {
+					reject('Could not reinitialize database:', err);
+				});
+		};
+		deleteRequest.onerror = () => {
+			reject("Couldn't delete database");
+		};
 	});
 }

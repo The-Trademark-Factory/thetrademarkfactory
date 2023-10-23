@@ -1,7 +1,9 @@
 <script>
 	import { ChevronDown, Info, CheckCircle, X, WholeWord, Image } from 'lucide-svelte';
+	import { deleteImage } from '$lib/utils/indexedDB';
 	import { onMount } from 'svelte';
 	import { goto } from '$app/navigation';
+	import { page } from '$app/stores';
 	import { searchType, searchTerm, classes, details, international } from '$lib/utils/stores';
 	import { getItem } from '$lib/utils/localStorageUtils';
 	import { searchResults_page } from '../../../../data/global.json';
@@ -11,21 +13,32 @@
 	import SearchImage from '$lib/application/searchImage.svelte';
 
 	export let data;
+
 	let previousSearch;
 	$: searchResultsDetails = data.searchResults.apiData.trademarkDetails;
 	$: word = data.searchResults.searchTerm;
-	$: activeTab = searchType === 'image' ? 'image' : 'word';
+	$: activeTab =
+		searchType === 'logo' || $page.url.searchParams.get('type') === 'logo' ? 'logo' : 'word';
 	const tabs = [
 		{ name: 'word', label: 'Word' },
-		{ name: 'image', label: 'Logo/Image' }
+		{ name: 'logo', label: 'Logo/Image' }
 	];
 
 	onMount(async () => {
-		previousSearch = getItem('searchTerm');
+		previousSearch =
+			getItem('searchType') === 'word'
+				? getItem('searchTerm')
+				: getItem('searchType') === 'logo'
+				? 'typeLogo'
+				: '';
+		if (previousSearch === 'typeLogo') {
+			activeTab = 'logo';
+		}
 	});
 
 	function gotoPrevious() {
 		const storeMap = {
+			searchType: { store: searchType, check: () => !$searchType },
 			searchTerm: { store: searchTerm, check: () => !$searchTerm },
 			classes: { store: classes, check: () => $classes.length === 0 },
 			details: { store: details, check: () => Object.keys($details).length === 0 },
@@ -38,6 +51,9 @@
 				storeMap[key].store.set(localData);
 			}
 		});
+		if (searchType === 'word') {
+			deleteImage();
+		}
 		goto('/application/classes');
 	}
 
@@ -57,32 +73,37 @@
 		class="max-w-screen-xl mx-auto grid lg:grid-cols-2 items-end gap-12 text-white py-12 lg:py-24 max-2xl:px-6">
 		<div>
 			<p class="text-3xl font-bold">{searchResults_page.searchField.title}</p>
-			<div class="flex items-center gap-6 pt-8 pb-6">
+			<div class="flex items-center gap-4 pt-8 pb-6">
 				{#each tabs as el}
 					<button
-						class="inline-flex items-center gap-2 text-lg font-bold px-6 py-2 border-2 border-transparent rounded-md {activeTab ===
+						class="inline-flex items-center gap-2 text-sm font-bold px-6 py-2 border-2 border-transparent rounded-full {activeTab ===
 						el.name
 							? 'bg-ttmfRed text-white'
 							: 'bg-ttmfLightGreen hover:border-white'}"
 						on:click={() => {
 							activeTab = el.name;
 						}}>
+						{el.label}
 						{#if el.name === 'word'}
-							<WholeWord />
+							<WholeWord size="20" />
 						{:else}
-							<Image />
+							<Image size="20" />
 						{/if}
-						{el.label}</button>
+					</button>
 				{/each}
 			</div>
-			{#if activeTab === 'image'}
-				<SearchImage />
+			{#if activeTab === 'logo'}
+				<SearchImage
+					on:deletePrevious={() => deletePrevious()}
+					on:gotoPrevious={() => gotoPrevious()}
+					{previousSearch} />
 			{:else}
 				<div>
 					<SearchWord
 						placeholder={data?.searchResults
 							? data?.searchResults?.apiData?.request?.query
-							: 'Search for a word'} />
+							: 'Search for a word'}
+						isSearchPage={true} />
 				</div>
 			{/if}
 			{#if data.searchResults.apiData}
@@ -107,7 +128,7 @@
 			{/if}
 		</div>
 
-		{#if previousSearch}
+		{#if previousSearch && previousSearch !== 'typeLogo'}
 			<div class="relative xl:pl-20">
 				<button
 					on:click={() => {

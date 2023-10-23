@@ -19,7 +19,8 @@ export default {
 				ttmfCreme: '#CCB6A8',
 				ttmfBrown: '#E3D0C1',
 				ttmfBeige: '#F4F0ED',
-				ttmfBg: '#F9F7F6;'
+				ttmfBg: '#F9F7F6',
+				ttmfBgLight: '#F4F0ED'
 			},
 			maxWidth: {
 				'8xl': '1800px',

@@ -1,8 +1,10 @@
 <script>
 	import { goto } from '$app/navigation';
 	import { setItem } from '$lib/utils/localStorageUtils';
-	import { searchTerm } from '$lib/utils/stores';
+	import { deleteImage } from '$lib/utils/indexedDB';
+	import { searchTerm, searchType } from '$lib/utils/stores';
 	import { searchResults_page } from '../../../data/global.json';
+
 	export let word, searchResultsDetails;
 
 	let showAllDescriptions;
@@ -10,6 +12,15 @@
 		resultClasses = {};
 	let content = searchResults_page;
 	let classDescription = searchResults_page.classes_description;
+
+	function apply() {
+		searchType.set('word');
+		searchTerm.set(word);
+		setItem('searchType', 'word');
+		setItem('searchTerm', word);
+		deleteImage();
+		goto('/application/classes');
+	}
 
 	$: {
 		sortedClasses = {};
@@ -99,9 +110,7 @@
 				</div>
 				<button
 					on:click={() => {
-						searchTerm.set(word);
-						setItem('searchTerm', word);
-						goto('/application/classes');
+						apply();
 					}}
 					class="bg-ttmfRed text-white font-bold px-12 py-5 rounded justify-center max-md:flex max-md:w-full"
 					>Apply Now</button>
