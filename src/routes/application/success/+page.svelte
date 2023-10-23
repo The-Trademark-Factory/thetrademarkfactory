@@ -1,11 +1,15 @@
 <script>
 	import { onMount } from 'svelte';
-	import { searchTerm, classes, details, international } from '$lib/utils/stores';
+	import { getImage, deleteImage } from '$lib/utils/indexedDB';
+	import { searchTerm, classes, details, international, searchType } from '$lib/utils/stores';
 
 	export let data;
+	let imageFile, imageDB;
 
 	$: ({
+		searchType,
 		email,
+		searchTerm,
 		personalDetails,
 		itemList,
 		governmentFee,
@@ -13,10 +17,18 @@
 		stripePaymentIntentId
 	} = data);
 
+	$: {
+		if (searchType === 'image') {
+			imageDB = openDB();
+			imageFile = getImage(imageDB);
+		}
+	}
+
 	let message = 'Processing your order...';
 
 	onMount(() => {
 		localStorage.clear();
+		searchType.set('');
 		searchTerm.set('');
 		classes.set([]);
 		details.set([]);
@@ -24,6 +36,7 @@
 
 		const formData = new FormData();
 		formData.append('email', email);
+		formData.append('search', searchType === 'word' ? searchTerm : imageFile);
 		formData.append('stripe_payment_intent_id', stripePaymentIntentId);
 		formData.append('personal_details', personalDetails);
 		formData.append('purchase_items', JSON.stringify(itemList));
@@ -48,6 +61,13 @@
 
 		xhr.onload = function () {
 			message = 'Success, thank you for your order!';
+			deleteImage(imageDB)
+				.then(() => {
+					console.log('Image deleted');
+				})
+				.catch((err) => {
+					console.log('Failed to delete image', err);
+				});
 		};
 	});
 </script>

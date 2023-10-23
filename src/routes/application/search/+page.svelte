@@ -1,20 +1,26 @@
 <script>
-	import { ChevronDown, Info, CheckCircle, X } from 'lucide-svelte';
+	import { ChevronDown, Info, CheckCircle, X, WholeWord, Image } from 'lucide-svelte';
 	import { onMount } from 'svelte';
 	import { goto } from '$app/navigation';
-	import { searchTerm, classes, details, international } from '$lib/utils/stores';
+	import { searchType, searchTerm, classes, details, international } from '$lib/utils/stores';
 	import { getItem } from '$lib/utils/localStorageUtils';
 	import { searchResults_page } from '../../../../data/global.json';
 	import SearchWord from '$lib/components/SearchWord.svelte';
 	import TrademarkWordDetails from '$lib/application/trademarkWordDetails.svelte';
 	import TrademarkResultsDetails from '$lib/application/trademarkResultsDetails.svelte';
+	import SearchImage from '$lib/application/searchImage.svelte';
 
 	export let data;
 	let previousSearch;
 	$: searchResultsDetails = data.searchResults.apiData.trademarkDetails;
 	$: word = data.searchResults.searchTerm;
+	$: activeTab = searchType === 'image' ? 'image' : 'word';
+	const tabs = [
+		{ name: 'word', label: 'Word' },
+		{ name: 'image', label: 'Logo/Image' }
+	];
 
-	onMount(() => {
+	onMount(async () => {
 		previousSearch = getItem('searchTerm');
 	});
 
@@ -37,6 +43,7 @@
 
 	function deletePrevious() {
 		localStorage.clear();
+		searchType.set('');
 		searchTerm.set('');
 		classes.set([]);
 		details.set([]);
@@ -50,12 +57,34 @@
 		class="max-w-screen-xl mx-auto grid lg:grid-cols-2 items-end gap-12 text-white py-12 lg:py-24 max-2xl:px-6">
 		<div>
 			<p class="text-3xl font-bold">{searchResults_page.searchField.title}</p>
-			<div class="pt-4">
-				<SearchWord
-					placeholder={data?.searchResults
-						? data?.searchResults?.apiData?.request?.query
-						: 'Search for a word'} />
+			<div class="flex items-center gap-6 pt-8 pb-6">
+				{#each tabs as el}
+					<button
+						class="inline-flex items-center gap-2 text-lg font-bold px-6 py-2 border-2 border-transparent rounded-md {activeTab ===
+						el.name
+							? 'bg-ttmfRed text-white'
+							: 'bg-ttmfLightGreen hover:border-white'}"
+						on:click={() => {
+							activeTab = el.name;
+						}}>
+						{#if el.name === 'word'}
+							<WholeWord />
+						{:else}
+							<Image />
+						{/if}
+						{el.label}</button>
+				{/each}
 			</div>
+			{#if activeTab === 'image'}
+				<SearchImage />
+			{:else}
+				<div>
+					<SearchWord
+						placeholder={data?.searchResults
+							? data?.searchResults?.apiData?.request?.query
+							: 'Search for a word'} />
+				</div>
+			{/if}
 			{#if data.searchResults.apiData}
 				<div class="pt-8">
 					<p
@@ -77,6 +106,7 @@
 				</div>
 			{/if}
 		</div>
+
 		{#if previousSearch}
 			<div class="relative xl:pl-20">
 				<button

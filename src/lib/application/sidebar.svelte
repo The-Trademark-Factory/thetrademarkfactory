@@ -5,7 +5,15 @@
 	import { goto } from '$app/navigation';
 	import { page } from '$app/stores';
 	import { X } from 'lucide-svelte';
-	import { searchTerm, classes, details, detailsValid, international } from '$lib/utils/stores';
+	import {
+		searchType,
+		searchLogo,
+		searchTerm,
+		classes,
+		details,
+		detailsValid,
+		international
+	} from '$lib/utils/stores';
 
 	export let terms;
 
@@ -62,11 +70,18 @@
 </script>
 
 <div class="bg-ttmfBeige px-5 py-6 rounded-lg">
-	<div class="flex flex-wrap items-center gap-2 text-xl font-bold">
+	<div
+		class="flex flex-wrap items-center gap-2 text-xl font-bold {$searchLogo
+			? 'justify-between'
+			: ''}">
 		<p>Trademark</p>
-		<span
-			class="shrink-0 text-base capitalize rounded-full px-2 border-2 text-ttmfLightGreen border-ttmfLightGreen/20 bg-ttmfLightGreen/10"
-			>{$searchTerm}</span>
+		{#if $searchTerm}
+			<span
+				class="shrink-0 text-base capitalize rounded-full px-2 border-2 text-ttmfLightGreen border-ttmfLightGreen/20 bg-ttmfLightGreen/10"
+				>{$searchTerm}</span>
+		{:else if $searchLogo}
+			<img src={$searchLogo} alt="Uploaded Logo" class="h-10 max-w-xs object-contain" />
+		{/if}
 	</div>
 	{#if Object.keys($international).length > 0}
 		<div class="bg-white p-5 rounded-lg mt-5">

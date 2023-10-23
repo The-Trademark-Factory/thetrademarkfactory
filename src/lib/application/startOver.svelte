@@ -1,14 +1,28 @@
 <script>
-	import { searchTerm, classes, details, international } from '$lib/utils/stores';
+	import {
+		searchType,
+		searchLogo,
+		searchTerm,
+		classes,
+		details,
+		international
+	} from '$lib/utils/stores';
+	import { openDB, deleteImage } from '$lib/utils/indexedDB';
 	import { goto } from '$app/navigation';
 	import { Undo2 } from 'lucide-svelte';
 
-	function startOver() {
+	let imageDB;
+
+	async function startOver() {
 		searchTerm.set('');
+		searchType.set('');
+		searchLogo.set('');
 		classes.set([]);
 		details.set([]);
 		international.set([]);
 		localStorage.clear();
+		imageDB = await openDB();
+		deleteImage(imageDB);
 		goto('/application/search');
 	}
 </script>
