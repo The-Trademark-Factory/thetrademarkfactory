@@ -201,8 +201,8 @@
 			"registered_title": "Your exact trademark may already be registered",
 			"registered_description": "The trademark registration may still be available for limited classes.",
 			"available_title": "Your exact trademark is available for registration",
-			"default_title": "Search for your trademark ",
-			"default_description": "<p><strong>Did you know that every trademark application is examined by IP Australia and this is when prior identical or similar trademarks can be raised as objections to your application? </strong></p><p>Before you apply to register your trademark, it is always a good idea to conduct a search of the IP Australia trademark database to see whether the trademark is available for registration. The TradeMark Factory online application platform will conduct an exact search of IP Australia's trademark database before you submit your application to us for filing.</p><p>Our search will reveal exact trademarks only so to obtain a more comprehensive trademark search before you file, get in touch with us.</p><p> </p>"
+			"default_title": "Search for your word trademark*",
+			"default_description": "<p><strong>Did you know that every trademark application is examined by IP Australia and this is when prior identical or similar trademarks can be raised as objections to your application? </strong></p><p>Before you apply to register your trademark, it is always a good idea to conduct a search of the IP Australia trademark database to see whether the trademark is available for registration. The TradeMark Factory online application platform will conduct an exact word trademark search of IP Australia's trademark database before you submit your application to us for filing.</p><p>Our search will reveal exact word trademarks only so to obtain a more comprehensive trademark search before you file, get in touch with us.</p><p>*Only words can be searched via our online platform. If you require a logo search, get in touch with us.</p>"
 		},
 		"wordDetails": {
 			"existing": {
