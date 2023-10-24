@@ -8,7 +8,6 @@
 
 	$: ({
 		email,
-		searchTerm,
 		personalDetails,
 		itemList,
 		governmentFee,
