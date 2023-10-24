@@ -68,7 +68,7 @@
 					</div>
 					<div class="flex flex-wrap items-center gap-2 pt-3 text-sm">
 						{#each showAllDescriptions === el.class || el.descriptionText.length <= 8 ? el.descriptionText : el.descriptionText.slice(0, 4) as description}
-							<span class="bg-white rounded-full py-1 px-3 border-2 border-ttmfCreme/30"
+							<span class="bg-white rounded-md py-1 px-3 border-2 border-ttmfCreme/30"
 								>{description}</span>
 						{/each}
 						{#if el.descriptionText.length > 8 && showAllDescriptions !== el.class}

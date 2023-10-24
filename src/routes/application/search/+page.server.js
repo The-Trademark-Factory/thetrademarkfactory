@@ -52,7 +52,7 @@ export async function load({ url }) {
 
 		if (apiData.count > 0) {
 			const trademarkDetails = await Promise.all(
-				apiData.trademarkIds.slice(0, 6).map(async (trademarkId) => {
+				apiData.trademarkIds.slice(0, 3).map(async (trademarkId) => {
 					try {
 						const res = await fetch(
 							`${import.meta.env.VITE_IPAUSPROD_URL}/trade-mark/${trademarkId}`,

@@ -34,7 +34,7 @@
 	"email": "admin@ttmf.com.au",
 	"button": {
 		"title": "Trademark Search and Apply",
-		"url": "/search"
+		"url": "/application/search"
 	},
 	"copyright": "© 2023 TTMF. All rights reserved.",
 	"built": {

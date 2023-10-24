@@ -7,7 +7,6 @@
 	let imageFile, imageDB;
 
 	$: ({
-		searchType,
 		email,
 		searchTerm,
 		personalDetails,

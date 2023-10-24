@@ -9,17 +9,7 @@
 
 	const dispatch = createEventDispatcher();
 
-	export let previousSearch;
-
-	let imageUrl, imageDB, image;
-
-	onMount(async () => {
-		imageDB = await openDB();
-		image = await getImage(imageDB);
-		if (image) {
-			imageUrl = URL.createObjectURL(image);
-		}
-	});
+	export let previousSearch, imageUrl;
 
 	async function handleFileUpload(event) {
 		const file = event.target.files[0];
