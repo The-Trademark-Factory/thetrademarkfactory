@@ -1,12 +1,12 @@
 {
 	"nav": [
 		{
-			"title": "Pricing",
-			"url": "/pricing"
-		},
-		{
 			"title": "Services",
 			"url": "/services"
+		},
+		{
+			"title": "Pricing",
+			"url": "/pricing"
 		},
 		{
 			"title": "About",
