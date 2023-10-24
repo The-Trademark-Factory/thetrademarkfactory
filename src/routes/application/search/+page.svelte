@@ -1,6 +1,6 @@
 <script>
 	import { ChevronDown, Info, CheckCircle, X, WholeWord, Image } from 'lucide-svelte';
-	import { deleteImage } from '$lib/utils/indexedDB';
+	import { openDB, getImage, deleteImage } from '$lib/utils/indexedDB';
 	import { onMount } from 'svelte';
 	import { goto } from '$app/navigation';
 	import { page } from '$app/stores';
@@ -14,7 +14,7 @@
 
 	export let data;
 
-	let previousSearch;
+	let previousSearch, imageUrl, imageDB, image;
 	$: searchResultsDetails = data.searchResults.apiData.trademarkDetails;
 	$: word = data.searchResults.searchTerm;
 	$: activeTab =
@@ -25,6 +25,11 @@
 	];
 
 	onMount(async () => {
+		imageDB = await openDB();
+		image = await getImage(imageDB);
+		if (image) {
+			imageUrl = URL.createObjectURL(image);
+		}
 		previousSearch =
 			getItem('searchType') === 'word'
 				? getItem('searchTerm')
@@ -96,7 +101,8 @@
 				<SearchImage
 					on:deletePrevious={() => deletePrevious()}
 					on:gotoPrevious={() => gotoPrevious()}
-					{previousSearch} />
+					{previousSearch}
+					{imageUrl} />
 			{:else}
 				<div>
 					<SearchWord

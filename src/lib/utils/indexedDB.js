@@ -44,18 +44,25 @@ export function getImage(db) {
 
 export function deleteImage() {
 	return new Promise((resolve, reject) => {
-		const deleteRequest = indexedDB.deleteDatabase('ttmfDB');
-		deleteRequest.onsuccess = () => {
-			openDB()
-				.then((db) => {
-					resolve(db);
-				})
-				.catch((err) => {
-					reject('Could not reinitialize database:', err);
-				});
-		};
-		deleteRequest.onerror = () => {
-			reject("Couldn't delete database");
-		};
+		openDB()
+			.then((db) => {
+				const transaction = db.transaction('uploadedLogo', 'readwrite');
+				const objectStore = transaction.objectStore('uploadedLogo');
+				const request = objectStore.clear();
+
+				request.onsuccess = () => {
+					console.log('Object store cleared');
+					resolve();
+				};
+
+				request.onerror = () => {
+					console.log('Error clearing object store');
+					reject();
+				};
+			})
+			.catch((err) => {
+				console.log('Error opening DB:', err);
+				reject(err);
+			});
 	});
 }

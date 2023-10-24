@@ -40,6 +40,7 @@
 		await saveImage(imageDB, file);
 		imageUrl = URL.createObjectURL(file);
 		searchLogo.set(imageUrl);
+		dispatch('deletePrevious');
 	}
 
 	function handleDelete() {
