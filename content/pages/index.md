@@ -17,7 +17,7 @@ content_blocks:
       title: Quick, easy and affordable trademark registration powered by AI
     aussie:
       title: Australian Owned & Operated
-      subtitle: Backed by expert lawyers with over 30 years experience
+      subtitle: Developed by trademark lawyers with over 30 years experience
     scrolling_banner:
       - title: Naturo Limited
       - title: Gloria Jean's Coffees
