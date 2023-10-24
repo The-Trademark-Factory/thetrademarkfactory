@@ -102,7 +102,8 @@
 					on:deletePrevious={() => deletePrevious()}
 					on:gotoPrevious={() => gotoPrevious()}
 					{previousSearch}
-					{imageUrl} />
+					{imageUrl}
+					{imageDB} />
 			{:else}
 				<div>
 					<SearchWord

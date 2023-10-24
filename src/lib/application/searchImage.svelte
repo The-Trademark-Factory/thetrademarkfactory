@@ -9,7 +9,7 @@
 
 	const dispatch = createEventDispatcher();
 
-	export let previousSearch, imageUrl;
+	export let previousSearch, imageUrl, imageDB;
 
 	async function handleFileUpload(event) {
 		const file = event.target.files[0];

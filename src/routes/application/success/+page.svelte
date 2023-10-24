@@ -1,10 +1,11 @@
 <script>
 	import { onMount } from 'svelte';
-	import { getImage, deleteImage } from '$lib/utils/indexedDB';
+	import { CheckCircle } from 'lucide-svelte';
+	import { openDB, getImage, deleteImage } from '$lib/utils/indexedDB';
+	import { getItem } from '$lib/utils/localStorageUtils';
 	import { searchTerm, classes, details, international, searchType } from '$lib/utils/stores';
 
 	export let data;
-	let imageFile, imageDB;
 
 	$: ({
 		email,
@@ -15,26 +16,29 @@
 		stripePaymentIntentId
 	} = data);
 
-	$: {
-		if (searchType === 'image') {
-			imageDB = openDB();
-			imageFile = getImage(imageDB);
-		}
-	}
-
 	let message = 'Processing your order...';
 
-	onMount(() => {
+	async function getStoredImage() {
+		let imageDB = await openDB();
+		let imageFile = getImage(imageDB);
+		return imageFile;
+	}
+
+	function clearData() {
 		localStorage.clear();
 		searchType.set('');
 		searchTerm.set('');
 		classes.set([]);
 		details.set([]);
 		international.set([]);
+	}
 
+	onMount(async () => {
+		const localData =
+			getItem('searchType') === 'word' ? getItem('searchTerm') : await getStoredImage();
 		const formData = new FormData();
 		formData.append('email', email);
-		formData.append('search', searchType === 'word' ? searchTerm : imageFile);
+		formData.append('search', localData);
 		formData.append('stripe_payment_intent_id', stripePaymentIntentId);
 		formData.append('personal_details', personalDetails);
 		formData.append('purchase_items', JSON.stringify(itemList));
@@ -59,13 +63,8 @@
 
 		xhr.onload = function () {
 			message = 'Success, thank you for your order!';
-			deleteImage(imageDB)
-				.then(() => {
-					console.log('Image deleted');
-				})
-				.catch((err) => {
-					console.log('Failed to delete image', err);
-				});
+			deleteImage();
+			clearData();
 		};
 	});
 </script>
@@ -74,6 +73,11 @@
 	<title>Your order | TTMF</title>
 </svelte:head>
 
-<section class="max-w-screen-xl mx-auto scroll-mt-32 max-2xl:px-6">
-	<p class="text-center py-20">{message}</p>
+<section class="bg-ttmfDarkGreen">
+	<div class="text-white max-w-screen-xl mx-auto scroll-mt-32 max-2xl:px-6 lg:text-center">
+		<p
+			class="inline-flex lg:items-center justify-center gap-6 py-20 lg:py-32 text-2xl lg:text-4xl font-bold">
+			<span class="text-green-500"><CheckCircle size="60" /></span>{message}
+		</p>
+	</div>
 </section>
