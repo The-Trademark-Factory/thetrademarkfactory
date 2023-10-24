@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="512" height="512" id="svg29881" version="1.1" inkscape:version="0.48.5 r" sodipodi:docname="israel_israeli_national_country_flag.svg">
+  <defs id="defs29883">
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath29920">
+      <path sodipodi:type="arc" style="fill:#a9b3c1;fill-opacity:1;stroke:none" id="path29922" sodipodi:cx="-514.28571" sodipodi:cy="506.64789" sodipodi:rx="260" sodipodi:ry="248.57143" d="m -254.28571,506.64789 a 260,248.57143 0 1 1 -520,0 260,248.57143 0 1 1 520,0 z" transform="matrix(0.68483669,0,0,0.71632344,705.09921,116.38888)"/>
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath6029">
+      <path sodipodi:type="arc" style="fill:#ca4638;fill-opacity:1;stroke:none" id="path6031" sodipodi:cx="2194.2856" sodipodi:cy="2569.1428" sodipodi:rx="868.57141" sodipodi:ry="891.42859" d="m 3062.8571,2569.1428 a 868.57141,891.42859 0 1 1 -1737.1429,0 868.57141,891.42859 0 1 1 1737.1429,0 z" transform="matrix(0.2763158,0,0,0.26923076,-420.03886,104.66953)"/>
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath6296">
+      <path sodipodi:type="arc" style="fill:#4086cd;fill-opacity:1;stroke:none" id="path6298" sodipodi:cx="418.33841" sodipodi:cy="161.72458" sodipodi:rx="265.61169" sodipodi:ry="297.15308" d="m 683.9501,161.72458 a 265.61169,297.15308 0 1 1 -531.22338,0 265.61169,297.15308 0 1 1 531.22338,0 z" transform="matrix(0.90357467,0,0,0.80766453,-1037.7596,311.57642)"/>
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath6348">
+      <path sodipodi:type="arc" style="fill:#e74c3c;fill-opacity:1;stroke:none" id="path6350" sodipodi:cx="629.16772" sodipodi:cy="-70.685661" sodipodi:rx="323.71426" sodipodi:ry="343.63513" d="m 952.88199,-70.685661 a 323.71426,343.63513 0 1 1 -647.42853,0 323.71426,343.63513 0 1 1 647.42853,0 z" transform="matrix(0.85483331,0,0,0.80527778,-999.33386,332.34793)"/>
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath3069">
+      <rect ry="48" y="556.36218" x="16.000004" height="480" width="480" id="rect3071" style="fill:#f1c40f;fill-opacity:1;stroke:none"/>
+    </clipPath>
+  </defs>
+  <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="0.4608027" inkscape:cx="-27.472498" inkscape:cy="249.55916" inkscape:document-units="px" inkscape:current-layer="layer1" showgrid="false" inkscape:window-width="1366" inkscape:window-height="713" inkscape:window-x="0" inkscape:window-y="26" inkscape:window-maximized="1"/>
+  
+  <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1" transform="translate(0,-540.36218)">
+    <g id="g4763" transform="translate(-2.8642579e-6,0)" clip-path="url(#clipPath3069)">
+      <g style="fill:#ca4638" clip-path="url(#clipPath29920)" transform="matrix(1.3478789,0,0,1.3478789,-219.66308,150.30679)" id="g29913"/>
+      <g transform="translate(517.29916,5.9422065)" id="g4245">
+        <rect style="fill:#ffffff;fill-opacity:1;stroke:none" id="rect4221" width="480" height="240" x="-501.29916" y="670.41998"/>
+        <g id="g4227" transform="translate(-42.317461,-74.869353)">
+          <rect style="fill:#2980b9;fill-opacity:1;stroke:none" id="rect4223" width="480" height="80" x="-458.98169" y="665.28931"/>
+          <rect y="625.28931" x="-458.98169" height="40" width="480" id="rect4225" style="fill:#ffffff;fill-opacity:1;stroke:none"/>
+        </g>
+        <g id="g4231" transform="matrix(1,0,0,-1,-42.317474,1655.7093)">
+          <rect y="665.28931" x="-458.98169" height="80" width="480" id="rect4233" style="fill:#2980b9;fill-opacity:1;stroke:none"/>
+          <rect style="fill:#ffffff;fill-opacity:1;stroke:none" id="rect4235" width="480" height="40" x="-458.98169" y="625.28931"/>
+        </g>
+        <path inkscape:connector-curvature="0" id="path19108" style="fill:#2980b9;fill-opacity:1;fill-rule:nonzero;stroke:none" d="m -208.84735,771.82546 -9.93941,-17.23577 19.87881,0 -9.9394,17.23577 z m -9.97665,54.4248 9.97665,-17.19854 9.9394,17.19854 -19.91605,0 z m -21.44233,0 -42.02845,0 -20.69781,-35.81166 20.69781,-35.84891 42.02845,0 20.66058,35.84891 -20.66058,35.81166 z m -21.03284,36.40729 -10.27444,-17.79416 20.54889,0 -10.27445,17.79416 z m -52.45181,-90.86931 -9.93941,-17.19855 19.87882,0 -9.93941,17.19855 z m -9.93941,54.46202 9.93941,-17.19854 9.93941,17.19854 -19.87882,0 z m 62.39122,-108.06785 10.27445,17.79415 -20.54889,0 10.27444,-17.79415 z m 63.17298,72.21895 31.41897,-54.4248 -62.80071,0 -31.79124,-55.02043 -31.754,55.02043 -62.87517,0 8.04087,13.95984 23.41533,40.5022 -31.4562,54.42479 62.87517,0 31.754,55.02044 31.79124,-55.02044 62.83794,0 -31.4562,-54.46203"/>
+      </g>
+    </g>
+  </g>
+
+	<metadata>
+		<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+			<rdf:Description about="https://iconscout.com/legal#licenses" dc:title="israel_israeli_national_country_flag" dc:description="israel_israeli_national_country_flag" dc:publisher="Iconscout" dc:date="2017-05-26" dc:format="image/svg+xml" dc:language="en">
+				<dc:creator>
+					<rdf:Bag>
+						<rdf:li>Vignesh Oviyan</rdf:li>
+					</rdf:Bag>
+				</dc:creator>
+			</rdf:Description>
+		</rdf:RDF>
+    </metadata></svg>

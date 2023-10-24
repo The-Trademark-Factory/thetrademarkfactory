@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="512" height="512" id="svg2" version="1.1" inkscape:version="0.48.5 r" sodipodi:docname="philippines_national_country_flag.svg">
+  <defs id="defs4">
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath4680">
+      <rect style="fill:#f6671f;fill-opacity:1;stroke:none" id="rect4682" width="746.29309" height="746.29309" x="75.437263" y="-65.300034"/>
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath4684">
+      <rect style="fill:#f6671f;fill-opacity:1;stroke:none" id="rect4686" width="265.46881" height="265.46881" x="51.77356" y="633.62134" transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)"/>
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath4423">
+      <rect style="fill:#f1c40f;fill-opacity:1;stroke:none" id="rect4425" width="480" height="480" x="15.999995" y="556.36218" ry="48"/>
+    </clipPath>
+  </defs>
+  <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="0.70000002" inkscape:cx="-50.345712" inkscape:cy="127.79492" inkscape:document-units="px" inkscape:current-layer="layer1" showgrid="false" inkscape:window-width="1366" inkscape:window-height="713" inkscape:window-x="0" inkscape:window-y="26" inkscape:window-maximized="1"/>
+  
+  <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1" transform="translate(0,-540.36218)">
+    <g id="g3031" transform="translate(4.7683716e-6,0)" clip-path="url(#clipPath4423)">
+      <g id="g3796">
+        <g id="g3022" transform="translate(795.08482,-27.196425)">
+          <g transform="translate(-795.08482,27.196453)" id="g3018">
+            <rect style="fill:#2b4896;fill-opacity:1;stroke:none" id="rect3465" width="480" height="240" x="15.999995" y="556.36218"/>
+            <rect y="796.36212" x="15.999995" height="240" width="480" id="rect3467" style="fill:#e32d3c;fill-opacity:1;stroke:none"/>
+          </g>
+          <path inkscape:connector-curvature="0" id="rect3007" d="m -779.08482,1063.5586 2.71875,0 68.125,-68.35194 169.15625,-169.71977 0,-1.12875 -240,-240.79953 0,479.99999 z" style="fill:#ffffff;fill-opacity:1;stroke:none"/>
+        </g>
+      </g>
+      <g style="fill:#fcd116" id="g14-8" transform="matrix(2.9365677,0,0,2.9365677,113.90006,796.36218)">
+        <circle sodipodi:ry="9" sodipodi:rx="9" sodipodi:cy="0" sodipodi:cx="0" cy="0" cx="0" d="M 9,0 C 9,4.9705627 4.9705627,9 0,9 -4.9705627,9 -9,4.9705627 -9,0 c 0,-4.9705627 4.0294373,-9 9,-9 4.9705627,0 9,4.0294373 9,9 z" id="circle16-8" r="9"/>
+        <g id="j-4">
+          <g id="i-1">
+            <g id="h-4">
+              
+              
+              <path inkscape:connector-curvature="0" id="path21-7" transform="scale(19,19)" d="M -1,0 -0.93848823,0.06151177 0,0 -0.93848823,-0.06151177 z"/>
+              <path inkscape:connector-curvature="0" transform="scale(19.238092,19.238092)" d="m -0.88366349,0.11633651 0.0495742,0.0495742 L 0,0 z" id="g-1"/>
+              <use height="90" width="180" y="0" x="0" id="use24-3" transform="scale(1,-1)" xlink:href="#g-1"/>
+            </g>
+            <use height="90" width="180" y="0" x="0" id="use26-1" transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)" xlink:href="#h-4"/>
+          </g>
+          <use height="90" width="180" y="0" x="0" id="use28-4" transform="matrix(0,1,-1,0,0,0)" xlink:href="#i-1"/>
+        </g>
+        <use height="90" width="180" y="0" x="0" id="use30-5" transform="scale(-1,-1)" xlink:href="#j-4"/>
+        <g id="g32-0" transform="translate(-2.019238,0)">
+          
+          <g transform="translate(37.961524,0)" id="s-4">
+            
+            
+            <path inkscape:connector-curvature="0" d="M 5,0 1.618034,1.175571 1.545085,4.755283 -0.618034,1.902113 -4.045085,2.938926 -2,0 z" id="t-5"/>
+            <use height="90" width="180" y="0" x="0" id="use36-6" transform="scale(1,-1)" xlink:href="#t-5"/>
+          </g>
+          <use height="90" width="180" y="0" x="0" id="use38-0" transform="matrix(-0.5,0.8660254,-0.8660254,-0.5,0,0)" xlink:href="#s-4"/>
+          <use height="90" width="180" y="0" x="0" id="use40-2" transform="matrix(-0.5,-0.8660254,0.8660254,-0.5,0,0)" xlink:href="#s-4"/>
+        </g>
+      </g>
+    </g>
+  </g>
+
+	<metadata>
+		<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+			<rdf:Description about="https://iconscout.com/legal#licenses" dc:title="philippines_national_country_flag" dc:description="philippines_national_country_flag" dc:publisher="Iconscout" dc:date="2017-05-26" dc:format="image/svg+xml" dc:language="en">
+				<dc:creator>
+					<rdf:Bag>
+						<rdf:li>Vignesh Oviyan</rdf:li>
+					</rdf:Bag>
+				</dc:creator>
+			</rdf:Description>
+		</rdf:RDF>
+    </metadata></svg>

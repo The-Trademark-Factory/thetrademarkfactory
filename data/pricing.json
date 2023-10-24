@@ -415,7 +415,7 @@
 			"title": "Greece",
 			"gov_fee": 250,
 			"service_fee": 500,
-			"icon": "",
+			"icon": "/upload/greece-169466.svg",
 			"popular": false
 		},
 		{
@@ -429,21 +429,21 @@
 			"title": "Iceland",
 			"gov_fee": 450,
 			"service_fee": 500,
-			"icon": "",
+			"icon": "/upload/iceland-169472.svg",
 			"popular": false
 		},
 		{
 			"title": "India",
 			"gov_fee": 200,
 			"service_fee": 500,
-			"icon": "",
+			"icon": "/upload/india-169486.svg",
 			"popular": false
 		},
 		{
 			"title": "Indonesia",
 			"gov_fee": 250,
 			"service_fee": 500,
-			"icon": "",
+			"icon": "/upload/indonesia-169473.svg",
 			"popular": false
 		},
 		{
@@ -457,35 +457,35 @@
 			"title": "Ireland",
 			"gov_fee": 460,
 			"service_fee": 500,
-			"icon": "",
+			"icon": "/upload/ireland-169475.svg",
 			"popular": false
 		},
 		{
 			"title": "Israel",
 			"gov_fee": 850,
 			"service_fee": 500,
-			"icon": "",
+			"icon": "/upload/israel-169477.svg",
 			"popular": false
 		},
 		{
 			"title": "Italy",
 			"gov_fee": 200,
 			"service_fee": 500,
-			"icon": "",
+			"icon": "/upload/italy-169479.svg",
 			"popular": false
 		},
 		{
 			"title": "Jamaica",
 			"gov_fee": 350,
 			"service_fee": 500,
-			"icon": "",
+			"icon": "/upload/jamaica-169483.svg",
 			"popular": false
 		},
 		{
 			"title": "Japan",
 			"gov_fee": 550,
 			"service_fee": 500,
-			"icon": "",
+			"icon": "/upload/japan-169485.svg",
 			"popular": false
 		},
 		{
@@ -499,21 +499,21 @@
 			"title": "Kenya",
 			"gov_fee": 550,
 			"service_fee": 500,
-			"icon": "",
+			"icon": "/upload/kenya-169487.svg",
 			"popular": false
 		},
 		{
 			"title": "Kyrgyzstan",
 			"gov_fee": 600,
 			"service_fee": 500,
-			"icon": "",
+			"icon": "/upload/kyrgyzstan-169503.svg",
 			"popular": false
 		},
 		{
 			"title": "Laos",
 			"gov_fee": 120,
 			"service_fee": 500,
-			"icon": "",
+			"icon": "/upload/laos-169491.svg",
 			"popular": false
 		},
 		{
@@ -562,14 +562,14 @@
 			"title": "Malaysia",
 			"gov_fee": 400,
 			"service_fee": 500,
-			"icon": "",
+			"icon": "/upload/malaysia-169506.svg",
 			"popular": false
 		},
 		{
 			"title": "Mauritius",
 			"gov_fee": 250,
 			"service_fee": 500,
-			"icon": "",
+			"icon": "/upload/mauritius-169511.svg",
 			"popular": false
 		},
 		{
@@ -583,14 +583,14 @@
 			"title": "Mexico",
 			"gov_fee": 250,
 			"service_fee": 500,
-			"icon": "",
+			"icon": "/upload/mexico-169612.svg",
 			"popular": false
 		},
 		{
 			"title": "Moldova",
 			"gov_fee": 450,
 			"service_fee": 500,
-			"icon": "",
+			"icon": "/upload/moldova-169522.svg",
 			"popular": false
 		},
 		{
@@ -604,7 +604,7 @@
 			"title": "Morocco",
 			"gov_fee": 400,
 			"service_fee": 500,
-			"icon": "",
+			"icon": "/upload/morocco-169518.svg",
 			"popular": false
 		},
 		{
@@ -625,28 +625,28 @@
 			"title": "Norway",
 			"gov_fee": 450,
 			"service_fee": 500,
-			"icon": "",
+			"icon": "/upload/norway-169534.svg",
 			"popular": false
 		},
 		{
 			"title": "Oman",
 			"gov_fee": 850,
 			"service_fee": 500,
-			"icon": "",
+			"icon": "/upload/oman-169547.svg",
 			"popular": false
 		},
 		{
 			"title": "Pakistan",
 			"gov_fee": 100,
 			"service_fee": 500,
-			"icon": "",
+			"icon": "/upload/pakistan-169535.svg",
 			"popular": false
 		},
 		{
 			"title": "Philippines",
 			"gov_fee": 200,
 			"service_fee": 500,
-			"icon": "",
+			"icon": "/upload/philippines-169552.svg",
 			"popular": false
 		},
 		{
@@ -688,7 +688,7 @@
 			"title": "Singapore",
 			"gov_fee": 480,
 			"service_fee": 500,
-			"icon": "",
+			"icon": "/upload/singapore-169565.svg",
 			"popular": false
 		},
 		{
@@ -730,49 +730,49 @@
 			"title": "Sweden",
 			"gov_fee": 350,
 			"service_fee": 500,
-			"icon": "",
+			"icon": "/upload/sweden-169584.svg",
 			"popular": false
 		},
 		{
 			"title": "Switzerland",
 			"gov_fee": 700,
 			"service_fee": 500,
-			"icon": "",
+			"icon": "/upload/switzerland-169583.svg",
 			"popular": false
 		},
 		{
 			"title": "Thailand",
 			"gov_fee": 750,
 			"service_fee": 500,
-			"icon": "",
+			"icon": "/upload/thailand-169581.svg",
 			"popular": false
 		},
 		{
 			"title": "Türkiye",
 			"gov_fee": 240,
 			"service_fee": 500,
-			"icon": "",
+			"icon": "/upload/turkey-169591.svg",
 			"popular": false
 		},
 		{
 			"title": "Ukraine",
 			"gov_fee": 750,
 			"service_fee": 500,
-			"icon": "",
+			"icon": "/upload/ukraine-169594.svg",
 			"popular": false
 		},
 		{
 			"title": "UAE",
 			"gov_fee": 2850,
 			"service_fee": 500,
-			"icon": "",
+			"icon": "/upload/uae-169590.svg",
 			"popular": false
 		},
 		{
 			"title": "Vietnam ",
 			"gov_fee": 260,
 			"service_fee": 500,
-			"icon": "",
+			"icon": "/upload/vietnam-169598.svg",
 			"popular": false
 		}
 	]

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="512" height="512" id="svg2" version="1.1" inkscape:version="0.48.5 r" sodipodi:docname="greece_greek_national_country_flag.svg" inkscape:export-filename="/home/vignesh/நிகழ்படங்கள்/iconfinder/flags/finished/png/greece.png" inkscape:export-xdpi="90" inkscape:export-ydpi="90">
+  
+  <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-width="1366" inkscape:window-height="713" id="namedview71" showgrid="false" inkscape:zoom="0.26072876" inkscape:cx="459.40358" inkscape:cy="313.8972" inkscape:window-x="0" inkscape:window-y="26" inkscape:window-maximized="1" inkscape:current-layer="svg2"/>
+  <defs id="defs4">
+    <linearGradient inkscape:collect="always" id="linearGradient3902">
+      <stop style="stop-color:#2c3c51;stop-opacity:1;" offset="0" id="stop3904"/>
+      <stop style="stop-color:#2c3c51;stop-opacity:0;" offset="1" id="stop3906"/>
+    </linearGradient>
+    <polygon id="pt" points="0,-0.5 0.16245985,0 -0.16245985,0 " transform="scale(0.0616,0.0616)" style="fill:#ffffff"/>
+    <g id="star">
+      <use xlink:href="#pt" transform="matrix(-0.80901699,-0.58778525,0.58778525,-0.80901699,0,0)" id="use8" x="0" y="0" width="1235" height="650"/>
+      <use xlink:href="#pt" transform="matrix(0.30901699,-0.95105652,0.95105652,0.30901699,0,0)" id="use10" x="0" y="0" width="1235" height="650"/>
+      <use xlink:href="#pt" id="use12" x="0" y="0" width="1235" height="650"/>
+      <use xlink:href="#pt" transform="matrix(0.30901699,0.95105652,-0.95105652,0.30901699,0,0)" id="use14" x="0" y="0" width="1235" height="650"/>
+      <use xlink:href="#pt" transform="matrix(-0.80901699,0.58778525,-0.58778525,-0.80901699,0,0)" id="use16" x="0" y="0" width="1235" height="650"/>
+    </g>
+    <g id="s5">
+      <use xlink:href="#star" x="-0.252" id="use19" y="0" width="1235" height="650"/>
+      <use xlink:href="#star" x="-0.126" id="use21" y="0" width="1235" height="650"/>
+      <use xlink:href="#star" id="use23" x="0" y="0" width="1235" height="650"/>
+      <use xlink:href="#star" x="0.126" id="use25" y="0" width="1235" height="650"/>
+      <use xlink:href="#star" x="0.252" id="use27" y="0" width="1235" height="650"/>
+    </g>
+    <g id="s6">
+      <use xlink:href="#s5" x="-0.063000001" id="use30" y="0" width="1235" height="650"/>
+      <use xlink:href="#star" x="0.315" id="use32" y="0" width="1235" height="650"/>
+    </g>
+    <g id="x4">
+      <use xlink:href="#s6" id="use35" x="0" y="0" width="1235" height="650"/>
+      <use xlink:href="#s5" y="0.054000001" id="use37" x="0" width="1235" height="650"/>
+      <use xlink:href="#s6" y="0.108" id="use39" x="0" width="1235" height="650"/>
+      <use xlink:href="#s5" y="0.162" id="use41" x="0" width="1235" height="650"/>
+    </g>
+    <g id="u">
+      <use xlink:href="#x4" y="-0.21600001" id="use44" x="0" width="1235" height="650"/>
+      <use xlink:href="#x4" id="use46" x="0" y="0" width="1235" height="650"/>
+      <use xlink:href="#s6" y="0.21600001" id="use48" x="0" width="1235" height="650"/>
+    </g>
+    <rect id="stripe" width="1235" height="50" x="0" y="0" style="fill:#b22234"/>
+    <linearGradient inkscape:collect="always" xlink:href="#linearGradient3902" id="linearGradient3908" x1="-0.34429255" y1="-0.0029411383" x2="0.34429255" y2="-0.0029411383" gradientUnits="userSpaceOnUse"/>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath4223">
+      <rect style="fill:#f1c40f;fill-opacity:1;stroke:none" id="rect4225" width="486" height="486" x="-659.68939" y="-32.931644" ry="48.599998"/>
+    </clipPath>
+  </defs>
+  <g id="g7202" transform="matrix(0.98765432,0,0,0.98765432,667.54508,48.525081)" clip-path="url(#clipPath4223)">
+    <g id="g7181">
+      <rect style="fill:#2980b9;fill-opacity:1;stroke:none" id="rect6589" width="486" height="54" x="-659.68939" y="-32.931648"/>
+      <rect y="21.068352" x="-659.68939" height="54" width="486" id="rect7099" style="fill:#ffffff;fill-opacity:1;stroke:none"/>
+      <g id="g7105" transform="translate(0,108)">
+        <rect style="fill:#2980b9;fill-opacity:1;stroke:none" id="rect7107" width="486" height="54" x="-659.68939" y="-32.931648"/>
+        <rect y="21.068352" x="-659.68939" height="54" width="486" id="rect7109" style="fill:#ffffff;fill-opacity:1;stroke:none"/>
+      </g>
+      <g id="g7157" transform="translate(0,216)">
+        <g id="g7159">
+          <rect y="-32.931648" x="-659.68939" height="54" width="486" id="rect7161" style="fill:#2980b9;fill-opacity:1;stroke:none"/>
+          <rect style="fill:#ffffff;fill-opacity:1;stroke:none" id="rect7163" width="486" height="54" x="-659.68939" y="21.068352"/>
+        </g>
+        <g id="g7165" transform="translate(0,108)">
+          <rect style="fill:#2980b9;fill-opacity:1;stroke:none" id="rect7167" width="486" height="54" x="-659.68939" y="-32.931648"/>
+          <rect y="21.068352" x="-659.68939" height="54" width="486" id="rect7169" style="fill:#ffffff;fill-opacity:1;stroke:none"/>
+        </g>
+      </g>
+      <rect y="399.06836" x="-659.68939" height="54" width="486" id="rect7179" style="fill:#2980b9;fill-opacity:1;stroke:none"/>
+    </g>
+    <rect y="-32.931648" x="-659.68939" height="270" width="220" id="rect7196" style="fill:#2980b9;fill-opacity:1;stroke:none"/>
+    <rect y="-32.436993" x="-577.19476" height="269.01068" width="55.010689" id="rect7198" style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.98931009"/>
+    <rect transform="matrix(0,1,-1,0,0,0)" style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.89361936" id="rect7200" width="55.10638" height="219.10638" x="74.51516" y="440.1362"/>
+  </g>
+
+	<metadata>
+		<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+			<rdf:Description about="https://iconscout.com/legal#licenses" dc:title="greece_greek_national_country_flag" dc:description="greece_greek_national_country_flag" dc:publisher="Iconscout" dc:date="2017-05-26" dc:format="image/svg+xml" dc:language="en">
+				<dc:creator>
+					<rdf:Bag>
+						<rdf:li>Vignesh Oviyan</rdf:li>
+					</rdf:Bag>
+				</dc:creator>
+			</rdf:Description>
+		</rdf:RDF>
+    </metadata></svg>

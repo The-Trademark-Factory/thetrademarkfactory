@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="512" height="512" id="svg29881" version="1.1" inkscape:version="0.48.5 r" sodipodi:docname="turkey_flag.svg">
+  <defs id="defs29883">
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath29920">
+      <path sodipodi:type="arc" style="fill:#a9b3c1;fill-opacity:1;stroke:none" id="path29922" sodipodi:cx="-514.28571" sodipodi:cy="506.64789" sodipodi:rx="260" sodipodi:ry="248.57143" d="m -254.28571,506.64789 a 260,248.57143 0 1 1 -520,0 260,248.57143 0 1 1 520,0 z" transform="matrix(0.68483669,0,0,0.71632344,705.09921,116.38888)"/>
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath3331">
+      <rect style="fill:#f1c40f;fill-opacity:1;stroke:none" id="rect3333" width="480" height="480" x="16" y="556.36218" ry="48"/>
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath3335">
+      <rect style="fill:#f1c40f;fill-opacity:1;stroke:none" id="rect3337" width="356.11508" height="356.11508" x="174.83995" y="301.2551" ry="35.611507"/>
+    </clipPath>
+  </defs>
+  <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="0.21297459" inkscape:cx="-903.56387" inkscape:cy="35.745558" inkscape:document-units="px" inkscape:current-layer="layer1" showgrid="false" inkscape:window-width="1366" inkscape:window-height="713" inkscape:window-x="0" inkscape:window-y="26" inkscape:window-maximized="1"/>
+  
+  <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1" transform="translate(0,-540.36218)">
+    <g id="g29913" transform="matrix(1.3478789,0,0,1.3478789,-219.66308,150.30679)" clip-path="url(#clipPath3335)" style="fill:#ca4638"/>
+    <g id="g3325" transform="translate(0,-2.6171874e-6)" clip-path="url(#clipPath3331)">
+      <rect y="556.36218" x="16" height="480" width="480" id="rect3261" style="fill:#c0392b;fill-opacity:1;stroke:none"/>
+      <g transform="matrix(1.2,0,0,1.2,1566.4955,-895.8627)" id="g5869">
+        <path inkscape:connector-curvature="0" id="path6120" style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none" d="m -1102.1149,1484.4596 c -41.0509,0 -74.2997,-33.2466 -74.2997,-74.2788 0,-40.9881 33.2488,-74.2633 74.2997,-74.2633 20.4566,0 38.9832,8.2708 52.382,21.6674 -16.6244,-23.7914 -44.1939,-39.3406 -75.3749,-39.3406 -50.783,0 -91.9718,41.1601 -91.9718,91.9365 0,50.8116 41.1888,91.9497 91.9718,91.9497 31.181,0 58.7505,-15.5712 75.3749,-39.3185 -13.3988,13.3437 -31.9254,21.6476 -52.382,21.6476"/>
+        <path inkscape:connector-curvature="0" id="path6122" style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none" d="m -1013.0931,1370.7675 17.14826,24.7463 28.86524,-8.6788 -18.25099,23.9832 17.14821,24.7905 -28.42413,-9.9824 -18.25099,23.9811 0.6617,-30.1302 -28.4242,-9.9846 28.8653,-8.595 0.6616,-30.1301"/>
+      </g>
+    </g>
+  </g>
+
+	<metadata>
+		<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+			<rdf:Description about="https://iconscout.com/legal#licenses" dc:title="turkey_flag" dc:description="turkey_flag" dc:publisher="Iconscout" dc:date="2017-05-26" dc:format="image/svg+xml" dc:language="en">
+				<dc:creator>
+					<rdf:Bag>
+						<rdf:li>Vignesh Oviyan</rdf:li>
+					</rdf:Bag>
+				</dc:creator>
+			</rdf:Description>
+		</rdf:RDF>
+    </metadata></svg>
