@@ -111,7 +111,7 @@ content_blocks:
       - title_card: Trademark Experts
         description_card: >-
           Backed by experienced Australian trademark lawyers and attorneys with
-          over 40 years experience in Australian and international trade mark
+          over 30 years experience in Australian and international trade mark
           law. 
         icon: /upload/ic-experience.svg
       - title_card: Low fixed fees
