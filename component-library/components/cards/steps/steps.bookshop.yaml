@@ -10,7 +10,7 @@ blueprint:
   title: |
     Lorem ipsum <em>dolor sit</em> amet
   steps:
-    - title: Lorem ispum
+    - title_step: Lorem ispum
       image: https://dummyimage.com/300x200
       step: '1'
       last_step: false
@@ -20,5 +20,3 @@ preview:
 _inputs:
   title:
     type: html
-  steps.title:
-    type: text

@@ -44,7 +44,7 @@
 						<Svg name="round-number" />
 					</div>
 				</div>
-				<p class="text-xl font-bold text-ttmfBlack py-8 pr-6">{el.title}</p>
+				<p class="text-xl font-bold text-ttmfBlack py-8 pr-6">{el.title_step}</p>
 				<img src={el.image} alt={el.title} />
 			</div>
 		{/each}

@@ -1,6 +1,9 @@
 <script>
 	import { ChevronDown, Check, Search, XCircle } from 'lucide-svelte';
-	import { international_module } from '../../../../data/pricing.json';
+	import {
+		international_module,
+		international_additional_fees
+	} from '../../../../data/pricing.json';
 	import { onMount } from 'svelte';
 	import { fly } from 'svelte/transition';
 
@@ -53,6 +56,10 @@
 	$: total = Object.values(selectedCountries).reduce(
 		(acc, { gov, service }) => acc + gov + service,
 		0
+	);
+
+	$: showAdditionalFees = !(
+		Object.keys(selectedCountries).length === 1 && selectedCountries.hasOwnProperty('Australia')
 	);
 </script>
 
@@ -235,9 +242,19 @@
 							</div>
 						{/each}
 					</div>
+					{#if showAdditionalFees}
+						<div class="flex justify-between items-center font-bold text-black/50 pt-6">
+							<p>{international_additional_fees.title}</p>
+							<p>AU${international_additional_fees.price}</p>
+						</div>
+						<div class="flex justify-between items-center font-bold text-black/50 pt-2">
+							<p>Selected Countries</p>
+							<p>AU${total}</p>
+						</div>
+					{/if}
 					<div class="flex justify-between items-center text-lg font-bold pt-6">
 						<p>Estimated Total</p>
-						<p>AU${total}</p>
+						<p>AU${showAdditionalFees ? total + international_additional_fees.price : total}</p>
 					</div>
 					<button class="bg-ttmfRed text-white font-bold px-12 py-5 rounded w-full mt-6"
 						>Enquire</button>

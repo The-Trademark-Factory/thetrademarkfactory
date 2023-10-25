@@ -151,6 +151,7 @@
 			]
 		}
 	],
+	"international_additional_fees": { "title": "WIPO Basic Fee", "price": 1200 },
 	"international_module": [
 		{
 			"title": "Australia",

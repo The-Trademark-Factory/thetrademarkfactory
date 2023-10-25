@@ -77,7 +77,11 @@
 	<div
 		class="max-w-screen-xl mx-auto grid lg:grid-cols-2 items-end gap-12 text-white py-12 lg:py-24 max-2xl:px-6">
 		<div>
-			<p class="text-3xl font-bold">{searchResults_page.searchField.title}</p>
+			<p class="text-3xl font-bold">
+				{activeTab === 'word'
+					? searchResults_page.searchField.title_word
+					: searchResults_page.searchField.title_logo}
+			</p>
 			<div class="flex items-center gap-4 pt-8 pb-6">
 				{#each tabs as el}
 					<button
@@ -173,9 +177,15 @@
 		{/if}
 	{:else}
 		<div class="py-12">
-			<p class="text-2xl font-bold text-ttmfRed">{searchResults_page.searchField.default_title}</p>
+			<p class="text-2xl font-bold text-ttmfRed">
+				{activeTab === 'word'
+					? searchResults_page.searchField.default_title_word
+					: searchResults_page.searchField.default_title_logo}
+			</p>
 			<div class="max-w-none prose pt-6">
-				{@html searchResults_page.searchField.default_description}
+				{@html activeTab === 'word'
+					? searchResults_page.searchField.default_description_word
+					: searchResults_page.searchField.default_description_logo}
 			</div>
 		</div>
 	{/if}
