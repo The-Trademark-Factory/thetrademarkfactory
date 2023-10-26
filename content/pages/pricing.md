@@ -23,7 +23,8 @@ content_blocks:
     description: >-
       <p>Select countries to calculate estimated fees* and enquire. To register
       an Australian trademark, you can use our <a href="/">self-service system
-      here</a>.</p>
+      here</a>.</p><p><em>* based on filing via the international filing system
+      with the World Intellectual Property Office (WIPO).&nbsp;</em></p>
   - _bookshop_name: cta/search
     title: <p>Get Your <em>Trademark</em> Today</p>
 ---
