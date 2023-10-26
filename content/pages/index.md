@@ -201,11 +201,10 @@ content_blocks:
       - name: Shadi Harb
         position: In-House Counsel
         description: >-
-          "Natalie has always provided sound and prompt advice no matter how
-          difficult or convoluted our matters may be. Her attention to detail,
-          fair and transparent rates and ability to deliver results to our
-          business is greatly appreciated. I would recommend, with confidence,
-          Natalie and her team."
+          "...sound and prompt advice no matter how difficult or convoluted our
+          matters may be. Their attention to detail, fair and transparent rates
+          and ability to deliver results to our business is greatly appreciated.
+          I would recommend, with confidence, the team."
         icon: /upload/seagrass-2.jpg
       - name: Patricia Richards
         position: General Manager
