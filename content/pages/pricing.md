@@ -21,9 +21,9 @@ content_blocks:
   - _bookshop_name: utils/internationalQuery
     title_section: <p><em>International</em> Trademark Pricing</p>
     description: >-
-      <p>Select countries to calculate a price estimation and enquire. To
-      register an Australian trademark, you can use our <a href="/">self-service
-      system here</a>.</p>
+      <p>Select countries to calculate estimated fees* and enquire. To register
+      an Australian trademark, you can use our <a href="/">self-service system
+      here</a>.</p>
   - _bookshop_name: cta/search
     title: <p>Get Your <em>Trademark</em> Today</p>
 ---
