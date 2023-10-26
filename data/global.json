@@ -213,8 +213,8 @@
 				"description": "Your trademark may be blocked for some classes including:"
 			},
 			"process": {
-				"title_existing": "Still want to proceed? Start your automated registration process. This includes:",
-				"title_available": "You can use our automated registration process to register your trademark. Our fee includes:",
+				"title_existing": "Still want to proceed? Click the <strong>Apply Now <strong> button below to start the application. Our fee includes:",
+				"title_available": "You can use our online application process to register your trademark. Our fee includes:",
 				"features": [
 					{
 						"description": "Checked by our experienced trade mark lawyers",
