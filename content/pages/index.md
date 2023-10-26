@@ -195,8 +195,8 @@ content_blocks:
         description: >-
           "Great professionalism ....Extremely knowledgeable ... Clarity to many
           complex applications we have had over the years. I would recommended
-          Natalie and the team for any individual or company seeking a
-          trustworthy and reliable service."
+          the team for any individual or company seeking a trustworthy and
+          reliable service."
         icon: /upload/uniden.jpg
       - name: Shadi Harb
         position: In-House Counsel
