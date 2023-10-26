@@ -217,16 +217,12 @@
 				"title_available": "You can use our online application process to register your trademark. Our fee includes:",
 				"features": [
 					{
-						"description": "Checked by our experienced trade mark lawyers",
+						"description": "A final check of your application by our trade mark lawyers",
 						"image": "/upload/ic-lawyer.svg"
 					},
 					{
-						"description": "Address for service for all documents and critical deadlines",
+						"description": "Management of your application",
 						"image": "/upload/ic-address.svg"
-					},
-					{
-						"description": "Allocation of IP lawyer to manage the application for you",
-						"image": "/upload/ic-select.svg"
 					},
 					{
 						"description": "Filed within 24 hours",
