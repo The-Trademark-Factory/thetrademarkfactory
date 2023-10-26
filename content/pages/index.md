@@ -209,12 +209,11 @@ content_blocks:
       - name: Patricia Richards
         position: General Manager
         description: >-
-          "Natalie’s strengths are in her outstanding knowledge of Australian
-          and International trade mark law and her ability to understand our
-          trade marking needs. Responsive to our instructions and offers great
-          value for money with her competitive and transparent fees. I would
-          highly recommend Natalie and her team to whoever requires IP legal
-          services here and abroad."
+          "...outstanding knowledge of Australian and International trade mark
+          law and an ability to understand our trade marking needs. Responsive
+          to our instructions and offers great value for money with their
+          competitive and transparent fees. I would highly recommend the team to
+          whoever requires IP legal services here and abroad."
         icon: /upload/gme.jpg
   - _bookshop_name: others/faqs
     title: <p>Frequently Asked <em>Questions</em></p>
