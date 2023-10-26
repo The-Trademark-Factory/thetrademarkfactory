@@ -7,14 +7,25 @@
 
 	export let data;
 
-	$: ({
-		email,
-		personalDetails,
-		itemList,
-		governmentFee,
-		internationalTrademarks,
-		stripePaymentIntentId
-	} = data);
+	$: ({ personalDetails, itemList, governmentFee, internationalTrademarks, stripePaymentIntentId } =
+		data);
+	$: personalData = JSON.parse(personalDetails);
+	$: email = personalData.email;
+
+	const fieldMappings = {
+		owner: 'Owner',
+		based: 'Based',
+		firstName: 'First name',
+		lastName: 'Last name',
+		address: 'Address',
+		city: 'City',
+		state: 'State',
+		postcode: 'Post code',
+		country: 'Country',
+		phone: 'Phone',
+		company: 'Company',
+		abn: 'ABN'
+	};
 
 	let message = 'Processing your order...';
 
@@ -36,36 +47,60 @@
 	onMount(async () => {
 		const localData =
 			getItem('searchType') === 'word' ? getItem('searchTerm') : await getStoredImage();
+
 		const formData = new FormData();
-		formData.append('email', email);
-		formData.append('search', localData);
-		formData.append('stripe_payment_intent_id', stripePaymentIntentId);
-		formData.append('personal_details', personalDetails);
-		formData.append('purchase_items', JSON.stringify(itemList));
-		formData.append(
-			'government_fee',
-			new Intl.NumberFormat('us-EN', { style: 'currency', currency: 'AUD' }).format(governmentFee)
+
+		formData.append('Email', email);
+		formData.append('Search', localData); // searched word or image
+		formData.append('Stripe payment intent id', stripePaymentIntentId);
+
+		// Each "Personal details" prop formatted as a form field
+		Object.keys(personalData).forEach((key) => {
+			if (fieldMappings[key]) formData.append(fieldMappings[key], personalData[key]);
+		});
+
+		// Each purchase item formatted as a form field
+		itemList.forEach(({ name, description, quantity, unit_price }, i) =>
+			formData.append(
+				'Purchase item ' + String(i + 1).padStart(2, '0'),
+				`Name: ${name} - Description: ${description} - Quantity: ${quantity} - Unit price: ${new Intl.NumberFormat(
+					'us-EN',
+					{ style: 'currency', currency: 'AUD' }
+				).format(unit_price)}`
+			)
 		);
+
 		formData.append(
-			'price_total',
+			'Government fee',
+			`${new Intl.NumberFormat('us-EN', { style: 'currency', currency: 'AUD' }).format(
+				governmentFee
+			)} x ${itemList.length}`
+		);
+
+		formData.append(
+			'Price total',
 			new Intl.NumberFormat('us-EN', { style: 'currency', currency: 'AUD' }).format(
 				+governmentFee * itemList.length +
 					itemList.reduce((acc, { quantity, unit_price }) => acc + quantity * unit_price, 0)
 			)
 		);
-		formData.append('international_trademarks', internationalTrademarks);
 
-		const xhr = new XMLHttpRequest();
+		formData.append('International trademarks', internationalTrademarks);
 
-		// Send data to usebasin
-		xhr.open('POST', import.meta.env.VITE_USEBASIN_SUCCESS_FORM_URL, true);
-		xhr.send(formData);
+		fetch(import.meta.env.VITE_USEBASIN_SUCCESS_FORM_URL, {
+			method: 'POST',
+			headers: { Accept: 'application/json' },
+			body: formData
+		})
+			.then(() => {
+				deleteImage();
+				clearData();
 
-		xhr.onload = function () {
-			message = 'Success, thank you for your order!';
-			deleteImage();
-			clearData();
-		};
+				message = 'Success, thank you for your order!';
+			})
+			.catch(() => {
+				message = 'Failure, please try again!';
+			});
 	});
 </script>
 

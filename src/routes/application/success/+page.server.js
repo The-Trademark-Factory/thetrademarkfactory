@@ -44,7 +44,8 @@ export async function load({ url }) {
         const items = JSON.parse(itemsStr)
         itemList = items.map(({ class: classNo, price, description }) => {
             return {
-                name: 'Class ' + classNo, description: description?.join?.('; ') ?? '',
+                name: 'Class ' + classNo,
+                description: description?.join?.('; ') ?? '',
                 quantity: 1,
                 unit_price: +price,
             }
