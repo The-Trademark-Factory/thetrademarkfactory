@@ -53,15 +53,17 @@ content_blocks:
     title: <p>Merging Legal Expertise with AI <em>innovation</em></p>
     description: >-
       <p><strong>The TradeMark Factory</strong> was developed by expert
-      trademark attorneys who implemented the power of artificial intelligence
-      to provide an ingenious online platform</p>
+      trademark lawyers who implemented the power of AI to provide an ingenious
+      online platform which integrates with IP Australia&nbsp;</p>
     media:
       animation: computer-coffee
       image: /upload/placeholder-features.svg
       alt: Drawing of a computer with a coffee mub
     cards:
       - title_card: Self-Service
-        description_card: Fully-automated online trademark application platform
+        description_card: >-
+          Fully-automated online trademark application platform which integrates
+          with IP Australia
         icon: /upload/ic-selfservice.svg
       - title_card: Easy to Use
         description_card: >-
@@ -78,8 +80,8 @@ content_blocks:
         icon: /upload/ic-fast.svg
       - title_card: Better Protection
         description_card: >-
-          Improved application quality by recommending approved IP Australia
-          goods and services.
+          Integration with IP Australia means improved application quality and
+          the right protection.
         icon: /upload/ic-protect.svg
       - title_card: Australia Specific
         description_card: >-
