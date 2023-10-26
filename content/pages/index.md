@@ -126,8 +126,7 @@ content_blocks:
           will run into problems, we will let you know before it is submitted.
         icon: /upload/ic-friendly.svg
   - _bookshop_name: cta/plane
-    title: |
-      Trademark <em>protection</em> wherever you need it
+    title: <p>Trademark <em>protection</em> wherever you need it</p>
     description: >-
       <p><strong>Taking your business overseas? </strong>The TradeMark Factory
       is a one-stop-shop for your trademarking need no matter where your
@@ -185,11 +184,11 @@ content_blocks:
       - name: Katrina Hammon
         position: Partner
         description: >-
-          "I’d say Natalie is the best in AU/NZ for global brand protection and
-          portfolio management.  Natalie is smashing the IP firms out of the
-          park when you compare her service, skills and efficiencies. I continue
-          to recommend Natalie and her team to our clients for Australian and
-          global specialist advice and service."
+          "...the best in AU/NZ for global brand protection and portfolio
+          management.  They are smashing the IP firms out of the park when you
+          compare her service, skills and efficiencies. I continue to recommend
+          the team to our clients for Australian and global specialist advice
+          and service."
         icon: /upload/wynn-williams.jpg
       - name: Brad Hales
         position: National Marketing Communications Manager
