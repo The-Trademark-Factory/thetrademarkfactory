@@ -112,9 +112,8 @@ content_blocks:
     cards:
       - title_card: Trademark Experts
         description_card: >-
-          Backed by experienced Australian trademark lawyers and attorneys with
-          over 30 years experience in Australian and international trade mark
-          law.
+          Backed by experienced Australian trademark lawyers with over 30 years
+          experience in Australian and international trade mark law.
         icon: /upload/ic-experience.svg
       - title_card: Low fixed fees
         description_card: >-
@@ -123,9 +122,8 @@ content_blocks:
         icon: /upload/ic-lowrates.svg
       - title_card: Friendly, reliable & fast
         description_card: >-
-          Every application is checked by one of our experts and processed
-          within 24 hours. Unlike our competitors, if we think your trade mark
-          will run into problems, we will let you know before it is submitted.
+          Every application is checked by one of our expert trademark lawyers
+          and processed within 24 hours.  
         icon: /upload/ic-friendly.svg
   - _bookshop_name: cta/plane
     title: <p>Trademark <em>protection</em> wherever you need it</p>
