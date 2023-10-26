@@ -209,7 +209,7 @@
 		},
 		"wordDetails": {
 			"existing": {
-				"title": "Our search of IP Australia's database has found some existing trademarks that might block your application for some classes.",
+				"title": "Our search has found some existing trademarks that might block your application for some classes.",
 				"description": "Your trademark may be blocked for:"
 			},
 			"process": {
