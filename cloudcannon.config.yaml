@@ -37,6 +37,8 @@ collections_config:
         type: html
       icon:
         type: image
+      warning_description:
+        type: html
 
 paths:
   collections: 'content'
