@@ -23,6 +23,10 @@
 		{
 			"title": "Privacy Policy",
 			"url": "/privacy-policy"
+		},
+		{
+			"title": "Terms & Conditions",
+			"url": "/terms-conditions"
 		}
 	],
 	"address": {
