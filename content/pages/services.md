@@ -35,7 +35,7 @@ content_blocks:
       here to help you should you need it.</p>
     button:
       title_button: Apply for your trademark now
-      url: '#'
+      url: '/application/search'
       title: <p>Get Started</p>
     media:
       content: ''
@@ -59,7 +59,7 @@ content_blocks:
       application from Australia for you.</p>
     button:
       title_button: Enquire about International trademarks
-      url:
+      url: /pricing/#international-pricing
       title:
     media:
       content:
@@ -83,7 +83,7 @@ content_blocks:
       with our lawyers at brandU Legal.</p>
     button:
       title_button: Enquire about our comprehensive searches
-      url:
+      url: /contact
       title:
     media:
       content:
@@ -102,7 +102,7 @@ content_blocks:
       so you will never miss a deadline.</p>
     button:
       title_button: Let us manage your portfolio
-      url: '#'
+      url: '/contact'
       title: <p>Get Started</p>
   - _bookshop_name: cards/twoCols
     title: <p>IP <em>Healthcheck</em></p>
@@ -117,7 +117,7 @@ content_blocks:
       that your trademarks are current and properly recorded.</p>
     button:
       title_button: Enquire about an IP Healthcheck
-      url:
+      url: /contact
       title:
     media:
       content:
@@ -135,7 +135,7 @@ content_blocks:
       lapse;</strong> contact us to arrange renewal on your behalf.</p>
     button:
       title_button: Enquire about trademark renewals
-      url:
+      url: /contact
       title:
     media:
       content:

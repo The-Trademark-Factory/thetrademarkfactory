@@ -134,7 +134,7 @@ content_blocks:
       registration outside Australia.</p>
     button:
       label: Get a quote
-      url: '#'
+      url: '/pricing/#international-pricing'
   - _bookshop_name: others/icons
     title: <p>Trademarks we have <em>registered</em></p>
     icons:
@@ -256,12 +256,10 @@ content_blocks:
           Australia.&nbsp;&nbsp;</p>
       - question: Who can own a trademark?
         answer: >-
-          <p><span style="font-size: var(--font-size); color:
-          var(--color-carbon); font-family: var(--font-family); letter-spacing:
-          0.01rem;">The owner of a trademark must be an individual, a group of
+          <p>The owner of a trademark must be an individual, a group of
           individuals, or a legally recognised entity, such as a Pty Ltd or
           Limited company. A business name <strong>cannot</strong> be the owner
-          of a trademark.&nbsp;</span></p>
+          of a trademark.</p>
       - question: How long does it take to register a trademark in Australia?
         answer: >-
           <p>It takes no less than 7 months from the date you file your

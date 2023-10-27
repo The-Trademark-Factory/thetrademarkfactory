@@ -11,7 +11,7 @@
 			"price": "A$350 + Govt. fees",
 			"button": {
 				"title": "Apply Now",
-				"url": "/"
+				"url": "/application/search"
 			},
 			"includes": [
 				{

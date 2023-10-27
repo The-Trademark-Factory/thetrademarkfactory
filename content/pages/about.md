@@ -80,7 +80,7 @@ content_blocks:
       competitive fees while upholding the high-quality service you deserve.</p>
     button:
       title_button: Apply for your trademark today
-      url: '#'
+      url: '/application/search'
   - _bookshop_name: others/team
     team:
       - name: Natalie Murray-Jones
