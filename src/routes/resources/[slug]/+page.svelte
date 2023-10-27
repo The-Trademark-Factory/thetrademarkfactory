@@ -7,20 +7,10 @@
 	$: pageDetails = pageData.pageDetails;
 	$: frontMatter = pageDetails.data;
 
-	$: date = frontMatter.date || new Date();
-	$: dateString = date.toLocaleString('en-us', {
-		month: 'long',
-		day: 'numeric',
-		year: 'numeric'
-	});
+	console.log(data);
 </script>
 
-<SeoHead
-	{pageDetails}
-	type="article"
-	author={true}
-	date={true}
-	slug="resources/{pageDetails.slug}" />
+<SeoHead pageDetails={frontMatter} />
 
 <div class="bg-ttmfDarkGreen py-40" />
 <div class="-mt-36 max-w-screen-xl mx-auto">

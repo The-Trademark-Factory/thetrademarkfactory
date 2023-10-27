@@ -1,18 +1,14 @@
 {
-	"resources_page": {
-		"title": "Resources",
-		"subtitle": "Global insights on everything IP",
-		"seo": {
-			"title": "Resources | The TradeMark Factory®",
-			"description": "Global insights on everything IP",
-			"image": ""
-		}
-	},
 	"searchResults_page": {
 		"pricing": {
 			"first_class": 350,
 			"additional_class": 150,
 			"government_fee": 250
+		},
+		"seo": {
+			"title": "Trademark Search & Apply Online | The TradeMark Factory®",
+			"description": "Search your word or start a logo trademark application, fully automatised, online",
+			"image": ""
 		},
 		"classes_description": [
 			{
@@ -259,5 +255,19 @@
 			"button": "Proceed to payment",
 			"terms": "By ticking this box, you agree to our terms and conditions"
 		}
+	},
+	"resources_page": {
+		"title": "Resources",
+		"subtitle": "Global insights on everything IP",
+		"seo": {
+			"title": "Resources | The TradeMark Factory®",
+			"description": "Global insights on everything IP",
+			"image": ""
+		}
+	},
+	"default_seo": {
+		"title": "Resources | The TradeMark Factory®",
+		"description": "Global insights on everything IP",
+		"image": ""
 	}
 }

@@ -2,6 +2,8 @@
 	import { Search } from 'lucide-svelte';
 	import { resources_page } from '../../../../data/global.json';
 	import HeroDefault from '../../../../component-library/components/headers/heroDefault/heroDefault.svelte';
+	import SeoHead from '$lib/components/SeoHead.svelte';
+
 	export let data;
 
 	let background = { animation: 'resources', align_bottom: true };
@@ -14,6 +16,8 @@
 			article.content.toLowerCase().includes(filterTerm.toLowerCase())
 	);
 </script>
+
+<SeoHead pageDetails={resources_page} />
 
 <HeroDefault title={resources_page.title} subtitle={resources_page.subtitle} {background} />
 

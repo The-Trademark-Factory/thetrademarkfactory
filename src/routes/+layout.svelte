@@ -66,7 +66,7 @@
 	});
 </script>
 
-{#if $page.route.id.includes('application')}
+{#if $page?.route?.id?.includes('application')}
 	<NavigationApplication />
 {:else}
 	<Navigation />

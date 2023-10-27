@@ -11,6 +11,7 @@
 	import TrademarkWordDetails from '$lib/application/trademarkWordDetails.svelte';
 	import TrademarkResultsDetails from '$lib/application/trademarkResultsDetails.svelte';
 	import SearchImage from '$lib/application/searchImage.svelte';
+	import SeoHead from '$lib/components/SeoHead.svelte';
 
 	export let data;
 
@@ -72,6 +73,8 @@
 		previousSearch = '';
 	}
 </script>
+
+<SeoHead pageDetails={searchResults_page} />
 
 <section class="bg-ttmfDarkGreen">
 	<div

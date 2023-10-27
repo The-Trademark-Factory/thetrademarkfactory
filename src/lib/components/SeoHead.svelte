@@ -1,32 +1,29 @@
 <script>
-	export let pageDetails, type, slug;
+	import { default_seo } from '../../../data/global.json';
+	export let pageDetails;
 </script>
 
 <svelte:head>
 	<title
-		>{pageDetails.seo && pageDetails.seo.title
-			? pageDetails.seo.title
-			: pageDetails.data.title}</title>
+		>{pageDetails.seo && pageDetails.seo.title ? pageDetails.seo.title : default_seo.title}</title>
 	<meta
 		name="description"
-		content={pageDetails.seo && pageDetails.seo.description ? pageDetails.seo.description : ''} />
+		content={pageDetails.seo && pageDetails.seo.description
+			? pageDetails.seo.description
+			: default_seo.description} />
 	<meta
 		property="og:image"
 		content="https://ttmf.com.au{pageDetails.seo && pageDetails.seo.image
 			? pageDetails.seo.image
-			: pageDetails.data?.image}" />
+			: default_seo.image}" />
 	<meta
 		property="og:title"
 		content={pageDetails.seo && pageDetails.seo.title
 			? pageDetails.seo.title
-			: pageDetails.data.title} />
+			: default_seo.title} />
 	<meta
 		property="og:description"
-		content={pageDetails.seo && pageDetails.seo.description ? pageDetails.seo.description : ''} />
-	{#if type}
-		<meta property="og:type" content={type} />
-	{/if}
-	{#if slug}
-		<meta property="og:url" content={`https://ttmf.com.au${slug}`} />
-	{/if}
+		content={pageDetails.seo && pageDetails.seo.description
+			? pageDetails.seo.description
+			: default_seo.description} />
 </svelte:head>
