@@ -22,27 +22,28 @@
 	}
 </script>
 
-<div class="relative flex max-sm:flex-wrap items-center gap-2 max-md:w-full">
+<div class="relative flex max-md:flex-wrap items-center gap-2 max-md:w-full">
 	<input
 		type="text"
 		placeholder={placeholder ? placeholder : 'Search by word'}
-		class="relative text-xl font-bold text-black placeholder:font-normal pl-14 pr-52 py-6 rounded w-full lg:w-[600px]"
+		class="relative text-xl font-bold text-black placeholder:font-normal pl-14 lg:pr-52 py-6 rounded w-full lg:w-[600px]"
 		required
 		bind:value={searchTerm}
 		on:keydown={handleKeydown} />
-	<div class="absolute left-4 max-sm:top-6">
+	<div class="absolute left-4 max-md:top-6">
 		<Search color="#D34B44" />
 	</div>
 	{#if !isSearchPage}
-		<div class="absolute left-[26rem] top-4">
+		<div class="md:absolute md:right-48 lg:left-[26rem] top-5 lg:top-4 max-md:w-full">
 			<a
 				href="/application/search?type=logo"
-				class="inline-flex gap-2 items-center bg-ttmfBgLight text-ttmfDarkGreen px-5 py-3 rounded-full text-sm font-bold shadow-pricingShadow transition-all hover:bg-ttmfRed hover:text-white"
-				>Upload a logo <Image size="20" /></a>
+				class="inline-flex gap-2 items-center max-lg:justify-center bg-ttmfBgLight text-ttmfDarkGreen px-5 py-3 rounded-md lg:rounded-full text-sm font-bold shadow-pricingShadow transition-all hover:bg-ttmfRed hover:text-white max-md:w-full"
+				><span class="md:hidden">or</span><span class="shrink-0">upload a logo </span><Image
+					size="20" /></a>
 		</div>
 	{/if}
 	<button
 		on:click={() => resetAndGo()}
-		class="bg-ttmfRed text-white text-xl font-bold px-12 py-4 sm:py-6 rounded max-sm:w-full"
+		class="bg-ttmfRed text-white text-xl font-bold px-12 py-4 sm:py-6 rounded max-md:w-full max-md:mt-2"
 		>Search</button>
 </div>

@@ -22,7 +22,7 @@
 				<a
 					href={nav.button.url}
 					class="bg-ttmfRed text-white font-bold px-6 py-4 rounded justify-center"
-					>{nav.button.title}</a>
+					>{nav.button.title_mobile}</a>
 			</div>
 			<div class="inline-flex items-center gap-6">
 				<div class="max-md:hidden">
@@ -66,7 +66,7 @@
 				{/each}
 			</div>
 			<div class="pt-16 md:hidden">
-				<Button title={nav.button.title} url={nav.button.url} />
+				<Button title={nav.button.title_mobile} url={nav.button.url} />
 			</div>
 		</div>
 	</div>

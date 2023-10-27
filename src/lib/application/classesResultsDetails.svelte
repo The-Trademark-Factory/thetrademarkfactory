@@ -3,6 +3,7 @@
 	import { X } from 'lucide-svelte';
 	import { classes } from '$lib/utils/stores';
 	import { Plus, Check } from 'lucide-svelte';
+	import ClassesTips from './classesTips.svelte';
 
 	export let resultsDetails, term;
 	let classDescription = searchResults_page.classes_description;
@@ -41,7 +42,9 @@
 <div class="space-y-4">
 	<div class="flex flex-wrap justify-between items-center gap-6">
 		<p>
-			We found <span class="font-bold">{resultsDetails.length}</span> classes for
+			We found <span class="font-bold">{resultsDetails.length}</span> descriptions across
+			<span class="font-bold">{Object.keys(groupedResults).length}</span>
+			classes for
 			<span class="font-bold">{term}</span>
 		</p>
 		{#if resultsDetails.length > 20}
@@ -60,6 +63,9 @@
 			</div>
 		{/if}
 	</div>
+	{#if resultsDetails.length > 0}
+		<ClassesTips />
+	{/if}
 	{#each Object.keys(groupedResults) as classNumber}
 		{#if groupedResults[classNumber].filter((desc) => desc
 				.toLowerCase()
@@ -78,7 +84,7 @@
 							.toLowerCase()
 							.includes(filterText.toLowerCase())) as description}
 						<button
-							class="text-left flex items-center rounded-full p-1 font-bold border-2 transition-all group hover:text-white
+							class="text-left flex items-center rounded-md lg:rounded-full p-1 font-bold border-2 transition-all group hover:text-white
 						{$classes.find((c) => c.class === classNumber)?.descriptions.includes(description)
 								? 'text-ttmfRed border-ttmfRed/20 bg-ttmfRed/10 hover:bg-ttmfRed '
 								: 'text-ttmfLightGreen border-ttmfLightGreen/20 bg-ttmfLightGreen/10 hover:bg-ttmfLightGreen '}"

@@ -49,7 +49,7 @@
 						<a href={el.url}>{el.title}</a>
 					{/each}
 				</div>
-				<div class="flex gap-2 text-sm pt-4">
+				<div class="flex flex-wrap gap-2 text-sm pt-6 lg:pt-4">
 					<p>{footer.copyright}</p>
 					{#if footer.built.title}
 						<a href={footer.built.url} target="_blank">{footer.built.title}</a>
@@ -57,7 +57,7 @@
 				</div>
 			</div>
 			<div class="max-md:pb-12 max-md:pt-3 max-md:order-first max-md:w-full">
-				<Button title={footer.button.title} url={footer.button.url} />
+				<Button title={footer.button.title_mobile} url={footer.button.url} />
 			</div>
 		</div>
 	</div>

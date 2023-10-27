@@ -6,23 +6,30 @@
 	export let title, search, aussie, scrolling_banner;
 
 	let visible = false;
+	let scrollContainer;
 
 	onMount(() => {
-		const scrollContainer = document.getElementById('scroll-container');
-		let scrollAmount = 0;
-		const scrollInterval = setInterval(() => {
-			scrollContainer.scrollLeft += 1;
-			scrollAmount += 1;
+		let position = 0;
 
-			if (scrollAmount >= scrollContainer.scrollWidth / 2) {
-				scrollContainer.scrollLeft = 0;
-				scrollAmount = 0;
+		const step = () => {
+			if (!scrollContainer) return;
+			const firstChild = scrollContainer.firstElementChild;
+
+			if (!firstChild) return;
+
+			const offset = firstChild.offsetWidth;
+			position += 1;
+
+			if (position > offset) {
+				scrollContainer.appendChild(firstChild);
+				position -= offset;
 			}
-		}, 15);
 
-		return () => {
-			clearInterval(scrollInterval);
+			scrollContainer.style.transform = `translateX(-${position}px)`;
+			requestAnimationFrame(step);
 		};
+
+		step();
 	});
 </script>
 
@@ -56,10 +63,12 @@
 		</div>
 	</div>
 </section>
-<div class="bg-ttmfRed py-6">
-	<div id="scroll-container" class="flex gap-6 overflow-x-hidden whitespace-nowrap">
-		{#each scrolling_banner as el}
-			<p class="font-bold text-white text-lg">{el.title}</p>
+<div class="bg-ttmfRed py-6 overflow-hidden">
+	<div bind:this={scrollContainer} class="flex whitespace-nowrap pb-1">
+		{#each [...scrolling_banner, ...scrolling_banner] as el}
+			<p class="text-white font-bold text-lg inline-flex items-center gap-6 px-4">
+				{el.title}
+			</p>
 		{/each}
 	</div>
 </div>

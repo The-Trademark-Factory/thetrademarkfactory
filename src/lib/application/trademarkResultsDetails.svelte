@@ -34,11 +34,11 @@
 								</p>
 							</div>
 							<div class="flex flex-wrap items-center gap-2 pt-3 text-sm">
-								{#each showAllClasses === el.class + el.words || el.descriptionText.length <= 8 ? el.descriptionText : el.descriptionText.slice(0, 4) as description}
+								{#each showAllClasses === el.class + el.words || el.descriptionText.length <= 3 ? el.descriptionText : el.descriptionText.slice(0, 2) as description}
 									<span class="bg-white rounded-md py-1 px-3 border-2 border-ttmfCreme/30"
 										>{description}</span>
 								{/each}
-								{#if el.descriptionText.length > 8 && showAllClasses !== el.class + el.words}
+								{#if el.descriptionText.length > 3 && showAllClasses !== el.class + el.words}
 									<button
 										on:click={() => {
 											showAllClasses = el.class + el.words;

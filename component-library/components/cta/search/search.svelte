@@ -9,11 +9,11 @@
 		<h2 class="styleTitle text-center">
 			{@html title}
 		</h2>
-		<div class="max-md:hidden absolute right-0 lg:right-52 top-10">
+		<div class="max-lg:hidden absolute right-0 lg:right-52 top-10">
 			<Svg name="search-cta-shape" />
 		</div>
 	</div>
-	<div class="pt-10 flex flex-col items-center">
+	<div class="pt-10 lg:flex flex-col items-center">
 		<SearchWord />
 	</div>
 </section>

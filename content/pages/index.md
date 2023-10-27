@@ -28,7 +28,7 @@ content_blocks:
       - title: Uniden
       - title: GME
       - title: Petsure
-      - title: 'Narellan Pools '
+      - title: Narellan Pools
       - title: Sumosalad
       - title: Alexandre Saville Row
       - title: The Meat & Wine Co.
@@ -123,7 +123,7 @@ content_blocks:
       - title_card: Friendly, reliable & fast
         description_card: >-
           Every application is checked by one of our expert trademark lawyers
-          and processed within 24 hours.  
+          and processed within 24 hours.
         icon: /upload/ic-friendly.svg
   - _bookshop_name: cta/plane
     title: <p>Trademark <em>protection</em> wherever you need it</p>
