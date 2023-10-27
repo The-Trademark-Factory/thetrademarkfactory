@@ -250,7 +250,7 @@
 		"internationalTrademarks": {
 			"title": "International trademarks",
 			"subtitle": "Do you want to file your trademarks overseas?",
-			"default_description": "<p>To enquire about international trademarks, please select the countries of interest and we will contact you directly to confirm our fees.&nbsp;</p><p><strong>This is an enquiry about international trademarks only. If you decide to file overseas, the international trademarks will be invoice separately.</strong></p>"
+			"default_description": "<p>To enquire about international trademarks, please select the countries of interest and we will contact you directly to confirm our fees.&nbsp;<strong>This is an enquiry about international trademarks only. If you decide to file overseas, the international trademarks will be invoice separately.</strong></p>"
 		},
 		"payment": {
 			"title": "Review & Submit",
