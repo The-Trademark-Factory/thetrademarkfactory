@@ -227,6 +227,10 @@
 					{
 						"description": "Filed within 24 hours",
 						"image": "/upload/ic-file.svg"
+					},
+					{
+						"description": "Address for service for all IP Australia documents",
+						"image": "/upload/ic-select.svg"
 					}
 				]
 			},
