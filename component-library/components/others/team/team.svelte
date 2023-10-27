@@ -10,17 +10,19 @@
 		{#each team as el}
 			{#if el.name === active}
 				<div class="bg-white rounded-lg py-10 lg:py-20 px-6 lg:px-16">
-					<div in:fly={{ y: 40 }} class="grid lg:grid-cols-2 gap-12 lg:gap-24">
+					<div in:fly={{ y: 40 }} class="grid gap-12 lg:gap-24 {el.image ? 'lg:grid-cols-2' : ''}">
 						<div>
 							<h3 class="text-3xl font-bold">{el.name}</h3>
 							<p class="font-bold text-ttmfRed pt-3">{el.position}</p>
-							<div class="text-lg prose pt-8">
+							<div class="text-lg prose pt-8 max-w-none">
 								{@html el.bio}
 							</div>
 						</div>
-						<div>
-							<img src={el.image} alt={el.name} class="w-full rounded-lg" />
-						</div>
+						{#if el.image}
+							<div>
+								<img src={el.image} alt={el.name} class="w-full rounded-lg" />
+							</div>
+						{/if}
 					</div>
 				</div>
 			{:else}

@@ -103,7 +103,7 @@ content_blocks:
           she further bolstered her ability to assist clients dealing with
           overseas jurisdictions by obtaining the position of notary public in
           NSW.</p>
-        image: /upload/nmj.jpg
+        image:
       - name: Bea Park
         position: Registered Trademark Attorney
         bio: >-
