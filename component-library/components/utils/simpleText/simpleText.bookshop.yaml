@@ -1,7 +1,7 @@
 spec:
   structures:
     - content_blocks
-  label: Spacer
+  label: Simple Text
   description:
   icon: 'task'
   tags: []
