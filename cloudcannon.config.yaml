@@ -33,12 +33,18 @@ collections_config:
     _inputs:
       default_description:
         type: html
+      warning_description:
+        type: html
+      default_description_logo:
+        type: html
+      default_description_word:
+        type: html
       info_content:
+        type: html
+      terms:
         type: html
       icon:
         type: image
-      warning_description:
-        type: html
 
 paths:
   collections: 'content'
