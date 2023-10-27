@@ -245,7 +245,7 @@
 			"default_description": "<p><strong>Trademarks must be registered for goods and/or services which are divided into \"classes\".</strong></p><p>Registering your trademark provides protection for the goods and/or services you provide. Here you need to select the goods/services <strong>relevant</strong> to your trade mark. Your application can cover more than one \"class\". For example \"computer software\" is in class 9 whereas \"computer services\" are in class 42.</p><p>Please enter your goods or services in the search bar. For example, software, clothing, advertising, computer programming, business, financial, retail, management, machine, book, car, furniture.</p><p>You may choose as many goods/services as you like. You can select more than one items in each class if needed. Once you have selected all of your goods/services, they will be listed in the side bar for your review before moving on with the application.</p><p> </p>"
 		},
 		"personalDetails": {
-			"title": "Personal Details"
+			"title": "Trademark owner details"
 		},
 		"internationalTrademarks": {
 			"title": "International trademarks",
