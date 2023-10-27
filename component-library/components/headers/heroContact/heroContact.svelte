@@ -3,6 +3,7 @@
 	import { beforeNavigate } from '$app/navigation';
 	import { MapPin, Phone, Send } from 'lucide-svelte';
 	import footer from '../../../../data/footer.json';
+	import EnquiryForm from '../../../../src/lib/components/enquiryForm.svelte';
 	export let title, subtitle, form;
 
 	let visible = false;
@@ -73,50 +74,10 @@
 				<div class="bg-white px-12 pt-6 pb-12 rounded-2xl shadow-2xl md:shadow-xl">
 					<p class="text-5xl font-arkina text-ttmfRed pt-9">{form.title}</p>
 					<div class="pt-12">
-						<form class="space-y-6">
-							<div>
-								<label for="fullName" class="block text-sm font-bold uppercase text-ttmfRed"
-									>Full Name*</label>
-								<input
-									required
-									id="fullName"
-									type="text"
-									class="mt-1 p-2 w-full border-2 border-ttmfCreme/30 bg-ttmfBg rounded-sm text-ttmfBlack" />
-							</div>
-
-							<div>
-								<label for="email" class="block text-sm font-bold uppercase text-ttmfRed"
-									>Email*</label>
-								<input
-									required
-									id="email"
-									type="email"
-									class="mt-1 p-2 w-full border-2 border-ttmfCreme/30 bg-ttmfBg rounded-sm text-ttmfBlack" />
-							</div>
-
-							<div>
-								<label for="phoneNumber" class="block text-sm font-bold uppercase text-ttmfRed"
-									>Phone Number</label>
-								<input
-									id="phoneNumber"
-									type="tel"
-									class="mt-1 p-2 w-full border-2 border-ttmfCreme/30 bg-ttmfBg rounded-sm text-ttmfBlack" />
-							</div>
-
-							<div>
-								<label for="message" class="block text-sm font-bold uppercase text-ttmfRed"
-									>Message*</label>
-								<textarea
-									required
-									id="message"
-									rows="8"
-									class="mt-1 p-2 w-full border-2 border-ttmfCreme/30 bg-ttmfBg rounded-sm text-ttmfBlack" />
-							</div>
-
-							<button type="submit" class="bg-ttmfRed text-white p-4 font-bold w-full">
-								{form.button}
-							</button>
-						</form>
+						<EnquiryForm
+							endpoint="https://usebasin.com/f/3a874b9a3f86"
+							button={form.button}
+							type="contact" />
 					</div>
 				</div>
 			</div>

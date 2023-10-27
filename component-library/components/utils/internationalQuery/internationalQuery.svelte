@@ -6,6 +6,7 @@
 	} from '../../../../data/pricing.json';
 	import { onMount } from 'svelte';
 	import { fly } from 'svelte/transition';
+	import EnquiryForm from '$lib/components/enquiryForm.svelte';
 
 	export let title_section, description;
 
@@ -15,6 +16,7 @@
 	let enquiryForm;
 	let searchQuery = '';
 	let showShortcut = true;
+	let showForm = false;
 
 	onMount(() => {
 		if (window.innerWidth <= 768) {
@@ -61,6 +63,8 @@
 	$: showAdditionalFees = !(
 		Object.keys(selectedCountries).length === 1 && selectedCountries.hasOwnProperty('Australia')
 	);
+
+	$: console.log(Object.keys(selectedCountries));
 </script>
 
 <section id="international-pricing" class="relative max-w-screen-xl mx-auto py-16">
@@ -256,8 +260,23 @@
 						<p>Estimated Total</p>
 						<p>AU${showAdditionalFees ? total + international_additional_fees.price : total}</p>
 					</div>
-					<button class="bg-ttmfRed text-white font-bold px-12 py-5 rounded w-full mt-6"
-						>Enquire</button>
+					{#if showForm}
+						<div class="pt-8">
+							<EnquiryForm
+								endpoint="https://usebasin.com/f/db99723575df"
+								button="Submit Enquiry"
+								type="international"
+								countries={Object.keys(selectedCountries)}
+								total={showAdditionalFees ? total + international_additional_fees.price : total} />
+						</div>
+					{:else}
+						<button
+							on:click={() => {
+								showForm = true;
+							}}
+							class="bg-ttmfRed text-white font-bold px-12 py-5 rounded w-full mt-6"
+							>Enquire</button>
+					{/if}
 				{/if}
 			</div>
 		</div>

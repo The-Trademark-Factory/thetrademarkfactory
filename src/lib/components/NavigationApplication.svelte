@@ -18,19 +18,22 @@
 </script>
 
 <svelte:window bind:scrollY={y} />
-<nav class="bg-ttmfDarkGreen pt-6 pb-8">
+<nav class="bg-ttmfDarkGreen pt-4 md:pt-6 md:pb-8">
 	<div class="max-w-screen-2xl mx-auto max-2xl:px-6">
-		<div class="flex justify-between items-end">
-			<a href="/"><Svg name="logo" /><span class="sr-only">The Trademark Factory Logo</span></a>
-			<div class="md:mx-auto flex flex-wrap items-center gap-12 font-bold text-lg">
+		<div class="flex flex-wrap gap-8 justify-around items-end">
+			<a href="/"
+				><Svg name="logo" width="w-[300px]" /><span class="sr-only">The Trademark Factory Logo</span
+				></a>
+			<div
+				class="md:mx-auto flex md:flex-wrap items-center gap-8 lg:gap-12 font-bold text-xs xl:text-base 2xl:text-lg max-md:overflow-scroll max-md:pb-4 max-md:mb-2">
 				{#each nav as el, i}
 					<button
 						on:click={() => (i + 1 < currentStep ? goto(el.url) : null)}
-						class="inline-flex items-center gap-2 {i + 1 < currentStep
-							? 'text-red-500 max-md:hidden'
+						class="inline-flex items-center gap-2 max-md:shrink-0 {i + 1 < currentStep
+							? 'text-red-500'
 							: $page.route.id === el.url
 							? 'text-white'
-							: 'text-white/50 max-md:hidden'}"
+							: 'text-white/50'}"
 						>{el.step_title}
 						{#if i + 1 < currentStep}
 							<span

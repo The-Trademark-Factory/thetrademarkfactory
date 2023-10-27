@@ -1,4 +1,5 @@
 <script>
+	import { page } from '$app/stores';
 	import { Menu, X } from 'lucide-svelte';
 	import { fly } from 'svelte/transition';
 	import Button from './Button.svelte';
@@ -62,7 +63,9 @@
 						on:click={() => {
 							menu = false;
 						}}
-						class="transition-all hover:text-ttmfRed">{el.title}</a>
+						class="transition-all hover:text-ttmfRed {$page.params.slug === el.url.slice(1)
+							? 'text-ttmfRed'
+							: ''}">{el.title}</a>
 				{/each}
 			</div>
 			<div class="pt-16 md:hidden">
