@@ -49,8 +49,8 @@
 				]
 			},
 			"pricing": {
-				"price": "$350 + GST",
-				"gov": "plus government fees"
+				"price": "$350",
+				"gov": "+ GST & Government fees"
 			}
 		},
 		"searchClasses": {

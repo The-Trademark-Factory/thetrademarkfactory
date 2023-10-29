@@ -1,12 +1,10 @@
 <script>
 	import { searchResults_page } from '../../../../data/global.json';
-	import { searchTerm, classes, details, international } from '$lib/utils/stores';
+	import { searchTerm, classes, details } from '$lib/utils/stores';
 	import Sidebar from '$lib/application/sidebar.svelte';
 	import StartOver from '$lib/application/startOver.svelte';
 
 	let terms = false;
-
-	console.log($international);
 
 	$: formattedDetails = Object.entries($details).map(([key, value]) => {
 		const formattedKey = key.replace(/([A-Z])/g, ' $1').replace(/^./, (str) => str.toUpperCase());
@@ -50,8 +48,8 @@
 						type="checkbox"
 						bind:checked={terms}
 						class="form-checkbox text-red-600 h-5 w-5 mt-1 shrink-0" />
-					<label for="terms" class="ml-4 text-ttmfDarkGreen"
-						>{searchResults_page.payment.terms}</label>
+					<label for="terms" class="ml-4 text-ttmfDarkGreen prose"
+						>{@html searchResults_page.payment.terms}</label>
 				</div>
 			</div>
 		</div>

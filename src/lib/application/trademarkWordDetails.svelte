@@ -106,7 +106,7 @@
 						<span class="text-2xl">AU</span><span class="text-5xl"
 							>{content.wordDetails.pricing.price}</span>
 					</p>
-					<p class="text-sm pt-2">{content.wordDetails.pricing.gov}</p>
+					<p class="pt-2">{content.wordDetails.pricing.gov}</p>
 				</div>
 				<button
 					on:click={() => {

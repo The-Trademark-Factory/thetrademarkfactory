@@ -6,6 +6,7 @@
 	export let placeholder, isSearchPage;
 
 	let searchTerm;
+	let showError = false;
 
 	function handleKeydown(event) {
 		if (event.key === 'Enter') {
@@ -14,11 +15,15 @@
 	}
 
 	function resetAndGo() {
-		classes.set([]);
-		details.set([]);
-		international.set([]);
-		localStorage.clear();
-		goto(`/application/search?name=${searchTerm}`);
+		if (searchTerm) {
+			classes.set([]);
+			details.set([]);
+			international.set([]);
+			localStorage.clear();
+			goto(`/application/search?name=${searchTerm}`);
+		} else {
+			showError = true;
+		}
 	}
 </script>
 
@@ -44,6 +49,9 @@
 	{/if}
 	<button
 		on:click={() => resetAndGo()}
-		class="bg-ttmfRed text-white text-xl font-bold px-12 py-4 sm:py-6 rounded max-md:w-full max-md:mt-2"
+		class="relative bg-ttmfRed text-white text-xl font-bold px-12 py-4 sm:py-6 rounded max-md:w-full max-md:mt-2 transition-all hover:bg-ttmfBlack"
 		>Search</button>
 </div>
+{#if showError}
+	<p class="text-ttmfRed pt-4 font-bold">Enter a word to search</p>
+{/if}

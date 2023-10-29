@@ -37,9 +37,7 @@
 				: true;
 
 		const basedValid = (() => {
-			if (details['based'] === 'Australia') {
-				return details['abn'] !== undefined && details['abn'] !== '';
-			} else if (details['based'] === 'International') {
+			if (details['based'] === 'International') {
 				return details['jurisdiction'] !== undefined && details['jurisdiction'] !== '';
 			}
 			return true;
@@ -93,10 +91,12 @@
 				{#if $details['owner'] === 'Company'}
 					<ConditionalFields field={conditional.isCompany} />
 				{/if}
-				<ConditionalFields
-					field={$details['based'] === 'International'
-						? conditional.isInternational
-						: conditional.isAustralia} />
+				{#if $details['based'] === 'International'}
+					<ConditionalFields field={conditional.isInternational} />
+				{/if}
+				{#if $details['based'] === 'Australia' && $details['owner'] === 'Company'}
+					<ConditionalFields field={conditional.isCompanyAustralia} />
+				{/if}
 				{#each commun as field}
 					<div>
 						<label class="block text-ttmfRed text-sm uppercase font-bold mb-1" for={field.name}>

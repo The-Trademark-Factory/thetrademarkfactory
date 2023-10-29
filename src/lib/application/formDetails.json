@@ -132,7 +132,7 @@
 			"placeholder": "ACME Pty Ltd",
 			"required": false
 		},
-		"isAustralia": {
+		"isCompanyAustralia": {
 			"label": "ABN*",
 			"name": "ABN",
 			"type": "text",

@@ -21,6 +21,7 @@
 	const feeAdditionalClass = searchResults_page.pricing.additional_class;
 	const feeGovernment = searchResults_page.pricing.government_fee;
 	let totalPrice = 0;
+	let gstTotal = 0;
 	let showAllDescriptions;
 	let checkingOut = false;
 
@@ -46,8 +47,15 @@
 		if (numClasses > 0) {
 			totalPrice =
 				feeFirstClass + (numClasses - 1) * feeAdditionalClass + numClasses * feeGovernment;
+			gstTotal =
+				(feeFirstClass +
+					($classes.length - 1) * feeAdditionalClass +
+					$classes.length -
+					$classes.length) *
+				0.1;
 		} else {
 			totalPrice = 0;
+			gstTotal = 0;
 		}
 	}
 
@@ -141,9 +149,17 @@
 				</div>
 			</div>
 		{/each}
-		<div class="flex justify-between gap-2 text-xl font-bold text-ttmfBlack py-6">
-			<p>Total price</p>
+		<div class="flex justify-between gap-2 font-bold text-ttmfBlack/50 pt-6">
+			<p>Subtotal</p>
 			<p>AU${totalPrice}</p>
+		</div>
+		<div class="flex justify-between gap-2 font-bold text-ttmfBlack/50 pt-2">
+			<p>GST</p>
+			<p>AU${gstTotal}</p>
+		</div>
+		<div class="flex justify-between gap-2 text-xl font-bold text-ttmfBlack pt-4 pb-6">
+			<p>Total price</p>
+			<p>AU${totalPrice + gstTotal}</p>
 		</div>
 	{:else}
 		<div class="py-6">
