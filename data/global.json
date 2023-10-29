@@ -71,7 +71,7 @@
 		"payment": {
 			"title": "Review & Submit",
 			"button": "Proceed to payment",
-			"terms": "<p>By ticking this box, you agree to our <a href=\"/terms-conditions/\">terms and conditions</a>.</p>"
+			"terms": "<p>By ticking this box, you agree to our <a target=\"_blank\" rel=\"noopener\" href=\"/terms-conditions/\">terms and conditions</a>.</p>"
 		},
 		"classes_description": [
 			{
