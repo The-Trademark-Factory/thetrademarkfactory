@@ -80,7 +80,7 @@ content_blocks:
       competitive fees while upholding the high-quality service you deserve.</p>
     button:
       title_button: Apply for your trademark today
-      url: '/application/search'
+      url: /application/search
   - _bookshop_name: others/team
     team:
       - name: Natalie Murray-Jones
@@ -116,7 +116,7 @@ content_blocks:
           the corporate sector for a UK-based global group of engineering
           manufacturing companies, where she provided in-house management of its
           extensive trademark portfolio.</p>
-        image: /upload/bp.jpeg
+        image: ''
       - name: Kerrie Burgess
         position: Senior Trademark Administrator
         bio: >-
@@ -128,7 +128,7 @@ content_blocks:
           team on the management of trade mark portfolios and assists in the
           filing, prosecution, registration and maintenance of trademark in
           Australia and overseas.</p>
-        image: /upload/kerrie-one.jpeg
+        image: ''
   - _bookshop_name: cta/search
     title: <p>Get Your <em>Trademark</em> Today</p>
 ---
