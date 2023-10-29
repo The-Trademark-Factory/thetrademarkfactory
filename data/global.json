@@ -24,10 +24,10 @@
 		"wordDetails": {
 			"existing": {
 				"title": "Our search has found some existing trademarks that might block your application for some classes.",
-				"description": "Your trademark may be blocked for:"
+				"description": "Your trademark may be blocked for goods/services in these classes:"
 			},
 			"process": {
-				"title_existing": "Still want to proceed with your application?  Our fees include:",
+				"title_existing": "Still want to proceed with your trademark application?  Our fees include:",
 				"title_available": "File your trademark now. Our fees include:",
 				"features": [
 					{
