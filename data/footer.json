@@ -1,20 +1,20 @@
 {
 	"links": [
 		{
-			"title": "Resources",
-			"url": "/resources"
-		},
-		{
-			"title": "About",
-			"url": "/about"
-		},
-		{
 			"title": "Services",
 			"url": "/services"
 		},
 		{
 			"title": "Pricing",
 			"url": "/pricing"
+		},
+		{
+			"title": "About",
+			"url": "/about"
+		},
+		{
+			"title": "Resources",
+			"url": "/resources"
 		},
 		{
 			"title": "Contact",
