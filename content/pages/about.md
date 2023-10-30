@@ -109,15 +109,15 @@ content_blocks:
       - name: Bea Park
         position: Registered Trademark Attorney
         bio: >-
-          <p>Bea is a registered trademark attorney in Australia.&nbsp; She
-          specialises in all aspects of trade mark law and advises on searching,
-          registering and enforcing trade marks in Australia and
-          overseas.</p><p>Previously, Bea worked at a boutique patent and trade
-          mark firm in Sydney assisting both local and international clients
-          across different sectors to protect their brands. She also worked in
-          the corporate sector for a UK-based global group of engineering
-          manufacturing companies, where she provided in-house management of its
-          extensive trademark portfolio.</p>
+          <p><strong>Bea is a registered trademark attorney in
+          Australia</strong>.&nbsp; She specialises in all aspects of trade mark
+          law and advises on searching, registering and enforcing trade marks in
+          Australia and overseas.</p><p>Previously, Bea worked at a boutique
+          patent and trade mark firm in Sydney assisting both local and
+          international clients across different sectors to protect their
+          brands. She also worked in the corporate sector for a UK-based global
+          group of engineering manufacturing companies, where she provided
+          in-house management of its extensive trademark portfolio.</p>
         image: ''
       - name: Kerrie Burgess
         position: Senior Trademark Administrator
