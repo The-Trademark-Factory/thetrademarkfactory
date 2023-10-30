@@ -123,13 +123,13 @@ content_blocks:
         position: Senior Trademark Administrator
         bio: >-
           <p>Kerrie provides trademark administration support, compliance and
-          administrative assistance to the team.</p><p>Kerrie is an experienced
-          administrator and has held senior administrative roles for over 20
-          years.&nbsp; She is an adept user across a diverse range of IP and
-          legal software.</p><p>Kerrie works closely with all members of the
-          team on the management of trade mark portfolios and assists in the
-          filing, prosecution, registration and maintenance of trademark in
-          Australia and overseas.</p>
+          administrative assistance to the team.</p><p><strong>Kerrie is an
+          experienced administrator and has held senior administrative roles for
+          over 20 years</strong>.&nbsp; She is an adept user across a diverse
+          range of IP and legal software.</p><p>Kerrie works closely with all
+          members of the team on the management of trade mark portfolios and
+          assists in the filing, prosecution, registration and maintenance of
+          trademark in Australia and overseas.</p>
         image: ''
   - _bookshop_name: cta/search
     title: <p>Get Your <em>Trademark</em> Today</p>
