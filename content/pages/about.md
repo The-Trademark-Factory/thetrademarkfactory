@@ -62,7 +62,7 @@ content_blocks:
         label: owned & operated
   - _bookshop_name: cards/twoCols
     title: <p><em>Expertise</em> is just the beginning</p>
-    content: "<p><strong>The TradeMark Factory</strong> is backed by some of Australia's most proficient IP and trademark professionals so there is no question about our expertise in all things trademarks. What sets us apart however is our approach.&nbsp; Our client’s range from sole traders to ASX listed companies but our approach is always the same - <strong>exceptional service at competitive fixed rates</strong>.</p><p>Our expertise has been incorporated into our <strong>unique AI powered application form</strong> so you can rest assured your brand is in excellent hands. By registering your trademark via <strong>The TradeMark Factory</strong>, your business will benefit from our legal experts unencumbered by unnecessary fees.&nbsp;</p><p>\_</p>"
+    content: "<p><strong>The TradeMark Factory</strong> is backed by some of Australia's most proficient IP and trademark professionals so there is no question about our expertise in all things trademarks. What sets us apart however is our approach.&nbsp; Our client’s range from sole traders to ASX listed companies but our approach is always the same - <strong>exceptional service at competitive fixed rates</strong>.</p><p>Our expertise has been incorporated into our <strong>unique AI powered application form</strong> so you can rest assured your brand is in excellent hands. By registering your trademark via <strong>The TradeMark Factory</strong>, your business will benefit from our legal experts without unnecessary fees.&nbsp;</p><p>\_</p>"
     button:
       title_button:
       url:
