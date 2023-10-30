@@ -71,15 +71,14 @@ content_blocks:
     content: >-
       <p><strong>Our unique trademark application process searches IP
       Australia’s database for trademarks before you file&nbsp;</strong>but this
-      search is for <strong>exact </strong>trade marks only. So while we conduct
+      search is for <strong>exact </strong>trademarks only. So while we conduct
       these initial searches for you, it is important to remember that during
-      examination your trade mark may face objection on the basis of
+      examination your trademark may face objection on the basis of
       <strong>similar </strong>marks. This is where our comprehensive searches
       come into play.</p><p>A comprehensive trademark search can help minimise
-      objections to your mark or possible oppositions by third parties which may
-      not be revealed from an <strong>exact </strong>search.</p><p>If you would
-      like more comprehensive searches, contact us and we will put you in touch
-      with our lawyers at brandU Legal.</p>
+      objections to your application or possible oppositions by third parties
+      which may not be revealed from an <strong>exact </strong>search.</p><p>If
+      you would like more comprehensive searches, get in touch with us.</p>
     button:
       title_button: Enquire about our comprehensive searches
       url: /contact
@@ -107,13 +106,14 @@ content_blocks:
     title: <p>IP <em>Healthcheck</em></p>
     content: >-
       <p><strong>Are you concerned that your existing trademarks are not as they
-      should be?</strong> Maybe you have change the name of your company and are
-      not sure what needs to be updated? It is essential that your trademarks
-      are properly maintained as any incorrect details could impact your rights.
-      The TradeMark Factory can assist you to ensure your trademarks are up to
-      date and correctly protected. Simply contact us with the details of your
-      existing trademarks, and we will conduct the necessary searches to ensure
-      that your trademarks are current and properly recorded.</p>
+      should be?</strong> Maybe you have changed the name of your company and
+      are not sure what needs to be updated? It is essential that your
+      trademarks are properly maintained as any incorrect details could impact
+      your rights. The TradeMark Factory can assist you to ensure your
+      trademarks are up to date and correctly protected. Simply contact us with
+      the details of your existing trademarks, and we will conduct the necessary
+      searches to ensure that your trademarks are current and properly
+      recorded.</p>
     button:
       title_button: Enquire about an IP Healthcheck
       url: /contact

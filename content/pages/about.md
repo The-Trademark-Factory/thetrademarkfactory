@@ -28,12 +28,13 @@ content_blocks:
       <strong>Donut King</strong>, <strong>Mad Mex</strong>, and <strong>Uniden
       Australia</strong>.&nbsp;</p><p>Over the course of nearly three decades,
       we've had the privilege of collaborating with large corporations but more
-      recently we've recognized a growing disparity between the needs of big
+      recently we've recognised a growing disparity between the needs of big
       businesses and small enterprises concerning the affordability of brand
       protection.</p><p>Our true passion lies in the realm of trademarks, and
       our primary objective is to assist as many Australian businesses as
       possible in accessing top-notch trademark services without exorbitant
-      fees.</p><p>Consequently, The TradeMark Factory was born.</p>
+      fees.</p><p>Consequently, <strong>The TradeMark Factory</strong> was
+      born.</p>
     button:
       title_button: ''
       url: '#'
@@ -41,7 +42,7 @@ content_blocks:
       content: >-
         <h3>The TradeMark Factory operates as a branch of <a target="_blank"
         rel="noopener" href="https://www.brandulegal.com.au/">brandU Legal</a>,
-        an Australian law firm specializing in trademarks and intellectual
+        an Australian law firm specialising in trademarks and intellectual
         property, situated in Sydney.&nbsp;</h3>
       image: /upload/about-intro.svg
       image_alt: Trademark and IP property specialise
@@ -57,11 +58,11 @@ content_blocks:
         label: countries
       - title: 95%+
         label: success rate
-      - title: Australia
+      - title: Australian
         label: owned & operated
   - _bookshop_name: cards/twoCols
     title: <p><em>Expertise</em> is just the beginning</p>
-    content: "<p>The TradeMark Factory is backed by some of Australia's most proficient IP and trademark professionals so there is no question about our expertise in all things trademarks. What sets us apart however is our approach.&nbsp; Our client’s range from sole traders to ASX listed companies but our approach is always the same - <strong>exceptional service at competitive fixed rates</strong>.</p><p>Our expertise has been incorporated into our <strong>unique AI powered application form</strong> so you can rest assured your brand is in excellent hands. By registering your trademark via The TradeMark Factory, your business will benefit from our legal experts unencumbered by unnecessary fees.&nbsp;</p><p>\_</p>"
+    content: "<p><strong>The TradeMark Factory</strong> is backed by some of Australia's most proficient IP and trademark professionals so there is no question about our expertise in all things trademarks. What sets us apart however is our approach.&nbsp; Our client’s range from sole traders to ASX listed companies but our approach is always the same - <strong>exceptional service at competitive fixed rates</strong>.</p><p>Our expertise has been incorporated into our <strong>unique AI powered application form</strong> so you can rest assured your brand is in excellent hands. By registering your trademark via <strong>The TradeMark Factory</strong>, your business will benefit from our legal experts without unnecessary fees.&nbsp;</p><p>\_</p>"
     button:
       title_button:
       url:
@@ -74,10 +75,11 @@ content_blocks:
   - _bookshop_name: cta/ctaDefault
     title: <p><em>Affordable</em> Fixed Fees-No Compromises</p>
     content: >-
-      <p><em>We understand small business because we are one</em> and we
-      understand that small business needs transparency in fees. With this in
-      mind, our AI inspired online application form enables us to maintain
-      competitive fees while upholding the high-quality service you deserve.</p>
+      <p><em>We understand small businesses because we are one
+      ourselves,&nbsp;</em>and we understand that small businesses need
+      transparency in fees. With this in mind, our AI inspired online
+      application form allows us to keep our costs low while upholding the
+      high-quality service you deserve.</p>
     button:
       title_button: Apply for your trademark today
       url: /application/search
@@ -107,27 +109,27 @@ content_blocks:
       - name: Bea Park
         position: Registered Trademark Attorney
         bio: >-
-          <p>Bea is a registered trademark attorney in Australia.&nbsp; She
-          specialises in all aspects of trade mark law and advises on searching,
-          registering and enforcing trade marks in Australia and
-          overseas.</p><p>Previously, Bea worked at a boutique patent and trade
-          mark firm in Sydney assisting both local and international clients
-          across different sectors to protect their brands. She also worked in
-          the corporate sector for a UK-based global group of engineering
-          manufacturing companies, where she provided in-house management of its
-          extensive trademark portfolio.</p>
+          <p><strong>Bea is a registered trademark attorney in
+          Australia</strong>.&nbsp; She specialises in all aspects of trade mark
+          law and advises on searching, registering and enforcing trade marks in
+          Australia and overseas.</p><p>Previously, Bea worked at a boutique
+          patent and trade mark firm in Sydney assisting both local and
+          international clients across different sectors to protect their
+          brands. She also worked in the corporate sector for a UK-based global
+          group of engineering manufacturing companies, where she provided
+          in-house management of its extensive trademark portfolio.</p>
         image: ''
       - name: Kerrie Burgess
         position: Senior Trademark Administrator
         bio: >-
           <p>Kerrie provides trademark administration support, compliance and
-          administrative assistance to the team.</p><p>Kerrie is an experienced
-          administrator and has held senior administrative roles for over 20
-          years.&nbsp; She is an adept user across a diverse range of IP and
-          legal software.</p><p>Kerrie works closely with all members of the
-          team on the management of trade mark portfolios and assists in the
-          filing, prosecution, registration and maintenance of trademark in
-          Australia and overseas.</p>
+          administrative assistance to the team.</p><p><strong>Kerrie is an
+          experienced administrator and has held senior administrative roles for
+          over 20 years</strong>.&nbsp; She is an adept user across a diverse
+          range of IP and legal software.</p><p>Kerrie works closely with all
+          members of the team on the management of trade mark portfolios and
+          assists in the filing, prosecution, registration and maintenance of
+          trademark in Australia and overseas.</p>
         image: ''
   - _bookshop_name: cta/search
     title: <p>Get Your <em>Trademark</em> Today</p>
