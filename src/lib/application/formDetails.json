@@ -58,16 +58,16 @@
 			"required": false
 		},
 		{
-			"label": "City",
+			"label": "City*",
 			"name": "City",
 			"type": "text",
 			"id": "city",
 			"options": [],
 			"placeholder": "Sydney",
-			"required": false
+			"required": true
 		},
 		{
-			"label": "State",
+			"label": "State*",
 			"name": "Phone",
 			"type": "select",
 			"id": "state",
@@ -83,34 +83,34 @@
 				"Outside Australia"
 			],
 			"placeholder": "",
-			"required": false
+			"required": true
 		},
 		{
-			"label": "Postcode",
+			"label": "Postcode*",
 			"name": "Postcode",
 			"type": "text",
 			"id": "postcode",
 			"options": [],
 			"placeholder": "2000",
-			"required": false
+			"required": true
 		},
 		{
-			"label": "Country",
+			"label": "Country*",
 			"name": "Country",
 			"type": "text",
 			"id": "country",
 			"options": [],
 			"placeholder": "Australia",
-			"required": false
+			"required": true
 		},
 		{
-			"label": "Email",
+			"label": "Email*",
 			"name": "Email",
 			"type": "email",
 			"id": "email",
 			"options": [],
 			"placeholder": "john@doe.com",
-			"required": false
+			"required": true
 		},
 		{
 			"label": "Phone",
@@ -130,7 +130,7 @@
 			"id": "company",
 			"options": [],
 			"placeholder": "ACME Pty Ltd",
-			"required": false
+			"required": true
 		},
 		"isCompanyAustralia": {
 			"label": "ABN*",
@@ -139,7 +139,7 @@
 			"id": "abn",
 			"options": [],
 			"placeholder": "12345678910",
-			"required": false
+			"required": true
 		},
 		"isInternational": {
 			"label": "Jurisdiction*",
@@ -148,7 +148,7 @@
 			"id": "jurisdiction",
 			"options": [],
 			"placeholder": "NSW",
-			"required": false
+			"required": true
 		}
 	}
 }

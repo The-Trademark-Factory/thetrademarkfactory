@@ -78,6 +78,13 @@
 		);
 
 		formData.append(
+			'GST',
+			new Intl.NumberFormat('us-EN', { style: 'currency', currency: 'AUD' }).format(
+				0.1 * itemList.reduce((acc, { quantity, unit_price }) => acc + quantity * unit_price, 0)
+			)
+		);
+
+		formData.append(
 			'Price total',
 			new Intl.NumberFormat('us-EN', { style: 'currency', currency: 'AUD' }).format(
 				+governmentFee * itemList.length +
