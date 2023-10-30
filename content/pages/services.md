@@ -54,9 +54,8 @@ content_blocks:
       international trademark registration system allowing you to register your
       brand in up to 114 countries under a single application.</p><p>This
       streamlined approach eliminates the need for filing trademark applications
-      in each country separately making it more cost effective and efficient.
-      Also, our Australian lawyers file the application from Australia for
-      you.</p>
+      in each country separately making it more cost effective and
+      efficient.</p>
     button:
       title_button: Enquire about International trademarks
       url: /pricing/#international-pricing
