@@ -99,7 +99,7 @@ content_blocks:
         image: /upload/img-step2.svg
         step: '2'
         last_step: false
-      - title_step: Enter the trade mark owner's details
+      - title_step: Enter the trademark owner's details
         image: /upload/img-step3.svg
         step: '3'
         last_step: false
