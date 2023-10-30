@@ -48,7 +48,7 @@ content_blocks:
       - title: GapOnly
       - title: Greatcell Energy
   - _bookshop_name: utils/pricing
-    title: <p>Trade mark <em>registration</em> pricing</p>
+    title: <p>Trademark <em>registration</em> pricing</p>
   - _bookshop_name: cards/twoColsMultiSide
     title: <p>Merging Legal Expertise with AI <em>innovation</em></p>
     description: >-
@@ -134,7 +134,7 @@ content_blocks:
       registration outside Australia.</p>
     button:
       label: Get a quote
-      url: '/pricing/#international-pricing'
+      url: /pricing/#international-pricing
   - _bookshop_name: others/icons
     title: <p>Trademarks we have <em>registered</em></p>
     icons:
