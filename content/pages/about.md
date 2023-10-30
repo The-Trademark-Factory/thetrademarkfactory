@@ -28,12 +28,13 @@ content_blocks:
       <strong>Donut King</strong>, <strong>Mad Mex</strong>, and <strong>Uniden
       Australia</strong>.&nbsp;</p><p>Over the course of nearly three decades,
       we've had the privilege of collaborating with large corporations but more
-      recently we've recognized a growing disparity between the needs of big
+      recently we've recognised a growing disparity between the needs of big
       businesses and small enterprises concerning the affordability of brand
       protection.</p><p>Our true passion lies in the realm of trademarks, and
       our primary objective is to assist as many Australian businesses as
       possible in accessing top-notch trademark services without exorbitant
-      fees.</p><p>Consequently, The TradeMark Factory was born.</p>
+      fees.</p><p>Consequently, <strong>The TradeMark Factory</strong> was
+      born.</p>
     button:
       title_button: ''
       url: '#'
