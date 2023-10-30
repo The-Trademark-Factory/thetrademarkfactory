@@ -58,7 +58,7 @@ content_blocks:
         label: countries
       - title: 95%+
         label: success rate
-      - title: Australia
+      - title: Australian
         label: owned & operated
   - _bookshop_name: cards/twoCols
     title: <p><em>Expertise</em> is just the beginning</p>
