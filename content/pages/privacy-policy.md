@@ -9,15 +9,15 @@ content_blocks:
   - _bookshop_name: utils/simpleText
     title: Privacy Policy
     content: >-
-      <p><strong>PRIVACY POLICY OF TTMF PTY LTD
-      (TTMF/We/Us/Our)</strong></p><p><strong>Introduction</strong></p><p>This
-      Privacy Policy is based on the Australian Privacy Principles
-      (“<strong>APPs</strong>”) for the use and handling of Personal Information
-      according to the <em>Australian Privacy Act 1988 (Cth) </em>(as amended).
-      In this Policy, “<strong>Personal Information</strong>” means information
-      that can identify you including photos and videos of you if your identity
-      is clear or could reasonably be worked out.</p><p>We will only use and/or
-      disclose your Personal Information to third parties in circumstances that
+      <p><strong>PRIVACY POLICY OF TTMF PTY
+      LTD</strong></p><p><strong>Introduction</strong></p><p>This Privacy Policy
+      is based on the Australian Privacy Principles (“<strong>APPs</strong>”)
+      for the use and handling of Personal Information according to the
+      <em>Australian Privacy Act 1988 (Cth) </em>(as amended). In this Policy,
+      “<strong>Personal Information</strong>” means information that can
+      identify you including photos and videos of you if your identity is clear
+      or could reasonably be worked out.</p><p>We will only use and/or disclose
+      your Personal Information to third parties in circumstances that
       are:</p><ol><li>set out in this Privacy Policy;</li><li>clearly explained
       at the time the information is collected from you; or</li><li>otherwise
       permitted under the APPs.</li></ol><p>This Privacy Policy
