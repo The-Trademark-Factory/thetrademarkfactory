@@ -16,22 +16,27 @@
 			"includes": [
 				{
 					"image": "/upload/ic-lawyer.svg",
+					"alt": "Icon of a lawyer",
 					"text": "Checked by our experienced trademark lawyers"
 				},
 				{
 					"image": "/upload/ic-select.svg",
+					"alt": "Icon of a hand on a document",
 					"text": "Allocation of trademark lawyer to manage the application for you"
 				},
 				{
 					"image": "/upload/ic-file.svg",
+					"alt": "Icon of a document in a letter",
 					"text": "Filed within 24 hours"
 				},
 				{
 					"image": "/upload/ic-address.svg",
+					"alt": "Icon of a wheel in a folder",
 					"text": "Address for service for all documents and critical deadlines"
 				},
 				{
 					"image": "/upload/ic-draft.svg",
+					"alt": "Icon of a clipboard with a pencil",
 					"text": "Drafting your goods/services"
 				}
 			],
@@ -66,22 +71,27 @@
 			"includes": [
 				{
 					"image": "/upload/ic-lawyer.svg",
-					"text": "Prepared by our experienced trademark lawyers"
+					"alt": "Icon of a lawyer",
+					"text": "Checked by our experienced trademark lawyers"
 				},
 				{
 					"image": "/upload/ic-select.svg",
+					"alt": "Icon of a hand on a document",
 					"text": "Allocation of trademark lawyer to manage the application for you"
 				},
 				{
 					"image": "/upload/ic-file.svg",
+					"alt": "Icon of a document in a letter",
 					"text": "Filed within 24 hours"
 				},
 				{
 					"image": "/upload/ic-address.svg",
+					"alt": "Icon of a wheel in a folder",
 					"text": "Address for service for all documents and critical deadlines"
 				},
 				{
 					"image": "/upload/ic-draft.svg",
+					"alt": "Icon of a clipboard with a pencil",
 					"text": "Drafting your goods/services"
 				}
 			],
@@ -116,22 +126,27 @@
 			"includes": [
 				{
 					"image": "/upload/ic-lawyer.svg",
-					"text": "Prepared by our experienced trade mark lawyers"
+					"alt": "Icon of a lawyer",
+					"text": "Checked by our experienced trademark lawyers"
 				},
 				{
 					"image": "/upload/ic-select.svg",
+					"alt": "Icon of a hand on a document",
 					"text": "Allocation of trademark lawyer to manage the application for you"
 				},
 				{
 					"image": "/upload/ic-file.svg",
+					"alt": "Icon of a document in a letter",
 					"text": "Filed within 24 hours"
 				},
 				{
 					"image": "/upload/ic-address.svg",
+					"alt": "Icon of a wheel in a folder",
 					"text": "Address for service for all documents and critical deadlines"
 				},
 				{
 					"image": "/upload/ic-draft.svg",
+					"alt": "Icon of a clipboard with a pencil",
 					"text": "Drafting your goods/services"
 				}
 			],

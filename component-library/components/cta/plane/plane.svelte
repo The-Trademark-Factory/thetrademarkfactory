@@ -26,7 +26,7 @@
 				{@html title}
 			</h2>
 			<div class="relative max-sm:hidden">
-				<img src="/upload/map-bg.png" alt="" class="pt-12" />
+				<img src="/upload/map-bg.png" alt="A dotted map" width="727" height="356" class="pt-12" />
 				<div class="lg:hidden absolute -top-10 left-10 w-full">
 					<Svg name="plane" width="100%" />
 				</div>

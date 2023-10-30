@@ -30,8 +30,10 @@
 			<div class="pt-6 md:pt-10 flex items-center gap-6">
 				<img
 					src={testimonials[currentIndex].icon}
-					alt={testimonials[currentIndex].name}
-					class="w-32 max-sm:hidden" />
+					alt="{testimonials[currentIndex].name} Logo"
+					width="128"
+					height="40"
+					class="w-32 object-contain max-sm:hidden" />
 				<div>
 					<p class="text-xl font-bold text-ttmfBlack">{testimonials[currentIndex].name}</p>
 					<p class="text-sm font-bold text-ttmfLightTextGreen uppercase pt-2">

@@ -20,8 +20,8 @@
 					? 'bg-ttmfBrown'
 					: 'bg-ttmfRed/70'}">
 				<p class="lg:hidden text-lg font-bold max-md:text-left">{nav.tab.title}</p>
-				<img src={nav.tab.image} alt={nav.tab} class="shrink-0 w-5 pt-7 max-lg:hidden" />
-				<img src={nav.image} alt={nav.tab} class="shrink-0 py-6" />
+				<img src={nav.tab.image} alt={nav.tab.title} class="shrink-0 w-5 pt-7 max-lg:hidden" />
+				<img src={nav.image} alt="{nav.tab.title} Icon" class="shrink-0 py-6" />
 			</button>
 		{/if}
 	{/each}
@@ -71,7 +71,12 @@
 						<div class="flex flex-col gap-8 pt-10 pb-4">
 							{#each el.includes as el}
 								<div class="flex items-center gap-8">
-									<img src={el.image} alt="" class="w-10 lg:w-14 shrink-0" />
+									<img
+										src={el.image}
+										alt={el.alt}
+										width="48"
+										height="48"
+										class="w-10 lg:w-12 shrink-0" />
 									<p class="text-ttmfDarkGreen">{el.text}</p>
 								</div>
 							{/each}
