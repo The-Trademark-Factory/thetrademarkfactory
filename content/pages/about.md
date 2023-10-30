@@ -41,7 +41,7 @@ content_blocks:
       content: >-
         <h3>The TradeMark Factory operates as a branch of <a target="_blank"
         rel="noopener" href="https://www.brandulegal.com.au/">brandU Legal</a>,
-        an Australian law firm specializing in trademarks and intellectual
+        an Australian law firm specialising in trademarks and intellectual
         property, situated in Sydney.&nbsp;</h3>
       image: /upload/about-intro.svg
       image_alt: Trademark and IP property specialise
