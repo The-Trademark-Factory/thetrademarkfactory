@@ -181,7 +181,7 @@ content_blocks:
   - _bookshop_name: others/testimonials
     title: <p>What our clients <em>say</em></p>
     testimonials:
-      - name: Katrina Hammon
+      - name: Katrina Hammon - Wynn Williams
         position: Partner
         description: >-
           "...the best in AU/NZ for global brand protection and portfolio
