@@ -106,13 +106,14 @@ content_blocks:
     title: <p>IP <em>Healthcheck</em></p>
     content: >-
       <p><strong>Are you concerned that your existing trademarks are not as they
-      should be?</strong> Maybe you have change the name of your company and are
-      not sure what needs to be updated? It is essential that your trademarks
-      are properly maintained as any incorrect details could impact your rights.
-      The TradeMark Factory can assist you to ensure your trademarks are up to
-      date and correctly protected. Simply contact us with the details of your
-      existing trademarks, and we will conduct the necessary searches to ensure
-      that your trademarks are current and properly recorded.</p>
+      should be?</strong> Maybe you have changed the name of your company and
+      are not sure what needs to be updated? It is essential that your
+      trademarks are properly maintained as any incorrect details could impact
+      your rights. The TradeMark Factory can assist you to ensure your
+      trademarks are up to date and correctly protected. Simply contact us with
+      the details of your existing trademarks, and we will conduct the necessary
+      searches to ensure that your trademarks are current and properly
+      recorded.</p>
     button:
       title_button: Enquire about an IP Healthcheck
       url: /contact
