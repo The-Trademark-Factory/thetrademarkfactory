@@ -37,7 +37,7 @@
 			],
 			"information": [
 				{
-					"info_content": "<p>The above fees cover the <strong>registration of one trade mark in one class via our online</strong> application form + GST.</p>"
+					"info_content": "<p>The above fees cover the <strong>registration of one trademark in one class via our online</strong> application form + GST.</p>"
 				},
 				{
 					"info_content": "<p>Govt fees of <strong>A$250 additional.</strong></p>"
@@ -66,7 +66,7 @@
 			"includes": [
 				{
 					"image": "/upload/ic-lawyer.svg",
-					"text": "Prepared by our experienced trade mark lawyers"
+					"text": "Prepared by our experienced trademark lawyers"
 				},
 				{
 					"image": "/upload/ic-select.svg",
@@ -137,7 +137,7 @@
 			],
 			"information": [
 				{
-					"info_content": "<p>The above fees cover the <strong>registration of one trade mark in one class in one country</strong> + GST.</p>"
+					"info_content": "<p>The above fees cover the <strong>registration of one trademark in one class in one country</strong> + GST.</p>"
 				},
 				{
 					"info_content": "<p>Govt fees <strong>additional.</strong></p>"
@@ -151,7 +151,10 @@
 			]
 		}
 	],
-	"international_additional_fees": { "title": "WIPO Basic Fee", "price": 1200 },
+	"international_additional_fees": {
+		"title": "WIPO Basic Fee",
+		"price": 1200
+	},
 	"international_module": [
 		{
 			"title": "Australia",

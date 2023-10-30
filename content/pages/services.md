@@ -35,7 +35,7 @@ content_blocks:
       here to help you should you need it.</p>
     button:
       title_button: Apply for your trademark now
-      url: '/application/search'
+      url: /application/search
       title: <p>Get Started</p>
     media:
       content: ''
@@ -46,17 +46,16 @@ content_blocks:
   - _bookshop_name: cards/twoCols
     title: <p><em>International</em> Trademark Registration</p>
     content: >-
-      <p>Contrary to what most people think, trademark registration is
-      jurisdictional, meaning <strong>trademarks must be registered in each and
-      every country where you want to use it.</strong> When you expand your
-      goods and/or services to overseas markets, safeguarding your brand in
-      those regions becomes crucial.</p><p>Australia is a member of the Madrid
-      Protocol which is an international trademark registration system allowing
-      you to register your brand in up to 114 countries under a single
-      application.</p><p>This streamlined approach eliminates the need for
-      filing trademark applications in each country separately making it more
-      cost effective and efficient. Also, our Australian lawyers file the
-      application from Australia for you.</p>
+      <p>Did you know that trademark registration is jurisdictional, meaning
+      <strong>trademarks must be registered in each and every country where you
+      want to use it?&nbsp;</strong>When you expand your goods and/or services
+      to overseas markets, safeguarding your brand in those regions becomes
+      crucial.</p><p>Australia is a member of the Madrid Protocol which is an
+      international trademark registration system allowing you to register your
+      brand in up to 114 countries under a single application.</p><p>This
+      streamlined approach eliminates the need for filing trademark applications
+      in each country separately making it more cost effective and
+      efficient.</p>
     button:
       title_button: Enquire about International trademarks
       url: /pricing/#international-pricing
@@ -102,7 +101,7 @@ content_blocks:
       so you will never miss a deadline.</p>
     button:
       title_button: Let us manage your portfolio
-      url: '/contact'
+      url: /contact
       title: <p>Get Started</p>
   - _bookshop_name: cards/twoCols
     title: <p>IP <em>Healthcheck</em></p>

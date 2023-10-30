@@ -48,7 +48,7 @@ content_blocks:
       - title: GapOnly
       - title: Greatcell Energy
   - _bookshop_name: utils/pricing
-    title: <p>Trade mark <em>registration</em> pricing</p>
+    title: <p>Trademark <em>registration</em> pricing</p>
   - _bookshop_name: cards/twoColsMultiSide
     title: <p>Merging Legal Expertise with AI <em>innovation</em></p>
     description: >-
@@ -99,7 +99,7 @@ content_blocks:
         image: /upload/img-step2.svg
         step: '2'
         last_step: false
-      - title_step: Enter the trade mark owner's details
+      - title_step: Enter the trademark owner's details
         image: /upload/img-step3.svg
         step: '3'
         last_step: false
@@ -113,7 +113,7 @@ content_blocks:
       - title_card: Trademark Experts
         description_card: >-
           Backed by experienced Australian trademark lawyers with over 30 years
-          experience in Australian and international trade mark law.
+          experience in Australian and international trademark law.
         icon: /upload/ic-experience.svg
       - title_card: Low fixed fees
         description_card: >-
@@ -134,7 +134,7 @@ content_blocks:
       registration outside Australia.</p>
     button:
       label: Get a quote
-      url: '/pricing/#international-pricing'
+      url: /pricing/#international-pricing
   - _bookshop_name: others/icons
     title: <p>Trademarks we have <em>registered</em></p>
     icons:
@@ -181,7 +181,7 @@ content_blocks:
   - _bookshop_name: others/testimonials
     title: <p>What our clients <em>say</em></p>
     testimonials:
-      - name: Katrina Hammon
+      - name: Katrina Hammon - Wynn Williams
         position: Partner
         description: >-
           "...the best in AU/NZ for global brand protection and portfolio
