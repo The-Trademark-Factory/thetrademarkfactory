@@ -1,5 +1,5 @@
 <script>
-	import { ChevronDown, Check, Search, XCircle } from 'lucide-svelte';
+	import { ChevronDown, Check, Search, XCircle, ChevronDownCircle } from 'lucide-svelte';
 	import {
 		international_module,
 		international_additional_fees
@@ -192,7 +192,7 @@
 			<div
 				id="enquiryForm"
 				bind:this={enquiryForm}
-				class="sticky top-32 bg-ttmfBeige rounded-xl px-5 py-6">
+				class="sticky top-32 bg-ttmfBeige rounded-xl px-5 py-6 scroll-mt-32">
 				{#if total === 0}
 					<div class="lg:min-h-[600px]">
 						<p class="text-xl font-bold">Your Enquiry</p>
@@ -284,8 +284,9 @@
 	{#if showShortcut && total !== 0}
 		<div
 			id="enquiryShortcut"
-			class="lg:hidden sticky bottom-0 w-full bg-ttmfRed py-4 px-6 text-center">
-			<a href="#enquiryForm" class="font-bold text-white">View Enquiry form</a>
+			class="lg:hidden sticky bottom-0 w-full bg-ttmfRed text-lg py-4 px-6 text-center">
+			<a href="#enquiryForm" class="font-bold text-white flex items-center justify-center gap-2"
+				>View Enquiry form<ChevronDownCircle size="20" /></a>
 		</div>
 	{/if}
 </section>

@@ -23,9 +23,9 @@
 {#if isVisible && !$page.route.id.includes('search')}
 	<div
 		transition:fly={{ y: 100 }}
-		class="lg:hidden fixed bottom-0 w-full bg-ttmfDarkGreen py-3 text-center text-lg font-bold text-white z-40">
+		class="lg:hidden fixed bottom-0 w-full bg-ttmfRed py-4 text-center text-lg font-bold text-white z-40">
 		<a href="#sidebar" class="flex items-center justify-center gap-4"
-			>Your enquiry<ChevronDownCircle size="20" /></a>
+			>View your enquiry<ChevronDownCircle size="20" /></a>
 	</div>
 {/if}
 
