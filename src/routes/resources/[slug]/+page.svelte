@@ -19,7 +19,7 @@
 			><ChevronLeft size="12" strokeWidth="3" /></span
 		><span class="hover:underline underline-offset-4">Back to Resources</span></a>
 	<div class=" bg-white rounded-3xl py-16 px-8 lg:px-28 shadow-pricingShadow">
-		<h1 class="text-2xl lg:text-5xl font-bold">{pageDetails.data.title}</h1>
+		<h1 class="text-2xl lg:text-5xl font-bold text-center">{pageDetails.data.title}</h1>
 	</div>
 </div>
 <div class="max-w-screen-xl mx-auto py-12 lg:py-20">

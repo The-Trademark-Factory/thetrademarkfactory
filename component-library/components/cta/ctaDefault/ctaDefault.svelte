@@ -12,7 +12,7 @@
 				</h2>
 			{/if}
 			{#if content}
-				<div class="max-w-none text-lg prose {title ? 'pt-10' : ''}">
+				<div class="max-w-none text-lg prose prose-em:font-semibold {title ? 'pt-10' : ''}">
 					{@html content}
 				</div>
 			{/if}

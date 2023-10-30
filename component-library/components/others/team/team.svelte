@@ -5,7 +5,7 @@
 	let active = team[0].name;
 </script>
 
-<section class="max-w-screen-xl mx-auto lg:py-14 max-2xl:px-6 min-h-[1000px]">
+<section class="max-w-screen-xl mx-auto lg:py-14 max-2xl:px-6 min-h-[500px]">
 	<div class="shadow-pricingShadow divide-y">
 		{#each team as el}
 			{#if el.name === active}

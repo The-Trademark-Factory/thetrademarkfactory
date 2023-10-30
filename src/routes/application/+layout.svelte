@@ -5,6 +5,7 @@
 	import { onMount } from 'svelte';
 
 	let isVisible = true;
+	$: isAllowed = !$page.route.id.includes('search') && !$page.route.id.includes('success');
 
 	onMount(() => {
 		const handleScroll = () => {
@@ -20,7 +21,7 @@
 	});
 </script>
 
-{#if isVisible && !$page.route.id.includes('search')}
+{#if isVisible && isAllowed}
 	<div
 		transition:fly={{ y: 100 }}
 		class="lg:hidden fixed bottom-0 w-full bg-ttmfRed py-4 text-center text-lg font-bold text-white z-40">

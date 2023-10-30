@@ -6,14 +6,15 @@ title: >-
 date: 2023-10-21T06:51:00Z
 image: /upload/img-trademark-renewal.svg
 seo:
-  title:
-  description:
+  title: Avoid non-use removal actions in Australia | TTMF
+  description: Trademark owners who have registered trademarks and wish to counter non-use applications in Australia should ensure that their evidence specifically pertains to usage within Australia.
   image: /upload/ttmf-default-seo.png
   no_index: false
 ---
+
 In a previous article, we emphasized the significance of correctly utilizing trademarks to prevent non-use removal actions in Australia. However, we'd like to provide an update on this matter by underscoring the jurisdictional nature of trademark use. To maintain a registered trademark, owners must ensure that their trademarks are actively used within Australia to avoid potential removal.
 
-This aspect was prominently highlighted in a recent decision by the Australian Trade Mark Office, notably in the case of *The Coca-Cola Company v Garth Stanley \[2023\] ATMO 3* (referred to as the "**Coca-Cola case**").
+This aspect was prominently highlighted in a recent decision by the Australian Trade Mark Office, notably in the case of _The Coca-Cola Company v Garth Stanley \[2023\] ATMO 3_ (referred to as the "**Coca-Cola case**").
 
 One circumstance that can render an Australian trademark registration susceptible to non-use removal is when the mark remains unused within Australia by the registered owner for an uninterrupted period of three years (concluding one month before the removal application is submitted, known as the "relevant period").
 

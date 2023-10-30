@@ -3,11 +3,12 @@ title: International trademark protection - the “why, how, and when”
 date: 2023-10-21T00:00:00Z
 image: /upload/article-placeholder-image.jpg
 seo:
-  title: SEO Title
-  description: SEO Description
+  title: International trademark protection - the “why, how, and when” | TTMF
+  description: Why is it important to safeguard your trademark internationally and how can local brand owners go about registering their trademarks on a global scale?
   image: /upload/ttmf-default-seo.png
   no_index: false
 ---
+
 **Why is it important to safeguard your trademark internationally?**
 
 First and foremost, it's crucial to understand that trademark rights are limited to specific geographical regions. Consequently, trademarks should be officially registered in all the areas where the mark is currently in use or where it will be employed in the future. To put it simply, delaying the registration of your trademark might force you to rebrand in certain countries. This process can be both time-consuming and costly, and it can be avoided by implementing a comprehensive trademark registration strategy.
@@ -16,8 +17,8 @@ First and foremost, it's crucial to understand that trademark rights are limited
 
 There are two primary avenues for protecting trademarks internationally:
 
-1. *International Application via the Madrid Protocol*: This approach involves submitting a single application that can cover one or multiple of the 114 member countries. In most member countries, a single fee encompasses both filing and registration costs. However, an international registration through the Madrid Protocol necessitates having a basic application or registration for the same mark in the home country, covering some or all of the goods/services associated with the mark.
-2. *Direct National Applications*: Brand owners can opt to register their trademarks directly in specific countries or regions, such as the European Union.
+1. _International Application via the Madrid Protocol_: This approach involves submitting a single application that can cover one or multiple of the 114 member countries. In most member countries, a single fee encompasses both filing and registration costs. However, an international registration through the Madrid Protocol necessitates having a basic application or registration for the same mark in the home country, covering some or all of the goods/services associated with the mark.
+2. _Direct National Applications_: Brand owners can opt to register their trademarks directly in specific countries or regions, such as the European Union.
 
 **What does an international registration via the Madrid Protocol entail?**
 
@@ -27,27 +28,27 @@ What are the advantages and disadvantages of an international application via th
 
 Advantages:
 
-* Upfront Cost Savings: Lower initial expenses at the time of filing.
-* Global Coverage: Many of the world's core markets are accessible through the Madrid Protocol.
-* Flexibility: The ability to add countries to an existing international registration as your business expands.
-* Uniform Protection: Once protected in a country, the level of protection is equivalent to a national registration.
-* Predictable Timeframes: Trademark offices in each country must examine applications within specified timeframes (12 or 18 months).
-* Simplified Maintenance: Single renewal and recording of changes to the international registration.
+- Upfront Cost Savings: Lower initial expenses at the time of filing.
+- Global Coverage: Many of the world's core markets are accessible through the Madrid Protocol.
+- Flexibility: The ability to add countries to an existing international registration as your business expands.
+- Uniform Protection: Once protected in a country, the level of protection is equivalent to a national registration.
+- Predictable Timeframes: Trademark offices in each country must examine applications within specified timeframes (12 or 18 months).
+- Simplified Maintenance: Single renewal and recording of changes to the international registration.
 
 Disadvantages:
 
-* Differing Practices: Varying practices among international trademark offices (e.g., restrictions on amending goods/services or certain descriptions).
-* Additional Fees: Some countries may have secondary fees (e.g., Japan, Brazil).
-* Objections and Local Attorneys: Issuance of objections reports is common, necessitating the engagement of local attorneys.
-* Dependency on Basic Registration: The international registration relies on the basic application/registration for five years; if the basic registration fails during this period, the international registration may also be jeopardized.
-* Limited Amendments: Only a limited number of amendments can be made to an international registration.
+- Differing Practices: Varying practices among international trademark offices (e.g., restrictions on amending goods/services or certain descriptions).
+- Additional Fees: Some countries may have secondary fees (e.g., Japan, Brazil).
+- Objections and Local Attorneys: Issuance of objections reports is common, necessitating the engagement of local attorneys.
+- Dependency on Basic Registration: The international registration relies on the basic application/registration for five years; if the basic registration fails during this period, the international registration may also be jeopardized.
+- Limited Amendments: Only a limited number of amendments can be made to an international registration.
 
 **Who is eligible to file an international registration via the Madrid Protocol?**
 
 To qualify for an international registration via the Madrid Protocol, you must meet two key criteria:
 
-1. *Establishment*: You must have a legitimate and operational commercial or industrial establishment in your home country.
-2. *Basic Application/Registration*: You must possess an existing application or registration for the same mark in your home country (referred to as the basic application or registration).
+1. _Establishment_: You must have a legitimate and operational commercial or industrial establishment in your home country.
+2. _Basic Application/Registration_: You must possess an existing application or registration for the same mark in your home country (referred to as the basic application or registration).
 
 **How can I initiate an international registration via the Madrid Protocol?**
 
@@ -67,4 +68,4 @@ On the other hand, "first to use" countries provide trademark rights to the firs
 
 **What's the next step?**
 
-If you're contemplating expanding your product or service offerings to international markets, it's essential to prioritize trademark registration in the relevant countries promptly. Developing a well-thought-out trademark protection strategy is crucial. The TradeMark Factory has extensive experience in brand protection in Australia and worldwide and can address any inquiries you may have regarding safeguarding your brand. Please feel free to [contact us](ttmf.com.au/contact) for further information.
+If you're contemplating expanding your product or service offerings to international markets, it's essential to prioritize trademark registration in the relevant countries promptly. Developing a well-thought-out trademark protection strategy is crucial. The TradeMark Factory has extensive experience in brand protection in Australia and worldwide and can address any inquiries you may have regarding safeguarding your brand. Please feel free to [contact us](/contact) for further information.

@@ -75,8 +75,8 @@ content_blocks:
   - _bookshop_name: cta/ctaDefault
     title: <p><em>Affordable</em> Fixed Fees-No Compromises</p>
     content: >-
-      <p><em>We understand small businesses because we are one
-      ourselves,&nbsp;</em>and we understand that small businesses need
+      <p><strong>We understand small businesses because we are one
+      ourselves</strong> and we understand that small businesses need
       transparency in fees. With this in mind, our AI inspired online
       application form allows us to keep our costs low while upholding the
       high-quality service you deserve.</p>

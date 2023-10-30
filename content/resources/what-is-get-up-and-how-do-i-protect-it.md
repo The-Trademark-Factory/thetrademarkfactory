@@ -4,21 +4,13 @@ title: What is “get-up” and how do I protect it?
 date: 2023-10-24T07:42:09Z
 image: /upload/img-trademark-search.svg
 seo:
-  title: What is “get-up” and how do I protect it?
-  description: >-
-    "get-up" or "trade dress" refers to the visual identity of a product,
-    encompassing elements like shape, color, and texture that set it apart from
-    competitors. This distinctiveness is crucial for a business's image and
-    consumer perception. In Australia, get-up is protected by passing off and
-    the Australian Consumer Law, requiring proof of distinctiveness, reputation,
-    and potential for consumer confusion or deception. In some cases, unique
-    packaging can even qualify for trademark registration. Neglecting to
-    safeguard these assets exposes your brand to imitation and reputation
-    dilution.
+  title: What is “get-up” and how do I protect it? | TTMF
+  description: In the realm of IP law, the term "get-up" or "trade dress" encompasses the visual identity of a product that sets it apart from the crowd.
   image: /upload/ttmf-default-seo.png
   no_index: false
 ---
-In the realm of IP law, the term *get-up* or *trade dress*&nbsp;encompasses the visual identity of a product that sets it apart from the crowd. It encompasses any visual element that lends distinctiveness to a product or its packaging, including aspects such as shape, configuration, color, texture, and more. Think of it as the red-carpet attire for your product, giving it a unique edge that others may attempt to imitate.
+
+In the realm of IP law, the term _get-up_ or _trade dress_&nbsp;encompasses the visual identity of a product that sets it apart from the crowd. It encompasses any visual element that lends distinctiveness to a product or its packaging, including aspects such as shape, configuration, color, texture, and more. Think of it as the red-carpet attire for your product, giving it a unique edge that others may attempt to imitate.
 
 Just like other forms of intellectual property, safeguarding the distinctive and unique get-up of products is crucial for establishing a prominent presence in the market. After all, these visual elements play a pivotal role in shaping a business's image and how its products are perceived by consumers. Consider iconic examples like McDonald's with its vibrant red fries packaging or Tiffany's renowned blue boxes.
 

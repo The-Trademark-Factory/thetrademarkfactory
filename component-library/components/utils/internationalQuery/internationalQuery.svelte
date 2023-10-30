@@ -8,7 +8,7 @@
 	import { fly } from 'svelte/transition';
 	import EnquiryForm from '$lib/components/enquiryForm.svelte';
 
-	export let title_section, description;
+	export let title_section, description, note;
 
 	let activeDetails;
 	let total = 0;
@@ -63,8 +63,6 @@
 	$: showAdditionalFees = !(
 		Object.keys(selectedCountries).length === 1 && selectedCountries.hasOwnProperty('Australia')
 	);
-
-	$: console.log(Object.keys(selectedCountries));
 </script>
 
 <section id="international-pricing" class="relative max-w-screen-xl mx-auto py-16">
@@ -78,6 +76,9 @@
 				{/if}
 				{#if description}
 					<p class="text-xl pt-6 prose">{@html description}</p>
+				{/if}
+				{#if note}
+					<p class="text-ttmfRed pt-4">{note}</p>
 				{/if}
 				<div class="relative mt-6">
 					<input

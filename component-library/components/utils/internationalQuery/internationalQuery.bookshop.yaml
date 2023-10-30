@@ -11,6 +11,7 @@ blueprint:
     <em>International</em> Trademark Pricing
   description: |
     Select countries to calculate the final price.
+  note:
 
 preview:
 
