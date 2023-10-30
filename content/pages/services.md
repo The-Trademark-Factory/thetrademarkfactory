@@ -78,8 +78,7 @@ content_blocks:
       come into play.</p><p>A comprehensive trademark search can help minimise
       objections to your application or possible oppositions by third parties
       which may not be revealed from an <strong>exact </strong>search.</p><p>If
-      you would like more comprehensive searches, contact us and we will put you
-      in touch with our lawyers at brandU Legal.</p>
+      you would like more comprehensive searches, get in touch with us.</p>
     button:
       title_button: Enquire about our comprehensive searches
       url: /contact
