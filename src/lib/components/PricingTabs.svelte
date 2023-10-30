@@ -20,8 +20,18 @@
 					? 'bg-ttmfBrown'
 					: 'bg-ttmfRed/70'}">
 				<p class="lg:hidden text-lg font-bold max-md:text-left">{nav.tab.title}</p>
-				<img src={nav.tab.image} alt={nav.tab.title} class="shrink-0 w-5 pt-7 max-lg:hidden" />
-				<img src={nav.image} alt="{nav.tab.title} Icon" class="shrink-0 py-6" />
+				<img
+					src={nav.tab.image}
+					alt={nav.tab.title}
+					width="20"
+					height="353"
+					class="shrink-0 w-5 pt-7 max-lg:hidden object-contain" />
+				<img
+					src={nav.image}
+					alt="{nav.tab.title} Icon"
+					width="50"
+					height="30"
+					class="shrink-0 py-6 object-contain h-20" />
 			</button>
 		{/if}
 	{/each}
@@ -98,7 +108,12 @@
 					: 'bg-ttmfRed/70 max-lg:rounded-b-3xl lg:rounded-r-3xl'}">
 				<p class="lg:hidden md:text-lg font-bold max-md:text-left">{nav.tab.title}</p>
 				<img src={nav.tab.image} alt={nav.tab} class="shrink-0 w-5 pt-7 max-lg:hidden" />
-				<img src={nav.image} alt={nav.tab} class="shrink-0 py-6" />
+				<img
+					src={nav.image}
+					alt={nav.tab}
+					width="50"
+					height="30"
+					class="shrink-0 py-6 object-contain h-20" />
 			</button>
 		{/if}
 	{/each}

@@ -15,7 +15,7 @@
 <nav class="fixed z-40 w-full {y > 50 ? 'shadow-md bg-ttmfDarkGreen py-6' : 'xl:shadow-none pt-6'}">
 	<div class="max-w-screen-2xl mx-auto max-2xl:px-6">
 		<div class="flex justify-between items-center">
-			<a href="/" class={y > 50 ? 'max-md:hidden' : ''}
+			<a href="/" class="md:mb-2 {y > 50 ? 'max-md:hidden' : ''}"
 				><span class="max-md:hidden"><Svg name="logo" /></span><span class="md:hidden"
 					><Svg name="logo-vertical" width="w-[150px]" /></span
 				><span class="sr-only">The Trademark Factory Logo</span></a>
@@ -34,7 +34,7 @@
 						menu = !menu;
 					}}
 					class="h-12 w-12 md:w-16 md:h-16 bg-white text-ttmfRed inline-flex items-center justify-center rounded-full transition-all hover:bg-ttmfRed hover:text-white"
-					><Menu size="30" /></button>
+					><Menu size="30" /><span class="sr-only">Open Menu</span></button>
 			</div>
 		</div>
 	</div>

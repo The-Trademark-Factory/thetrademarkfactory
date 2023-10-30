@@ -21,7 +21,8 @@
 		<div class="sm:pt-12 flex items-center gap-2">
 			<button
 				class="bg-ttmfBlack transition-all hover:bg-ttmfRed rounded-full p-2 sm:p-4 mb-2"
-				on:click={nextTestimonial}><ArrowRight color="#FFFFFF" /></button>
+				on:click={nextTestimonial}
+				><ArrowRight color="#FFFFFF" /><span class="sr-only">Next Testimonial</span></button>
 		</div>
 	</div>
 	<div class="lg:col-span-3 lg:pl-16 max-sm:pt-12">

@@ -2,12 +2,16 @@
 	import { MapPin, Phone, Send } from 'lucide-svelte';
 	import footer from '../../../data/footer.json';
 	import Button from './Button.svelte';
+	import Svg from './Svg.svelte';
 </script>
 
 <footer class="bg-ttmfDarkGreen text-white">
 	<div class="max-w-screen-xl mx-auto py-14 max-2xl:px-6">
 		<div class="flex flex-wrap justify-between border-b-2 border-ttmfRed pb-12 mb-12">
-			<a href="/"><img src="/upload/logo.png" alt="TTMF" /></a>
+			<a href="/"
+				><span class="sr-only">The Trademark Factory Logo</span><Svg
+					name="logo-vertical"
+					width="w-[220px]" /></a>
 			<div class="flex flex-wrap gap-12 max-md:pt-12">
 				<div class="inline-flex gap-6">
 					<div
