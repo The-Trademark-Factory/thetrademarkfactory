@@ -27,7 +27,7 @@
 			<span class="text-ttmfRed"><Search size="40" /></span>
 			<input
 				type="text"
-				class="text-4xl p-2 bg-ttmfBg text-ttmfBlack placeholder:text-ttmfBlack/80"
+				class="text-2xl lg:text-4xl p-2 bg-ttmfBg text-ttmfBlack placeholder:text-ttmfBlack/80"
 				placeholder="Filter Articles..."
 				bind:value={filterTerm} />
 		</div>

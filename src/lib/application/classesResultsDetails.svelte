@@ -48,12 +48,12 @@
 			<span class="font-bold">{term}</span>
 		</p>
 		{#if resultsDetails.length > 20}
-			<div class="relative flex items-center gap-2">
+			<div class="relative flex items-center gap-2 max-lg:w-full">
 				<input
 					type="text"
 					placeholder="Filter by keyword"
 					bind:value={filterText}
-					class="border rounded p-2 w-72" />
+					class="border rounded p-2 w-full lg:w-72" />
 				<button
 					on:click={() => {
 						filterText = '';

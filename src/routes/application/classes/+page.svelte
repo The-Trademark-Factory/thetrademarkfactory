@@ -36,8 +36,8 @@
 						id="term"
 						bind:value={term}
 						placeholder="Search by Keywords"
-						class="relative text-xl font-bold text-black placeholder:font-normal pl-14 pr-6 py-6 rounded w-full shadow-pricingShadow" />
-					<div class="absolute left-4 max-sm:top-6">
+						class="relative text-xl font-bold text-black placeholder:font-normal pl-14 pr-6 py-4 lg:py-6 rounded w-full shadow-pricingShadow" />
+					<div class="absolute left-4 top-4 lg:top-6">
 						<Search color="#D34B44" />
 					</div>
 					<button

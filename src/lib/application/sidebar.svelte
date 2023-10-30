@@ -77,7 +77,7 @@
 	};
 </script>
 
-<div class="bg-ttmfBeige px-5 py-6 rounded-lg">
+<div id="sidebar" class="bg-ttmfBeige px-5 py-6 rounded-lg scroll-mt-12">
 	<div
 		class="flex flex-wrap items-center gap-2 text-xl font-bold {$searchLogo
 			? 'justify-between'

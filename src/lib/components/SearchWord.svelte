@@ -31,11 +31,11 @@
 	<input
 		type="text"
 		placeholder={placeholder ? placeholder : 'Search by word'}
-		class="relative text-xl font-bold text-black placeholder:font-normal pl-14 lg:pr-52 py-6 rounded w-full lg:w-[600px]"
+		class="relative text-xl font-bold text-black placeholder:font-normal pl-14 lg:pr-52 py-4 lg:py-6 rounded w-full lg:w-[600px]"
 		required
 		bind:value={searchTerm}
 		on:keydown={handleKeydown} />
-	<div class="absolute left-4 max-md:top-6">
+	<div class="absolute left-4 top-4 lg:top-6">
 		<Search color="#D34B44" />
 	</div>
 	{#if !isSearchPage}

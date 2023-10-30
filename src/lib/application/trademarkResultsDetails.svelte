@@ -8,15 +8,15 @@
 </script>
 
 {#if totalResults > 0}
-	<p class="text-3xl font-bold">
+	<p class="text-xl lg:text-3xl font-bold">
 		<span class="text-ttmfRed">Showing {resultsDetails.length}</span> of {totalResults}
 		total results found
 	</p>
-	<div class="space-y-5 mt-10">
+	<div class="space-y-5 mt-6 lg:mt-10">
 		{#each resultsDetails as el}
-			<div class="bg-white shadow-pricingShadow rounded-lg p-12">
-				<div class="flex items-center justify-between gap-24">
-					<p class="text-2xl font-bold">{el.words}</p>
+			<div class="bg-white shadow-pricingShadow rounded-lg p-6 lg:p-12">
+				<div class="flex max-lg:flex-wrap items-center justify-between gap-6 lg:gap-24">
+					<p class="text-xl lg:text-2xl font-bold">{el.words}</p>
 					<a
 						href="https://search.ipaustralia.gov.au/trademarks/search/view/{el.number}"
 						target="_blank"
@@ -33,7 +33,7 @@
 										''}
 								</p>
 							</div>
-							<div class="flex flex-wrap items-center gap-2 pt-3 text-sm">
+							<div class="flex flex-wrap items-center gap-2 pt-3 text-xs lg:text-sm">
 								{#each showAllClasses === el.class + el.words || el.descriptionText.length <= 3 ? el.descriptionText : el.descriptionText.slice(0, 2) as description}
 									<span class="bg-white rounded-md py-1 px-3 border-2 border-ttmfCreme/30"
 										>{description}</span>
@@ -50,7 +50,7 @@
 							</div>
 						</div>
 					{/each}
-					<div class="pt-6 grid lg:grid-cols-3 items-start gap-12">
+					<div class="pt-4 lg:pt-6 grid lg:grid-cols-3 items-start gap-8 lg:gap-12">
 						<div class="flex items-start gap-6">
 							<img src="/upload/ic-filed.svg" alt="" />
 							<div>

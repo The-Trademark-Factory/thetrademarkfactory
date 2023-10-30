@@ -3,7 +3,7 @@
 	import { beforeNavigate } from '$app/navigation';
 	import { MapPin, Phone, Send } from 'lucide-svelte';
 	import footer from '../../../../data/footer.json';
-	import EnquiryForm from '../../../../src/lib/components/enquiryForm.svelte';
+	import EnquiryForm from '$lib/components/enquiryForm.svelte';
 	export let title, subtitle, form;
 
 	let visible = false;
@@ -28,7 +28,7 @@
 					{#if subtitle}
 						<p class="text-4xl font-arkina text-ttmfRed pt-9">{subtitle}</p>
 					{/if}
-					<div class="absolute -bottom-5 right-0 max-md:w-1/3">
+					<div class="absolute -bottom-5 right-0 max-md:w-1/3 max-lg:hidden">
 						<AnimatedSvg name="contact" {visible} />
 					</div>
 				</div>
@@ -71,7 +71,7 @@
 				</div>
 			</div>
 			<div>
-				<div class="bg-white px-12 pt-6 pb-12 rounded-2xl shadow-2xl md:shadow-xl">
+				<div class="bg-white px-6 lg:px-12 pt-6 pb-12 rounded-2xl shadow-2xl md:shadow-xl">
 					<p class="text-5xl font-arkina text-ttmfRed pt-9">{form.title}</p>
 					<div class="pt-12">
 						<EnquiryForm

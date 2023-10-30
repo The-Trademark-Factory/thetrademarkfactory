@@ -55,7 +55,7 @@
 			<p class="text-xl font-bold">
 				{content.wordDetails.existing.title}
 			</p>
-			<p class="text-lg">{content.wordDetails.existing.description}</p>
+			<p class="text-lg max-lg:pt-4">{content.wordDetails.existing.description}</p>
 		</div>
 		<div class="space-y-5">
 			{#each resultClasses.sortedClasses as el}
@@ -94,7 +94,7 @@
 		<div class="border-t pt-0 mt-10 grid lg:grid-cols-2 gap-x-12">
 			{#each content.wordDetails.process.features as el}
 				<div class="flex items-center gap-4 py-6 border-b">
-					<img src={el.image} alt="" />
+					<img src={el.image} alt="An icon" class="max-lg:w-10" />
 					<p>{el.description}</p>
 				</div>
 			{/each}

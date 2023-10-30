@@ -126,12 +126,13 @@
 						class="text-lg font-bold inline-flex items-center gap-2 {searchResultsDetails
 							? 'text-ttmfRed'
 							: 'text-green-500'}">
-						{#if searchResultsDetails}<Info />{searchResults_page.searchField
-								.registered_title}{:else}<CheckCircle />{searchResults_page.searchField
-								.available_title}{/if}
+						{#if searchResultsDetails}<span class="max-lg:hidden"><Info /></span>{searchResults_page
+								.searchField.registered_title}{:else}<span class="max-lg:hidden"
+								><CheckCircle /></span
+							>{searchResults_page.searchField.available_title}{/if}
 					</p>
 					{#if searchResultsDetails}
-						<p class="text-sm">
+						<p class="text-sm max-lg:pt-4">
 							{searchResults_page.searchField.registered_description}
 							<a href="#results" class="inline-flex items-center gap-2"
 								><span class="underline underline-offset-4">See results below</span><ChevronDown
