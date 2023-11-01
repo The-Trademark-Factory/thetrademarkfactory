@@ -56,9 +56,11 @@
 	});
 
 	beforeNavigate(({ to }) => {
-		destination = to.route.id;
-		searchTerm = to.url.search.split('=')[1];
-		isLoading = true;
+		if (to) {
+			destination = to.route.id;
+			searchTerm = to.url.search.split('=')[1];
+			isLoading = true;
+		}
 	});
 
 	afterNavigate(() => {
