@@ -1,5 +1,5 @@
 <script>
-	import OrderConfirmedField from '../../../lib/application/orderConfirmedField.svelte';
+	import OrderConfirmedField from '$lib/application/orderConfirmedField.svelte';
 
 	export let data;
 
@@ -30,10 +30,21 @@
 					<a href={applicationType.source} class="underline">Download Image</a>
 				{/if}
 			</h1>
-			<a
-				href="https://dashboard.stripe.com/payments/{stripe.paymentIntentId}"
-				target="_blank"
-				class="text-xl underline underline-offset-4">View Stripe Record</a>
+			<div class="bg-ttmfGreen/50 p-6 text-lg space-y-2">
+				<p class="flex items-center justify-between gap-4">
+					<span class="font-bold">Subtotal</span> ${total.subtotal}
+				</p>
+				<p class="flex items-center justify-between gap-4">
+					<span class="font-bold">GST</span> ${total.gst}
+				</p>
+				<p class="flex items-center justify-between gap-4 pb-4">
+					<span class="font-bold">Total</span> ${total.total}
+				</p>
+				<a
+					href="https://dashboard.stripe.com/payments/{stripe.paymentIntentId}"
+					target="_blank"
+					class="underline underline-offset-4">View Stripe Record</a>
+			</div>
 		</div>
 	</section>
 
@@ -82,7 +93,7 @@
 						</div>
 						<div>
 							<p class="font-bold">Descriptions:</p>
-							<ul class="list-disc ml-4 mt-4 space-y-2">
+							<ul class="list-disc ml-4 py-4 space-y-2">
 								{#each item.descriptions as el}
 									<li>{el}</li>
 								{/each}
