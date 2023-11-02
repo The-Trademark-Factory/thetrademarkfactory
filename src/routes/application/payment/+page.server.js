@@ -60,7 +60,7 @@ export const actions = {
 									description: description?.join?.('; ') ?? ''
 								}
 							},
-							// tax_rates: [import.meta.env.VITE_STRIPE_TAX_RATE]
+							tax_rates: [import.meta.env.VITE_STRIPE_TAX_RATE]
 						};
 					}),
 					{
