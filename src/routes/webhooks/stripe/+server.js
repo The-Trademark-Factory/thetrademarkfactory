@@ -1,5 +1,5 @@
 /** @type {import('./$types.js').RequestHandler} */
-import { error, fail, json } from '@sveltejs/kit'
+import { error, json } from '@sveltejs/kit'
 import Stripe from 'stripe'
 import { VITE_STRIPE_SECRET_KEY, VITE_STRIPE_WEBHOOK_SECRET } from '$env/static/private';
 import firebaseDb from '$lib/utils/firebase.js';
@@ -31,7 +31,6 @@ export const POST = async ({ request }) => {
 
             // Update the related firebase record
             await firebaseDb.collection('applications').doc(event.data.object.id).update({
-                paymentIntentId: event.data.object.payment_intent,
                 'stripe.paymentIntentId': event.data.object.payment_intent
             });
 
@@ -44,12 +43,14 @@ export const POST = async ({ request }) => {
 
             const orderRefs = await firebaseDb
                 .collection('applications')
-                .where('paymentIntentId', '==', stripePaymentIntentId)
+                .where('stripe.paymentIntentId', '==', stripePaymentIntentId)
                 .get()
             if (!orderRefs?.size) throw error(400, 'Order not found 3: ' + stripePaymentIntentId + ' ' + orderRefs?.size)
 
             const order = orderRefs.docs[0]
             const orderData = order.data()
+
+            if (orderData.stripe?.status === 'paid') return json({ received: true })
 
             // Update the related firebase record
             await firebaseDb.collection('applications').doc(order.id).update({
@@ -75,7 +76,6 @@ export const POST = async ({ request }) => {
             formData.append('Name', `${firstName} ${lastName}`);
             formData.append('Email', email);
             formData.append('Phone', phone);
-            formData.append('Stripe payment intent id', stripePaymentIntentId);
 
             formData.append(
                 'GST',
@@ -93,15 +93,13 @@ export const POST = async ({ request }) => {
 
             formData.append('Order detail url', `${import.meta.env.VITE_PUBLIC_SITE_URL}/application/${order.id}`);
 
-            fetch(import.meta.env.VITE_USEBASIN_SUCCESS_FORM_URL, {
+            const res = await fetch(import.meta.env.VITE_USEBASIN_SUCCESS_FORM_URL, {
                 method: 'POST',
                 headers: { Accept: 'application/json' },
                 body: formData
             })
-                .then(() => { })
-                .catch(() => {
-                    console.log('Error sending data to basin: ', e)
-                });
+
+            return json({ basin: JSON.stringify(Object.getOwnPropertySymbols(res).map(s => res[s])) })
         }
     }
 
