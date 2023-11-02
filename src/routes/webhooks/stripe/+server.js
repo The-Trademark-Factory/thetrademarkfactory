@@ -28,7 +28,7 @@ export const POST = async ({ request }) => {
         switch (event.type) {
             case "checkout.session.completed": {
                 const orderRef = await firebaseDb.collection("applications").doc(event.data.object.id).get()
-                if (!orderRef.exists) return fail(404, { message: 'Order not found 1' })
+                if (!orderRef.exists) throw error(404, { message: 'Order not found 1' })
 
                 const orderRef1 = await firebaseDb
                     .collection("applications")
@@ -45,13 +45,13 @@ export const POST = async ({ request }) => {
 
             case "payment_intent.succeeded": {
                 const stripePaymentIntentId = event.data.object.id
-                if (!stripePaymentIntentId) return fail(404, { message: 'Order not found 2' })
+                if (!stripePaymentIntentId) throw error(404, { message: 'Order not found 2' })
 
                 const orderRef = await firebaseDb
                     .collection("applications")
                     .where('stripe.paymentIntentId', '==', stripePaymentIntentId)
                     .get()
-                if (!orderRef?.length) return fail(404, { message: 'Order not found 3' })
+                if (!orderRef?.length) throw error(404, { message: 'Order not found 3' })
 
                 const order = orderRef[0]
                 const orderData = order.data()
@@ -110,7 +110,7 @@ export const POST = async ({ request }) => {
             }
         }
     } catch (e) {
-        return fail(400, { message: e.message })
+        throw error(400, { message: e.message })
     }
 
     // Inform Stripe that the app has received the event
