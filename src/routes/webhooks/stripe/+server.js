@@ -50,6 +50,8 @@ export const POST = async ({ request }) => {
             const order = orderRefs.docs[0]
             const orderData = order.data()
 
+            if (orderData.stripe?.status === 'paid') return json({ received: true })
+
             // Update the related firebase record
             await firebaseDb.collection('applications').doc(order.id).update({
                 'stripe.status': "paid"
