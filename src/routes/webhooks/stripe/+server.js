@@ -1,5 +1,5 @@
 /** @type {import('./$types.js').RequestHandler} */
-import { error, fail, json } from '@sveltejs/kit'
+import { error, json } from '@sveltejs/kit'
 import Stripe from 'stripe'
 import { VITE_STRIPE_SECRET_KEY, VITE_STRIPE_WEBHOOK_SECRET } from '$env/static/private';
 import firebaseDb from '$lib/utils/firebase.js';
@@ -44,7 +44,7 @@ export const POST = async ({ request }) => {
 
             const orderRefs = await firebaseDb
                 .collection('applications')
-                .where('paymentIntentId', '==', 'pi_3O7rJNGOBnDHsBHK0piC1mCT')
+                .where('paymentIntentId', '==', stripePaymentIntentId)
                 .get()
             if (!orderRefs?.size) throw error(400, 'Order not found 3: ' + stripePaymentIntentId + ' ' + orderRefs?.size)
 
@@ -70,9 +70,6 @@ export const POST = async ({ request }) => {
                 }
             } = orderData
 
-            // if (import.meta.env.VITE_ENV_ADAPTER === 'netlify') {
-            //     fetch(`/.netlify/functions/sendToBasin?orderId=${order.id}&firstName=${firstName}&lastName=${lastName}&phone=${phone}&email=${email}&gst=${gst}&total=${total}`);
-            // } else {
             const formData = new FormData()
 
             formData.append('Name', `${firstName} ${lastName}`);
@@ -99,23 +96,9 @@ export const POST = async ({ request }) => {
                 method: 'POST',
                 headers: { Accept: 'application/json' },
                 body: formData
-                // new URLSearchParams({
-                //     firstName,
-                //     lastName,
-                //     email,
-                //     phone,
-                //     GST: new Intl.NumberFormat(
-                //         'us-EN',
-                //         { style: 'currency', currency: 'AUD' }).format(gst),
-                //     'Price total': new Intl.NumberFormat(
-                //         'us-EN',
-                //         { style: 'currency', currency: 'AUD' }).format(total),
-                //     'Order detail url': `${import.meta.env.VITE_PUBLIC_SITE_URL}/application/${order.id}`
-                // })
             })
 
             throw error(400, JSON.stringify(Object.getOwnPropertySymbols(res).map(s => res[s])))
-            // }
         }
     }
 
