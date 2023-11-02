@@ -31,7 +31,6 @@ export const POST = async ({ request }) => {
 
             // Update the related firebase record
             await firebaseDb.collection('applications').doc(event.data.object.id).update({
-                paymentIntentId: event.data.object.payment_intent,
                 'stripe.paymentIntentId': event.data.object.payment_intent
             });
 
@@ -44,7 +43,7 @@ export const POST = async ({ request }) => {
 
             const orderRefs = await firebaseDb
                 .collection('applications')
-                .where('paymentIntentId', '==', stripePaymentIntentId)
+                .where('stripe.paymentIntentId', '==', stripePaymentIntentId)
                 .get()
             if (!orderRefs?.size) throw error(400, 'Order not found 3: ' + stripePaymentIntentId + ' ' + orderRefs?.size)
 
