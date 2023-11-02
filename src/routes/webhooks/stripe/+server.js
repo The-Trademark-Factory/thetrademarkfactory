@@ -98,7 +98,7 @@ export const POST = async ({ request }) => {
                 body: formData
             })
                 .then(() => { })
-                .catch(() => {
+                .catch((e) => {
                     console.log('Error sending data to basin: ', e)
                 });
         }
