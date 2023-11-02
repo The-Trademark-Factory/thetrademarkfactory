@@ -14,7 +14,6 @@ export const actions = {
 		const internationalTrademarks = form.get('international_trademarks');
 		const searchType = form.get('search_type');
 		const searchSource = form.get('search_source');
-		const createdAt = form.get('created_at');
 
 		const items = JSON.parse(itemsStr);
 
@@ -44,10 +43,9 @@ export const actions = {
 				abn
 			} = JSON.parse(personalDetailsStr);
 
-			const documentId = Buffer.from(
-				`${email}_${createdAt}`,
-				'utf8'
-			).toString('base64');
+			const gstTotal = 0.1 * items.reduce((acc, { price }) => acc + +price, 0)
+			const subtotal = +governmentFee * items.length +
+				items.reduce((acc, { price }) => acc + +price, 0)
 
 			const session = await stripe.checkout.sessions.create({
 				line_items: [
@@ -75,21 +73,13 @@ export const actions = {
 					}
 				],
 				mode: 'payment',
-				metadata: {
-					email,
-					documentId
-				},
 				success_url: `${import.meta.env.VITE_PUBLIC_SITE_URL
 					}/application/success?st=${secretString}&si={CHECKOUT_SESSION_ID}`,
 				cancel_url: `${import.meta.env.VITE_PUBLIC_SITE_URL}/application/search` // this cancel page can be "/application/payment" but for now when accessing it directly, the page is empty
 			});
 
-			const gstTotal = 0.1 * items.reduce((acc, { price }) => acc + +price, 0)
-			const subtotal = +governmentFee * items.length +
-				items.reduce((acc, { price }) => acc + +price, 0)
-
 			// Create a firebase record
-			await setDoc(doc(firebaseDb, "applications", documentId), {
+			await setDoc(doc(firebaseDb, "applications", session.id), {
 				applicationDetails: {
 					owner,
 					based,

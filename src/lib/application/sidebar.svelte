@@ -85,7 +85,6 @@
 
 		formData.set('search_type', type);
 		formData.set('search_source', searchSource);
-		formData.set('created_at', createdAt);
 
 		return ({ result }) => {
 			console.log('Checkout result: ', result);
