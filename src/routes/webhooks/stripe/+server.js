@@ -75,7 +75,6 @@ export const POST = async ({ request }) => {
             formData.append('Name', `${firstName} ${lastName}`);
             formData.append('Email', email);
             formData.append('Phone', phone);
-            formData.append('Stripe payment intent id', stripePaymentIntentId);
 
             formData.append(
                 'GST',
