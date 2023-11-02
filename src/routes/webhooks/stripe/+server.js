@@ -42,15 +42,13 @@ export const POST = async ({ request }) => {
             const stripePaymentIntentId = event.data.object.id
             if (!stripePaymentIntentId) throw error(400, 'Order not found 2')
 
-            const orderRef = await firebaseDb
-                .collection("applications")
+            const orderRefs = await firebaseDb
+                .collection('applications')
                 .where('paymentIntentId', '==', stripePaymentIntentId)
                 .get()
-            console.log('1111111111111', orderRef, orderRef.forEach)
-            orderRef.forEach(r => console.log('222222222', r.data()))
-            if (!orderRef?.length) throw error(400, 'Order not found 3: ' + stripePaymentIntentId + ' ' + orderRef?.length)
+            if (!orderRefs?.size) throw error(400, 'Order not found 3: ' + stripePaymentIntentId + ' ' + orderRefs?.size)
 
-            const order = orderRef[0]
+            const order = orderRefs.docs[0]
             const orderData = order.data()
 
             // Update the related firebase record
