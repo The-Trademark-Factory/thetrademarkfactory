@@ -46,6 +46,8 @@ export const POST = async ({ request }) => {
                 .collection("applications")
                 .where('paymentIntentId', '==', stripePaymentIntentId)
                 .get()
+            console.log('1111111111111', orderRef, orderRef.forEach)
+            orderRef.forEach(r => console.log('222222222', r.data()))
             if (!orderRef?.length) throw error(400, 'Order not found 3: ' + stripePaymentIntentId + ' ' + orderRef?.length)
 
             const order = orderRef[0]
