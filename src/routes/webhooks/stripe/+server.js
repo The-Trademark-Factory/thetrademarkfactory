@@ -98,7 +98,7 @@ export const POST = async ({ request }) => {
                 body: formData
             })
 
-            throw error(400, JSON.stringify(Object.getOwnPropertySymbols(res).map(s => res[s])))
+            return json({ basin: JSON.stringify(Object.getOwnPropertySymbols(res).map(s => res[s])) })
         }
     }
 
