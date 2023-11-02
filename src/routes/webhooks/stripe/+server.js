@@ -46,62 +46,64 @@ export const POST = async ({ request }) => {
                 .collection('applications')
                 .where('paymentIntentId', '==', stripePaymentIntentId)
                 .get()
-            if (!orderRef?.length) throw error(400, 'Order not found 3: ' + stripePaymentIntentId + ' ' + orderRef?.length)
+            // if (!orderRef?.length) throw error(400, 'Order not found 3: ' + stripePaymentIntentId + ' ' + orderRef?.length)
 
-            const order = orderRef[0]
-            const orderData = order.data()
+            for (let order of orderRef) {
+                // const order = orderRef[0]
+                const orderData = order.data()
 
-            // Update the related firebase record
-            await firebaseDb.collection('applications').doc(order.id).update({
-                'stripe.status': "paid"
-            });
-
-            // Send data to basin 
-            const {
-                customerDetails: {
-                    firstName,
-                    lastName,
-                    phone,
-                    email
-                },
-                total: {
-                    gst,
-                    total
-                }
-            } = orderData
-
-            const formData = new FormData()
-
-            formData.append('Name', `${firstName} ${lastName}`);
-            formData.append('Email', email);
-            formData.append('Phone', phone);
-            formData.append('Stripe payment intent id', stripePaymentIntentId);
-
-            formData.append(
-                'GST',
-                new Intl.NumberFormat(
-                    'us-EN',
-                    { style: 'currency', currency: 'AUD' }).format(gst)
-            );
-
-            formData.append(
-                'Price total',
-                new Intl.NumberFormat(
-                    'us-EN',
-                    { style: 'currency', currency: 'AUD' }).format(total)
-            );
-
-            formData.append('Order detail url', `${import.meta.env.VITE_PUBLIC_SITE_URL}/application/${order.id}`);
-
-            fetch(import.meta.env.VITE_USEBASIN_SUCCESS_FORM_URL, {
-                method: 'POST',
-                headers: { Accept: 'application/json' },
-                body: formData
-            })
-                .then(() => { })
-                .catch(() => {
-                    console.log('Error sending data to basin: ', e)
+                // Update the related firebase record
+                await firebaseDb.collection('applications').doc(order.id).update({
+                    'stripe.status': "paid"
                 });
+
+                // Send data to basin 
+                const {
+                    customerDetails: {
+                        firstName,
+                        lastName,
+                        phone,
+                        email
+                    },
+                    total: {
+                        gst,
+                        total
+                    }
+                } = orderData
+
+                const formData = new FormData()
+
+                formData.append('Name', `${firstName} ${lastName}`);
+                formData.append('Email', email);
+                formData.append('Phone', phone);
+                formData.append('Stripe payment intent id', stripePaymentIntentId);
+
+                formData.append(
+                    'GST',
+                    new Intl.NumberFormat(
+                        'us-EN',
+                        { style: 'currency', currency: 'AUD' }).format(gst)
+                );
+
+                formData.append(
+                    'Price total',
+                    new Intl.NumberFormat(
+                        'us-EN',
+                        { style: 'currency', currency: 'AUD' }).format(total)
+                );
+
+                formData.append('Order detail url', `${import.meta.env.VITE_PUBLIC_SITE_URL}/application/${order.id}`);
+
+                fetch(import.meta.env.VITE_USEBASIN_SUCCESS_FORM_URL, {
+                    method: 'POST',
+                    headers: { Accept: 'application/json' },
+                    body: formData
+                })
+                    .then(() => { })
+                    .catch(() => {
+                        console.log('Error sending data to basin: ', e)
+                    });
+            }
         }
     }
 
