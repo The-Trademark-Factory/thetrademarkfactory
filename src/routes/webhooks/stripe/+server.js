@@ -30,6 +30,11 @@ export const POST = async ({ request }) => {
                 const orderRef = await firebaseDb.collection("applications").doc(event.data.object.id).get()
                 if (!orderRef.exists) throw fail(404, { message: 'Order not found 1' })
 
+                const orderRef1 = await firebaseDb
+                    .collection("applications")
+                    .where('stripe.paymentIntentId', '==', event.data.object.payment_intent)
+                    .get()
+
                 // Update the related firebase record
                 await firebaseDb.collection('applications').doc(event.data.object.id).update({
                     'stripe.paymentIntentId': event.data.object.payment_intent
