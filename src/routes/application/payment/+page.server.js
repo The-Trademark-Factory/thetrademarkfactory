@@ -80,7 +80,6 @@ export const actions = {
 
 			// Create a firebase record
 			await setDoc(doc(firebaseDb, "applications", session.id), {
-				paymentIntentId: '',
 				applicationDetails: {
 					owner,
 					based,
