@@ -27,7 +27,7 @@ export const POST = async ({ request }) => {
     switch (event.type) {
         case "checkout.session.completed": {
             const orderRef = await firebaseDb.collection("applications").doc(event.data.object.id).get()
-            if (!orderRef.exists) throw fail(404, 'Order not found 1')
+            if (!orderRef.exists) throw fail(404, { message: 'Order not found 1' })
 
             // Update the related firebase record
             await firebaseDb.collection('applications').doc(event.data.object.id).update({
@@ -39,16 +39,21 @@ export const POST = async ({ request }) => {
 
         case "payment_intent.succeeded": {
             const stripePaymentIntentId = event.data.object.id
-            if (!stripePaymentIntentId) throw fail(404, 'Order not found 2')
+            if (!stripePaymentIntentId) throw fail(404, { message: 'Order not found 2' })
 
             const orderRef = await firebaseDb
                 .collection("applications")
                 .where('stripe.paymentIntentId', '==', stripePaymentIntentId)
                 .get()
-            if (!orderRef.length) throw fail(404, 'Order not found 3')
+            if (!orderRef.length) throw fail(404, { message: 'Order not found 3' })
 
             const order = orderRef[0]
             const orderData = order.data()
+
+            // Update the related firebase record
+            await firebaseDb.collection('applications').doc(order.id).update({
+                'stripe.status': "paid"
+            });
 
             // Send data to basin 
             const {
@@ -96,11 +101,6 @@ export const POST = async ({ request }) => {
                 .catch(() => {
                     console.log('Error sending data to basin: ', e)
                 });
-
-            // Update the related firebase record
-            await firebaseDb.collection('applications').doc(order.id).update({
-                'stripe.status': "paid"
-            });
         }
     }
 
