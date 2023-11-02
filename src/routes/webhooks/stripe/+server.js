@@ -115,7 +115,7 @@ export const POST = async ({ request }) => {
                 // })
             })
 
-            throw error(400, `${res}`)
+            throw error(400, JSON.stringify(res))
             // }
         }
     }
