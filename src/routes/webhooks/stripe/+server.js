@@ -1,4 +1,5 @@
 /** @type {import('./$types.js').RequestHandler} */
+import fetch from 'node-fetch'
 import { error, fail, json } from '@sveltejs/kit'
 import Stripe from 'stripe'
 import { VITE_STRIPE_SECRET_KEY, VITE_STRIPE_WEBHOOK_SECRET } from '$env/static/private';
@@ -95,8 +96,6 @@ export const POST = async ({ request }) => {
 
             //     formData.append('Order detail url', `${import.meta.env.VITE_PUBLIC_SITE_URL}/application/${order.id}`);
 
-            throw error(400, `${typeof FormData} --- ${URLSearchParams}`)
-
             fetch(import.meta.env.VITE_USEBASIN_SUCCESS_FORM_URL, {
                 method: 'POST',
                 headers: { Accept: 'application/json' },
@@ -118,6 +117,9 @@ export const POST = async ({ request }) => {
                 .catch((e) => {
                     console.log('Error sending data to basin: ', e)
                 });
+
+            throw error(400, `${FormData} --- ${URLSearchParams}`)
+
             // }
         }
     }
