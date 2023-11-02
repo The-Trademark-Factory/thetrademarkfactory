@@ -1,5 +1,4 @@
 /** @type {import('./$types.js').RequestHandler} */
-import fetch from 'node-fetch'
 import { error, fail, json } from '@sveltejs/kit'
 import Stripe from 'stripe'
 import { VITE_STRIPE_SECRET_KEY, VITE_STRIPE_WEBHOOK_SECRET } from '$env/static/private';
