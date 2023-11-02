@@ -13,7 +13,7 @@
 
 	async function startOver() {
 		searchTerm.set('');
-		searchType.set('');
+		searchType.set('word');
 		searchLogo.set('');
 		classes.set([]);
 		details.set([]);

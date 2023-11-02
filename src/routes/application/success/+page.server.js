@@ -28,38 +28,14 @@ export async function load({ url }) {
     // Secret string is expired after 10 minutes
     if (now - issueingTime > 10 * 60 * 1000) throw redirect(303, '/')
 
+    let [, , personalDetails, itemsStr, governmentFee, internationalTrademarks] = decodedSecret
+    if (internationalTrademarks === 'null') internationalTrademarks = ''
+
+    if (!personalDetails || !itemsStr || !governmentFee) throw redirect(303, '/')
+
     const session_id = url.searchParams.get('si')
     if (!session_id) throw redirect(303, '/')
 
     const session = await stripe.checkout.sessions.retrieve(session_id);
     if (!session || !session.customer_details || !session.payment_intent) throw redirect(303, '/')
-
-    let [, , personalDetails, itemsStr, governmentFee, internationalTrademarks] = decodedSecret
-    if (internationalTrademarks === 'null') internationalTrademarks = ''
-
-    if (!itemsStr || !governmentFee) throw redirect(303, '/')
-
-    let itemList = []
-    try {
-        const items = JSON.parse(itemsStr)
-        itemList = items.map(({ class: classNo, price, description }) => {
-            return {
-                name: 'Class ' + classNo,
-                description: description?.join?.('; ') ?? '',
-                quantity: 1,
-                unit_price: +price,
-            }
-        })
-    } catch (e) {
-        throw redirect(303, '/')
-    }
-
-    return {
-        email: session.customer_details.email,
-        personalDetails,
-        itemList,
-        governmentFee,
-        internationalTrademarks,
-        stripePaymentIntentId: session.payment_intent
-    }
 }

@@ -1,7 +1,8 @@
 <script>
 	import { enhance } from '$app/forms';
 	import { searchResults_page } from '../../../data/global.json';
-	import { setItem } from '$lib/utils/localStorageUtils';
+	import { getItem, setItem } from '$lib/utils/localStorageUtils';
+	import { openDB, getImage } from '$lib/utils/indexedDB';
 	import { goto } from '$app/navigation';
 	import { page } from '$app/stores';
 	import { X } from 'lucide-svelte';
@@ -14,6 +15,7 @@
 		detailsValid,
 		international
 	} from '$lib/utils/stores';
+	import { uploadImage } from '$lib/utils/firebase.js';
 
 	export let terms;
 
@@ -59,14 +61,30 @@
 		}
 	}
 
+	async function getStoredImage() {
+		let imageDB = await openDB();
+		let imageFile = getImage(imageDB);
+		return imageFile;
+	}
+
 	const getClassPrice = (index) => {
 		return index === 0 ? feeFirstClass : feeAdditionalClass;
 	};
 
 	// Handle Stripe payment
-	const onCheckout = ({ cancel }) => {
+	const onCheckout = async ({ formData, cancel }) => {
 		if (checkingOut) return cancel();
 		checkingOut = true;
+
+		const type = $searchType;
+		const data = type === 'word' ? getItem('searchTerm') : await getStoredImage();
+		const createdAt = new Date().getTime();
+
+		const searchSource =
+			type === 'word' ? data : await uploadImage(data, $details.email, createdAt);
+
+		formData.set('search_type', type);
+		formData.set('search_source', searchSource);
 
 		return ({ result }) => {
 			console.log('Checkout result: ', result);

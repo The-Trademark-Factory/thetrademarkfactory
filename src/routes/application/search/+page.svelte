@@ -65,7 +65,7 @@
 
 	function deletePrevious() {
 		localStorage.clear();
-		searchType.set('');
+		searchType.set('word');
 		searchTerm.set('');
 		classes.set([]);
 		details.set([]);

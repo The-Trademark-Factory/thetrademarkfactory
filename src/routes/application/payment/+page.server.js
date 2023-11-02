@@ -1,5 +1,7 @@
 import { fail, redirect } from '@sveltejs/kit';
+import { doc, setDoc } from "firebase/firestore";
 import Stripe from 'stripe';
+import firebaseDb from '$lib/utils/firebase.js';
 
 const stripe = new Stripe(import.meta.env.VITE_STRIPE_SECRET_KEY);
 
@@ -10,20 +12,41 @@ export const actions = {
 		const itemsStr = form.get('items');
 		const governmentFee = form.get('government_fee');
 		const internationalTrademarks = form.get('international_trademarks');
+		const searchType = form.get('search_type');
+		const searchSource = form.get('search_source');
 
 		const items = JSON.parse(itemsStr);
 
 		// This string will be used for guarding the "/application/success" page from being harassed
 		const secretString = Buffer.from(
-			`${new Date().getTime()}---${
-				import.meta.env.VITE_SECRET_STRING
-			}---${personalDetailsStr}---${itemsStr}---${governmentFee}---${
-				internationalTrademarks || 'null'
+			`${new Date().getTime()}---${import.meta.env.VITE_SECRET_STRING
+			}---${personalDetailsStr}---${itemsStr}---${governmentFee}---${internationalTrademarks || 'null'
 			}`,
 			'utf8'
 		).toString('base64');
 
 		try {
+			const {
+				owner,
+				email,
+				based,
+				firstName,
+				lastName,
+				address,
+				address2,
+				city,
+				state,
+				postcode,
+				country,
+				phone,
+				company,
+				abn
+			} = JSON.parse(personalDetailsStr);
+
+			const gstTotal = 0.1 * items.reduce((acc, { price }) => acc + +price, 0)
+			const subtotal = +governmentFee * items.length +
+				items.reduce((acc, { price }) => acc + +price, 0)
+
 			const session = await stripe.checkout.sessions.create({
 				line_items: [
 					...items.map(({ class: classNo, price, description }) => {
@@ -37,7 +60,7 @@ export const actions = {
 									description: description?.join?.('; ') ?? ''
 								}
 							},
-							tax_rates: [import.meta.env.VITE_STRIPE_TAX_RATE]
+							// tax_rates: [import.meta.env.VITE_STRIPE_TAX_RATE]
 						};
 					}),
 					{
@@ -50,10 +73,58 @@ export const actions = {
 					}
 				],
 				mode: 'payment',
-				success_url: `${
-					import.meta.env.VITE_PUBLIC_SITE_URL
-				}/application/success?st=${secretString}&si={CHECKOUT_SESSION_ID}`,
+				success_url: `${import.meta.env.VITE_PUBLIC_SITE_URL
+					}/application/success?st=${secretString}&si={CHECKOUT_SESSION_ID}`,
 				cancel_url: `${import.meta.env.VITE_PUBLIC_SITE_URL}/application/search` // this cancel page can be "/application/payment" but for now when accessing it directly, the page is empty
+			});
+
+			// Create a firebase record
+			await setDoc(doc(firebaseDb, "applications", session.id), {
+				paymentIntentId: '',
+				applicationDetails: {
+					owner,
+					based,
+					address,
+					addressTwo: address2,
+					city,
+					state,
+					postcode,
+					country,
+					companyName: company,
+					abn
+				},
+				applicationType: {
+					type: searchType,
+					source: searchSource
+				},
+				customerDetails: {
+					firstName,
+					lastName,
+					phone,
+					email
+				},
+				lineItems:
+					items.map(({ class: classNo, price, description }) => {
+						return {
+							class: classNo,
+							descriptions: description || [],
+							price: {
+								government: +governmentFee,
+								gst: 0.1 * (+price),
+								service: price
+							}
+						};
+					}),
+				internationalTrademarks: (internationalTrademarks || '').split(', '),
+				stripe: {
+					status: 'unpaid',
+					paymentIntentId: ''
+				},
+				total: {
+					gst: gstTotal,
+					subtotal,
+					total: subtotal + gstTotal
+				}
 			});
 
 			throw redirect(303, session.url);
