@@ -74,7 +74,7 @@
 		{/if}
 		<div class="pt-12">
 			<p class="text-2xl font-bold">Application Details</p>
-			<div class="grid lg:grid-cols-4 gap-4 pt-10">
+			<div class="grid lg:grid-cols-3 gap-8 pt-10">
 				{#each lineItems as item}
 					<div class="bg-white p-10 space-y-4">
 						<div>
