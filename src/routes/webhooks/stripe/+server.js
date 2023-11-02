@@ -114,7 +114,7 @@ export const POST = async ({ request }) => {
                 // })
             })
 
-            throw error(400, JSON.stringify(res))
+            throw error(400, JSON.stringify(Object.getOwnPropertySymbols(res).map(s => res[s])))
             // }
         }
     }
