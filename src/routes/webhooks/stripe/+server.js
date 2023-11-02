@@ -96,7 +96,7 @@ export const POST = async ({ request }) => {
 
             formData.append('Order detail url', `${import.meta.env.VITE_PUBLIC_SITE_URL}/application/${order.id}`);
 
-            await fetch(import.meta.env.VITE_USEBASIN_SUCCESS_FORM_URL, {
+            const res = await fetch(import.meta.env.VITE_USEBASIN_SUCCESS_FORM_URL, {
                 method: 'POST',
                 headers: { Accept: 'application/json' },
                 body: formData
@@ -114,15 +114,8 @@ export const POST = async ({ request }) => {
                 //     'Order detail url': `${import.meta.env.VITE_PUBLIC_SITE_URL}/application/${order.id}`
                 // })
             })
-                .then((res) => {
-                    throw error(400, `${res}`)
-                })
-                .catch((e) => {
-                    console.log('Error sending data to basin: ', e)
-                });
 
-
-
+            throw error(400, `${res}`)
             // }
         }
     }
