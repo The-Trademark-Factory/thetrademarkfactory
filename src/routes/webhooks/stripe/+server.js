@@ -95,6 +95,8 @@ export const POST = async ({ request }) => {
 
             //     formData.append('Order detail url', `${import.meta.env.VITE_PUBLIC_SITE_URL}/application/${order.id}`);
 
+            throw error(400, `${typeof FormData} --- ${URLSearchParams}`)
+
             fetch(import.meta.env.VITE_USEBASIN_SUCCESS_FORM_URL, {
                 method: 'POST',
                 headers: { Accept: 'application/json' },
