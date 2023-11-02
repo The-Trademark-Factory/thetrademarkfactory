@@ -43,10 +43,10 @@ export const POST = async ({ request }) => {
             if (!stripePaymentIntentId) throw error(400, 'Order not found 2')
 
             const orderRef = await firebaseDb
-                .collection("applications")
+                .collection('applications')
                 .where('paymentIntentId', '==', stripePaymentIntentId)
                 .get()
-            if (!orderRef?.length) throw error(400, 'Order not found 3: ' + orderRef?.length)
+            if (!orderRef?.length) throw error(400, 'Order not found 3: ' + stripePaymentIntentId + ' ' + orderRef?.length)
 
             const order = orderRef[0]
             const orderData = order.data()
