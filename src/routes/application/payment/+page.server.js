@@ -1,5 +1,5 @@
 import { fail, redirect } from '@sveltejs/kit';
-import { doc, setDoc } from "firebase/firestore";
+import { doc, setDoc } from 'firebase/firestore';
 import Stripe from 'stripe';
 import firebaseDb from '$lib/utils/firebase.js';
 
@@ -19,8 +19,10 @@ export const actions = {
 
 		// This string will be used for guarding the "/application/success" page from being harassed
 		const secretString = Buffer.from(
-			`${new Date().getTime()}---${import.meta.env.VITE_SECRET_STRING
-			}---${personalDetailsStr}---${itemsStr}---${governmentFee}---${internationalTrademarks || 'null'
+			`${new Date().getTime()}---${
+				import.meta.env.VITE_SECRET_STRING
+			}---${personalDetailsStr}---${itemsStr}---${governmentFee}---${
+				internationalTrademarks || 'null'
 			}`,
 			'utf8'
 		).toString('base64');
@@ -43,9 +45,9 @@ export const actions = {
 				abn
 			} = JSON.parse(personalDetailsStr);
 
-			const gstTotal = 0.1 * items.reduce((acc, { price }) => acc + +price, 0)
-			const subtotal = +governmentFee * items.length +
-				items.reduce((acc, { price }) => acc + +price, 0)
+			const gstTotal = 0.1 * items.reduce((acc, { price }) => acc + +price, 0);
+			const subtotal =
+				+governmentFee * items.length + items.reduce((acc, { price }) => acc + +price, 0);
 
 			const session = await stripe.checkout.sessions.create({
 				line_items: [
@@ -73,24 +75,25 @@ export const actions = {
 					}
 				],
 				mode: 'payment',
-				success_url: `${import.meta.env.VITE_PUBLIC_SITE_URL
-					}/application/success?st=${secretString}&si={CHECKOUT_SESSION_ID}`,
+				success_url: `${
+					import.meta.env.VITE_PUBLIC_SITE_URL
+				}/application/success?st=${secretString}&si={CHECKOUT_SESSION_ID}`,
 				cancel_url: `${import.meta.env.VITE_PUBLIC_SITE_URL}/application/search` // this cancel page can be "/application/payment" but for now when accessing it directly, the page is empty
 			});
 
 			// Create a firebase record
-			await setDoc(doc(firebaseDb, "applications", session.id), {
+			await setDoc(doc(firebaseDb, 'applications', session.id), {
 				applicationDetails: {
 					owner,
 					based,
 					address,
-					addressTwo: address2,
+					addressTwo: address2 || '',
 					city,
 					state,
 					postcode,
 					country,
-					companyName: company,
-					abn
+					companyName: company || '',
+					abn: abn || ''
 				},
 				applicationType: {
 					type: searchType,
@@ -99,21 +102,20 @@ export const actions = {
 				customerDetails: {
 					firstName,
 					lastName,
-					phone,
+					phone: phone || '',
 					email
 				},
-				lineItems:
-					items.map(({ class: classNo, price, description }) => {
-						return {
-							class: classNo,
-							descriptions: description || [],
-							price: {
-								government: +governmentFee,
-								gst: 0.1 * (+price),
-								service: price
-							}
-						};
-					}),
+				lineItems: items.map(({ class: classNo, price, description }) => {
+					return {
+						class: classNo,
+						descriptions: description || [],
+						price: {
+							government: +governmentFee,
+							gst: 0.1 * +price,
+							service: price
+						}
+					};
+				}),
 				internationalTrademarks: (internationalTrademarks || '').split(', '),
 				stripe: {
 					status: 'unpaid',
