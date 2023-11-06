@@ -19,18 +19,18 @@
 {#if data.order}
 	<section class="relative bg-ttmfDarkGreen text-white overflow-hidden">
 		<div
-			class="relative z-10 max-w-screen-2xl mx-auto pt-44 lg:pt-44 lg:pb-20 max-2xl:px-6 flex items-center justify-between gap-6 flex-wrap">
-			<h1 class="text-4xl lg:text-6xl font-bold flex items-center gap-6">
+			class="relative z-10 max-w-screen-2xl mx-auto pt-36 lg:pt-44 lg:pb-20 max-2xl:px-6 flex items-center justify-between gap-6 flex-wrap">
+			<h1 class="text-4xl lg:text-6xl font-bold flex flex-wrap items-center gap-6">
 				Order
 				{#if applicationType.type === 'word'}
 					<span
-						class="px-5 py-3 rounded-full text-3xl lg:text-5xl border-2 border-ttmfLightTextGreen bg-ttmfGreen/50"
+						class="px-5 py-3 rounded-lg lg:rounded-full text-3xl lg:text-5xl border-2 border-ttmfLightTextGreen bg-ttmfGreen/50"
 						>{applicationType.source}</span>
 				{:else}
 					<a href={applicationType.source} class="underline">Download Image</a>
 				{/if}
 			</h1>
-			<div class="bg-ttmfGreen/50 p-6 text-lg space-y-2">
+			<div class="bg-ttmfGreen/50 py-6 px-10 text-lg space-y-2 max-lg:w-full max-lg:mb-12">
 				<p class="flex items-center justify-between gap-4">
 					<span class="font-bold">Subtotal</span> ${total.subtotal}
 				</p>
@@ -72,8 +72,16 @@
 				<OrderConfirmedField key="Country" value={applicationDetails.country} />
 				<OrderConfirmedField key="ABN" value={applicationDetails.abn} />
 			</div>
+			{#if applicationDetails.orderNote}
+				<div class="pt-6">
+					<div>
+						<p class="capitalize font-semibold">Order Note</p>
+						<p class="pt-2">{applicationDetails.orderNote}</p>
+					</div>
+				</div>
+			{/if}
 		</div>
-		{#if internationalTrademarks.length > 0}
+		{#if internationalTrademarks[0]}
 			<div class="pt-12">
 				<p class="text-2xl font-bold">International Trademarks</p>
 				<div class="flex items-center gap-10 pt-6">
