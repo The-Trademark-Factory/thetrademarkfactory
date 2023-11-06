@@ -40,7 +40,8 @@ export const actions = {
 				country,
 				phone,
 				company,
-				abn
+				abn,
+				orderNote
 			} = JSON.parse(personalDetailsStr);
 
 			const gstTotal = 0.1 * items.reduce((acc, { price }) => acc + +price, 0);
@@ -89,7 +90,8 @@ export const actions = {
 					postcode,
 					country,
 					companyName: company || '',
-					abn: abn || ''
+					abn: abn || '',
+					orderNote: orderNote || ''
 				},
 				applicationType: {
 					type: searchType,

@@ -120,6 +120,15 @@
 			"options": [],
 			"placeholder": "0412 345 678",
 			"required": false
+		},
+		{
+			"label": "Order Note",
+			"name": "orderNote",
+			"type": "textarea",
+			"id": "orderNote",
+			"options": [],
+			"placeholder": "",
+			"required": false
 		}
 	],
 	"conditional": {
