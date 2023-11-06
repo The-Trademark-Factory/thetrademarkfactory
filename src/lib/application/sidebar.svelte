@@ -16,6 +16,7 @@
 		international
 	} from '$lib/utils/stores';
 	import { uploadImage } from '$lib/utils/firebase.js';
+	import Svg from '../components/Svg.svelte';
 
 	export let terms;
 
@@ -241,9 +242,12 @@
 				type="hidden"
 				name="international_trademarks"
 				value={Object.keys($international).join(', ')} />
-			<button type="submit" disabled={checkingOut} class="sidebarNext">
+			<button
+				type="submit"
+				disabled={checkingOut}
+				class="sidebarNext inline-flex gap-4 items-center justify-center">
 				{#if checkingOut}
-					Processing...
+					<span class="text-white/60">Processing</span> <span><Svg name="spinner" /></span>
 				{:else}
 					Checkout
 				{/if}
