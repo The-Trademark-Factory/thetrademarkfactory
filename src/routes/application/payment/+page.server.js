@@ -20,7 +20,7 @@ export const actions = {
 		// This string will be used for guarding the "/application/success" page from being harassed
 		const secretString = Buffer.from(
 			`${new Date().getTime()}---${import.meta.env.VITE_SECRET_STRING
-			}---${personalDetailsStr}---${itemsStr}---${governmentFee}---${internationalTrademarks || 'null'
+			}---${personalDetailsStr}---${itemsStr.slice(0, 500)}---${governmentFee}---${internationalTrademarks || 'null'
 			}`,
 			'utf8'
 		).toString('base64');
@@ -49,15 +49,14 @@ export const actions = {
 
 			const session = await stripe.checkout.sessions.create({
 				line_items: [
-					...items.map(({ class: classNo, price, description }) => {
+					...items.map(({ class: classNo, price }) => {
 						return {
 							quantity: 1,
 							price_data: {
 								unit_amount: +price * 100,
 								currency: 'AUD',
 								product_data: {
-									name: 'Class ' + classNo,
-									description: description?.join?.('; ') ?? ''
+									name: 'Class ' + classNo
 								}
 							},
 							tax_rates: [import.meta.env.VITE_STRIPE_TAX_RATE]
