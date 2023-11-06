@@ -112,6 +112,14 @@
 									<option value={option}>{option}</option>
 								{/each}
 							</select>
+						{:else if field.type === 'textarea'}
+							<textarea
+								class="appearance-none border-2 border-ttmfBeige rounded w-full py-4 px-3 text-ttmfBlack font-bold leading-tight focus:outline-none focus:shadow-outline"
+								rows="4"
+								bind:value={$details[field.id]}
+								id={field.id}
+								name={field.name}
+								placeholder={field.placeholder ?? ''} />
 						{:else}
 							<input
 								class="appearance-none border-2 border-ttmfBeige rounded w-full py-4 px-3 text-ttmfBlack font-bold leading-tight focus:outline-none focus:shadow-outline"
