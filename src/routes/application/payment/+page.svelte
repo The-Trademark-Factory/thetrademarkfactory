@@ -23,12 +23,12 @@
 					<p><span class="font-bold">Trademark</span>: {$searchTerm}</p>
 					<p>
 						<span class="font-bold">Classes</span>:
-						<span class="inline-flex">
+						<span class="inline-flex flex-wrap">
 							{#each $classes as el, index}
 								<span
 									>{el.class}
 									<span class="italic">({el.descriptions.length} descriptions)</span></span>
-								{index < $classes.length - 1 ? ', ' : ''}
+								{index < $classes.length - 1 ? ',' : ''}&nbsp;
 							{/each}
 						</span>
 					</p>
