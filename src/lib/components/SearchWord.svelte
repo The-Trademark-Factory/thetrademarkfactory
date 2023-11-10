@@ -30,7 +30,7 @@
 <div class="relative flex max-md:flex-wrap items-center gap-2 max-md:w-full">
 	<input
 		type="text"
-		placeholder={placeholder ? placeholder : 'Search by word'}
+		placeholder={placeholder ? placeholder : 'Enter your trademark'}
 		class="relative text-xl font-bold text-black placeholder:font-normal pl-14 lg:pr-52 py-4 lg:py-6 rounded w-full lg:w-[600px]"
 		required
 		bind:value={searchTerm}
