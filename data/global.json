@@ -23,7 +23,7 @@
 		},
 		"wordDetails": {
 			"existing": {
-				"title": "Our search has found some existing trademarks that might block your application for some classes.",
+				"title": "Our search has found some existing similar trademarks.",
 				"description": "Your trademark may be blocked for goods/services in these classes:"
 			},
 			"process": {
