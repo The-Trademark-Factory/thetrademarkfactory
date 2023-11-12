@@ -14,7 +14,7 @@ content_blocks:
       title_below: today
       full_title:
     search:
-      title: Quick, easy & affordable Australian trademark registration
+      title: Search and apply for your Australian trademark here
     aussie:
       title: Australian Owned & Operated
       subtitle: Developed by trademark lawyers with over 30 years experience
