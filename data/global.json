@@ -54,7 +54,7 @@
 			}
 		},
 		"searchClasses": {
-			"title": "Add your products or services",
+			"title": "Add your products and/or services to the application",
 			"default_title": "What will you use your trademark for?",
 			"default_description": "<p><strong>You must include the products and/or services on which you will use your trademark </strong>, for example&nbsp; \"software\", \"clothing\", \"plumbing\", \"accounting\".</p><p><strong>Enter</strong> your goods and/or services in the search bar and <strong>select</strong>&nbsp;each item to be added to your application. Your application can cover more than one \"class\". For example \"computer software\" is in class 9 whereas \"computer services\" are in class 42.</p><p>You may <strong>choose as many</strong> goods and/or services as you like. You can select <strong>more than one item</strong>&nbsp;in each class if needed. Once you have selected all of your goods and/or services, they will be listed in the side bar for your review before moving on with the application.</p>",
 			"warning_title": "Tips to avoid IP Australia rejecting your application",
