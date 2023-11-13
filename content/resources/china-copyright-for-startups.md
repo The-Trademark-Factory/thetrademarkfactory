@@ -2,7 +2,7 @@
 _schema: page
 title: China copyright for startups
 date: 2023-11-13T04:59:31Z
-image: ''
+image: /upload/c-logo.jpg
 seo:
   title: China copyright registration
   description: >-
@@ -11,7 +11,7 @@ seo:
     created in both Australia and China due to their adherence to the Berne
     Convention. In China, formal copyright registration through the Copyright
     Protection Center of China (CPCC) is an option.
-  image: ''
+  image: /upload/screenshot-2023-11-04-085254.png
   no_index: false
 ---
 Copyright plays a pivotal role in the realm of intellectual property, providing essential protection for the creative endeavors of startups, encompassing literature, music, art, and more. It furnishes founders with the authority to govern the utilization and dissemination of their creations.
