@@ -120,15 +120,15 @@
 						isSearchPage={true} />
 				</div>
 			{/if}
-			{#if data.searchResults.apiData}
+			{#if data.searchResults.apiData && !searchResults_page.searchField.disable_registered}
 				<div class="pt-8">
 					<p
 						class="text-lg font-bold inline-flex items-center gap-2 {searchResultsDetails
 							? 'text-ttmfRed'
 							: 'text-green-500'}">
 						{#if searchResultsDetails}<span class="max-lg:hidden"><Info /></span>{searchResults_page
-								.searchField.registered_title}{:else}<span class="max-lg:hidden"
-								><CheckCircle /></span
+								.searchField.registered_title}{:else if !searchResultsDetails}<span
+								class="max-lg:hidden"><CheckCircle /></span
 							>{searchResults_page.searchField.available_title}{/if}
 					</p>
 					{#if searchResultsDetails}

@@ -50,7 +50,7 @@
 			{word}
 		</p>
 	</div>
-	{#if searchResultsDetails}
+	{#if searchResultsDetails && !content.wordDetails.existing.disable}
 		<div class="pb-8">
 			<p class="text-xl font-bold">
 				{content.wordDetails.existing.title}

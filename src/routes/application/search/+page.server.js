@@ -1,4 +1,5 @@
 import { getAuthToken } from '$lib/utils/getAuthTokenDev';
+import { searchResults_page } from '../../../../data/global.json';
 
 export async function load({ url }) {
 	const searchTerm = url.searchParams.get('name');
@@ -50,7 +51,7 @@ export async function load({ url }) {
 
 		const apiData = await apiRes.json();
 
-		if (apiData.count > 0) {
+		if (apiData.count > 0 && !searchResults_page.searchField.disable_search_results) {
 			const trademarkDetails = await Promise.all(
 				apiData.trademarkIds.slice(0, 3).map(async (trademarkId) => {
 					try {
