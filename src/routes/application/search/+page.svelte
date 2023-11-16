@@ -123,20 +123,21 @@
 			{#if data.searchResults.apiData && !searchResults_page.searchField.disable_registered}
 				<div class="pt-8">
 					<p
-						class="text-lg font-bold inline-flex items-center gap-2 {searchResultsDetails
+						class="text-lg font-bold inline-flex gap-2 {searchResultsDetails
 							? 'text-ttmfRed'
 							: 'text-green-500'}">
-						{#if searchResultsDetails}<span class="max-lg:hidden"><Info /></span>{searchResults_page
-								.searchField.registered_title}{:else if !searchResultsDetails}<span
-								class="max-lg:hidden"><CheckCircle /></span
+						{#if searchResultsDetails}<span class="max-lg:hidden pt-0.5"><Info /></span
+							>{searchResults_page.searchField
+								.registered_title}{:else if !searchResultsDetails}<span class="max-lg:hidden"
+								><CheckCircle /></span
 							>{searchResults_page.searchField.available_title}{/if}
 					</p>
 					{#if searchResultsDetails}
-						<p class="text-sm max-lg:pt-4">
+						<p class="text-sm pt-4">
 							{searchResults_page.searchField.registered_description}
 							<a href="#results" class="inline-flex items-center gap-2"
-								><span class="underline underline-offset-4">See results below</span><ChevronDown
-									size="16" /></a>
+								><span class="underline underline-offset-4 pt-1">See results below</span
+								><ChevronDown size="16" /></a>
 						</p>
 					{/if}
 				</div>

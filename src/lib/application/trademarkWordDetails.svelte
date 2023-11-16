@@ -85,7 +85,7 @@
 			{/each}
 		</div>
 	{/if}
-	<div class={searchResultsDetails ? 'pt-11' : ''}>
+	<div class={searchResultsDetails && !content.wordDetails.existing.disable ? 'pt-11' : ''}>
 		<p class="text-xl font-bold">
 			{searchResultsDetails
 				? content.wordDetails.process.title_existing
