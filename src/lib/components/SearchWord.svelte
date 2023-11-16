@@ -20,7 +20,7 @@
 			details.set([]);
 			international.set([]);
 			localStorage.clear();
-			goto(`/application/search?name=${searchTerm}`);
+			goto(`/application/search?name=${encodeURIComponent(searchTerm)}`);
 		} else {
 			showError = true;
 		}

@@ -11,7 +11,12 @@ export async function load({ url }) {
 		};
 	}
 
-	const words = searchTerm.split(' ');
+	const commonWords = ['and', 'or', 'the', '&'];
+	const words = searchTerm
+		.replace(/&/g, ' ')
+		.split(/\s+/)
+		.filter((word) => word.length > 0 && !commonWords.includes(word.toLowerCase()));
+
 	const rows = words.map((word) => ({
 		op: 'AND',
 		query: {
