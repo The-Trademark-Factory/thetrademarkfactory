@@ -25,7 +25,7 @@
 		},
 		"wordDetails": {
 			"existing": {
-				"title": "Our search has found some existing trademarks that may block your application for:",
+				"title": "Our search has found some existing trademarks that may block your application.",
 				"description": "Your trademark may be blocked for the below goods/services BUT may still be available for other goods/services.",
 				"disable": false
 			},
