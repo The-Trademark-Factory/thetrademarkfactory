@@ -49,11 +49,12 @@ export const actions = {
 			const gstTotal = 0.1 * items.reduce((acc, { price }) => acc + +price, 0);
 			const subtotal =
 				+governmentFee * items.length + items.reduce((acc, { price }) => acc + +price, 0);
+
 			const itemsTotal =
 				items.reduce((total, item) => {
 					return total + +item.price * 100;
 				}, 0) +
-				+governmentFee * 100;
+				+governmentFee * 100 * items.length;
 			const stripeFee = Math.round(itemsTotal * 0.0175 + 30);
 
 			const session = await stripe.checkout.sessions.create({
@@ -85,7 +86,8 @@ export const actions = {
 							unit_amount: stripeFee,
 							currency: 'AUD',
 							product_data: { name: 'Credit Card Fee (1.75% + $0.30)' }
-						}
+						},
+						tax_rates: [import.meta.env.VITE_STRIPE_TAX_RATE]
 					}
 				],
 				mode: 'payment',
