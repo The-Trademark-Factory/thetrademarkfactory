@@ -56,6 +56,7 @@ export const actions = {
 				}, 0) +
 				+governmentFee * 100 * items.length;
 			const stripeFee = Math.round(itemsTotal * 0.0175 + 30);
+			const stripeFeeCalculated = stripeFee / 100;
 
 			const session = await stripe.checkout.sessions.create({
 				line_items: [
@@ -102,6 +103,7 @@ export const actions = {
 
 			// Create a firebase record
 			await setDoc(doc(firebaseDb, 'applications', session.id), {
+				createdAt: new Date(),
 				applicationDetails: {
 					owner,
 					based,
@@ -142,9 +144,10 @@ export const actions = {
 					paymentIntentId: ''
 				},
 				total: {
-					gst: gstTotal,
+					gst: gstTotal + 0.1 * stripeFeeCalculated,
 					subtotal,
-					total: subtotal + gstTotal
+					stripeFee: stripeFeeCalculated,
+					total: subtotal + gstTotal + stripeFeeCalculated + 0.1 * stripeFeeCalculated
 				}
 			});
 
