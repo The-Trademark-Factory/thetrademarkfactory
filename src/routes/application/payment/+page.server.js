@@ -19,8 +19,10 @@ export const actions = {
 
 		// This string will be used for guarding the "/application/success" page from being harassed
 		const secretString = Buffer.from(
-			`${new Date().getTime()}---${import.meta.env.VITE_SECRET_STRING
-			}---${personalDetailsStr}---${itemsStr.slice(0, 500)}---${governmentFee}---${internationalTrademarks || 'null'
+			`${new Date().getTime()}---${
+				import.meta.env.VITE_SECRET_STRING
+			}---${personalDetailsStr}---${itemsStr.slice(0, 500)}---${governmentFee}---${
+				internationalTrademarks || 'null'
 			}`,
 			'utf8'
 		).toString('base64');
@@ -47,6 +49,12 @@ export const actions = {
 			const gstTotal = 0.1 * items.reduce((acc, { price }) => acc + +price, 0);
 			const subtotal =
 				+governmentFee * items.length + items.reduce((acc, { price }) => acc + +price, 0);
+			const itemsTotal =
+				items.reduce((total, item) => {
+					return total + +item.price * 100;
+				}, 0) +
+				+governmentFee * 100;
+			const stripeFee = Math.round(itemsTotal * 0.0175 + 30);
 
 			const session = await stripe.checkout.sessions.create({
 				line_items: [
@@ -70,11 +78,23 @@ export const actions = {
 							currency: 'AUD',
 							product_data: { name: 'IP Australia Fee' }
 						}
+					},
+					{
+						quantity: 1,
+						price_data: {
+							unit_amount: stripeFee,
+							currency: 'AUD',
+							product_data: { name: 'Credit Card Fee (1.75% + $0.30)' }
+						}
 					}
 				],
 				mode: 'payment',
-				success_url: `${import.meta.env.VITE_PUBLIC_SITE_URL
-					}/application/success?st=${secretString}&si={CHECKOUT_SESSION_ID}`,
+				invoice_creation: {
+					enabled: true
+				},
+				success_url: `${
+					import.meta.env.VITE_PUBLIC_SITE_URL
+				}/application/success?st=${secretString}&si={CHECKOUT_SESSION_ID}`,
 				cancel_url: `${import.meta.env.VITE_PUBLIC_SITE_URL}/application/search` // this cancel page can be "/application/payment" but for now when accessing it directly, the page is empty
 			});
 
