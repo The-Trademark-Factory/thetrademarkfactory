@@ -4,6 +4,7 @@
 	export let data;
 
 	$: ({
+		createdAt,
 		applicationDetails,
 		applicationType,
 		customerDetails,
@@ -12,24 +13,32 @@
 		stripe,
 		total
 	} = data.order ?? {});
-
-	console.log(data.order);
 </script>
 
 {#if data.order}
 	<section class="relative bg-ttmfDarkGreen text-white overflow-hidden">
 		<div
 			class="relative z-10 max-w-screen-2xl mx-auto pt-36 lg:pt-44 lg:pb-20 max-2xl:px-6 flex items-center justify-between gap-6 flex-wrap">
-			<h1 class="text-4xl lg:text-6xl font-bold flex flex-wrap items-center gap-6">
-				Order
-				{#if applicationType.type === 'word'}
-					<span
-						class="px-5 py-3 rounded-lg lg:rounded-full text-3xl lg:text-5xl border-2 border-ttmfLightTextGreen bg-ttmfGreen/50"
-						>{applicationType.source}</span>
-				{:else}
-					<a href={applicationType.source} class="underline">Download Image</a>
-				{/if}
-			</h1>
+			<div>
+				<p class="pb-6 text-lg font-bold">
+					{new Date(createdAt).toLocaleDateString('en-AU', {
+						day: 'numeric',
+						month: 'long',
+						year: 'numeric'
+					})}
+				</p>
+
+				<h1 class="text-4xl lg:text-6xl font-bold flex flex-wrap items-center gap-6">
+					Order
+					{#if applicationType.type === 'word'}
+						<span
+							class="px-5 py-3 rounded-lg lg:rounded-full text-3xl lg:text-5xl border-2 border-ttmfLightTextGreen bg-ttmfGreen/50"
+							>{applicationType.source}</span>
+					{:else}
+						<a href={applicationType.source} class="underline">Download Image</a>
+					{/if}
+				</h1>
+			</div>
 			<div class="bg-ttmfGreen/50 py-6 px-10 text-lg space-y-2 max-lg:w-full max-lg:mb-12">
 				<p class="flex items-center justify-between gap-4">
 					<span class="font-bold">Subtotal</span> ${total.subtotal}
