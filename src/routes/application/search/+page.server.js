@@ -1,5 +1,4 @@
 import { getAuthToken } from '$lib/utils/getAuthTokenDev';
-import { searchResults_page } from '../../../../data/global.json';
 
 export async function load({ url }) {
 	const searchTerm = url.searchParams.get('name');
@@ -38,7 +37,26 @@ export async function load({ url }) {
 			token = await getAuthToken();
 		}
 
-		const apiRes = await fetch(import.meta.env.VITE_IPAUSPROD_URL + '/search/advanced', {
+		// const apiRes = await fetch(import.meta.env.VITE_IPAUSPROD_URL + '/search/advanced', {
+		// 	method: 'POST',
+		// 	headers: {
+		// 		'Content-Type': 'application/json',
+		// 		Authorization: `Bearer ${token}`
+		// 	},
+		// 	body: JSON.stringify({
+		// 		changedSinceDate: '',
+		// 		rows,
+		// 		sort: {
+		// 			field: 'NUMBER',
+		// 			direction: 'DESCENDING'
+		// 		}
+		// 	})
+		// });
+
+		// const apiData = await apiRes.json();
+
+		//
+		const apiRes = await fetch(import.meta.env.VITE_IPAUSPROD_URL + '/page/advanced', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',
@@ -46,6 +64,8 @@ export async function load({ url }) {
 			},
 			body: JSON.stringify({
 				changedSinceDate: '',
+				pageNumber: 0,
+				pageSize: 100,
 				rows,
 				sort: {
 					field: 'NUMBER',
@@ -55,30 +75,7 @@ export async function load({ url }) {
 		});
 
 		const apiData = await apiRes.json();
-
-		if (apiData.count > 0 && !searchResults_page.searchField.disable_search_results) {
-			const trademarkDetails = await Promise.all(
-				apiData.trademarkIds.slice(0, 3).map(async (trademarkId) => {
-					try {
-						const res = await fetch(
-							`${import.meta.env.VITE_IPAUSPROD_URL}/trade-mark/${trademarkId}`,
-							{
-								method: 'GET',
-								headers: {
-									'Content-Type': 'application/json',
-									Authorization: `Bearer ${token}`
-								}
-							}
-						);
-						return res.json();
-					} catch (error) {
-						console.error('Error fetching trademark details', error);
-						return null;
-					}
-				})
-			);
-			apiData.trademarkDetails = trademarkDetails;
-		}
+		//
 
 		return {
 			searchResults: {

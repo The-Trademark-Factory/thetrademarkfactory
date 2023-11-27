@@ -16,7 +16,8 @@
 	export let data;
 
 	let previousSearch, imageUrl, imageDB, image;
-	$: searchResultsDetails = data.searchResults.apiData.trademarkDetails;
+	$: searchResultsDetails = data.searchResults.apiData.trademarks;
+	$: availableWord = data.searchResults.apiData.count === 0;
 	$: word = data.searchResults.searchTerm;
 	$: activeTab =
 		searchType === 'logo' || $page.url.searchParams.get('type') === 'logo' ? 'logo' : 'word';
@@ -123,16 +124,15 @@
 			{#if data.searchResults.apiData && !searchResults_page.searchField.disable_registered}
 				<div class="pt-8">
 					<p
-						class="text-lg font-bold inline-flex gap-2 {searchResultsDetails
+						class="text-lg font-bold inline-flex gap-2 {!availableWord
 							? 'text-ttmfRed'
 							: 'text-green-500'}">
-						{#if searchResultsDetails}<span class="max-lg:hidden pt-0.5"><Info /></span
-							>{searchResults_page.searchField
-								.registered_title}{:else if !searchResultsDetails}<span class="max-lg:hidden"
-								><CheckCircle /></span
+						{#if !availableWord}<span class="max-lg:hidden pt-0.5"><Info /></span
+							>{searchResults_page.searchField.registered_title}{:else if availableWord}<span
+								class="max-lg:hidden"><CheckCircle /></span
 							>{searchResults_page.searchField.available_title}{/if}
 					</p>
-					{#if searchResultsDetails}
+					{#if !availableWord}
 						<p class="text-sm pt-4">
 							{searchResults_page.searchField.registered_description}
 							<a href="#results" class="inline-flex items-center gap-2"
@@ -171,12 +171,12 @@
 <section id="results" class="max-w-screen-xl mx-auto scroll-mt-32 max-2xl:px-6">
 	{#if data.searchResults.apiData}
 		<div class="py-10 lg:py-14">
-			<TrademarkWordDetails {word} {searchResultsDetails} />
+			<TrademarkWordDetails {word} {searchResultsDetails} {availableWord} />
 		</div>
-		{#if searchResultsDetails}
+		{#if !availableWord}
 			<div class="pb-14">
 				<TrademarkResultsDetails
-					resultsDetails={data.searchResults.apiData.trademarkDetails}
+					resultsDetails={data.searchResults.apiData.trademarks}
 					totalResults={data.searchResults.apiData.count} />
 			</div>
 		{/if}

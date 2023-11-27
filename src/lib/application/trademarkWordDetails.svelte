@@ -5,7 +5,7 @@
 	import { searchTerm, searchType } from '$lib/utils/stores';
 	import { searchResults_page } from '../../../data/global.json';
 
-	export let word, searchResultsDetails;
+	export let word, searchResultsDetails, availableWord;
 
 	let showAllDescriptions;
 	let sortedClasses,
@@ -50,44 +50,52 @@
 			{word}
 		</p>
 	</div>
-	{#if searchResultsDetails && !content.wordDetails.existing.disable}
+	{#if !availableWord && !content.wordDetails.existing.disable}
 		<div class="pb-8">
 			<p class="text-xl font-bold">
 				{content.wordDetails.existing.title}
 			</p>
 			<p class="text-lg max-lg:pt-4">{content.wordDetails.existing.description}</p>
 		</div>
-		<div class="space-y-5">
+		<div class="space-y-6">
 			{#each resultClasses.sortedClasses as el}
-				<div class="bg-ttmfBg border-2 border-ttmfBeige rounded-lg py-5 px-7">
+				<div class="bg-ttmfBg border-2 border-ttmfBeige rounded-lg py-5 px-7 h-full">
 					<div class="space-y-1">
-						<p class="text-ttmfRed text-lg font-bold">Class {el.class}</p>
-						<p class="text-ttmfBlack">
+						<div class="flex items-center gap-4">
+							<p class="text-ttmfRed text-lg font-bold">Class {el.class}</p>
+							{#if el.descriptionText.length}
+								<button
+									on:click={() => {
+										showAllDescriptions === el.class
+											? (showAllDescriptions = '')
+											: (showAllDescriptions = el.class);
+									}}
+									class="text-xs transition-all bg-white rounded-full py-1 px-3 border-2 border-ttmfCreme/30 text-ttmfLightGreen hover:bg-ttmfRed hover:text-white hover:border-ttmfRed">
+									{showAllDescriptions === el.class
+										? 'Show less'
+										: 'Show ' +
+										  el.descriptionText.length +
+										  (el.descriptionText.length > 1 ? ' descriptions' : ' description')}
+								</button>
+							{/if}
+						</div>
+						<p class="text-ttmfBlack pt-2">
 							{classDescription.find((desc) => desc.class_number === +el.class)?.description ?? ''}
 						</p>
 					</div>
 					<div class="flex flex-wrap items-center gap-2 pt-3 text-sm">
-						{#each showAllDescriptions === el.class || el.descriptionText.length <= 3 ? el.descriptionText : el.descriptionText.slice(0, 2) as description}
+						{#each showAllDescriptions === el.class ? el.descriptionText : '' as description}
 							<span class="bg-white rounded-md py-1 px-3 border-2 border-ttmfCreme/30"
 								>{description}</span>
 						{/each}
-						{#if el.descriptionText.length > 3 && showAllDescriptions !== el.class}
-							<button
-								on:click={() => {
-									showAllDescriptions = el.class;
-								}}
-								class="bg-ttmfRed text-white font-bold rounded-full py-1 px-3 border-2 border-transparent transition-all hover:bg-transparent hover:text-ttmfRed hover:border-ttmfRed">
-								Show all
-							</button>
-						{/if}
 					</div>
 				</div>
 			{/each}
 		</div>
 	{/if}
-	<div class={searchResultsDetails && !content.wordDetails.existing.disable ? 'pt-11' : ''}>
+	<div class={!availableWord && !content.wordDetails.existing.disable ? 'pt-11' : ''}>
 		<p class="text-xl font-bold">
-			{searchResultsDetails
+			{!availableWord
 				? content.wordDetails.process.title_existing
 				: content.wordDetails.process.title_available}
 		</p>

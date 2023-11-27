@@ -27,26 +27,34 @@
 					{#each el.goodsAndServices as el}
 						<div class="bg-ttmfBg border-2 border-ttmfBeige rounded-lg py-5 px-7">
 							<div class="space-y-1">
-								<p class="text-ttmfRed text-lg font-bold">Class {el.class}</p>
-								<p class="text-ttmfBlack">
+								<div class="flex items-center gap-4">
+									<p class="text-ttmfRed text-lg font-bold">Class {el.class}</p>
+									{#if el.descriptionText.length}
+										<button
+											on:click={() => {
+												showAllClasses === el.class + el.words
+													? (showAllClasses = '')
+													: (showAllClasses = el.class + el.words);
+											}}
+											class="text-xs transition-all bg-white rounded-full py-1 px-3 border-2 border-ttmfCreme/30 text-ttmfLightGreen hover:bg-ttmfRed hover:text-white hover:border-ttmfRed">
+											{showAllClasses === el.class + el.words
+												? 'Show less'
+												: 'Show ' +
+												  el.descriptionText.length +
+												  (el.descriptionText.length > 1 ? ' descriptions' : ' description')}
+										</button>
+									{/if}
+								</div>
+								<p class="text-ttmfBlack pt-2">
 									{classDescription.find((desc) => desc.class_number === +el.class)?.description ??
 										''}
 								</p>
 							</div>
 							<div class="flex flex-wrap items-center gap-2 pt-3 text-xs lg:text-sm">
-								{#each showAllClasses === el.class + el.words || el.descriptionText.length <= 3 ? el.descriptionText : el.descriptionText.slice(0, 2) as description}
+								{#each showAllClasses === el.class + el.words ? el.descriptionText : '' as description}
 									<span class="bg-white rounded-md py-1 px-3 border-2 border-ttmfCreme/30"
 										>{description}</span>
 								{/each}
-								{#if el.descriptionText.length > 3 && showAllClasses !== el.class + el.words}
-									<button
-										on:click={() => {
-											showAllClasses = el.class + el.words;
-										}}
-										class="bg-ttmfRed text-white font-bold rounded-full py-1 px-3 border-2 border-transparent transition-all hover:bg-transparent hover:text-ttmfRed hover:border-ttmfRed">
-										Show all
-									</button>
-								{/if}
 							</div>
 						</div>
 					{/each}
