@@ -61,7 +61,7 @@
 			{#each resultClasses.sortedClasses as el}
 				<div class="bg-ttmfBg border-2 border-ttmfBeige rounded-lg py-5 px-7 h-full">
 					<div class="space-y-1">
-						<div class="flex items-center gap-4">
+						<div class="flex flex-wrap items-center gap-2 md:gap-4">
 							<p class="text-ttmfRed text-lg font-bold">Class {el.class}</p>
 							{#if el.descriptionText.length}
 								<button
