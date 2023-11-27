@@ -17,9 +17,9 @@
 			"registered_title": "Your exact trademark may already be registered for some goods/services.",
 			"registered_description": "HOWEVER, the trademark may still be available for other goods/services.",
 			"disable_registered": false,
-			"available_title": "Your EXACT trademark is available to file",
+			"available_title": "Your EXACT trademark may be available to file",
 			"default_title_word": "Search for your trademark before you apply*",
-			"default_description_word": "<p><strong>Before your trademark is registered, IP Australia examines it, and objections can arise for various reasons, including prior similar trademarks.</strong></p><p>Our online application process performs an exact word trademark search in IP Australia's database before submission, uncovering exact word matches only. Be mindful that similar trademarks may exist.</p><p>For a comprehensive trademark search, <a target=\"_blank\" rel=\"noopener\" href=\"/contact/\">get in touch with us</a>.</p><p>*Only words can be searched via our online platform.&nbsp;</p>",
+			"default_description_word": "<p><strong>Before your trademark is registered, IP Australia examines it, and objections can arise for various reasons, including prior similar trademarks.</strong></p><p>Our online application process performs an exact word trademark search of IP Australia's database before submission, uncovering exact word matches only. Be mindful that this search may not uncover similar trademarks.</p><p>For a comprehensive trademark search, <a target=\"_blank\" rel=\"noopener\" href=\"/contact/\">get in touch with us</a>.</p><p>*Only words can be searched via our online platform.&nbsp;</p>",
 			"default_title_logo": "Apply for your logo trademark*",
 			"default_description_logo": "<p><strong>Before your trademark is registered, IP Australia examines it, and objections can arise for various reasons, including prior similar trademarks.</strong></p><p>Our online application process performs an exact word trademark search in IP Australia's database before submission, uncovering exact word matches only. Be mindful that similar trademarks may exist.</p><p>For a comprehensive trademark search, <a target=\"_blank\" rel=\"noopener\" href=\"/contact/\">get in touch with us</a>.</p><p><span></span></p><p>*Only words can be searched via our online platform.</p>"
 		},
