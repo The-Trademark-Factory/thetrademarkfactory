@@ -57,7 +57,7 @@
 			}
 		},
 		"searchClasses": {
-			"title": "Select your products or services",
+			"title": "Select your products and/or services",
 			"default_title": "What will you use your trademark for?",
 			"default_description": "<p><strong>A trademark must be registered in relation to products and/or services</strong>, for example&nbsp; \"software\", \"clothing\", \"plumbing\", \"accounting\".</p><p><strong>Enter</strong> your product and/or services in the search bar and <strong>select</strong>&nbsp;the item to be added to your application. You may <strong>choose as many</strong>&nbsp;as you like. You can select <strong>more than one item</strong>&nbsp;in each class if needed without incurring additional fees.<br /> </p><p>Your application <b>can cover</b> more than one \"class\". For example \"computer software\" is in class 9 whereas \"computer services\" are in class 42.</p><p><b>Review</b>&nbsp;and edit your goods and/or services in the sidebar before moving on.</p>",
 			"warning_title": "Tips to avoid IP Australia rejecting your application",
