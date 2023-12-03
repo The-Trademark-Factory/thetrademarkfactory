@@ -79,7 +79,10 @@
 
 <section class="bg-ttmfDarkGreen">
 	<div
-		class="max-w-screen-xl mx-auto grid lg:grid-cols-2 items-end gap-12 text-white py-12 lg:py-24 max-2xl:px-6">
+		class="max-w-screen-xl mx-auto grid items-end gap-12 text-white py-12 lg:py-24 max-2xl:px-6 {previousSearch &&
+		previousSearch !== 'typeLogo'
+			? 'lg:grid-cols-2'
+			: 'lg:grid-cols-1'}">
 		<div>
 			<p class="text-3xl font-bold">
 				{activeTab === 'word'

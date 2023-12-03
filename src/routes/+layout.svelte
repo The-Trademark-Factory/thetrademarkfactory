@@ -68,19 +68,6 @@
 	});
 </script>
 
-<svelte:head>
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-4ENS64NWL6"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() {
-			dataLayer.push(arguments);
-		}
-		gtag('js', new Date());
-
-		gtag('config', 'G-4ENS64NWL6');
-	</script>
-</svelte:head>
-
 {#if $page?.route?.id?.includes('application')}
 	<NavigationApplication />
 {:else}
