@@ -21,7 +21,7 @@ content_blocks:
     scrolling_banner:
       - title: 100% online trademark application
       - title: 4 easy steps
-      - title: Apply for your application in under 5 minutes
+      - title: Apply in under 5 minutes
       - title: Integrated with IP Australia
       - title: Low fixed fees
       - title: 60% cheaper than lawyers
