@@ -24,7 +24,7 @@ content_blocks:
       - title: Apply in 4 easy steps
       - title: Filed in 24 hours
       - title: Low fixed fees
-      - title: International trademark in 114+ countries
+      - title: International trademarks available
       - title: 100% online trademark application
       - title: Backed by trademark lawyers
       - title: 30+ years experience
