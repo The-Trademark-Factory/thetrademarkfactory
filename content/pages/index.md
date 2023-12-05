@@ -29,9 +29,9 @@ content_blocks:
       - title: Backed by trademark lawyers
       - title: 30+ years experience
       - title: Full trademark services available
-      - title: International trademarks available
       - title: 100% Australian owned and operated
       - title: 9,000+ trademarks registered
+      - title: International trademarks available
   - _bookshop_name: cards/threeCols
     title: <p><em>Why</em> Choose Us</p>
     cards:
