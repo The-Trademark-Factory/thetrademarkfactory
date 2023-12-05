@@ -19,16 +19,18 @@ content_blocks:
       title: Australian Owned & Operated
       subtitle: Developed by trademark lawyers with over 30 years experience
     scrolling_banner:
-      - title: Friendly and reliable service
-      - title: Full trademark services available
-      - title: Apply in 4 easy steps
+      - title: 100% online trademark application
+      - title: 4 easy steps
       - title: Apply for your application in under 5 minutes
+      - title: Integrated with IP Australia
       - title: Low fixed fees
       - title: 60% cheaper than lawyers
-      - title: International trademarks available
-      - title: 100% online trademark application
+      - title: Friendly and reliable service
       - title: Backed by trademark lawyers
       - title: 30+ years experience
+      - title: Full trademark services available
+      - title: International trademarks available
+      - title: 100% Australian owned and operated
       - title: 9,000+ trademarks registered
   - _bookshop_name: cards/threeCols
     title: <p><em>Why</em> Choose Us</p>
