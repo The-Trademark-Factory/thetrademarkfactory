@@ -19,34 +19,16 @@ content_blocks:
       title: Australian Owned & Operated
       subtitle: Developed by trademark lawyers with over 30 years experience
     scrolling_banner:
-      - title: Naturo Limited
-      - title: Gloria Jean's Coffees
-      - title: Donut King
-      - title: Crust Pizza
-      - title: Apple Computers
-      - title: Rib & Burgers
-      - title: Uniden
-      - title: GME
-      - title: Petsure
-      - title: Narellan Pools
-      - title: Sumosalad
-      - title: Alexandre Saville Row
-      - title: The Meat & Wine Co.
-      - title: Paradox Coffee
-      - title: Bizcover
-      - title: Mad Mex
-      - title: Michel's Patisserie
-      - title: Soul Origin
-      - title: Pie Face
-      - title: Scolicare
-      - title: Tesalate
-      - title: Climatech
-      - title: Onsite Rentals
-      - title: P'Nut Street Noodles
-      - title: Just Better Care
-      - title: Di Bella Coffee
-      - title: GapOnly
-      - title: Greatcell Energy
+      - title: Friendly and reliable service
+      - title: Full trademark services available
+      - title: Apply in 4 easy steps
+      - title: Filed in 24 hours
+      - title: Low fixed fees
+      - title: International trademark in 114+ countries
+      - title: 100% online trademark application
+      - title: Backed by trademark lawyers
+      - title: 30+ years experience
+      - title: 9,000+ trademarks registered
   - _bookshop_name: cards/threeCols
     title: <p><em>Why</em> Choose Us</p>
     cards:
