@@ -25,7 +25,7 @@ content_blocks:
       - title: Integrated with IP Australia
       - title: Low fixed fees
       - title: 60% cheaper than lawyers
-      - title: Friendly and reliable service
+      - title: Friendly and reliable
       - title: Backed by trademark lawyers
       - title: 30+ years experience
       - title: Full trademark services available
