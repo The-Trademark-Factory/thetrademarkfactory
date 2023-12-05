@@ -22,8 +22,9 @@ content_blocks:
       - title: Friendly and reliable service
       - title: Full trademark services available
       - title: Apply in 4 easy steps
-      - title: Filed in 24 hours
+      - title: Apply for your application in under 5 minutes
       - title: Low fixed fees
+      - title: 60% cheaper than lawyers
       - title: International trademarks available
       - title: 100% online trademark application
       - title: Backed by trademark lawyers
