@@ -171,9 +171,9 @@ content_blocks:
         description: >-
           "...the best in AU/NZ for global brand protection and portfolio
           management.  They are smashing the IP firms out of the park when you
-          compare her service, skills and efficiencies. I continue to recommend
-          the team to our clients for Australian and global specialist advice
-          and service."
+          compare their service, skills and efficiencies. I continue to
+          recommend the team to our clients for Australian and global specialist
+          advice and service."
         icon: /upload/wynn-williams.jpg
       - name: Brad Hales
         position: National Marketing Communications Manager
