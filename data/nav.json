@@ -23,7 +23,7 @@
 	],
 	"button": {
 		"title": "Trademark Search and Apply",
-		"title_mobile": "Trademark Search",
+		"title_mobile": "Apply Now",
 		"url": "/application/search"
 	}
 }
