@@ -11,6 +11,7 @@ const config = {
 				: adapterNetlify(),
 		prerender: {
 			handleHttpError: 'warn',
+			handleMissingId: 'warn',
 			entries: ['*', '/sitemap/', '/sitemap.xml']
 		}
 	},
