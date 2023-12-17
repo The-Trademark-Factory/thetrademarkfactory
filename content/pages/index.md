@@ -50,6 +50,8 @@ content_blocks:
     button:
       title_button: Apply Now
       url: '#https://ttmf.com.au/application/search'
+  - _bookshop_name: utils/pricing
+    title: <p>Trademark <em>registration</em> pricing</p>
   - _bookshop_name: cards/threeCols
     title: <p><em>Why</em> Choose Us</p>
     cards:
@@ -68,8 +70,6 @@ content_blocks:
           Every application is checked by one of our expert trademark lawyers
           and processed within 24 hours.
         icon: /upload/ic-friendly.svg
-  - _bookshop_name: utils/pricing
-    title: <p>Trademark <em>registration</em> pricing</p>
   - _bookshop_name: cards/steps
     title: <p><em>How</em> It Works</p>
     steps:
