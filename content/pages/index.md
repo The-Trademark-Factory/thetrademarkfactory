@@ -43,10 +43,7 @@ content_blocks:
       easier.</p><p><strong>Designed by trademark lawyers</strong>, The
       TradeMark Factory application process is fully integrated with IP
       Australia, easy to use, and cost-effective, giving business owners
-      confidence that their brand is better protected.<br /><br /><strong>We
-      handle all aspects of the trademark process</strong> and provide regular
-      updates, dedicated to assisting businesses in successfully registering
-      their trademarks.</p>
+      confidence that their brand is better protected.</p>
     button:
       title_button: Apply Now
       url: /application/search
