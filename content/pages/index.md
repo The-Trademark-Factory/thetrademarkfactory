@@ -38,9 +38,8 @@ content_blocks:
       <p>Protecting your trademark in Australia has never been easier with The
       TradeMark Factory – <strong>Australia’s quickest, most reliable and
       accurate trademark online registration platform</strong>.
-      &nbsp;</p><p>File your trademark in<strong> 4 easy steps</strong> with no
-      login required. Protecting your brand has never been
-      easier.</p><p><strong>Designed by trademark lawyers</strong>, The
+      &nbsp;</p><p><strong>4 easy steps.</strong>&nbsp;No login
+      required.</p><p><strong>Designed by trademark lawyers</strong>, The
       TradeMark Factory application process is fully integrated with IP
       Australia, easy to use, and cost-effective, giving business owners
       confidence that their brand is better protected.</p>
