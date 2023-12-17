@@ -6,8 +6,8 @@ title: >-
 date: 2023-12-17T01:59:41Z
 image: /upload/about-intro.svg
 seo:
-  title:
-  description:
+  title: How to register a trade mark in Australia
+  description: Follow this guideline to register your trade mark in Australia
   image: /upload/ttmf-default-seo.png
   no_index: false
 ---
