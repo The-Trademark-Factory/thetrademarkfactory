@@ -32,6 +32,24 @@ content_blocks:
       - title: 100% Australian owned and operated
       - title: 9,000+ trademarks registered
       - title: International trademarks available
+  - _bookshop_name: cta/ctaDefault
+    title: <p>Online <em>Trademark</em> Registration</p>
+    content: >-
+      <p>Protecting your trademark in Australia has never been easier with The
+      TradeMark Factory – <strong>Australia’s quickest, most reliable and
+      accurate trademark online registration platform</strong>.
+      &nbsp;</p><p>File your trademark in<strong> 4 easy steps</strong> with no
+      login required. Protecting your brand has never been
+      easier.</p><p><strong>Designed by trademark lawyers</strong>, The
+      TradeMark Factory application process is fully integrated with IP
+      Australia, easy to use, and cost-effective, giving business owners
+      confidence that their brand is better protected.<br /><br /><strong>We
+      handle all aspects of the trademark process</strong> and provide regular
+      updates, dedicated to assisting businesses in successfully registering
+      their trademarks.</p>
+    button:
+      title_button: Apply Now
+      url: '#https://ttmf.com.au/application/search'
   - _bookshop_name: cards/threeCols
     title: <p><em>Why</em> Choose Us</p>
     cards:
@@ -270,22 +288,4 @@ content_blocks:
           touch for a personalised quote.</p>
   - _bookshop_name: cta/search
     title: <p>Get Your <em>Trademark</em> Today</p>
-  - _bookshop_name: cta/ctaDefault
-    title: <p>Online <em>Trademark</em> Registration</p>
-    content: >-
-      <p>Protecting your trademark in Australia has never been easier with The
-      TradeMark Factory – <strong>Australia’s quickest, most reliable and
-      accurate trademark online registration platform</strong>.
-      &nbsp;</p><p>File your trademark in<strong> 4 easy steps</strong> with no
-      login required. Protecting your brand has never been
-      easier.</p><p><strong>Designed by trademark lawyers</strong>, The
-      TradeMark Factory application process is fully integrated with IP
-      Australia, easy to use, and cost-effective, giving business owners
-      confidence that their brand is better protected.<br /><br /><strong>We
-      handle all aspects of the trademark process</strong> and provide regular
-      updates, dedicated to assisting businesses in successfully registering
-      their trademarks.</p>
-    button:
-      title_button: Apply Now
-      url: '#https://ttmf.com.au/application/search'
 ---
