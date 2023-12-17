@@ -49,7 +49,7 @@ content_blocks:
       their trademarks.</p>
     button:
       title_button: Apply Now
-      url: '#https://ttmf.com.au/application/search'
+      url: /application/search
   - _bookshop_name: utils/pricing
     title: <p>Trademark <em>registration</em> pricing</p>
   - _bookshop_name: cards/steps
