@@ -12,7 +12,7 @@ content_blocks:
     title:
       title_above: Protect your
       title_below: today
-      full_title:
+      full_title: The Fastest and easiest way to protect your brand in Australia
     search:
       title: Search and apply for your Australian trademark here
     aussie:
