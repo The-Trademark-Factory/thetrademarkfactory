@@ -12,8 +12,8 @@
 		},
 		"searchField": {
 			"disable_search_results": false,
-			"title_word": "Word trademark application",
-			"title_logo": "Logo trademark application",
+			"title_word": "WORD trademark application",
+			"title_logo": "LOGO trademark application",
 			"registered_title": "Your exact trademark may already be registered for some goods/services.",
 			"registered_description": "HOWEVER, the trademark may still be available for other goods/services.",
 			"disable_registered": false,
