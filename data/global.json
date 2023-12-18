@@ -12,16 +12,16 @@
 		},
 		"searchField": {
 			"disable_search_results": false,
-			"title_word": "Trademark search and apply",
-			"title_logo": "Trademark logo application",
+			"title_word": "Word trademark application",
+			"title_logo": "Logo trademark application",
 			"registered_title": "Your exact trademark may already be registered for some goods/services.",
 			"registered_description": "HOWEVER, the trademark may still be available for other goods/services.",
 			"disable_registered": false,
 			"available_title": "Your EXACT trademark is available to file",
-			"default_title_word": "Search for your trademark before you apply*",
-			"default_description_word": "<p><strong>Before your trademark is registered, IP Australia examines it, and objections can arise for various reasons, including prior <em>similar</em>&nbsp;trademarks.</strong></p><p>Our online application process performs an exact word trademark search of IP Australia's database before submission, uncovering exact word matches only. Be mindful that this search may not uncover similar trademarks.</p><p>For a comprehensive trademark search, <a target=\"_blank\" rel=\"noopener\" href=\"/contact/\">get in touch with us</a>.</p><p>*Only words can be searched via our online platform.&nbsp;</p>",
+			"default_title_word": "Apply for your WORD trademark*",
+			"default_description_word": "<p>Protecting your trademark in Australia is easy with The TradeMark Factory –&nbsp;<strong>Australia’s quickest, most reliable and cost-effective trademark online registration platform</strong>. &nbsp;</p><p><strong>4 easy steps. No login required.</strong></p><p><strong>Designed by trademark lawyers</strong>, The TradeMark Factory application process is fully integrated with IP Australia, easy to use, and cost-effective, giving business owners confidence that their brand is better protected.</p><p><strong>Start </strong>by typing in your word trademark in the bar above.</p><p>*Our online platform conducts an exact search of IP Australia's database. For a more comprehensive search before you file, get in touch with us.&nbsp;</p>",
 			"default_title_logo": "Apply for your logo trademark*",
-			"default_description_logo": "<p><strong>Before your trademark is registered, IP Australia examines it, and objections can arise for various reasons, including prior <em>similar</em> trademarks.</strong></p><p>Our online application process performs an exact word trademark search in IP Australia's database before submission, uncovering exact word matches only. Be mindful that similar trademarks may exist.</p><p>For a comprehensive trademark search, <a target=\"_blank\" rel=\"noopener\" href=\"/contact/\">get in touch with us</a>.</p><p><span></span></p><p>*Only words can be searched via our online platform.</p>"
+			"default_description_logo": "<p>Protecting your trademark in Australia is easy with The TradeMark Factory –&nbsp;<strong>Australia’s quickest, most reliable and cost-effective trademark online registration platform</strong>. &nbsp;</p><p><strong>4 easy steps. No login required.</strong></p><p><strong>Designed by trademark lawyers</strong>, The TradeMark Factory application process is fully integrated with IP Australia, easy to use, and cost-effective, giving business owners confidence that their brand is better protected.</p><p><strong>Start </strong>by uploading your logo or design trademark in the bar above.</p><p>*Our online platform does not conduct pre-filing searches for designs or logos. For a design mark search before you file, get in touch with us.&nbsp;</p>"
 		},
 		"wordDetails": {
 			"existing": {
