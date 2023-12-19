@@ -37,8 +37,8 @@
 	"phone": "+61 2 80890266",
 	"email": "admin@ttmf.com.au",
 	"button": {
-		"title": "Trademark Search and Apply",
-		"title_mobile": "Search and Apply",
+		"title": "Apply Now",
+		"title_mobile": "Apply Now",
 		"url": "/application/search"
 	},
 	"copyright": "© 2023 TTMF. All rights reserved.",
