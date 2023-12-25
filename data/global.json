@@ -11,12 +11,12 @@
 			"image": ""
 		},
 		"searchField": {
-			"disable_search_results": false,
+			"disable_search_results": true,
 			"title_word": "WORD trademark application",
 			"title_logo": "LOGO trademark application",
 			"registered_title": "Your exact trademark may already be registered for some goods/services.",
 			"registered_description": "HOWEVER, the trademark may still be available for other goods/services.",
-			"disable_registered": false,
+			"disable_registered": true,
 			"available_title": "Your EXACT trademark is available to file",
 			"default_title_word": "Apply for your WORD trademark*",
 			"default_description_word": "<p><strong>4 easy steps. No login required.</strong></p><p><em>START&nbsp;</em>by typing in your WORD trademark in the bar above.</p><p>*Our online platform conducts an exact search of IP Australia's database. For a more comprehensive search before you file, <a target=\"_blank\" rel=\"noopener nofollow\" href=\"/contact/\">get in touch with us</a>.&nbsp;</p>",
@@ -27,7 +27,7 @@
 			"existing": {
 				"title": "Our search has found existing trademarks that may block your application.",
 				"description": "Your trademark may be blocked for some goods/services (including those listed below) BUT may still be available for other goods/services.",
-				"disable": false
+				"disable": true
 			},
 			"process": {
 				"title_existing": "Want to proceed? File your trademark now. Our fees include:",
