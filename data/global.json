@@ -27,7 +27,7 @@
 			"existing": {
 				"title": "Our search has found existing trademarks that may block your application.",
 				"description": "Your trademark may be blocked for some goods/services (including those listed below) BUT may still be available for other goods/services.",
-				"disable": false
+				"disable": true
 			},
 			"process": {
 				"title_existing": "Want to proceed? File your trademark now. Our fees include:",
