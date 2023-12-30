@@ -14,7 +14,7 @@ content_blocks:
       title_below: Today
       full_title: The Fastest and easiest way to protect your brand in Australia
     search:
-      title: Fast, easy and affordable brand protection
+      title: Fast, easy and affordable trademark registration
     aussie:
       title: Apply for your trademark now
       subtitle: Developed by Australian trade mark lawyers with over 30 years experience
