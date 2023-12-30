@@ -16,7 +16,7 @@ content_blocks:
     search:
       title: Apply for your Australian trademark now
     aussie:
-      title: The Fastest and easiest way to protect your brand in Australia
+      title: Apply for your trademark now
       subtitle: Developed by Australian trade mark lawyers with over 30 years experience
     scrolling_banner:
       - title: 100% online trademark application
