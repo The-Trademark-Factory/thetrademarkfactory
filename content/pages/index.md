@@ -31,10 +31,8 @@ content_blocks:
   - _bookshop_name: cta/ctaDefault
     title: <p>Online <em>Trademark</em> Registration</p>
     content: >-
-      <p>Protecting your trademark in Australia is easy with <em>The TradeMark
-      Factory</em>.</p><p><strong>Australia’s quickest, most reliable and
-      cost-effective online trademark registration platform.
-      &nbsp;</strong></p><p><em>4 easy steps. No login
+      <p><strong>Australia’s quickest and easiest trademark registration
+      platform.</strong></p><p><em>4 easy steps. No login
       required.</em></p><p><strong>Designed by trademark lawyers</strong>, The
       TradeMark Factory application process is fully integrated with IP
       Australia, easy to use, and cost-effective, giving business owners
