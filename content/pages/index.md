@@ -14,10 +14,10 @@ content_blocks:
       title_below: Today
       full_title: The Fastest and easiest way to protect your brand in Australia
     search:
-      title: Search and apply for your Australian trademark here
+      title: Apply for your Australian trademark now
     aussie:
-      title: Australian Owned & Operated
-      subtitle: Developed by trademark lawyers with over 30 years experience
+      title: The Fastest and easiest way to protect your brand in Australia
+      subtitle: Developed by Australian trade mark lawyers
     scrolling_banner:
       - title: 100% online trademark application
       - title: 4 easy steps
