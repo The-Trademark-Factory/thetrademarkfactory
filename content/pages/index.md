@@ -11,7 +11,7 @@ content_blocks:
   - _bookshop_name: headers/heroHome
     title:
       title_above: File your
-      title_below: today
+      title_below: Today
       full_title: The Fastest and easiest way to protect your brand in Australia
     search:
       title: Search and apply for your Australian trademark here
