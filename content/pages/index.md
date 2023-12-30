@@ -14,9 +14,9 @@ content_blocks:
       title_below: Today
       full_title: The Fastest and easiest way to protect your brand in Australia
     search:
-      title: Fast, easy and affordable trademark registration
+      title: '"...the best in AU for global brand protection” - Wynn Williams'
     aussie:
-      title: Apply for your trademark now
+      title: Fast, easy and affordable trademark registration
       subtitle: Developed by Australian trade mark lawyers with over 30 years experience
     scrolling_banner:
       - title: 100% online trademark application
