@@ -284,9 +284,4 @@ content_blocks:
           touch for a personalised quote.</p>
   - _bookshop_name: cta/search
     title: <p>Get Your <em>Trademark</em> Today</p>
-  - _bookshop_name: utils/simpleText
-    title: 'Brad Hales, Uniden Australia Pty Ltd '
-    content: >-
-      <p>“I would recommended the team for any individual or company seeking a
-      trustworthy and reliable service."</p>
 ---
