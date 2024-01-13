@@ -11,12 +11,12 @@
 			"image": ""
 		},
 		"searchField": {
-			"disable_search_results": true,
+			"disable_search_results": false,
 			"title_word": "File your WORD trademark now",
 			"title_logo": "File your LOGO trademark now",
 			"registered_title": "Your exact trademark may already be registered for some goods/services.",
 			"registered_description": "HOWEVER, the trademark may still be available for other goods/services.",
-			"disable_registered": true,
+			"disable_registered": false,
 			"available_title": "Your EXACT trademark is available to file",
 			"default_title_word": "Apply for your WORD trademark *",
 			"default_description_word": "<p><strong><em>4 EASY STEPS. NO LOGIN REQUIRED.</em></strong></p><p><strong>START&nbsp;</strong>by typing in your <strong>WORD </strong>trademark in the bar above.</p><p>*Our online platform conducts an exact search of IP Australia's database. For a more comprehensive search before you file, <a target=\"_blank\" rel=\"noopener nofollow\" href=\"/contact/\">get in touch with us</a>.&nbsp;</p>",
