@@ -41,6 +41,25 @@ content_blocks:
     button:
       title_button: Apply Now
       url: /application/search
+  - _bookshop_name: cards/steps
+    title: <p><em>How</em> It Works</p>
+    steps:
+      - title_step: Enter your trademark (word or image)
+        image: /upload/img-step1.svg
+        step: '1'
+        last_step: false
+      - title_step: Select your good and/or services
+        image: /upload/img-step2.svg
+        step: '2'
+        last_step: false
+      - title_step: Enter the trademark owner's details
+        image: /upload/img-step3.svg
+        step: '3'
+        last_step: false
+      - title_step: Pay and your trademark is submitted to IP Australia
+        image: /upload/img-step4.svg
+        step: '4'
+        last_step: true
   - _bookshop_name: utils/pricing
     title: <p>Trademark <em>registration</em> pricing</p>
   - _bookshop_name: cards/threeCols
@@ -61,25 +80,6 @@ content_blocks:
           Every application is checked by one of our expert trademark lawyers
           and processed within 24 hours.
         icon: /upload/ic-friendly.svg
-  - _bookshop_name: cards/steps
-    title: <p><em>How</em> It Works</p>
-    steps:
-      - title_step: Enter your trademark (word or image)
-        image: /upload/img-step1.svg
-        step: '1'
-        last_step: false
-      - title_step: Select your good and/or services
-        image: /upload/img-step2.svg
-        step: '2'
-        last_step: false
-      - title_step: Enter the trademark owner's details
-        image: /upload/img-step3.svg
-        step: '3'
-        last_step: false
-      - title_step: Pay and your trademark is submitted to IP Australia
-        image: /upload/img-step4.svg
-        step: '4'
-        last_step: true
   - _bookshop_name: cards/twoColsMultiSide
     title: <p>Merging Legal Expertise with AI <em>innovation</em></p>
     description: >-
