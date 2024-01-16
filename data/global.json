@@ -25,20 +25,20 @@
 		},
 		"wordDetails": {
 			"existing": {
-				"title": "Our search has found existing trademarks that may block your application.",
-				"description": "Your trademark may be blocked for some goods/services (including those listed below) BUT may still be available for other goods/services.",
+				"title": "Our search has found existing trademarks that may block your application for the below goods/services:",
+				"description": "Note - Your trademark may still be available for other goods/services.",
 				"disable": false
 			},
 			"process": {
-				"title_existing": "STILL WISH TO FILE YOUR TRADE MARK. Our fees include:",
+				"title_existing": "STILL WISH TO FILE YOUR TRADE MARK? ",
 				"title_available": "File your trademark now. Our fees include:",
 				"features": [
 					{
-						"description": "A final check of your application by our trade mark lawyers",
+						"description": "Pre-filing check by our trade mark lawyers",
 						"image": "/upload/ic-lawyer.svg"
 					},
 					{
-						"description": "Management of your application",
+						"description": "Full management of your application",
 						"image": "/upload/ic-address.svg"
 					},
 					{
@@ -46,7 +46,7 @@
 						"image": "/upload/ic-file.svg"
 					},
 					{
-						"description": "Address for service for all IP Australia documents",
+						"description": "Free address for service for all IP Australia documents",
 						"image": "/upload/ic-select.svg"
 					}
 				]
