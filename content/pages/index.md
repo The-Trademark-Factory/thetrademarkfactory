@@ -56,18 +56,6 @@ content_blocks:
         last_step: true
   - _bookshop_name: utils/pricing
     title: <p>Trademark <em>registration</em> pricing</p>
-  - _bookshop_name: cta/ctaDefault
-    title: <p>Online <em>Trademark</em> Registration</p>
-    content: >-
-      <p><strong>Australia’s quickest and easiest trademark registration
-      platform.</strong></p><p><em>4 easy steps. No login
-      required.</em></p><p><strong>Designed by trademark lawyers</strong>, The
-      TradeMark Factory application process is fully integrated with IP
-      Australia, easy to use, and cost-effective, giving business owners
-      confidence that their brand is better protected.</p>
-    button:
-      title_button: Apply Now
-      url: /application/search
   - _bookshop_name: cards/threeCols
     title: <p><em>Why</em> Choose Us</p>
     cards:
@@ -86,6 +74,18 @@ content_blocks:
           Every application is checked by one of our expert trademark lawyers
           and processed within 24 hours.
         icon: /upload/ic-friendly.svg
+  - _bookshop_name: cta/ctaDefault
+    title: <p>Online <em>Trademark</em> Registration</p>
+    content: >-
+      <p><strong>Australia’s quickest and easiest trademark registration
+      platform.</strong></p><p><em>4 easy steps. No login
+      required.</em></p><p><strong>Designed by trademark lawyers</strong>, The
+      TradeMark Factory application process is fully integrated with IP
+      Australia, easy to use, and cost-effective, giving business owners
+      confidence that their brand is better protected.</p>
+    button:
+      title_button: Apply Now
+      url: /application/search
   - _bookshop_name: cards/twoColsMultiSide
     title: <p>Merging Legal Expertise with AI <em>innovation</em></p>
     description: >-
