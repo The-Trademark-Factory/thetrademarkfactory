@@ -30,6 +30,12 @@ content_blocks:
       - title: 9,000+ trademarks registered
       - title: International trademarks available
   - _bookshop_name: cta/ctaDefault
+    title: <p>JANUARY&nbsp;<em>Sale</em></p>
+    content: "<p><strong>Apply for your trademark in January and we will refund you 50% of our fees for the first class.</strong></p><p><strong>This is a saving of $175.</strong></p><p><em>To qualify for the discount you must pay the full amount at the checkout. The discount applies to the first class only and excludes govt fees and GST. If your application covers more than one class our usual fees apply for each extra class.</em></p><p>\_</p>"
+    button:
+      title_button: Apply Now
+      url: /application/search
+  - _bookshop_name: cta/ctaDefault
     title: <p>Online <em>Trademark</em> Registration</p>
     content: >-
       <p><strong>Australia’s quickest and easiest trademark registration
