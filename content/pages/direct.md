@@ -49,9 +49,9 @@ content_blocks:
         step: '4'
         last_step: true
   - _bookshop_name: utils/pricing
-    title: <p>Trademark <em>registration</em> pricing</p>
+    title: <p>Fixed <em>fee</em><i> </i>pricing</p>
   - _bookshop_name: cta/ctaDefault
-    title: <p>Trusted&nbsp;<em>Trademark</em> Registration</p>
+    title: <p>Trusted&nbsp;<em>Trademark</em>&nbsp;Services</p>
     content: >-
       <p><em>4 easy steps. No login required.</em></p><p><strong>The TradeMark
       Factory </strong>application process is fully integrated with IP
