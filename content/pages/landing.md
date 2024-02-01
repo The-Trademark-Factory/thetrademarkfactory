@@ -135,10 +135,9 @@ content_blocks:
   - _bookshop_name: cta/plane
     title: <p>Trademark <em>protection</em> wherever you need it</p>
     description: >-
-      <p><strong>TAKING YOUR BUSINESS OVERSEAS?</strong></p><p><strong>The
-      TradeMark Factory </strong>is a one-stop-shop for your trademarking need
-      no matter where your business takes you. <strong>Visit the pricing pages
-      </strong>to get a quote for international trademark registration.</p>
+      <p><strong>TAKING YOUR BUSINESS OVERSEAS?</strong>&nbsp;</p><p>Visit the
+      pricing pages to get a quote for <strong>international trademark
+      registration</strong>.</p>
     button:
       label: Get a quote
       url: /pricing/#international-pricing
@@ -176,5 +175,5 @@ content_blocks:
       - title: <p>mr brooklyn</p>
         icon: /upload/brooklyn.jpg
   - _bookshop_name: cta/search
-    title: <p>Get Your <em>Trademark</em> Today</p>
+    title: <p>Get your <em>trademark </em>today</p>
 ---
