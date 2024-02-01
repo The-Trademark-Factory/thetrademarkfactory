@@ -12,13 +12,13 @@ content_blocks:
   - _bookshop_name: headers/heroHome
     title:
       title_above: File your
-      title_below: today
+      title_below: now
       full_title: The Fastest and easiest way to protect your brand in Australia
     search:
       title: 'Enter your trademark below to start your application:'
     aussie:
-      title: Fast, easy and affordable trademark registration
-      subtitle: Developed by Australian lawyers with over 30 years experience
+      title: Backed by Australian lawyers with over 30 years experience
+      subtitle: ' Fast, easy and affordable trademark registration'
     scrolling_banner:
       - title: 100% online trademark application
       - title: 4 easy steps
@@ -29,20 +29,6 @@ content_blocks:
       - title: 100% Australian owned and operated
       - title: 9,000+ trademarks registered
       - title: International trademarks available
-  - _bookshop_name: cta/ctaDefault
-    title: <p>Online <em>Trademark</em> Registration</p>
-    content: >-
-      <p><strong>Australia’s quickest and easiest trademark registration
-      platform.</strong></p><p><em>4 easy steps. No login
-      required.</em></p><p><strong>Designed by trademark lawyers</strong>, The
-      TradeMark Factory application process is fully integrated with IP
-      Australia, easy to use, and cost-effective, giving business owners
-      confidence that their brand is better protected.</p>
-    button:
-      title_button: Apply Now
-      url: /application/search
-  - _bookshop_name: utils/pricing
-    title: <p>Trademark <em>registration</em> pricing</p>
   - _bookshop_name: cards/steps
     title: <p><em>How</em> It Works</p>
     steps:
@@ -62,157 +48,18 @@ content_blocks:
         image: /upload/img-step4.svg
         step: '4'
         last_step: true
-  - _bookshop_name: cards/threeCols
-    title: <p><em>Why</em> Choose Us</p>
-    cards:
-      - title_card: Trademark Experts
-        description_card: >-
-          Backed by experienced Australian trademark lawyers with over 30 years
-          experience in Australian and international trademark law.
-        icon: /upload/ic-experience.svg
-      - title_card: Low fixed fees
-        description_card: >-
-          Our unique AI powered trademark application form allows us to keep
-          costs low without compromising on the quality of our service.
-        icon: /upload/ic-lowrates.svg
-      - title_card: Friendly, reliable & fast
-        description_card: >-
-          Every application is checked by one of our expert trademark lawyers
-          and processed within 24 hours.
-        icon: /upload/ic-friendly.svg
-  - _bookshop_name: cards/twoColsMultiSide
-    title: <p>Merging Legal Expertise with AI <em>innovation</em></p>
-    description: >-
-      <p><strong>The TradeMark Factory</strong> was developed by expert
-      trademark lawyers who implemented the power of AI to provide an ingenious
-      online platform which integrates with IP Australia&nbsp;</p>
-    media:
-      animation: computer-coffee
-      image: /upload/placeholder-features.svg
-      alt: Drawing of a computer with a coffee mub
-    cards:
-      - title_card: Self-Service
-        description_card: >-
-          Fully-automated online trademark application platform which integrates
-          with IP Australia
-        icon: /upload/ic-selfservice.svg
-      - title_card: Easy to Use
-        description_card: >-
-          Apply for your trademark registration online using any device in 4
-          easy steps
-        icon: /upload/ic-easytouse.svg
-      - title_card: Affordable
-        description_card: >-
-          Fixed fee pricing and up to 60% cheaper than a lawyer. You only pay
-          once.
-        icon: /upload/ic-affordable.svg
-      - title_card: Fast
-        description_card: Apply for your trademark in under 5 minutes
-        icon: /upload/ic-fast.svg
-      - title_card: Better Protection
-        description_card: >-
-          Integration with IP Australia means improved application quality and
-          the right protection.
-        icon: /upload/ic-protect.svg
-      - title_card: Australia Specific
-        description_card: >-
-          Designed by Australians for Australians and trusted by thousands of
-          brand owners to protect their trademarks.
-        icon: /upload/ic-ausspecific.svg
-  - _bookshop_name: cta/plane
-    title: <p>Trademark <em>protection</em> wherever you need it</p>
-    description: >-
-      <p><strong>Taking your business overseas? </strong>The TradeMark Factory
-      is a one-stop-shop for your trademarking need no matter where your
-      business takes you. Visit the pricing pages to get a quote for trademark
-      registration outside Australia.</p>
+  - _bookshop_name: utils/pricing
+    title: <p>Trademark <em>registration</em> pricing</p>
+  - _bookshop_name: cta/ctaDefault
+    title: <p>Trusted&nbsp;<em>Trademark</em> Registration</p>
+    content: >-
+      <p><em>4 easy steps. No login required.</em></p><p><strong>The TradeMark
+      Factory </strong>application process is fully integrated with IP
+      Australia, easy to use, and cost-effective, giving business owners
+      confidence that their brand is better protected.</p>
     button:
-      label: Get a quote
-      url: /pricing/#international-pricing
-  - _bookshop_name: others/icons
-    title: <p>Trademarks we have <em>registered</em></p>
-    icons:
-      - title: <p>petsure</p>
-        icon: /upload/petsure.jpg
-      - title: Soul Origin
-        icon: /upload/soulorigin-logo.png
-      - title: Sumo Salad
-        icon: /upload/sumosalad-logo.png
-      - title: Hunter
-        icon: /upload/hunter-logo.png
-      - title: GME
-        icon: /upload/gme-logo.png
-      - title: <p>WOK ON INN</p>
-        icon: /upload/wok-on-inn.jpg
-      - title: <p>MAD MEX</p>
-        icon: /upload/mad-mex.jpg
-      - title: <p>ribs and burgers</p>
-        icon: /upload/r-b.jpg
-      - title: <p>bizcover</p>
-        icon: /upload/bizcover.jpg
-      - title: <p>Abundant</p>
-        icon: /upload/abundant-natural-health.jpg
-      - title: <p>GJC</p>
-        icon: /upload/gloria-jean.jpg
-      - title: <p>DONUT KING</p>
-        icon: /upload/donut-king.jpg
-      - title: <p>GAPONLY</p>
-        icon: /upload/go-gap.jpg
-      - title: <p>CRUST</p>
-        icon: /upload/crust.jpg
-      - title: <p>PIEFACE</p>
-        icon: /upload/pie-face.jpg
-      - title: <p>NARELLAN</p>
-        icon: /upload/narellan.jpg
-      - title: <p>MICHEL'S</p>
-        icon: /upload/michel-s.jpg
-      - title: <p>onsite</p>
-        icon: /upload/connect.jpg
-      - title: <p>mr brooklyn</p>
-        icon: /upload/brooklyn.jpg
-      - title: <p>HAELEN</p>
-        icon: /upload/haelen.jpg
-  - _bookshop_name: others/testimonials
-    title: <p>What our clients <em>say</em></p>
-    testimonials:
-      - name: Katrina Hammon - Wynn Williams
-        position: Partner
-        description: >-
-          "...the best in AU/NZ for global brand protection and portfolio
-          management.  They are smashing the IP firms out of the park when you
-          compare their service, skills and efficiencies. I continue to
-          recommend the team to our clients for Australian and global specialist
-          advice and service."
-        icon: /upload/wynn-williams.jpg
-      - name: Brad Hales
-        position: National Marketing Communications Manager
-        description: >-
-          "Great professionalism ....Extremely knowledgeable ... Clarity to many
-          complex applications we have had over the years. I would recommended
-          the team for any individual or company seeking a trustworthy and
-          reliable service."
-        icon: /upload/uniden.jpg
-      - name: Shadi Harb
-        position: In-House Counsel
-        description: >-
-          "...sound and prompt advice no matter how difficult or convoluted our
-          matters may be. Their attention to detail, fair and transparent rates
-          and ability to deliver results to our business is greatly appreciated.
-          I would recommend, with confidence, the team."
-        icon: /upload/seagrass-2.jpg
-      - name: Patricia Richards
-        position: General Manager
-        description: >-
-          "...outstanding knowledge of Australian and International trade mark
-          law and an ability to understand our trade marking needs. Responsive
-          to our instructions and offers great value for money with their
-          competitive and transparent fees. I would highly recommend the team to
-          whoever requires IP legal services here and abroad."
-        icon: /upload/gme.jpg
-      - name: Christine Nearchou
-        position: University of Melbourne
-        description: “Easier than IP Australia"
-        icon: https://dummyimage.com/90
+      title_button: Apply Now
+      url: /application/search
   - _bookshop_name: others/faqs
     title: <p>Frequently Asked <em>Questions</em></p>
     faq:
