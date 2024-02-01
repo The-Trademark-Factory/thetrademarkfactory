@@ -29,6 +29,16 @@ content_blocks:
       - title: 100% Australian owned and operated
       - title: 9,000+ trademarks registered
       - title: International trademarks available
+  - _bookshop_name: cta/ctaDefault
+    title: <p>Trusted&nbsp;<em>Trademark</em>&nbsp;Services</p>
+    content: >-
+      <p><em>4 easy steps. No login required.</em></p><p><strong>The TradeMark
+      Factory </strong>application process is fully integrated with IP
+      Australia, easy to use, and cost-effective, giving business owners
+      confidence that their brand is better protected.</p>
+    button:
+      title_button: Apply Now
+      url: /application/search
   - _bookshop_name: cards/steps
     title: <p><em>How</em> It Works</p>
     steps:
@@ -50,16 +60,6 @@ content_blocks:
         last_step: true
   - _bookshop_name: utils/pricing
     title: <p>Fixed <em>fee</em><i> </i>pricing</p>
-  - _bookshop_name: cta/ctaDefault
-    title: <p>Trusted&nbsp;<em>Trademark</em>&nbsp;Services</p>
-    content: >-
-      <p><em>4 easy steps. No login required.</em></p><p><strong>The TradeMark
-      Factory </strong>application process is fully integrated with IP
-      Australia, easy to use, and cost-effective, giving business owners
-      confidence that their brand is better protected.</p>
-    button:
-      title_button: Apply Now
-      url: /application/search
   - _bookshop_name: others/faqs
     title: <p>Frequently Asked <em>Questions</em></p>
     faq:
