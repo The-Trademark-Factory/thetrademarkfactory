@@ -56,8 +56,8 @@ content_blocks:
       <p><strong>The TradeMark Factory</strong> was developed by expert
       trademark lawyers who implemented the power of AI to provide a quick, easy
       and affordable alternative to brand protection.&nbsp;</p><p>Rest assured
-      that your trademark will managed by top trademark lawyers at <strong>low
-      competative rates</strong>.</p>
+      that your trademark will be managed by top trademark lawyers at
+      <strong>low competative rates</strong>.</p>
     media:
       animation: computer-coffee
       image: /upload/placeholder-features.svg
