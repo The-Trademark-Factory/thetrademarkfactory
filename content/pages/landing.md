@@ -1,5 +1,5 @@
 ---
-title: Home
+title: Landing
 seo:
   title: File your Trademark Today | Register Online | The Trademark Factory
   description: >-
@@ -11,24 +11,16 @@ seo:
 content_blocks:
   - _bookshop_name: headers/heroHome
     title:
-      title_above: Protect your
+      title_above: ' Protect your'
       title_below: ' '
       full_title: The Fastest and easiest way to protect your brand in Australia
     search:
       title: 'Enter your trademark below to start your application:'
     aussie:
       title: Fast, easy and affordable trademark registration
-      subtitle: Developed by Australian lawyers with over 30 years experience
+      subtitle: Developed by Australian trade mark lawyers with over 30 years experience
     scrolling_banner:
-      - title: 100% online trademark application
-      - title: 4 easy steps
-      - title: Apply in under 5 minutes
-      - title: Integrated with IP Australia
-      - title: Low fixed fees
-      - title: 30+ years experience
-      - title: 100% Australian owned and operated
-      - title: 9,000+ trademarks registered
-      - title: International trademarks available
+      - title: Lorem ipsum Dolor
   - _bookshop_name: cta/ctaDefault
     title: <p>Online <em>Trademark</em> Registration</p>
     content: >-
