@@ -30,7 +30,7 @@ content_blocks:
       - title: 9,000+ trademarks registered
       - title: International trademarks available
   - _bookshop_name: cards/steps
-    title: <p>4 <em>easy</em> steps. No <em>login </em>required.</p>
+    title: "<p>Register your <em>trademark </em>today.</p><p>\_</p><p>4 <em>easy </em>steps. No <em>login </em>required.</p>"
     steps:
       - title_step: Enter your trademark (word or image)
         image: /upload/img-step1.svg
