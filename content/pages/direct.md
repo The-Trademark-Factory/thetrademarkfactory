@@ -13,7 +13,7 @@ content_blocks:
     title:
       title_above: File your
       title_below: now
-      full_title: The Fastest and easiest way to protect your brand in Australia
+      full_title:
     search:
       title: 'Enter your trademark below to start your application:'
     aussie:
