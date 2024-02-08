@@ -185,5 +185,5 @@ content_blocks:
       full amount on checkout and we will refund you 20% of our service fee.</p>
     button:
       title_button: Apply Now
-      url: '#'
+      url: '#https://ttmf.com.au/application/search'
 ---
