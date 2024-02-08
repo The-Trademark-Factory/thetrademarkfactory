@@ -11,7 +11,7 @@ seo:
 content_blocks:
   - _bookshop_name: headers/heroHome
     title:
-      title_above: File your
+      title_above: 20% off your
       title_below: today
       full_title: The Fastest and easiest way to protect your brand in Australia
     search:
@@ -176,4 +176,14 @@ content_blocks:
         icon: /upload/brooklyn.jpg
   - _bookshop_name: cta/search
     title: <p>Get your <em>trademark </em>today</p>
+  - _bookshop_name: cta/ctaDefault
+    title: >-
+      <p>Apply&nbsp;<em>today</em> and receive<br />​​20% off our service
+      fees.</p>
+    content: >-
+      <p>To receive the discount, complete your trademark application, pay the
+      full amount on checkout and we will refund you 20% of our service fee.</p>
+    button:
+      title_button: Apply Now
+      url: '#'
 ---
