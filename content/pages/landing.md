@@ -29,6 +29,16 @@ content_blocks:
       - title: 100% Australian owned and operated
       - title: 9,000+ trademarks registered
       - title: International trademarks available
+  - _bookshop_name: cta/ctaDefault
+    title: >-
+      <p>Apply&nbsp;<em>today</em> and receive<br />​​20% off our service
+      fees.</p>
+    content: >-
+      <p>To receive the discount, complete your trademark application, pay the
+      full amount on checkout and we will refund you 20% of our service fee.</p>
+    button:
+      title_button: Apply Now
+      url: '#https://ttmf.com.au/application/search'
   - _bookshop_name: cards/steps
     title: "<p>Register your <em>trademark </em>today</p><p>\_</p><p>4 <em>easy </em>steps. No <em>login </em>required.</p>"
     steps:
@@ -176,14 +186,4 @@ content_blocks:
         icon: /upload/brooklyn.jpg
   - _bookshop_name: cta/search
     title: <p>Get your <em>trademark </em>today</p>
-  - _bookshop_name: cta/ctaDefault
-    title: >-
-      <p>Apply&nbsp;<em>today</em> and receive<br />​​20% off our service
-      fees.</p>
-    content: >-
-      <p>To receive the discount, complete your trademark application, pay the
-      full amount on checkout and we will refund you 20% of our service fee.</p>
-    button:
-      title_button: Apply Now
-      url: '#https://ttmf.com.au/application/search'
 ---
