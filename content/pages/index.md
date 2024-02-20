@@ -29,6 +29,18 @@ content_blocks:
       - title: 100% Australian owned and operated
       - title: 9,000+ trademarks registered
       - title: International trademarks available
+  - _bookshop_name: cards/stats
+    stats:
+      - title: 30+
+        label: Years experience
+      - title: 9000+
+        label: Trademarks filed
+      - title: 100+
+        label: Countries
+      - title: 95%+
+        label: Success rate
+      - title: Australian
+        label: Owned & operated
   - _bookshop_name: cta/ctaDefault
     title: >-
       <p>Quick, easy &amp; affordable</p><p>&nbsp;<br />Online<em>
@@ -43,18 +55,6 @@ content_blocks:
     button:
       title_button: Apply Now
       url: /application/search
-  - _bookshop_name: cards/stats
-    stats:
-      - title: 30+
-        label: Years experience
-      - title: 9000+
-        label: Trademarks filed
-      - title: 100+
-        label: Countries
-      - title: 95%+
-        label: Success rate
-      - title: Australian
-        label: Owned & operated
   - _bookshop_name: cards/threeCols
     title: <p><em>Why</em> Choose Us</p>
     cards:
