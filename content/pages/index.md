@@ -41,6 +41,18 @@ content_blocks:
     button:
       title_button: Apply Now
       url: /application/search
+  - _bookshop_name: cards/stats
+    stats:
+      - title: 30+
+        label: Years experience
+      - title: 9000+
+        label: Trademarks filed
+      - title: 100+
+        label: Countries
+      - title: 95%+
+        label: Success rate
+      - title: Australian
+        label: Owned & operated
   - _bookshop_name: utils/pricing
     title: <p>Trademark <em>registration</em> pricing</p>
   - _bookshop_name: cards/steps
@@ -279,16 +291,4 @@ content_blocks:
           touch for a personalised quote.</p>
   - _bookshop_name: cta/search
     title: <p>Get Your <em>Trademark</em> Today</p>
-  - _bookshop_name: cards/stats
-    stats:
-      - title: 30+
-        label: Years experience
-      - title: 9000+
-        label: Trademarks filed
-      - title: 100+
-        label: Countries
-      - title: 95%+
-        label: Success rate
-      - title: Australian
-        label: Owned & operated
 ---
