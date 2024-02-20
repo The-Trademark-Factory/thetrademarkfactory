@@ -29,18 +29,6 @@ content_blocks:
       - title: 100% Australian owned and operated
       - title: 9,000+ trademarks registered
       - title: International trademarks available
-  - _bookshop_name: cards/stats
-    stats:
-      - title: 30+
-        label: Years experience
-      - title: 9000+
-        label: Trademarks filed
-      - title: 100+
-        label: Countries
-      - title: 95%+
-        label: Success rate
-      - title: Australian
-        label: Owned & operated
   - _bookshop_name: cta/ctaDefault
     title: >-
       <p>Quick, easy &amp; affordable</p><p>&nbsp;<br />Online<em>
@@ -133,6 +121,18 @@ content_blocks:
           Designed by Australians for Australians and trusted by thousands of
           brand owners to protect their trademarks.
         icon: /upload/ic-ausspecific.svg
+  - _bookshop_name: cards/stats
+    stats:
+      - title: 30+
+        label: Years experience
+      - title: 9000+
+        label: Trademarks filed
+      - title: 100+
+        label: Countries
+      - title: 95%+
+        label: Success rate
+      - title: Australian
+        label: Owned & operated
   - _bookshop_name: cta/plane
     title: <p>Trademark <em>protection</em> wherever you need it</p>
     description: >-
