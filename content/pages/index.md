@@ -74,7 +74,7 @@ content_blocks:
           and processed within 24 hours.
         icon: /upload/ic-friendly.svg
   - _bookshop_name: utils/pricing
-    title: <p>Trademark <em>registration</em> pricing</p>
+    title: <p>Trademark <em>registration </em>Pricing</p>
   - _bookshop_name: cards/steps
     title: <p><em>How</em> It Works</p>
     steps:
