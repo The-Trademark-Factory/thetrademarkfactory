@@ -105,7 +105,7 @@ content_blocks:
           she further bolstered her ability to assist clients dealing with
           overseas jurisdictions by obtaining the position of notary public in
           NSW.</p>
-        image:
+        image: /upload/nmj.jpg
       - name: Bea Park
         position: Registered Trademark Attorney
         bio: >-
@@ -118,7 +118,7 @@ content_blocks:
           brands. She also worked in the corporate sector for a UK-based global
           group of engineering manufacturing companies, where she provided
           in-house management of its extensive trademark portfolio.</p>
-        image: ''
+        image: /upload/bp.jpeg
       - name: Kerrie Burgess
         position: Senior Trademark Administrator
         bio: >-
@@ -130,7 +130,7 @@ content_blocks:
           members of the team on the management of trade mark portfolios and
           assists in the filing, prosecution, registration and maintenance of
           trademark in Australia and overseas.</p>
-        image: ''
+        image: /upload/kerrie-one.jpeg
   - _bookshop_name: cta/search
     title: <p>Get Your <em>Trademark</em> Today</p>
 ---
