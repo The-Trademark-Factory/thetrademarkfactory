@@ -45,9 +45,9 @@ content_blocks:
     title: <p>Why Choose <em>Us</em></p>
     description: >-
       <p><strong>The TradeMark Factory</strong> has been developed by expert
-      trademark lawyers with 30+ years of experience and is Australian owned and
-      operated. We know how the Australian trade mark system works and you can
-      be assured that your application will be managed properly from filing
+      trademark lawyers with 30+ years of experience. Being Australian owned and
+      operated, we know how the Australian trade mark system works and you can
+      rest assured that your application will be managed properly from filing
       through to registration.</p>
     media:
       animation: computer-coffee
