@@ -131,6 +131,12 @@ content_blocks:
           competitive and transparent fees. I would highly recommend the team to
           whoever requires IP legal services here and abroad."
         icon: /upload/gme.jpg
+  - _bookshop_name: utils/spacer
+    padding: '12'
+    background: white
+    disable_mobile: false
+    rounded_bottom: true
+    rounded_top: true
   - _bookshop_name: cards/steps
     title: <p><em>How</em> It Works</p>
     steps:
@@ -150,6 +156,12 @@ content_blocks:
         image: /upload/img-step4.svg
         step: '4'
         last_step: true
+  - _bookshop_name: utils/spacer
+    padding: '12'
+    background: white
+    disable_mobile: false
+    rounded_bottom: true
+    rounded_top: true
   - _bookshop_name: utils/pricing
     title: <p>Trademark Registration Pricing</p>
   - _bookshop_name: cta/plane
