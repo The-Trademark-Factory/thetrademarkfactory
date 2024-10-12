@@ -25,8 +25,8 @@
 		},
 		"wordDetails": {
 			"existing": {
-				"title": "We found some existing trademarks that may block your application. Your trademark may not be available for:",
-				"description": "      ",
+				"title": "We found some existing trademarks that may block your application. Your trademark may not be available in the classes below.",
+				"description": "Your trademark may still be available in other classes.",
 				"disable": false
 			},
 			"process": {
