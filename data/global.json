@@ -11,7 +11,7 @@
 			"image": ""
 		},
 		"searchField": {
-			"disable_search_results": false,
+			"disable_search_results": true,
 			"title_word": "File a WORD trademark now",
 			"title_logo": "File a LOGO trademark now",
 			"registered_title": "Your exact trademark may already be registered for some goods/services.",
@@ -27,7 +27,7 @@
 			"existing": {
 				"title": "Our search has found existing trademarks that may block your application for the below goods/services:",
 				"description": "Note - Your trademark may still be available for other goods/services.",
-				"disable": false
+				"disable": true
 			},
 			"process": {
 				"title_existing": "STILL WISH TO FILE YOUR TRADE MARK? Apply Now.",
