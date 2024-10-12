@@ -101,47 +101,6 @@ content_blocks:
         position: University of Melbourne
         description: “Easier than IP Australia"
         icon: https://dummyimage.com/90
-  - _bookshop_name: cards/twoColsMultiSide
-    title: <p>Why <em>Choose </em>Us</p>
-    description: >-
-      <p><strong>The TradeMark Factory</strong> was developed by expert
-      trademark lawyers who implemented the power of AI to provide a quick, easy
-      and affordable alternative to brand protection.&nbsp;</p><p>Rest assured
-      that your trademark will be managed by top trademark lawyers at
-      <strong>low competative rates</strong>.</p>
-    media:
-      animation: computer-coffee
-      image: /upload/placeholder-features.svg
-      alt: Drawing of a computer with a coffee mub
-    cards:
-      - title_card: Self-Service
-        description_card: >-
-          Fully-automated online trademark application platform which integrates
-          with IP Australia
-        icon: /upload/ic-selfservice.svg
-      - title_card: Easy to Use
-        description_card: >-
-          Apply for your trademark registration online using any device in 4
-          easy steps
-        icon: /upload/ic-easytouse.svg
-      - title_card: Affordable
-        description_card: >-
-          Fixed fee pricing and up to 60% cheaper than a lawyer. You only pay
-          once.
-        icon: /upload/ic-affordable.svg
-      - title_card: Fast
-        description_card: Apply for your trademark in under 5 minutes
-        icon: /upload/ic-fast.svg
-      - title_card: Better Protection
-        description_card: >-
-          Integration with IP Australia means improved application quality and
-          the right protection.
-        icon: /upload/ic-protect.svg
-      - title_card: Australia Specific
-        description_card: >-
-          Designed by Australians for Australians and trusted by thousands of
-          brand owners to protect their trademarks.
-        icon: /upload/ic-ausspecific.svg
   - _bookshop_name: others/icons
     title: <p>Trademarks we have <em>registered</em></p>
     icons:
