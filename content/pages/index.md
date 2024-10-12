@@ -113,6 +113,47 @@ content_blocks:
         image: /upload/img-step4.svg
         step: '4'
         last_step: true
+  - _bookshop_name: others/testimonials
+    title: <p>What our clients <em>say</em></p>
+    testimonials:
+      - name: Katrina Hammon - Wynn Williams
+        position: Partner
+        description: >-
+          "...the best in AU/NZ for global brand protection and portfolio
+          management.  They are smashing the IP firms out of the park when you
+          compare their service, skills and efficiencies. I continue to
+          recommend the team to our clients for Australian and global specialist
+          advice and service."
+        icon: /upload/wynn-williams.jpg
+      - name: Brad Hales
+        position: National Marketing Communications Manager
+        description: >-
+          "Great professionalism ....Extremely knowledgeable ... Clarity to many
+          complex applications we have had over the years. I would recommended
+          the team for any individual or company seeking a trustworthy and
+          reliable service."
+        icon: /upload/uniden.jpg
+      - name: Shadi Harb
+        position: In-House Counsel
+        description: >-
+          "...sound and prompt advice no matter how difficult or convoluted our
+          matters may be. Their attention to detail, fair and transparent rates
+          and ability to deliver results to our business is greatly appreciated.
+          I would recommend, with confidence, the team."
+        icon: /upload/seagrass-2.jpg
+      - name: Patricia Richards
+        position: General Manager
+        description: >-
+          "...outstanding knowledge of Australian and International trade mark
+          law and an ability to understand our trade marking needs. Responsive
+          to our instructions and offers great value for money with their
+          competitive and transparent fees. I would highly recommend the team to
+          whoever requires IP legal services here and abroad."
+        icon: /upload/gme.jpg
+      - name: Christine Nearchou
+        position: University of Melbourne
+        description: “Easier than IP Australia"
+        icon: https://dummyimage.com/90
   - _bookshop_name: utils/pricing
     title: <p>Trademark <em>registration </em>Pricing</p>
   - _bookshop_name: cta/plane
@@ -168,47 +209,6 @@ content_blocks:
         icon: /upload/brooklyn.jpg
       - title: <p>HAELEN</p>
         icon: /upload/haelen.jpg
-  - _bookshop_name: others/testimonials
-    title: <p>What our clients <em>say</em></p>
-    testimonials:
-      - name: Katrina Hammon - Wynn Williams
-        position: Partner
-        description: >-
-          "...the best in AU/NZ for global brand protection and portfolio
-          management.  They are smashing the IP firms out of the park when you
-          compare their service, skills and efficiencies. I continue to
-          recommend the team to our clients for Australian and global specialist
-          advice and service."
-        icon: /upload/wynn-williams.jpg
-      - name: Brad Hales
-        position: National Marketing Communications Manager
-        description: >-
-          "Great professionalism ....Extremely knowledgeable ... Clarity to many
-          complex applications we have had over the years. I would recommended
-          the team for any individual or company seeking a trustworthy and
-          reliable service."
-        icon: /upload/uniden.jpg
-      - name: Shadi Harb
-        position: In-House Counsel
-        description: >-
-          "...sound and prompt advice no matter how difficult or convoluted our
-          matters may be. Their attention to detail, fair and transparent rates
-          and ability to deliver results to our business is greatly appreciated.
-          I would recommend, with confidence, the team."
-        icon: /upload/seagrass-2.jpg
-      - name: Patricia Richards
-        position: General Manager
-        description: >-
-          "...outstanding knowledge of Australian and International trade mark
-          law and an ability to understand our trade marking needs. Responsive
-          to our instructions and offers great value for money with their
-          competitive and transparent fees. I would highly recommend the team to
-          whoever requires IP legal services here and abroad."
-        icon: /upload/gme.jpg
-      - name: Christine Nearchou
-        position: University of Melbourne
-        description: “Easier than IP Australia"
-        icon: https://dummyimage.com/90
   - _bookshop_name: others/faqs
     title: <p>Frequently Asked <em>Questions</em></p>
     faq:
