@@ -17,7 +17,7 @@ content_blocks:
     search:
       title: 'Enter your trademark below to start your application:'
     aussie:
-      title: Fast, easy and affordable trademark registration
+      title: Australia's most reliable online trade mark filing platform
       subtitle: Developed by Australian lawyers with over 30 years experience
     scrolling_banner:
       - title: 100% online trademark application
