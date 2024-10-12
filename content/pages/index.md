@@ -18,7 +18,7 @@ content_blocks:
       title: 'Enter your trademark below to start your application:'
     aussie:
       title: Australia’s most reliable online trademark filing platform
-      subtitle: Developed by Australian lawyers with over 30 years experience
+      subtitle: The quickest, easiest and most cost-effective way to protect your brand.
     scrolling_banner:
       - title: 100% online trademark application
       - title: 4 easy steps
