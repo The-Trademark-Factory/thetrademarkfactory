@@ -40,7 +40,7 @@ content_blocks:
       title_button: Apply Now
       url: https://ttmf.com.au/application/search
   - _bookshop_name: cards/steps
-    title: "<p>Register your <em>trademark </em>today</p><p>\_</p><p>4 <em>easy </em>steps. No <em>login </em>required.</p>"
+    title: <p>4 <em>easy </em>steps. No <em>login </em>required.</p>
     steps:
       - title_step: Enter your trademark (word or image)
         image: /upload/img-step1.svg
@@ -60,47 +60,6 @@ content_blocks:
         last_step: true
   - _bookshop_name: utils/pricing
     title: <p>Low <em>Fixed </em>fees</p>
-  - _bookshop_name: cards/twoColsMultiSide
-    title: <p>Why <em>Choose </em>Us</p>
-    description: >-
-      <p><strong>The TradeMark Factory</strong> was developed by expert
-      trademark lawyers who implemented the power of AI to provide a quick, easy
-      and affordable alternative to brand protection.&nbsp;</p><p>Rest assured
-      that your trademark will be managed by top trademark lawyers at
-      <strong>low competative rates</strong>.</p>
-    media:
-      animation: computer-coffee
-      image: /upload/placeholder-features.svg
-      alt: Drawing of a computer with a coffee mub
-    cards:
-      - title_card: Self-Service
-        description_card: >-
-          Fully-automated online trademark application platform which integrates
-          with IP Australia
-        icon: /upload/ic-selfservice.svg
-      - title_card: Easy to Use
-        description_card: >-
-          Apply for your trademark registration online using any device in 4
-          easy steps
-        icon: /upload/ic-easytouse.svg
-      - title_card: Affordable
-        description_card: >-
-          Fixed fee pricing and up to 60% cheaper than a lawyer. You only pay
-          once.
-        icon: /upload/ic-affordable.svg
-      - title_card: Fast
-        description_card: Apply for your trademark in under 5 minutes
-        icon: /upload/ic-fast.svg
-      - title_card: Better Protection
-        description_card: >-
-          Integration with IP Australia means improved application quality and
-          the right protection.
-        icon: /upload/ic-protect.svg
-      - title_card: Australia Specific
-        description_card: >-
-          Designed by Australians for Australians and trusted by thousands of
-          brand owners to protect their trademarks.
-        icon: /upload/ic-ausspecific.svg
   - _bookshop_name: others/testimonials
     title: <p>What our clients <em>say</em></p>
     testimonials:
@@ -142,15 +101,47 @@ content_blocks:
         position: University of Melbourne
         description: “Easier than IP Australia"
         icon: https://dummyimage.com/90
-  - _bookshop_name: cta/plane
-    title: <p>Trademark <em>protection</em> wherever you need it</p>
+  - _bookshop_name: cards/twoColsMultiSide
+    title: <p>Why <em>Choose </em>Us</p>
     description: >-
-      <p><strong>TAKING YOUR BUSINESS OVERSEAS?</strong>&nbsp;</p><p>Visit the
-      pricing pages to get a quote for <strong>international trademark
-      registration</strong>.</p>
-    button:
-      label: Get a quote
-      url: /pricing/#international-pricing
+      <p><strong>The TradeMark Factory</strong> was developed by expert
+      trademark lawyers who implemented the power of AI to provide a quick, easy
+      and affordable alternative to brand protection.&nbsp;</p><p>Rest assured
+      that your trademark will be managed by top trademark lawyers at
+      <strong>low competative rates</strong>.</p>
+    media:
+      animation: computer-coffee
+      image: /upload/placeholder-features.svg
+      alt: Drawing of a computer with a coffee mub
+    cards:
+      - title_card: Self-Service
+        description_card: >-
+          Fully-automated online trademark application platform which integrates
+          with IP Australia
+        icon: /upload/ic-selfservice.svg
+      - title_card: Easy to Use
+        description_card: >-
+          Apply for your trademark registration online using any device in 4
+          easy steps
+        icon: /upload/ic-easytouse.svg
+      - title_card: Affordable
+        description_card: >-
+          Fixed fee pricing and up to 60% cheaper than a lawyer. You only pay
+          once.
+        icon: /upload/ic-affordable.svg
+      - title_card: Fast
+        description_card: Apply for your trademark in under 5 minutes
+        icon: /upload/ic-fast.svg
+      - title_card: Better Protection
+        description_card: >-
+          Integration with IP Australia means improved application quality and
+          the right protection.
+        icon: /upload/ic-protect.svg
+      - title_card: Australia Specific
+        description_card: >-
+          Designed by Australians for Australians and trusted by thousands of
+          brand owners to protect their trademarks.
+        icon: /upload/ic-ausspecific.svg
   - _bookshop_name: others/icons
     title: <p>Trademarks we have <em>registered</em></p>
     icons:
