@@ -151,7 +151,7 @@ content_blocks:
         step: '4'
         last_step: true
   - _bookshop_name: utils/pricing
-    title: <p>Trademark <em>registration </em>Pricing</p>
+    title: <p>Trademark Registration Pricing</p>
   - _bookshop_name: cta/plane
     title: <p>International <em>Trademark</em> protection </p>
     description: >-
