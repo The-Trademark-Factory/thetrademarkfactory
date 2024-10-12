@@ -34,10 +34,10 @@ content_blocks:
     content: >-
       <p>The TradeMark Factory is Australia’s <strong>quickest, easiest and
       lowest cost</strong> trademark registration platform.</p><p><em>4 easy
-      steps. No login required.</em></p><p> The TradeMark Factory application
-      process is fully integrated with IP Australia. Simply <strong>complete and
-      submit</strong> our  easy to use and secure application form and we will
-      take care of the rest.</p>
+      steps. No login required.</em></p><p>Our application process is fully
+      integrated with IP Australia. Simply <strong>complete and submit</strong>
+      our  easy to use and secure application form and we will take care of the
+      rest.</p>
     button:
       title_button: Apply Now
       url: /application/search
