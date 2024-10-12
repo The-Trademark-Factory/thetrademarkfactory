@@ -157,7 +157,7 @@ content_blocks:
   - _bookshop_name: utils/pricing
     title: <p>Trademark <em>registration </em>Pricing</p>
   - _bookshop_name: cta/plane
-    title: <p>Trademark <em>protection</em> wherever you need it</p>
+    title: <p>International <em>Trademark</em> protection </p>
     description: >-
       <p><strong>Taking your business overseas? </strong>The TradeMark Factory
       is a one-stop-shop for your trademarking need no matter where your
