@@ -90,7 +90,7 @@ content_blocks:
         label: Trademarks filed
       - title: 100+
         label: Countries
-      - title: 95%+
+      - title: 96%+
         label: Success rate
       - title: Australian
         label: Owned & operated
