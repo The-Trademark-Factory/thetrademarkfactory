@@ -132,9 +132,9 @@ content_blocks:
           whoever requires IP legal services here and abroad."
         icon: /upload/gme.jpg
   - _bookshop_name: utils/spacer
-    padding: '12'
+    padding: '10'
     background: white
-    disable_mobile: false
+    disable_mobile: true
     rounded_bottom: true
     rounded_top: true
   - _bookshop_name: cards/steps
@@ -157,9 +157,9 @@ content_blocks:
         step: '4'
         last_step: true
   - _bookshop_name: utils/spacer
-    padding: '12'
+    padding: '10'
     background: white
-    disable_mobile: false
+    disable_mobile: true
     rounded_bottom: true
     rounded_top: true
   - _bookshop_name: utils/pricing
