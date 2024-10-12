@@ -81,11 +81,13 @@ content_blocks:
         step: '4'
         last_step: true
   - _bookshop_name: cards/twoColsMultiSide
-    title: <p>Merging Legal Expertise with AI <em>innovation</em></p>
+    title: <p>Why Choose <em>Us</em></p>
     description: >-
-      <p><strong>The TradeMark Factory</strong> was developed by expert
-      trademark lawyers who implemented the power of AI to provide an ingenious
-      online platform which integrates with IP Australia&nbsp;</p>
+      <p><strong>The TradeMark Factory</strong> has been developed by expert
+      trademark lawyers with 30+ years of experience and is Australian owned and
+      operated. We know how the Australian trade mark system works and you can
+      be assured that your application will be managed properly from filing
+      through to registration.</p>
     media:
       animation: computer-coffee
       image: /upload/placeholder-features.svg
