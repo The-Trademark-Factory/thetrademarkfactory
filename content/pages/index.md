@@ -94,25 +94,6 @@ content_blocks:
         label: Success rate
       - title: Australian
         label: Owned & operated
-  - _bookshop_name: cards/steps
-    title: <p><em>How</em> It Works</p>
-    steps:
-      - title_step: Enter your trademark (word or image)
-        image: /upload/img-step1.svg
-        step: '1'
-        last_step: false
-      - title_step: Select your good and/or services
-        image: /upload/img-step2.svg
-        step: '2'
-        last_step: false
-      - title_step: Enter the trademark owner's details
-        image: /upload/img-step3.svg
-        step: '3'
-        last_step: false
-      - title_step: Pay and your trademark is submitted to IP Australia
-        image: /upload/img-step4.svg
-        step: '4'
-        last_step: true
   - _bookshop_name: others/testimonials
     title: <p>What our clients <em>say</em></p>
     testimonials:
@@ -154,6 +135,25 @@ content_blocks:
         position: University of Melbourne
         description: “Easier than IP Australia"
         icon: https://dummyimage.com/90
+  - _bookshop_name: cards/steps
+    title: <p><em>How</em> It Works</p>
+    steps:
+      - title_step: Enter your trademark (word or image)
+        image: /upload/img-step1.svg
+        step: '1'
+        last_step: false
+      - title_step: Select your good and/or services
+        image: /upload/img-step2.svg
+        step: '2'
+        last_step: false
+      - title_step: Enter the trademark owner's details
+        image: /upload/img-step3.svg
+        step: '3'
+        last_step: false
+      - title_step: Pay and your trademark is submitted to IP Australia
+        image: /upload/img-step4.svg
+        step: '4'
+        last_step: true
   - _bookshop_name: utils/pricing
     title: <p>Trademark <em>registration </em>Pricing</p>
   - _bookshop_name: cta/plane
