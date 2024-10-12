@@ -131,10 +131,6 @@ content_blocks:
           competitive and transparent fees. I would highly recommend the team to
           whoever requires IP legal services here and abroad."
         icon: /upload/gme.jpg
-      - name: Christine Nearchou
-        position: University of Melbourne
-        description: “Easier than IP Australia"
-        icon: https://dummyimage.com/90
   - _bookshop_name: cards/steps
     title: <p><em>How</em> It Works</p>
     steps:
