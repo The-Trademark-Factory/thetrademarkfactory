@@ -58,6 +58,22 @@ content_blocks:
         image: /upload/img-step4.svg
         step: '4'
         last_step: true
+  - _bookshop_name: cards/threeCols
+    title: <em>Why</em> Choose Us
+    cards:
+      - title_card: Trademark Experts
+        description_card: >-
+          Our lawyers have over 30 years experience and have registered over
+          9,000 trademarks worldwide.
+        icon: /upload/ic-experience.svg
+      - title_card: Low Fixed Fees
+        description_card: One-off low fixed fee for filing your trade mark. No hidden charges.
+        icon: /upload/ic-lowrates.svg
+      - title_card: Self-Service, Easy to Use
+        description_card: >-
+          Our fully automated trade mark application platform can be completed
+          in 4 easy steps and at lighting speed.
+        icon: /upload/ic-fast.svg
   - _bookshop_name: utils/pricing
     title: <p>Low <em>Fixed </em>fees</p>
   - _bookshop_name: others/testimonials
@@ -136,20 +152,4 @@ content_blocks:
         icon: /upload/brooklyn.jpg
   - _bookshop_name: cta/search
     title: <p>Get your <em>trademark </em>today</p>
-  - _bookshop_name: cards/threeCols
-    title: <em>Why</em> Choose Us
-    cards:
-      - title_card: Trademark Experts
-        description_card: >-
-          Our lawyers have over 30 years experience and have registered over
-          9,000 trademarks worldwide.
-        icon: /upload/ic-experience.svg
-      - title_card: Low Fixed Fees
-        description_card: One-off low fixed fee for filing your trade mark. No hidden charges.
-        icon: /upload/ic-lowrates.svg
-      - title_card: Self-Service, Easy to Use
-        description_card: >-
-          Our fully automated trade mark application platform can be completed
-          in 4 easy steps and at lighting speed.
-        icon: /upload/ic-fast.svg
 ---
