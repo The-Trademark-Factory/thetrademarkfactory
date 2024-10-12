@@ -31,7 +31,7 @@ content_blocks:
       - title: International trademarks available
   - _bookshop_name: cta/ctaDefault
     title: >-
-      <p>Apply&nbsp;<em>today</em> and receive<br />20% off our service
+      <p>Order your trade mark <em>today</em> and get<br />20% off our service
       fees.</p>
     content: >-
       <p>To receive the discount, complete your trademark application, pay the
