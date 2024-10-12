@@ -25,12 +25,12 @@
 		},
 		"wordDetails": {
 			"existing": {
-				"title": "Our search has found existing trademarks that may block your application for the below goods/services:",
-				"description": "Your trademark may still be available for other goods/services.",
+				"title": "We found some existing trademarks that may block your application. Your trademark may not be available for:",
+				"description": null,
 				"disable": false
 			},
 			"process": {
-				"title_existing": "APPLY NOW.",
+				"title_existing": "STILL WANT TO APPLY?",
 				"title_available": "File your trademark now. Our fees include:",
 				"features": [
 					{
