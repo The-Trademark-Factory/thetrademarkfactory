@@ -29,6 +29,22 @@ content_blocks:
       - title: 100% Australian owned and operated
       - title: 9,000+ trademarks registered
       - title: International trademarks available
+  - _bookshop_name: cards/threeCols
+    title: Australia's<em> </em>most reliable online <em>trade mark </em>platform
+    cards:
+      - title_card: Trademark Experts
+        description_card: >-
+          Our lawyers have over 30 years experience and have registered over
+          9,000 trademarks worldwide.
+        icon: /upload/ic-experience.svg
+      - title_card: Low Fixed Fees
+        description_card: One-off low fixed fee for filing your trade mark. No hidden charges.
+        icon: /upload/ic-lowrates.svg
+      - title_card: Self-Service, Easy to Use
+        description_card: >-
+          Our fully automated trade mark application platform can be completed
+          in 4 easy steps and at lighting speed.
+        icon: /upload/ic-fast.svg
   - _bookshop_name: cta/ctaDefault
     title: >-
       <p>Order your trade mark <em>today</em> and get<br />20% off our service
@@ -58,24 +74,6 @@ content_blocks:
         image: /upload/img-step4.svg
         step: '4'
         last_step: true
-  - _bookshop_name: cards/threeCols
-    title: Australia's<em> </em>most reliable online <em>trade mark </em>platform
-    cards:
-      - title_card: Trademark Experts
-        description_card: >-
-          Our lawyers have over 30 years experience and have registered over
-          9,000 trademarks worldwide.
-        icon: /upload/ic-experience.svg
-      - title_card: Low Fixed Fees
-        description_card: One-off low fixed fee for filing your trade mark. No hidden charges.
-        icon: /upload/ic-lowrates.svg
-      - title_card: Self-Service, Easy to Use
-        description_card: >-
-          Our fully automated trade mark application platform can be completed
-          in 4 easy steps and at lighting speed.
-        icon: /upload/ic-fast.svg
-  - _bookshop_name: utils/pricing
-    title: <p>Low <em>Fixed </em>fees</p>
   - _bookshop_name: others/testimonials
     title: <p>What our clients <em>say</em></p>
     testimonials:
@@ -117,6 +115,8 @@ content_blocks:
         position: University of Melbourne
         description: “Easier than IP Australia"
         icon: https://dummyimage.com/90
+  - _bookshop_name: utils/pricing
+    title: <p>Low <em>Fixed </em>fees</p>
   - _bookshop_name: others/icons
     title: <p>Trademarks we have <em>registered</em></p>
     icons:
