@@ -59,7 +59,7 @@ content_blocks:
         step: '4'
         last_step: true
   - _bookshop_name: cards/threeCols
-    title: <em>Why</em> Choose Us
+    title: Australia's<em> </em>most reliable online <em>trade mark </em>platform
     cards:
       - title_card: Trademark Experts
         description_card: >-
