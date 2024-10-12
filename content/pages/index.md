@@ -132,13 +132,13 @@ content_blocks:
           whoever requires IP legal services here and abroad."
         icon: /upload/gme.jpg
   - _bookshop_name: utils/spacer
-    padding: '10'
+    padding: '12'
     background: white
     disable_mobile: true
     rounded_bottom: true
     rounded_top: true
   - _bookshop_name: cards/steps
-    title: <p><em>How</em> It Works</p>
+    title: <p><em>Apply</em> in just 4 Easy Steps</p>
     steps:
       - title_step: Enter your trademark (word or image)
         image: /upload/img-step1.svg
@@ -157,13 +157,13 @@ content_blocks:
         step: '4'
         last_step: true
   - _bookshop_name: utils/spacer
-    padding: '10'
+    padding: '12'
     background: white
     disable_mobile: true
     rounded_bottom: true
     rounded_top: true
   - _bookshop_name: utils/pricing
-    title: <p>Trademark Registration Pricing</p>
+    title: <p>Trademark <em>Registration</em> Pricing</p>
   - _bookshop_name: cta/plane
     title: <p>International <em>Trademark</em> protection </p>
     description: >-
