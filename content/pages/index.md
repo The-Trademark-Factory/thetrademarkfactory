@@ -30,9 +30,7 @@ content_blocks:
       - title: 9,000+ trademarks registered
       - title: International trademarks available
   - _bookshop_name: cta/ctaDefault
-    title: >-
-      <p>Quick, easy &amp; affordable</p><p>&nbsp;<br />Online<em>
-      Trademark</em> Registration</p>
+    title: <p>AustraliaOnline<em> Trademark</em> Registration</p>
     content: >-
       <p><strong>Australia’s quickest and easiest trademark registration
       platform.</strong></p><p><em>4 easy steps. No login
