@@ -1,7 +1,9 @@
 ---
 title: Home
 seo:
-  title: File your Trademark Today | Register Online | The Trademark Factory
+  title: >-
+    Affordable Online Trademark Registration in Australia | The Trademark
+    Factory
   description: >-
     Apply for your trademark online with our automated platform. Register your
     trademark for Australia and Worldwide in minutes. File your trade mark
