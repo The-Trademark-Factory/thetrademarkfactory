@@ -1,7 +1,7 @@
 ---
 title: About
 seo:
-  title: About | The Trademark Factory
+  title: Affordable Trade Marks | The Trademark Factory
   description: >-
     We are an Australian law firm specialised in trademarks and IP with over
     10,000 trademarks registered.
