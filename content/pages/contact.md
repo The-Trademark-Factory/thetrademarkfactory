@@ -1,7 +1,7 @@
 ---
 title: Contact
 seo:
-  title: Contact Us | The Trademark Factory
+  title: Contact Trade Mark Attorneys | The Trademark Factory
   description: Get in touch for all your trademarks and intellectual property enquiries
   image: /upload/ttmf-default-seo.png
   no_index: false
