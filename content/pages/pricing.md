@@ -1,7 +1,7 @@
 ---
 title: Pricing
 seo:
-  title: Our Pricing | The Trademark Factory
+  title: Trade Mark Pricing | The Trademark Factory
   description: >-
     We offer a flat fee for all your trademark registration, in Australia and
     Internationally.
