@@ -134,14 +134,14 @@ content_blocks:
           whoever requires IP legal services here and abroad."
         icon: /upload/gme.jpg
       - name: Vaun Peate
-        position: Owner
+        position: water 4 good - owner
         description: >-
           Thanks to the team at TTMF for doing such a good job with my
           trademark. Registering a trademark is never easy. You helped me
           navigate the complexities of IP protection and the experience of doing
           so was painless. I have no hesitation in recommending your team to
           others seeking a similar service.  
-        icon: https://dummyimage.com/90
+        icon: /upload/about-intro.svg
   - _bookshop_name: utils/spacer
     padding: '12'
     background: white
