@@ -30,18 +30,18 @@
 		}
 	],
 	"address": {
-		"street": "64 Talavera Road",
-		"city": "Macquarie Park",
-		"state": "NSW 2113 Australia"
+		"street": "1440 Pittwater Road",
+		"city": "Narrabeen",
+		"state": "NSW 2101 Australia"
 	},
-	"phone": "+61 2 80890266",
+	"phone": "+61 2 9499 9229",
 	"email": "admin@ttmf.com.au",
 	"button": {
 		"title": "Apply Now",
 		"title_mobile": "Apply Now",
 		"url": "/application/search"
 	},
-	"copyright": "© 2024 The TradeMark Factory. All rights reserved.",
+	"copyright": "© 2025 The TradeMark Factory. All rights reserved.",
 	"built": {
 		"title": "Built by C&B",
 		"url": "https://www.croissantbaguette.com.au/"
