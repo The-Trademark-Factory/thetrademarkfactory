@@ -19,7 +19,7 @@ content_blocks:
     search:
       title: 'Enter your trademark below to start your application:'
     aussie:
-      title: Australia’s most reliable online trademark filing platform
+      title: Save over 60% on legal fees by using The TradeMark Factory
       subtitle: The quickest, easiest and most cost-effective way to protect your brand
     scrolling_banner:
       - title: 100% online trademark application
