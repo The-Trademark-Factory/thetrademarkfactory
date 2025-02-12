@@ -34,7 +34,7 @@ content_blocks:
       - title: 9,000+ trademarks registered
       - title: International trademarks available
   - _bookshop_name: cta/ctaDefault
-    title: <p>Trademark Registration Online</p>
+    title: <p>Expert Lawyers. Exceptional Service. <br />Low Fixed Fees.</p>
     content: >-
       <p>The TradeMark Factory is Australia’s <strong>quickest, easiest and
       lowest cost</strong> trademark registration platform.</p><p><em>4 easy
