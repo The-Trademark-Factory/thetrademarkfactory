@@ -36,12 +36,13 @@ content_blocks:
   - _bookshop_name: cta/ctaDefault
     title: <p>Expert Lawyers. Exceptional Service. <br />Low Fixed Fees.</p>
     content: >-
-      <p>The TradeMark Factory is Australia’s <strong>quickest, easiest and
-      lowest cost</strong> trademark registration platform.</p><p><em>4 easy
-      steps. No login required.</em></p><p>Our application process is fully
-      integrated with IP Australia. Simply <strong>complete and submit</strong>
-      our  easy to use and secure application form and we will take care of the
-      rest.</p>
+      <p>The TradeMark Factory is Australia’s <strong>quickest, easiest and most
+      affordable </strong> trademark registration service.</p><h2><em>We offer 2
+      ways to secure your trade mark:</em></h2><p>1. Our <strong>no fuss online
+      application</strong> platform - Apply in  4 easy steps. No login
+      required.</p><p>2. Access to our <strong>expert trade mark
+      lawyers</strong> - Save more than <strong>60% on legal fees </strong>as
+      compared to our competitors.</p><p><em>Get started today.</em> </p>
     button:
       title_button: Apply Now
       url: /application/search
