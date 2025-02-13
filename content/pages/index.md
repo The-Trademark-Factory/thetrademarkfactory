@@ -42,10 +42,30 @@ content_blocks:
       application</strong> platform - Apply in  4 easy steps. No login
       required.</p><p>2. Access to our <strong>expert trade mark
       lawyers</strong> - Save more than <strong>60% on legal fees </strong>as
-      compared to our competitors.</p><p><em>Get started today.</em> </p>
+      compared to our competitors.</p><h2><em>Get your trade mark today.</em>
+      </h2>
     button:
       title_button: Apply Now
       url: /application/search
+  - _bookshop_name: cards/steps
+    title: <p><em>Apply</em>  in just 4 Easy Steps</p>
+    steps:
+      - title_step: Enter your trademark (word or image)
+        image: /upload/img-step1.svg
+        step: '1'
+        last_step: false
+      - title_step: Select your good and/or services
+        image: /upload/img-step2.svg
+        step: '2'
+        last_step: false
+      - title_step: Enter the trademark owner's details
+        image: /upload/img-step3.svg
+        step: '3'
+        last_step: false
+      - title_step: Pay and your trademark is submitted to IP Australia
+        image: /upload/img-step4.svg
+        step: '4'
+        last_step: true
   - _bookshop_name: cards/twoColsMultiSide
     title: <p>Why Choose <em>Us</em></p>
     description: >-
@@ -145,25 +165,6 @@ content_blocks:
           so was painless. I have no hesitation in recommending your team to
           others seeking a similar service.  
         icon: /upload/about-intro.svg
-  - _bookshop_name: cards/steps
-    title: <p><em>Apply</em> in just 4 Easy Steps</p>
-    steps:
-      - title_step: Enter your trademark (word or image)
-        image: /upload/img-step1.svg
-        step: '1'
-        last_step: false
-      - title_step: Select your good and/or services
-        image: /upload/img-step2.svg
-        step: '2'
-        last_step: false
-      - title_step: Enter the trademark owner's details
-        image: /upload/img-step3.svg
-        step: '3'
-        last_step: false
-      - title_step: Pay and your trademark is submitted to IP Australia
-        image: /upload/img-step4.svg
-        step: '4'
-        last_step: true
   - _bookshop_name: utils/spacer
     padding: '12'
     background: white
