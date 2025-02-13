@@ -67,8 +67,8 @@ content_blocks:
   - _bookshop_name: cta/ctaDefault
     title: <p>Need some <em>help</em>?</p>
     content: >-
-      <p>If you need a helping hand, simply send us an email one of our experts
-      will be in touch.</p>
+      <h4>If you need a <em>helping hand</em>, simply send us an email one of
+      our experts will be in touch.</h4>
     button:
       title_button: Contact Us
       url: >-
@@ -126,6 +126,20 @@ content_blocks:
         label: Success rate
       - title: Australian
         label: Owned & operated
+  - _bookshop_name: cta/plane
+    title: <p>International <em>Trademark</em> protection</p>
+    description: >-
+      <p><strong>Taking your business overseas? </strong>The TradeMark Factory
+      is a one-stop-shop for your trademarking need no matter where your
+      business takes you. Visit the pricing pages to get a
+      <strong>quote</strong> for trademark registration outside Australia or get
+      in touch and one of our experts will contact you to discuss how we can
+      help.</p>
+    button:
+      label: Contact Us
+      url: /contact/
+  - _bookshop_name: utils/pricing
+    title: <p>Trademark <em>Registration</em> Pricing</p>
   - _bookshop_name: others/testimonials
     title: <p>What our clients <em>say</em></p>
     testimonials:
@@ -178,18 +192,6 @@ content_blocks:
     disable_mobile: true
     rounded_bottom: true
     rounded_top: true
-  - _bookshop_name: utils/pricing
-    title: <p>Trademark <em>Registration</em> Pricing</p>
-  - _bookshop_name: cta/plane
-    title: <p>International <em>Trademark</em> protection </p>
-    description: >-
-      <p><strong>Taking your business overseas? </strong>The TradeMark Factory
-      is a one-stop-shop for your trademarking need no matter where your
-      business takes you. Visit the pricing pages to get a quote for trademark
-      registration outside Australia.</p>
-    button:
-      label: Get a quote
-      url: /pricing/#international-pricing
   - _bookshop_name: others/icons
     title: <p>Trademarks we have <em>registered</em></p>
     icons:
