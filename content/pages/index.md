@@ -50,16 +50,16 @@ content_blocks:
     title: <p>Why Choose <em>Us</em></p>
     description: >-
       <p><strong>The TradeMark Factory</strong> has been developed by expert
-      trademark lawyers with 30+ years of experience. Being Australian owned and
-      operated, we know how the Australian trade mark system works and you can
-      rest assured that your application will be managed properly from filing
-      through to registration.</p>
+      trademark lawyers with 30+ years of experience. Being <strong>Australian
+      owned and operated</strong>, we know how the Australian trade mark system
+      works and you can rest assured that your application will be managed
+      properly from filing through to registration.</p>
     media:
       animation: computer-coffee
       image: /upload/placeholder-features.svg
       alt: Drawing of a computer with a coffee mub
     cards:
-      - title_card: Self-Service
+      - title_card: Self-Service Option
         description_card: >-
           Fully-automated online trademark application platform which integrates
           with IP Australia
@@ -74,19 +74,19 @@ content_blocks:
           Fixed fee pricing and up to 60% cheaper than a lawyer. You only pay
           once.
         icon: /upload/ic-affordable.svg
-      - title_card: Fast
+      - title_card: Fast Turnaround
         description_card: Apply for your trademark in under 5 minutes
         icon: /upload/ic-fast.svg
       - title_card: Better Protection
         description_card: >-
-          Integration with IP Australia means improved application quality and
-          the right protection.
+          File with the knowledge that your application is checked by experts,
+          meaning improved application quality and the right protection.
         icon: /upload/ic-protect.svg
-      - title_card: Australia Specific
+      - title_card: Global Reach
         description_card: >-
           Designed by Australians for Australians and trusted by thousands of
-          brand owners to protect their trademarks.
-        icon: /upload/ic-ausspecific.svg
+          brand owners to protect their trademarks around the world.
+        icon: /upload/ic-status.svg
   - _bookshop_name: cards/stats
     stats:
       - title: 30+
