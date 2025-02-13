@@ -137,7 +137,7 @@ content_blocks:
           whoever requires IP legal services here and abroad."
         icon: /upload/gme.jpg
       - name: Vaun Peate
-        position: water 4 good - owner
+        position: water4good.net.au
         description: >-
           Thanks to the team at TTMF for doing such a good job with my
           trademark. Registering a trademark is never easy. You helped me
@@ -145,12 +145,6 @@ content_blocks:
           so was painless. I have no hesitation in recommending your team to
           others seeking a similar service.  
         icon: /upload/about-intro.svg
-  - _bookshop_name: utils/spacer
-    padding: '12'
-    background: white
-    disable_mobile: true
-    rounded_bottom: true
-    rounded_top: true
   - _bookshop_name: cards/steps
     title: <p><em>Apply</em> in just 4 Easy Steps</p>
     steps:
