@@ -1,9 +1,7 @@
 ---
 title: Home
 seo:
-  title: >-
-    Affordable Online Trademark Registration in Australia | The Trademark
-    Factory
+  title: Affordable Trademark Registration in Australia | The Trademark Factory
   description: >-
     Apply for your trademark online with our automated platform. Register your
     trademark for Australia and Worldwide in minutes. File your trade mark
@@ -48,7 +46,7 @@ content_blocks:
       title_button: Apply Now
       url: /application/search
   - _bookshop_name: cards/steps
-    title: <p><em>Apply</em>  in just 4 Easy Steps</p>
+    title: <p><em>Apply</em>  online</p>
     steps:
       - title_step: Enter your trademark (word or image)
         image: /upload/img-step1.svg
@@ -66,6 +64,15 @@ content_blocks:
         image: /upload/img-step4.svg
         step: '4'
         last_step: true
+  - _bookshop_name: cta/ctaDefault
+    title: <p>Need some <em>help</em>?</p>
+    content: >-
+      <p>If you need a helping hand, simply send us an email one of our experts
+      will be in touch.</p>
+    button:
+      title_button: Contact Us
+      url: >-
+        mailto:admin@ttmf.com.au?subject=I%20need%20some%20help%20with%20my%20trade%20mark&body=Simple%20tell%20us%20about%20your%20trade%20mark%20and%20a%20bit%20about%20your%20business%20and%20one%20of%20our%20experts%20will%20be%20in%20touch.
   - _bookshop_name: cards/twoColsMultiSide
     title: <p>Why Choose <em>Us</em></p>
     description: >-
