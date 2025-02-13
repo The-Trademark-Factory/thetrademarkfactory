@@ -69,8 +69,8 @@ content_blocks:
   - _bookshop_name: cta/ctaDefault
     title: <p>Need some <em>help</em>?</p>
     content: >-
-      <h4>If you need a <em>helping hand</em>, simply send us an email one of
-      our experts will be in touch.</h4>
+      <h4>If you need a <em>helping hand</em>, simply send us an  email and one
+      of our experts will be in touch.</h4>
     button:
       title_button: Email Us Now
       url: >-
