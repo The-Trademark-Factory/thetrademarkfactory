@@ -58,8 +58,8 @@ content_blocks:
       efficient.</p>
     button:
       title_button: Enquire about International trademarks
-      url: /pricing/#international-pricing
-      title:
+      url: /contact/
+      title: ''
     media:
       content:
       image: /upload/img-international-trademark.svg
