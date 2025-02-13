@@ -44,7 +44,7 @@ content_blocks:
       lawyers</strong> - Save more than <strong>60% on legal fees </strong>as
       compared to our competitors.</p><p><em>Get started today.</em> </p>
     button:
-      title_button: Apply Now
+      title_button: Search and Apply Now
       url: /application/search
   - _bookshop_name: cards/twoColsMultiSide
     title: <p>Why Choose <em>Us</em></p>
