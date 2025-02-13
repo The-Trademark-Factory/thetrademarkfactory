@@ -46,7 +46,7 @@ content_blocks:
       title_button: Apply Now
       url: /application/search
   - _bookshop_name: cards/steps
-    title: <p><em>Apply</em>  online</p>
+    title: <p><em>Apply</em>  online in 4 Easy Steps</p>
     steps:
       - title_step: Enter your trademark (word or image)
         image: /upload/img-step1.svg
@@ -64,6 +64,8 @@ content_blocks:
         image: /upload/img-step4.svg
         step: '4'
         last_step: true
+  - _bookshop_name: cta/search
+    title: <p>Get <em>Started</em> Now</p>
   - _bookshop_name: cta/ctaDefault
     title: <p>Need some <em>help</em>?</p>
     content: >-
@@ -186,12 +188,6 @@ content_blocks:
           so was painless. I have no hesitation in recommending your team to
           others seeking a similar service.  
         icon: /upload/about-intro.svg
-  - _bookshop_name: utils/spacer
-    padding: '12'
-    background: white
-    disable_mobile: true
-    rounded_bottom: true
-    rounded_top: true
   - _bookshop_name: others/icons
     title: <p>Trademarks we have <em>registered</em></p>
     icons:
