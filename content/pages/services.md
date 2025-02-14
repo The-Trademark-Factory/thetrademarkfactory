@@ -1,7 +1,9 @@
 ---
 title: Services
 seo:
-  title: Trade Mark Services | The Trademark Factory
+  title: >-
+    Trademark Services | Registration, Monitoring & Enforcement | The Trademark
+    Factory
   description: >-
     We offer Trademark Registration, Search and Portfolio Management. We can
     also take care of your IP Healthcheck and Trademark Renewals
