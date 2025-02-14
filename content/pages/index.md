@@ -22,7 +22,7 @@ content_blocks:
         Every application is checked and filed by expert trademark lawyers . The
         most reliable and cost-effective way to protect your brand.
     scrolling_banner:
-      - title: 100% online trademark application
+      - title: Online application or contact our experts
       - title: 4 easy steps
       - title: Apply in under 5 minutes
       - title: Integrated with IP Australia
