@@ -4,8 +4,12 @@ title: Safeguarding Against Fraudulent IP Demands
 date: 2025-02-11T02:49:38Z
 image:
 seo:
-  title:
-  description:
+  title: >-
+    Who Owns AI-Generated Content? Navigating Copyright Laws | The TradeMark
+    Factory
+  description: >-
+    Can AI create copyrighted works? Explore the evolving legal framework of AI
+    and copyright in Australia, and what it means for businesses and creatives.
   image: /upload/ttmf-default-seo.png
   no_index: false
 ---
