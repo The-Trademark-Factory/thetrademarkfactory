@@ -19,8 +19,8 @@ content_blocks:
     aussie:
       title: Save over 60% on legal fees with The TradeMark Factory
       subtitle: >-
-        Backed by expert lawyers. The quickest, easiest and most cost-effective
-        way to protect your brand
+        Every application is checked and filed by expert trademark lawyers . The
+        most reliable and cost-effective way to protect your brand.
     scrolling_banner:
       - title: 100% online trademark application
       - title: 4 easy steps
