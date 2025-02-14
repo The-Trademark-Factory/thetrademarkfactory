@@ -17,14 +17,12 @@ content_blocks:
     search:
       title: 'Enter your trademark below to start your application:'
     aussie:
-      title: Save over 60% on legal fees with The TradeMark Factory
+      title: Save up to 60% on legal fees with The TradeMark Factory
       subtitle: >-
-        Every application is checked and filed by expert trademark lawyers . The
-        most reliable and cost-effective way to protect your brand.
+        Every application is checked and filed by our expert trademark lawyers .
+        The most reliable and cost-effective way to protect your brand. 
     scrolling_banner:
       - title: Online application or contact our experts
-      - title: 4 easy steps
-      - title: Apply in under 5 minutes
       - title: Integrated with IP Australia
       - title: Low fixed fees
       - title: 30+ years experience
