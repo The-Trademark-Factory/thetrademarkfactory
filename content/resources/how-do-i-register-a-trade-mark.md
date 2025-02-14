@@ -4,10 +4,11 @@ title: How do I register a trade mark?
 date: 2024-01-06T01:59:36Z
 image:
 seo:
-  title: How do I register a trade mark?
+  title: How to Register a Trade Mark in Australia | Step-by-Step Guide
   description: >-
-    How to register a trade mark in Australia. How long does a trade mark last
-    and can I amend a trade mark. What is the trade mark symbol.
+    Learn how to register a trade mark in Australia with our step-by-step guide.
+    Protect your brand and secure exclusive rights. Start your application
+    today!
   image: /upload/ttmf-default-seo.png
   no_index: false
 ---
