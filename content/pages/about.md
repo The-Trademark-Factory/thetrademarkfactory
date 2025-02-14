@@ -1,10 +1,10 @@
 ---
 title: About
 seo:
-  title: Affordable Trade Marks | The Trademark Factory
+  title: Leading Trademark Services in Australia | The Trademark Factory
   description: >-
-    We are an Australian law firm specialised in trademarks and IP with over
-    10,000 trademarks registered.
+    We are Australia's trusted trademark registration experts. Our team ensures
+    your brand is protected with professional and hassle-free services.
   image: /upload/ttmf-default-seo.png
   no_index: false
 content_blocks:
