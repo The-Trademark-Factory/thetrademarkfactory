@@ -12,13 +12,36 @@ seo:
   no_index: false
 content_blocks:
   - _bookshop_name: headers/heroDefault
-    title: International Trademark Services
+    title: International Trademarks
     subtitle: Trademark registration services
     background:
       animation: services
       image: /upload/img-hero-services.svg
       alt:
       align_bottom: false
+  - _bookshop_name: cards/twoCols
+    title: <p><em>International</em> Trademark Registration</p>
+    content: >-
+      <p>Did you know that trademark registration is jurisdictional, meaning
+      <strong>trademarks must be registered in each and every country where you
+      want to use it?&nbsp;</strong>When you expand your goods and/or services
+      to overseas markets, safeguarding your brand in those regions becomes
+      crucial.</p><p>Australia is a member of the Madrid Protocol which is an
+      international trademark registration system allowing you to register your
+      brand in up to 115 countries under a single application.</p><p>This
+      streamlined approach eliminates the need for filing trademark applications
+      in each country separately making it more cost effective and
+      efficient.</p>
+    button:
+      title_button: Enquire about International trademarks
+      url: /contact/
+      title: ''
+    media:
+      content:
+      image: /upload/img-international-trademark.svg
+      image_alt: Register your trademark internationally
+      image_right: true
+      align_center: true
   - _bookshop_name: cards/twoCols
     title: <p><em>Trademark</em> Registration Services</p>
     content: >-
@@ -46,29 +69,6 @@ content_blocks:
       image_alt: Full trademark registration service
       image_right: false
       align_center: false
-  - _bookshop_name: cards/twoCols
-    title: <p><em>International</em> Trademark Registration</p>
-    content: >-
-      <p>Did you know that trademark registration is jurisdictional, meaning
-      <strong>trademarks must be registered in each and every country where you
-      want to use it?&nbsp;</strong>When you expand your goods and/or services
-      to overseas markets, safeguarding your brand in those regions becomes
-      crucial.</p><p>Australia is a member of the Madrid Protocol which is an
-      international trademark registration system allowing you to register your
-      brand in up to 114 countries under a single application.</p><p>This
-      streamlined approach eliminates the need for filing trademark applications
-      in each country separately making it more cost effective and
-      efficient.</p>
-    button:
-      title_button: Enquire about International trademarks
-      url: /contact/
-      title: ''
-    media:
-      content:
-      image: /upload/img-international-trademark.svg
-      image_alt: Register your trademark internationally
-      image_right: true
-      align_center: true
   - _bookshop_name: cards/twoCols
     title: <p>Comprehensive Trademark <em>Searches</em></p>
     content: >-
@@ -145,6 +145,6 @@ content_blocks:
       image_alt: We renew trademarks
       image_right: false
       align_center: false
-  - _bookshop_name: cta/search
-    title: <p>Get Your <em>Trademark</em> Today</p>
+  - _bookshop_name: cards/pricing
+    title: International <em>Trademark</em> Pricing
 ---
