@@ -12,7 +12,7 @@ seo:
   no_index: false
 content_blocks:
   - _bookshop_name: headers/heroDefault
-    title: International Trademarks
+    title: International TradeMarks
     subtitle: Trademark registration services
     background:
       animation: services
@@ -24,14 +24,17 @@ content_blocks:
     content: >-
       <p>Did you know that trademark registration is jurisdictional, meaning
       <strong>trademarks must be registered in each and every country where you
-      want to use it?&nbsp;</strong>When you expand your goods and/or services
-      to overseas markets, safeguarding your brand in those regions becomes
+      want to use it?&nbsp;</strong>When you expand your business to overseas
+      markets, safeguarding your brand in those regions becomes
       crucial.</p><p>Australia is a member of the Madrid Protocol which is an
       international trademark registration system allowing you to register your
       brand in up to 115 countries under a single application.</p><p>This
       streamlined approach eliminates the need for filing trademark applications
       in each country separately making it more cost effective and
-      efficient.</p>
+      efficient.</p><p>If your target market is not covered by the Madrid
+      Protocol, no problem! Our <strong>network of trusted international IP
+      lawyers</strong> can assist us to register your trademark no matter where
+      you want to take your business.</p>
     button:
       title_button: Enquire about International trademarks
       url: /contact/
@@ -43,40 +46,14 @@ content_blocks:
       image_right: true
       align_center: true
   - _bookshop_name: cards/twoCols
-    title: <p><em>Trademark</em> Registration Services</p>
+    title: <p>Comprehensive International Trademark <em>Searches</em></p>
     content: >-
-      <p>Securing a trademark registration is essential for individuals or
-      businesses wanting to safeguard their brand and intellectual property.
-      <strong>By obtaining a registered trademark, you fortify your business
-      with both protection and added value.</strong></p><p><strong>With a
-      registered trademark you gain exclusive rights</strong> to use it on your
-      goods and/or services. Clear cut legal rights are also provided under the
-      trade mark legislation once your trademark is registered. Other advantages
-      of trademark registration include the ability to grant licenses for others
-      to use your trademark thereby generating revenue for you and your
-      business.</p><p>The trademark registration process can be a little
-      overwhelming but <strong>The TradeMark Factory’s unique online application
-      process makes registering your trade mark effortless.</strong> You will
-      also have comfort knowing that experienced Australian lawyers are right
-      here to help you should you need it.</p>
-    button:
-      title_button: Apply for your trademark now
-      url: /application/search
-      title: <p>Get Started</p>
-    media:
-      content: ''
-      image: /upload/img-register-trademark.svg
-      image_alt: Full trademark registration service
-      image_right: false
-      align_center: false
-  - _bookshop_name: cards/twoCols
-    title: <p>Comprehensive Trademark <em>Searches</em></p>
-    content: >-
-      <p><strong>Our unique trademark application process searches
-      </strong></p><p>A comprehensive trademark search can help minimise
-      objections to your application or possible oppositions by third parties
-      which may not be revealed from an <strong>exact </strong>search.</p><p>If
-      you would like more comprehensive searches, get in touch with us.</p>
+      <p>Our expert lawyers are able to conduct <strong>searches of global
+      brands databases</strong> prior to filing your international
+      application.</p><p>Need a more <strong>comprehensive search
+      overseas</strong>? This can easily be arrange with our international IP
+      lawyers.</p><p>If you would like to know whether your brand is available
+      for registration internationally, get in touch with us.</p>
     button:
       title_button: Enquire about our comprehensive searches
       url: /contact
@@ -88,30 +65,32 @@ content_blocks:
       image_right: false
       align_center: false
   - _bookshop_name: cta/ctaDefault
-    title: |
-      Trademark <em>Portfolio</em> Management
+    title: 'International Trademark <em>Portfolio</em> Management '
     content: >-
-      <p>Do you have an <strong>existing trademark portfolio</strong>? Are you
-      concerned that you may miss deadlines and risk losing your rights? If so,
-      The TradeMark Factory can manage your trademark portfolio for Australian
-      and international trademarks. Let us take care of your trademark portfolio
-      so you will never miss a deadline.</p>
+      <p>Do you have an <strong>existing international trademark
+      portfolio</strong>? Are you concerned that you may miss deadlines and risk
+      losing your rights? If so, The TradeMark Factory has a custom in-house
+      trade mark database so management of your trademark portfolio for both
+      Australian and international trademarks is a breeze.</p><p> Let us take
+      care of your international trademark portfolio so you will <strong>never
+      miss a deadline</strong>.</p>
     button:
       title_button: Let us manage your portfolio
       url: /contact
       title: <p>Get Started</p>
   - _bookshop_name: cards/twoCols
-    title: <p>IP <em>Healthcheck</em></p>
+    title: <p>International Trademark <em>Healthcheck</em></p>
     content: >-
       <p><strong>Are you concerned that your existing trademarks are not as they
-      should be?</strong> Maybe you have changed the name of your company and
+      should be? </strong> Maybe you have changed the name of your company and
       are not sure what needs to be updated? It is essential that your
-      trademarks are properly maintained as any incorrect details could impact
-      your rights. The TradeMark Factory can assist you to ensure your
-      trademarks are up to date and correctly protected. Simply contact us with
-      the details of your existing trademarks, and we will conduct the necessary
-      searches to ensure that your trademarks are current and properly
-      recorded.</p>
+      trademarks are <strong>properly maintained in all countries</strong> as
+      any incorrect details could impact your global trademark rights.
+      </p><p>The TradeMark Factory can assist you to ensure your trademarks are
+      up to date and correctly protected. <strong>Simply contact us
+      </strong>with the details of your existing trademarks, and we will conduct
+      the necessary searches to ensure that your trademarks are current and
+      properly recorded.</p>
     button:
       title_button: Enquire about an IP Healthcheck
       url: /contact
@@ -123,12 +102,14 @@ content_blocks:
       image_right: true
       align_center: false
   - _bookshop_name: cards/twoCols
-    title: <p>Trademark <em>Renewals</em></p>
+    title: <p>International Trademark <em>Renewals</em></p>
     content: >-
-      <p>All trademarks must be renewed. Usually <strong>the initial
+      <p>All trademarks must be renewed. In most countries, <strong>the initial
       registration period is 10 years</strong> and it is imperative that you
-      renew your trademarks to ensure it continues to be
-      protected.</p><p><strong>Don’t allow your valuable trademarks to
+      renew your trademarks to ensure it continues to be protected.</p><p>Did
+      you know that some countries require <strong>additional action during the
+      life of the trade mark</strong> including proving genuine use in the
+      relevant country?</p><p><strong>Don’t allow your valuable trademarks to
       lapse;</strong> contact us to arrange renewal on your behalf.</p>
     button:
       title_button: Enquire about trademark renewals
@@ -140,6 +121,12 @@ content_blocks:
       image_alt: We renew trademarks
       image_right: false
       align_center: false
-  - _bookshop_name: cards/pricing
-    title: International <em>Trademark</em> Pricing
+  - _bookshop_name: utils/internationalQuery
+    title_section: |
+      <em>International</em> Trademark Pricing
+    description: >-
+      <strong>For</strong> <strong>indicative costs</strong>, select countries
+      to calculate the estimated price. If you decide to file your international
+      trade marks, <strong>contact us</strong> for a formal fee estimate.
+    note:
 ---
