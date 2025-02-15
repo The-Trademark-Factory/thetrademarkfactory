@@ -4,14 +4,13 @@ title: Trade marks 101 - your questions answered
 date: 2023-10-24T07:52:13Z
 image: /upload/depositphotos-15618845-s-2019.jpg
 seo:
-  title: Trademarks 101 | TTMF
+  title: 'Trade Marks 101: FAQs on Registration & Protection | The TradeMark Factory'
   description: >-
-    We recommend considering trademark registration whenever feasible to secure
-    and maintain control over your brand.
+    Wondering how trade marks work? Get expert answers on registration,
+    protection, and legal requirements in Australia.
   image: /upload/ttmf-default-seo.png
   no_index: false
 ---
-
 **Is Trademark Registration Necessary to Safeguard My Brand?**
 
 In Australia, brands can find protection under consumer laws (Australian Consumer Law) and common law (referred to as "passing off"). However, registering a trademark provides brand owners with a more straightforward and cost-effective means of establishing and asserting their rights to the brand. Registering a trademark also allows you to claim trademark infringement under the Australian Trade Marks Act 1995. It's important to note that trademark registration is the sole method for obtaining exclusive rights to use the brand (registrations for company names, business names, and domain names do not grant such rights).
@@ -20,12 +19,12 @@ We strongly recommend considering trademark registration whenever feasible to se
 
 **What Are the Benefits of Trademark Registration?**
 
-- Exclusivity: Registering your name or logo as a trademark grants you exclusive rights to utilize that name or logo.
-- Nationwide Coverage: An Australian registered trademark offers protection for your trademark throughout the entire country.
-- Valuable Business Asset: A registered trademark represents an asset or property of your business. Like any property, a trademark can be sold.
-- Enhanced Brand Control: With a registered trademark, licensing the use of your brand becomes notably more straightforward than with an unregistered trademark.
-- Preventing Unauthorized Use: A registered trademark empowers you to swiftly and effectively halt unauthorized usage of your brand.
-- Use of the ® Symbol: After your trademark is registered, you can use the ® symbol alongside it, putting others on notice of your rights.
+* Exclusivity: Registering your name or logo as a trademark grants you exclusive rights to utilize that name or logo.
+* Nationwide Coverage: An Australian registered trademark offers protection for your trademark throughout the entire country.
+* Valuable Business Asset: A registered trademark represents an asset or property of your business. Like any property, a trademark can be sold.
+* Enhanced Brand Control: With a registered trademark, licensing the use of your brand becomes notably more straightforward than with an unregistered trademark.
+* Preventing Unauthorized Use: A registered trademark empowers you to swiftly and effectively halt unauthorized usage of your brand.
+* Use of the ® Symbol: After your trademark is registered, you can use the ® symbol alongside it, putting others on notice of your rights.
 
 **How Do I Go About Registering a Trademark?**
 
