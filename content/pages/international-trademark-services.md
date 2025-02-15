@@ -72,13 +72,8 @@ content_blocks:
   - _bookshop_name: cards/twoCols
     title: <p>Comprehensive Trademark <em>Searches</em></p>
     content: >-
-      <p><strong>Our unique trademark application process searches IP
-      Australia’s database for trademarks before you file&nbsp;</strong>but this
-      search is for <strong>exact </strong>trademarks only. So while we conduct
-      these initial searches for you, it is important to remember that during
-      examination your trademark may face objection on the basis of
-      <strong>similar </strong>marks. This is where our comprehensive searches
-      come into play.</p><p>A comprehensive trademark search can help minimise
+      <p><strong>Our unique trademark application process searches
+      </strong></p><p>A comprehensive trademark search can help minimise
       objections to your application or possible oppositions by third parties
       which may not be revealed from an <strong>exact </strong>search.</p><p>If
       you would like more comprehensive searches, get in touch with us.</p>
