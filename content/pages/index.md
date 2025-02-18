@@ -15,7 +15,7 @@ content_blocks:
       title_below: Today
       full_title: The Fastest and easiest way to protect your brand in Australia
     search:
-      title: 'Enter your trademark below to start your application:'
+      title: 'Enter your trademark below to start the application process:'
     aussie:
       title: Save up to 60% on legal fees with The TradeMark Factory
       subtitle: >-
