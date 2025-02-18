@@ -17,7 +17,7 @@ content_blocks:
     search:
       title: 'Enter your trademark below to start the application process:'
     aussie:
-      title: Save up to 60% on legal fees with The TradeMark Factory
+      title: 'Up to 60% cheaper than trade mark lawyers '
       subtitle: >-
         Every application is checked and filed by our expert trademark lawyers .
         The most reliable and cost-effective way to protect your brand. 
