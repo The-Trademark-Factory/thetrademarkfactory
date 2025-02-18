@@ -15,34 +15,18 @@ content_blocks:
       title_below: Today
       full_title: The Fastest and easiest way to protect your brand in Australia
     search:
-      title: 'Enter your trademark below to start the application process:'
+      title: 'Start your trade mark application here:'
     aussie:
-      title: 'Up to 60% cheaper than trade mark lawyers '
-      subtitle: >-
-        Every application is checked and filed by our expert trademark lawyers .
-        The most reliable and cost-effective way to protect your brand. 
+      title: Our lawyers check and file every application within 24 hours
+      subtitle: 'The most reliable and cost-effective way to protect your brand. '
     scrolling_banner:
-      - title: Online application or contact our experts
+      - title: Instant online application
       - title: Integrated with IP Australia
       - title: Low fixed fees
       - title: 30+ years experience
       - title: 100% Australian owned and operated
       - title: 9,000+ trademarks registered
       - title: International trademarks available
-  - _bookshop_name: cta/ctaDefault
-    title: <p>Expert Lawyers. Exceptional Service. <br />Low Fixed Fees.</p>
-    content: >-
-      <p>The TradeMark Factory is Australia’s <strong>quickest, easiest and most
-      affordable </strong> trademark registration service.</p><h2><em>We offer 2
-      ways to secure your trade mark:</em></h2><p>1. Our <strong>no fuss online
-      application</strong> platform - Apply in  4 easy steps. No login
-      required.</p><p>2. Access to our <strong>expert trade mark
-      lawyers</strong> - Save more than <strong>60% on legal fees </strong>as
-      compared to our competitors.</p><h2><em>Get your trade mark today.</em>
-      </h2>
-    button:
-      title_button: Apply Now
-      url: /application/search
   - _bookshop_name: cards/steps
     title: <p><em>Apply</em>  online in 4 Easy Steps</p>
     steps:
@@ -64,56 +48,6 @@ content_blocks:
         last_step: true
   - _bookshop_name: cta/search
     title: <p>Get <em>Started</em> Now</p>
-  - _bookshop_name: cta/ctaDefault
-    title: <p>Need some <em>help</em>?</p>
-    content: >-
-      <h4>If you need a <em>helping hand</em>, simply send us an  email and one
-      of our experts will be in touch.</h4>
-    button:
-      title_button: Email Us Now
-      url: >-
-        mailto:admin@ttmf.com.au?subject=I%20Need%20Some%20Help%20with%20my%20Trade%20Mark&body=Please%20complete%20the%20below%20information%20and%20one%20of%20our%20experts%20will%20be%20in%20touch%3A%20%0A%0AYour%20full%20name%3A%0A%0AYour%20trade%20mark%3A%20%0A%0AInformation%20about%20your%20business%20(what%20products%20and%2For%20services%20do%20you%20provide)%3A%20%0A%0AYour%20contact%20phone%20number%3A
-  - _bookshop_name: cards/twoColsMultiSide
-    title: <p>Why Choose <em>Us</em></p>
-    description: >-
-      <p><strong>The TradeMark Factory</strong> has been developed by expert
-      trademark lawyers with 30+ years of experience. Being <strong>Australian
-      owned and operated</strong>, we know how the Australian trade mark system
-      works and you can rest assured that your application will be managed
-      properly from filing through to registration.</p>
-    media:
-      animation: computer-coffee
-      image: /upload/placeholder-features.svg
-      alt: Drawing of a computer with a coffee mub
-    cards:
-      - title_card: Self-Service Option
-        description_card: >-
-          Fully-automated online trademark application platform which integrates
-          with IP Australia
-        icon: /upload/ic-selfservice.svg
-      - title_card: Easy to Use
-        description_card: >-
-          Apply for your trademark registration online using any device in 4
-          easy steps
-        icon: /upload/ic-easytouse.svg
-      - title_card: Affordable
-        description_card: >-
-          Fixed fee pricing and up to 60% cheaper than a lawyer. You only pay
-          once.
-        icon: /upload/ic-affordable.svg
-      - title_card: Fast Turnaround
-        description_card: Apply for your trademark in under 5 minutes
-        icon: /upload/ic-fast.svg
-      - title_card: Better Protection
-        description_card: >-
-          File with the knowledge that your application is checked by experts,
-          meaning improved application quality and the right protection.
-        icon: /upload/ic-protect.svg
-      - title_card: Global Reach
-        description_card: >-
-          Designed by Australians for Australians and trusted by thousands of
-          brand owners to protect their trademarks around the world.
-        icon: /upload/ic-status.svg
   - _bookshop_name: cards/stats
     stats:
       - title: 30+
@@ -126,20 +60,17 @@ content_blocks:
         label: Success rate
       - title: Australian
         label: Owned & operated
-  - _bookshop_name: cta/plane
-    title: <p>International <em>Trademark</em> protection</p>
-    description: >-
-      <p><strong>Taking your business overseas? </strong>The TradeMark Factory
-      is a one-stop-shop for your trademarking need no matter where your
-      business takes you. Visit the pricing pages to get a
-      <strong>quote</strong> for trademark registration outside Australia or get
-      in touch and one of our experts will contact you to discuss how we can
-      help.</p>
-    button:
-      label: Contact Us
-      url: /contact/
   - _bookshop_name: utils/pricing
     title: <p>Trademark <em>Registration</em> Pricing</p>
+  - _bookshop_name: cta/ctaDefault
+    title: <p>Need some <em>help</em>?</p>
+    content: >-
+      <h4>If you need a <em>helping hand</em>, simply send us an  email and one
+      of our experts will be in touch.</h4>
+    button:
+      title_button: Email Us Now
+      url: >-
+        mailto:admin@ttmf.com.au?subject=I%20Need%20Some%20Help%20with%20my%20Trade%20Mark&body=Please%20complete%20the%20below%20information%20and%20one%20of%20our%20experts%20will%20be%20in%20touch%3A%20%0A%0AYour%20full%20name%3A%0A%0AYour%20trade%20mark%3A%20%0A%0AInformation%20about%20your%20business%20(what%20products%20and%2For%20services%20do%20you%20provide)%3A%20%0A%0AYour%20contact%20phone%20number%3A
   - _bookshop_name: others/testimonials
     title: <p>What our clients <em>say</em></p>
     testimonials:
