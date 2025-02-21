@@ -11,8 +11,8 @@ seo:
   no_index: false
 content_blocks:
   - _bookshop_name: headers/heroDefault
-    title: Your Trademark Experts
-    subtitle: Your brand is our business
+    title: Your brand is our business
+    subtitle: Your Trademark Experts
     background:
       animation: services
       image: /upload/img-hero-services.svg
