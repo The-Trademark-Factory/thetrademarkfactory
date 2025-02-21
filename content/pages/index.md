@@ -30,16 +30,16 @@ content_blocks:
       - title: 9,000+ trademarks registered
       - title: International trademarks available
   - _bookshop_name: cta/ctaDefault
-    title: <p>Expert Lawyers. Exceptional Service. <br />Low Fixed Fees.</p>
+    title: <p>Your <em>Trademark</em> Registration Experts</p>
     content: >-
-      <p>The TradeMark Factory is Australia’s <strong>quickest, easiest and most
-      affordable </strong> trademark registration service.</p><h2><em>We offer 2
-      ways to secure your trade mark:</em></h2><p>1. Our <strong>no fuss online
-      application</strong> platform - Apply in  4 easy steps. No login
-      required.</p><p>2. Access to our <strong>expert trade mark
-      lawyers</strong> - Save more than <strong>60% on legal fees </strong>as
-      compared to our competitors.</p><h2><em>Get your trade mark today.</em>
-      </h2>
+      <p></p><h2><em>Every application is checked by our expert lawyers at NO
+      EXTRA COST.</em></h2><p></p><p></p><h3><strong>We offer
+      </strong><em><strong>2 ways</strong></em><strong> to file your trade
+      mark:</strong></h3><p>1. <em>Our no fuss online application platform</em>
+      - Apply in  4 easy steps. No login required.</p><p>2. <em>One-on-one help
+      from our expert lawyers at no extra cost </em>- Saving you more than
+      <strong>60% on legal fees</strong>.</p><p></p><h2><em>Get your trade mark
+      today.</em> </h2>
     button:
       title_button: Apply Now
       url: /application/search
