@@ -41,8 +41,9 @@ content_blocks:
       risk losing your brand. </p><p><em>Trust The TradeMark Factory with your
       brand.</em></p><p></p>
     button:
-      title_button: Apply for your trademark now
-      url: /application/search
+      title_button: Email us today for assistance with your trademark
+      url: >-
+        mailto:admin@ttmf.com.au?subject=Please%20contact%20me%20about%20my%20trademark&body=Hi%20-%20Thank%20you%20for%20getting%20in%20touch%20with%20The%20TradeMark%20Factory.%20Please%20complete%20the%20below%20information%20and%20one%20of%20our%20experts%20will%20be%20in%20touch%3A%0A%0A1.%20Your%20full%20name%3A%0A2.%20Your%20contact%20number%3A%0A3.%20The%20country%20you%20are%20in%3A%0A4.%20Your%20proposed%20trade%20mark%20(if%20known)%3A%0A5.%20What%20products%20and%2For%20services%20do%20you%20provide%3A%0A6.%20Any%20other%20information%20we%20should%20know%20about%20ahead%20of%20our%20call%3A
       title: <p>Get Started</p>
     media:
       content: ''
