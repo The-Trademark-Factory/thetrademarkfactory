@@ -11,8 +11,8 @@ seo:
   no_index: false
 content_blocks:
   - _bookshop_name: headers/heroDefault
-    title: Your Trademark Expert
-    subtitle: Trust us with your brand
+    title: Your Trademark Experts
+    subtitle: Your brand is our business
     background:
       animation: services
       image: /upload/img-hero-services.svg
@@ -60,7 +60,7 @@ content_blocks:
       to overseas markets, safeguarding your brand in those regions becomes
       crucial.</p><p>Australia is a member of the Madrid Protocol which is an
       international trademark registration system allowing you to register your
-      brand in up to 114 countries under a single application.</p><p>This
+      brand in up to 115 countries under a single application.</p><p>This
       streamlined approach eliminates the need for filing trademark applications
       in each country separately making it more cost effective and
       efficient.</p>
