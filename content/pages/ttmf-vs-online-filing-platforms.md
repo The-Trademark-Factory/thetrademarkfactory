@@ -11,7 +11,7 @@ seo:
   no_index: false
 content_blocks:
   - _bookshop_name: headers/heroDefault
-    title: Services
+    title: Us vs. Them
     subtitle: Trademark registration services
     background:
       animation: services
