@@ -11,7 +11,7 @@ seo:
 content_blocks:
   - _bookshop_name: headers/heroHome
     title:
-      title_above: Protect Your
+      title_above: File Your
       title_below: Today
       full_title: The Fastest and easiest way to protect your brand in Australia
     search:
