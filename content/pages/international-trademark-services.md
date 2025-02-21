@@ -6,8 +6,7 @@ seo:
     The Trademark Factory
   description: >-
     We offer International Trademark Registration, Search and Portfolio
-    Management. We can also take care of your IP Healthcheck and Trademark
-    Renewals
+    Management. File your international trademark today
   image: /upload/ttmf-default-seo.png
   no_index: false
 content_blocks:
