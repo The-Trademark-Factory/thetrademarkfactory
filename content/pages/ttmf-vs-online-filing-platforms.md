@@ -11,30 +11,35 @@ seo:
   no_index: false
 content_blocks:
   - _bookshop_name: headers/heroDefault
-    title: Us vs. Them
-    subtitle: Trademark registration services
+    title: Your Trademark Expert
+    subtitle: Trust us with your brand
     background:
       animation: services
       image: /upload/img-hero-services.svg
       alt:
       align_bottom: false
   - _bookshop_name: cards/twoCols
-    title: <p><em>Trademark</em> Registration Services</p>
+    title: <p><em>Trademark</em> registration with you in mind </p>
     content: >-
-      <p>Securing a trademark registration is essential for individuals or
-      businesses wanting to safeguard their brand and intellectual property.
-      <strong>By obtaining a registered trademark, you fortify your business
-      with both protection and added value.</strong></p><p><strong>With a
-      registered trademark you gain exclusive rights</strong> to use it on your
-      goods and/or services. Clear cut legal rights are also provided under the
-      trade mark legislation once your trademark is registered. Other advantages
-      of trademark registration include the ability to grant licenses for others
-      to use your trademark thereby generating revenue for you and your
-      business.</p><p>The trademark registration process can be a little
-      overwhelming but <strong>The TradeMark Factory’s unique online application
-      process makes registering your trade mark effortless.</strong> You will
-      also have comfort knowing that experienced Australian lawyers are right
-      here to help you should you need it.</p>
+      <p>Recently, there has been a significant jump in businesses cashing in on
+      the "<strong>DIY Online TradeMark Registration</strong>" and frankly,
+      these businesses are giving our industry a bad name! </p><p>Trademark
+      registration is <strong>one of your business' most valuable
+      assets</strong> and care should be taken when filing your
+      application.</p><p>Many of these other website don't offer any assistance
+      or advice on this important aspect of your business - they simply take
+      your money and file the trademark with no regard for you.   Not at The
+      TradeMark Factory - <strong>trademarks are our passion</strong> and we
+      invite you to contact us. </p><p>The TradeMark Factory was founded in 2014
+      and our mission was, and is today, to provide small Australian businesses
+      with access to <strong>top-tier trademark lawyers at a fraction of the
+      cost </strong>of traditional law firms. With 30+ years experience in our
+      field, we can help you navigate this complex area of law without breaking
+      the bank. </p><p>By trusting us with your brand, you can rest assured
+      knowing that your trademark application will be <strong>checked and filed
+      by our experts</strong> with you and your business in mind.</p><p>Don't
+      risk losing your brand. </p><p><em>Trust The TradeMark Factory with your
+      brand.</em></p><p></p>
     button:
       title_button: Apply for your trademark now
       url: /application/search
@@ -68,29 +73,6 @@ content_blocks:
       image_alt: Register your trademark internationally
       image_right: true
       align_center: true
-  - _bookshop_name: cards/twoCols
-    title: <p>Comprehensive Trademark <em>Searches</em></p>
-    content: >-
-      <p><strong>Our unique trademark application process searches IP
-      Australia’s database for trademarks before you file&nbsp;</strong>but this
-      search is for <strong>exact </strong>trademarks only. So while we conduct
-      these initial searches for you, it is important to remember that during
-      examination your trademark may face objection on the basis of
-      <strong>similar </strong>marks. This is where our comprehensive searches
-      come into play.</p><p>A comprehensive trademark search can help minimise
-      objections to your application or possible oppositions by third parties
-      which may not be revealed from an <strong>exact </strong>search.</p><p>If
-      you would like more comprehensive searches, get in touch with us.</p>
-    button:
-      title_button: Enquire about our comprehensive searches
-      url: /contact
-      title:
-    media:
-      content:
-      image: /upload/img-trademark-search.svg
-      image_alt: Search and secure your trademark
-      image_right: false
-      align_center: false
   - _bookshop_name: cta/ctaDefault
     title: |
       Trademark <em>Portfolio</em> Management
@@ -127,7 +109,7 @@ content_blocks:
       image_right: true
       align_center: false
   - _bookshop_name: cards/twoCols
-    title: <p>Trademark <em>Renewals</em></p>
+    title: <p>Trademark <em>Renewals</em> </p>
     content: >-
       <p>All trademarks must be renewed. Usually <strong>the initial
       registration period is 10 years</strong> and it is imperative that you
