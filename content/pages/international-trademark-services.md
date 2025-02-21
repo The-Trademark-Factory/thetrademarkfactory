@@ -12,7 +12,7 @@ seo:
 content_blocks:
   - _bookshop_name: headers/heroDefault
     title: International Trademarks
-    subtitle: Trademark registration services
+    subtitle: The global trademark experts
     background:
       animation: services
       image: /upload/img-hero-services.svg
