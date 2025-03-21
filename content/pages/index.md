@@ -11,8 +11,8 @@ seo:
 content_blocks:
   - _bookshop_name: headers/heroHome
     title:
-      title_above: Secure Your
-      title_below: With Success
+      title_above: Your
+      title_below: Experts
       full_title: The Fastest and easiest way to protect your brand in Australia
     search:
       title: 'Get expert advice at no extra cost, why settle for less? Get started:'
