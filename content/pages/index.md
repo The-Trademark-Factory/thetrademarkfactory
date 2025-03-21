@@ -18,9 +18,11 @@ content_blocks:
       title: 'File online or get expert advice at no extra cost. Get started:'
     aussie:
       title: >-
-        Every trademark application is checked and filed by expert trademark
-        lawyers.
-      subtitle: 'The most reliable and cost-effective way to protect your brand. '
+        Don't risk losing your brand. Let The TradeMark Factory take care of
+        your application.
+      subtitle: >-
+        Every application is checked and filed by our expert lawyers. The most
+        reliable and cost-effective way to protect your brand. 
     scrolling_banner:
       - title: Online application or contact our experts
       - title: Integrated with IP Australia
