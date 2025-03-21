@@ -17,10 +17,10 @@ content_blocks:
     search:
       title: 'Get expert advice at no extra cost, why settle for less? Get started:'
     aussie:
-      title: 'Up to 60% cheaper than trade mark lawyers '
-      subtitle: >-
-        Every application is checked and filed by our expert trademark lawyers .
-        The most reliable and cost-effective way to protect your brand. 
+      title: >-
+        Every trademark application is checked and filed by expert trademark
+        lawyers.
+      subtitle: 'The most reliable and cost-effective way to protect your brand. '
     scrolling_banner:
       - title: Online application or contact our experts
       - title: Integrated with IP Australia
