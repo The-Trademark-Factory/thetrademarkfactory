@@ -32,14 +32,14 @@ content_blocks:
       - title: 9,000+ trademarks registered
       - title: International trademarks available
   - _bookshop_name: cta/ctaDefault
-    title: <p>Our <em>difference</em></p>
+    title: <p>Why The <em>TradeMark</em> Factory?</p>
     content: >-
-      <h3>Unlike <em>other online trademark services</em>, every application we
-      receive is <em>checked</em> by one of our experts. </h3><h3>If we think
-      there will be problems with your trademark, <em>we will let you know,
-      before we file it</em>.</h3><h2><em>At no extra cost.</em></h2>
+      <p>Unlike <em>other online trademark services</em>, every application we
+      receive is <em>checked</em>  <em>and filed</em> by one of our experts.
+      </p><p>If we see a problem with your trademark, <em>we will let you know,
+      before we file it</em>.</p><p><em>At no extra cost.</em></p>
     button:
-      title_button: Got A question - contact us now
+      title_button: Got A question? Contact us now
       url: /contact/
   - _bookshop_name: cards/steps
     title: <p><em>Apply</em>  online in 4 Easy Steps</p>
