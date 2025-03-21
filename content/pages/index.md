@@ -40,7 +40,10 @@ content_blocks:
       title_button: Got A question? Contact us now
       url: /contact/
   - _bookshop_name: cards/steps
-    title: <p>You can <em>Apply</em>  online in 4 Easy Steps</p>
+    title: >-
+      <p>You can <a
+      href="https://ttmf.com.au/application/search"><em>Apply</em>  </a>online
+      in 4 easy steps</p>
     steps:
       - title_step: Enter your trademark (word or image)
         image: /upload/img-step1.svg
