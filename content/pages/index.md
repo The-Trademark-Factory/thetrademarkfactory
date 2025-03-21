@@ -11,11 +11,11 @@ seo:
 content_blocks:
   - _bookshop_name: headers/heroHome
     title:
-      title_above: The
-      title_below: Factory
+      title_above: Australian
+      title_below: Expert
       full_title: The Fastest and easiest way to protect your brand in Australia
     search:
-      title: 'Get expert advice at no extra cost, why settle for less? Get started:'
+      title: 'File online or get expert advice at no extra cost. Get started:'
     aussie:
       title: >-
         Every trademark application is checked and filed by expert trademark
