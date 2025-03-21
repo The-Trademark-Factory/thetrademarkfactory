@@ -17,9 +17,7 @@ content_blocks:
     search:
       title: 'File online or get expert advice at no extra cost. Get started:'
     aussie:
-      title: >-
-        Don't risk losing your brand. Let The TradeMark Factory take care of
-        your application.
+      title: Trust us with one of your business' most valuable assets.
       subtitle: >-
         Every application is checked and filed by our expert lawyers. The most
         reliable and cost-effective way to protect your brand. 
