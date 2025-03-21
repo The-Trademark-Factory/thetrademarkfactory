@@ -34,13 +34,13 @@ content_blocks:
   - _bookshop_name: cta/ctaDefault
     title: <p>Our <em>difference</em></p>
     content: >-
-      <h3>Unlike other online trademark services, every application we receive
-      is checked by one of our experts. </h3><h3>If we think there will be
-      problems with your trademark, we will let you know, before we file
-      it.</h3><h2><em>At no extra cost.</em></h2><h2></h2>
+      <h3>Unlike <em>other online trademark services</em>, every application we
+      receive is <em>checked</em> by one of our experts. </h3><h3>If we think
+      there will be problems with your trademark, <em>we will let you know,
+      before we file it</em>.</h3><h2><em>At no extra cost.</em></h2>
     button:
-      title_button:
-      url: /application/search
+      title_button: Got A question - contact us now
+      url: /contact/
   - _bookshop_name: cards/steps
     title: <p><em>Apply</em>  online in 4 Easy Steps</p>
     steps:
