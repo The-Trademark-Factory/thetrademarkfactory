@@ -15,7 +15,7 @@ content_blocks:
       title_below: Today
       full_title: The Fastest and easiest way to protect your brand in Australia
     search:
-      title: 'Enter your trademark below to start the application process:'
+      title: 'Get expert advice at no extra cost, why settle for less? Get started:'
     aussie:
       title: 'Up to 60% cheaper than trade mark lawyers '
       subtitle: >-
