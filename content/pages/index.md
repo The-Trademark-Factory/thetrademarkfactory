@@ -32,18 +32,14 @@ content_blocks:
       - title: 9,000+ trademarks registered
       - title: International trademarks available
   - _bookshop_name: cta/ctaDefault
-    title: <p>Your <em>Trademark</em> Registration Experts</p>
+    title: <p>Our <em>difference</em></p>
     content: >-
-      <p></p><h2><em>Every application is checked by our expert lawyers at NO
-      EXTRA COST.</em></h2><p></p><p></p><h3><strong>We offer
-      </strong><em><strong>2 ways</strong></em><strong> to file your trade
-      mark:</strong></h3><p>1. <em>Our no fuss online application platform</em>
-      - Apply in  4 easy steps. No login required.</p><p>2. <em>One-on-one help
-      from our expert lawyers at no extra cost </em>- Saving you more than
-      <strong>60% on legal fees</strong>.</p><p></p><h2><em>Get your trade mark
-      today.</em> </h2>
+      <h3>Unlike other online trademark services, every application we receive
+      is checked by one of our experts. </h3><h3>If we think there will be
+      problems with your trademark, we will let you know, before we file
+      it.</h3><h2><em>At no extra cost.</em></h2><h2></h2>
     button:
-      title_button: Apply Now
+      title_button:
       url: /application/search
   - _bookshop_name: cards/steps
     title: <p><em>Apply</em>  online in 4 Easy Steps</p>
