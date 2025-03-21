@@ -15,7 +15,7 @@ content_blocks:
       title_below: Experts
       full_title: The Fastest and easiest way to protect your brand in Australia
     search:
-      title: 'File online or get expert advice at no extra cost. Get started:'
+      title: 'File online OR get expert advice at no extra cost. Get started:'
     aussie:
       title: >-
         Our fees are the same as other online platforms - our difference is our
