@@ -41,9 +41,9 @@ content_blocks:
       url: /contact/
   - _bookshop_name: cards/steps
     title: >-
-      <p>You can <a
-      href="https://ttmf.com.au/application/search"><em>Apply</em>  </a>online
-      in 4 easy steps</p>
+      <p>You can <a href="https://ttmf.com.au/application/search" title="Apply
+      Now" target="_blank" rel="noopener"><em>Apply</em></a> online in 4 easy
+      steps</p>
     steps:
       - title_step: Enter your trademark (word or image)
         image: /upload/img-step1.svg
