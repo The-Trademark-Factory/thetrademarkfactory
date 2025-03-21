@@ -17,7 +17,9 @@ content_blocks:
     search:
       title: 'File online or get expert advice at no extra cost. Get started:'
     aussie:
-      title: Trust us with one of your business' most valuable assets.
+      title: >-
+        Our fees are the same as other online platforms - our difference is our
+        approach.
       subtitle: >-
         Every application is checked and filed by our expert lawyers. The most
         reliable and cost-effective way to protect your brand. 
