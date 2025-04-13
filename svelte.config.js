@@ -1,4 +1,4 @@
-import adapterStatic from '@sveltejs/adapter-static';
+<head>import adapterStatic from '@sveltejs/adapter-static';
 import adapterNetlify from '@sveltejs/adapter-netlify';
 import { vitePreprocess } from '@sveltejs/kit/vite';
 
