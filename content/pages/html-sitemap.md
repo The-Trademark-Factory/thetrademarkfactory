@@ -7,7 +7,7 @@ seo:
   no_index: false
 content_blocks:
   - _bookshop_name: utils/simpleText
-    title: Privacy Policy
+    title: HTML Sitemap
     content: >-
       <p><strong>PRIVACY POLICY OF TTMF PTY
       LTD</strong></p><p><strong>Introduction</strong></p><p>This Privacy Policy
