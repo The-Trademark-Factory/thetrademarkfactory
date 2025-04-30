@@ -1,7 +1,7 @@
 ---
 _schema: page
 title: How Can I Register a Trade Mark in Australia?
-date: 2025-04-30T19:30:33Z
+date: 2025-05-01T01:08:00Z
 image: /upload/codifyformatter-1.png
 seo:
   title: How Can I Register a Trade Mark in Australia?
@@ -9,7 +9,7 @@ seo:
     Learn how to register a trade mark in Australia with step-by-step guidance.
     Protect your brand name, logo, and IP with expert tips and legal insights.
     Read now!
-  image: /upload/ttmf-default-seo.png
+  image:
   no_index: false
 ---
 When you’ve poured your heart and soul into building your brand, the last thing you want is for someone else to profit from it or worse, take it away from you. That’s where trade mark registration comes in.
