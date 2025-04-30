@@ -9,7 +9,7 @@ seo:
     Learn how to register a trade mark in Australia with step-by-step guidance.
     Protect your brand name, logo, and IP with expert tips and legal insights.
     Read now!
-  image:
+  image: /upload/codifyformatter-1.png
   no_index: false
 ---
 When you’ve poured your heart and soul into building your brand, the last thing you want is for someone else to profit from it or worse, take it away from you. That’s where trade mark registration comes in.
