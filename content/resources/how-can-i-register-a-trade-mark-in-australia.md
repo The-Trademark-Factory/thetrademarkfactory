@@ -16,7 +16,7 @@ When you’ve poured your heart and soul into building your brand, the last thin
 
 In Australia, registering a trade mark is one of the most powerful ways to protect your business name, logo, slogan, or brand identity. And while the process can seem technical or overwhelming, it doesn’t have to be; not when you have the right team handling everything for you.
 
-At [The TradeMark Factory®,](https://trademarkfactory.com/) we make it simple. Our end-to-end service is designed specifically for business owners like you. With a 99.3% success rate and thousands of trade marks registered worldwide, you can count on us to get the job done from start to finish.
+At The TradeMark Factory®, we make it simple. Our end-to-end service is designed specifically for business owners like you. With a 99.3% success rate and thousands of trade marks registered worldwide, you can count on us to get the job done from start to finish.
 
 Here’s a complete guide to how trade mark registration works in Australia and how we take care of the entire process for you.
 
