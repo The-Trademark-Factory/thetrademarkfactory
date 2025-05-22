@@ -10,14 +10,18 @@ seo:
 content_blocks:
   - _bookshop_name: headers/heroHome
     title:
-      title_above: Protect Your
-      title_below: Today
+      title_above: Startup
+      title_below: Protection
       full_title: The Fastest and easiest way to protect your brand in Australia
     search:
-      title: 'Start your trade mark application here:'
+      title: 'Start your Australian trade mark application here:'
     aussie:
-      title: Our lawyers check and file every application within 24 hours
-      subtitle: 'The most reliable and cost-effective way to protect your brand. '
+      title: >-
+        Our lawyers check and file every application - your brand is safe with
+        us. 
+      subtitle: >-
+        The most reliable and cost-effective way for startups to protect their
+        brand. 
     scrolling_banner:
       - title: Instant online application
       - title: Integrated with IP Australia
