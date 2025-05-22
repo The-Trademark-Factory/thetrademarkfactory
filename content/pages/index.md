@@ -1,11 +1,11 @@
 ---
 title: Home
 seo:
-  title: Affordable Trademark Registration in Australia | The Trademark Factory
+  title: Brand & Trade Name Registry Services | The Trademark Factory
   description: >-
-    Apply for your trademark online with our automated platform. Register your
-    trademark for Australia and Worldwide in minutes. File your trade mark
-    today.
+    Looking to register a trademark in Australia? We offer expert trademark
+    registration services, brand name, and international trademark applications.
+    Apply now!
   image: /upload/ttmf-default-seo.png
   no_index: false
 content_blocks:
