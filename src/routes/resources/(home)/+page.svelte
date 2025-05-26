@@ -12,8 +12,8 @@
 
 	$: filteredArticles = data.articles.filter(
 		(article) =>
-			article.data.title.toLowerCase().includes(filterTerm.toLowerCase()) ||
-			article.content.toLowerCase().includes(filterTerm.toLowerCase())
+			article.data.title?.toLowerCase().includes(filterTerm.toLowerCase()) ||
+			article.content?.toLowerCase().includes(filterTerm.toLowerCase())
 	);
 </script>
 
