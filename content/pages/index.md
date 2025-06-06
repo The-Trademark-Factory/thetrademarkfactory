@@ -11,8 +11,8 @@ seo:
 content_blocks:
   - _bookshop_name: headers/heroHome
     title:
-      title_above: Aussie
-      title_below: Experts
+      title_above: Affordable
+      title_below: Protection
       full_title: The Fastest and easiest way to protect your brand in Australia
     search:
       title: 'File instantly online. Get started by entering your trade mark here:'
