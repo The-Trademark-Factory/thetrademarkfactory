@@ -30,7 +30,7 @@ content_blocks:
       - title: 9,000+ trademarks registered
       - title: International trademarks available
   - _bookshop_name: cta/ctaDefault
-    title: <p>Why <em>Choose</em> Us?</p>
+    title: <p>Trust Us With Your <em>Brand</em> </p>
     content: >-
       <p>Unlike other online trademark services, we don't leave your application
       to automated systems. At The TradeMark Factory, every single trademark
