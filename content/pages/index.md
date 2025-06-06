@@ -11,18 +11,16 @@ seo:
 content_blocks:
   - _bookshop_name: headers/heroHome
     title:
-      title_above: Australian
+      title_above: Aussie
       title_below: Experts
       full_title: The Fastest and easiest way to protect your brand in Australia
     search:
-      title: 'File online OR get expert advice at no extra cost. Get started:'
+      title: 'File instantly online. Get started by entering your trade mark here:'
     aussie:
-      title: >-
-        Our fees are the same as other online platforms - our difference is our
-        approach.
+      title: Need help? Contact us for expert advice at no extra cost.
       subtitle: >-
-        Every application is checked and filed by our expert lawyers. The most
-        reliable and cost-effective way to protect your brand. 
+        Our fees are the same as other online platforms - our difference is our
+        approach. Every application is checked and filed by our expert lawyers. 
     scrolling_banner:
       - title: Online application or contact our experts
       - title: Integrated with IP Australia
@@ -32,28 +30,25 @@ content_blocks:
       - title: 9,000+ trademarks registered
       - title: International trademarks available
   - _bookshop_name: cta/ctaDefault
-    title: <p>Why The <em>TradeMark</em> Factory?</p>
+    title: <p>Why <em>Choose</em> Us?</p>
     content: >-
       <p>Unlike other online trademark services, we don't leave your application
-      to automated systems. Every single trademark application - whether for
-      Australian or international protection - is <strong>carefully reviewed and
-      filed by a qualified legal expert</strong>.</p><p>If we identify any
-      potential issues with your trademark - such as identical conflicting
-      marks, missing classifications, or registrability concerns - <strong>we'll
-      flag them for you before we proceed</strong>. That way, you can make
-      informed decisions and avoid unnecessary complications down the
-      track.</p><p>And we do this at <strong>no extra cost</strong>. It's all
-      part of our commitment to providing professional, transparent, and
-      affordable trademark registration services - both in <strong>Australia and
-      globally</strong>.</p>
+      to automated systems. At The TradeMark Factory, every single trademark
+      application - whether for Australian or international protection - is
+      carefully reviewed and filed by our<strong> qualified legal
+      experts</strong>.</p><p>If we identify any potential issues with your
+      trademark - such as identical conflicting marks, missing classifications,
+      or registrability concerns - <strong>we'll flag them for you before we
+      proceed</strong>. That way, you can make informed decisions and avoid
+      unnecessary complications down the track.</p><p>And we do this at
+      <strong>no extra cost</strong>. It's all part of our commitment to
+      providing professional, transparent, and affordable trademark registration
+      services - both in <strong>Australia and globally</strong>.</p>
     button:
       title_button: Got A question? Contact us now
       url: /contact/
   - _bookshop_name: cards/steps
-    title: >-
-      <p>You can <a href="https://ttmf.com.au/application/search" title="Apply
-      Now" target="_blank" rel="noopener"><em>Apply</em></a> online in 4 easy
-      steps</p>
+    title: <p>File <em>Instantly</em> with Our Online Application Form</p>
     steps:
       - title_step: Enter your trademark (word or image)
         image: /upload/img-step1.svg
@@ -71,11 +66,21 @@ content_blocks:
         image: /upload/img-step4.svg
         step: '4'
         last_step: true
+  - _bookshop_name: cta/search
+    title: <p>Enter your trademark below to start your application</p>
+  - _bookshop_name: utils/spacer
+    padding: '12'
+    background: light
+    disable_mobile: false
+    rounded_bottom: false
+    rounded_top: false
   - _bookshop_name: cta/ctaDefault
-    title: <p>Or your can <em>contact</em> our experts for <em>help</em>?</p>
+    title: <p>Need a Helping Hand?</p>
     content: >-
-      <h4>If you need a <em>helping hand</em>, simply send us an  email and one
-      of our experts will be in touch.</h4>
+      <p>The trademark registration process can be a little daunting -
+      <strong>simply send us an email</strong> <strong>or call</strong> and one
+      of our legal experts will be in touch to give you a helping hand - at
+      <strong>no extra cost</strong>.</p>
     button:
       title_button: Email Us Now
       url: >-
