@@ -34,10 +34,18 @@ content_blocks:
   - _bookshop_name: cta/ctaDefault
     title: <p>Why The <em>TradeMark</em> Factory?</p>
     content: >-
-      <p>Unlike <em>other online trademark services</em>, every application we
-      receive is <em>checked</em>  <em>and filed</em> by one of our experts.
-      </p><p>If we see a problem with your trademark, <em>we will let you know,
-      before we file it</em>.</p><p><em>At no extra cost.</em></p>
+      <p>Unlike other online trademark services, we don't leave your application
+      to automated systems. Every single trademark application - whether for
+      Australian or international protection - is <strong>carefully reviewed and
+      filed by a qualified legal expert</strong>.</p><p>If we identify any
+      potential issues with your trademark - such as identical conflicting
+      marks, missing classifications, or registrability concerns - <strong>we'll
+      flag them for you before we proceed</strong>. That way, you can make
+      informed decisions and avoid unnecessary complications down the
+      track.</p><p>And we do this at <strong>no extra cost</strong>. It's all
+      part of our commitment to providing professional, transparent, and
+      affordable trademark registration services - both in <strong>Australia and
+      globally</strong>.</p>
     button:
       title_button: Got A question? Contact us now
       url: /contact/
@@ -77,9 +85,10 @@ content_blocks:
     description: >-
       <p><strong>The TradeMark Factory</strong> has been developed by expert
       trademark lawyers with 30+ years of experience. Being <strong>Australian
-      owned and operated</strong>, we know how the Australian trade mark system
-      works and you can rest assured that your application will be managed
-      properly from filing through to registration.</p>
+      owned and operated</strong>, we know everything about trademark
+      registration in Australia and globally so you can rest assured that your
+      application will be managed properly from filing through to
+      registration.</p>
     media:
       animation: computer-coffee
       image: /upload/placeholder-features.svg
@@ -129,11 +138,12 @@ content_blocks:
     title: <p>International <em>Trademark</em> protection</p>
     description: >-
       <p><strong>Taking your business overseas? </strong>The TradeMark Factory
-      is a one-stop-shop for your trademarking need no matter where your
-      business takes you. Visit the pricing pages to get a
-      <strong>quote</strong> for trademark registration outside Australia or get
-      in touch and one of our experts will contact you to discuss how we can
-      help.</p>
+      is a <strong>one-stop-shop</strong> for your international trademark
+      protection need no matter where your business takes you. </p><p>Visit the
+      pricing pages to get an <strong>instant</strong> <strong>online</strong>
+      <strong>quote</strong> for international trademark protection outside
+      Australia or get in touch and one of our experts will contact you to
+      discuss how we can help.</p>
     button:
       label: Contact Us
       url: /contact/
@@ -238,7 +248,7 @@ content_blocks:
           are unique to your business. Trademark registration is therefore an
           invaluable asset and essential marketing tool for your business and
           should not be overlooked.​</p>
-      - question: Why register a trademark?
+      - question: Why register a trademark in Australia and globally?
         answer: >-
           <p>A registered trademark is the only way to gain exclusive rights to
           use the name or logo. Company, business and domain name registrations
@@ -262,7 +272,7 @@ content_blocks:
           that without a trademark registration.</li><li><strong>The right to
           use the ® symbol</strong> - Once your trademark is registered, you can
           use this symbol which puts others on notice of your rights.</li></ul>
-      - question: How do you register a trademark?
+      - question: How do you register a trademark in Australia?
         answer: >-
           <p>A trademark is registered with the relevant government authority in
           each country. In Australia this authority is IP
@@ -277,7 +287,7 @@ content_blocks:
         answer: >-
           <p>It takes no less than 7 months from the date you file your
           application for your trademark to be registered in Australia.</p>
-      - question: How long does a trademark registration last?
+      - question: How long does a trademark registration last in Australia?
         answer: >-
           <p>Once registered, a trademark lasts 10 years from the filing date of
           the application. It can be renewed every 10 years after that provided
