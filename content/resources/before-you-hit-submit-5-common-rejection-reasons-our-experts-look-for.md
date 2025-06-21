@@ -81,4 +81,4 @@ And the best part? There’s no extra charge.<br>It’s all part of our commitme
 
 Don’t leave it to chance — or automation. Before you hit ‘Submit’, let our experts take a look. You’ll save time, money, and stress — and give your trade mark the strongest start possible.
 
-**Trust us with your brand.**<br>Got a question? **<u>Contact us now</u>** we’re here to help.
+**Trust us with your brand.**<br>Got a question? [**<u>Contact us now</u>**](https://ttmf.com.au/contact/) we’re here to help.
