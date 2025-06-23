@@ -29,6 +29,7 @@ export async function load({ url }) {
 
 	try {
 		let token;
+		// CURENTLY NOT WORKING, NEED TO CHANGE IT TO CLOUDFLARE
 		// if (import.meta.env.VITE_ENV_ADAPTER === 'netlify') {
 		// 	const res = await fetch('/.netlify/functions/getAuthToken');
 		// 	const data = await res.json();

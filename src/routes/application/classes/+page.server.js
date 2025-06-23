@@ -7,13 +7,14 @@ export const actions = {
 
 		try {
 			let token;
-			if (import.meta.env.VITE_ENV_ADAPTER === 'netlify') {
-				const res = await fetch('/.netlify/functions/getAuthToken');
-				const data = await res.json();
-				token = data.token;
-			} else {
-				token = await getAuthToken();
-			}
+			// if (import.meta.env.VITE_ENV_ADAPTER === 'netlify') {
+			// 	const res = await fetch('/.netlify/functions/getAuthToken');
+			// 	const data = await res.json();
+			// 	token = data.token;
+			// } else {
+			// 	token = await getAuthToken();
+			// }
+			token = await getAuthToken();
 
 			// production - https://production.api.ipaustralia.gov.au/public/tmgns-rest-api/v1/
 
