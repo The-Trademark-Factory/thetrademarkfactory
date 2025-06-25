@@ -11,7 +11,7 @@
 			"image": ""
 		},
 		"searchField": {
-			"disable_search_results": false,
+			"disable_search_results": true,
 			"title_word": "Scroll down to file your trademark or search again",
 			"title_logo": "File a LOGO trademark now",
 			"registered_title": "YOUR TRADEMARK MAY ALREADY BE REGISTERED FOR SOME GOODS/SERVICES.",
