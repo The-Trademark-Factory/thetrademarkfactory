@@ -11,11 +11,11 @@ seo:
 content_blocks:
   - _bookshop_name: headers/heroHome
     title:
-      title_above: Affordable
-      title_below: Protection
+      title_above: File Your
+      title_below: Today
       full_title: The Fastest and easiest way to protect your brand in Australia
     search:
-      title: 'File instantly online. Get started by entering your trade mark here:'
+      title: 'Search IP Australia’s database before you file:'
     aussie:
       title: Need help? Contact us for expert advice at no extra cost.
       subtitle: >-
