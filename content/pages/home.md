@@ -68,12 +68,6 @@ content_blocks:
         last_step: true
   - _bookshop_name: cta/search
     title: <p>Enter your <em>trademark</em> below to get started</p>
-  - _bookshop_name: utils/spacer
-    padding: '12'
-    background: light
-    disable_mobile: false
-    rounded_bottom: false
-    rounded_top: false
   - _bookshop_name: cta/ctaDefault
     title: <p>Need a Helping Hand?</p>
     content: >-
