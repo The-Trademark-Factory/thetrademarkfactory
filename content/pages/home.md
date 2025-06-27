@@ -67,7 +67,7 @@ content_blocks:
         step: '4'
         last_step: true
   - _bookshop_name: cta/search
-    title: <p>Enter your trademark below to start your application</p>
+    title: <p>Enter your <em>trademark</em> below to get started</p>
   - _bookshop_name: utils/spacer
     padding: '12'
     background: light
