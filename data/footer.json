@@ -38,7 +38,7 @@
 	"email": "admin@ttmf.com.au",
 	"button": {
 		"title": "Search and Apply",
-		"title_mobile": "Apply Now",
+		"title_mobile": "Search and Apply",
 		"url": "/application/search"
 	},
 	"copyright": "© 2025 The TradeMark Factory - All rights reserved.",
