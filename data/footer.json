@@ -37,8 +37,8 @@
 	"phone": "+61 2 9499 9229",
 	"email": "admin@ttmf.com.au",
 	"button": {
-		"title": "Apply Now",
-		"title_mobile": "Apply Now",
+		"title": "Search and Apply",
+		"title_mobile": "Search and Apply",
 		"url": "/application/search"
 	},
 	"copyright": "© 2025 The TradeMark Factory - All rights reserved.",
