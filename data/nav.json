@@ -26,8 +26,8 @@
 		}
 	],
 	"button": {
-		"title": "Apply Now",
-		"title_mobile": "Apply Now",
+		"title": "Search and Apply",
+		"title_mobile": "Search and Apply",
 		"url": "/application/search"
 	}
 }
