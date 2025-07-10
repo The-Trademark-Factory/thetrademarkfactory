@@ -29,20 +29,19 @@ content_blocks:
       - title: International trademarks available
       - title: Free 10 minute consultation
   - _bookshop_name: cta/ctaDefault
-    title: <p>Trust Us With Your <em>Trademark</em></p>
+    title: <p>Trusted <em>Trademark </em>Experts</p>
     content: >-
-      <p>Unlike other online trademark services, we don't leave your application
-      to automated systems. At The TradeMark Factory, every single trademark
-      application - whether for Australian or international protection - is
-      carefully reviewed and filed by our<strong> qualified legal
+      <p>Unlike other online trademark services, at <strong>The TradeMark
+      Factory</strong>, each and every trademark application is carefully
+      reviewed and filed by our<strong> qualified legal
       experts</strong>.</p><p>If we identify any potential issues with your
       trademark - such as identical conflicting marks, missing classifications,
       or registrability concerns - <strong>we'll flag them for you before we
       proceed</strong>. That way, you can make informed decisions and avoid
       unnecessary complications down the track.</p><p>And we do this at
-      <strong>no extra cost</strong>. It's all part of our commitment to
-      providing professional, transparent, and affordable trademark registration
-      services - both in <strong>Australia and globally</strong>.</p>
+      <strong>no extra cost</strong>. </p><p>It's all part of our commitment to
+      providing <strong>professional, transparent, and affordable</strong>
+      trademark registration services - both in Australia and globally.</p>
     button:
       title_button: Got A question? Contact us now
       url: /contact/
