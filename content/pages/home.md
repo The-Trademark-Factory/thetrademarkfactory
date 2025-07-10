@@ -18,9 +18,7 @@ content_blocks:
       title: 'Search IP Australia’s database before you file:'
     aussie:
       title: Need help? Call us for a free consultation on +61 439 050 158
-      subtitle: >-
-        Our fees are the same as other online platforms - our difference is our
-        approach. Every application is checked and filed by our expert lawyers. 
+      subtitle: 'Every application is checked and filed by our expert lawyers. '
     scrolling_banner:
       - title: Apply instantly online
       - title: Integrated with IP Australia
