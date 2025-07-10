@@ -22,13 +22,14 @@ content_blocks:
         Our fees are the same as other online platforms - our difference is our
         approach. Every application is checked and filed by our expert lawyers. 
     scrolling_banner:
-      - title: Online application or contact our experts
+      - title: Apply instantly online
       - title: Integrated with IP Australia
       - title: Low fixed fees
       - title: 30+ years experience
       - title: 100% Australian owned and operated
       - title: 9,000+ trademarks registered
       - title: International trademarks available
+      - title: Free 10 minute consultation
   - _bookshop_name: cta/ctaDefault
     title: <p>Trust Us With Your <em>Trademark</em></p>
     content: >-
