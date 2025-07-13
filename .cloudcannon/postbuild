@@ -1,3 +1,0 @@
-npm i
-npx "@bookshop/generate"
-npx svelte-sitemap --domain https://ttmf.com.au/
