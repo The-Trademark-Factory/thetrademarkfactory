@@ -1,0 +1,37 @@
+spec:
+  structures:
+    - content_blocks
+  label: Hero Home
+  description:
+  icon: 'task'
+  tags: []
+
+blueprint:
+  title:
+    title_above: Protect your
+    title_below: today
+    full_title:
+  search:
+    title: Trust the experts with your business most valuable assets
+  aussie:
+    title: Lorem ipsum dolor sit amet
+    subtitle: Lorem ipsum dolor
+  scrolling_banner:
+    - title: Lorem ipsum Dolor
+    - title: Dolor sit
+    - title: Consectetur adipiscing
+    - title: Tempor incididunt
+    - title: Lorem ipsum
+    - title: Dolor sit
+    - title: Consectetur adipiscing
+    - title: Tempor incididunt
+    - title: Lorem ipsum
+    - title: Dolor sit
+    - title: Consectetur adipiscing
+    - title: Tempor incididunt
+
+preview:
+
+_inputs:
+  full_title:
+    comment: If you put a full title, the default animated title will be hidden

@@ -1,0 +1,65 @@
+collections_config:
+  pages:
+    path: content/pages
+    url: '/[slug]/'
+    output: true
+    schemas:
+      page:
+        path: src/lib/schemas/page.md
+    _enabled_editors:
+      - visual
+      - data
+    preview:
+      gallery:
+        text:
+          - key: title
+  post:
+    path: content/resources
+    url: '/resources/[slug]/'
+    output: true
+    schemas:
+      page:
+        path: src/lib/schemas/article.md
+    _enabled_editors:
+      - content
+    preview:
+      gallery:
+        text:
+          - key: title
+  data:
+    path: data
+    _enable_editors:
+      - data
+    _inputs:
+      default_description:
+        type: html
+      warning_description:
+        type: html
+      default_description_logo:
+        type: html
+      default_description_word:
+        type: html
+      info_content:
+        type: html
+      terms:
+        type: html
+      icon:
+        type: image
+
+paths:
+  collections: 'content'
+  data: 'data'
+  static: 'static'
+  uploads: 'static/upload'
+
+_inputs:
+  date:
+    instance_value: now
+  title_suffix:
+    comment: Added at the end of the title and highlighted in a different color
+  pagination.data:
+    hidden: true
+  pagination.alias:
+    hidden: true
+  pagination.size:
+    type: number

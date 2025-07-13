@@ -1,0 +1,18 @@
+spec:
+  structures:
+    - content_blocks
+  label: Simple Text
+  description:
+  icon: 'task'
+  tags: []
+
+blueprint:
+  title: Lorem
+  content: |
+    lorem ipsum
+
+preview:
+
+_inputs:
+  content:
+    type: html

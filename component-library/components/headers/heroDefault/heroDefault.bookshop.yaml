@@ -1,0 +1,22 @@
+spec:
+  structures:
+    - content_blocks
+  label: Hero Default
+  description:
+  icon: 'task'
+  tags: []
+
+blueprint:
+  title: Lorem ipsum
+  subtitle: Lorem ipsum dolor sit amet
+  background:
+    animation:
+    image:
+    alt:
+    align_bottom: false
+
+preview:
+
+_inputs:
+  full_title:
+    comment: If you put a full title, the default animated title will be hidden

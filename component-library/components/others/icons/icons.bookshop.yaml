@@ -1,0 +1,30 @@
+spec:
+  structures:
+    - content_blocks
+  label: Icons
+  description:
+  icon: 'task'
+  tags: []
+
+blueprint:
+  title: |
+    Lorem ipsum <em>dolor sit</em> amet
+  icons:
+    - title: Lorem ispum
+      icon: https://dummyimage.com/120x50
+    - title: Lorem ispum
+      icon: https://dummyimage.com/120x50
+    - title: Lorem ispum
+      icon: https://dummyimage.com/120x50
+    - title: Lorem ispum
+      icon: https://dummyimage.com/120x50
+    - title: Lorem ispum
+      icon: https://dummyimage.com/120x50
+
+preview:
+
+_inputs:
+  title:
+    type: html
+  icon:
+    type: image

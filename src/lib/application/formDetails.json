@@ -1,0 +1,163 @@
+{
+	"selectors": [
+		{
+			"label": "The owner of the trademark is a:*",
+			"name": "Owner",
+			"type": "radio",
+			"id": "owner",
+			"options": ["Company", "Individual"],
+			"placeholder": "",
+			"required": false
+		},
+		{
+			"label": "The Company / Organisation is based in:*",
+			"labelIndividual": "The Individual is based in:*",
+			"name": "Based",
+			"type": "radio",
+			"id": "based",
+			"options": ["Australia", "International"],
+			"placeholder": "",
+			"required": false
+		}
+	],
+	"commun": [
+		{
+			"label": "First Name*",
+			"name": "First name",
+			"type": "text",
+			"id": "firstName",
+			"options": [],
+			"placeholder": "John",
+			"required": true
+		},
+		{
+			"label": "Last Name*",
+			"name": "Last name",
+			"type": "text",
+			"id": "lastName",
+			"options": [],
+			"placeholder": "Doe",
+			"required": true
+		},
+		{
+			"label": "Address*",
+			"name": "Address",
+			"type": "text",
+			"id": "address",
+			"options": [],
+			"placeholder": "123 George St.",
+			"required": true
+		},
+		{
+			"label": "Address Line 2",
+			"name": "Address 2",
+			"type": "text",
+			"id": "address2",
+			"options": [],
+			"placeholder": "Level 1",
+			"required": false
+		},
+		{
+			"label": "City*",
+			"name": "City",
+			"type": "text",
+			"id": "city",
+			"options": [],
+			"placeholder": "Sydney",
+			"required": true
+		},
+		{
+			"label": "State*",
+			"name": "Phone",
+			"type": "select",
+			"id": "state",
+			"options": [
+				"New South Wales",
+				"Victoria",
+				"Queensland",
+				"Northern Territoy",
+				"Western Australia",
+				"South Australia",
+				"Tasmania",
+				"Australian Capital Territory",
+				"Outside Australia"
+			],
+			"placeholder": "",
+			"required": true
+		},
+		{
+			"label": "Postcode*",
+			"name": "Postcode",
+			"type": "text",
+			"id": "postcode",
+			"options": [],
+			"placeholder": "2000",
+			"required": true
+		},
+		{
+			"label": "Country*",
+			"name": "Country",
+			"type": "text",
+			"id": "country",
+			"options": [],
+			"placeholder": "Australia",
+			"required": true
+		},
+		{
+			"label": "Email*",
+			"name": "Email",
+			"type": "email",
+			"id": "email",
+			"options": [],
+			"placeholder": "john@doe.com",
+			"required": true
+		},
+		{
+			"label": "Phone",
+			"name": "Phone",
+			"type": "tel",
+			"id": "phone",
+			"options": [],
+			"placeholder": "0412 345 678",
+			"required": false
+		},
+		{
+			"label": "Order Note",
+			"name": "orderNote",
+			"type": "textarea",
+			"id": "orderNote",
+			"options": [],
+			"placeholder": "",
+			"required": false
+		}
+	],
+	"conditional": {
+		"isCompany": {
+			"label": "Company Name*",
+			"name": "Company",
+			"type": "text",
+			"id": "company",
+			"options": [],
+			"placeholder": "ACME Pty Ltd",
+			"required": true
+		},
+		"isCompanyAustralia": {
+			"label": "ABN*",
+			"name": "ABN",
+			"type": "text",
+			"id": "abn",
+			"options": [],
+			"placeholder": "12345678910",
+			"required": true
+		},
+		"isInternational": {
+			"label": "Jurisdiction*",
+			"name": "Jurisdiction",
+			"type": "text",
+			"id": "jurisdiction",
+			"options": [],
+			"placeholder": "NSW",
+			"required": true
+		}
+	}
+}

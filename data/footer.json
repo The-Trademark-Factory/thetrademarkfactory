@@ -1,0 +1,49 @@
+{
+	"links": [
+		{
+			"title": "Services",
+			"url": "/services"
+		},
+		{
+			"title": "Pricing",
+			"url": "/pricing"
+		},
+		{
+			"title": "About",
+			"url": "/about"
+		},
+		{
+			"title": "Resources",
+			"url": "/resources"
+		},
+		{
+			"title": "Contact",
+			"url": "/contact"
+		},
+		{
+			"title": "Privacy Policy",
+			"url": "/privacy-policy"
+		},
+		{
+			"title": "Terms & Conditions",
+			"url": "/terms-conditions"
+		}
+	],
+	"address": {
+		"street": "Grosvenor Pl, Level 15, 225 George Street",
+		"city": "Sydney",
+		"state": "NSW 2000 Australia"
+	},
+	"phone": "+61 439 050 158",
+	"email": "admin@ttmf.com.au",
+	"button": {
+		"title": "Search and Apply",
+		"title_mobile": "Search and Apply",
+		"url": "/application/search"
+	},
+	"copyright": "© 2025 The TradeMark Factory - All rights reserved.",
+	"built": {
+		"title": "Built by C&B",
+		"url": "https://www.croissantbaguette.com.au/"
+	}
+}
