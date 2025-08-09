@@ -17,7 +17,7 @@ content_blocks:
     search:
       title: 'Search IP Australia’s database before you file:'
     aussie:
-      title: Need help? Call us for a free consultation on +61 0439050158
+      title: Need help? Call us for a free consultation on +61 0439 050 158
       subtitle: 'Every application is checked and filed by our expert lawyers. '
     scrolling_banner:
       - title: Apply instantly online
