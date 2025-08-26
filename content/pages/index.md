@@ -11,8 +11,8 @@ seo:
 content_blocks:
   - _bookshop_name: headers/heroHome
     title:
-      title_above: File Your
-      title_below: Today
+      title_above: Fixed-fee
+      title_below: Filing
       full_title: The Fastest and easiest way to protect your brand in Australia
     search:
       title: 'Search IP Australia’s database before you file:'
