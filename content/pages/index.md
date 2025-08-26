@@ -11,8 +11,8 @@ seo:
 content_blocks:
   - _bookshop_name: headers/heroHome
     title:
-      title_above: Fixed-fee
-      title_below: Application
+      title_above: Fast, Fixed-fee
+      title_below: File today
       full_title:
     search:
       title: 'Search IP Australia’s database before you file:'
