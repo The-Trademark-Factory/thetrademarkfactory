@@ -17,10 +17,8 @@ content_blocks:
     search:
       title: 'Start Your Application here:'
     aussie:
-      title: Need help? Call us for a free consultation on +61 0439 050 158
-      subtitle: >-
-        Our fees are the same as other online platforms - our difference is our
-        approach. Every application is checked and filed by our expert lawyers. 
+      title: Register your trademark online in minutes, with expert legal review.
+      subtitle: Need help? Call us for a free consultation on +61 0439 050 158
     scrolling_banner:
       - title: Online application or contact our experts
       - title: Integrated with IP Australia
