@@ -15,7 +15,7 @@ content_blocks:
       title_below: File today
       full_title:
     search:
-      title: 'Search IP Australia’s database before you file:'
+      title: 'Start Your Application here:'
     aussie:
       title: Need help? Call us for a free consultation on +61 0439 050 158
       subtitle: >-
