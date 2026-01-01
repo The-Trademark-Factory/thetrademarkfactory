@@ -1,7 +1,7 @@
 ---
 _schema: page
 title: How to Stop Your Trade Mark From Becoming Generic
-date: 2025-07-07T18:25:41Z
+date: 2025-09-10T18:25:00Z
 image:
 seo:
   title:
