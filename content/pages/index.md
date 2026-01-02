@@ -1,7 +1,7 @@
 ---
 title: Home
 seo:
-  title: Brand & Trade Name Registry Services | The Trademark Factory
+  title: Trade Mark Registration Services | The Trademark Factory
   description: >-
     Looking to register a trademark in Australia? We offer expert trademark
     registration services, brand name, and international trademark applications.
