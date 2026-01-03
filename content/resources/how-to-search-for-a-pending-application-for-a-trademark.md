@@ -2,7 +2,7 @@
 _schema: page
 title: How to Search for a Pending Application for a Trademark?
 date: 2025-05-20T18:08:45Z
-image:
+image: /upload/depositphotos-15618845-s-2019.jpg
 seo:
   title: How to Search for a Pending Application for a Trademark?
   description: >-
@@ -12,7 +12,6 @@ seo:
   image: /upload/ttmf-default-seo.png
   no_index: false
 ---
-
 Thinking of registering a new trademark? One of the first steps before you invest in branding, packaging, or promotion is to make sure your desired name, logo, or slogan isn’t already taken or pending.
 
 That’s where a trademark search comes in. But what happens if someone else has already applied for something similar? And how can you find that out before it’s too late?
@@ -27,10 +26,10 @@ Trademark registration is competitive. If someone else has already filed for a s
 
 A proper search helps you:
 
-- Avoid conflicts and rebranding down the line
-- Understand whether your trademark is available
-- Make strategic decisions before filing
-- Save thousands in legal fees and delays
+* Avoid conflicts and rebranding down the line
+* Understand whether your trademark is available
+* Make strategic decisions before filing
+* Save thousands in legal fees and delays
 
 At The TradeMark Factory, our comprehensive search identifies not just registered trademarks but pending applications too. That’s critical, because pending applications aren’t yet in the registry, but they can still block your path to registration.
 
@@ -54,10 +53,10 @@ Here’s a quick overview of how you can manually search the database:
 
 While ATMOSS is a helpful tool, it’s not foolproof for business owners. Why?
 
-- It won’t warn you if something is similar but spelled differently
-- It doesn’t give legal advice or risk assessments
-- It won’t help you understand trademark classes or future oppositions
-- It can miss trademarks filed internationally that may apply to Australia
+* It won’t warn you if something is similar but spelled differently
+* It doesn’t give legal advice or risk assessments
+* It won’t help you understand trademark classes or future oppositions
+* It can miss trademarks filed internationally that may apply to Australia
 
 That’s where we come in.
 
@@ -67,10 +66,10 @@ At The TradeMark Factory, we don’t just search, we strategically assess and ad
 
 Our trademark lawyers and attorneys can:
 
-- Run advanced searches across pending, registered, and global databases
-- Identify potential conflicts before you file
-- Recommend clear paths forward, including name alternatives if needed
-- Save you from costly delays and rejection
+* Run advanced searches across pending, registered, and global databases
+* Identify potential conflicts before you file
+* Recommend clear paths forward, including name alternatives if needed
+* Save you from costly delays and rejection
 
 And best of all? We handle it all for you.<br>Simple. Transparent. Professional. Done-for-you.
 
