@@ -45,7 +45,7 @@ content_blocks:
       title_button: Got A question? Contact us now
       url: /contact/
   - _bookshop_name: cards/steps
-    title: <p>File <em>Instantly</em> with Our Online Application Form</p>
+    title: <p>File  <em>instantly</em> with our Online Application</p>
     steps:
       - title_step: Enter your trademark (word or image)
         image: /upload/img-step1.svg
