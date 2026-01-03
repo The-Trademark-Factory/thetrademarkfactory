@@ -2,15 +2,13 @@
 _schema: page
 title: How to Stop Your Trade Mark From Becoming Generic
 date: 2025-09-10T18:25:00Z
-image:
+image: /upload/about-intro.svg
 seo:
   title:
   description:
   image: /upload/ttmf-default-seo.png
   no_index: false
 ---
-# How to Stop Your Trade Mark From Becoming Generic
-
 Owning a trade mark gives your brand a unique identity and legal protection. But if not carefully managed, even strong trade marks can lose their distinctiveness and slip into the public domain as generic terms. Famous examples include “escalator,” “cellophane,” and “aspirin,” which were once protected trade marks but are now used as common names.
 
 If you are a trade mark owner, here are some key steps you can take to ensure your brand remains protected and doesn’t become generic.
