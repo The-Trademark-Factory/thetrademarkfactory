@@ -15,9 +15,9 @@ content_blocks:
       title_below: today
       full_title:
     search:
-      title: 'Start Your Application here:'
+      title: 'Start your application now:'
     aussie:
-      title: Register your trademark online in minutes, with expert legal review.
+      title: File your trademark online in minutes, with expert legal review.
       subtitle: Need help? Call us for a free consultation on +61 0439 050 158
     scrolling_banner:
       - title: Online application or contact our experts
