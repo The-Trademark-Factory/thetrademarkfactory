@@ -2,7 +2,7 @@
 _schema: page
 title: 'Before You Hit ''Submit'': 5 Common Rejection Reasons Our Experts Look For'
 date: 2025-06-21T14:25:21Z
-image:
+image: /upload/image-7.png
 seo:
   title: 'Before You Hit ''Submit'': 5 Common Reasons Applications Get Rejected'
   description: >-
