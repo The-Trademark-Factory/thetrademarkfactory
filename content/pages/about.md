@@ -85,26 +85,4 @@ content_blocks:
       url: /application/search
   - _bookshop_name: cta/search
     title: <p>Get Your <em>Trademark</em> Today</p>
-  - _bookshop_name: others/team
-    team:
-      - name: Natalie Murray-Jones
-        position: Founder
-        bio: >-
-          <p>Natalie has over 25 years experience as an  intellectual property
-          lawyer.</p><p>Her expertise is in Australian and international brand
-          protection and trade mark law. She has worked for clients operating
-          across a range of industries protecting brands in all sectors and
-          working with some of Australia’s most well-known and innovative
-          companies.</p><p>She is known for her succinct, commercially focused
-          advice on all aspects of branding and trade marks, including the
-          protection and management of extensive Australian and international
-          trade mark portfolios, contentious disputes, non-use matters and
-          infringement actions as well as non-contentious contractual and
-          licensing matters.</p><p>Natalie also assists clients to create and
-          execute comprehensive trade mark strategies in Australia and around
-          the globe by leveraging her extensive network of international
-          associate lawyers.</p><p>To further support clients dealing with
-          overseas jurisdictions Natalie was appointed notary public in NSW in
-          2014.</p>
-        image: /upload/nmj-4.png
 ---
