@@ -66,7 +66,7 @@ content_blocks:
   - _bookshop_name: cta/search
     title: <p>Enter your <em>trademark</em> below to get started</p>
   - _bookshop_name: cta/ctaDefault
-    title: <p>Need a Helping Hand?</p>
+    title: <p>Need a <em>Helping</em> Hand?</p>
     content: >-
       <p>The trademark registration process can be a little daunting -
       <strong>simply send us an email</strong> <strong>or call</strong> and one
