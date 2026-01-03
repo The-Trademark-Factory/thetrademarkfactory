@@ -32,8 +32,7 @@ content_blocks:
     content: >-
       <p>Unlike other online trademark services, we don't leave your application
       to automated systems. At The TradeMark Factory, every single trademark
-      application - whether for Australian or international protection - is
-      carefully reviewed and filed by our<strong> qualified legal
+      application is reviewed by our<strong> qualified legal
       experts</strong>.</p><p>If we identify any potential issues with your
       trademark - such as identical conflicting marks, missing classifications,
       or registrability concerns - <strong>we'll flag them for you before we
