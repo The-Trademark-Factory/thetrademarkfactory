@@ -15,7 +15,7 @@ content_blocks:
       title_below: today
       full_title:
     search:
-      title: 'Start with your free search of IP Australia''s database:'
+      title: 'Start with your FREE search of IP Australia''s database:'
     aussie:
       title: 'Owned and operated by expert Australian trademark lawyers. '
       subtitle: Quick. Easy. Affordable.
@@ -28,24 +28,19 @@ content_blocks:
       - title: 9,000+ trademarks registered
       - title: International trademarks available
   - _bookshop_name: cta/ctaDefault
-    title: <p>Trust Us With Your <em>Trademark</em></p>
+    title: <p>Australian <em>Trademark</em> Experts</p><p>Low Fixed Fees</p>
     content: >-
-      <p>Unlike other online trademark services, we don't leave your application
-      to automated systems. At The TradeMark Factory, every single trademark
-      application is reviewed by our<strong> qualified legal
-      experts</strong>.</p><p>If we identify any potential issues with your
-      trademark - such as identical conflicting marks, missing classifications,
-      or registrability concerns - <strong>we'll flag them for you before we
-      proceed</strong>. That way, you can make informed decisions and avoid
-      unnecessary complications down the track.</p><p>And we do this at
-      <strong>no extra cost</strong>. It's all part of our commitment to
-      providing professional, transparent, and affordable trademark registration
-      services - both in <strong>Australia and globally</strong>.</p>
+      <p>Unlike our competitors, we don't leave your application to automated
+      systems.  At The TradeMark Factory, every application is reviewed by
+      <strong>qualified legal experts</strong> before it is filed, at no extra
+      cost.</p><p><strong>Your brand is one of your businesses most valuable
+      assets</strong>. Don't risk losing it.</p><p>File online now or email us
+      for your <strong>free 10 minute consultation</strong>.</p>
     button:
-      title_button: Got A question? Contact us now
+      title_button: Get your free 10 minute consultation with one of our experts
       url: /contact/
   - _bookshop_name: cards/steps
-    title: <p>File  <em>instantly</em> with our Online Application</p>
+    title: <p>File  <em>instantly</em> Online</p>
     steps:
       - title_step: Enter your trademark (word or image)
         image: /upload/img-step1.svg
@@ -64,13 +59,13 @@ content_blocks:
         step: '4'
         last_step: true
   - _bookshop_name: cta/search
-    title: <p>Enter your <em>trademark</em> below to get started</p>
+    title: <p>Get started with your <em>free</em> search</p>
   - _bookshop_name: cta/ctaDefault
-    title: <p>Need a <em>Helping</em> Hand?</p>
+    title: <p>Need some <em>help</em>?</p>
     content: >-
       <p>The trademark registration process can be a little daunting -
-      <strong>simply send us an email</strong> <strong>or call</strong> and one
-      of our legal experts will be in touch to give you a helping hand - at
+      <strong>simply send us an email</strong> <strong>here </strong>and one of
+      our legal experts will be in touch to give you a helping hand - at
       <strong>no extra cost</strong>.</p>
     button:
       title_button: Email Us Now
@@ -80,11 +75,10 @@ content_blocks:
     title: <p>Why Choose <em>Us</em></p>
     description: >-
       <p><strong>The TradeMark Factory</strong> has been developed by expert
-      trademark lawyers with 30+ years of experience. Being <strong>Australian
-      owned and operated</strong>, we know everything about trademark
-      registration in Australia and globally so you can rest assured that your
-      application will be managed properly from filing through to
-      registration.</p>
+      trademark lawyers with 30+ years of experience. </p><p>Being
+      <strong>Australian owned and operated</strong>, you can be assured that
+      your application will be managed locally by Australian experts, from
+      filing through to registration and beyond.</p>
     media:
       animation: computer-coffee
       image: /upload/placeholder-features.svg
@@ -118,6 +112,8 @@ content_blocks:
           Designed by Australians for Australians and trusted by thousands of
           brand owners to protect their trademarks around the world.
         icon: /upload/ic-status.svg
+  - _bookshop_name: utils/pricing
+    title: <p>Trademark <em>Registration</em> Pricing</p>
   - _bookshop_name: cards/stats
     stats:
       - title: 30+
@@ -143,8 +139,6 @@ content_blocks:
     button:
       label: Contact Us
       url: /contact/
-  - _bookshop_name: utils/pricing
-    title: <p>Trademark <em>Registration</em> Pricing</p>
   - _bookshop_name: others/testimonials
     title: <p>What our clients <em>say</em></p>
     testimonials:
