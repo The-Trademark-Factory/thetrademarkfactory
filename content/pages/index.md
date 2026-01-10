@@ -11,14 +11,14 @@ seo:
 content_blocks:
   - _bookshop_name: headers/heroHome
     title:
-      title_above: Protect your
+      title_above: File your
       title_below: today
       full_title:
     search:
-      title: 'Start your application now:'
+      title: 'Start with your free search of IP Australia''s database:'
     aussie:
-      title: File your trademark online in minutes, with expert legal review.
-      subtitle: Need help? Call us for a free consultation on +61 0439 050 158
+      title: 'Owned and operated by expert Australian trademark lawyers. '
+      subtitle: Quick. Easy. Afforable.
     scrolling_banner:
       - title: Online application or contact our experts
       - title: Integrated with IP Australia
