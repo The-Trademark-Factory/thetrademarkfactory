@@ -27,21 +27,21 @@ content_blocks:
       - title: 100% Australian owned and operated
       - title: International trademarks available
   - _bookshop_name: cta/ctaDefault
-    title: >-
-      <p>Australian <em>Trademark</em> Experts</p><p>Low Fixed Fees from A$350 +
-      govt.</p>
+    title: <p>Australian <em>Trademark</em> Experts</p><p></p>
     content: >-
-      <p>Unlike our competitors, we don't leave your application to automated
-      systems.  At The TradeMark Factory, every application is reviewed by
-      <strong>qualified legal experts</strong> before it is filed, at no extra
-      cost.</p><p><strong>Your brand is one of your businesses most valuable
-      assets</strong>. Don't risk losing it.</p><p>File online now or email us
-      for your <strong>free 10 minute consultation</strong>.</p>
+      <h2>Low Fixed Fees from <em>A$350 + govt.</em></h2><p>Unlike our
+      competitors, we don't leave your application to automated systems.  At The
+      TradeMark Factory, every application is reviewed by <strong>qualified
+      legal experts</strong> before it is filed, at no extra cost.</p><p>Your
+      brand is one of your businesses most valuable assets. Don't risk losing
+      it.</p><h3>File online now or contact us for your
+      <em><strong>free</strong></em><strong> 10 minute
+      consultation</strong>.</h3>
     button:
       title_button: Get your free 10 minute consultation with one of our experts
       url: /contact/
   - _bookshop_name: cards/steps
-    title: <p>File  <em>instantly</em> Online</p>
+    title: <p>File  <em>instantly</em> online in 4 easy steps</p>
     steps:
       - title_step: Enter your trademark (word or image)
         image: /upload/img-step1.svg
@@ -143,6 +143,17 @@ content_blocks:
   - _bookshop_name: others/testimonials
     title: <p>What our clients <em>say</em></p>
     testimonials:
+      - name: James T
+        position: Managing Directors
+        description: >-
+          The team is instrumental in helping us navigate complex IP and brand
+          protection issues across Australia. Their depth of knowledge,
+          responsiveness and commercial lens is unmatched. We’ve found their
+          advice practical, strategic and always geared to helping us move
+          faster as we scale. I wouldn’t hesitate to recommend them to any
+          business looking for serious expertise in IP portfolio management and
+          protection.
+        icon: /upload/flexcollect.jpg
       - name: Katrina Hammon - Wynn Williams
         position: Partner
         description: >-
@@ -187,48 +198,54 @@ content_blocks:
           others seeking a similar service.  
         icon: /upload/about-intro.svg
   - _bookshop_name: others/icons
-    title: <p>Trademarks we have <em>registered</em></p>
+    title: <p>Some trademarks we have <em>registered</em></p>
     icons:
       - title: <p>petsure</p>
         icon: /upload/petsure.jpg
+      - title: Lofi Girl
+        icon: /upload/lofi-girl-logo.jpg
       - title: Soul Origin
         icon: /upload/soulorigin-logo.png
-      - title: Sumo Salad
-        icon: /upload/sumosalad-logo.png
-      - title: Hunter
-        icon: /upload/hunter-logo.png
       - title: GME
         icon: /upload/gme-logo.png
-      - title: <p>WOK ON INN</p>
-        icon: /upload/wok-on-inn.jpg
-      - title: <p>MAD MEX</p>
-        icon: /upload/mad-mex.jpg
+      - title: Hunter
+        icon: /upload/hunter-logo.png
+      - title: Brooklyn
+        icon: /upload/brooklyn-donut-coffee-co-logo-nz.jpg
       - title: <p>ribs and burgers</p>
         icon: /upload/r-b.jpg
       - title: <p>bizcover</p>
         icon: /upload/bizcover.jpg
+      - title: <p>WOK ON INN</p>
+        icon: /upload/wok-on-inn.jpg
+      - title: <p>DONUT KING</p>
+        icon: /upload/donut-king.jpg
+      - title: Sumo Salad
+        icon: /upload/sumosalad-logo.png
+      - title: <p>MAD MEX</p>
+        icon: /upload/mad-mex.jpg
+      - title: <p>CRUST</p>
+        icon: /upload/crust.jpg
+      - title: <p>mr brooklyn</p>
+        icon: /upload/brooklyn.jpg
       - title: <p>Abundant</p>
         icon: /upload/abundant-natural-health.jpg
       - title: <p>GJC</p>
         icon: /upload/gloria-jean.jpg
-      - title: <p>DONUT KING</p>
-        icon: /upload/donut-king.jpg
+      - title: FlexCollect
+        icon: /upload/flexcollect-1.jpg
       - title: <p>GAPONLY</p>
         icon: /upload/go-gap.jpg
-      - title: <p>CRUST</p>
-        icon: /upload/crust.jpg
       - title: <p>PIEFACE</p>
         icon: /upload/pie-face.jpg
+      - title: <p>HAELEN</p>
+        icon: /upload/haelen.jpg
       - title: <p>NARELLAN</p>
         icon: /upload/narellan.jpg
       - title: <p>MICHEL'S</p>
         icon: /upload/michel-s.jpg
       - title: <p>onsite</p>
         icon: /upload/connect.jpg
-      - title: <p>mr brooklyn</p>
-        icon: /upload/brooklyn.jpg
-      - title: <p>HAELEN</p>
-        icon: /upload/haelen.jpg
   - _bookshop_name: others/faqs
     title: <p>Frequently Asked <em>Questions</em></p>
     faq:
