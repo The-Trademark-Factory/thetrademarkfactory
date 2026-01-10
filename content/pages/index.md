@@ -18,7 +18,7 @@ content_blocks:
       title: 'Start with your free search of IP Australia''s database:'
     aussie:
       title: 'Owned and operated by expert Australian trademark lawyers. '
-      subtitle: Quick. Easy. Afforable.
+      subtitle: Quick. Easy. Affordable.
     scrolling_banner:
       - title: Online application or contact our experts
       - title: Integrated with IP Australia
