@@ -18,17 +18,18 @@ content_blocks:
       title: 'Start with your FREE search of IP Australia''s database:'
     aussie:
       title: 'Owned and operated by expert Australian trademark lawyers. '
-      subtitle: Quick. Easy. Affordable.
+      subtitle: Low Fixed Fees starting at A$350 + govt fees
     scrolling_banner:
-      - title: Online application or contact our experts
-      - title: Integrated with IP Australia
-      - title: Low fixed fees
+      - title: File instantly online
+      - title: Free pre-filing search
+      - title: A$350 + govt
       - title: 30+ years experience
       - title: 100% Australian owned and operated
-      - title: 9,000+ trademarks registered
       - title: International trademarks available
   - _bookshop_name: cta/ctaDefault
-    title: <p>Australian <em>Trademark</em> Experts</p><p>Low Fixed Fees</p>
+    title: >-
+      <p>Australian <em>Trademark</em> Experts</p><p>Low Fixed Fees from A$350 +
+      govt.</p>
     content: >-
       <p>Unlike our competitors, we don't leave your application to automated
       systems.  At The TradeMark Factory, every application is reviewed by
