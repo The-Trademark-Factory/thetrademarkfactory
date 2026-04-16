@@ -8,28 +8,6 @@ seo:
   image: /upload/ttmf-default-seo.png
   no_index: false
 content_blocks:
-  - _bookshop_name: headers/heroHome
-    title:
-      title_above: Startup
-      title_below: Protection
-      full_title: The Fastest and easiest way to protect your brand in Australia
-    search:
-      title: 'Start your Australian trade mark application here:'
-    aussie:
-      title: >-
-        Our lawyers check and file every application - your brand is safe with
-        us. 
-      subtitle: >-
-        The most reliable and cost-effective way for startups to protect their
-        brand. 
-    scrolling_banner:
-      - title: Instant online application
-      - title: Integrated with IP Australia
-      - title: Low fixed fees
-      - title: 30+ years experience
-      - title: 100% Australian owned and operated
-      - title: 9,000+ trademarks registered
-      - title: International trademarks available
   - _bookshop_name: cards/steps
     title: <p><em>File</em> your trade mark in 4 Easy Steps</p>
     steps:
