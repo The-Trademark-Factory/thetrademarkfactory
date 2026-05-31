@@ -1,14 +1,18 @@
 <script>
 	import { searchResults_page } from '../../../data/global.json';
-	import { X } from 'lucide-svelte';
+	import { X, Plus, Check, ChevronDown } from 'lucide-svelte';
 	import { classes } from '$lib/utils/stores';
-	import { Plus, Check } from 'lucide-svelte';
 	import ClassesTips from './classesTips.svelte';
 
 	export let resultsDetails, term;
+
 	let classDescription = searchResults_page.classes_description;
 	let groupedResults = {};
 	let filterText = '';
+
+	// Track which classes the user has manually opened
+	let openClasses = {};
+	let initialized = false;
 
 	resultsDetails.forEach((el) => {
 		if (!groupedResults[el.gsClassNumber]) {
@@ -16,6 +20,28 @@
 		}
 		groupedResults[el.gsClassNumber].push(el.description);
 	});
+
+	// Reactively compute filtered results per class and sort by count (most matches first)
+	$: filteredGroupedResults = Object.fromEntries(
+		Object.entries(groupedResults).map(([classNumber, descs]) => [
+			classNumber,
+			descs.filter((d) => d.toLowerCase().includes(filterText.toLowerCase()))
+		])
+	);
+
+	$: sortedClassNumbers = Object.keys(filteredGroupedResults)
+		.filter((classNumber) => filteredGroupedResults[classNumber].length > 0)
+		.sort((a, b) => filteredGroupedResults[b].length - filteredGroupedResults[a].length);
+
+	// On first render with results, auto-open the most relevant class
+	$: if (!initialized && sortedClassNumbers.length > 0) {
+		openClasses = { [sortedClassNumbers[0]]: true };
+		initialized = true;
+	}
+
+	function toggleClass(classNumber) {
+		openClasses = { ...openClasses, [classNumber]: !openClasses[classNumber] };
+	}
 
 	function toggleDescription(classNumber, description) {
 		let currentClasses = $classes.find((c) => c.class === classNumber);
@@ -63,29 +89,44 @@
 			</div>
 		{/if}
 	</div>
+
 	{#if resultsDetails.length > 0}
 		<ClassesTips />
 	{/if}
-	{#each Object.keys(groupedResults) as classNumber}
-		{#if groupedResults[classNumber].filter((desc) => desc
-				.toLowerCase()
-				.includes(filterText.toLowerCase())).length > 0}
-			<div class="bg-white border-2 border-ttmfBeige rounded-lg py-5 px-7">
-				<div>
-					<div class="space-y-1">
-						<p class="text-ttmfRed text-lg font-bold">Class {classNumber}</p>
-						<p class="text-ttmfBlack">
-							{classDescription.find((el) => el.class_number === +classNumber)?.description ?? ''}
-						</p>
-					</div>
+
+	{#each sortedClassNumbers as classNumber (classNumber)}
+		{@const descriptionsForClass = filteredGroupedResults[classNumber]}
+		{@const isOpen = filterText.length > 0 || openClasses[classNumber]}
+		<div class="bg-white border-2 border-ttmfBeige rounded-lg overflow-hidden">
+			<button
+				type="button"
+				on:click={() => toggleClass(classNumber)}
+				class="w-full flex justify-between items-start gap-4 py-5 px-7 text-left hover:bg-ttmfBeige/20 transition-colors">
+				<div class="space-y-1 flex-1 min-w-0">
+					<p class="text-ttmfRed text-lg font-bold">
+						Class {classNumber}
+						<span class="text-sm font-normal text-ttmfBlack/60 ml-2">
+							({descriptionsForClass.length}
+							{descriptionsForClass.length === 1 ? 'option' : 'options'})
+						</span>
+					</p>
+					<p class="text-ttmfBlack">
+						{classDescription.find((el) => el.class_number === +classNumber)?.description ?? ''}
+					</p>
 				</div>
-				<div class="flex flex-wrap items-center gap-2 pt-3 text-sm">
-					{#each groupedResults[classNumber].filter((desc) => desc
-							.toLowerCase()
-							.includes(filterText.toLowerCase())) as description}
+				<ChevronDown
+					class="shrink-0 mt-1 text-ttmfRed transition-transform duration-200 {isOpen
+						? 'rotate-180'
+						: ''}"
+					size="24" />
+			</button>
+
+			{#if isOpen}
+				<div class="px-7 pb-5 flex flex-wrap items-center gap-2 text-sm">
+					{#each descriptionsForClass as description}
 						<button
 							class="text-left flex items-center rounded-md lg:rounded-full p-1 font-bold border-2 transition-all group hover:text-white
-						{$classes.find((c) => c.class === classNumber)?.descriptions.includes(description)
+								{$classes.find((c) => c.class === classNumber)?.descriptions.includes(description)
 								? 'text-ttmfRed border-ttmfRed/20 bg-ttmfRed/10 hover:bg-ttmfRed '
 								: 'text-ttmfLightGreen border-ttmfLightGreen/20 bg-ttmfLightGreen/10 hover:bg-ttmfLightGreen '}"
 							on:click={() => toggleDescription(classNumber, description)}>
@@ -113,7 +154,7 @@
 						</button>
 					{/each}
 				</div>
-			</div>
-		{/if}
+			{/if}
+		</div>
 	{/each}
 </div>
