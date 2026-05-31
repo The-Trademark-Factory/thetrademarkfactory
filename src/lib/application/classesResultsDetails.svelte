@@ -10,9 +10,8 @@
 	let groupedResults = {};
 	let filterText = '';
 
-	// Track which classes the user has manually opened
+	// Track which classes the user has manually opened — all collapsed by default
 	let openClasses = {};
-	let initialized = false;
 
 	resultsDetails.forEach((el) => {
 		if (!groupedResults[el.gsClassNumber]) {
@@ -32,12 +31,6 @@
 	$: sortedClassNumbers = Object.keys(filteredGroupedResults)
 		.filter((classNumber) => filteredGroupedResults[classNumber].length > 0)
 		.sort((a, b) => filteredGroupedResults[b].length - filteredGroupedResults[a].length);
-
-	// On first render with results, auto-open the most relevant class
-	$: if (!initialized && sortedClassNumbers.length > 0) {
-		openClasses = { [sortedClassNumbers[0]]: true };
-		initialized = true;
-	}
 
 	function toggleClass(classNumber) {
 		openClasses = { ...openClasses, [classNumber]: !openClasses[classNumber] };
@@ -122,15 +115,15 @@
 			</button>
 
 			{#if isOpen}
-				<div class="px-7 pb-5 flex flex-wrap items-center gap-2 text-sm">
+				<div class="px-7 pb-5 grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm">
 					{#each descriptionsForClass as description}
 						<button
-							class="text-left flex items-center rounded-md lg:rounded-full p-1 font-bold border-2 transition-all group hover:text-white
+							class="w-full text-left flex items-center justify-between gap-2 rounded-md p-2 font-bold border-2 transition-all group hover:text-white
 								{$classes.find((c) => c.class === classNumber)?.descriptions.includes(description)
 								? 'text-ttmfRed border-ttmfRed/20 bg-ttmfRed/10 hover:bg-ttmfRed '
 								: 'text-ttmfLightGreen border-ttmfLightGreen/20 bg-ttmfLightGreen/10 hover:bg-ttmfLightGreen '}"
 							on:click={() => toggleDescription(classNumber, description)}>
-							<span class="px-2">{description}</span><span
+							<span class="px-2 flex-1">{description}</span><span
 								class="shrink-0 w-5 h-5 rounded-full flex flex-col justify-center items-center text-white group-hover:bg-white {$classes
 									.find((c) => c.class === classNumber)
 									?.descriptions.includes(description)
