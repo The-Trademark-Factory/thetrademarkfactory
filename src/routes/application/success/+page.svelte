@@ -3,6 +3,7 @@
 	import { CheckCircle } from 'lucide-svelte';
 	import { deleteImage } from '$lib/utils/indexedDB';
 	import { searchTerm, classes, details, international, searchType } from '$lib/utils/stores';
+export let data;
 
 	function clearData() {
 		localStorage.clear();
@@ -16,6 +17,17 @@
 	onMount(() => {
 		deleteImage();
 		clearData();
+
+		// Fire the purchase conversion to the dataLayer for GTM / Google Ads
+		if (data?.orderTotal) {
+			window.dataLayer = window.dataLayer || [];
+			window.dataLayer.push({
+				event: 'purchase_complete',
+				conversion_value: data.orderTotal,
+				currency_code: data.currency,
+				transaction_id: data.transactionId
+			});
+		}
 	});
 </script>
 
