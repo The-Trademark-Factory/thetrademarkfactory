@@ -38,4 +38,11 @@ export async function load({ url }) {
 
     const session = await stripe.checkout.sessions.retrieve(session_id);
     if (!session || !session.customer_details || !session.payment_intent) throw redirect(303, '/')
+
+    // Return purchase data so the success page can fire a conversion to GTM
+    return {
+        orderTotal: session.amount_total / 100, // Stripe amounts are in cents
+        currency: (session.currency || 'aud').toUpperCase(),
+        transactionId: session.id
+    }
 }
