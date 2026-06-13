@@ -13,7 +13,7 @@ seo:
 content_blocks:
   - _bookshop_name: headers/heroDefault
     title: Take Your Brand Global
-    subtitle: International trademark protection for Australian businesses
+    subtitle: International trademark protection
     background:
       animation: services
       image: /upload/img-international.svg
