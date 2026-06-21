@@ -168,7 +168,13 @@
 	],
 	"fx_chf_to_aud": 1.75,
 	"fx_last_updated": "2026-06-21",
-	"_fx_note": "gov_fee_by_class[n] = WIPO fee for n classes, converted CHF->AUD at fx_chf_to_aud, rounded $5. gov_fee is the 1-class headline. Re-derive when FX or WIPO fees change.",
+	"_fx_note": "International gov_fee_by_class[n] = WIPO per-country designation fee for n classes (CHF->AUD at fx_chf_to_aud, rounded $5). EXCLUDES the once-per-application WIPO base fee, which is held separately in wipo_base. Australia is a TTMF special case (is_australia:true) with its own gov + service schedules and does NOT use wipo_base or the shared service tier.",
+	"wipo_base": {
+		"chf_bw": 653,
+		"chf_colour": 903,
+		"aud_bw": 1145,
+		"note": "Charged ONCE per Madrid application when any international (non-AU) country is selected. Calculator uses b&w (653)."
+	},
 	"service_fee_model": {
 		"base_aud_ex_gst": 1500,
 		"base_includes_countries": 3,
@@ -176,29 +182,51 @@
 		"per_extra_country_aud_ex_gst": 100,
 		"per_extra_class_aud_ex_gst": 50,
 		"gst_rate": 0.1,
-		"note": "Flat base covers up to 3 countries and 3 classes. +100/country beyond 3, +50/class beyond 3. GST on AUD service fee only."
+		"note": "Applies to INTERNATIONAL designations only. Australia uses its own TTMF service schedule and is excluded from this tier."
+	},
+	"australia_fees": {
+		"gov_per_class_aud": 250,
+		"service_first_class_aud_ex_gst": 350,
+		"service_additional_class_aud_ex_gst": 150,
+		"gst_rate": 0.1,
+		"note": "TTMF domestic rates. Separate from WIPO/international calculation."
 	},
 	"international_module": [
 		{
 			"title": "Australia",
-			"gov_fee": 380,
-			"gov_fee_by_class": {
-				"1": 380,
-				"2": 760,
-				"3": 1140,
-				"4": 1520,
-				"5": 1900,
-				"6": 2280,
-				"7": 2660,
-				"8": 3040,
-				"9": 3420,
-				"10": 3800
-			},
 			"icon": "/upload/australia-icon.svg",
-			"popular": true
+			"popular": true,
+			"is_australia": true,
+			"gov_fee": 250,
+			"gov_fee_by_class": {
+				"1": 250,
+				"2": 500,
+				"3": 750,
+				"4": 1000,
+				"5": 1250,
+				"6": 1500,
+				"7": 1750,
+				"8": 2000,
+				"9": 2250,
+				"10": 2500
+			},
+			"ttmf_service_by_class": {
+				"1": 350,
+				"2": 500,
+				"3": 650,
+				"4": 800,
+				"5": 950,
+				"6": 1100,
+				"7": 1250,
+				"8": 1400,
+				"9": 1550,
+				"10": 1700
+			}
 		},
 		{
 			"title": "United States",
+			"icon": "/upload/united-state-icon.svg",
+			"popular": true,
 			"gov_fee": 805,
 			"gov_fee_by_class": {
 				"1": 805,
@@ -212,11 +240,12 @@
 				"9": 7245,
 				"10": 8050
 			},
-			"icon": "/upload/united-state-icon.svg",
-			"popular": true
+			"standard_fee": false
 		},
 		{
 			"title": "New Zealand",
+			"icon": "/upload/new-zealand-icon.svg",
+			"popular": true,
 			"gov_fee": 80,
 			"gov_fee_by_class": {
 				"1": 80,
@@ -230,11 +259,12 @@
 				"9": 725,
 				"10": 805
 			},
-			"icon": "/upload/new-zealand-icon.svg",
-			"popular": true
+			"standard_fee": false
 		},
 		{
 			"title": "United Kingdom",
+			"icon": "/upload/united-kingdom-icon.svg",
+			"popular": true,
 			"gov_fee": 420,
 			"gov_fee_by_class": {
 				"1": 420,
@@ -248,11 +278,12 @@
 				"9": 1315,
 				"10": 1430
 			},
-			"icon": "/upload/united-kingdom-icon.svg",
-			"popular": true
+			"standard_fee": false
 		},
 		{
 			"title": "European Union",
+			"icon": "/upload/eu-icon.svg",
+			"popular": true,
 			"gov_fee": 1380,
 			"gov_fee_by_class": {
 				"1": 1380,
@@ -266,11 +297,12 @@
 				"9": 3230,
 				"10": 3480
 			},
-			"icon": "/upload/eu-icon.svg",
-			"popular": true
+			"standard_fee": false
 		},
 		{
 			"title": "China",
+			"icon": "/upload/china-icon.svg",
+			"popular": true,
 			"gov_fee": 385,
 			"gov_fee_by_class": {
 				"1": 385,
@@ -284,11 +316,12 @@
 				"9": 1925,
 				"10": 2120
 			},
-			"icon": "/upload/china-icon.svg",
-			"popular": true
+			"standard_fee": false
 		},
 		{
 			"title": "Canada",
+			"icon": "/upload/canada-icon.svg",
+			"popular": true,
 			"gov_fee": 495,
 			"gov_fee_by_class": {
 				"1": 495,
@@ -302,11 +335,12 @@
 				"9": 1700,
 				"10": 1850
 			},
-			"icon": "/upload/canada-icon.svg",
-			"popular": true
+			"standard_fee": false
 		},
 		{
 			"title": "Afghanistan",
+			"icon": "/upload/afghanistan-169406.svg",
+			"popular": false,
 			"gov_fee": 175,
 			"gov_fee_by_class": {
 				"1": 175,
@@ -320,11 +354,12 @@
 				"9": 1225,
 				"10": 1400
 			},
-			"icon": "/upload/afghanistan-169406.svg",
-			"popular": false
+			"standard_fee": true
 		},
 		{
 			"title": "Albania",
+			"icon": "/upload/albania-169392.svg",
+			"popular": false,
 			"gov_fee": 175,
 			"gov_fee_by_class": {
 				"1": 175,
@@ -338,11 +373,12 @@
 				"9": 1225,
 				"10": 1400
 			},
-			"icon": "/upload/albania-169392.svg",
-			"popular": false
+			"standard_fee": true
 		},
 		{
 			"title": "Algeria",
+			"icon": "/upload/algeria-169389.svg",
+			"popular": false,
 			"gov_fee": 175,
 			"gov_fee_by_class": {
 				"1": 175,
@@ -356,11 +392,12 @@
 				"9": 1225,
 				"10": 1400
 			},
-			"icon": "/upload/algeria-169389.svg",
-			"popular": false
+			"standard_fee": true
 		},
 		{
 			"title": "Armenia",
+			"icon": "/upload/armenia-169395.svg",
+			"popular": false,
 			"gov_fee": 325,
 			"gov_fee_by_class": {
 				"1": 325,
@@ -374,11 +411,12 @@
 				"9": 595,
 				"10": 625
 			},
-			"icon": "/upload/armenia-169395.svg",
-			"popular": false
+			"standard_fee": false
 		},
 		{
 			"title": "Austria",
+			"icon": "/upload/austria-icon.svg",
+			"popular": false,
 			"gov_fee": 175,
 			"gov_fee_by_class": {
 				"1": 175,
@@ -392,12 +430,13 @@
 				"9": 1225,
 				"10": 1400
 			},
-			"icon": "/upload/austria-icon.svg",
-			"popular": false,
+			"standard_fee": true,
 			"eu_note": "Usually filed via the European Union designation under the Madrid Protocol, not individually."
 		},
 		{
 			"title": "Azerbaijan",
+			"icon": "/upload/azerbaijan-169403.svg",
+			"popular": false,
 			"gov_fee": 175,
 			"gov_fee_by_class": {
 				"1": 175,
@@ -411,11 +450,12 @@
 				"9": 1225,
 				"10": 1400
 			},
-			"icon": "/upload/azerbaijan-169403.svg",
-			"popular": false
+			"standard_fee": true
 		},
 		{
 			"title": "Bahrain",
+			"icon": "/upload/bahrain-169405.svg",
+			"popular": false,
 			"gov_fee": 2310,
 			"gov_fee_by_class": {
 				"1": 2310,
@@ -429,11 +469,12 @@
 				"9": 20805,
 				"10": 23120
 			},
-			"icon": "/upload/bahrain-169405.svg",
-			"popular": false
+			"standard_fee": false
 		},
 		{
 			"title": "Belarus",
+			"icon": "/upload/belarus-169410.svg",
+			"popular": false,
 			"gov_fee": 1050,
 			"gov_fee_by_class": {
 				"1": 1050,
@@ -447,11 +488,12 @@
 				"9": 1575,
 				"10": 1665
 			},
-			"icon": "/upload/belarus-169410.svg",
-			"popular": false
+			"standard_fee": false
 		},
 		{
 			"title": "Belize",
+			"icon": "/upload/belize-169424.svg",
+			"popular": false,
 			"gov_fee": 330,
 			"gov_fee_by_class": {
 				"1": 330,
@@ -465,11 +507,12 @@
 				"9": 890,
 				"10": 960
 			},
-			"icon": "/upload/belize-169424.svg",
-			"popular": false
+			"standard_fee": false
 		},
 		{
 			"title": "Bhutan",
+			"icon": "/upload/bhutan-169430.svg",
+			"popular": false,
 			"gov_fee": 175,
 			"gov_fee_by_class": {
 				"1": 175,
@@ -483,11 +526,12 @@
 				"9": 1225,
 				"10": 1400
 			},
-			"icon": "/upload/bhutan-169430.svg",
-			"popular": false
+			"standard_fee": true
 		},
 		{
 			"title": "Bosnia and Herzegovina",
+			"icon": "/upload/bosnia-169413.svg",
+			"popular": false,
 			"gov_fee": 175,
 			"gov_fee_by_class": {
 				"1": 175,
@@ -501,11 +545,12 @@
 				"9": 1225,
 				"10": 1400
 			},
-			"icon": "/upload/bosnia-169413.svg",
-			"popular": false
+			"standard_fee": true
 		},
 		{
 			"title": "Botswana",
+			"icon": "/upload/botswana-169414.svg",
+			"popular": false,
 			"gov_fee": 175,
 			"gov_fee_by_class": {
 				"1": 175,
@@ -519,11 +564,12 @@
 				"9": 1225,
 				"10": 1400
 			},
-			"icon": "/upload/botswana-169414.svg",
-			"popular": false
+			"standard_fee": true
 		},
 		{
 			"title": "Brazil",
+			"icon": "/upload/brasil-icon.svg",
+			"popular": false,
 			"gov_fee": 440,
 			"gov_fee_by_class": {
 				"1": 440,
@@ -537,11 +583,12 @@
 				"9": 3955,
 				"10": 4395
 			},
-			"icon": "/upload/brasil-icon.svg",
-			"popular": false
+			"standard_fee": false
 		},
 		{
 			"title": "Brunei",
+			"icon": "/upload/brunei-169417.svg",
+			"popular": false,
 			"gov_fee": 300,
 			"gov_fee_by_class": {
 				"1": 300,
@@ -555,11 +602,12 @@
 				"9": 1615,
 				"10": 1780
 			},
-			"icon": "/upload/brunei-169417.svg",
-			"popular": false
+			"standard_fee": false
 		},
 		{
 			"title": "Bulgaria",
+			"icon": "/upload/bulgaria-169418.svg",
+			"popular": false,
 			"gov_fee": 510,
 			"gov_fee_by_class": {
 				"1": 510,
@@ -573,11 +621,12 @@
 				"9": 710,
 				"10": 740
 			},
-			"icon": "/upload/bulgaria-169418.svg",
-			"popular": false
+			"standard_fee": false
 		},
 		{
 			"title": "Cambodia",
+			"icon": "/upload/cambodia-169421.svg",
+			"popular": false,
 			"gov_fee": 210,
 			"gov_fee_by_class": {
 				"1": 210,
@@ -591,11 +640,12 @@
 				"9": 1890,
 				"10": 2100
 			},
-			"icon": "/upload/cambodia-169421.svg",
-			"popular": false
+			"standard_fee": false
 		},
 		{
 			"title": "Chile",
+			"icon": "/upload/chile-169429.svg",
+			"popular": false,
 			"gov_fee": 370,
 			"gov_fee_by_class": {
 				"1": 370,
@@ -609,11 +659,12 @@
 				"9": 3310,
 				"10": 3675
 			},
-			"icon": "/upload/chile-169429.svg",
-			"popular": false
+			"standard_fee": false
 		},
 		{
 			"title": "Colombia",
+			"icon": "/upload/colombia-169437.svg",
+			"popular": false,
 			"gov_fee": 485,
 			"gov_fee_by_class": {
 				"1": 485,
@@ -627,11 +678,12 @@
 				"9": 2415,
 				"10": 2655
 			},
-			"icon": "/upload/colombia-169437.svg",
-			"popular": false
+			"standard_fee": false
 		},
 		{
 			"title": "Croatia",
+			"icon": "/upload/croatia-169621.svg",
+			"popular": false,
 			"gov_fee": 175,
 			"gov_fee_by_class": {
 				"1": 175,
@@ -645,12 +697,13 @@
 				"9": 1225,
 				"10": 1400
 			},
-			"icon": "/upload/croatia-169621.svg",
-			"popular": false,
+			"standard_fee": true,
 			"eu_note": "Usually filed via the European Union designation under the Madrid Protocol, not individually."
 		},
 		{
 			"title": "Cuba",
+			"icon": "/upload/cuba-169440.svg",
+			"popular": false,
 			"gov_fee": 545,
 			"gov_fee_by_class": {
 				"1": 545,
@@ -664,11 +717,12 @@
 				"9": 1385,
 				"10": 1525
 			},
-			"icon": "/upload/cuba-169440.svg",
-			"popular": false
+			"standard_fee": false
 		},
 		{
 			"title": "Cyprus",
+			"icon": "/upload/cyprus-169438.svg",
+			"popular": false,
 			"gov_fee": 175,
 			"gov_fee_by_class": {
 				"1": 175,
@@ -682,12 +736,13 @@
 				"9": 1225,
 				"10": 1400
 			},
-			"icon": "/upload/cyprus-169438.svg",
-			"popular": false,
+			"standard_fee": true,
 			"eu_note": "Usually filed via the European Union designation under the Madrid Protocol, not individually."
 		},
 		{
 			"title": "Czech Republic",
+			"icon": "/upload/czech-169442.svg",
+			"popular": false,
 			"gov_fee": 175,
 			"gov_fee_by_class": {
 				"1": 175,
@@ -701,12 +756,13 @@
 				"9": 1225,
 				"10": 1400
 			},
-			"icon": "/upload/czech-169442.svg",
-			"popular": false,
+			"standard_fee": true,
 			"eu_note": "Usually filed via the European Union designation under the Madrid Protocol, not individually."
 		},
 		{
 			"title": "Denmark",
+			"icon": "/upload/denmark-169439.svg",
+			"popular": false,
 			"gov_fee": 525,
 			"gov_fee_by_class": {
 				"1": 525,
@@ -720,11 +776,12 @@
 				"9": 1680,
 				"10": 1840
 			},
-			"icon": "/upload/denmark-169439.svg",
-			"popular": false
+			"standard_fee": false
 		},
 		{
 			"title": "Egypt",
+			"icon": "/upload/egypt-169620.svg",
+			"popular": false,
 			"gov_fee": 175,
 			"gov_fee_by_class": {
 				"1": 175,
@@ -738,11 +795,12 @@
 				"9": 1225,
 				"10": 1400
 			},
-			"icon": "/upload/egypt-169620.svg",
-			"popular": false
+			"standard_fee": true
 		},
 		{
 			"title": "Estonia",
+			"icon": "/upload/estonia-169446.svg",
+			"popular": false,
 			"gov_fee": 235,
 			"gov_fee_by_class": {
 				"1": 235,
@@ -756,11 +814,12 @@
 				"9": 805,
 				"10": 880
 			},
-			"icon": "/upload/estonia-169446.svg",
-			"popular": false
+			"standard_fee": false
 		},
 		{
 			"title": "Finland",
+			"icon": "/upload/finland-169452.svg",
+			"popular": false,
 			"gov_fee": 410,
 			"gov_fee_by_class": {
 				"1": 410,
@@ -774,11 +833,12 @@
 				"9": 1710,
 				"10": 1875
 			},
-			"icon": "/upload/finland-169452.svg",
-			"popular": false
+			"standard_fee": false
 		},
 		{
 			"title": "France",
+			"icon": "/upload/france-169454.svg",
+			"popular": false,
 			"gov_fee": 175,
 			"gov_fee_by_class": {
 				"1": 175,
@@ -792,12 +852,13 @@
 				"9": 1225,
 				"10": 1400
 			},
-			"icon": "/upload/france-169454.svg",
-			"popular": false,
+			"standard_fee": true,
 			"eu_note": "Usually filed via the European Union designation under the Madrid Protocol, not individually."
 		},
 		{
 			"title": "Gambia",
+			"icon": "/upload/gambia-169461.svg",
+			"popular": false,
 			"gov_fee": 140,
 			"gov_fee_by_class": {
 				"1": 140,
@@ -811,11 +872,12 @@
 				"9": 1260,
 				"10": 1400
 			},
-			"icon": "/upload/gambia-169461.svg",
-			"popular": false
+			"standard_fee": false
 		},
 		{
 			"title": "Georgia",
+			"icon": "/upload/georgia-169459.svg",
+			"popular": false,
 			"gov_fee": 550,
 			"gov_fee_by_class": {
 				"1": 550,
@@ -829,11 +891,12 @@
 				"9": 2160,
 				"10": 2360
 			},
-			"icon": "/upload/georgia-169459.svg",
-			"popular": false
+			"standard_fee": false
 		},
 		{
 			"title": "Germany",
+			"icon": "/upload/germany-169460.svg",
+			"popular": false,
 			"gov_fee": 175,
 			"gov_fee_by_class": {
 				"1": 175,
@@ -847,12 +910,13 @@
 				"9": 1225,
 				"10": 1400
 			},
-			"icon": "/upload/germany-169460.svg",
-			"popular": false,
+			"standard_fee": true,
 			"eu_note": "Usually filed via the European Union designation under the Madrid Protocol, not individually."
 		},
 		{
 			"title": "Greece",
+			"icon": "/upload/greece-169466.svg",
+			"popular": false,
 			"gov_fee": 195,
 			"gov_fee_by_class": {
 				"1": 195,
@@ -866,11 +930,12 @@
 				"9": 460,
 				"10": 495
 			},
-			"icon": "/upload/greece-169466.svg",
-			"popular": false
+			"standard_fee": false
 		},
 		{
 			"title": "Hungary",
+			"icon": "/upload/hungary-169471.svg",
+			"popular": false,
 			"gov_fee": 175,
 			"gov_fee_by_class": {
 				"1": 175,
@@ -884,12 +949,13 @@
 				"9": 1225,
 				"10": 1400
 			},
-			"icon": "/upload/hungary-169471.svg",
-			"popular": false,
+			"standard_fee": true,
 			"eu_note": "Usually filed via the European Union designation under the Madrid Protocol, not individually."
 		},
 		{
 			"title": "Iceland",
+			"icon": "/upload/iceland-169472.svg",
+			"popular": false,
 			"gov_fee": 450,
 			"gov_fee_by_class": {
 				"1": 450,
@@ -903,11 +969,12 @@
 				"9": 1235,
 				"10": 1330
 			},
-			"icon": "/upload/iceland-169472.svg",
-			"popular": false
+			"standard_fee": false
 		},
 		{
 			"title": "India",
+			"icon": "/upload/india-169486.svg",
+			"popular": false,
 			"gov_fee": 165,
 			"gov_fee_by_class": {
 				"1": 165,
@@ -921,11 +988,12 @@
 				"9": 1465,
 				"10": 1630
 			},
-			"icon": "/upload/india-169486.svg",
-			"popular": false
+			"standard_fee": false
 		},
 		{
 			"title": "Indonesia",
+			"icon": "/upload/indonesia-169473.svg",
+			"popular": false,
 			"gov_fee": 160,
 			"gov_fee_by_class": {
 				"1": 160,
@@ -939,11 +1007,12 @@
 				"9": 1435,
 				"10": 1595
 			},
-			"icon": "/upload/indonesia-169473.svg",
-			"popular": false
+			"standard_fee": false
 		},
 		{
 			"title": "Iran",
+			"icon": "/upload/iran-169474.svg",
+			"popular": false,
 			"gov_fee": 175,
 			"gov_fee_by_class": {
 				"1": 175,
@@ -957,11 +1026,12 @@
 				"9": 1225,
 				"10": 1400
 			},
-			"icon": "/upload/iran-169474.svg",
-			"popular": false
+			"standard_fee": true
 		},
 		{
 			"title": "Ireland",
+			"icon": "/upload/ireland-169475.svg",
+			"popular": false,
 			"gov_fee": 400,
 			"gov_fee_by_class": {
 				"1": 400,
@@ -975,11 +1045,12 @@
 				"9": 1310,
 				"10": 1425
 			},
-			"icon": "/upload/ireland-169475.svg",
-			"popular": false
+			"standard_fee": false
 		},
 		{
 			"title": "Israel",
+			"icon": "/upload/israel-169477.svg",
+			"popular": false,
 			"gov_fee": 825,
 			"gov_fee_by_class": {
 				"1": 825,
@@ -993,11 +1064,12 @@
 				"9": 5780,
 				"10": 6400
 			},
-			"icon": "/upload/israel-169477.svg",
-			"popular": false
+			"standard_fee": false
 		},
 		{
 			"title": "Italy",
+			"icon": "/upload/italy-169479.svg",
+			"popular": false,
 			"gov_fee": 150,
 			"gov_fee_by_class": {
 				"1": 150,
@@ -1011,11 +1083,12 @@
 				"9": 540,
 				"10": 590
 			},
-			"icon": "/upload/italy-169479.svg",
-			"popular": false
+			"standard_fee": false
 		},
 		{
 			"title": "Jamaica",
+			"icon": "/upload/jamaica-169483.svg",
+			"popular": false,
 			"gov_fee": 275,
 			"gov_fee_by_class": {
 				"1": 275,
@@ -1029,11 +1102,12 @@
 				"9": 570,
 				"10": 605
 			},
-			"icon": "/upload/jamaica-169483.svg",
-			"popular": false
+			"standard_fee": false
 		},
 		{
 			"title": "Japan",
+			"icon": "/upload/japan-169485.svg",
+			"popular": false,
 			"gov_fee": 385,
 			"gov_fee_by_class": {
 				"1": 385,
@@ -1047,11 +1121,12 @@
 				"9": 3300,
 				"10": 3665
 			},
-			"icon": "/upload/japan-169485.svg",
-			"popular": false
+			"standard_fee": false
 		},
 		{
 			"title": "Kazakhstan",
+			"icon": "/upload/kazakhstan-169502.svg",
+			"popular": false,
 			"gov_fee": 385,
 			"gov_fee_by_class": {
 				"1": 385,
@@ -1065,11 +1140,12 @@
 				"9": 1035,
 				"10": 1145
 			},
-			"icon": "/upload/kazakhstan-169502.svg",
-			"popular": false
+			"standard_fee": false
 		},
 		{
 			"title": "Kenya",
+			"icon": "/upload/kenya-169487.svg",
+			"popular": false,
 			"gov_fee": 470,
 			"gov_fee_by_class": {
 				"1": 470,
@@ -1083,11 +1159,12 @@
 				"9": 3155,
 				"10": 3495
 			},
-			"icon": "/upload/kenya-169487.svg",
-			"popular": false
+			"standard_fee": false
 		},
 		{
 			"title": "Kyrgyzstan",
+			"icon": "/upload/kyrgyzstan-169503.svg",
+			"popular": false,
 			"gov_fee": 595,
 			"gov_fee_by_class": {
 				"1": 595,
@@ -1101,11 +1178,12 @@
 				"9": 2835,
 				"10": 3115
 			},
-			"icon": "/upload/kyrgyzstan-169503.svg",
-			"popular": false
+			"standard_fee": false
 		},
 		{
 			"title": "Laos",
+			"icon": "/upload/laos-169491.svg",
+			"popular": false,
 			"gov_fee": 75,
 			"gov_fee_by_class": {
 				"1": 75,
@@ -1119,11 +1197,12 @@
 				"9": 510,
 				"10": 565
 			},
-			"icon": "/upload/laos-169491.svg",
-			"popular": false
+			"standard_fee": false
 		},
 		{
 			"title": "Latvia",
+			"icon": "/upload/latvia-169493.svg",
+			"popular": false,
 			"gov_fee": 175,
 			"gov_fee_by_class": {
 				"1": 175,
@@ -1137,12 +1216,13 @@
 				"9": 1225,
 				"10": 1400
 			},
-			"icon": "/upload/latvia-169493.svg",
-			"popular": false,
+			"standard_fee": true,
 			"eu_note": "Usually filed via the European Union designation under the Madrid Protocol, not individually."
 		},
 		{
 			"title": "Lesotho",
+			"icon": "/upload/lesotho-169498.svg",
+			"popular": false,
 			"gov_fee": 175,
 			"gov_fee_by_class": {
 				"1": 175,
@@ -1156,11 +1236,12 @@
 				"9": 1225,
 				"10": 1400
 			},
-			"icon": "/upload/lesotho-169498.svg",
-			"popular": false
+			"standard_fee": true
 		},
 		{
 			"title": "Liechtenstein",
+			"icon": "/upload/liechtenstein-169509.svg",
+			"popular": false,
 			"gov_fee": 175,
 			"gov_fee_by_class": {
 				"1": 175,
@@ -1174,11 +1255,12 @@
 				"9": 1225,
 				"10": 1400
 			},
-			"icon": "/upload/liechtenstein-169509.svg",
-			"popular": false
+			"standard_fee": true
 		},
 		{
 			"title": "Lithuania",
+			"icon": "/upload/lithuania-169501.svg",
+			"popular": false,
 			"gov_fee": 175,
 			"gov_fee_by_class": {
 				"1": 175,
@@ -1192,12 +1274,13 @@
 				"9": 1225,
 				"10": 1400
 			},
-			"icon": "/upload/lithuania-169501.svg",
-			"popular": false,
+			"standard_fee": true,
 			"eu_note": "Usually filed via the European Union designation under the Madrid Protocol, not individually."
 		},
 		{
 			"title": "Macedonia",
+			"icon": "/upload/macedonia-169505.svg",
+			"popular": false,
 			"gov_fee": 175,
 			"gov_fee_by_class": {
 				"1": 175,
@@ -1211,11 +1294,12 @@
 				"9": 1225,
 				"10": 1400
 			},
-			"icon": "/upload/macedonia-169505.svg",
-			"popular": false
+			"standard_fee": true
 		},
 		{
 			"title": "Madagascar",
+			"icon": "/upload/madagascar-169512.svg",
+			"popular": false,
 			"gov_fee": 175,
 			"gov_fee_by_class": {
 				"1": 175,
@@ -1229,11 +1313,12 @@
 				"9": 1225,
 				"10": 1400
 			},
-			"icon": "/upload/madagascar-169512.svg",
-			"popular": false
+			"standard_fee": true
 		},
 		{
 			"title": "Malaysia",
+			"icon": "/upload/malaysia-169506.svg",
+			"popular": false,
 			"gov_fee": 385,
 			"gov_fee_by_class": {
 				"1": 385,
@@ -1247,11 +1332,12 @@
 				"9": 3480,
 				"10": 3870
 			},
-			"icon": "/upload/malaysia-169506.svg",
-			"popular": false
+			"standard_fee": false
 		},
 		{
 			"title": "Mauritius",
+			"icon": "/upload/mauritius-169511.svg",
+			"popular": false,
 			"gov_fee": 185,
 			"gov_fee_by_class": {
 				"1": 185,
@@ -1265,11 +1351,12 @@
 				"9": 675,
 				"10": 735
 			},
-			"icon": "/upload/mauritius-169511.svg",
-			"popular": false
+			"standard_fee": false
 		},
 		{
 			"title": "Malawi",
+			"icon": "/upload/malawi-169619.svg",
+			"popular": false,
 			"gov_fee": 175,
 			"gov_fee_by_class": {
 				"1": 175,
@@ -1283,11 +1370,12 @@
 				"9": 1225,
 				"10": 1400
 			},
-			"icon": "/upload/malawi-169619.svg",
-			"popular": false
+			"standard_fee": true
 		},
 		{
 			"title": "Mexico",
+			"icon": "/upload/mexico-169612.svg",
+			"popular": false,
 			"gov_fee": 230,
 			"gov_fee_by_class": {
 				"1": 230,
@@ -1301,11 +1389,12 @@
 				"9": 2080,
 				"10": 2310
 			},
-			"icon": "/upload/mexico-169612.svg",
-			"popular": false
+			"standard_fee": false
 		},
 		{
 			"title": "Moldova",
+			"icon": "/upload/moldova-169522.svg",
+			"popular": false,
 			"gov_fee": 390,
 			"gov_fee_by_class": {
 				"1": 390,
@@ -1319,11 +1408,12 @@
 				"9": 1050,
 				"10": 1130
 			},
-			"icon": "/upload/moldova-169522.svg",
-			"popular": false
+			"standard_fee": false
 		},
 		{
 			"title": "Monaco",
+			"icon": "/upload/monaco-169520.svg",
+			"popular": false,
 			"gov_fee": 175,
 			"gov_fee_by_class": {
 				"1": 175,
@@ -1337,11 +1427,12 @@
 				"9": 1225,
 				"10": 1400
 			},
-			"icon": "/upload/monaco-169520.svg",
-			"popular": false
+			"standard_fee": true
 		},
 		{
 			"title": "Morocco",
+			"icon": "/upload/morocco-169518.svg",
+			"popular": false,
 			"gov_fee": 385,
 			"gov_fee_by_class": {
 				"1": 385,
@@ -1355,11 +1446,12 @@
 				"9": 1000,
 				"10": 1075
 			},
-			"icon": "/upload/morocco-169518.svg",
-			"popular": false
+			"standard_fee": false
 		},
 		{
 			"title": "Mozambique",
+			"icon": "/upload/mozambique-169533.svg",
+			"popular": false,
 			"gov_fee": 175,
 			"gov_fee_by_class": {
 				"1": 175,
@@ -1373,11 +1465,12 @@
 				"9": 1225,
 				"10": 1400
 			},
-			"icon": "/upload/mozambique-169533.svg",
-			"popular": false
+			"standard_fee": true
 		},
 		{
 			"title": "Namibia",
+			"icon": "/upload/namibia-169523.svg",
+			"popular": false,
 			"gov_fee": 175,
 			"gov_fee_by_class": {
 				"1": 175,
@@ -1391,11 +1484,12 @@
 				"9": 1225,
 				"10": 1400
 			},
-			"icon": "/upload/namibia-169523.svg",
-			"popular": false
+			"standard_fee": true
 		},
 		{
 			"title": "Norway",
+			"icon": "/upload/norway-169534.svg",
+			"popular": false,
 			"gov_fee": 540,
 			"gov_fee_by_class": {
 				"1": 540,
@@ -1409,11 +1503,12 @@
 				"9": 1675,
 				"10": 1815
 			},
-			"icon": "/upload/norway-169534.svg",
-			"popular": false
+			"standard_fee": false
 		},
 		{
 			"title": "Oman",
+			"icon": "/upload/oman-169547.svg",
+			"popular": false,
 			"gov_fee": 730,
 			"gov_fee_by_class": {
 				"1": 730,
@@ -1427,11 +1522,12 @@
 				"9": 6570,
 				"10": 7300
 			},
-			"icon": "/upload/oman-169547.svg",
-			"popular": false
+			"standard_fee": false
 		},
 		{
 			"title": "Pakistan",
+			"icon": "/upload/pakistan-169535.svg",
+			"popular": false,
 			"gov_fee": 80,
 			"gov_fee_by_class": {
 				"1": 80,
@@ -1445,11 +1541,12 @@
 				"9": 740,
 				"10": 825
 			},
-			"icon": "/upload/pakistan-169535.svg",
-			"popular": false
+			"standard_fee": false
 		},
 		{
 			"title": "Philippines",
+			"icon": "/upload/philippines-169552.svg",
+			"popular": false,
 			"gov_fee": 130,
 			"gov_fee_by_class": {
 				"1": 130,
@@ -1463,11 +1560,12 @@
 				"9": 1165,
 				"10": 1295
 			},
-			"icon": "/upload/philippines-169552.svg",
-			"popular": false
+			"standard_fee": false
 		},
 		{
 			"title": "Poland",
+			"icon": "/upload/poland-169542.svg",
+			"popular": false,
 			"gov_fee": 175,
 			"gov_fee_by_class": {
 				"1": 175,
@@ -1481,12 +1579,13 @@
 				"9": 1225,
 				"10": 1400
 			},
-			"icon": "/upload/poland-169542.svg",
-			"popular": false,
+			"standard_fee": true,
 			"eu_note": "Usually filed via the European Union designation under the Madrid Protocol, not individually."
 		},
 		{
 			"title": "Portugal",
+			"icon": "/upload/portugal-169544.svg",
+			"popular": false,
 			"gov_fee": 175,
 			"gov_fee_by_class": {
 				"1": 175,
@@ -1500,12 +1599,13 @@
 				"9": 1225,
 				"10": 1400
 			},
-			"icon": "/upload/portugal-169544.svg",
-			"popular": false,
+			"standard_fee": true,
 			"eu_note": "Usually filed via the European Union designation under the Madrid Protocol, not individually."
 		},
 		{
 			"title": "Romania",
+			"icon": "/upload/romania-169557.svg",
+			"popular": false,
 			"gov_fee": 175,
 			"gov_fee_by_class": {
 				"1": 175,
@@ -1519,12 +1619,13 @@
 				"9": 1225,
 				"10": 1400
 			},
-			"icon": "/upload/romania-169557.svg",
-			"popular": false,
+			"standard_fee": true,
 			"eu_note": "Usually filed via the European Union designation under the Madrid Protocol, not individually."
 		},
 		{
 			"title": "Russia",
+			"icon": "/upload/russia-169553.svg",
+			"popular": false,
 			"gov_fee": 175,
 			"gov_fee_by_class": {
 				"1": 175,
@@ -1538,11 +1639,12 @@
 				"9": 1225,
 				"10": 1400
 			},
-			"icon": "/upload/russia-169553.svg",
-			"popular": false
+			"standard_fee": true
 		},
 		{
 			"title": "Rwanda",
+			"icon": "/upload/rwanda-169558.svg",
+			"popular": false,
 			"gov_fee": 175,
 			"gov_fee_by_class": {
 				"1": 175,
@@ -1556,11 +1658,12 @@
 				"9": 1225,
 				"10": 1400
 			},
-			"icon": "/upload/rwanda-169558.svg",
-			"popular": false
+			"standard_fee": true
 		},
 		{
 			"title": "Singapore",
+			"icon": "/upload/singapore-169565.svg",
+			"popular": false,
 			"gov_fee": 465,
 			"gov_fee_by_class": {
 				"1": 465,
@@ -1574,11 +1677,12 @@
 				"9": 4175,
 				"10": 4640
 			},
-			"icon": "/upload/singapore-169565.svg",
-			"popular": false
+			"standard_fee": false
 		},
 		{
 			"title": "Slovakia",
+			"icon": "/upload/slovakia-169569.svg",
+			"popular": false,
 			"gov_fee": 175,
 			"gov_fee_by_class": {
 				"1": 175,
@@ -1592,12 +1696,13 @@
 				"9": 1225,
 				"10": 1400
 			},
-			"icon": "/upload/slovakia-169569.svg",
-			"popular": false,
+			"standard_fee": true,
 			"eu_note": "Usually filed via the European Union designation under the Madrid Protocol, not individually."
 		},
 		{
 			"title": "Slovenia",
+			"icon": "/upload/slovenia-169570.svg",
+			"popular": false,
 			"gov_fee": 175,
 			"gov_fee_by_class": {
 				"1": 175,
@@ -1611,12 +1716,13 @@
 				"9": 1225,
 				"10": 1400
 			},
-			"icon": "/upload/slovenia-169570.svg",
-			"popular": false,
+			"standard_fee": true,
 			"eu_note": "Usually filed via the European Union designation under the Madrid Protocol, not individually."
 		},
 		{
 			"title": "Spain",
+			"icon": "/upload/spain-169614.svg",
+			"popular": false,
 			"gov_fee": 175,
 			"gov_fee_by_class": {
 				"1": 175,
@@ -1630,12 +1736,13 @@
 				"9": 1225,
 				"10": 1400
 			},
-			"icon": "/upload/spain-169614.svg",
-			"popular": false,
+			"standard_fee": true,
 			"eu_note": "Usually filed via the European Union designation under the Madrid Protocol, not individually."
 		},
 		{
 			"title": "Sudan",
+			"icon": "/upload/sudan-169574.svg",
+			"popular": false,
 			"gov_fee": 175,
 			"gov_fee_by_class": {
 				"1": 175,
@@ -1649,11 +1756,12 @@
 				"9": 1225,
 				"10": 1400
 			},
-			"icon": "/upload/sudan-169574.svg",
-			"popular": false
+			"standard_fee": true
 		},
 		{
 			"title": "South Korea",
+			"icon": "",
+			"popular": false,
 			"gov_fee": 265,
 			"gov_fee_by_class": {
 				"1": 265,
@@ -1667,11 +1775,12 @@
 				"9": 2365,
 				"10": 2625
 			},
-			"icon": "",
-			"popular": false
+			"standard_fee": false
 		},
 		{
 			"title": "Sweden",
+			"icon": "/upload/sweden-169584.svg",
+			"popular": false,
 			"gov_fee": 340,
 			"gov_fee_by_class": {
 				"1": 340,
@@ -1685,11 +1794,12 @@
 				"9": 1405,
 				"10": 1535
 			},
-			"icon": "/upload/sweden-169584.svg",
-			"popular": false
+			"standard_fee": false
 		},
 		{
 			"title": "Switzerland",
+			"icon": "/upload/switzerland-169583.svg",
+			"popular": false,
 			"gov_fee": 700,
 			"gov_fee_by_class": {
 				"1": 700,
@@ -1703,11 +1813,12 @@
 				"9": 1225,
 				"10": 1315
 			},
-			"icon": "/upload/switzerland-169583.svg",
-			"popular": false
+			"standard_fee": false
 		},
 		{
 			"title": "Thailand",
+			"icon": "/upload/thailand-169581.svg",
+			"popular": false,
 			"gov_fee": 630,
 			"gov_fee_by_class": {
 				"1": 630,
@@ -1721,11 +1832,12 @@
 				"9": 5670,
 				"10": 6300
 			},
-			"icon": "/upload/thailand-169581.svg",
-			"popular": false
+			"standard_fee": false
 		},
 		{
 			"title": "Türkiye",
+			"icon": "/upload/turkey-169591.svg",
+			"popular": false,
 			"gov_fee": 250,
 			"gov_fee_by_class": {
 				"1": 250,
@@ -1739,11 +1851,12 @@
 				"9": 885,
 				"10": 965
 			},
-			"icon": "/upload/turkey-169591.svg",
-			"popular": false
+			"standard_fee": false
 		},
 		{
 			"title": "Ukraine",
+			"icon": "/upload/ukraine-169594.svg",
+			"popular": false,
 			"gov_fee": 670,
 			"gov_fee_by_class": {
 				"1": 670,
@@ -1757,11 +1870,12 @@
 				"9": 1480,
 				"10": 1615
 			},
-			"icon": "/upload/ukraine-169594.svg",
-			"popular": false
+			"standard_fee": false
 		},
 		{
 			"title": "UAE",
+			"icon": "/upload/uae-169590.svg",
+			"popular": false,
 			"gov_fee": 2485,
 			"gov_fee_by_class": {
 				"1": 2485,
@@ -1775,11 +1889,12 @@
 				"9": 22365,
 				"10": 24850
 			},
-			"icon": "/upload/uae-169590.svg",
-			"popular": false
+			"standard_fee": false
 		},
 		{
 			"title": "Vietnam ",
+			"icon": "/upload/vietnam-169598.svg",
+			"popular": false,
 			"gov_fee": 190,
 			"gov_fee_by_class": {
 				"1": 190,
@@ -1793,8 +1908,7 @@
 				"9": 1715,
 				"10": 1910
 			},
-			"icon": "/upload/vietnam-169598.svg",
-			"popular": false
+			"standard_fee": false
 		}
 	]
 }
