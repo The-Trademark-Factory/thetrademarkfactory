@@ -139,8 +139,8 @@ content_blocks:
       Australia or get in touch and one of our experts will contact you to
       discuss how we can help.</p>
     button:
-      label: Contact Us
-      url: /contact/
+      label: Get Your Instant Quote
+      url: /international-trademark-services/
   - _bookshop_name: others/testimonials
     title: <p>What our clients <em>say</em></p>
     testimonials:
