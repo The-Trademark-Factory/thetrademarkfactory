@@ -54,6 +54,16 @@
 	// `cls` will recompute when the stepper changes.
 	$: cls = Math.min(10, Math.max(1, classes));
 
+	// Reactive map: country title -> govt fee at current class count.
+	// References cls and selectedCountries directly so it recomputes when either changes.
+	$: govByCountry = (() => {
+		const out = {};
+		for (const [title, entry] of Object.entries(selectedCountries)) {
+			out[title] = entry.gov_fee_by_class[cls] ?? entry.gov_fee_by_class[1];
+		}
+		return out;
+	})();
+
 	$: filteredCountries = searchQuery
 		? international_module.filter((c) =>
 				c.title.toLowerCase().includes(searchQuery.toLowerCase())
@@ -257,11 +267,15 @@
 					<p class="text-sm text-ttmfBlack/50 pt-1">{countryCount} {countryCount === 1 ? 'country' : 'countries'} · {classes} {classes === 1 ? 'class' : 'classes'}</p>
 					<div class="pt-5 space-y-2">
 						{#each Object.keys(selectedCountries) as country}
-							<div class="bg-white rounded-lg p-5 shadow-pricingShadow flex justify-between items-center">
-								<p class="text-lg font-bold">{country}</p>
+							<div class="bg-white rounded-lg p-5 shadow-pricingShadow flex justify-between items-start gap-3">
+								<div>
+									<p class="text-lg font-bold">{country}</p>
+									<p class="font-bold text-ttmfRed mt-1">AU${govByCountry[country]} govt fee</p>
+									<p class="text-xs text-ttmfBlack/40 mt-1">Indicative government fee for {classes} {classes === 1 ? 'class' : 'classes'}. Service fee and WIPO base fee additional.</p>
+								</div>
 								<button
 									on:click={() => removeCountry(country)}
-									class="text-ttmfBlack/30 hover:text-ttmfRed transition-colors"
+									class="text-ttmfBlack/30 hover:text-ttmfRed transition-colors shrink-0"
 									aria-label="Remove {country}">
 									<XCircle size="22" />
 								</button>
