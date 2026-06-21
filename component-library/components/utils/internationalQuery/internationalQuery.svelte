@@ -172,9 +172,6 @@
 									<div class="text-left">
 										<p class="text-lg font-bold">{el.title}</p>
 										<p class="font-bold text-ttmfRed">from AU${el.gov_fee} gov. fee</p>
-										{#if el.eu_note}
-											<p class="text-xs text-ttmfBlack/50 mt-1 max-w-[14rem]">{el.eu_note}</p>
-										{/if}
 									</div>
 								</div>
 								<div class="w-6 h-6 bg-ttmfBg rounded-full flex items-center justify-center text-ttmfBg border-2 {selectedCountries[el.title] ? 'bg-ttmfRed border-ttmfRed' : 'border-ttmfBrown/30'}">
@@ -207,9 +204,6 @@
 									<div class="text-left">
 										<p class="text-lg font-bold">{el.title}</p>
 										<p class="font-bold text-ttmfRed">from AU${el.gov_fee} gov. fee</p>
-										{#if el.eu_note}
-											<p class="text-xs text-ttmfBlack/50 mt-1 max-w-[14rem]">{el.eu_note}</p>
-										{/if}
 									</div>
 								</div>
 								<div class="w-6 h-6 bg-ttmfBg rounded-full flex items-center justify-center text-ttmfBg border-2 {selectedCountries[el.title] ? 'bg-ttmfRed border-ttmfRed' : 'border-ttmfBrown/30'}">
@@ -251,7 +245,10 @@
 								<button on:click={() => toggleDetails(country)} class="flex gap-2 justify-between w-full">
 									<p class="text-lg font-bold">{country}</p>
 									<div class="flex items-center gap-2 text-ttmfRed">
-										<p class="font-bold">AU${govAt(selectedCountries[country])}</p>
+										<div class="text-right">
+											<p class="text-[10px] font-bold text-ttmfBlack/40 uppercase tracking-wide leading-none">Govt fees</p>
+											<p class="font-bold leading-tight">AU${govAt(selectedCountries[country])}</p>
+										</div>
 										<ChevronDown size="20" />
 									</div>
 								</button>
@@ -264,6 +261,7 @@
 										{#if selectedCountries[country].is_australia}
 											<p class="text-xs font-normal pt-2">Australian government fee at AU$250 per class.</p>
 										{/if}
+										<p class="text-xs font-normal pt-2">Government fee for this country only. Service fee, WIPO base fee and GST are shown once in the breakdown below.</p>
 									</div>
 								{/if}
 							</div>
