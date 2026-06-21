@@ -60,10 +60,10 @@ content_blocks:
     title_section: |
       Get Your <em>Instant</em> International Quote
     description: >-
-      <p>Select the countries you want to protect your brand in to calculate an
-      <strong>indicative cost</strong> in seconds. Ready to proceed?
-      <strong>Contact us</strong> for a formal fee estimate and we'll handle the
-      rest.</p>
+      <p>Select the number of classes you wish to include in your application
+      and the countries of interest to calculate an <strong>indicative
+      cost</strong> in seconds. Ready to proceed? <strong>Contact us</strong>
+      for a formal fee estimate and we'll handle the rest.</p>
     note:
   - _bookshop_name: cta/ctaDefault
     title: <p>Not Sure Where to Start?</p>
