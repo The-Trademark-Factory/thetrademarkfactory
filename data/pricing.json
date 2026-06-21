@@ -430,8 +430,7 @@
 				"9": 1225,
 				"10": 1400
 			},
-			"standard_fee": true,
-			"eu_note": "Usually filed via the European Union designation under the Madrid Protocol, not individually."
+			"standard_fee": true
 		},
 		{
 			"title": "Azerbaijan",
@@ -697,8 +696,7 @@
 				"9": 1225,
 				"10": 1400
 			},
-			"standard_fee": true,
-			"eu_note": "Usually filed via the European Union designation under the Madrid Protocol, not individually."
+			"standard_fee": true
 		},
 		{
 			"title": "Cuba",
@@ -736,8 +734,7 @@
 				"9": 1225,
 				"10": 1400
 			},
-			"standard_fee": true,
-			"eu_note": "Usually filed via the European Union designation under the Madrid Protocol, not individually."
+			"standard_fee": true
 		},
 		{
 			"title": "Czech Republic",
@@ -756,8 +753,7 @@
 				"9": 1225,
 				"10": 1400
 			},
-			"standard_fee": true,
-			"eu_note": "Usually filed via the European Union designation under the Madrid Protocol, not individually."
+			"standard_fee": true
 		},
 		{
 			"title": "Denmark",
@@ -852,8 +848,7 @@
 				"9": 1225,
 				"10": 1400
 			},
-			"standard_fee": true,
-			"eu_note": "Usually filed via the European Union designation under the Madrid Protocol, not individually."
+			"standard_fee": true
 		},
 		{
 			"title": "Gambia",
@@ -910,8 +905,7 @@
 				"9": 1225,
 				"10": 1400
 			},
-			"standard_fee": true,
-			"eu_note": "Usually filed via the European Union designation under the Madrid Protocol, not individually."
+			"standard_fee": true
 		},
 		{
 			"title": "Greece",
@@ -949,8 +943,7 @@
 				"9": 1225,
 				"10": 1400
 			},
-			"standard_fee": true,
-			"eu_note": "Usually filed via the European Union designation under the Madrid Protocol, not individually."
+			"standard_fee": true
 		},
 		{
 			"title": "Iceland",
@@ -1216,8 +1209,7 @@
 				"9": 1225,
 				"10": 1400
 			},
-			"standard_fee": true,
-			"eu_note": "Usually filed via the European Union designation under the Madrid Protocol, not individually."
+			"standard_fee": true
 		},
 		{
 			"title": "Lesotho",
@@ -1274,8 +1266,7 @@
 				"9": 1225,
 				"10": 1400
 			},
-			"standard_fee": true,
-			"eu_note": "Usually filed via the European Union designation under the Madrid Protocol, not individually."
+			"standard_fee": true
 		},
 		{
 			"title": "Macedonia",
@@ -1579,8 +1570,7 @@
 				"9": 1225,
 				"10": 1400
 			},
-			"standard_fee": true,
-			"eu_note": "Usually filed via the European Union designation under the Madrid Protocol, not individually."
+			"standard_fee": true
 		},
 		{
 			"title": "Portugal",
@@ -1599,8 +1589,7 @@
 				"9": 1225,
 				"10": 1400
 			},
-			"standard_fee": true,
-			"eu_note": "Usually filed via the European Union designation under the Madrid Protocol, not individually."
+			"standard_fee": true
 		},
 		{
 			"title": "Romania",
@@ -1619,8 +1608,7 @@
 				"9": 1225,
 				"10": 1400
 			},
-			"standard_fee": true,
-			"eu_note": "Usually filed via the European Union designation under the Madrid Protocol, not individually."
+			"standard_fee": true
 		},
 		{
 			"title": "Russia",
@@ -1696,8 +1684,7 @@
 				"9": 1225,
 				"10": 1400
 			},
-			"standard_fee": true,
-			"eu_note": "Usually filed via the European Union designation under the Madrid Protocol, not individually."
+			"standard_fee": true
 		},
 		{
 			"title": "Slovenia",
@@ -1716,8 +1703,7 @@
 				"9": 1225,
 				"10": 1400
 			},
-			"standard_fee": true,
-			"eu_note": "Usually filed via the European Union designation under the Madrid Protocol, not individually."
+			"standard_fee": true
 		},
 		{
 			"title": "Spain",
@@ -1736,8 +1722,7 @@
 				"9": 1225,
 				"10": 1400
 			},
-			"standard_fee": true,
-			"eu_note": "Usually filed via the European Union designation under the Madrid Protocol, not individually."
+			"standard_fee": true
 		},
 		{
 			"title": "Sudan",
