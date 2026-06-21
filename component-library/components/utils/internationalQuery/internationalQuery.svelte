@@ -49,23 +49,18 @@
 		classes = Math.min(10, Math.max(1, n));
 	}
 
-	function clampC() {
-		return Math.min(10, Math.max(1, classes));
-	}
-
-	// Gov fee for a country at the current class count (precomputed schedule)
-	function govAt(entry) {
-		return entry.gov_fee_by_class[clampC()] ?? entry.gov_fee_by_class[1];
-	}
+	// Reactive clamped class count. Because `classes` appears directly in this
+	// $: line, Svelte tracks it as a dependency — anything downstream that uses
+	// `cls` will recompute when the stepper changes.
+	$: cls = Math.min(10, Math.max(1, classes));
 
 	// Reactive map: country title -> gov fee at current class count.
-	// Depends explicitly on `selectedCountries` AND `classes` so the template
-	// updates when either changes (a bare govAt() call in markup would not track classes).
+	// References `cls` and `selectedCountries` directly so Svelte re-runs it
+	// whenever either changes.
 	$: govByCountry = (() => {
-		const c = clampC(); // referenced so this block re-runs when classes changes
 		const out = {};
 		for (const [title, entry] of Object.entries(selectedCountries)) {
-			out[title] = entry.gov_fee_by_class[c] ?? entry.gov_fee_by_class[1];
+			out[title] = entry.gov_fee_by_class[cls] ?? entry.gov_fee_by_class[1];
 		}
 		return out;
 	})();
@@ -86,13 +81,16 @@
 	// --- WIPO / international government fees ---
 	// Base fee charged ONCE when any international country is selected.
 	$: wipoBaseAud = intlCount > 0 ? wipo_base.aud_bw : 0;
-	$: intlGovTotal = intlEntries.reduce((acc, e) => acc + govAt(e), 0);
+	$: intlGovTotal = intlEntries.reduce(
+		(acc, e) => acc + (e.gov_fee_by_class[cls] ?? e.gov_fee_by_class[1]),
+		0
+	);
 	$: govWipoTotal = wipoBaseAud + intlGovTotal;
 
 	// --- International service fee (Australia excluded from this tier) ---
 	// Base $1,500 covers 1–3 countries. +$100/country over 3. +$50/class over 1.
 	$: extraCountries = Math.max(0, intlCount - service_fee_model.base_includes_countries);
-	$: extraClasses = Math.max(0, clampC() - 1);
+	$: extraClasses = Math.max(0, cls - 1);
 	$: intlServiceExGst =
 		intlCount === 0
 			? 0
@@ -101,8 +99,8 @@
 			  extraClasses * service_fee_model.per_extra_class_aud_ex_gst;
 
 	// --- Australia (TTMF) track ---
-	$: auGov = auEntry ? auEntry.gov_fee_by_class[clampC()] : 0;
-	$: auServiceExGst = auEntry ? auEntry.ttmf_service_by_class[clampC()] : 0;
+	$: auGov = auEntry ? auEntry.gov_fee_by_class[cls] : 0;
+	$: auServiceExGst = auEntry ? auEntry.ttmf_service_by_class[cls] : 0;
 
 	// --- Combine ---
 	$: serviceExGst = intlServiceExGst + auServiceExGst;
