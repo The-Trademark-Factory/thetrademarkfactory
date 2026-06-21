@@ -2,7 +2,9 @@
 	import { ChevronDown, Check, Search, XCircle, ChevronDownCircle, Minus, Plus } from 'lucide-svelte';
 	import {
 		international_module,
-		service_fee_model
+		service_fee_model,
+		wipo_base,
+		australia_fees
 	} from '../../../../data/pricing.json';
 	import { onMount } from 'svelte';
 	import { fly } from 'svelte/transition';
@@ -18,7 +20,6 @@
 	let showForm = false;
 	let classes = 1; // Nice classes
 
-	const S = service_fee_model;
 
 	onMount(() => {
 		if (window.innerWidth <= 768) {
@@ -35,11 +36,11 @@
 		activeDetails = activeDetails === country ? null : country;
 	}
 
-	function toggleCountry(country, govByClass) {
+	function toggleCountry(country, entry) {
 		if (selectedCountries[country]) {
 			delete selectedCountries[country];
 		} else {
-			selectedCountries[country] = { govByClass };
+			selectedCountries[country] = entry;
 		}
 		selectedCountries = { ...selectedCountries };
 	}
@@ -48,10 +49,13 @@
 		classes = Math.min(10, Math.max(1, n));
 	}
 
-	// Gov fee for a country at the current class count (precomputed schedule, capped at 10)
+	function clampC() {
+		return Math.min(10, Math.max(1, classes));
+	}
+
+	// Gov fee for a country at the current class count (precomputed schedule)
 	function govAt(entry) {
-		const c = Math.min(10, Math.max(1, classes));
-		return entry.govByClass[c] ?? entry.govByClass[1];
+		return entry.gov_fee_by_class[clampC()] ?? entry.gov_fee_by_class[1];
 	}
 
 	$: filteredCountries = searchQuery
@@ -60,25 +64,38 @@
 		  )
 		: international_module;
 
-	$: countryCount = Object.keys(selectedCountries).length;
+	// Split selection into Australia (TTMF rates) vs international (WIPO) tracks
+	$: selectedList = Object.values(selectedCountries);
+	$: auEntry = selectedList.find((e) => e.is_australia) || null;
+	$: intlEntries = selectedList.filter((e) => !e.is_australia);
+	$: countryCount = selectedList.length;
+	$: intlCount = intlEntries.length;
 
-	// Government (WIPO) fees — use each country's real per-class schedule, not flat × classes.
-	$: govTotal = Object.values(selectedCountries).reduce(
-		(acc, entry) => acc + govAt(entry),
-		0
-	);
+	// --- WIPO / international government fees ---
+	// Base fee charged ONCE when any international country is selected.
+	$: wipoBaseAud = intlCount > 0 ? wipo_base.aud_bw : 0;
+	$: intlGovTotal = intlEntries.reduce((acc, e) => acc + govAt(e), 0);
+	$: govWipoTotal = wipoBaseAud + intlGovTotal;
 
-	// Tiered TTMF service fee (AUD, ex GST): base covers first 3 countries + 3 classes.
-	$: extraCountries = Math.max(0, countryCount - S.base_includes_countries);
-	$: extraClasses = Math.max(0, classes - S.base_includes_classes);
-	$: serviceExGst = countryCount === 0
-		? 0
-		: S.base_aud_ex_gst
-			+ extraCountries * S.per_extra_country_aud_ex_gst
-			+ extraClasses * S.per_extra_class_aud_ex_gst;
-	$: serviceGst = Math.round(serviceExGst * S.gst_rate);
+	// --- International service fee (Australia excluded from this tier) ---
+	$: extraCountries = Math.max(0, intlCount - service_fee_model.base_includes_countries);
+	$: extraClasses = Math.max(0, clampC() - service_fee_model.base_includes_classes);
+	$: intlServiceExGst =
+		intlCount === 0
+			? 0
+			: service_fee_model.base_aud_ex_gst +
+			  extraCountries * service_fee_model.per_extra_country_aud_ex_gst +
+			  extraClasses * service_fee_model.per_extra_class_aud_ex_gst;
+
+	// --- Australia (TTMF) track ---
+	$: auGov = auEntry ? auEntry.gov_fee_by_class[clampC()] : 0;
+	$: auServiceExGst = auEntry ? auEntry.ttmf_service_by_class[clampC()] : 0;
+
+	// --- Combine ---
+	$: serviceExGst = intlServiceExGst + auServiceExGst;
+	$: serviceGst = Math.round(serviceExGst * service_fee_model.gst_rate);
 	$: serviceIncGst = serviceExGst + serviceGst;
-
+	$: govTotal = govWipoTotal + auGov;
 	$: estimatedTotal = govTotal + serviceIncGst;
 </script>
 
@@ -145,7 +162,7 @@
 					{#each filteredCountries as el}
 						{#if el.popular}
 							<button
-								on:click={() => toggleCountry(el.title, el.gov_fee_by_class)}
+								on:click={() => toggleCountry(el.title, el)}
 								class="relative rounded-lg p-6 flex justify-between items-center transition-all border-2 border-transparent hover:border-ttmfRed {selectedCountries[el.title] ? 'bg-ttmfBeige' : 'bg-white shadow-pricingShadow'}">
 								<div class="flex items-center gap-4">
 									{#if el.icon}
@@ -180,7 +197,7 @@
 					{#each filteredCountries as el}
 						{#if !el.popular}
 							<button
-								on:click={() => toggleCountry(el.title, el.gov_fee_by_class)}
+								on:click={() => toggleCountry(el.title, el)}
 								class="rounded-lg p-6 flex justify-between items-center border-2 border-transparent hover:border-ttmfRed {selectedCountries[el.title] ? 'bg-ttmfBeige' : 'bg-white shadow-pricingShadow'}">
 								<div class="flex items-center gap-4">
 									{#if el.icon}
@@ -243,36 +260,51 @@
 											<p>Govt fee ({classes} {classes === 1 ? 'class' : 'classes'})</p>
 											<p>AU${govAt(selectedCountries[country])}</p>
 										</div>
+										{#if selectedCountries[country].is_australia}
+											<p class="text-xs font-normal pt-2">Australian government fee at AU$250 per class.</p>
+										{/if}
 									</div>
 								{/if}
 							</div>
 						{/each}
 					</div>
 
-					<!-- Service fee breakdown -->
+					<!-- Fee breakdown -->
 					<div class="border-t mt-6 pt-6 space-y-2 font-bold text-black/50">
-						<div class="flex justify-between items-center">
-							<p>Service fee (base, ≤3 countries, ≤3 classes)</p>
-							<p>AU${S.base_aud_ex_gst}</p>
-						</div>
-						{#if extraCountries > 0}
+						{#if intlCount > 0}
 							<div class="flex justify-between items-center">
-								<p>Extra countries ({extraCountries} × ${S.per_extra_country_aud_ex_gst})</p>
-								<p>AU${extraCountries * S.per_extra_country_aud_ex_gst}</p>
+								<p>WIPO base fee (once)</p>
+								<p>AU${wipoBaseAud}</p>
+							</div>
+							<div class="flex justify-between items-center">
+								<p>Service fee</p>
+								<p>AU${service_fee_model.base_aud_ex_gst}</p>
+							</div>
+							{#if extraCountries > 0}
+								<div class="flex justify-between items-center">
+									<p>Extra countries ({extraCountries} × ${service_fee_model.per_extra_country_aud_ex_gst})</p>
+									<p>AU${extraCountries * service_fee_model.per_extra_country_aud_ex_gst}</p>
+								</div>
+							{/if}
+							{#if extraClasses > 0}
+								<div class="flex justify-between items-center">
+									<p>Extra classes ({extraClasses} × ${service_fee_model.per_extra_class_aud_ex_gst})</p>
+									<p>AU${extraClasses * service_fee_model.per_extra_class_aud_ex_gst}</p>
+								</div>
+							{/if}
+						{/if}
+						{#if auEntry}
+							<div class="flex justify-between items-center">
+								<p>Australia service ({classes} {classes === 1 ? 'class' : 'classes'})</p>
+								<p>AU${auServiceExGst}</p>
 							</div>
 						{/if}
-						{#if extraClasses > 0}
-							<div class="flex justify-between items-center">
-								<p>Extra classes ({extraClasses} × ${S.per_extra_class_aud_ex_gst})</p>
-								<p>AU${extraClasses * S.per_extra_class_aud_ex_gst}</p>
-							</div>
-						{/if}
 						<div class="flex justify-between items-center">
-							<p>GST (10%)</p>
+							<p>GST (10% on service)</p>
 							<p>AU${serviceGst}</p>
 						</div>
 						<div class="flex justify-between items-center pt-1">
-							<p>Govt fees (all countries)</p>
+							<p>Government fees (all)</p>
 							<p>AU${govTotal}</p>
 						</div>
 					</div>
@@ -283,7 +315,7 @@
 					</div>
 
 					<p class="text-xs text-ttmfBlack/50 pt-3 leading-relaxed">
-						Indicative estimate only. Government fees are WIPO fees converted to AUD and may vary with exchange rates. Prosecution fees apply per country if an application is objected to or rejected, and are additional. Confirm a formal fee estimate before filing.
+						Indicative estimate only. The WIPO base fee (653 CHF, black & white) is charged once per international application and is converted to AUD; exchange rates and WIPO fees may vary. Australia is filed domestically at TTMF rates. Prosecution fees apply per country if an application is objected to or rejected, and are additional. Confirm a formal fee estimate before filing.
 					</p>
 
 					{#if showForm}
