@@ -23,16 +23,16 @@ content_blocks:
     title: <p>Protect Your Brand <em>Beyond</em> Australia</p>
     content: >-
       <p>Your Australian trade mark stops at the border. <strong>Trademark
-      rights are jurisdictional</strong> — your mark must be registered in every
+      rights are jurisdictional</strong>. Your mark must be registered in every
       country where you plan to use it. The moment you sell, ship, or market
-      overseas, an unprotected brand is exposed.</p><p>The good news: Australia
-      is a member of the <strong>Madrid Protocol</strong>, an international
-      system that lets you protect your brand in over <strong>115 countries
-      under a single application</strong> — no need to file separately in each
-      one. It's faster, cheaper, and far simpler than going country by
-      country.</p><p>Targeting a market the Madrid Protocol doesn't cover? No
-      problem. Our <strong>network of trusted international IP lawyers</strong>
-      can register your trade mark wherever your business is headed.</p>
+      overseas, an unprotected brand is exposed.</p><p>Australia is a member of
+      the <strong>Madrid Protocol</strong>, an international system that lets
+      you protect your brand in over <strong>115 countries under a single
+      application. </strong>It's faster, cheaper, and far simpler than going
+      country by country.</p><p>Targeting a market the Madrid Protocol doesn't
+      cover? No problem. Our <strong>network of trusted international IP
+      lawyers</strong> can register your trade mark wherever your business is
+      headed.</p>
     button:
       title_button: Book a free 10 minute consult
       url: >-
@@ -44,6 +44,15 @@ content_blocks:
       image_alt: Register your trademark internationally
       image_right: true
       align_center: true
+  - _bookshop_name: utils/internationalQuery
+    title_section: |
+      Get Your <em>Instant</em> International Quote
+    description: >-
+      <p>Select the number of classes you wish to include in your application
+      and the countries of interest to calculate an <strong>indicative
+      cost</strong> in seconds. Ready to proceed? <strong>Contact us</strong>
+      for a formal fee estimate and we'll handle the rest.</p>
+    note:
   - _bookshop_name: cards/stats
     stats:
       - title: 30+
@@ -56,17 +65,8 @@ content_blocks:
         label: Success rate
       - title: Australian
         label: Owned & operated
-  - _bookshop_name: utils/internationalQuery
-    title_section: |
-      Get Your <em>Instant</em> International Quote
-    description: >-
-      <p>Select the number of classes you wish to include in your application
-      and the countries of interest to calculate an <strong>indicative
-      cost</strong> in seconds. Ready to proceed? <strong>Contact us</strong>
-      for a formal fee estimate and we'll handle the rest.</p>
-    note:
   - _bookshop_name: cta/ctaDefault
-    title: <p>Not Sure Where to Start?</p>
+    title: <p>Need <em>help</em>?</p>
     content: >-
       <h4>Every market is different. Book a free, no-obligation consult and one
       of our experts will map out the smartest way to protect your brand
