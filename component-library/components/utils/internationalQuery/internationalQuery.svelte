@@ -1,5 +1,5 @@
 <script>
-	import { Check, Search, XCircle, ChevronDownCircle, Minus, Plus } from 'lucide-svelte';
+	import { Check, Search, XCircle, ChevronDownCircle, Minus, Plus, ChevronDown } from 'lucide-svelte';
 	import {
 		international_module,
 		service_fee_model,
@@ -17,6 +17,7 @@
 	let showShortcut = true;
 	let showForm = false;
 	let classes = 1; // Nice classes
+	let showAllCountries = false;
 
 
 	onMount(() => {
@@ -187,35 +188,53 @@
 
 			<!-- All -->
 			<div class="pt-12">
-				<p class="pb-4 text-xl font-bold text-ttmfBlack/50">All Countries</p>
-				<div class="grid lg:grid-cols-2 gap-5">
-					{#each filteredCountries as el}
-						{#if !el.popular}
-							<button
-								on:click={() => toggleCountry(el.title, el)}
-								class="rounded-lg p-6 flex justify-between items-center border-2 border-transparent hover:border-ttmfRed {selectedCountries[el.title] ? 'bg-ttmfBeige' : 'bg-white shadow-pricingShadow'}">
-								<div class="flex items-center gap-4">
-									{#if el.icon}
-										<img src={el.icon} alt="{el.title} Flag" height="44" width="44" class="shadow rounded-xl" />
-									{/if}
-									<div class="text-left">
-										<p class="text-lg font-bold">{el.title}</p>
-										<p class="font-bold text-ttmfRed">from AU${el.gov_fee} gov. fee</p>
+				<button
+					on:click={() => (showAllCountries = !showAllCountries)}
+					class="w-full flex justify-between items-center pb-4">
+					<span class="text-xl font-bold text-ttmfBlack/50">More Countries</span>
+					<span class="text-ttmfRed transition-transform duration-200 {showAllCountries || searchQuery ? 'rotate-180' : ''}">
+						<ChevronDown size="24" strokeWidth="3" />
+					</span>
+				</button>
+				{#if showAllCountries || searchQuery}
+					<div class="grid lg:grid-cols-2 gap-5">
+						{#each filteredCountries as el}
+							{#if !el.popular}
+								<button
+									on:click={() => toggleCountry(el.title, el)}
+									class="rounded-lg p-6 flex justify-between items-center border-2 border-transparent hover:border-ttmfRed {selectedCountries[el.title] ? 'bg-ttmfBeige' : 'bg-white shadow-pricingShadow'}">
+									<div class="flex items-center gap-4">
+										{#if el.icon}
+											<img src={el.icon} alt="{el.title} Flag" height="44" width="44" class="shadow rounded-xl" />
+										{/if}
+										<div class="text-left">
+											<p class="text-lg font-bold">{el.title}</p>
+											<p class="font-bold text-ttmfRed">from AU${el.gov_fee} gov. fee</p>
+										</div>
 									</div>
-								</div>
-								<div class="w-6 h-6 bg-ttmfBg rounded-full flex items-center justify-center text-ttmfBg border-2 {selectedCountries[el.title] ? 'bg-ttmfRed border-ttmfRed' : 'border-ttmfBrown/30'}">
-									<Check size="14" strokeWidth="3" />
-								</div>
-							</button>
-						{/if}
-					{/each}
-				</div>
+									<div class="w-6 h-6 bg-ttmfBg rounded-full flex items-center justify-center text-ttmfBg border-2 {selectedCountries[el.title] ? 'bg-ttmfRed border-ttmfRed' : 'border-ttmfBrown/30'}">
+										<Check size="14" strokeWidth="3" />
+									</div>
+								</button>
+							{/if}
+						{/each}
+					</div>
+					<div class="mt-8 bg-ttmfBeige rounded-xl p-6 text-center">
+						<p class="font-bold text-ttmfBlack">Can't find the country you're looking for?</p>
+						<p class="text-ttmfBlack/60 pt-1">We can help you protect your brand in many more countries than those listed here. Get in touch and we'll prepare a tailored quote.</p>
+						<a
+							href="/contact/"
+							class="inline-block mt-4 bg-ttmfRed text-white font-bold px-8 py-4 rounded">
+							Contact The Trademark Factory
+						</a>
+					</div>
+				{/if}
 			</div>
 		</div>
 
 		<!-- Enquiry panel -->
 		<div>
-			<div id="enquiryForm" bind:this={enquiryForm} class="sticky top-32 bg-ttmfBeige rounded-xl px-5 py-6 scroll-mt-32">
+			<div id="enquiryForm" bind:this={enquiryForm} class="sticky top-32 bg-ttmfBeige rounded-xl px-5 py-6 scroll-mt-32 lg:max-h-[calc(100vh-9rem)] lg:overflow-y-auto">
 				{#if countryCount === 0}
 					<div class="lg:min-h-[600px]">
 						<p class="text-xl font-bold">Your Enquiry</p>
