@@ -1,5 +1,5 @@
 <script>
-	import { ChevronDown, Check, Search, XCircle, ChevronDownCircle, Minus, Plus } from 'lucide-svelte';
+	import { Check, Search, XCircle, ChevronDownCircle, Minus, Plus } from 'lucide-svelte';
 	import {
 		international_module,
 		service_fee_model,
@@ -7,12 +7,10 @@
 		australia_fees
 	} from '../../../../data/pricing.json';
 	import { onMount } from 'svelte';
-	import { fly } from 'svelte/transition';
 	import EnquiryForm from '$lib/components/enquiryForm.svelte';
 
 	export let title_section, description, note;
 
-	let activeDetails;
 	let selectedCountries = {};
 	let enquiryForm;
 	let searchQuery = '';
@@ -32,16 +30,17 @@
 		}
 	});
 
-	function toggleDetails(country) {
-		activeDetails = activeDetails === country ? null : country;
-	}
-
 	function toggleCountry(country, entry) {
 		if (selectedCountries[country]) {
 			delete selectedCountries[country];
 		} else {
 			selectedCountries[country] = entry;
 		}
+		selectedCountries = { ...selectedCountries };
+	}
+
+	function removeCountry(country) {
+		delete selectedCountries[country];
 		selectedCountries = { ...selectedCountries };
 	}
 
@@ -53,17 +52,6 @@
 	// $: line, Svelte tracks it as a dependency — anything downstream that uses
 	// `cls` will recompute when the stepper changes.
 	$: cls = Math.min(10, Math.max(1, classes));
-
-	// Reactive map: country title -> gov fee at current class count.
-	// References `cls` and `selectedCountries` directly so Svelte re-runs it
-	// whenever either changes.
-	$: govByCountry = (() => {
-		const out = {};
-		for (const [title, entry] of Object.entries(selectedCountries)) {
-			out[title] = entry.gov_fee_by_class[cls] ?? entry.gov_fee_by_class[1];
-		}
-		return out;
-	})();
 
 	$: filteredCountries = searchQuery
 		? international_module.filter((c) =>
@@ -250,29 +238,14 @@
 					<p class="text-sm text-ttmfBlack/50 pt-1">{countryCount} {countryCount === 1 ? 'country' : 'countries'} · {classes} {classes === 1 ? 'class' : 'classes'}</p>
 					<div class="pt-5 space-y-2">
 						{#each Object.keys(selectedCountries) as country}
-							<div class="bg-white rounded-lg p-5 shadow-pricingShadow">
-								<button on:click={() => toggleDetails(country)} class="flex gap-2 justify-between w-full">
-									<p class="text-lg font-bold">{country}</p>
-									<div class="flex items-center gap-2 text-ttmfRed">
-										<div class="text-right">
-											<p class="text-[10px] font-bold text-ttmfBlack/40 uppercase tracking-wide leading-none">Govt fees</p>
-											<p class="font-bold leading-tight">AU${govByCountry[country]}</p>
-										</div>
-										<ChevronDown size="20" />
-									</div>
+							<div class="bg-white rounded-lg p-5 shadow-pricingShadow flex justify-between items-center">
+								<p class="text-lg font-bold">{country}</p>
+								<button
+									on:click={() => removeCountry(country)}
+									class="text-ttmfBlack/30 hover:text-ttmfRed transition-colors"
+									aria-label="Remove {country}">
+									<XCircle size="22" />
 								</button>
-								{#if activeDetails === country}
-									<div in:fly={{ y: -20 }} class="text-ttmfBlack/50 font-bold border-t pt-5 mt-5">
-										<div class="flex justify-between items-center">
-											<p>Govt fee ({classes} {classes === 1 ? 'class' : 'classes'})</p>
-											<p>AU${govByCountry[country]}</p>
-										</div>
-										{#if selectedCountries[country].is_australia}
-											<p class="text-xs font-normal pt-2">Australian government fee at AU$250 per class.</p>
-										{/if}
-										<p class="text-xs font-normal pt-2">Government fee for this country only. Service fee, WIPO base fee and GST are shown once in the breakdown below.</p>
-									</div>
-								{/if}
 							</div>
 						{/each}
 					</div>

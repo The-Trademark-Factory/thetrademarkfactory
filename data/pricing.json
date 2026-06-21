@@ -180,7 +180,7 @@
 		"base_includes_countries": 3,
 		"base_includes_classes": 1,
 		"per_extra_country_aud_ex_gst": 100,
-		"per_extra_class_aud_ex_gst": 50,
+		"per_extra_class_aud_ex_gst": 100,
 		"gst_rate": 0.1,
 		"note": "Applies to INTERNATIONAL designations only. Australia uses its own TTMF service schedule and is excluded from this tier."
 	},
