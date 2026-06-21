@@ -78,8 +78,9 @@
 	$: govWipoTotal = wipoBaseAud + intlGovTotal;
 
 	// --- International service fee (Australia excluded from this tier) ---
+	// Base $1,500 covers 1–3 countries. +$100/country over 3. +$50/class over 1.
 	$: extraCountries = Math.max(0, intlCount - service_fee_model.base_includes_countries);
-	$: extraClasses = Math.max(0, clampC() - service_fee_model.base_includes_classes);
+	$: extraClasses = Math.max(0, clampC() - 1);
 	$: intlServiceExGst =
 		intlCount === 0
 			? 0
