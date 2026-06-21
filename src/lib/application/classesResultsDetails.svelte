@@ -13,10 +13,10 @@
 	// Track which classes the user has manually opened — all collapsed by default
 	let openClasses = {};
 
-	// Track which classes have "show all" expanded — limited to 50 by default
-	let showAllClasses = {};
+	// Track how many entries are visible per class — starts at 50, grows in steps of 50
+	let visibleCounts = {};
 
-	const VISIBLE_LIMIT = 50;
+	const VISIBLE_STEP = 50;
 
 	resultsDetails.forEach((el) => {
 		if (!groupedResults[el.gsClassNumber]) {
@@ -38,11 +38,21 @@
 		.sort((a, b) => filteredGroupedResults[b].length - filteredGroupedResults[a].length);
 
 	function toggleClass(classNumber) {
-		openClasses = { ...openClasses, [classNumber]: !openClasses[classNumber] };
+		const willOpen = !openClasses[classNumber];
+		openClasses = { ...openClasses, [classNumber]: willOpen };
+		// Reset the visible count each time the class is opened
+		if (willOpen) {
+			visibleCounts = { ...visibleCounts, [classNumber]: VISIBLE_STEP };
+		}
 	}
 
-	function toggleShowAll(classNumber) {
-		showAllClasses = { ...showAllClasses, [classNumber]: !showAllClasses[classNumber] };
+	function showMore(classNumber) {
+		const current = visibleCounts[classNumber] ?? VISIBLE_STEP;
+		visibleCounts = { ...visibleCounts, [classNumber]: current + VISIBLE_STEP };
+	}
+
+	function showLess(classNumber) {
+		visibleCounts = { ...visibleCounts, [classNumber]: VISIBLE_STEP };
 	}
 
 	function toggleDescription(classNumber, description) {
@@ -99,11 +109,11 @@
 	{#each sortedClassNumbers as classNumber (classNumber)}
 		{@const descriptionsForClass = filteredGroupedResults[classNumber]}
 		{@const isOpen = filterText.length > 0 || openClasses[classNumber]}
-		{@const showAll = showAllClasses[classNumber]}
-		{@const visibleDescriptions = showAll
+		{@const visibleCount = visibleCounts[classNumber] ?? VISIBLE_STEP}
+		{@const visibleDescriptions = filterText.length > 0
 			? descriptionsForClass
-			: descriptionsForClass.slice(0, VISIBLE_LIMIT)}
-		{@const hiddenCount = descriptionsForClass.length - VISIBLE_LIMIT}
+			: descriptionsForClass.slice(0, visibleCount)}
+		{@const remainingCount = descriptionsForClass.length - visibleDescriptions.length}
 		<div class="bg-white border-2 border-ttmfBeige rounded-lg overflow-hidden">
 			<button
 				type="button"
@@ -162,20 +172,26 @@
 					{/each}
 				</div>
 
-				{#if hiddenCount > 0}
-					<div class="px-7 pb-5">
-						<button
-							type="button"
-							on:click={() => toggleShowAll(classNumber)}
-							class="w-full flex justify-center items-center gap-2 rounded-md p-2 text-sm font-bold text-ttmfRed border-2 border-ttmfRed/20 bg-ttmfRed/5 hover:bg-ttmfRed hover:text-white transition-colors">
-							{#if showAll}
+				{#if filterText.length === 0 && (remainingCount > 0 || visibleCount > VISIBLE_STEP)}
+					<div class="px-7 pb-5 flex flex-wrap gap-2">
+						{#if remainingCount > 0}
+							<button
+								type="button"
+								on:click={() => showMore(classNumber)}
+								class="flex-1 flex justify-center items-center gap-2 rounded-md p-2 text-sm font-bold text-ttmfRed border-2 border-ttmfRed/20 bg-ttmfRed/5 hover:bg-ttmfRed hover:text-white transition-colors">
+								Show {Math.min(VISIBLE_STEP, remainingCount)} more
+								<ChevronDown size="16" />
+							</button>
+						{/if}
+						{#if visibleCount > VISIBLE_STEP}
+							<button
+								type="button"
+								on:click={() => showLess(classNumber)}
+								class="flex-1 flex justify-center items-center gap-2 rounded-md p-2 text-sm font-bold text-ttmfLightGreen border-2 border-ttmfLightGreen/20 bg-ttmfLightGreen/5 hover:bg-ttmfLightGreen hover:text-white transition-colors">
 								Show fewer
 								<ChevronDown class="rotate-180" size="16" />
-							{:else}
-								Show {hiddenCount} more {hiddenCount === 1 ? 'option' : 'options'}
-								<ChevronDown size="16" />
-							{/if}
-						</button>
+							</button>
+						{/if}
 					</div>
 				{/if}
 			{/if}
