@@ -118,7 +118,7 @@
 			},
 			"id": "intPricing",
 			"image": "/upload/ic-globe.svg",
-			"price": "From A$500 + Govt. fees",
+			"price": "From A$1500 + Govt. fees",
 			"button": {
 				"title": "Pricing & Enquiry",
 				"url": "/pricing/#international-pricing"
