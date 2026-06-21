@@ -58,6 +58,18 @@
 		return entry.gov_fee_by_class[clampC()] ?? entry.gov_fee_by_class[1];
 	}
 
+	// Reactive map: country title -> gov fee at current class count.
+	// Depends explicitly on `selectedCountries` AND `classes` so the template
+	// updates when either changes (a bare govAt() call in markup would not track classes).
+	$: govByCountry = (() => {
+		const c = clampC(); // referenced so this block re-runs when classes changes
+		const out = {};
+		for (const [title, entry] of Object.entries(selectedCountries)) {
+			out[title] = entry.gov_fee_by_class[c] ?? entry.gov_fee_by_class[1];
+		}
+		return out;
+	})();
+
 	$: filteredCountries = searchQuery
 		? international_module.filter((c) =>
 				c.title.toLowerCase().includes(searchQuery.toLowerCase())
@@ -134,7 +146,6 @@
 							<Plus size="18" strokeWidth="3" />
 						</button>
 					</div>
-					<p class="text-sm text-ttmfBlack/50">First 3 classes included in the base service fee.</p>
 				</div>
 
 				<div class="relative mt-6">
@@ -247,7 +258,7 @@
 									<div class="flex items-center gap-2 text-ttmfRed">
 										<div class="text-right">
 											<p class="text-[10px] font-bold text-ttmfBlack/40 uppercase tracking-wide leading-none">Govt fees</p>
-											<p class="font-bold leading-tight">AU${govAt(selectedCountries[country])}</p>
+											<p class="font-bold leading-tight">AU${govByCountry[country]}</p>
 										</div>
 										<ChevronDown size="20" />
 									</div>
@@ -256,7 +267,7 @@
 									<div in:fly={{ y: -20 }} class="text-ttmfBlack/50 font-bold border-t pt-5 mt-5">
 										<div class="flex justify-between items-center">
 											<p>Govt fee ({classes} {classes === 1 ? 'class' : 'classes'})</p>
-											<p>AU${govAt(selectedCountries[country])}</p>
+											<p>AU${govByCountry[country]}</p>
 										</div>
 										{#if selectedCountries[country].is_australia}
 											<p class="text-xs font-normal pt-2">Australian government fee at AU$250 per class.</p>
