@@ -13,6 +13,11 @@
 	// Track which classes the user has manually opened — all collapsed by default
 	let openClasses = {};
 
+	// Track which classes have "show all" expanded — limited to 50 by default
+	let showAllClasses = {};
+
+	const VISIBLE_LIMIT = 50;
+
 	resultsDetails.forEach((el) => {
 		if (!groupedResults[el.gsClassNumber]) {
 			groupedResults[el.gsClassNumber] = [];
@@ -34,6 +39,10 @@
 
 	function toggleClass(classNumber) {
 		openClasses = { ...openClasses, [classNumber]: !openClasses[classNumber] };
+	}
+
+	function toggleShowAll(classNumber) {
+		showAllClasses = { ...showAllClasses, [classNumber]: !showAllClasses[classNumber] };
 	}
 
 	function toggleDescription(classNumber, description) {
@@ -90,6 +99,11 @@
 	{#each sortedClassNumbers as classNumber (classNumber)}
 		{@const descriptionsForClass = filteredGroupedResults[classNumber]}
 		{@const isOpen = filterText.length > 0 || openClasses[classNumber]}
+		{@const showAll = showAllClasses[classNumber]}
+		{@const visibleDescriptions = showAll
+			? descriptionsForClass
+			: descriptionsForClass.slice(0, VISIBLE_LIMIT)}
+		{@const hiddenCount = descriptionsForClass.length - VISIBLE_LIMIT}
 		<div class="bg-white border-2 border-ttmfBeige rounded-lg overflow-hidden">
 			<button
 				type="button"
@@ -116,7 +130,7 @@
 
 			{#if isOpen}
 				<div class="px-7 pb-5 grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm">
-					{#each descriptionsForClass as description}
+					{#each visibleDescriptions as description}
 						<button
 							class="w-full text-left flex items-center justify-between gap-2 rounded-md p-2 font-bold border-2 transition-all group hover:text-white
 								{$classes.find((c) => c.class === classNumber)?.descriptions.includes(description)
@@ -147,6 +161,23 @@
 						</button>
 					{/each}
 				</div>
+
+				{#if hiddenCount > 0}
+					<div class="px-7 pb-5">
+						<button
+							type="button"
+							on:click={() => toggleShowAll(classNumber)}
+							class="w-full flex justify-center items-center gap-2 rounded-md p-2 text-sm font-bold text-ttmfRed border-2 border-ttmfRed/20 bg-ttmfRed/5 hover:bg-ttmfRed hover:text-white transition-colors">
+							{#if showAll}
+								Show fewer
+								<ChevronDown class="rotate-180" size="16" />
+							{:else}
+								Show {hiddenCount} more {hiddenCount === 1 ? 'option' : 'options'}
+								<ChevronDown size="16" />
+							{/if}
+						</button>
+					</div>
+				{/if}
 			{/if}
 		</div>
 	{/each}
