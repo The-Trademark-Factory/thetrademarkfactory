@@ -71,6 +71,6 @@ content_blocks:
       of our experts will map out the smartest way to protect your brand
       overseas — tailored to where your business is headed.</h4>
     button:
-      title_button: Get Started with Your International Trademark
+      title_button: Book your Free 10 Minute Consultation
       url: /contact/
 ---
