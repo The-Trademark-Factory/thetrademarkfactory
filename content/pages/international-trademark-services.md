@@ -34,9 +34,8 @@ content_blocks:
       lawyers</strong> can register your trade mark wherever your business is
       headed.</p>
     button:
-      title_button: Book a free 10 minute consult
-      url: >-
-        mailto:admin@ttmf.com.au?subject=International%20Trade%20Mark%20Consultation&body=Thank%20you%20for%20getting%20in%20touch%20about%20protecting%20your%20brand%20overseas.%20So%20one%20of%20our%20lawyers%20can%20contact%20you%2C%20please%20confirm%3A%0A%0A1.%20Do%20you%20already%20have%20an%20Australian%20or%20New%20Zealand%20trade%20mark%3F%20If%20so%2C%20what%20is%20the%20trade%20mark%20number%3F%0A%0A2.%20Which%20countries%20do%20you%20need%20protection%20in%3F%0A%0A3.%20Tell%20us%20a%20little%20about%20your%20business%20and%20the%20products%20or%20services%20you%20provide%3A%0A%0A4.%20Your%20full%20name%3A%0A%0A5.%20Company%20name%20(if%20applicable)%3A%0A%0A6.%20Your%20phone%20number%3A%0A%0AOnce%20we%20know%20a%20little%20more%2C%20one%20of%20our%20lawyers%20will%20be%20in%20touch%20to%20discuss%20how%20we%20can%20help.
+      title_button: Enquire about an International Trademark Today
+      url: /contact/
       title:
     media:
       content:
@@ -72,7 +71,6 @@ content_blocks:
       of our experts will map out the smartest way to protect your brand
       overseas — tailored to where your business is headed.</h4>
     button:
-      title_button: Talk to an expert
-      url: >-
-        mailto:admin@ttmf.com.au?subject=International%20Trade%20Mark%20Consultation&body=Thank%20you%20for%20getting%20in%20touch%20about%20protecting%20your%20brand%20overseas.%20So%20one%20of%20our%20lawyers%20can%20contact%20you%2C%20please%20confirm%3A%0A%0A1.%20Do%20you%20already%20have%20an%20Australian%20or%20New%20Zealand%20trade%20mark%3F%20If%20so%2C%20what%20is%20the%20trade%20mark%20number%3F%0A%0A2.%20Which%20countries%20do%20you%20need%20protection%20in%3F%0A%0A3.%20Tell%20us%20a%20little%20about%20your%20business%20and%20the%20products%20or%20services%20you%20provide%3A%0A%0A4.%20Your%20full%20name%3A%0A%0A5.%20Company%20name%20(if%20applicable)%3A%0A%0A6.%20Your%20phone%20number%3A%0A%0AOnce%20we%20know%20a%20little%20more%2C%20one%20of%20our%20lawyers%20will%20be%20in%20touch%20to%20discuss%20how%20we%20can%20help.
+      title_button: Get Started with Your International Trademark
+      url: /contact/
 ---
