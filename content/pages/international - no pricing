@@ -20,13 +20,21 @@ content_blocks:
       alt: Register your trademark overseas
       align_bottom: false
   - _bookshop_name: cards/twoCols
-    title: <p>Protect Your Brand in Over <em>115 Countries</em></p>
+    title: <p>Protect Your Brand <em>Beyond</em> Australia</p>
     content: >-
-      <p>Your Australian trade mark stops at the border. We'll help you secure
-      your brand wherever your business takes you, with one application, one
-      team, and a fixed-fee guarantee.</p>
+      <p>Your Australian trade mark stops at the border. <strong>Trademark
+      rights are jurisdictional</strong>. Your mark must be registered in every
+      country where you plan to use it. The moment you sell, ship, or market
+      overseas, an unprotected brand is exposed.</p><p>Australia is a member of
+      the <strong>Madrid Protocol</strong>, an international system that lets
+      you protect your brand in over <strong>115 countries under a single
+      application. </strong>It's faster, cheaper, and far simpler than going
+      country by country.</p><p>Targeting a market the Madrid Protocol doesn't
+      cover? No problem. Our <strong>network of trusted international IP
+      lawyers</strong> can register your trade mark wherever your business is
+      headed.</p>
     button:
-      title_button: Get a Free International Quote
+      title_button: Enquire about an International Trademark Today
       url: /contact/
       title:
     media:
